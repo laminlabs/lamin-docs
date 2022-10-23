@@ -1,8 +1,8 @@
-# Key problems of data-heavy R&D
+# Problems
 
-In recent years, problems associated with the growing complexity of R&D operations and data have become so severe that they often block the scientific progress promised by modern high-resolution readouts and computation.
+_Key problems of data-heavy R&D._
 
-On this page, we provide a table of key problems arising in R&D operations as depicted in the following sketch.
+In recent years, problems associated with the growing complexity of R&D operations (see graphic) and data have become so severe that they often block the scientific progress promised by modern high-resolution readouts and computation.
 
 ![](https://lamin-site-assets.s3.amazonaws.com/s2B8MCb8xraVXUFOT682L-1.svg)
 
