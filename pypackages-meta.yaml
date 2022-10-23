@@ -1,0 +1,56 @@
+lamindb:
+  docs: db
+  description: Manage data & analyses
+  github: True
+bionty:
+  description: Manage biological entities
+  github: True
+bionty-assets:
+  description: Knowledge assets for Bionty
+lnschema_bionty:
+  description: Biological entities
+  github: True
+lnschema_wetlab:
+  description: Generic wetlab
+  github: True
+bioreadout:
+  description: Readouts & instruments
+readfcs:
+  description: Read FCS files
+  publication: "[![](https://img.shields.io/badge/doi-10.56528%2Frfcs-lightgrey)](https://doi.org/10.56528/rfcs)"
+  github: True
+lnbfx:
+  description: Manage bioinformatics pipelines
+nbproject:
+  description: Manage Jupyter notebooks
+  publication: "[![](https://img.shields.io/badge/doi-10.56528%2Fnbp-lightgrey)](https://doi.org/10.56528/nbp)"
+  github: True
+erdiagram:
+  description: Entity relationship diagrams
+lnschema_core:
+  description: Data provenance & flow
+  github: True
+lndb_setup:
+  description: Setup & configure LaminDB
+lndb_hub:
+  docs: false
+  description: Connect to the hub
+lndb-benchmarks:
+  docs: benchmarks
+  description: Benchmarks
+lamin_logger:
+  docs: false
+  description: Logging
+nbproject_test:
+  docs: false
+  description: Test notebooks
+lnschema_drylab:
+  description: Generic drylab
+lndocs:
+  docs: false
+  description: Lamin static website builder
+exportpy:
+  docs: false
+  description: Dynamic classes as Python code
+lamin-site-assets:
+  description: Manage data assets of this website

@@ -8,6 +8,7 @@
 :hidden:
 
 problems
+modules
 glossary
 changelog
 ```
