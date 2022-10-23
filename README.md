@@ -1,3 +1,3 @@
-# Lamin Reports: Data science & engineering in biology
+# Lamin Docs
 
 Read the [docs](https://lamin.ai/docs).
