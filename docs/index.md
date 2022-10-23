@@ -8,5 +8,6 @@
 :hidden:
 
 problems
+glossary
 changelog
 ```

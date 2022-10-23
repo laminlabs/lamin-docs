@@ -1,8 +1,8 @@
-# Key problems of data-heavy R&D
+# Problems
 
-In recent years, problems associated with the growing complexity of R&D operations and data have become so severe that they often block the scientific progress promised by modern high-resolution readouts and computation.
+_Key problems of data-heavy R&D._
 
-On this page, we provide a table of key problems arising in R&D operations as depicted in the following sketch.
+In recent years, problems associated with the growing complexity of R&D operations (see graphic) and data have become so severe that they often block the scientific progress promised by modern high-resolution readouts and computation.
 
 ![](https://lamin-site-assets.s3.amazonaws.com/s2B8MCb8xraVXUFOT682L-1.svg)
 
@@ -11,7 +11,7 @@ On this page, we provide a table of key problems arising in R&D operations as de
 <!-- prettier-ignore -->
 Problem | Description | Solution
 --- | --- | ---
-_Object storage._ | Data can't be queried as it's not indexed in object storage. | Index observations and variables and link them in a query database.
+_Object storage._ | Data in object storage can't be queried. | Index {term}`observations <observation>` and {term}`variables <variable>` and link them in a query database.
 _Pile of data._ | Data can't be accessed as it's not structured and siloed in fragmented infrastructure. | Structure data both by biological entities and by provenance with one interface across storage and database backends.
 
 ## Data cannot be accessed at scale
