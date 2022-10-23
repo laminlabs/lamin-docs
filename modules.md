@@ -4,7 +4,7 @@ Lamin is currently Python only but might include other languages in the future.
 
 ## LaminDB
 
-[LaminDB](https://lamin.ai/docs/db)'s docs provide everything you need to get started.
+[LaminDB](https://lamin.ai/docs/db) provides the core API.
 
 ## Standalone modules
 
