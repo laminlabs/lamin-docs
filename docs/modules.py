@@ -91,7 +91,7 @@ def generate_modules():
                 downloads_link = f"![](https://img.shields.io/pypi/dm/{pypackage}?logo=PyPI&color=blue) ![](https://static.pepy.tech/badge/{pypackage}?logo=PyPI&color=blue)"  # noqa
             pypi_link = ""
             if "-" not in pypackage:
-                pypi_link = f"[![](https://img.shields.io/pypi/v/{pypackage}?color=%2334D058&label=pypi%20package)](https://pypi.org/project/{pypackage})"  # noqa
+                pypi_link = f"[![](https://img.shields.io/pypi/v/{pypackage}?color=blue&label=pypi%20package)](https://pypi.org/project/{pypackage})"  # noqa
             table_row = (
                 f"{pypackage_hyphens}: {description} | "
                 f" {docs_link} | "
