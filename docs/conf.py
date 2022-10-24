@@ -11,6 +11,8 @@ from modules import generate_modules  # noqa
 
 generate_modules()
 
+ogp_site_url = "https://lamin.ai/docs"
+
 project = "Lamin Docs"
 html_title = f"{project}"
 html_context["github_repo"] = "lamin-docs"  # noqa
