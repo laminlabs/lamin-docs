@@ -37,14 +37,11 @@ def generate_modules():
                 "lamin-site-assets",
                 "bionty-assets",
             ],
-            "Benchmarks": [
+            "Benchmarking notes": [
                 "lndb-benchmarks",
             ],
-            "Core utils": [
-                "lndb_setup",
-                "lndb_hub",
-            ],
             "Dev utils": [
+                "lndb_setup",
                 "lndocs",
                 "lamin_logger",
                 "nbproject_test",
