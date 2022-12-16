@@ -29,14 +29,13 @@ def generate_modules():
             original = f.read()
         pypackages_grouped = {
             "Core": ["lamindb", "lnschema_core"],
-            "Biological entities": ["bionty", "lnschema_bionty"],
-            "Wetlab": ["lnschema_wetlab"],
-            "Readouts & instruments": ["bioreadout", "readfcs"],
-            "Pipelines": ["lnbfx", "lnschema_drylab"],
-            "Analysis": ["nbproject"],
+            "Biological knowledge": ["bionty", "lnschema_bionty"],
+            "Wetlab & readouts": ["lnschema_wetlab", "readfcs"],
+            "Drylab": ["nbproject", "lnschema_drylab"],
             "Visualization": ["erdiagram"],
             "Test instances": [
                 "lamin-site-assets",
+                "bionty-assets",
             ],
             "Benchmarks": [
                 "lndb-benchmarks",
@@ -47,7 +46,6 @@ def generate_modules():
             ],
             "Dev utils": [
                 "lndocs",
-                "bionty-assets",
                 "lamin_logger",
                 "nbproject_test",
                 "exportpy",
