@@ -2,9 +2,9 @@
 
 _Key problems of data-heavy R&D._
 
-In recent years, problems associated with the growing complexity of R&D operations (see graphic) and data have become so severe that they often block the scientific progress promised by modern high-resolution readouts and computation.
+The complexity of modern R&D data often blocks realizing the scientific progress promised by high-resolution readouts and computation.
 
-![](https://lamin-site-assets.s3.amazonaws.com/s2B8MCb8xraVXUFOT682L-1.svg)
+Here we list key problems we see and how we think about solving them.
 
 ## Data cannot be accessed at all
 
