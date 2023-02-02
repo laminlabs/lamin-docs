@@ -17,4 +17,4 @@ project = "Lamin Docs"
 html_title = f"{project}"
 html_context["github_repo"] = "lamin-docs"  # noqa
 # We're actually using this for the link behind the brand of the page!
-html_theme_options["logo"] = {"link": "../docs"}  # noqa
+html_theme_options["logo"] = {"link": "../docs", "root": "https://lamin.ai"}  # noqa
