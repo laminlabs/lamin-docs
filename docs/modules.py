@@ -41,7 +41,7 @@ def generate_modules():
                 "lndb-benchmarks",
             ],
             "Dev utils": [
-                "lndb_setup",
+                "lndb",
                 "lndocs",
                 "lamin_logger",
                 "nbproject_test",

@@ -23,7 +23,6 @@ Two data modules can be used standalone.
 
 ## Open-sourced data modules
 
-Below follow all open-sourced Python packages that power [LaminDB](https://lamin.ai/docs/db).
-Some are only on PyPI and not yet on GitHub, but will appear there over time.
+Below follow Python packages behind [LaminDB](https://lamin.ai/docs/db).
 
-[Reach out](https://lamin.ai/contact) for closed-source extensions and maintenance of an enterprise data platform.
+[Reach out](https://lamin.ai/contact) for non-listed closed-source extensions and maintenance of an enterprise data platform.
