@@ -26,7 +26,7 @@ erdiagram:
 lnschema_core:
   description: Data lineage
   github: True
-lndb_setup:
+lndb:
   description: Setup & configure LaminDB
 lndb-benchmarks:
   docs: benchmarks
