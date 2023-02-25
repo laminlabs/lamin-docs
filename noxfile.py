@@ -1,19 +1,27 @@
-from pathlib import Path
+import shutil
 
+import lamin
 import nox
+from laminci.nox import build_docs, login_testuser1, run_pre_commit
 
 nox.options.reuse_existing_virtualenvs = True
 
 
-@nox.session
+@nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def lint(session: nox.Session) -> None:
-    session.install("pre-commit")
-    session.run("pre-commit", "install")
-    session.run("pre-commit", "run", "--all-files")
+    run_pre_commit(session)
 
 
 @nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def build(session):
-    prefix = "." if Path("./lndocs").exists() else ".."
-    session.install(f"{prefix}/lndocs")
-    session.run("lndocs")
+    login_testuser1(session)
+    lamin.load("testuser1/lamin-site-assets", migrate=True)
+
+    import lamindb as ln
+
+    dobject = ln.select(ln.DObject, name="lamindb_docs").one()
+
+    shutil.unpack_archive(dobject.load())
+
+    lamin.init(storage="mydata")
+    build_docs(session)

@@ -3,7 +3,7 @@
 :end-line: 1
 ```
 
-[LaminDB](https://lamin.ai/docs/db)'s docs provide everything you need to get started.
+Start [here](/guide/index.md).
 
 For more background, read up on the key [problems](problems) we work towards resolving or browse Lamin's [data modules](modules).
 
@@ -12,6 +12,7 @@ For more background, read up on the key [problems](problems) we work towards res
 :hidden:
 
 problems
+lamindb
 modules
 glossary
 changelog
