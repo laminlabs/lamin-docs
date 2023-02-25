@@ -26,4 +26,5 @@ def build(session):
     Path("lamindb_docs/faq").rename("docs/faq")
 
     lamin.init(storage="mydata")
+    session.install(".[dev,test]")
     build_docs(session)
