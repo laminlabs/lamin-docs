@@ -26,7 +26,7 @@ def build(session):
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
 
-    execute_notebooks("docs/cli.ipynb", write=True)
+    execute_notebooks(Path("docs/cli.ipynb"), write=True)
 
     lamin.init(storage="mydata")
     session.install("lamindb")
