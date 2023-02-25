@@ -1,3 +1,4 @@
+import os
 import shutil
 from pathlib import Path
 
@@ -26,7 +27,9 @@ def build(session):
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
 
+    # changes working directory
     execute_notebooks(Path("./docs/cli.ipynb").resolve(), write=True)
+    os.chdir("..")
 
     lamin.init(storage="mydata")
     session.install("lamindb")
