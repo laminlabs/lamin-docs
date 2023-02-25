@@ -1,6 +1,7 @@
 lamindb_docs/
 docs/guide/
 mydata/
+docs/faq/
 
 # macOS
 .DS_Store
