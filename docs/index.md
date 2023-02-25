@@ -3,7 +3,7 @@
 :end-line: 1
 ```
 
-Start [here](/guide/index.md).
+Start [here](/guide/index).
 
 For more background, read up on the key [problems](problems) we work towards resolving or browse Lamin's [data modules](modules).
 
@@ -11,9 +11,10 @@ For more background, read up on the key [problems](problems) we work towards res
 :maxdepth: 1
 :hidden:
 
-guide
+guide/index
 api
 problems
+faq/index
 modules
 glossary
 changelog

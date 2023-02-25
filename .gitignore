@@ -1,3 +1,7 @@
+lamindb_docs/
+docs/guide/
+mydata/
+
 # macOS
 .DS_Store
 .AppleDouble

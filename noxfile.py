@@ -21,10 +21,9 @@ def build(session):
     import lamindb as ln
 
     dobject = ln.select(ln.DObject, name="lamindb_docs").one()
-
     shutil.unpack_archive(dobject.load(), "lamindb_docs")
-
     Path("lamindb_docs/guide").rename("docs/guide")
+    Path("lamindb_docs/faq").rename("docs/faq")
 
     lamin.init(storage="mydata")
     build_docs(session)
