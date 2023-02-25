@@ -1,4 +1,5 @@
 import shutil
+from pathlib import Path
 
 import lamin
 import nox
@@ -21,7 +22,9 @@ def build(session):
 
     dobject = ln.select(ln.DObject, name="lamindb_docs").one()
 
-    shutil.unpack_archive(dobject.load())
+    shutil.unpack_archive(dobject.load(), "lamindb_docs")
+
+    Path("lamindb_docs/guide").rename("docs/guide")
 
     lamin.init(storage="mydata")
     build_docs(session)

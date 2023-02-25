@@ -11,8 +11,9 @@ For more background, read up on the key [problems](problems) we work towards res
 :maxdepth: 1
 :hidden:
 
+guide
+api
 problems
-lamindb
 modules
 glossary
 changelog
