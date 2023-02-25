@@ -9,6 +9,7 @@ readme = "README.md"
 dynamic = ["version", "description"]
 dependencies = [
     "nbproject",
+    "lamindb>=0.29.1",
 ]
 
 [project.urls]
