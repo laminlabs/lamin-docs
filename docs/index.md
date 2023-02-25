@@ -13,6 +13,7 @@ For more background, read up on the key [problems](problems) we work towards res
 
 guide/index
 api
+cli
 problems
 faq/index
 modules
