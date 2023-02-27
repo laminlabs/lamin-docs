@@ -36,9 +36,9 @@ def build(session):
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
 
-    dobject = ln.select(ln.DObject, name="lamin_docs").one()
-    shutil.unpack_archive(dobject.load(), "lamin_docs")
-    Path("lamin_docs").rename("docs/setup")
+    dobject = ln.select(ln.DObject, name="lndb_docs").one()
+    shutil.unpack_archive(dobject.load(), "lndb_docs")
+    Path("lndb_docs").rename("docs/setup")
 
     with open("setup/index.md") as f:
         content = f.read()
