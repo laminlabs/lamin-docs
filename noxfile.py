@@ -16,6 +16,14 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
+README_SECTION = """\
+```{include} ../README.md
+:start-line: 0
+:end-line: 1
+```
+"""
+
+
 @nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def build(session):
     login_testuser1(session)
@@ -31,6 +39,12 @@ def build(session):
     dobject = ln.select(ln.DObject, name="lamin_docs").one()
     shutil.unpack_archive(dobject.load(), "lamin_docs")
     Path("lamin_docs").rename("docs/setup")
+
+    with open("setup/lamin") as f:
+        content = f.read()
+    with open("setup/lamin", "w") as f:
+        content = content.replace(README_SECTION, "# Setup")
+        f.write(content)
 
     # changes working directory
     # execute_notebooks(Path("./docs/cli.ipynb").resolve(), write=True)
