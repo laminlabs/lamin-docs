@@ -1,9 +1,11 @@
 # API
 
 ```{eval-rst}
+LaminDB
+-------
 .. automodule:: lamindb
-```
 
-```{eval-rst}
+Lamin
+-----
 .. automodule:: lamin
 ```
