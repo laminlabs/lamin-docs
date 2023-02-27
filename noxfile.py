@@ -45,16 +45,16 @@ def build(session):
     # LaminDB
 
     dobject = ln.select(ln.DObject, name="lamindb_docs").one()
-    shutil.unpack_archive(dobject.load())
-    Path("docs").rename("lamindb_docs")
+    shutil.unpack_archive(dobject.load(), "tmp")
+    Path("tmp/docs").rename("lamindb_docs")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
 
     # Setup / Lamin
 
     dobject = ln.select(ln.DObject, name="lndb_docs").one()
-    shutil.unpack_archive(dobject.load())
-    Path("docs").rename("lndb_docs")
+    shutil.unpack_archive(dobject.load(), "tmp")
+    Path("tmp/docs").rename("lndb_docs")
     Path("lndb_docs").rename("docs/setup")
 
     with open("docs/setup/index.md") as f:
@@ -66,8 +66,8 @@ def build(session):
     # Use cases
 
     dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
-    shutil.unpack_archive(dobject.load())
-    Path("docs").rename("redun_lamin_fasta_docs")
+    shutil.unpack_archive(dobject.load(), "tmp")
+    Path("tmp/docs").rename("redun_lamin_fasta_docs")
     Path("redun_lamin_fasta_docs/guide/1-get-started.ipynb").rename(
         "docs/guide/redun-get-started.ipynb"
     )
