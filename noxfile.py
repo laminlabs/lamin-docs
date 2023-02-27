@@ -23,6 +23,17 @@ README_SECTION = """\
 ```
 """
 
+USE_CASES = """
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Use cases
+
+redun-get-started
+redun-run-workflow
+```
+"""
+
 
 @nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def build(session):
@@ -31,10 +42,14 @@ def build(session):
 
     import lamindb as ln
 
+    # LaminDB
+
     dobject = ln.select(ln.DObject, name="lamindb_docs").one()
     shutil.unpack_archive(dobject.load(), "lamindb_docs")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
+
+    # Setup / Lamin
 
     dobject = ln.select(ln.DObject, name="lndb_docs").one()
     shutil.unpack_archive(dobject.load(), "lndb_docs")
@@ -46,10 +61,26 @@ def build(session):
         content = content.replace(README_SECTION, "# Setup")
         f.write(content)
 
-    # changes working directory
-    # execute_notebooks(Path("./docs/cli.ipynb").resolve(), write=True)
-    # os.chdir("..")
+    # Use cases
 
+    dobject = ln.select(ln.DObject, name="redun-lamin-fasta_docs").one()
+    shutil.unpack_archive(dobject.load(), "redun-lamin-fasta_docs")
+    Path("redun-lamin-fasta_docs/guide/1-get-started.ipynb").rename(
+        "docs/guide/redun-get-started.ipynb"
+    )
+    Path("redun-lamin-fasta_docs/guide/1-run-workflow.ipynb").rename(
+        "docs/guide/redun-run-workflow.ipynb"
+    )
+
+    with open("docs/guide/index.md") as f:
+        content = f.read()
+    with open("docs/guide/index.md", "w") as f:
+        content += USE_CASES
+        f.write(content)
+
+    # Build docs
+
+    # init an instance so that docs can be built
     lamin.init(storage="mydata")
     session.install("lamindb")
     build_docs(session)
