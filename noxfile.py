@@ -40,9 +40,9 @@ def build(session):
     shutil.unpack_archive(dobject.load(), "lamin_docs")
     Path("lamin_docs").rename("docs/setup")
 
-    with open("setup/lamin") as f:
+    with open("setup/index.md") as f:
         content = f.read()
-    with open("setup/lamin", "w") as f:
+    with open("setup/index.md", "w") as f:
         content = content.replace(README_SECTION, "# Setup")
         f.write(content)
 
