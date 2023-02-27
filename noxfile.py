@@ -1,11 +1,12 @@
-import os
+# import os
 import shutil
 from pathlib import Path
 
 import lamin
 import nox
 from laminci.nox import build_docs, login_testuser1, run_pre_commit
-from nbproject_test import execute_notebooks
+
+# from nbproject_test import execute_notebooks
 
 nox.options.reuse_existing_virtualenvs = True
 
@@ -27,9 +28,13 @@ def build(session):
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
 
+    dobject = ln.select(ln.DObject, name="lamin_docs").one()
+    shutil.unpack_archive(dobject.load(), "lamin_docs")
+    Path("lamin_docs").rename("docs/setup")
+
     # changes working directory
-    execute_notebooks(Path("./docs/cli.ipynb").resolve(), write=True)
-    os.chdir("..")
+    # execute_notebooks(Path("./docs/cli.ipynb").resolve(), write=True)
+    # os.chdir("..")
 
     lamin.init(storage="mydata")
     session.install("lamindb")
