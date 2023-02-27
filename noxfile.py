@@ -40,9 +40,9 @@ def build(session):
     shutil.unpack_archive(dobject.load(), "lndb_docs")
     Path("lndb_docs").rename("docs/setup")
 
-    with open("setup/index.md") as f:
+    with open("docs/setup/index.md") as f:
         content = f.read()
-    with open("setup/index.md", "w") as f:
+    with open("docs/setup/index.md", "w") as f:
         content = content.replace(README_SECTION, "# Setup")
         f.write(content)
 
