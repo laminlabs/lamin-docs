@@ -13,10 +13,10 @@ For more background, read up on the key [problems](problems) we work towards res
 
 guide/index
 api
-cli
-problems
+setup/index
 faq/index
 modules
 glossary
+problems
 changelog
 ```
