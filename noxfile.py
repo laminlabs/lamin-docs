@@ -63,12 +63,12 @@ def build(session):
 
     # Use cases
 
-    dobject = ln.select(ln.DObject, name="redun-lamin-fasta_docs").one()
-    shutil.unpack_archive(dobject.load(), "redun-lamin-fasta_docs")
-    Path("redun-lamin-fasta_docs/guide/1-get-started.ipynb").rename(
+    dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
+    shutil.unpack_archive(dobject.load(), "redun_lamin_fasta_docs")
+    Path("redun_lamin_fasta_docs/guide/1-get-started.ipynb").rename(
         "docs/guide/redun-get-started.ipynb"
     )
-    Path("redun-lamin-fasta_docs/guide/1-run-workflow.ipynb").rename(
+    Path("redun_lamin_fasta_docs/guide/1-run-workflow.ipynb").rename(
         "docs/guide/redun-run-workflow.ipynb"
     )
 
