@@ -4,7 +4,7 @@ Get started [here](/guide/index).
 
 For more background, read up on the key [problems](problems) we work towards resolving or browse Lamin's [data modules](modules).
 
-## Components
+**Components:**
 
 - **[LaminDB](/guide/index)**. Core python API that manages object storage and SQL in a distributed way.
 - **[Lamin CLI]((/guide/setup))**. CLI for LaminDB instance setup and communications.
