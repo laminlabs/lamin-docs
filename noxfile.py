@@ -61,7 +61,7 @@ def build(session):
     with open("docs/setup/index.md") as f:
         content = f.read()
     with open("docs/setup/index.md", "w") as f:
-        content = content.replace(README_SECTION, "# Setup")
+        content = content.replace("# Guide", "# Setup")
         f.write(content)
 
     # Use cases
