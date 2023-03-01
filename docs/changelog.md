@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+:memo: Simplify setup | [10](https://github.com/laminlabs/lamin-docs/pull/10) | [falexwolf](https://github.com/falexwolf) | 2023-03-01 |
 📝 Added components | [9](https://github.com/laminlabs/lamin-docs/pull/9) | [sunnyosun](https://github.com/sunnyosun) | 2023-02-28 |
 📝 Add redun use case | [8](https://github.com/laminlabs/lamin-docs/pull/8) | [falexwolf](https://github.com/falexwolf) | 2023-02-27 |
 📝 Add h2 to api page | [6](https://github.com/laminlabs/lamin-docs/pull/6) | [sunnyosun](https://github.com/sunnyosun) | 2023-02-27 |
