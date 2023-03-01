@@ -2,7 +2,7 @@
 import shutil
 from pathlib import Path
 
-import lamin
+import lamindb as ln
 import nox
 from laminci.nox import build_docs, login_testuser1, run_pre_commit
 
@@ -38,9 +38,7 @@ redun-run-workflow
 @nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def build(session):
     login_testuser1(session)
-    lamin.load("testuser1/lamin-site-assets", migrate=True)
-
-    import lamindb as ln
+    ln.setup.load("testuser1/lamin-site-assets", migrate=True)
 
     # LaminDB
 
@@ -85,6 +83,6 @@ def build(session):
     # Build docs
 
     # init an instance so that docs can be built
-    lamin.init(storage="mydata")
+    ln.setup.init(storage="mydata")
     session.install("lamindb")
     build_docs(session)
