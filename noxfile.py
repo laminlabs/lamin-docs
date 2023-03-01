@@ -49,18 +49,19 @@ def build(session):
     Path("tmp/docs").rename("lamindb_docs")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
+    Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
     # Setup / Lamin
 
     dobject = ln.select(ln.DObject, name="lndb_docs").one()
     shutil.unpack_archive(dobject.load(), "tmp")
     Path("tmp/docs").rename("lndb_docs")
-    Path("lndb_docs").rename("docs/setup")
+    Path("lndb_docs/guide").rename("docs/setup")
 
     with open("docs/setup/index.md") as f:
         content = f.read()
     with open("docs/setup/index.md", "w") as f:
-        content = content.replace(README_SECTION, "# Setup")
+        content = content.replace("# Guide", "# Setup")
         f.write(content)
 
     # Use cases
