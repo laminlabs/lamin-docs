@@ -1,10 +1,11 @@
 # Modules
 
-Lamin is currently Python only but might include other languages in the future.
+- Lamin's high-level API is currently Python only but might include other languages in the future.
+- On a lower level, data is stored in SQL databases and otherwise language-independent storage formats.
 
 ## LaminDB
 
-[LaminDB](https://lamin.ai/docs/db) provides the core API.
+[LaminDB](https://lamin.ai/docs) provides the core API.
 
 ## Standalone modules
 
@@ -23,6 +24,6 @@ Two data modules can be used standalone.
 
 ## Open-sourced data modules
 
-Below follow Python packages behind [LaminDB](https://lamin.ai/docs/db).
+Below follow Python packages behind [LaminDB](https://lamin.ai/docs).
 
 [Reach out](https://lamin.ai/contact) for non-listed closed-source extensions and maintenance of an enterprise data platform.

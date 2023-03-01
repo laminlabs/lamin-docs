@@ -1,17 +1,17 @@
 # Overview
 
-Get started [here](/guide/index).
+- **Get started** with the **[guide](guide/index)**.
+- See the **[source code](https://github.com/laminlabs/lamindb)** on GitHub.
 
-For more background, read up on the key [problems](problems) we work towards resolving or browse Lamin's [data modules](modules).
+Basic tools:
 
-**Components:**
+- **[LaminDB](guide/index)**. Core Python API for managing data & analyses. Contains {mod}`~lamindb.schema` for tracking generic data (`DObject`, `DFolder`, `Pipeline`, `Notebook`, `Run`, `User`, `Storage`, etc.).
+- **[Lamin CLI](setup/index)**. CLI for setting up LaminDB instances.
+- **[Bionty](https://lamin.ai/docs/bionty)**. Python API for managing biological knowledge.
+- **[lnschema-bionty](https://lamin.ai/docs/lnschema-bionty)**. Extension schema for basic biological entities (`Gene`, `Protein`, `Tissue`, etc.).
+- **[nbproject](https://lamin.ai/docs/nbproject)**. Python API for managing Jupyter notebooks.
 
-- **[LaminDB](guide/index)**. Core python API that manages object storage and SQL in a distributed way.
-- **[Lamin CLI](setup/index)**. CLI for LaminDB instance setup and communications.
-- **[lnschema-core](https://lamin.ai/docs/lnschema-core)**. Typed Python API defines data lineage and storage schema using SQLModel.
-- **[lnschema-bionty](https://lamin.ai/docs/lnschema-bionty)**. Typed Python API defines biological entities using SQLModel.
-- **[nbproject](https://lamin.ai/docs/nbproject)**. Python API manages Jupyter notebooks.
-- **[Bionty](https://lamin.ai/docs/bionty)**. Python API manages biological entities.
+For more background, read up on the key [problems](problems) we aim to solve or see a comprehensive list of [modules](modules).
 
 ```{toctree}
 :maxdepth: 1
@@ -21,8 +21,8 @@ guide/index
 api
 setup/index
 faq/index
+changelog
 modules
 glossary
 problems
-changelog
 ```
