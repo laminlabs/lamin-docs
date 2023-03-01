@@ -5,11 +5,11 @@
 
 Basic components:
 
-- **[LaminDB](guide/index)**. Core Python API that manages storage and SQL databases. Contains `SQLModel`-based [schema](lamindb.schema) for tracking generic data (`DObject`, `DFolder`, `Pipeline`, `Notebook`, `Run`, `User`, `Storage`, etc.).
+- **[LaminDB](guide/index)**. Core Python API that manages storage and a SQL database. Contains `SQLModel`-based **[core schema](lamindb.schema)** for tracking generic data (`DObject`, `DFolder`, `Pipeline`, `Notebook`, `Run`, `User`, `Storage`, etc.).
 - **[Lamin CLI](setup/index)**. CLI for setting up LaminDB instances.
-- **[lnschema-bionty](https://lamin.ai/docs/lnschema-bionty)**. `SQLModel`-based schema defining basic biological entities (`Gene`, `Protein`, `Tissue`, etc.).
+- **[Bionty](https://lamin.ai/docs/bionty)**. Python API for managing biological knowledge.
 - **[nbproject](https://lamin.ai/docs/nbproject)**. Python API for managing Jupyter notebooks.
-- **[Bionty](https://lamin.ai/docs/bionty)**. Python API for defining biological entities based on knowledge.
+- **[lnschema-bionty](https://lamin.ai/docs/lnschema-bionty)**. `SQLModel`-based schema defining basic biological entities (`Gene`, `Protein`, `Tissue`, etc.).
 
 For more background, read up on the key [problems](problems) we work towards resolving or see a comprehensive list of [modules](modules).
 
