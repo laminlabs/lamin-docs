@@ -74,6 +74,13 @@ def build(session):
         "docs/guide/redun-run-workflow.ipynb"
     )
 
+    dobject = ln.select(ln.DObject, name="pytorch_lamin_mnist_docs").one()
+    shutil.unpack_archive(dobject.load(), "tmp")
+    Path("tmp/docs").rename("pytorch_lamin_mnist_docs")
+    Path("pytorch_lamin_mnist_docs/guide/mnist-local.ipynb").rename(
+        "docs/guide/pytorch.ipynb"
+    )
+
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
