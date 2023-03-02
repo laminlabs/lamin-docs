@@ -84,5 +84,4 @@ def build(session):
 
     # init an instance so that docs can be built
     ln.setup.init(storage="mydata")
-    session.install("lamindb")
     build_docs(session)
