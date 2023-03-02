@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+🚸 Remove lamindb from noxfile | [12](https://github.com/laminlabs/lamin-docs/pull/12) | [falexwolf](https://github.com/falexwolf) | 2023-03-02 |
 :lipstick: Polish | [11](https://github.com/laminlabs/lamin-docs/pull/11) | [falexwolf](https://github.com/falexwolf) | 2023-03-01 |
 :memo: Simplify setup | [10](https://github.com/laminlabs/lamin-docs/pull/10) | [falexwolf](https://github.com/falexwolf) | 2023-03-01 |
 📝 Added components | [9](https://github.com/laminlabs/lamin-docs/pull/9) | [sunnyosun](https://github.com/sunnyosun) | 2023-02-28 |
