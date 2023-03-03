@@ -74,6 +74,7 @@ def build(session):
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
         content = content.replace("\nsetup\n", "\n")
+        content = content.replace("/guide/setup", "/setup/quickstart")
         f.write(content)
 
     # lndb guide
