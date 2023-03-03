@@ -16,18 +16,9 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-LAMINDB_GUIDE_FROM = """\
-```{toctree}
-:maxdepth: 1
+LAMINDB_GUIDE_FROM = "\nsetup\n"
 
-setup
-"""
-
-LAMINDB_GUIDE_TO = """\
-```{toctree}
-:maxdepth: 1
-
-"""
+LAMINDB_GUIDE_TO = ""
 
 LNDB_GUIDE_FROM = """\
 ```{toctree}
