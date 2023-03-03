@@ -16,10 +16,6 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-LAMINDB_GUIDE_FROM = "\nsetup\n"
-
-LAMINDB_GUIDE_TO = ""
-
 LNDB_GUIDE_FROM = """\
 ```{toctree}
 :maxdepth: 1
@@ -77,7 +73,7 @@ def build(session):
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
-        content = content.replace(LAMINDB_GUIDE_FROM, LAMINDB_GUIDE_TO)
+        content = content.replace("\nsetup\n", "\n")
         f.write(content)
 
     # lndb guide
