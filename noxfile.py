@@ -16,11 +16,32 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-README_SECTION = """\
-```{include} ../README.md
-:start-line: 0
-:end-line: 1
-```
+LAMINDB_GUIDE_FROM = """\
+```{toctree}
+:maxdepth: 1
+
+setup
+"""
+
+LAMINDB_GUIDE_TO = """\
+```{toctree}
+:maxdepth: 1
+
+"""
+
+LNDB_GUIDE_FROM = """\
+```{toctree}
+:maxdepth: 1
+
+setup-user
+"""
+
+LNDB_GUIDE_TO = """\
+```{toctree}
+:maxdepth: 1
+
+quickstart
+setup-user
 """
 
 USE_CASES = """
@@ -56,10 +77,24 @@ def build(session):
     Path("tmp/docs").rename("lndb_docs")
     Path("lndb_docs/guide").rename("docs/setup")
 
+    # Move setup within LaminDB to setup section as overview
+    Path("docs/guide/01-setup.ipynb").rename("docs/setup/overview.ipynb")
+
+    # Fix indexes
+
+    # lamindb guide
+    with open("docs/guide/index.md") as f:
+        content = f.read()
+    with open("docs/guide/index.md", "w") as f:
+        content = content.replace(LAMINDB_GUIDE_FROM, LAMINDB_GUIDE_TO)
+        f.write(content)
+
+    # lndb guide
     with open("docs/setup/index.md") as f:
         content = f.read()
     with open("docs/setup/index.md", "w") as f:
         content = content.replace("# Guide", "# Setup")
+        content = content.replace(LNDB_GUIDE_FROM, LNDB_GUIDE_TO)
         f.write(content)
 
     # Use cases
