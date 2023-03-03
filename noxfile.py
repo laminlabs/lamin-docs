@@ -65,7 +65,7 @@ def build(session):
     Path("lndb_docs/guide").rename("docs/setup")
 
     # Move setup within LaminDB to setup section as overview
-    Path("docs/guide/01-setup.ipynb").rename("docs/setup/overview.ipynb")
+    Path("docs/guide/01-setup.ipynb").rename("docs/setup/quickstart.ipynb")
 
     # Fix indexes
 
