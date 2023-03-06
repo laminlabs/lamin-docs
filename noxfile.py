@@ -51,8 +51,8 @@ def build(session):
     # LaminDB
 
     dobject = ln.select(ln.DObject, name="lamindb_docs").one()
-    shutil.unpack_archive(dobject.load(), "tmp")
-    Path("tmp/docs").rename("lamindb_docs")
+    shutil.unpack_archive(dobject.load(), "lamindb_docs")
+    Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
@@ -60,8 +60,7 @@ def build(session):
     # Setup / Lamin
 
     dobject = ln.select(ln.DObject, name="lndb_docs").one()
-    shutil.unpack_archive(dobject.load(), "tmp")
-    Path("tmp/docs").rename("lndb_docs")
+    shutil.unpack_archive(dobject.load(), "lndb_docs")
     Path("lndb_docs/guide").rename("docs/setup")
 
     # Move setup within LaminDB to setup section as overview
@@ -88,8 +87,7 @@ def build(session):
     # Use cases
 
     dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
-    shutil.unpack_archive(dobject.load(), "tmp")
-    Path("tmp/docs").rename("redun_lamin_fasta_docs")
+    shutil.unpack_archive(dobject.load(), "redun_lamin_fasta_docs")
     Path("redun_lamin_fasta_docs/guide/1-get-started.ipynb").rename(
         "docs/guide/redun-get-started.ipynb"
     )
