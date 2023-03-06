@@ -1,6 +1,7 @@
 # import os
 import shutil
 from pathlib import Path
+from typing import List, Tuple
 
 import lamindb as ln
 import nox
@@ -43,6 +44,15 @@ redun-run-workflow
 """
 
 
+def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> None:
+    with open(filename) as f:
+        content = f.read()
+    with open(filename, "w") as f:
+        for args in mapped_content:
+            content = content.replace(*args)
+        f.write(content)
+
+
 @nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def build(session):
     login_testuser1(session)
@@ -69,20 +79,13 @@ def build(session):
     # Fix indexes
 
     # lamindb guide
-    with open("docs/guide/index.md") as f:
-        content = f.read()
-    with open("docs/guide/index.md", "w") as f:
-        content = content.replace("\nsetup\n", "\n")
-        content = content.replace("/guide/setup", "/setup/quickstart")
-        f.write(content)
+    mapped_content = [("\nsetup\n", "\n"), ("/guide/setup", "/setup/quickstart")]
+    replace_content("docs/guide/index.md", mapped_content=mapped_content)
+    replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
 
     # lndb guide
-    with open("docs/setup/index.md") as f:
-        content = f.read()
-    with open("docs/setup/index.md", "w") as f:
-        content = content.replace("# Guide", "# Setup")
-        content = content.replace(LNDB_GUIDE_FROM, LNDB_GUIDE_TO)
-        f.write(content)
+    mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
+    replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
     # Use cases
 
