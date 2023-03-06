@@ -94,7 +94,7 @@ def build(session):
         "docs/guide/redun-get-started.ipynb"
     )
     Path("redun_lamin_fasta_docs/guide/2-run-workflow.ipynb").rename(
-        "docs/guide/redun-run-workflow.ipynb"
+        "docs/guide/run-workflow.ipynb"
     )
 
     with open("docs/guide/index.md") as f:
