@@ -36,7 +36,7 @@ USE_CASES = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Use cases
+:caption: Lab operations
 
 redun-get-started
 redun-run-workflow
