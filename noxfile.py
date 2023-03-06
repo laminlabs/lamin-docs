@@ -1,6 +1,7 @@
 # import os
 import shutil
 from pathlib import Path
+from typing import List, Tuple
 
 import lamindb as ln
 import nox
@@ -43,6 +44,15 @@ redun-run-workflow
 """
 
 
+def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> None:
+    with open(filename) as f:
+        content = f.read()
+    with open(filename, "w") as f:
+        for args in mapped_content:
+            content = content.replace(*args)
+        f.write(content)
+
+
 @nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
 def build(session):
     login_testuser1(session)
@@ -51,8 +61,8 @@ def build(session):
     # LaminDB
 
     dobject = ln.select(ln.DObject, name="lamindb_docs").one()
-    shutil.unpack_archive(dobject.load(), "tmp")
-    Path("tmp/docs").rename("lamindb_docs")
+    shutil.unpack_archive(dobject.load(), "lamindb_docs")
+    Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
@@ -60,8 +70,7 @@ def build(session):
     # Setup / Lamin
 
     dobject = ln.select(ln.DObject, name="lndb_docs").one()
-    shutil.unpack_archive(dobject.load(), "tmp")
-    Path("tmp/docs").rename("lndb_docs")
+    shutil.unpack_archive(dobject.load(), "lndb_docs")
     Path("lndb_docs/guide").rename("docs/setup")
 
     # Move setup within LaminDB to setup section as overview
@@ -70,26 +79,18 @@ def build(session):
     # Fix indexes
 
     # lamindb guide
-    with open("docs/guide/index.md") as f:
-        content = f.read()
-    with open("docs/guide/index.md", "w") as f:
-        content = content.replace("\nsetup\n", "\n")
-        content = content.replace("/guide/setup", "/setup/quickstart")
-        f.write(content)
+    mapped_content = [("\nsetup\n", "\n"), ("/guide/setup", "/setup/quickstart")]
+    replace_content("docs/guide/index.md", mapped_content=mapped_content)
+    replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
 
     # lndb guide
-    with open("docs/setup/index.md") as f:
-        content = f.read()
-    with open("docs/setup/index.md", "w") as f:
-        content = content.replace("# Guide", "# Setup")
-        content = content.replace(LNDB_GUIDE_FROM, LNDB_GUIDE_TO)
-        f.write(content)
+    mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
+    replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
     # Use cases
 
     dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
-    shutil.unpack_archive(dobject.load(), "tmp")
-    Path("tmp/docs").rename("redun_lamin_fasta_docs")
+    shutil.unpack_archive(dobject.load(), "redun_lamin_fasta_docs")
     Path("redun_lamin_fasta_docs/guide/1-get-started.ipynb").rename(
         "docs/guide/redun-get-started.ipynb"
     )
