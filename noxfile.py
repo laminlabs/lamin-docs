@@ -100,7 +100,7 @@ def build(session):
 
     dobject = ln.select(ln.DObject, name="pytorch_lamin_mnist_docs").one()
     shutil.unpack_archive(dobject.load(), "pytorch_lamin_mnist_docs")
-    Path("redun_lamin_fasta_docs/guide/mnist-local.ipynb").rename(
+    Path("pytorch_lamin_mnist_docs/guide/mnist-local.ipynb").rename(
         "docs/guide/mnist-local.ipynb"
     )
 
