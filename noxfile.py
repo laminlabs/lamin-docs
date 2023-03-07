@@ -36,9 +36,10 @@ USE_CASES = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Lab Ops
+:caption: Use cases
 
 redun-get-started
+mnist-local
 ```
 """
 
@@ -95,6 +96,12 @@ def build(session):
     )
     Path("redun_lamin_fasta_docs/guide/2-run-workflow.ipynb").rename(
         "docs/guide/run-workflow.ipynb"
+    )
+
+    dobject = ln.select(ln.DObject, name="pytorch_lamin_mnist_docs").one()
+    shutil.unpack_archive(dobject.load(), "pytorch_lamin_mnist_docs")
+    Path("redun_lamin_fasta_docs/guide/mnist-local.ipynb").rename(
+        "docs/guide/mnist-local.ipynb"
     )
 
     with open("docs/guide/index.md") as f:
