@@ -24,11 +24,11 @@ html_theme_options["logo"] = {
     "text": project,
     "root": "https://lamin.ai",
     "navbar_persistent": "search-button.html",
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/laminlabs/lamindb",
-            "icon": "fa-brands fa-github",
-        }
-    ],
 }
+html_theme_options["icon_links"] = [
+    {
+        "name": "GitHub",
+        "url": "https://github.com/laminlabs/lamindb",
+        "icon": "fa-brands fa-github",
+    },
+]
