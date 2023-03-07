@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+:memo: Add MNIST | [17](https://github.com/laminlabs/lamin-docs/pull/17) | [falexwolf](https://github.com/falexwolf) | 2023-03-07 |
 :bento: Track README | [15](https://github.com/laminlabs/lamin-docs/pull/15) | [falexwolf](https://github.com/falexwolf) | 2023-03-06 |
 :truck: Move setup guide into lndb guide | [14](https://github.com/laminlabs/lamin-docs/pull/14) | [falexwolf](https://github.com/falexwolf) | 2023-03-03 |
 🚸 Remove lamindb from noxfile | [12](https://github.com/laminlabs/lamin-docs/pull/12) | [falexwolf](https://github.com/falexwolf) | 2023-03-02 |
