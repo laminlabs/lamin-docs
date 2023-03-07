@@ -23,4 +23,5 @@ html_theme_options["logo"] = {
     "link": ogp_site_url,
     "text": project,
     "root": "https://lamin.ai",
+    "navbar_persistent": "search-button.html",
 }
