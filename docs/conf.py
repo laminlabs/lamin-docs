@@ -15,7 +15,7 @@ project = "Lamin Docs"
 html_title = f"{project}"
 html_context["github_repo"] = "lamin-docs"  # noqa
 
-ogp_site_url = "https://lamin.ai/docs"
+ogp_site_url = "https://lamin.ai/docs/"
 ogp_site_name = project
 
 # We're actually using this for the link behind the brand of the page!
@@ -23,7 +23,6 @@ html_theme_options["logo"] = {
     "link": ogp_site_url,
     "text": project,
     "root": "https://lamin.ai",
-    "navbar_persistent": "search-button.html",
 }
 html_theme_options["icon_links"] = [
     {
