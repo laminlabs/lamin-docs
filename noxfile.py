@@ -36,7 +36,7 @@ USE_CASES = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Use cases
+:caption: Integrations
 
 redun
 mnist-local
