@@ -38,7 +38,7 @@ USE_CASES = """
 :hidden:
 :caption: Use cases
 
-redun-get-started
+redun
 mnist-local
 ```
 """
@@ -91,11 +91,9 @@ def build(session):
 
     dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
     shutil.unpack_archive(dobject.load(), "redun_lamin_fasta_docs")
-    Path("redun_lamin_fasta_docs/guide/1-get-started.ipynb").rename(
-        "docs/guide/redun-get-started.ipynb"
-    )
-    Path("redun_lamin_fasta_docs/guide/2-run-workflow.ipynb").rename(
-        "docs/guide/run-workflow.ipynb"
+    Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
+    Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
+        "docs/guide/redun-run.ipynb"
     )
 
     dobject = ln.select(ln.DObject, name="pytorch_lamin_mnist_docs").one()
