@@ -94,7 +94,10 @@ def build(session):
     replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
     # bionty index
-    mapped_content = [("../README.md", "./README.md")]
+    mapped_content = [
+        ("../README.md", "./README.md"),
+        ("# Bionty: Manage ontologies & curate metadata", "# Bionty"),
+    ]
     replace_content("docs/bionty/index.md", mapped_content=mapped_content)
 
     # Use cases
