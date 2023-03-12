@@ -76,6 +76,12 @@ def build(session):
     # Move setup within LaminDB to setup section as overview
     Path("docs/guide/01-setup.ipynb").rename("docs/setup/quickstart.ipynb")
 
+    # Bionty
+
+    dobject = ln.select(ln.DObject, name="bionty_docs").one()
+    shutil.unpack_archive(dobject.load(), "bionty_docs")
+    Path("bionty_docs").rename("docs/bionty")
+
     # Fix indexes
 
     # lamindb guide
