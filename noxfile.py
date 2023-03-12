@@ -93,6 +93,10 @@ def build(session):
     mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
     replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
+    # bionty index
+    mapped_content = [("../README.md", "./README.md")]
+    replace_content("docs/bionty/index.md", mapped_content=mapped_content)
+
     # Use cases
 
     dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
