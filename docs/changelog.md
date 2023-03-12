@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+:bento: Add Bionty | [19](https://github.com/laminlabs/lamin-docs/pull/19) | [falexwolf](https://github.com/falexwolf) | 2023-03-12 |
 📝 Try to add search button | [18](https://github.com/laminlabs/lamin-docs/pull/18) | [falexwolf](https://github.com/falexwolf) | 2023-03-07 |
 :memo: Add MNIST | [17](https://github.com/laminlabs/lamin-docs/pull/17) | [falexwolf](https://github.com/falexwolf) | 2023-03-07 |
 :bento: Track README | [15](https://github.com/laminlabs/lamin-docs/pull/15) | [falexwolf](https://github.com/falexwolf) | 2023-03-06 |
