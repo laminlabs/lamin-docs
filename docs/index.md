@@ -19,6 +19,7 @@ For more background, read up on the key [problems](problems) we aim to solve or 
 guide/index
 api
 setup/index
+bionty/index
 faq/index
 changelog
 modules

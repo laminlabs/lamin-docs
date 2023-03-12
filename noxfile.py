@@ -76,6 +76,12 @@ def build(session):
     # Move setup within LaminDB to setup section as overview
     Path("docs/guide/01-setup.ipynb").rename("docs/setup/quickstart.ipynb")
 
+    # Bionty
+
+    dobject = ln.select(ln.DObject, name="bionty_docs").one()
+    shutil.unpack_archive(dobject.load(), "bionty_docs")
+    Path("bionty_docs").rename("docs/bionty")
+
     # Fix indexes
 
     # lamindb guide
@@ -86,6 +92,16 @@ def build(session):
     # lndb guide
     mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
     replace_content("docs/setup/index.md", mapped_content=mapped_content)
+
+    # bionty index
+    mapped_content = [
+        ("../README.md", "./README.md"),
+    ]
+    replace_content("docs/bionty/index.md", mapped_content=mapped_content)
+    mapped_content = [
+        ("# Bionty: Manage ontologies & curate metadata", "# Bionty"),
+    ]
+    replace_content("docs/bionty/README.md", mapped_content=mapped_content)
 
     # Use cases
 

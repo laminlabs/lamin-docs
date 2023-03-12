@@ -2,6 +2,11 @@ lamindb_docs/
 docs/guide/
 mydata/
 docs/faq/
+docs/bionty/
+docs/setup/
+lndb_docs/
+pytorch_lamin_mnist_docs/
+redun_lamin_fasta_docs/
 
 # macOS
 .DS_Store
