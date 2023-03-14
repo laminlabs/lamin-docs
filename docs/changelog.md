@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+:construction_worker: Try within venv | [20](https://github.com/laminlabs/lamin-docs/pull/20) | [falexwolf](https://github.com/falexwolf) | 2023-03-14 |
 :bento: Add Bionty | [19](https://github.com/laminlabs/lamin-docs/pull/19) | [falexwolf](https://github.com/falexwolf) | 2023-03-12 |
 📝 Try to add search button | [18](https://github.com/laminlabs/lamin-docs/pull/18) | [falexwolf](https://github.com/falexwolf) | 2023-03-07 |
 :memo: Add MNIST | [17](https://github.com/laminlabs/lamin-docs/pull/17) | [falexwolf](https://github.com/falexwolf) | 2023-03-07 |
