@@ -127,5 +127,8 @@ def build(session):
     # Build docs
 
     # init an instance so that docs can be built
+    # install lamindb and bionty from github
+    session.install("git+https://github.com/laminlabs/bionty")
+    session.install("git+https://github.com/laminlabs/lamindb")
     ln.setup.init(storage="mydata")
     build_docs(session)
