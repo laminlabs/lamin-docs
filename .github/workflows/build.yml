@@ -43,9 +43,10 @@ jobs:
           key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
       - name: Install pip and nox
         run: |
-          python -m pip install --upgrade pip
-          pip install "laminci>=0.2.0"
-          pip install lamindb -U
+          python -m pip install -U pip
+          pip install -U laminci
+          pip install -U lamindb
+          pip install -U bionty
           pip install nbproject_test
           sudo apt-get -y install graphviz
           sudo apt-get install sqlite3-tools=3.37.2-2
