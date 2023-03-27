@@ -103,6 +103,19 @@ def build(session):
     ]
     replace_content("docs/bionty/README.md", mapped_content=mapped_content)
 
+    # Special guides
+
+    # knowledge
+    file = ln.select(ln.File, name="lnschema_bionty").one()
+    shutil.unpack_archive(file.load(), "lnschema_bionty_docs")
+    Path("lnschema_bionty_docs/guide/knowledge.ipynb").rename(
+        "docs/guide/knowledge.ipynb"
+    )
+    replace_content(
+        "docs/guide/index.md",
+        [(":caption: Biology\n\n", ":caption: Biology\n\nknowledge")],
+    )
+
     # Use cases
 
     file = ln.select(ln.File, name="redun_lamin_fasta_docs").one()
