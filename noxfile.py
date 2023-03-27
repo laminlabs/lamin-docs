@@ -64,7 +64,6 @@ def build(session):
     shutil.unpack_archive(file.load(), "lamindb_docs")
     Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
-    Path("lamindb_docs/faq").rename("docs/faq")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
     # Setup / Lamin
@@ -102,19 +101,6 @@ def build(session):
         ("# Bionty: Manage ontologies & curate metadata", "# Bionty"),
     ]
     replace_content("docs/bionty/README.md", mapped_content=mapped_content)
-
-    # Special guides
-
-    # knowledge
-    file = ln.select(ln.File, name="lnschema_bionty_docs").one()
-    shutil.unpack_archive(file.load(), "lnschema_bionty_docs")
-    Path("lnschema_bionty_docs/guide/knowledge.ipynb").rename(
-        "docs/guide/knowledge.ipynb"
-    )
-    replace_content(
-        "docs/guide/index.md",
-        [(":caption: Biology\n\n", ":caption: Biology\n\nknowledge\n")],
-    )
 
     # Use cases
 
