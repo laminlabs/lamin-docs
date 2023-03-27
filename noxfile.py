@@ -60,8 +60,8 @@ def build(session):
 
     # LaminDB
 
-    dobject = ln.select(ln.DObject, name="lamindb_docs").one()
-    shutil.unpack_archive(dobject.load(), "lamindb_docs")
+    file = ln.select(ln.File, name="lamindb_docs").one()
+    shutil.unpack_archive(file.load(), "lamindb_docs")
     Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
@@ -69,8 +69,8 @@ def build(session):
 
     # Setup / Lamin
 
-    dobject = ln.select(ln.DObject, name="lndb_docs").one()
-    shutil.unpack_archive(dobject.load(), "lndb_docs")
+    file = ln.select(ln.File, name="lndb_docs").one()
+    shutil.unpack_archive(file.load(), "lndb_docs")
     Path("lndb_docs/guide").rename("docs/setup")
 
     # Move setup within LaminDB to setup section as overview
@@ -78,8 +78,8 @@ def build(session):
 
     # Bionty
 
-    dobject = ln.select(ln.DObject, name="bionty_docs").one()
-    shutil.unpack_archive(dobject.load(), "bionty_docs")
+    file = ln.select(ln.File, name="bionty_docs").one()
+    shutil.unpack_archive(file.load(), "bionty_docs")
     Path("bionty_docs").rename("docs/bionty")
 
     # Fix indexes
@@ -105,15 +105,15 @@ def build(session):
 
     # Use cases
 
-    dobject = ln.select(ln.DObject, name="redun_lamin_fasta_docs").one()
-    shutil.unpack_archive(dobject.load(), "redun_lamin_fasta_docs")
+    file = ln.select(ln.File, name="redun_lamin_fasta_docs").one()
+    shutil.unpack_archive(file.load(), "redun_lamin_fasta_docs")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
     Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
         "docs/guide/redun-run.ipynb"
     )
 
-    dobject = ln.select(ln.DObject, name="pytorch_lamin_mnist_docs").one()
-    shutil.unpack_archive(dobject.load(), "pytorch_lamin_mnist_docs")
+    file = ln.select(ln.File, name="pytorch_lamin_mnist_docs").one()
+    shutil.unpack_archive(file.load(), "pytorch_lamin_mnist_docs")
     Path("pytorch_lamin_mnist_docs/guide/mnist-local.ipynb").rename(
         "docs/guide/mnist-local.ipynb"
     )
