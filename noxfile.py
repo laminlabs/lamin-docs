@@ -143,10 +143,5 @@ def build(session):
     # install lamindb and bionty from github
     session.install("git+https://github.com/laminlabs/bionty")
     session.install("git+https://github.com/laminlabs/lamindb")
-    import lamindb
-    import lnschema_core
-
-    lamindb.Run.transform.__doc__ = "Link to pipeline or notebook."
-    lnschema_core._core.Run.transform.__doc__ = "Link to pipeline or notebook."
     ln.setup.init(storage="mydata")
     build_docs(session)
