@@ -5,7 +5,7 @@
 
 Basic tools:
 
-- [LaminDB](guide/index). Core Python API for managing R&D data & analyses. Contains {mod}`~lamindb.schema` for tracking generic data (`DObject`, `DFolder`, `Pipeline`, `Notebook`, `Run`, `User`, `Storage`, etc.).
+- [LaminDB](guide/index). Core Python API for managing R&D data & analyses. Contains {mod}`~lamindb.schema` for tracking generic data (`File`, `DFolder`, `Pipeline`, `Notebook`, `Run`, `User`, `Storage`, etc.).
 - [Bionty](https://lamin.ai/docs/bionty). Python API for managing biological knowledge.
 - [lnschema-bionty](https://lamin.ai/docs/lnschema-bionty). Extension schema for basic biological entities (`Gene`, `Protein`, `Tissue`, etc.).
 - [nbproject](https://lamin.ai/docs/nbproject). Python API for managing Jupyter notebooks.
