@@ -143,5 +143,8 @@ def build(session):
     # install lamindb and bionty from github
     session.install("git+https://github.com/laminlabs/bionty")
     session.install("git+https://github.com/laminlabs/lamindb")
+    import lamindb
+
+    lamindb.Run.transform.__doc__ = ""
     ln.setup.init(storage="mydata")
     build_docs(session)
