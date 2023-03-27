@@ -113,7 +113,7 @@ def build(session):
     )
     replace_content(
         "docs/guide/index.md",
-        [(":caption: Biology\n\n", ":caption: Biology\n\nknowledge")],
+        [(":caption: Biology\n\n", ":caption: Biology\n\nknowledge\n")],
     )
 
     # Use cases
