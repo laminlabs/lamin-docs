@@ -106,7 +106,7 @@ def build(session):
     # Special guides
 
     # knowledge
-    file = ln.select(ln.File, name="lnschema_bionty").one()
+    file = ln.select(ln.File, name="lnschema_bionty_docs").one()
     shutil.unpack_archive(file.load(), "lnschema_bionty_docs")
     Path("lnschema_bionty_docs/guide/knowledge.ipynb").rename(
         "docs/guide/knowledge.ipynb"
