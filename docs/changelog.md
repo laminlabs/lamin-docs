@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+📝 Clean up layout | [24](https://github.com/laminlabs/lamin-docs/pull/24) | [falexwolf](https://github.com/falexwolf) | 2023-03-28 |
 Overhaul | [23](https://github.com/laminlabs/lamin-docs/pull/23) | [falexwolf](https://github.com/falexwolf) | 2023-03-27 |
 🍱 Add knowledge guide back | [22](https://github.com/laminlabs/lamin-docs/pull/22) | [falexwolf](https://github.com/falexwolf) | 2023-03-27 |
 🚚 Replace `DObject` with `File` | [21](https://github.com/laminlabs/lamin-docs/pull/21) | [falexwolf](https://github.com/falexwolf) | 2023-03-27 |
