@@ -111,7 +111,7 @@ def build(session):
     replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
     # Clean up LaminDB guide index
-    mapped_content = [OTHER_TOPICS_ORIG, ""]
+    mapped_content = [(OTHER_TOPICS_ORIG, "")]
     replace_content("docs/guide/index.md", mapped_content=mapped_content)
 
     # Add integrations
