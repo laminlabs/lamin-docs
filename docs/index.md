@@ -6,10 +6,5 @@
 
 guide/index
 reference
-setup/index
-bionty/index
 changelog
-modules
-glossary
-problems
 ```
