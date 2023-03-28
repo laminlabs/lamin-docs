@@ -32,7 +32,7 @@ quickstart
 setup-user
 """
 
-USE_CASES = """
+INTEGRATIONS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -40,6 +40,30 @@ USE_CASES = """
 
 redun
 mnist-local
+```
+"""
+
+OTHER_TOPICS_ORIG = """
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Other topics
+
+faq/index
+```
+"""
+
+OTHER_TOPICS = """
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Other topics
+
+../setup/index
+../faq/index
+../modules
+../glossary
+../problems
 ```
 """
 
@@ -66,7 +90,7 @@ def build(session):
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
-    # Setup / Lamin
+    # Setup
 
     file = ln.select(ln.File, name="lndb_docs").one()
     shutil.unpack_archive(file.load(), "lndb_docs")
@@ -74,12 +98,6 @@ def build(session):
 
     # Move setup within LaminDB to setup section as overview
     Path("docs/guide/01-setup.ipynb").rename("docs/setup/quickstart.ipynb")
-
-    # Bionty
-
-    file = ln.select(ln.File, name="bionty_docs").one()
-    shutil.unpack_archive(file.load(), "bionty_docs")
-    Path("bionty_docs").rename("docs/bionty")
 
     # Fix indexes
 
@@ -92,17 +110,11 @@ def build(session):
     mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
     replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
-    # bionty index
-    mapped_content = [
-        ("../README.md", "./README.md"),
-    ]
-    replace_content("docs/bionty/index.md", mapped_content=mapped_content)
-    mapped_content = [
-        ("# Bionty: Manage ontologies & curate metadata", "# Bionty"),
-    ]
-    replace_content("docs/bionty/README.md", mapped_content=mapped_content)
+    # Clean up LaminDB guide index
+    mapped_content = [OTHER_TOPICS_ORIG, ""]
+    replace_content("docs/guide/index.md", mapped_content=mapped_content)
 
-    # Use cases
+    # Add integrations
 
     file = ln.select(ln.File, name="redun_lamin_fasta_docs").one()
     shutil.unpack_archive(file.load(), "redun_lamin_fasta_docs")
@@ -120,7 +132,8 @@ def build(session):
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
-        content += USE_CASES
+        content += INTEGRATIONS
+        content += OTHER_TOPICS
         f.write(content)
 
     # Build docs
