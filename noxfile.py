@@ -45,7 +45,6 @@ mnist-local
 
 OTHER_TOPICS_ORIG = """
 ```{toctree}
-:maxdepth: 1
 :hidden:
 :caption: Other topics
 
@@ -60,7 +59,7 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 ../setup/index
-../faq/index
+faq/index
 ../modules
 ../glossary
 ../problems
