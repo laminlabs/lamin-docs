@@ -17,9 +17,9 @@ def get_pypackage_meta():
             quit()
 
 
-def generate_modules():
-    orig_index = Path("../modules.md")
-    new_index = Path("modules.md")
+def generate_pypackages_table():
+    orig_index = Path("../architecture.md")
+    new_index = Path("architecture.md")
     # copy
     shutil.copyfile(orig_index, new_index)
     # check whether the new docs file has already been modified
