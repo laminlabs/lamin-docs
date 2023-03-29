@@ -57,7 +57,7 @@ OTHER_TOPICS_ORIG = """
 :hidden:
 :caption: Other topics
 
-faq/index
+../faq/index
 ```
 """
 
