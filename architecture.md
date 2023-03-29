@@ -1,4 +1,4 @@
-# Modules
+# Architecture
 
 - Lamin's high-level API is currently Python only but might include other languages in the future.
 - On a lower level, data is stored in SQL databases and otherwise language-independent storage formats.

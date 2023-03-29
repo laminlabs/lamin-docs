@@ -69,7 +69,7 @@ OTHER_TOPICS = """
 
 ../setup/index
 ../faq/index
-../modules
+../architecture
 ../glossary
 ../problems
 ```
