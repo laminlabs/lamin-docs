@@ -32,6 +32,15 @@ quickstart
 setup-user
 """
 
+MODULES = """
+```{toctree}
+:hidden:
+:caption: Modules
+
+../bionty/index
+```
+"""
+
 INTEGRATIONS = """
 ```{toctree}
 :maxdepth: 1
@@ -59,7 +68,7 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 ../setup/index
-faq/index
+../faq/index
 ../modules
 ../glossary
 ../problems
@@ -87,6 +96,7 @@ def build(session):
     shutil.unpack_archive(file.load(), "lamindb_docs")
     Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
+    Path("lamindb_docs/faq").rename("docs/faq")
     Path("lamindb_docs/bionty").rename("docs/bionty")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
@@ -110,6 +120,19 @@ def build(session):
     mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
     replace_content("docs/setup/index.md", mapped_content=mapped_content)
 
+    # Bionty
+
+    file = ln.select(ln.File, name="bionty_docs").one()
+    shutil.unpack_archive(file.load(), "bionty_docs")
+    Path("bionty_docs").rename("docs/bionty")
+
+    replace_content(
+        "docs/bionty/index.md",
+        mapped_content=[
+            ("../README.md", "./README.md"),
+        ],
+    )
+
     # Clean up LaminDB guide index
     mapped_content = [(OTHER_TOPICS_ORIG, "")]
     replace_content("docs/guide/index.md", mapped_content=mapped_content)
@@ -132,6 +155,7 @@ def build(session):
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
+        content += MODULES
         content += INTEGRATIONS
         content += OTHER_TOPICS
         f.write(content)

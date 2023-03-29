@@ -7,9 +7,9 @@ sys.path[:0] = [str(HERE), str(HERE.parent)]
 
 from lamin_sphinx import *  # noqa
 from lamin_sphinx import authors, html_theme_options, html_context  # noqa
-from modules import generate_modules  # noqa
+from pypackages import generate_pypackages_table  # noqa
 
-generate_modules()
+generate_pypackages_table()
 
 project = "Lamin Docs"
 html_title = f"{project}"
