@@ -97,7 +97,6 @@ def build(session):
     Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/faq").rename("docs/faq")
-    Path("lamindb_docs/bionty").rename("docs/bionty")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
     # Setup
