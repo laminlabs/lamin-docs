@@ -32,21 +32,13 @@ quickstart
 setup-user
 """
 
-MODULES = """
-```{toctree}
-:hidden:
-:caption: Modules
-
-../bionty/index
-```
-"""
-
 INTEGRATIONS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
 :caption: Integrations
 
+../bionty/index
 redun
 mnist-local
 ```
@@ -154,7 +146,6 @@ def build(session):
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
-        content += MODULES
         content += INTEGRATIONS
         content += OTHER_TOPICS
         f.write(content)
