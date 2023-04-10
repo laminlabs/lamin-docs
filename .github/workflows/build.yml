@@ -28,9 +28,11 @@ jobs:
           path: lndocs
           ref: main
       - name: Setup Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
+          cache: "pip"
+          cache-dependency-path: ".github/workflows/build.yml" # See dependencies below
       - name: Cache nox
         uses: actions/cache@v3
         with:
@@ -41,14 +43,16 @@ jobs:
         with:
           path: ~/.cache/pre-commit
           key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
-      - name: Install pip and nox
+      - name: Install Python dependencies
         run: |
           python -m pip install -U pip
           pip install -U laminci
-          pip install lamindb
-          pip install nbproject_test
+          pip install -U lamindb
+      - name: Install apt-get dependencies
+        run: |
           sudo apt-get -y install graphviz
           sudo apt-get install sqlite3-tools=3.37.2-2
+          sudo apt-get install libpq-dev
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v1
         with:
