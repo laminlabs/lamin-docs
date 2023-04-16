@@ -95,7 +95,7 @@ def build(session):
     # Setup
 
     file = ln.select(ln.File, key="docs/lndb_docs.zip").one()
-    shutil.unpack_archive(file.load(), "lndb_docs")
+    shutil.unpack_archive(file.stage(), "lndb_docs")
     Path("lndb_docs/guide").rename("docs/setup")
 
     # Move setup within LaminDB to setup section as overview
@@ -115,7 +115,7 @@ def build(session):
     # Bionty
 
     file = ln.select(ln.File, name="bionty_docs").one()
-    shutil.unpack_archive(file.load(), "bionty_docs")
+    shutil.unpack_archive(file.stage(), "bionty_docs")
     Path("bionty_docs").rename("docs/bionty")
 
     replace_content(
@@ -127,8 +127,8 @@ def build(session):
 
     # nbproject
 
-    file = ln.select(ln.File, name="nbproject_docs").one()
-    shutil.unpack_archive(file.load(), "nbproject_docs")
+    file = ln.select(ln.File, name="nbproject_docs.zip").one()
+    shutil.unpack_archive(file.stage(), "nbproject_docs")
     Path("nbproject_docs").rename("docs/nbproject")
 
     replace_content(
@@ -145,14 +145,14 @@ def build(session):
     # Add integrations
 
     file = ln.select(ln.File, key="docs/redun_lamin_fasta_docs.zip").one()
-    shutil.unpack_archive(file.load(), "redun_lamin_fasta_docs")
+    shutil.unpack_archive(file.stage(), "redun_lamin_fasta_docs")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
     Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
         "docs/guide/redun-run.ipynb"
     )
 
     file = ln.select(ln.File, key="docs/pytorch_lamin_mnist_docs.zip").one()
-    shutil.unpack_archive(file.load(), "pytorch_lamin_mnist_docs")
+    shutil.unpack_archive(file.stage(), "pytorch_lamin_mnist_docs")
     Path("pytorch_lamin_mnist_docs/guide/mnist-local.ipynb").rename(
         "docs/guide/mnist-local.ipynb"
     )
