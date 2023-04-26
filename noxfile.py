@@ -39,7 +39,6 @@ INTEGRATIONS = """
 :caption: Integrations
 
 ../bionty/index
-../nbproject/index
 redun
 mnist-local
 ```
@@ -120,19 +119,6 @@ def build(session):
 
     replace_content(
         "docs/bionty/index.md",
-        mapped_content=[
-            ("../README.md", "./README.md"),
-        ],
-    )
-
-    # nbproject
-
-    file = ln.select(ln.File, name="nbproject_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "nbproject_docs")
-    Path("nbproject_docs").rename("docs/nbproject")
-
-    replace_content(
-        "docs/nbproject/index.md",
         mapped_content=[
             ("../README.md", "./README.md"),
         ],
