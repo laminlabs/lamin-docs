@@ -113,7 +113,7 @@ def build(session):
 
     # Bionty
 
-    file = ln.select(ln.File, name="bionty_docs").one()
+    file = ln.select(ln.File, key="docs/bionty_docs.zip").one()
     shutil.unpack_archive(file.stage(), "bionty_docs")
     Path("bionty_docs").rename("docs/bionty")
 
