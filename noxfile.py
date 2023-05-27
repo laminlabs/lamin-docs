@@ -97,7 +97,7 @@ def build(session):
     Path("lndb_docs/guide").rename("docs/setup")
 
     mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
-    replace_content("docs/setup/index.ipynb", mapped_content=mapped_content)
+    replace_content("docs/setup/00-index.ipynb", mapped_content=mapped_content)
 
     # Bionty
 
