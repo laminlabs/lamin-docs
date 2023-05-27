@@ -96,22 +96,8 @@ def build(session):
     shutil.unpack_archive(file.stage(), "lndb_docs")
     Path("lndb_docs/guide").rename("docs/setup")
 
-    # Move setup within LaminDB to setup section as overview
-    Path("docs/guide/01-setup.ipynb").rename("docs/setup/quickstart.ipynb")
-
-    # Fix indexes
-
-    # lamindb guide
-    mapped_content = [
-        ("\nsetup\n", "\n../setup/index\n"),  # point to lndb-generated content
-        ("/guide/setup", "/setup/quickstart"),
-    ]
-    replace_content("docs/guide/index.md", mapped_content=mapped_content)
-    replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
-
-    # lndb guide
     mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
-    replace_content("docs/setup/index.md", mapped_content=mapped_content)
+    replace_content("docs/setup/index.ipynb", mapped_content=mapped_content)
 
     # Bionty
 
