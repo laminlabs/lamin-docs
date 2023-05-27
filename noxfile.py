@@ -76,7 +76,7 @@ def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> No
         f.write(content)
 
 
-@nox.session(python=["3.7", "3.8", "3.9", "3.10", "3.11"])
+@nox.session
 def build(session):
     login_testuser1(session)
     ln.setup.load("testuser1/lamin-site-assets", migrate=True)
