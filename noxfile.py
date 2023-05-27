@@ -59,7 +59,6 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
-../setup/index
 ../faq/index
 ../architecture
 ../glossary
@@ -103,7 +102,10 @@ def build(session):
     # Fix indexes
 
     # lamindb guide
-    mapped_content = [("\nsetup\n", "\n"), ("/guide/setup", "/setup/quickstart")]
+    mapped_content = [
+        ("\nsetup\n", "\n../setup/index\n"),  # point to lndb-generated content
+        ("/guide/setup", "/setup/quickstart"),
+    ]
     replace_content("docs/guide/index.md", mapped_content=mapped_content)
     replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
 
