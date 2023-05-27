@@ -46,8 +46,8 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install -U pip
-          pip install -U laminci>=0.41a3
-          pip install -U lamindb
+          pip install -U laminci
+          pip install lamindb>=0.41a3
       - name: Install apt-get dependencies
         run: |
           sudo apt-get -y install graphviz
