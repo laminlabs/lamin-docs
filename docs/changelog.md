@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+:green_heart: Fix linting | [27](https://github.com/laminlabs/lamin-docs/pull/27) | [falexwolf](https://github.com/falexwolf) | 2023-05-27 |
 :green_heart: Include nbproject | [26](https://github.com/laminlabs/lamin-docs/pull/26) | [falexwolf](https://github.com/falexwolf) | 2023-04-16 |
 :memo: Rename to architecture, add back bionty | [25](https://github.com/laminlabs/lamin-docs/pull/25) | [falexwolf](https://github.com/falexwolf) | 2023-03-29 |
 📝 Clean up layout | [24](https://github.com/laminlabs/lamin-docs/pull/24) | [falexwolf](https://github.com/falexwolf) | 2023-03-28 |
