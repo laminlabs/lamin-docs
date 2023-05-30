@@ -5,16 +5,23 @@ from typing import List, Tuple
 
 import lamindb as ln
 import nox
-from laminci.nox import build_docs, login_testuser1, run_pre_commit
+from laminci.nox import build_docs, login_testuser1
 
-# from nbproject_test import execute_notebooks
-
-nox.options.reuse_existing_virtualenvs = True
+nox.options.default_venv_backend = "none"
 
 
 @nox.session
 def lint(session: nox.Session) -> None:
-    run_pre_commit(session)
+    session.run(*"pip install pre-commit".split())
+    session.run("pre-commit", "install")
+    session.run("pre-commit", "run", "--all-files")
+
+
+@nox.session
+def install(session: nox.Session) -> None:
+    session.run(
+        *"pip install git+https://github.com/laminlabs/lamindb[bionty,aws]".split()
+    )
 
 
 LNDB_GUIDE_FROM = """\
@@ -146,10 +153,5 @@ def build(session):
         f.write(content)
 
     # Build docs
-
-    # init an instance so that docs can be built
-    # install lamindb and bionty from github
-    session.install("git+https://github.com/laminlabs/bionty")
-    session.install("git+https://github.com/laminlabs/lamindb")
     ln.setup.init(storage="mydata")
     build_docs(session)
