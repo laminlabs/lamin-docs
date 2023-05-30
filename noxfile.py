@@ -3,18 +3,15 @@ import shutil
 from pathlib import Path
 from typing import List, Tuple
 
-import lamindb as ln
 import nox
-from laminci.nox import build_docs, login_testuser1
+from laminci.nox import build_docs, login_testuser1, run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
 
 @nox.session
 def lint(session: nox.Session) -> None:
-    session.run(*"pip install pre-commit".split())
-    session.run("pre-commit", "install")
-    session.run("pre-commit", "run", "--all-files")
+    run_pre_commit(session)
 
 
 @nox.session
@@ -85,6 +82,8 @@ def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> No
 
 @nox.session
 def build(session):
+    import lamindb as ln
+
     login_testuser1(session)
     ln.setup.load("testuser1/lamin-site-assets", migrate=True)
 
