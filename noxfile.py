@@ -3,18 +3,21 @@ import shutil
 from pathlib import Path
 from typing import List, Tuple
 
-import lamindb as ln
 import nox
 from laminci.nox import build_docs, login_testuser1, run_pre_commit
 
-# from nbproject_test import execute_notebooks
-
-nox.options.reuse_existing_virtualenvs = True
+nox.options.default_venv_backend = "none"
 
 
 @nox.session
 def lint(session: nox.Session) -> None:
     run_pre_commit(session)
+
+
+@nox.session
+def install(session: nox.Session) -> None:
+    session.run(*"git clone https://github.com/laminlabs/lamindb --depth 1".split())
+    session.run(*"pip install ./lamindb[aws,bionty]".split())
 
 
 LNDB_GUIDE_FROM = """\
@@ -36,7 +39,7 @@ INTEGRATIONS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Integrations
+:caption: More examples
 
 ../bionty/index
 redun
@@ -77,7 +80,9 @@ def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> No
 
 
 @nox.session
-def build(session):
+def pull_artifacts(session):
+    import lamindb as ln
+
     login_testuser1(session)
     ln.setup.load("testuser1/lamin-site-assets", migrate=True)
 
@@ -87,6 +92,7 @@ def build(session):
     shutil.unpack_archive(file.stage(), "lamindb_docs")
     Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
+    Path("lamindb_docs/biology").rename("docs/biology")
     Path("lamindb_docs/faq").rename("docs/faq")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
@@ -98,7 +104,10 @@ def build(session):
 
     # lamindb guide
     mapped_content = [
-        ("\ntrack\n", "\n../setup/index\ntrack\n"),  # point to lndb-generated content
+        (
+            "\nfiles-folders\n",
+            "\n../setup/index\nfiles-folders\n",
+        ),  # point to lndb-generated content
     ]
     replace_content("docs/guide/index.md", mapped_content=mapped_content)
     replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
@@ -145,11 +154,7 @@ def build(session):
         content += OTHER_TOPICS
         f.write(content)
 
-    # Build docs
 
-    # init an instance so that docs can be built
-    # install lamindb and bionty from github
-    session.install("git+https://github.com/laminlabs/bionty")
-    session.install("git+https://github.com/laminlabs/lamindb")
-    ln.setup.init(storage="mydata")
+@nox.session
+def docs(session):
     build_docs(session)
