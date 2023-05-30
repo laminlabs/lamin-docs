@@ -103,7 +103,10 @@ def pull_artifacts(session):
 
     # lamindb guide
     mapped_content = [
-        ("\ntrack\n", "\n../setup/index\ntrack\n"),  # point to lndb-generated content
+        (
+            "\nfiles-folders\n",
+            "\n../setup/index\nfiles-folders\n",
+        ),  # point to lndb-generated content
     ]
     replace_content("docs/guide/index.md", mapped_content=mapped_content)
     replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
