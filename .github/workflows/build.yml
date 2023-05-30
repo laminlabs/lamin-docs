@@ -46,7 +46,8 @@ jobs:
           aws-region: eu-central-1
       # - run: nox -s lint
       - run: nox -s install
-      - run: nox -s build
+      - run: nox -s pull_artifacts
+      - run: nox -s docs
       - name: Read lamin-project.yaml
         id: lamin-project
         uses: CumulusDS/get-yaml-paths-action@v0.1.0

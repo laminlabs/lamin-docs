@@ -79,7 +79,7 @@ def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> No
 
 
 @nox.session
-def build(session):
+def pull_artifacts(session):
     import lamindb as ln
 
     login_testuser1(session)
@@ -149,6 +149,7 @@ def build(session):
         content += OTHER_TOPICS
         f.write(content)
 
-    # Build docs
-    ln.setup.init(storage="mydata")
+
+@nox.session
+def docs(session):
     build_docs(session)
