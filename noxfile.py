@@ -16,7 +16,8 @@ def lint(session: nox.Session) -> None:
 
 @nox.session
 def install(session: nox.Session) -> None:
-    session.run(*"pip install -U lamindb[bionty,aws]".split())
+    session.run(*"git clone https://github.com/laminlabs/lamindb --depth 1".split())
+    session.run(*"pip install ./lamindb[aws,bionty]".split())
 
 
 LNDB_GUIDE_FROM = """\
