@@ -41,8 +41,8 @@ EXAMPLES = """
 :hidden:
 :caption: Examples
 
-../celltypist
-../enrichr
+celltypist
+enrichr
 ```
 """
 
@@ -170,8 +170,10 @@ def pull_artifacts(session):
     # Add examples
     file = ln.select(ln.File, key="docs/lamin_examples_docs.zip").one()
     shutil.unpack_archive(file.stage(), "lamin_examples_docs")
-    Path("lamin_examples_docs/biology/celltypist.ipynb").rename("docs/celltypist.ipynb")
-    Path("lamin_examples_docs/biology/enrichr.ipynb").rename("docs/enrichr.ipynb")
+    Path("lamin_examples_docs/biology/celltypist.ipynb").rename(
+        "docs/guide/celltypist.ipynb"
+    )
+    Path("lamin_examples_docs/biology/enrichr.ipynb").rename("docs/guide/enrichr.ipynb")
 
     with open("docs/guide/index.md") as f:
         content = f.read()
