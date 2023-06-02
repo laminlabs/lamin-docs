@@ -35,15 +35,35 @@ quickstart
 setup-user
 """
 
+EXAMPLES = """
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Examples
+
+../celltypist
+../enrichr
+```
+"""
+
 INTEGRATIONS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: More examples
+:caption: Integrations
 
-../bionty/index
 redun
 mnist-local
+```
+"""
+
+EXTENSIONS = """
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Extensions
+
+../bionty/index
 ```
 """
 
@@ -147,10 +167,18 @@ def pull_artifacts(session):
         "docs/guide/mnist-local.ipynb"
     )
 
+    # Add examples
+    file = ln.select(ln.File, key="docs/lamin_examples_docs.zip").one()
+    shutil.unpack_archive(file.stage(), "lamin_examples_docs")
+    Path("lamin_examples_docs/biology/celltypist.ipynb").rename("docs/celltypist.ipynb")
+    Path("lamin_examples_docs/biology/enrichr.ipynb").rename("docs/enrichr.ipynb")
+
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
+        content += EXAMPLES
         content += INTEGRATIONS
+        content += EXTENSIONS
         content += OTHER_TOPICS
         f.write(content)
 
