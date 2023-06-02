@@ -73,6 +73,7 @@ OTHER_TOPICS_ORIG = """
 :caption: Other topics
 
 ../faq/index
+../storage/index
 ```
 """
 
