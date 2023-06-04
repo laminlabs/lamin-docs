@@ -5,7 +5,7 @@ from subprocess import run
 from typing import Dict
 
 import nox
-from laminci.nox import build_docs, run_pre_commit
+from laminci.nox import build_docs, login_testuser1, run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
@@ -160,5 +160,6 @@ def pull_artifacts(session):
 @nox.session
 def docs(session):
     session.run(*"pip install lamindb".split())
+    login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild".split())
     build_docs(session)
