@@ -135,6 +135,7 @@ def pull_artifacts(session):
             {
                 "import lamindb_setup as ln_setup": "import lamindb as ln",
                 "ln_setup": "ln.setup",
+                "lamindb_setup": "lamindb.setup",
             },
         )
 
