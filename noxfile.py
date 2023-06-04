@@ -1,7 +1,7 @@
 # import os
 import shutil
 from pathlib import Path
-from typing import List, Tuple
+from typing import Dict
 
 import nox
 from laminci.nox import build_docs, login_testuser1, run_pre_commit
@@ -91,7 +91,7 @@ OTHER_TOPICS = """
 """
 
 
-def replace_content(filename: Path, mapped_content: List[Tuple[str, str]]) -> None:
+def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
     with open(filename) as f:
         content = f.read()
     with open(filename, "w") as f:
@@ -119,39 +119,39 @@ def pull_artifacts(session):
 
     # Setup
 
-    file = ln.select(ln.File, key="docs/lndb_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "lndb_docs")
-    Path("lndb_docs/guide").rename("docs/setup")
+    file = ln.select(ln.File, key="docs/lamindb_setup_docs.zip").one()
+    shutil.unpack_archive(file.stage(), "lamindb_setup_docs")
+    Path("lamindb_setup_docs/guide").rename("docs/setup")
+    for file in Path("docs/setup"):
+        replace_content(
+            file,
+            {
+                "import lamindb_setup as ln_setup": "import lamindb as ln",
+                "ln_setup": "ln.setup",
+            },
+        )
 
     # lamindb guide
-    mapped_content = [
-        (
-            "\nfiles-folders\n",
-            "\n../setup/index\nfiles-folders\n",
-        ),  # point to lndb-generated content
-    ]
-    replace_content("docs/guide/index.md", mapped_content=mapped_content)
-    replace_content("README.md", [("/guide/setup", "/setup/quickstart")])
+    replace_content(
+        "docs/guide/index.md",
+        {"\nfiles-folders\n": "\n../setup/index\nfiles-folders\n"},
+    )
+    replace_content("README.md", {"/guide/setup": "/setup/quickstart"})
 
-    mapped_content = [("# Guide", "# Setup"), (LNDB_GUIDE_FROM, LNDB_GUIDE_TO)]
-    replace_content("docs/setup/00-index.ipynb", mapped_content=mapped_content)
+    replace_content(
+        "docs/setup/00-index.ipynb",
+        {"# Guide": "# Setup", LNDB_GUIDE_FROM: LNDB_GUIDE_TO},
+    )
 
     # Bionty
 
     file = ln.select(ln.File, key="docs/bionty_docs.zip").one()
     shutil.unpack_archive(file.stage(), "bionty_docs")
     Path("bionty_docs").rename("docs/bionty")
-
-    replace_content(
-        "docs/bionty/index.md",
-        mapped_content=[
-            ("../README.md", "./README.md"),
-        ],
-    )
+    replace_content("docs/bionty/index.md", {"../README.md": "./README.md"})
 
     # Clean up LaminDB guide index
-    mapped_content = [(OTHER_TOPICS_ORIG, "")]
-    replace_content("docs/guide/index.md", mapped_content=mapped_content)
+    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
 
     # Add integrations
 
