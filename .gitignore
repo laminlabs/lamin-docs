@@ -7,6 +7,9 @@ docs/setup/
 lndb_docs/
 pytorch_lamin_mnist_docs/
 redun_lamin_fasta_docs/
+docs/biology/
+lamindb_setup_docs.zip
+lamindb_setup_docs/
 
 # macOS
 .DS_Store
