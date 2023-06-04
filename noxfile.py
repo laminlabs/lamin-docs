@@ -1,6 +1,7 @@
 # import os
 import shutil
 from pathlib import Path
+from subprocess import run
 from typing import Dict
 
 import nox
@@ -100,6 +101,13 @@ def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
         f.write(content)
 
 
+def pull_from_s3(zip_filename):
+    run(
+        f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
+        shell=True,
+    )
+
+
 @nox.session
 def pull_artifacts(session):
     import lamindb as ln
@@ -118,9 +126,8 @@ def pull_artifacts(session):
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
     # Setup
-
-    file = ln.select(ln.File, key="docs/lamindb_setup_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "lamindb_setup_docs")
+    pull_from_s3("lamindb_setup_docs.zip")
+    shutil.unpack_archive("lamindb_setup_docs.zip", "lamindb_setup_docs")
     Path("lamindb_setup_docs/guide").rename("docs/setup")
     for file in Path("docs/setup"):
         replace_content(
