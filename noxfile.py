@@ -127,7 +127,7 @@ def pull_artifacts(session):
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
 
     # Setup
-    pull_from_s3_and_unpack("lndb.zip")
+    pull_from_s3_and_unpack("lamindb_setup_docs.zip")
     Path("lamindb_setup_docs/guide").rename("docs/setup")
     for file in Path("docs/setup"):
         replace_content(
