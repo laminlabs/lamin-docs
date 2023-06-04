@@ -96,8 +96,8 @@ def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
     with open(filename) as f:
         content = f.read()
     with open(filename, "w") as f:
-        for args in mapped_content:
-            content = content.replace(*args)
+        for key, value in mapped_content.items():
+            content = content.replace(key, value)
         f.write(content)
 
 
