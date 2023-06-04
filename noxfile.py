@@ -129,7 +129,7 @@ def pull_artifacts(session):
     # Setup
     pull_from_s3_and_unpack("lamindb_setup_docs.zip")
     Path("lamindb_setup_docs/guide").rename("docs/setup")
-    for file in Path("docs/setup"):
+    for file in Path("docs/setup").glob("*"):
         replace_content(
             file,
             {
