@@ -5,7 +5,7 @@ from subprocess import run
 from typing import Dict
 
 import nox
-from laminci.nox import build_docs, login_testuser1, run_pre_commit
+from laminci.nox import build_docs, run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
@@ -96,25 +96,18 @@ def pull_from_s3_and_unpack(zip_filename):
 
 @nox.session
 def pull_artifacts(session):
-    import lamindb as ln
-
-    login_testuser1(session)
-    ln.setup.load("testuser1/lamin-site-assets", migrate=True)
-
-    # LaminDB
-
-    file = ln.select(ln.File, key="docs/lamindb_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "lamindb_docs")
+    # lamindb
+    pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
     Path("lamindb_docs/guide").rename("docs/guide")
     Path("lamindb_docs/biology").rename("docs/biology")
     Path("lamindb_docs/faq").rename("docs/faq")
     Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
-
-    # Setup
+    # lamindb_setup
     pull_from_s3_and_unpack("lamindb_setup_docs.zip")
     Path("lamindb_setup_docs/guide").rename("docs/setup")
     for file in Path("docs/setup").glob("*"):
+        print(file)
         replace_content(
             file,
             {
@@ -123,46 +116,32 @@ def pull_artifacts(session):
                 "lamindb_setup": "lamindb.setup",
             },
         )
-
-    # LaminDB guide
+    # lamindb guide
     replace_content(
         "docs/guide/index.md",
         {"\nfiles-folders\n": "\n../setup/index\nfiles-folders\n"},
     )
-    replace_content("README.md", {"/guide/setup": "/setup/quickstart"})
     replace_content(
         "docs/setup/00-index.ipynb",
         {"# Guide": "# Setup"},
     )
-
-    # Bionty
-
-    file = ln.select(ln.File, key="docs/bionty_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "bionty_docs")
+    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
+    # bionty
+    pull_from_s3_and_unpack("bionty_docs.zip")
     Path("bionty_docs").rename("docs/bionty")
     replace_content("docs/bionty/index.md", {"../README.md": "./README.md"})
-
-    # Clean up LaminDB guide index
-    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
-
-    # Add integrations
-
-    file = ln.select(ln.File, key="docs/redun_lamin_fasta_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "redun_lamin_fasta_docs")
+    # integrations
+    pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
     Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
         "docs/guide/redun-run.ipynb"
     )
-
-    file = ln.select(ln.File, key="docs/pytorch_lamin_mnist_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "pytorch_lamin_mnist_docs")
+    pull_from_s3_and_unpack("pytorch_lamin_mnist_docs.zip")
     Path("pytorch_lamin_mnist_docs/guide/mnist-local.ipynb").rename(
         "docs/guide/mnist-local.ipynb"
     )
-
-    # Add examples
-    file = ln.select(ln.File, key="docs/lamin_examples_docs.zip").one()
-    shutil.unpack_archive(file.stage(), "lamin_examples_docs")
+    # examples
+    pull_from_s3_and_unpack("lamin_examples_docs.zip")
     Path("lamin_examples_docs/biology/celltypist.ipynb").rename(
         "docs/guide/celltypist.ipynb"
     )
