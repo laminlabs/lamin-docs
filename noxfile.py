@@ -21,21 +21,6 @@ def install(session: nox.Session) -> None:
     session.run(*"pip install ./lamindb[aws,bionty]".split())
 
 
-LNDB_GUIDE_FROM = """\
-```{toctree}
-:maxdepth: 1
-
-setup-user
-"""
-
-LNDB_GUIDE_TO = """\
-```{toctree}
-:maxdepth: 1
-
-quickstart
-setup-user
-"""
-
 EXAMPLES = """
 ```{toctree}
 :maxdepth: 1
@@ -139,16 +124,15 @@ def pull_artifacts(session):
             },
         )
 
-    # lamindb guide
+    # LaminDB guide
     replace_content(
         "docs/guide/index.md",
         {"\nfiles-folders\n": "\n../setup/index\nfiles-folders\n"},
     )
     replace_content("README.md", {"/guide/setup": "/setup/quickstart"})
-
     replace_content(
         "docs/setup/00-index.ipynb",
-        {"# Guide": "# Setup", LNDB_GUIDE_FROM: LNDB_GUIDE_TO},
+        {"# Guide": "# Setup"},
     )
 
     # Bionty
