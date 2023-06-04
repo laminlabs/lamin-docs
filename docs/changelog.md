@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+💄 Fix presentation of `lamindb_setup` | [30](https://github.com/laminlabs/lamin-docs/pull/30) | [falexwolf](https://github.com/falexwolf) | 2023-06-04 |
 👷 Added examples | [29](https://github.com/laminlabs/lamin-docs/pull/29) | [sunnyosun](https://github.com/sunnyosun) | 2023-06-02 |
 👷 Refactor CI & upgrade to lamindb 0.41 | [28](https://github.com/laminlabs/lamin-docs/pull/28) | [falexwolf](https://github.com/falexwolf) | 2023-05-30 |
 :green_heart: Fix linting | [27](https://github.com/laminlabs/lamin-docs/pull/27) | [falexwolf](https://github.com/falexwolf) | 2023-05-27 |
