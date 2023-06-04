@@ -159,4 +159,6 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
+    session.run(*"pip install lamindb".split())
+    session.run(*"lamin init --storage ./docsbuild".split())
     build_docs(session)
