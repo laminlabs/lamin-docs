@@ -29,6 +29,7 @@ EXAMPLES = """
 
 celltypist
 enrichr
+bio-lineage
 ```
 """
 
@@ -146,6 +147,9 @@ def pull_artifacts(session):
         "docs/guide/celltypist.ipynb"
     )
     Path("lamin_examples_docs/biology/enrichr.ipynb").rename("docs/guide/enrichr.ipynb")
+    Path("lamin_examples_docs/biology/lineage.ipynb").rename(
+        "docs/guide/bio-lineage.ipynb"
+    )
 
     with open("docs/guide/index.md") as f:
         content = f.read()
