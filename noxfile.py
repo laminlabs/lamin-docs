@@ -30,15 +30,6 @@ EXAMPLES = """
 celltypist
 enrichr
 bio-lineage
-```
-"""
-
-INTEGRATIONS = """
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Integrations
-
 redun
 mnist-local
 ```
@@ -119,7 +110,8 @@ def pull_artifacts(session):
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
-    Path("bionty_docs/guide").rename("docs/bionty")
+    for path in Path("bionty_docs").glob("*"):
+        path.rename(Path("docs/bionty") / path.name)
     Path("bionty_docs/README.md").rename("docs/bionty/README.md")
     replace_content("docs/bionty/index.md", {"../README.md": "./README.md"})
     # integrations
@@ -145,9 +137,8 @@ def pull_artifacts(session):
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
-        content += EXAMPLES
-        content += INTEGRATIONS
         content += EXTENSIONS
+        content += EXAMPLES
         content += OTHER_TOPICS
         f.write(content)
 
