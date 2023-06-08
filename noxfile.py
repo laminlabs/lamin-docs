@@ -110,8 +110,7 @@ def pull_artifacts(session):
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
-    for path in Path("bionty_docs").glob("*"):
-        path.rename(Path("docs/bionty") / path.name)
+    Path("bionty_docs/guide").rename("docs/bionty")
     Path("bionty_docs/README.md").rename("docs/bionty/README.md")
     replace_content("docs/bionty/index.md", {"../README.md": "./README.md"})
     # integrations
