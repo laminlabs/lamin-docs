@@ -70,6 +70,7 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
+../setup/index
 ../faq/index
 ../architecture
 ../glossary
@@ -118,10 +119,6 @@ def pull_artifacts(session):
             },
         )
     # lamindb guide
-    replace_content(
-        "docs/guide/index.md",
-        {"\nfiles-folders\n": "\n../setup/index\nfiles-folders\n"},
-    )
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
