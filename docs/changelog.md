@@ -3,6 +3,7 @@
 <!-- prettier-ignore -->
 Name | PR | Editor | Date | Number
 --- | --- | --- | --- | ---
+🔥 Remove pypackages | [33](https://github.com/laminlabs/lamin-docs/pull/33) | [falexwolf](https://github.com/falexwolf) | 2023-06-08 |
 📝 Overwrite globally | [32](https://github.com/laminlabs/lamin-docs/pull/32) | [falexwolf](https://github.com/falexwolf) | 2023-06-08 |
 🚚 Try relative forward | [31](https://github.com/laminlabs/lamin-docs/pull/31) | [falexwolf](https://github.com/falexwolf) | 2023-06-04 |
 💄 Fix presentation of `lamindb_setup` | [30](https://github.com/laminlabs/lamin-docs/pull/30) | [falexwolf](https://github.com/falexwolf) | 2023-06-04 |
