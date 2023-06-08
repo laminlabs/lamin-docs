@@ -119,7 +119,8 @@ def pull_artifacts(session):
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
-    Path("bionty_docs").rename("docs/bionty")
+    Path("bionty_docs/guide").rename("docs/bionty")
+    Path("bionty_docs/README.md").rename("docs/bionty/README.md")
     replace_content("docs/bionty/index.md", {"../README.md": "./README.md"})
     # integrations
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
