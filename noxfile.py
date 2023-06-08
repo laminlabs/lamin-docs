@@ -122,10 +122,6 @@ def pull_artifacts(session):
         "docs/guide/index.md",
         {"\nfiles-folders\n": "\n../setup/index\nfiles-folders\n"},
     )
-    replace_content(
-        "docs/setup/00-index.ipynb",
-        {"# Guide": "# Setup"},
-    )
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
