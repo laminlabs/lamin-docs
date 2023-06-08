@@ -101,10 +101,8 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
-    Path("lamindb_docs/guide").rename("docs/guide")
-    Path("lamindb_docs/biology").rename("docs/biology")
-    Path("lamindb_docs/faq").rename("docs/faq")
-    Path("lamindb_docs/changelog.md").rename("docs/changelog.md")
+    for path in Path("lamindb_docs").glob("*"):
+        path.rename(Path("docs") / path.name)
     # lamindb_setup
     pull_from_s3_and_unpack("lamindb_setup_docs.zip")
     Path("lamindb_setup_docs/guide").rename("docs/setup")
@@ -166,5 +164,5 @@ def docs(session):
     )
     session.run(*"pip install git+https://github.com/laminlabs/lamindb".split())
     login_testuser1(session)
-    session.run(*"lamin init --storage ./docsbuild".split())
+    session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
     build_docs(session)
