@@ -96,7 +96,9 @@ def pull_artifacts(session):
     for file in Path("docs/setup").glob("*"):
         replace_content(file, replace_lamindb_setup)
     # lamindb guide
-    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "../bionty/index\n```"})
+    replace_content(
+        "docs/guide/index.md", {OTHER_TOPICS_ORIG: "../bionty/index\n```\n"}
+    )
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
     Path("bionty_docs/guide").rename("docs/bionty")
