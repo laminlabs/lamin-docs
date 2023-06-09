@@ -97,7 +97,7 @@ def pull_artifacts(session):
         replace_content(file, replace_lamindb_setup)
     # lamindb guide
     replace_content(
-        "docs/guide/index.md", {OTHER_TOPICS_ORIG: "../bionty/index\n```\n"}
+        "docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n../bionty/index\n```\n"}
     )
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
