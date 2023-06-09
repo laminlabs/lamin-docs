@@ -35,17 +35,9 @@ mnist-local
 ```
 """
 
-EXTENSIONS = """
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Extensions
-
-../bionty/index
-```
-"""
-
 OTHER_TOPICS_ORIG = """
+```
+
 ```{toctree}
 :hidden:
 :caption: Other topics
@@ -96,18 +88,15 @@ def pull_artifacts(session):
     # lamindb_setup
     pull_from_s3_and_unpack("lamindb_setup_docs.zip")
     Path("lamindb_setup_docs/guide").rename("docs/setup")
+    replace_lamindb_setup = {
+        "import lamindb_setup as ln_setup": "import lamindb as ln",
+        "ln_setup": "ln.setup",
+        "lamindb_setup": "lamindb.setup",
+    }
     for file in Path("docs/setup").glob("*"):
-        print(file)
-        replace_content(
-            file,
-            {
-                "import lamindb_setup as ln_setup": "import lamindb as ln",
-                "ln_setup": "ln.setup",
-                "lamindb_setup": "lamindb.setup",
-            },
-        )
+        replace_content(file, replace_lamindb_setup)
     # lamindb guide
-    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: ""})
+    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "../bionty/index\n```"})
     # bionty
     pull_from_s3_and_unpack("bionty_docs.zip")
     Path("bionty_docs/guide").rename("docs/bionty")
@@ -136,7 +125,6 @@ def pull_artifacts(session):
     with open("docs/guide/index.md") as f:
         content = f.read()
     with open("docs/guide/index.md", "w") as f:
-        content += EXTENSIONS
         content += EXAMPLES
         content += OTHER_TOPICS
         f.write(content)
