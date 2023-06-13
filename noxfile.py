@@ -29,9 +29,8 @@ EXAMPLES = """
 
 celltypist
 enrichr
-bio-lineage
+subset-anndata-lineage
 redun
-mnist-local
 ```
 """
 
@@ -113,10 +112,6 @@ def pull_artifacts(session):
     Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
         "docs/guide/redun-run.ipynb"
     )
-    pull_from_s3_and_unpack("pytorch_lamin_mnist_docs.zip")
-    Path("pytorch_lamin_mnist_docs/guide/mnist-local.ipynb").rename(
-        "docs/guide/mnist-local.ipynb"
-    )
     # examples
     pull_from_s3_and_unpack("lamin_examples_docs.zip")
     Path("lamin_examples_docs/biology/celltypist.ipynb").rename(
@@ -124,7 +119,7 @@ def pull_artifacts(session):
     )
     Path("lamin_examples_docs/biology/enrichr.ipynb").rename("docs/guide/enrichr.ipynb")
     Path("lamin_examples_docs/biology/lineage.ipynb").rename(
-        "docs/guide/bio-lineage.ipynb"
+        "docs/guide/subset-anndata-lineage.ipynb"
     )
 
     with open("docs/guide/index.md") as f:
