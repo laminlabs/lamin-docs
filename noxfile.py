@@ -125,6 +125,7 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
+    session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
     session.run(
         *"pip install --no-deps git+https://github.com/laminlabs/lnschema-bionty"
         .split()
