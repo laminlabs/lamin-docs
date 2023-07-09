@@ -35,8 +35,6 @@ redun
 """
 
 OTHER_TOPICS_ORIG = """
-```
-
 ```{toctree}
 :hidden:
 :caption: Other topics
