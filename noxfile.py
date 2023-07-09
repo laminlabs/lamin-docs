@@ -25,7 +25,7 @@ EXAMPLES = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Examples
+:caption: Use cases
 
 celltypist
 enrichr
@@ -35,8 +35,6 @@ redun
 """
 
 OTHER_TOPICS_ORIG = """
-```
-
 ```{toctree}
 :hidden:
 :caption: Other topics
@@ -98,14 +96,7 @@ def pull_artifacts(session):
     for file in Path("docs/setup").glob("*"):
         replace_content(file, replace_lamindb_setup)
     # lamindb guide
-    replace_content(
-        "docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n../bionty/index\n```\n"}
-    )
-    # bionty
-    pull_from_s3_and_unpack("bionty_docs.zip")
-    Path("bionty_docs/guide").rename("docs/bionty")
-    Path("bionty_docs/README.md").rename("docs/bionty/README.md")
-    replace_content("docs/bionty/index.md", {"../README.md": "./README.md"})
+    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
