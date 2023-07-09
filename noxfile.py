@@ -98,7 +98,7 @@ def pull_artifacts(session):
     for file in Path("docs/setup").glob("*"):
         replace_content(file, replace_lamindb_setup)
     # lamindb guide
-    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n"})
+    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
