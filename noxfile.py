@@ -5,7 +5,7 @@ from subprocess import run
 from typing import Dict
 
 import nox
-from laminci.nox import build_docs, login_testuser1, run_pre_commit
+from laminci.nox import login_testuser1, run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
@@ -135,4 +135,10 @@ def docs(session):
     session.run(*"pip install git+https://github.com/laminlabs/lamindb".split())
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
-    build_docs(session)
+    prefix = "." if Path("./lndocs").exists() else ".."
+    if nox.options.default_venv_backend == "none":
+        session.run(*f"pip install {prefix}/lndocs".split())
+    else:
+        session.install(f"{prefix}/lndocs")
+    # do not simply add instance creation here
+    session.run("lndocs", "--strip-prefix")
