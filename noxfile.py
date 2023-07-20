@@ -91,9 +91,9 @@ def pull_artifacts(session):
         "docs/guide/redun-run.ipynb"
     )
     # usescases
-    pull_from_s3_and_unpack("lamin_usescases_docs.zip")
+    pull_from_s3_and_unpack("lamin_usecases_docs.zip")
     Path("docs/usecases").mkdir()
-    for path in Path("lamin_usescases_docs/usecases/").glob("*"):
+    for path in Path("lamin_usecases_docs/usecases/").glob("*"):
         path.rename(Path("docs/usecases") / path.name)
 
     with open("docs/guide/index.md") as f:
