@@ -27,9 +27,8 @@ EXAMPLES = """
 :hidden:
 :caption: Use cases
 
-celltypist
-enrichr
-subset-anndata-lineage
+../usecases/registries
+../usecases/analyses
 redun
 ```
 """
@@ -91,15 +90,11 @@ def pull_artifacts(session):
     Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
         "docs/guide/redun-run.ipynb"
     )
-    # examples
-    pull_from_s3_and_unpack("lamin_examples_docs.zip")
-    Path("lamin_examples_docs/biology/celltypist.ipynb").rename(
-        "docs/guide/celltypist.ipynb"
-    )
-    Path("lamin_examples_docs/biology/enrichr.ipynb").rename("docs/guide/enrichr.ipynb")
-    Path("lamin_examples_docs/biology/lineage.ipynb").rename(
-        "docs/guide/subset-anndata-lineage.ipynb"
-    )
+    # usescases
+    pull_from_s3_and_unpack("lamin_usecases_docs.zip")
+    Path("docs/usecases").mkdir()
+    for path in Path("lamin_usecases_docs/usecases/").glob("*"):
+        path.rename(Path("docs/usecases") / path.name)
 
     with open("docs/guide/index.md") as f:
         content = f.read()
