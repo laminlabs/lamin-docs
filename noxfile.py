@@ -50,9 +50,7 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
-../setup/index
 ../faq/index
-../storage/index
 ../glossary
 ../problems
 ```
@@ -82,19 +80,9 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
     for path in Path("lamindb_docs").glob("*"):
-        if path.name == "index.md":
+        if path.name == "index.md" or "storage/" in path.to_posix():
             continue
         path.rename(Path("docs") / path.name)
-    # lamindb_setup
-    pull_from_s3_and_unpack("lamindb_setup_docs.zip")
-    Path("lamindb_setup_docs/guide").rename("docs/setup")
-    replace_lamindb_setup = {
-        "import lamindb_setup as ln_setup": "import lamindb as ln",
-        "ln_setup": "ln.setup",
-        "lamindb_setup": "lamindb.setup",
-    }
-    for file in Path("docs/setup").glob("*"):
-        replace_content(file, replace_lamindb_setup)
     # lamindb guide
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
