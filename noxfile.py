@@ -29,7 +29,7 @@ EXAMPLES = """
 
 ../usecases/registries
 ../usecases/analyses
-redun
+../redun
 ```
 """
 
@@ -86,10 +86,7 @@ def pull_artifacts(session):
     replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
-    Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/guide/redun.ipynb")
-    Path("redun_lamin_fasta_docs/guide/2-redun-run.ipynb").rename(
-        "docs/guide/redun-run.ipynb"
-    )
+    Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/redun.ipynb")
     # usescases
     pull_from_s3_and_unpack("lamin_usecases_docs.zip")
     Path("docs/usecases").mkdir()
