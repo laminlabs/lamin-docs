@@ -38,8 +38,8 @@ OTHER_TOPICS_ORIG = """
 :hidden:
 :caption: Other topics
 
-../faq/index
-../storage/index
+faq
+storage
 ```
 """
 
@@ -49,9 +49,9 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
-../faq/index
-../glossary
-../problems
+faq
+glossary
+problems
 ```
 """
 
@@ -83,7 +83,7 @@ def pull_artifacts(session):
             continue
         path.rename(Path("docs") / path.name)
     # lamindb guide
-    replace_content("docs/guide/index.md", {OTHER_TOPICS_ORIG: "\n\n"})
+    replace_content("docs/guide.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/redun.ipynb")
@@ -93,9 +93,9 @@ def pull_artifacts(session):
     for path in Path("lamin_usecases_docs/usecases/").glob("*"):
         path.rename(Path("docs/usecases") / path.name)
 
-    with open("docs/guide/index.md") as f:
+    with open("docs/guide.md") as f:
         content = f.read()
-    with open("docs/guide/index.md", "w") as f:
+    with open("docs/guide.md", "w") as f:
         content += EXAMPLES
         content += OTHER_TOPICS
         f.write(content)
