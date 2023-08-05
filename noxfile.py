@@ -91,6 +91,8 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("lamin_usecases_docs.zip")
     Path("docs/usecases").mkdir()
     for path in Path("lamin_usecases_docs/").glob("*"):
+        if path.name == "index.md":
+            continue
         path.rename(Path("docs/usecases") / path.name)
 
     with open("docs/guide.md") as f:
