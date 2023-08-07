@@ -94,11 +94,13 @@ def pull_artifacts(session):
         if (
             path.name == "index.md"
             or "/storage/" in path.as_posix()
-            or path.name == "faq"
+            or path.name == "faq"  # directory treated below
         ):
             continue
         path.rename(Path("docs") / path.name)
     # lamindb faq
+    for path in ("lamindb_docs/faq").glob("*"):
+        path.rename(Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
     # lamindb guide
     replace_content("docs/guide.md", {OTHER_TOPICS_ORIG: "\n\n"})

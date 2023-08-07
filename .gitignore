@@ -20,6 +20,8 @@ lamin_examples_docs/
 lamindb_docs.zip
 pytorch_lamin_mnist_docs.zip
 redun_lamin_fasta_docs.zip
+lamin_usecases_docs*
+docs*
 
 # macOS
 .DS_Store
