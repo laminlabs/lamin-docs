@@ -91,7 +91,11 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
     for path in Path("lamindb_docs").glob("*"):
-        if path.name == "index.md" or "/storage/" in path.as_posix():
+        if (
+            path.name == "index.md"
+            or "/storage/" in path.as_posix()
+            or path.name == "faq"
+        ):
             continue
         path.rename(Path("docs") / path.name)
     # lamindb faq
