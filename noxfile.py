@@ -33,6 +33,18 @@ EXAMPLES = """
 ```
 """
 
+FAQ_MATCH = """
+```
+
+"""
+
+FAQ_APPEND = """
+faq/storage
+```
+
+"""
+
+
 OTHER_TOPICS_ORIG = """
 ```{toctree}
 :hidden:
@@ -82,6 +94,8 @@ def pull_artifacts(session):
         if path.name == "index.md" or "/storage/" in path.as_posix():
             continue
         path.rename(Path("docs") / path.name)
+    # lamindb faq
+    replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
     # lamindb guide
     replace_content("docs/guide.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
