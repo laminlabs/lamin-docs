@@ -99,7 +99,7 @@ def pull_artifacts(session):
             continue
         path.rename(Path("docs") / path.name)
     # lamindb faq
-    for path in ("lamindb_docs/faq").glob("*"):
+    for path in Path("lamindb_docs/faq").glob("*"):
         path.rename(Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
     # lamindb guide
