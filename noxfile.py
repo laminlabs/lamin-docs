@@ -33,15 +33,13 @@ EXAMPLES = """
 ```
 """
 
-FAQ_MATCH = """
+FAQ_MATCH = """\
 ```
-
 """
 
-FAQ_APPEND = """
+FAQ_APPEND = """\
 faq/storage
 ```
-
 """
 
 
