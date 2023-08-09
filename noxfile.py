@@ -27,8 +27,8 @@ EXAMPLES = """
 :hidden:
 :caption: Use cases
 
-../usecases/datatype
-../usecases/bioregistry
+../datatype
+../bioregistry
 ../redun
 ```
 """
