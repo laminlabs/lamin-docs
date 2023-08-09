@@ -27,7 +27,8 @@ EXAMPLES = """
 :hidden:
 :caption: Use cases
 
-../usecases/bioregistry/*
+../datatype
+../bioregistry
 ../redun
 ```
 """
@@ -105,12 +106,11 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/redun.ipynb")
     # usescases
-    Path("docs/usecases").mkdir()
     pull_from_s3_and_unpack("lamin_usecases_docs.zip")
     for path in Path("lamin_usecases_docs/").glob("*"):
-        if path.name == "index.md":
+        if path.name == "index.md" or path.name == "usecases.md":
             continue
-        path.rename(Path("docs/usecases") / path.name)
+        path.rename(Path("docs") / path.name)
 
     with open("docs/guide.md") as f:
         content = f.read()
