@@ -27,8 +27,7 @@ EXAMPLES = """
 :hidden:
 :caption: Use cases
 
-../datatype
-../bioregistry
+../usecases
 ../redun
 ```
 """
@@ -107,7 +106,6 @@ def pull_artifacts(session):
     Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/redun.ipynb")
     # usescases
     pull_from_s3_and_unpack("lamin_usecases_docs.zip")
-    # Path("docs/usecases").mkdir()
     for path in Path("lamin_usecases_docs/").glob("*"):
         if path.name == "index.md":
             continue
