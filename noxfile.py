@@ -108,7 +108,11 @@ def pull_artifacts(session):
     # usescases
     pull_from_s3_and_unpack("lamin_usecases_docs.zip")
     for path in Path("lamin_usecases_docs/").glob("*"):
-        if path.name == "index.md" or path.name == "usecases.md":
+        if (
+            path.name == "index.md"
+            or path.name == "usecases.md"
+            or path.name == "changelog.md"
+        ):
             continue
         path.rename(Path("docs") / path.name)
 
