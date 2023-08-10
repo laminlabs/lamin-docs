@@ -104,7 +104,7 @@ def pull_artifacts(session):
     replace_content("docs/guide.md", {OTHER_TOPICS_ORIG: "\n\n"})
     # integrations
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
-    Path("redun_lamin_fasta_docs/guide/1-redun.ipynb").rename("docs/redun.ipynb")
+    Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
     # usescases
     pull_from_s3_and_unpack("lamin_usecases_docs.zip")
     for path in Path("lamin_usecases_docs/").glob("*"):
