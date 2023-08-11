@@ -27,6 +27,7 @@ EXAMPLES = """
 :hidden:
 :caption: Use cases
 
+../data-lineage
 ../by-registry
 ../by-datatype
 ../redun
