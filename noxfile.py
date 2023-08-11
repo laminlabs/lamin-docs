@@ -92,6 +92,7 @@ def pull_artifacts(session):
         if (
             path.name == "index.md"
             or "/storage/" in path.as_posix()
+            or path.name == "storage.md"
             or path.name == "faq"  # directory treated below
         ):
             continue
