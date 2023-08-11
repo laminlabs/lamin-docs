@@ -21,12 +21,13 @@ def install(session: nox.Session) -> None:
     session.run(*"pip install ./lamindb[aws,bionty]".split())
 
 
-EXAMPLES = """
+USECASES = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
 :caption: Use cases
 
+../data-lineage
 ../by-registry
 ../by-datatype
 ../redun
@@ -119,7 +120,7 @@ def pull_artifacts(session):
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
-        content += EXAMPLES
+        content += USECASES
         content += OTHER_TOPICS
         f.write(content)
 
