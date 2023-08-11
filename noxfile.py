@@ -128,14 +128,14 @@ def pull_artifacts(session):
 @nox.session
 def docs(session):
     session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
-    # session.run(
-    #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-bionty"
-    #     .split()
-    # )
-    session.run(*"pip install lnschema_bionty==0.29.2".split())
-    # session.run(
-    #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
-    # )
+    session.run(
+        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-bionty"
+        .split()
+    )
+    # session.run(*"pip install lnschema_bionty==0.29.2".split())
+    session.run(
+        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    )
     session.run(*"pip install git+https://github.com/laminlabs/lamindb".split())
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
