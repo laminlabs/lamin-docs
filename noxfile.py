@@ -91,7 +91,7 @@ def pull_artifacts(session):
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
-            or "/storage/" in path.as_posix()
+            or path.name == "storage"
             or path.name == "storage.md"
             or path.name == "faq"  # directory treated below
         ):
