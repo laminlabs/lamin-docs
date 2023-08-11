@@ -131,7 +131,7 @@ def docs(session):
     #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-bionty"
     #     .split()
     # )
-    session.run(*"pip install lnschema_bionty".split())
+    session.run(*"pip install lnschema_bionty==0.29.2".split())
     # session.run(
     #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
     # )
