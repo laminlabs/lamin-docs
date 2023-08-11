@@ -100,10 +100,10 @@ file.save()  # save the change to the database
 
 ## How do I version a file?
 
-You use the `make_new_version_of` parameter:
+You use the `is_new_version_of` parameter:
 
 ```
-new_file = ln.File(df, make_new_version_of=old_file)
+new_file = ln.File(df, is_new_version_of=old_file)
 ```
 
 Then, `new_file` automatically has {attr}`~lamindb.File.version` set, incrementing the version number by one.
@@ -111,7 +111,7 @@ Then, `new_file` automatically has {attr}`~lamindb.File.version` set, incrementi
 You can also pass a custom version:
 
 ```
-new_file = ln.File(df, version="1.1", make_new_version_of=old_file)
+new_file = ln.File(df, version="1.1", is_new_version_of=old_file)
 ```
 
 It doesn't matter which old version of the file you use, any old version is good!
