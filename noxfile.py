@@ -132,9 +132,9 @@ def docs(session):
         .split()
     )
     # session.run(*"pip install lnschema_bionty==0.19a5".split())
-    session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()
-    )
+    # session.run(
+    #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    # )
     session.run(*"pip install git+https://github.com/laminlabs/lamindb".split())
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
