@@ -61,7 +61,6 @@ OTHER_TOPICS = """
 
 faq
 glossary
-problems
 ```
 """
 
