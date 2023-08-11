@@ -24,9 +24,9 @@ lamin set --storage s3://other-bucket
 
 ## Where is my SQLite file?
 
-The SQLite file is in the default storage location of the instance and name `f'{instance_name}.lndb'`.
+The SQLite file is in the default storage location of the instance and called: `f"{instance_name}.lndb"`
 
-You can see it as part of the database connection string:
+You can also see it as part of the database connection string:
 
 ```
 ln.setup.settings.instance.db
@@ -52,7 +52,7 @@ It stores files that are merely referenced by metadata ({attr}`~lamindb.File.key
 
 There is only a single `.lamindb/` directory per LaminDB instance.
 
-## What should I do if I want to bulk migrate files to another storage (let’s say another s3 bucket)?
+## What should I do if I want to bulk migrate files to another storage?
 
 Currently, you can only achieve this manually:
 
@@ -63,12 +63,55 @@ Currently, you can only achieve this manually:
 
 The recommended way of making files findable in LaminDB is to link them to labels and use the {attr}`~lamindb.File.description` field.
 
-When you're registering existing data, however, they'll often come with a semantic `key`, defined as the relative path within the storage location.
+When you're registering existing data, however, they'll often come with a semantic `key` (the relative path within the storage location).
 
 ## Will I never be able to find my file if I don’t give it a description?
 
-## What should I do if I have a local file and want to upload it to S3? (Shall I register a File first and upload it with `.save`, or shall I upload outside of Lamin before registering it?)
+You can't create files that have _none_ of `description`, `key` and `run` set.
+Hence, you will always be able to find your find through either of these or
+through additional metadata.
 
-## How to update a file in storage? What’s the process to update file records after I moved files around or updated files?
+## What should I do if I have a local file and want to upload it to S3?
 
-## How do I version a file? Do I always make a new file record and a new transform if I want to track the parent files?
+You can either create a file object from the local file and auto-upload it to the cloud during `file.save()`:
+
+```
+file = ln.File(local_filepath)
+file.save()  # this will upload to the cloud
+```
+
+You can also create a file object from an existing cloud path:
+
+```
+file = ln.File("s3://my-bucket/my-file.csv")
+file.save()  # this will only save metadata as the file is already in registered storage
+```
+
+This enables to use any tool to move data into the cloud.
+
+## How to update a file in storage?
+
+You can edit metadata of the file by querying it and then resetting its attributes. For instance,
+
+```
+file.description = "My new description"
+file.save()  # save the change to the database
+```
+
+## How do I version a file?
+
+You use the `make_new_version_of` parameter:
+
+```
+new_file = ln.File(df, make_new_version_of=old_file)
+```
+
+Then, `new_file` automatically has {attr}`~lamindb.File.version` set, incrementing the version number by one.
+
+You can also pass a custom version:
+
+```
+new_file = ln.File(df, version="1.1", make_new_version_of=old_file)
+```
+
+It doesn't matter which old version of the file you use, any old version is good!
