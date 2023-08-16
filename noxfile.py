@@ -30,7 +30,7 @@ USECASES = """
 ../data-lineage
 ../by-registry
 ../by-datatype
-workflow-manager
+pipelines
 ```
 """
 
