@@ -110,7 +110,7 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
     pull_from_s3_and_unpack("nextflow_lamin_usecases_docs.zip")
-    Path("nextflow_lamin_usecases_docs/docs/bulk_rna_seq.ipynb").rename(
+    Path("nextflow_lamin_usecases_docs/guide/bulk_rna_seq.ipynb").rename(
         "docs/nextflow.ipynb"
     )
 
