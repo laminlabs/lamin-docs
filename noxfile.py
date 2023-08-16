@@ -30,8 +30,7 @@ USECASES = """
 ../data-lineage
 ../by-registry
 ../by-datatype
-../redun
-../nextflow
+workflow-manager
 ```
 """
 
