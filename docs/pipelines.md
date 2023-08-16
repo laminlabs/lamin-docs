@@ -1,14 +1,14 @@
 # Pipelines
 
-Pipelines (sometimes also called workflows) in bioinformatics encompass structured sequences of computational tools that manipulate, visualize, and potentially interpret biological data, orchestrating a coherent analytical framework. Prominent workflow managers such as Snakemake, Nextflow, and Redun offer advanced tools for orchestrating, executing, and overseeing the execution of these pipelines, addressing challenges related to version control, collaborative research efforts, and efficient resource utilization.
+Workflow managers (Nextflow, Snakemake, redun, etc.) schedule, execute, and track pipeline runs with a great level of control and metadata.
 
-Lamin enables tracking of pipeline execution including metadata such as name or version.
-Moreover, it tracks data lineage as it flows through pipelines and validates output against biological registries and ontologies.
+LaminDB tracks data lineage on a higher level (_across_ pipelines, notebooks & app uploads) and models data using biological entities.
 
-The following notebooks entail example runs of various workflow managers and their interaction with Lamin.
+The following use cases demonstrate how to integrate LaminDB with workflow managers.
 
 ```{toctree}
 :maxdepth: 1
+:hidden:
 
 ../redun
 ../nextflow
