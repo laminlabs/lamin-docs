@@ -1,14 +1,16 @@
 # Pipelines
 
-Workflow managers (Nextflow, Snakemake, redun, etc.) schedule, execute, and track pipeline runs with a great level of control and metadata.
+Workflow managers (Nextflow, Snakemake, redun, etc.) schedule, execute, and track pipeline runs with a great level of control & metadata.
 
-LaminDB tracks data lineage on a higher level (_across_ pipelines, notebooks & app uploads) and models data using biological entities.
+LaminDB complements such tools by
 
-The following use cases demonstrate how to integrate LaminDB with workflow managers.
+1. tracking data lineage on a higher level (_across_ pipelines, notebooks & app uploads)
+2. modeling data using biological entities
+
+The following use cases demonstrate how to integrate LaminDB with workflow managers:
 
 ```{toctree}
 :maxdepth: 1
-:hidden:
 
 ../redun
 ../nextflow
