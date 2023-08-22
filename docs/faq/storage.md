@@ -1,5 +1,10 @@
 # Storage FAQ
 
+Often, one works with temporary files but ultimately wants to store them in persistent storage locations, typically in the cloud. Hence, LaminDB comes with
+
+1. a default storage location for persisting data
+2. a registry for managing storage locations: {class}`~lamindb.Storage`
+
 ## What is the default storage location?
 
 It's the directory or cloud bucket that you pass when initializing a LaminDB instance:
