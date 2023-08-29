@@ -27,7 +27,7 @@ USECASES = """
 :hidden:
 :caption: Use cases
 
-../data-lineage
+../data-flow
 ../by-registry
 ../by-datatype
 pipelines
