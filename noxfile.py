@@ -102,9 +102,6 @@ def pull_artifacts(session):
         path.rename(Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
-    # lamindb guide
-    replace_content("docs/guide.ipynb", {OTHER_TOPICS_ORIG: "\n\n"})
-
     # workflows
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
@@ -124,9 +121,11 @@ def pull_artifacts(session):
             continue
         path.rename(Path("docs") / path.name)
 
-    with open("docs/guide.ipynb") as f:
+    # amend toctree
+    with open("docs/guide-toc.md") as f:
         content = f.read()
-    with open("docs/guide.ipynb", "w") as f:
+    with open("docs/guide-toc.md", "w") as f:
+        content = content.replace(OTHER_TOPICS_ORIG, "\n\n")
         content += USECASES
         content += OTHER_TOPICS
         f.write(content)
