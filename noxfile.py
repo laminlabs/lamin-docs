@@ -143,7 +143,7 @@ def docs(session):
     session.run(
         *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
     )
-    session.run(*"pip install git+https://github.com/laminlabs/lamindb".split())
+    session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
     prefix = "." if Path("./lndocs").exists() else ".."
