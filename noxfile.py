@@ -21,7 +21,20 @@ def install(session: nox.Session) -> None:
     session.run(*"pip install ./lamindb[aws,bionty]".split())
 
 
-USECASES = """
+# for FAQ
+
+FAQ_MATCH = """\
+```
+"""
+
+FAQ_APPEND = """\
+faq/storage
+```
+"""
+
+# for Guide
+
+USECASES_TEXT = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -34,27 +47,16 @@ pipelines
 ```
 """
 
-FAQ_MATCH = """\
-```
-"""
-
-FAQ_APPEND = """\
-faq/storage
-```
-"""
-
-
-OTHER_TOPICS_ORIG = """
+OTHER_TOPICS_ORIG_TEXT = """
 ```{toctree}
 :hidden:
 :caption: Other topics
 
 faq
 storage
-```
 """
 
-OTHER_TOPICS = """
+OTHER_TOPICS_TEXT = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -62,8 +64,17 @@ OTHER_TOPICS = """
 
 faq
 glossary
-```
 """
+
+
+def jsonify(text: str):
+    for line in text.split("\n"):
+        line = f'    "{line}\n",'
+
+
+USECASES = jsonify(USECASES_TEXT)
+OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
+OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
 
 
 def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
@@ -122,10 +133,10 @@ def pull_artifacts(session):
         path.rename(Path("docs") / path.name)
 
     # amend toctree
-    with open("docs/guide-toc.md") as f:
+    with open("docs/guide.ipynb") as f:
         content = f.read()
-    with open("docs/guide-toc.md", "w") as f:
-        content = content.replace(OTHER_TOPICS_ORIG, "\n\n")
+    with open("docs/guide.ipynb", "w") as f:
+        content = content.replace(OTHER_TOPICS_ORIG, "")
         content += USECASES
         content += OTHER_TOPICS
         f.write(content)
