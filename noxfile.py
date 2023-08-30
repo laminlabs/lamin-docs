@@ -69,14 +69,16 @@ glossary
 
 def jsonify(text: str):
     new_lines = []
-    for line in text.split("\n"):
-        line = f'    "{line}\n",'
+    # skip last line
+    for line in text.split("\n")[:-1]:
+        line = rf'    "{line}\n",'
         new_lines.append(line)
     return "\n".join(new_lines)
 
 
 USECASES = jsonify(USECASES_TEXT)
 OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
+print(OTHER_TOPICS_ORIG)
 OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
 
 
@@ -148,9 +150,7 @@ def pull_artifacts(session):
     with open("docs/guide.ipynb") as f:
         content = f.read()
     with open("docs/guide.ipynb", "w") as f:
-        content = content.replace(OTHER_TOPICS_ORIG, "")
-        content += USECASES
-        content += OTHER_TOPICS
+        content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
 
