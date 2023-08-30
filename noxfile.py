@@ -21,7 +21,20 @@ def install(session: nox.Session) -> None:
     session.run(*"pip install ./lamindb[aws,bionty]".split())
 
 
-USECASES = """
+# for FAQ
+
+FAQ_MATCH = """\
+```
+"""
+
+FAQ_APPEND = """\
+faq/storage
+```
+"""
+
+# for Guide
+
+USECASES_TEXT = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -34,27 +47,16 @@ pipelines
 ```
 """
 
-FAQ_MATCH = """\
-```
-"""
-
-FAQ_APPEND = """\
-faq/storage
-```
-"""
-
-
-OTHER_TOPICS_ORIG = """
+OTHER_TOPICS_ORIG_TEXT = """
 ```{toctree}
 :hidden:
 :caption: Other topics
 
 faq
 storage
-```
 """
 
-OTHER_TOPICS = """
+OTHER_TOPICS_TEXT = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -62,8 +64,22 @@ OTHER_TOPICS = """
 
 faq
 glossary
-```
 """
+
+
+def jsonify(text: str):
+    new_lines = []
+    # skip last line
+    for line in text.split("\n")[:-1]:
+        line = rf'    "{line}\n",'
+        new_lines.append(line)
+    return "\n".join(new_lines)
+
+
+USECASES = jsonify(USECASES_TEXT)
+OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
+print(OTHER_TOPICS_ORIG)
+OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
 
 
 def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
@@ -83,6 +99,15 @@ def pull_from_s3_and_unpack(zip_filename):
     shutil.unpack_archive(zip_filename, zip_filename.replace(".zip", ""))
 
 
+def sync_path(path, target_path):
+    if target_path.exists():
+        if target_path.is_dir():
+            shutil.rmtree(target_path)
+        else:
+            target_path.unlink()
+    path.rename(target_path)
+
+
 @nox.session
 def pull_artifacts(session):
     # lamindb
@@ -96,10 +121,10 @@ def pull_artifacts(session):
             or path.name == "faq"  # directory treated below
         ):
             continue
-        path.rename(Path("docs") / path.name)
+        sync_path(path, Path("docs") / path.name)
     # lamindb faq
     for path in Path("lamindb_docs/faq").glob("*"):
-        path.rename(Path("docs/faq") / path.name)
+        sync_path(path, Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
     # workflows
@@ -119,15 +144,13 @@ def pull_artifacts(session):
             or path.name == "changelog.md"
         ):
             continue
-        path.rename(Path("docs") / path.name)
+        sync_path(path, Path("docs") / path.name)
 
     # amend toctree
-    with open("docs/guide-toc.md") as f:
+    with open("docs/guide.ipynb") as f:
         content = f.read()
-    with open("docs/guide-toc.md", "w") as f:
-        content = content.replace(OTHER_TOPICS_ORIG, "\n\n")
-        content += USECASES
-        content += OTHER_TOPICS
+    with open("docs/guide.ipynb", "w") as f:
+        content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
 
