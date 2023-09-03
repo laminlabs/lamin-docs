@@ -63,6 +63,7 @@ OTHER_TOPICS_TEXT = """
 :caption: Other topics
 
 faq
+influences
 glossary
 """
 
