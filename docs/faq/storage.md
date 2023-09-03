@@ -120,3 +120,32 @@ new_file = ln.File(df, version="1.1", is_new_version_of=old_file)
 ```
 
 It doesn't matter which old version of the file you use, any old version is good!
+
+## How to set up a public read-only instance on an s3 bucket?
+
+For a public read-only instance the bucket should have certain policies configured.
+You can read about s3 bucket policies [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html). For a public read-only instance the bucket should have `s3:GetObject` and `s3:ListBucket` permissions. The example policy is given below:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AddPerm",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::your-bucket-name/*"
+        },
+        {
+            "Sid": "AllowList",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::your-bucket-name"
+        }
+    ]
+}
+```
+
+Change `your-bucket-name` above to the name of your s3 bucket.
