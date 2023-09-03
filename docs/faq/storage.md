@@ -53,7 +53,7 @@ You can, however, take the SQLite file and place it in a new location (`./mydir`
 
 ## What is the `.lamindb/` directory?
 
-It stores files that are merely referenced by metadata ({attr}`~lamindb.File.key` is `None`).
+It stores files that are merely referenced by metadata (the `key` field of {attr}`~lamindb.File` is `None`).
 
 There is only a single `.lamindb/` directory per LaminDB instance.
 
@@ -66,7 +66,7 @@ Currently, you can only achieve this manually:
 
 ## When should I pass `key` and when should I rely purely on metadata to register a file?
 
-The recommended way of making files findable in LaminDB is to link them to labels and use the {attr}`~lamindb.File.description` field.
+The recommended way of making files findable in LaminDB is to link them to labels and use the `description` field of {attr}`~lamindb.File`.
 
 When you're registering existing data, however, they'll often come with a semantic `key` (the relative path within the storage location).
 
@@ -111,7 +111,7 @@ You use the `is_new_version_of` parameter:
 new_file = ln.File(df, is_new_version_of=old_file)
 ```
 
-Then, `new_file` automatically has {attr}`~lamindb.File.version` set, incrementing the version number by one.
+Then, `new_file` automatically has the `version` field set, incrementing the version number by one.
 
 You can also pass a custom version:
 
