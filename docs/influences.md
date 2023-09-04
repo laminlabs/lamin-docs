@@ -22,20 +22,24 @@ Like redun & git, LaminDB is a distributed system in which any LaminDB instance 
 
 LaminDB hasn't knowingly been influenced by other workflow managers.
 
-## Meta-ontologies & knowledge graphs
+## Knowledge graphs
 
-Biological ontologies are structured frameworks that define and categorize biological entities along with the relationships that connect them.
+In LaminDB, ontologies are used to standardize & validate metadata based on plug-in {mod}`lnschema_bionty`. It wraps common public ontologies for which Lamin caches curated assets on S3 for robust availability.
 
-In LaminDB, ontologies are used to standardize & validate metadata based on plug-in {mod}`lnschema_bionty`. The implementation is a wrapper around the common public ontologies for which Lamin caches curated assets for robust availability on S3.
+We're not aware of another tool that focuses on leveraging ontologies for curation & validation, but there exist several tools that extend & harmonize ontologies for building knowledge graphs. We list two of them below.
+
+LaminDB does not attempt to create a knowledge graph but assumes that associations between entities are mainly found through experimentation, statistics & machine learning.
+
+Also within LaminDB, connections between entities can be mapped through the pathway entity and by using enrichment tools or by defining relations between biological entities in custom schema. Some relations might be added to `lnschema_bionty` in the future.
 
 ### BioLink
 
-[BioLink](https://biolink.github.io/biolink-model/) is a standardized data model designed to facilitate the integration and query of biological data from various sources in knowledge graphs. It provides a structured way to represent biological entities, their attributes, and the relationships between them, enhancing interoperability in bioinformatics.
+[BioLink](https://biolink.github.io/biolink-model/) is a data model to integrate data from various sources in knowledge graphs. It provides a structured way to represent biological entities, their attributes, and the relationships between them.
 
-It is primarly a schema in YAML syntax that can be translated into various formats. [BioLink](https://biolink.github.io/biolink-model/) does not provide tooling to access knowledge graphs generated.
+It is primarily a schema in YAML syntax that can be translated into various formats. It does not provide tooling to access generated knowledge graphs.
 
 ### Biocypher
 
 [Biocypher](https://biocypher.org/) is a Python package that simplifies the creation of knowledge graphs.
 
-Built upon a modular framework, it enables users to manipulate and harmonize ontologies. Unlike LaminDB, it does not focus on data curation or SQL entities and is primarily for developers interested in building knowledge graphs.
+Built upon a modular framework, it enables users to manipulate and harmonize ontologies.
