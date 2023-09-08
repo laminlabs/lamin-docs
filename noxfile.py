@@ -141,6 +141,11 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("cellxgene_census_lamin_docs.zip")
     for path in Path("cellxgene_census_lamin_docs/").glob("*"):
         if path.name == "guide.md":
+            with open(path.as_posix()) as f:
+                content = f.read()
+            with open(path.as_posix(), "w") as f:
+                content = content.replace("# Guide", "# Atlas")
+                f.write(content)
             sync_path(path, Path("docs") / "census.md")
         elif path.name.endswith(".ipynb"):
             sync_path(path, Path("docs") / path.name)
