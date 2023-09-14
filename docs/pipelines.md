@@ -14,4 +14,5 @@ The following use cases demonstrate how to integrate LaminDB with workflow manag
 
 ../redun
 ../nextflow
+../snakemake
 ```
