@@ -34,7 +34,7 @@ faq/storage
 
 # for Guide
 
-USECASES_TEXT = """
+USECASES = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -48,7 +48,7 @@ census
 ```
 """
 
-OTHER_TOPICS_ORIG_TEXT = """
+OTHER_TOPICS_ORIG = """
 ```{toctree}
 :hidden:
 :caption: Other topics
@@ -57,7 +57,7 @@ faq
 storage
 """
 
-OTHER_TOPICS_TEXT = """
+OTHER_TOPICS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
@@ -69,19 +69,20 @@ glossary
 """
 
 
-def jsonify(text: str):
-    new_lines = []
-    # skip last line
-    for line in text.split("\n")[:-1]:
-        line = rf'    "{line}\n",'
-        new_lines.append(line)
-    return "\n".join(new_lines)
+# below is needed if we have TOCs in notebooks
+
+# def jsonify(text: str):
+#     new_lines = []
+#     # skip last line
+#     for line in text.split("\n")[:-1]:
+#         line = rf'    "{line}\n",'
+#         new_lines.append(line)
+#     return "\n".join(new_lines)
 
 
-USECASES = jsonify(USECASES_TEXT)
-OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
-print(OTHER_TOPICS_ORIG)
-OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
+# USECASES = jsonify(USECASES_TEXT)
+# OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
+# OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
 
 
 def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
@@ -166,9 +167,9 @@ def pull_artifacts(session):
         sync_path(path, Path("docs") / path.name)
 
     # amend toctree
-    with open("docs/guide.ipynb") as f:
+    with open("docs/guide.md") as f:
         content = f.read()
-    with open("docs/guide.ipynb", "w") as f:
+    with open("docs/guide.md", "w") as f:
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
