@@ -6,7 +6,7 @@
 
 ```
 
-## LaminApp
+## LaminHub
 
 ```{include} features-laminhub.md
 
