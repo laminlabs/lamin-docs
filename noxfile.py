@@ -63,6 +63,7 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
+features
 faq
 influences
 glossary
