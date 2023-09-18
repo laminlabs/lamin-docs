@@ -8,6 +8,6 @@
 
 ## LaminApp
 
-```{include} features-laminapp.md
+```{include} features-laminhub.md
 
 ```
