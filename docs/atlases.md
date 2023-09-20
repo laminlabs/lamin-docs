@@ -12,5 +12,5 @@ The following use cases demonstrate how to integrate LaminDB with atlases:
 ```{toctree}
 :maxdepth: 1
 
-../census
+census
 ```
