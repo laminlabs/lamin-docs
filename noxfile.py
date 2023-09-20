@@ -150,7 +150,7 @@ def pull_artifacts(session):
             with open(path.as_posix()) as f:
                 content = f.read()
             with open(path.as_posix(), "w") as f:
-                content = content.replace("# Guide", "# Atlases")
+                content = content.replace("# Guide", "# cellxgene-census")
                 f.write(content)
             sync_path(path, Path("docs") / "census.md")
         elif path.name.endswith(".ipynb"):
