@@ -44,7 +44,7 @@ USECASES = """
 ../by-registry
 ../by-datatype
 pipelines
-census
+atlases
 ```
 """
 
