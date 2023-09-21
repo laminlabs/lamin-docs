@@ -13,4 +13,5 @@ The following use cases demonstrate how to integrate LaminDB with atlases:
 :maxdepth: 1
 
 census
+rxrx
 ```
