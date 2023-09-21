@@ -156,11 +156,11 @@ def pull_artifacts(session):
         elif path.name.endswith(".ipynb"):
             sync_path(path, Path("docs") / path.name)
 
-    # cellxgene-census
+    # rxrx
     pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
     for path in Path("rxrx_lamin_docs/").glob("*"):
         if path.name == "rxrx.md":
-            sync_path(path, Path("docs") / "census.md")
+            sync_path(path, Path("docs") / "rxrx.md")
         elif path.name == "query-rxrx.ipynb":
             sync_path(path, Path("docs") / path.name)
 
