@@ -152,7 +152,7 @@ def pull_artifacts(session):
             with open(path.as_posix(), "w") as f:
                 content = content.replace("# Guide", "# cellxgene-census")
                 f.write(content)
-            sync_path(path, Path("docs") / "census.md")
+            sync_path(path, Path("docs") / "cellxgene-census.md")
         elif path.name.endswith(".ipynb"):
             sync_path(path, Path("docs") / path.name)
 
