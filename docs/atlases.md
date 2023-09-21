@@ -1,17 +1,12 @@
 # Atlases
 
-Atlases provide centralized access data with standardized metadata.
+Atlases provide centralized access to data with standardized metadata.
 
-LaminDB can be used as a query engine for atlases:
-
-1. Unify storage and metadta with the same API
-2. Easy access to registered metadata with autocompletion
-
-The following use cases demonstrate how to integrate LaminDB with atlases:
+The following use cases demonstrate how to use LaminDB to query popular atlases.
 
 ```{toctree}
 :maxdepth: 1
 
-census
+cellxgene-census
 rxrx
 ```
