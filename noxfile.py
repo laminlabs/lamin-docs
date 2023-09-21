@@ -146,22 +146,13 @@ def pull_artifacts(session):
     # cellxgene-census
     pull_from_s3_and_unpack("cellxgene_census_lamin_docs.zip")
     for path in Path("cellxgene_census_lamin_docs/").glob("*"):
-        if path.name == "guide.md":
-            with open(path.as_posix()) as f:
-                content = f.read()
-            with open(path.as_posix(), "w") as f:
-                content = content.replace("# Guide", "# cellxgene-census")
-                f.write(content)
-            sync_path(path, Path("docs") / "cellxgene-census.md")
-        elif path.name.endswith(".ipynb"):
+        if path.name.endswith(".ipynb"):
             sync_path(path, Path("docs") / path.name)
 
     # rxrx
     pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
     for path in Path("rxrx_lamin_docs/").glob("*"):
-        if path.name == "rxrx.md":
-            sync_path(path, Path("docs") / "rxrx.md")
-        elif path.name == "query-rxrx.ipynb":
+        if path.name == "rxrx.ipynb":
             sync_path(path, Path("docs") / path.name)
 
     # use-cases
