@@ -32,17 +32,21 @@ LaminDB does not attempt to create a knowledge graph but assumes that associatio
 
 Also within LaminDB, connections between entities can be mapped through the pathway entity and by using enrichment tools or by defining relations between biological entities in custom schema. Some relations might be added to `lnschema_bionty` in the future.
 
+### Biocypher
+
+[Biocypher](https://biocypher.org/) is a Python package that simplifies the creation of knowledge graphs.
+
+Built upon a modular framework, it enables users to manipulate and harmonize ontologies.
+
 ### BioLink
 
 [BioLink](https://biolink.github.io/biolink-model/) is a data model to integrate data from various sources in knowledge graphs. It provides a structured way to represent biological entities, their attributes, and the relationships between them.
 
 It is primarily a schema in YAML syntax that can be translated into various formats. It does not provide tooling to access generated knowledge graphs.
 
-### Biocypher
+### bioregistry
 
-[Biocypher](https://biocypher.org/) is a Python package that simplifies the creation of knowledge graphs.
-
-Built upon a modular framework, it enables users to manipulate and harmonize ontologies.
+[bioregistry](https://bioregistry.io/) is an open-source registry that provides access to curated ontologies with standardized metadata. Bionty uses bioregistry-standardized prefixes as the key for reference sources.
 
 ### gget
 
