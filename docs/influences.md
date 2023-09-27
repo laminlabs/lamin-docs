@@ -46,6 +46,11 @@ Built upon a modular framework, it enables users to manipulate and harmonize ont
 
 ### gget
 
-[gget](https://github.com/pachterlab/gget) enables efficient queries of genomic databases. It provides simple, intuitive API on top of the existing web servers.
+[gget](https://github.com/pachterlab/gget) provides a simple, intuitive API to query existing web servers of genomic databases.
 
-LaminDB embraces the same motivation to provide users with simple, reliable access to biological references. Instead of relying on web servers, we cache versioned ontologies on s3. Unlike gget, LaminDB does not provide access to the complete information of references, it only stores basic metadata that is sufficient for data annotation. In addition, LaminDB focuses on processes involves metadata curation, standardization by enabling creating hierarchical SQL records from those ontologies.
+With [bionty](https://lamin.ai/docs/bionty), Lamin provides a similar tool with three important differences:
+
+- Bionty focuses on leveraging public ontologies for data management (validation, standardization, annotation) rather than queries. In comparison to gget, Bionty's queries are more limited. 
+- To enable robust & performant access for usage in data pipelines that bulk-validate, -standardize, or -annotate, Lamin hosts versioned ontologies on AWS S3 instead of relying on the sometimes flaky availability of existing public web servers.
+- Bionty can be plugged into LaminDB to easily import records from public ontologies into biological registries, managed in a simple database.
+
