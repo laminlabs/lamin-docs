@@ -47,3 +47,5 @@ Built upon a modular framework, it enables users to manipulate and harmonize ont
 ### gget
 
 [gget](https://github.com/pachterlab/gget) enables efficient queries of genomic databases. It provides simple, intuitive API on top of the existing web servers.
+
+LaminDB embraces the same motivation to provide users with simple, reliable access to biological references. Instead of relying on web servers, we cache versioned ontologies on s3. Unlike gget, LaminDB does not provide access to the complete information of references, it only stores basic metadata that is sufficient for data annotation. In addition, LaminDB focuses on processes involves metadata curation, standardization by enabling creating hierarchical SQL records from those ontologies.
