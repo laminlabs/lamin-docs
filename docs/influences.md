@@ -22,7 +22,7 @@ Like redun & git, LaminDB is a distributed system in which any LaminDB instance 
 
 LaminDB hasn't knowingly been influenced by other workflow managers.
 
-## Knowledge graphs
+## Biological entities
 
 In LaminDB, ontologies are used to standardize & validate metadata based on plug-in {mod}`lnschema_bionty`. It wraps common public ontologies for which Lamin caches curated assets on S3 for robust availability.
 
@@ -43,3 +43,7 @@ It is primarily a schema in YAML syntax that can be translated into various form
 [Biocypher](https://biocypher.org/) is a Python package that simplifies the creation of knowledge graphs.
 
 Built upon a modular framework, it enables users to manipulate and harmonize ontologies.
+
+### gget
+
+[gget](https://github.com/pachterlab/gget) enables efficient queries of genomic databases. It provides simple, intuitive API on top of the existing web servers.
