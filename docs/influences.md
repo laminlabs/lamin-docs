@@ -44,13 +44,16 @@ It is primarily a schema in YAML syntax that can be translated into various form
 
 Built upon a modular framework, it enables users to manipulate and harmonize ontologies.
 
+### bioregistry
+
+[bioregistry](https://bioregistry.io/) is an open-source registry that provides access to curated ontologies with standardized metadata. Bionty uses bioregistry-standardized prefixes as the key for reference sources.
+
 ### gget
 
 [gget](https://github.com/pachterlab/gget) provides a simple, intuitive API to query existing web servers of genomic databases.
 
 With [bionty](https://lamin.ai/docs/bionty), Lamin provides a similar tool with three important differences:
 
-- Bionty focuses on leveraging public ontologies for data management (validation, standardization, annotation) rather than queries. In comparison to gget, Bionty's queries are more limited. 
+- Bionty focuses on leveraging public ontologies for data management (validation, standardization, annotation) rather than queries. In comparison to gget, Bionty's queries are more limited.
 - To enable robust & performant access for usage in data pipelines that bulk-validate, -standardize, or -annotate, Lamin hosts versioned ontologies on AWS S3 instead of relying on the sometimes flaky availability of existing public web servers.
 - Bionty can be plugged into LaminDB to easily import records from public ontologies into biological registries, managed in a simple database.
-
