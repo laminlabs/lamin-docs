@@ -1,4 +1,4 @@
-# Access management, secrets & security
+# Access management & security
 
 ## Open-source
 
@@ -27,81 +27,34 @@ Lamin Vault is based on [HashiCorp](https://en.wikipedia.org/wiki/HashiCorp) Vau
 
 ### How does it work?
 
-1. **Initialization**: You initialize the Vault for any LaminDB instance by providing an admin connection string to your Postgres database. The information is securely stored in HashiCorp Vault.
+1. **Initialization**: You initialize the Vault for any LaminDB instance by providing an admin connection string to your Postgres database as explained below.
 2. **Access generation**: If a collaborator wants to access the Postgres database, the Vault dynamically generates unique short-lived tokens for each session (e.g., for username & password). The permissions of these credentials are subject to pre-defined policies and typically defined through LaminHub's collaborator management (e.g., "read" vs. "write" access).
 
 This process ensures that access to the database is secure, managed efficiently, and follows the principle of least privilege & short-lived tokens.
 
-### How to use vault with `lamindb`?
+### How to manage permissions?
 
-For any given Postgres-based instance, you can enable access management through the vault.
+When a collaborator is added to a LaminDB instance, we create a new role in the Vault for this collaborator with authorization depending on the provided collaborator role in LaminHub (`read`, `write`, `admin`).
 
-#### Initializing Vault
+If a collaborator is removed or updated, the Vault responds to it.
 
-There are two ways to initialize Vault in Lamin.
+### How to enable the Vault?
 
-1. **When initializing an instance, with —vault flag**
+For any given Postgres-based instance, you can enable access management through the Vault.
 
-   This command initializes an instance with a Postgres database. The connection string for the database is stored securely in Vault.
+1. **When initializing an instance:** This command initializes an instance with a Postgres database The connection string for the database is stored securely in the Vault.
 
    ```bash
    lamindb init --db postgresql://USER:PWD@HOSTANME:PORT/DBNAME --vault
    ```
 
-   In Python:
-
-   ```python
-   from lamindb_setup import init_vault
-
-   init_vault(db="postgresql://USER:PWD@HOSTANME:PORT/DBNAME")
-   ```
-
-2. **Using the init_vault command**
-
-   This command is used to initialize Vault for the current LaminDB instance. It is used internally by the init command.
+2. **For an existing instance:** This command is used to initialize the Vault for the current LaminDB instance.
 
    ```bash
-   lamindb init_vault --db postgresql://USER:PWD@HOSTANME:PORT/DBNAME --vault
+   lamin set vault --db postgresql://USER:PWD@HOSTANME:PORT/DBNAME
    ```
 
-   In Python:
-
-   ```python
-   from lamin_vault.client._init_instance_vault import init_instance_vault
-
-   init_instance_vault(
-       vault_admin_client=VAULT_ADMIN_CLIENT,
-       instance_id=INSTANCE_ID,
-       admin_account_id=ADMIN_ACCOUNT_ID,
-       db_host=DB_HOST,
-       db_port=DB_PORT,
-       db_name=DB_NAME,
-       vault_db_username=VAULT_DB_USERNAME,
-       vault_db_password=VAULT_DB_PASSWORD,
-   )
-   ```
-
-#### Using Vault when Loading an Instance
-
-When you load an instance using —vault flag, it fetches the database connection details from Vault and to generate credentials and establishes a secure connection to the database.
-
-```bash
-lamindb load INSTANCE_IDENTIFIER --vault
-```
-
-In Python:
-
-```python
-from lamindb_setup import load_instance
-
-load_instance(instance_name="INSTANCE_IDENTIFIER")
-```
-
-#### Important Note
-
-Vault is used by default when loading an instance. However, for SQLite instances, Vault is not used. This is because SQLite databases are file-based and do not require a connection string.
-
-### How do we ensure credentials can only be retrieved by authorized users?
+## How do we ensure credentials can only be retrieved by authorized users?
 
 1. **JWT exchange**
 
@@ -128,7 +81,7 @@ Vault is used by default when loading an instance. However, for SQLite�
 
    Vault delivers the credentials back to the Lamin instance. These credentials are then used to establish a secure connection to the database.
 
-### How do we ensure vault can only be configured by an instance admin?
+### How do we ensure the Vault can only be configured by an instance admin?
 
 1. **JWT exchange**
 
@@ -143,7 +96,3 @@ Vault is used by default when loading an instance. However, for SQLite�
 2. **Vault configuration**
 
    The Vault token, is used to make an authenticated request to Vault and modify policies and db roles.
-
-### How do we manage authorization?
-
-When a collaborator is added to an instance, we create a new role in the vault for this collaborator with authorizations depending on the provided lamin role (read, write, admin). Delete or update of a collaborator are also propagate in the vault.
