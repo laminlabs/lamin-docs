@@ -64,6 +64,7 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 features
+access
 faq
 influences
 glossary
