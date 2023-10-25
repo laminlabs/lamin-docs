@@ -2,6 +2,9 @@
 
 ```{glossary}
 
+label
+    A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
+
 feature
     A feature is an individual measurable property of a phenomenon [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))], a measured event like a microscopy image or transcriptomic readout of a biological system.
 
