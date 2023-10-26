@@ -45,7 +45,7 @@ ln.setup.settings.storage.cache_dir
 #> path-to-cache-dir
 ```
 
-## What happens if I move the `.lndb` file around?
+## What happens if I move the SQLite `.lndb` file around?
 
 The SQLite file has to remain in the default storage location of the instance.
 
@@ -111,14 +111,16 @@ file.save()  # save the change to the database
 
 ## What should I do if I acidentially delete a file from storage?
 
-The clean way to delete a file in LaminDB is via `ln.delete(file)` which will:
+`File` and `Dataset` records follows a "trash" behavior as canonical file systems. Meaning, when you perform `file.delete()`, the record is moved into trash while still exists in the database.
 
-- always delete the metadata record
-- prompt to ask if user wants to delete the file from storage
+Deleting a file from the trash triggers the permanent delete:
+
+- prompt to ask if user wants to delete the metadata record
+- prompt to ask if user wants to delete the file from storage if semantic key is used (otherwise the file is automatially deleted from the storage)
 
 If you delete a file from storage outside of LaminDB, you are left with a file record without valid storage. In this case, you can:
 
-- use `ln.delete()` to delete the file record from databse
+- use `ln.delete(permanent=True)` to delete the file record from database
 - alternatively, if you'd like to keep the record, link the storage back via `file.stage()`
 
 ```python
