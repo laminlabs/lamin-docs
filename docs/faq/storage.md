@@ -109,7 +109,7 @@ file.description = "My new description"
 file.save()  # save the change to the database
 ```
 
-## What should I do if I acidentially delete a file from storage?
+## What should I do if I accidentially delete a file from storage?
 
 `File` and `Dataset` records follows a "trash" behavior as canonical file systems. Meaning, when you perform `file.delete()`, the record is moved into trash while still exists in the database.
 
