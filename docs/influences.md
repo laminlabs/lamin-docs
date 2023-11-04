@@ -10,7 +10,19 @@ Lamin was influenced by many projects. Here we will attempt to list all of them.
 
 ## Workflow managers
 
-Lamin complements workflow managers with its focus on interactive analyses, biological entities & provenance beyond deterministic workflows (app uploads & notebooks). We encourage using a workflow manager to manage scheduling, execution, error & parameter handling of workflows and integrating successful executions into LaminDB for full provenance tracking.
+Lamin complements workflow managers with its focus on interactive analyses, biological entities & provenance beyond deterministic workflows (app uploads & notebooks).
+
+We encourage using a workflow manager to manage scheduling, execution, error & parameter handling of workflows, and tracking successful executions with LaminDB for full provenance tracking.
+
+:::{dropdown} How can I integrate workflow manager outputs?
+
+See:
+
+- {doc}`/redun`
+- {doc}`/nextflow`
+- {doc}`/snakemake`
+
+:::
 
 ### redun
 
@@ -18,9 +30,9 @@ Despite Lamin's different scope, the workflow manager [redun](https://github.com
 
 Similar to redun, Lamin tries to achieve idempotency but for different use cases & using largely differing designs.
 
-Like redun & git, LaminDB is a distributed system in which any LaminDB instance can exchange & share data with any other LaminDB instance. (Currently, this feature is built into the design, but not yet fully implemented.)
+Like redun & git, LaminDB is a distributed system in which any LaminDB instance can exchange & share data with any other LaminDB instance: see {doc}`/transfer`.
 
-LaminDB hasn't knowingly been influenced by other workflow managers.
+LaminDB hasn't consciously been influenced by other workflow managers.
 
 ## Biological entities
 
