@@ -6,13 +6,13 @@ This page is, for now, just a stub.
 
 ```
 
-Lamin was influenced by many projects. Here we will attempt to list all of them.
+Lamin was influenced by many projects. Here we will attempt to attribute them.
 
 ## Workflow managers
 
 Lamin complements workflow managers with its focus on interactive analyses, biological entities & provenance beyond deterministic workflows (app uploads & notebooks).
 
-We encourage using a workflow manager to manage scheduling, execution, error & parameter handling of workflows, and tracking successful executions with LaminDB for full provenance tracking.
+We encourage using a workflow manager to manage scheduling, execution, error & parameter handling of workflows, and tracking successful executions with LaminDB for full provenance tracking. For a great recent perspective, see [AracadiaScience23](https://research.arcadiascience.com/pub/perspective-reproducible-workflows/release/3).
 
 :::{dropdown} How can I integrate workflow manager outputs?
 
