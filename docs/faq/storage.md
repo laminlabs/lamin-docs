@@ -71,9 +71,8 @@ Generally, we discourage the usage of semantic `keys` for files due to the need 
 
 ## How does LaminDB store existing (legacy) data
 
-Nevertheless, existing data is often stored in hierarchical structures with semantic folder names.
-Hence, LaminDB automatically stores such data with a semantic `key` (the relative path within the storage location) upon saving.
-This behavior can be controlled with {meth}`~lamindb.settings.file_use_virtual_keys`.
+Existing data is often stored in hierarchical structures with semantic folder names.
+Hence, LaminDB automatically stores such data with a semantic `key` (the relative path within the storage location) upon saving and overwrites the default set by {meth}`~lamindb.settings.file_use_virtual_keys`.
 
 ## Will I never be able to find my file if I don’t give it a description?
 
