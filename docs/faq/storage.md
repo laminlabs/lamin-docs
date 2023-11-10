@@ -64,11 +64,16 @@ Currently, you can only achieve this manually:
 1. Copy or move files into the desired new storage location
 2. Adapt the corresponding record in the {class}`~lamindb.Storage` registry by setting the `root` field to the new location
 
-## When should I pass `key` and when should I rely purely on metadata to register a file?
+## When should I pass `key`, and when should I rely purely on metadata to register a file?
 
 The recommended way of making files findable in LaminDB is to link them to labels and use the `description` field of {attr}`~lamindb.File`.
+Generally, we discourage the usage of semantic `keys` for files due to the need for standards and potential ambiguity.
 
-When you're registering existing data, however, they'll often come with a semantic `key` (the relative path within the storage location).
+## How does LaminDB store existing (legacy) data
+
+Nevertheless, existing data is often stored in hierarchical structures with semantic folder names.
+Hence, LaminDB automatically stores such data with a semantic `key` (the relative path within the storage location) upon saving.
+This behavior can be controlled with {meth}`~lamindb.settings.file_use_virtual_keys`.
 
 ## Will I never be able to find my file if I don’t give it a description?
 
@@ -109,16 +114,16 @@ file.description = "My new description"
 file.save()  # save the change to the database
 ```
 
-## What should I do if I accidentially delete a file from storage?
+## What should I do if I accidentally delete a file from storage?
 
 `File` and `Dataset` records follows a "trash" behavior as canonical file systems. Meaning, when you perform `file.delete()`, the record is moved into trash while still exists in the database.
 
 Deleting a file from the trash triggers the permanent delete:
 
 - prompt to ask if user wants to delete the metadata record
-- prompt to ask if user wants to delete the file from storage if semantic key is used (otherwise the file is automatially deleted from the storage)
+- prompt to ask if user wants to delete the file from storage if semantic key is used (otherwise the file is automatically deleted from the storage)
 
-If you delete a file from storage outside of LaminDB, you are left with a file record without valid storage. In this case, you can:
+If you delete a file from storage outside LaminDB, you are left with a file record without valid storage. In this case, you can:
 
 - use `ln.delete(permanent=True)` to delete the file record from database
 - alternatively, if you'd like to keep the record, link the storage back via `file.stage()`
