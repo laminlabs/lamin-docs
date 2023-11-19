@@ -2,13 +2,13 @@
 
 ```{glossary}
 
-label
-    A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
-
 feature
     A feature is an individual measurable property of a phenomenon [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))], a measured event like a microscopy image or transcriptomic readout of a biological system.
 
     It's equivalent to the term "independent {term}`variable`" in statistics, but is the preferred term to denote dimensions of "feature spaces" in machine learning.
+
+label
+    A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
 
 observation
     In statistics (machine learning), an observation refers to a particular measured instance of a set of random variable.
@@ -18,8 +18,8 @@ observation
 record
     A record is a data structure that consists in [fields](https://en.wikipedia.org/wiki/Field_(computer_science)), typically of different types but in a fixed sequence [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    Importantly, we refer to instances of `SQLModel` as records. Once a record is inserted into a database table, it becomes a row in that table.
-    Every `SQLModel` class (in LaminDB) has a 1:1 correspondence with a database table and a pydantic `BaseModel`, every row in a database table has a 1:1 correspondence with a record.
+    Importantly, we refer to instances of [Registry](https://lamin.ai/docs/lamindb.dev.registry) as records. Once a record is inserted into a database table, it becomes a row in that table.
+    Every `Registry` class (in LaminDB) has a 1:1 correspondence with a database table and a django [model](https://docs.djangoproject.com/en/4.2/topics/db/models/), every row in a database table has a 1:1 correspondence with a record.
 
     A record often stores jointly measured {term}`variables <variable>` in its fields, but in general allows updating fields when more information becomes available or changes.
 
