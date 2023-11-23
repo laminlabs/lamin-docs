@@ -142,9 +142,9 @@ def pull_artifacts(session):
         "docs/snakemake.ipynb"
     )
 
-    # cellxgene-census
-    pull_from_s3_and_unpack("cellxgene_census_lamin_docs.zip")
-    for path in Path("cellxgene_census_lamin_docs/").glob("*"):
+    # cellxgene
+    pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
+    for path in Path("cellxgene_lamin_docs/").glob("*"):
         if path.name.endswith(".ipynb"):
             sync_path(path, Path("docs") / path.name)
 
