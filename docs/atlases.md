@@ -7,6 +7,6 @@ The following use cases demonstrate how to use LaminDB to query popular atlases.
 ```{toctree}
 :maxdepth: 1
 
-cellxgene-census
+cellxgene
 rxrx
 ```
