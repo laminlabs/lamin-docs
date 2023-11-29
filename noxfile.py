@@ -145,7 +145,7 @@ def pull_artifacts(session):
     # cellxgene
     pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
     for path in Path("cellxgene_lamin_docs/").glob("*"):
-        if path.name.endswith(".ipynb"):
+        if path.name.endswith(("cellxgene.ipynb", "census.ipynb")):
             sync_path(path, Path("docs") / path.name)
 
     # rxrx
