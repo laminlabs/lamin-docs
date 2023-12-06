@@ -136,7 +136,7 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
     pull_from_s3_and_unpack("nextflow_lamin_usecases_docs.zip")
-    Path("nextflow_lamin_usecases_docs/nextflow.ipynb").rename("docs/nextflow.ipynb")
+    Path("nextflow_lamin_usecases_docs/mcmicro_02.ipynb").rename("docs/nextflow.ipynb")
     pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
     Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
         "docs/snakemake.ipynb"
