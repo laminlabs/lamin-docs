@@ -53,7 +53,7 @@ You can, however, take the SQLite file and place it in a new location (`./mydir`
 
 ## What is the `.lamindb/` directory?
 
-It stores files that are merely referenced by metadata (the `key` field of {attr}`~lamindb.File` is `None`).
+It stores files that are merely referenced by metadata (the `key` field of {attr}`~lamindb.Artifact` is `None`).
 
 There is only a single `.lamindb/` directory per LaminDB instance.
 
@@ -66,7 +66,7 @@ Currently, you can only achieve this manually:
 
 ## When should I pass `key`, and when should I rely purely on metadata to register a file?
 
-The recommended way of making files findable in LaminDB is to link them to labels and use the `description` field of {attr}`~lamindb.File`.
+The recommended way of making files findable in LaminDB is to link them to labels and use the `description` field of {attr}`~lamindb.Artifact`.
 Generally, we discourage the usage of semantic `keys` for files due to the need for standards and potential ambiguity.
 
 ## How does LaminDB store existing (legacy) data
@@ -85,44 +85,42 @@ through additional metadata.
 You can either create a file object from the local file and auto-upload it to the cloud during `file.save()`:
 
 ```python
-file = ln.File(local_filepath)
-file.save()  # this will upload to the cloud
+artifact = ln.Artifact(local_filepath)
+artifact.save()  # this will upload to the cloud
 ```
 
 You can also create a file object from an existing cloud path:
 
 ```python
-file = ln.File("s3://my-bucket/my-file.csv")
-file.save()  # this will only save metadata as the file is already in registered storage
+artifact = ln.Artifact("s3://my-bucket/my-file.csv")
+artifact.save()  # this will only save metadata as the file is already in registered storage
 ```
 
 This enables to use any tool to move data into the cloud.
 
-## How to replace a file in storage?
+## How to replace an artifact in storage?
 
 ```python
-file.replace(new_data)
+artifact.replace(new_data)
 ```
 
-## How to update metadata of a file?
+## How to update metadata of an artifact?
 
-You can edit metadata of the file by querying it and then resetting its attributes. For instance,
+You can edit metadata of the artifact by querying it and then resetting its attributes. For instance,
 
 ```python
-file.description = "My new description"
-file.save()  # save the change to the database
+artifact.description = "My new description"
+artifact.save()  # save the change to the database
 ```
 
 ## What should I do if I accidentally delete a file from storage?
 
-`File` and `Dataset` records follows a "trash" behavior as canonical file systems. Meaning, when you perform `file.delete()`, the record is moved into trash while still exists in the database.
-
-Deleting a file from the trash triggers the permanent delete:
+`Artifact` and `Dataset` records follow a "trash" behavior as many file systems. When you perform `file.delete()`, the record is moved into a "trash" from which it can be restored. Deleting an artifact from the trash triggers a permanent delete:
 
 - prompt to ask if user wants to delete the metadata record
 - prompt to ask if user wants to delete the file from storage if semantic key is used (otherwise the file is automatically deleted from the storage)
 
-If you delete a file from storage outside LaminDB, you are left with a file record without valid storage. In this case, you can:
+If you delete an artifact from storage outside LaminDB, you are left with a file record without valid storage. In this case, you can:
 
 - use `ln.delete(permanent=True)` to delete the file record from database
 - alternatively, if you'd like to keep the record, link the storage back via `file.stage()`
@@ -137,15 +135,15 @@ file.save()  # save the change to the database
 You use the `is_new_version_of` parameter:
 
 ```python
-new_file = ln.File(df, is_new_version_of=old_file)
+new_artifact = ln.Artifact(df, is_new_version_of=old_file)
 ```
 
-Then, `new_file` automatically has the `version` field set, incrementing the version number by one.
+Then, `new_artifact` automatically has the `version` field set, incrementing the version number by one.
 
 You can also pass a custom version:
 
 ```python
-new_file = ln.File(df, version="1.1", is_new_version_of=old_file)
+new_artifact = ln.Artifact(df, version="1.1", is_new_version_of=old_file)
 ```
 
 It doesn't matter which old version of the file you use, any old version is good!
