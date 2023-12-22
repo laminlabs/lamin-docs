@@ -102,7 +102,9 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
     lines = content.splitlines()
 
     for i, line in enumerate(lines):
+        print(line)
         if after in line:
+            print("inserted")
             lines.insert(i + 1, new_line)
             break
 
@@ -186,7 +188,6 @@ def pull_artifacts(session):
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         add_line_after(content, "validate", "public-ontologies")
         f.write(content)
-        print(content)
 
     # TMP solution
     Path("docs/by-ontology.md").unlink()
