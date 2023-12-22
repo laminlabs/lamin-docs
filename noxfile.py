@@ -48,6 +48,8 @@ atlases
 ```
 """
 
+# for other topics
+
 OTHER_TOPICS_ORIG = """
 ```{toctree}
 :hidden:
@@ -127,6 +129,7 @@ def pull_artifacts(session):
         ):
             continue
         sync_path(path, Path("docs") / path.name)
+
     # lamindb faq
     for path in Path("lamindb_docs/faq").glob("*"):
         sync_path(path, Path("docs/faq") / path.name)
