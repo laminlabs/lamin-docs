@@ -5,7 +5,7 @@ Here we show how to access public knowledge in the form of public ontologies usi
 ```{toctree}
 :maxdepth: 1
 
-genes
+gene
 protein
 organism
 cell_line
