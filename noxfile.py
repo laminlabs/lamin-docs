@@ -187,6 +187,9 @@ def pull_artifacts(session):
         add_line_after(content, "validate", "public-ontologies")
         f.write(content)
 
+    # TMP solution
+    Path("docs/by-ontology.md").unlink()
+
 
 @nox.session
 def docs(session):
