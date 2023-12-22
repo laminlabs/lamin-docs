@@ -17,7 +17,6 @@ phenotype
 pathway
 experimental_factor
 developmental_stage
-biosample
 ethnicity
 ```
 
