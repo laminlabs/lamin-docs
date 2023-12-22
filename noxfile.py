@@ -101,9 +101,9 @@ def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
 def add_line_after(content: str, after: str, new_line: str) -> str:
     lines = content.splitlines()
 
-    for i, line in enumerate(lines):
+    for line_idx, line in enumerate(lines):
         if after in line:
-            lines.insert(i + 1, new_line)
+            lines.insert(line_idx + 1, new_line)
             break
 
     return "\n".join(lines)
