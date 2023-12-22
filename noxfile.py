@@ -98,6 +98,17 @@ def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
         f.write(content)
 
 
+def add_line_after(content: str, after: str, new_line: str) -> str:
+    lines = content.splitlines()
+
+    for i, line in enumerate(lines):
+        if after in line:
+            lines.insert(i + 1, new_line)
+            break
+
+    return "\n".join(lines)
+
+
 def pull_from_s3_and_unpack(zip_filename):
     run(
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
@@ -173,6 +184,7 @@ def pull_artifacts(session):
         content = f.read()
     with open("docs/guide.md", "w") as f:
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
+        add_line_after(content, "validate", "public-ontologies")
         f.write(content)
 
 
