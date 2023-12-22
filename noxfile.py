@@ -109,7 +109,7 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
     return "\n".join(lines)
 
 
-def pull_from_s3_and_unpack(zip_filename):
+def pull_from_s3_and_unpack(zip_filename) -> None:
     run(
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
         shell=True,
