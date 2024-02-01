@@ -36,13 +36,13 @@ LaminDB hasn't consciously been influenced by other workflow managers.
 
 ## Biological entities
 
-In LaminDB, ontologies are used to standardize & validate metadata based on plug-in {mod}`lnschema_bionty`. It wraps common public ontologies for which Lamin caches curated assets on S3 for robust availability.
+In LaminDB, ontologies are used to standardize & validate metadata based on plug-in {mod}`bionty`. It wraps common public ontologies for which Lamin caches curated assets on S3 for robust availability.
 
 We're not aware of another tool that focuses on leveraging ontologies for curation & validation, but there exist several tools that extend & harmonize ontologies for building knowledge graphs. We list two of them below.
 
 LaminDB does not attempt to create a knowledge graph but assumes that associations between entities are mainly found through experimentation, statistics & machine learning.
 
-Also within LaminDB, connections between entities can be mapped through the pathway entity and by using enrichment tools or by defining relations between biological entities in custom schema. Some relations might be added to `lnschema_bionty` in the future.
+Also within LaminDB, connections between entities can be mapped through the pathway entity and by using enrichment tools or by defining relations between biological entities in custom schema. Some relations might be added to `bionty` in the future.
 
 ### BioLink
 
