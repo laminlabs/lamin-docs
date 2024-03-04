@@ -18,7 +18,7 @@ observation
 record
     A record is a data structure that consists in [fields](https://en.wikipedia.org/wiki/Field_(computer_science)), typically of different types but in a fixed sequence [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    Importantly, we refer to instances of [Registry](https://lamin.ai/docs/lamindb.dev.registry) as records. Once a record is inserted into a database table, it becomes a row in that table.
+    Importantly, we refer to instances of [Registry](https://lamin.ai/docs/lamindb.core.registry) as records. Once a record is inserted into a database table, it becomes a row in that table.
     Every `Registry` class (in LaminDB) has a 1:1 correspondence with a database table and a django [model](https://docs.djangoproject.com/en/4.2/topics/db/models/), every row in a database table has a 1:1 correspondence with a record.
 
     A record often stores jointly measured {term}`variables <variable>` in its fields, but in general allows updating fields when more information becomes available or changes.
