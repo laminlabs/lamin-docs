@@ -38,7 +38,7 @@ ln.setup.settings.instance.db
 #> sqlite:///path-to-sqlite
 ```
 
-If default storage is in the cloud, the SQLite file is cached in the local cache directory ({attr}`~lamindb.setup.dev.StorageSettings.cache_dir`):
+If default storage is in the cloud, the SQLite file is cached in the local cache directory ({attr}`~lamindb.setup.core.StorageSettings.cache_dir`):
 
 ```python
 ln.setup.settings.storage.cache_dir
