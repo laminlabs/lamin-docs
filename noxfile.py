@@ -188,7 +188,7 @@ def pull_artifacts(session):
     with open("docs/guide.md", "w") as f:
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         content = add_line_after(content, "validate", "public-ontologies")
-        content = add_line_after(content, "track", "validators")
+        content = content.replace("validate\n", "validators\n")
         f.write(content)
 
 
