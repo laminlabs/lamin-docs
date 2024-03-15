@@ -159,17 +159,17 @@ def pull_artifacts(session):
         "docs/snakemake.ipynb"
     )
 
+    # cellxgene-lamin-validator (place it before cellxgene)
+    pull_from_s3_and_unpack("cellxgene_lamin_validator_docs.zip")
+    Path("cellxgene_lamin_validator_docs/cellxgene-lamin-validator.ipynb").rename(
+        "docs/cellxgene-lamin-validator.ipynb"
+    )
+
     # cellxgene
     pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
     for path in Path("cellxgene_lamin_docs/").glob("*"):
         if path.name.endswith(("cellxgene.ipynb", "census.ipynb")):
             sync_path(path, Path("docs") / path.name)
-
-    # cellxgene-lamin-validator
-    pull_from_s3_and_unpack("cellxgene_lamin_validator_docs.zip")
-    Path("cellxgene_lamin_validator_docs/cellxgene-lamin-validator.ipynb").rename(
-        "docs/cellxgene-lamin-validator.ipynb"
-    )
 
     # rxrx
     pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
