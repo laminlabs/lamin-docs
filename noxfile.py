@@ -147,7 +147,7 @@ def pull_artifacts(session):
 
     # lamin validators
     pull_from_s3_and_unpack("lamin_validator_docs.zip")
-    Path("lamin_validator_docs/quickstart.ipynb").rename("docs/validators.ipynb")
+    Path("lamin_validator_docs/validator.ipynb").rename("docs/validators.ipynb")
 
     # pipelines
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
