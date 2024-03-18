@@ -147,7 +147,7 @@ def pull_artifacts(session):
 
     # lamin validators
     pull_from_s3_and_unpack("lamin_validator_docs.zip")
-    Path("lamin_validator_docs/validator.ipynb").rename("docs/validators.ipynb")
+    Path("lamin_validator_docs/validator.ipynb").rename("docs/validator.ipynb")
 
     # pipelines
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
@@ -157,6 +157,12 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
     Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
         "docs/snakemake.ipynb"
+    )
+
+    # cellxgene-lamin-validator (place it before cellxgene)
+    pull_from_s3_and_unpack("cellxgene_lamin_validator_docs.zip")
+    Path("cellxgene_lamin_validator_docs/cellxgene-lamin-validator.ipynb").rename(
+        "docs/cellxgene-lamin-validator.ipynb"
     )
 
     # cellxgene
@@ -188,7 +194,7 @@ def pull_artifacts(session):
     with open("docs/guide.md", "w") as f:
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         content = add_line_after(content, "validate", "public-ontologies")
-        content = content.replace("validate\n", "validators\n")
+        content = content.replace("validate\n", "validator\n")
         f.write(content)
 
 
