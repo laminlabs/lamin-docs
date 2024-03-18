@@ -145,10 +145,6 @@ def pull_artifacts(session):
         sync_path(path, Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
-    # lamin validators
-    pull_from_s3_and_unpack("lamin_validator_docs.zip")
-    Path("lamin_validator_docs/validator.ipynb").rename("docs/validator.ipynb")
-
     # pipelines
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
