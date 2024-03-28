@@ -159,7 +159,7 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
     for path in Path("cellxgene_lamin_docs/").glob("*"):
         if path.name.endswith(
-            ("cellxgene.ipynb", "census.ipynb", "cellxgene-lamin-validator.ipynb")
+            ("cellxgene.ipynb", "census.ipynb", "cellxgene-annotate.ipynb")
         ):
             sync_path(path, Path("docs") / path.name)
 
@@ -185,8 +185,9 @@ def pull_artifacts(session):
         content = f.read()
     with open("docs/guide.md", "w") as f:
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
-        content = add_line_after(content, "can-validate", "public-ontologies")
-        content = content.replace("can-validate\n", "validate\n")
+        content = add_line_after(content, "annotate", "public-ontologies")
+        content = content.replace("can-validate\n", "\n")
+        content = content.replace("annotate-for-developers\n", "\n")
         f.write(content)
 
 
