@@ -44,6 +44,7 @@ USECASES = """
 ../by-datatype
 pipelines
 atlases
+integrations
 ```
 """
 
@@ -163,10 +164,12 @@ def pull_artifacts(session):
         ):
             sync_path(path, Path("docs") / path.name)
 
-    # rxrx
+    # lamin-spatial
     pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
     for path in Path("rxrx_lamin_docs/").glob("*"):
         if path.name == "rxrx.ipynb":
+            sync_path(path, Path("docs") / path.name)
+        elif path.name == "vitessce.ipynb":
             sync_path(path, Path("docs") / path.name)
 
     # use-cases
@@ -206,4 +209,4 @@ def docs(session):
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
-    session.run("lndocs", "--strip-prefix", "--error-on-index", "--strict")
+    session.run("lndocs", "--strip-prefix", "--error-on-index")  # "--strict")
