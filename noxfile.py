@@ -195,16 +195,22 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
-    session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
     session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+        *"uv pip install --system git+https://github.com/laminlabs/bionty".split()
     )
-    session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
+    session.run(
+        *"uv pip install --system --no-deps"
+        " git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    )
+    session.run(
+        *"uv pip install --system git+https://github.com/laminlabs/lamindb@release"
+        .split()
+    )
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
     prefix = "." if Path("./lndocs").exists() else ".."
     if nox.options.default_venv_backend == "none":
-        session.run(*f"pip install {prefix}/lndocs".split())
+        session.run(*f"uv pip install --system {prefix}/lndocs".split())
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
