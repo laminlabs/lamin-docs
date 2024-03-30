@@ -164,8 +164,8 @@ def pull_artifacts(session):
             sync_path(path, Path("docs") / path.name)
 
     # lamin-spatial
-    pull_from_s3_and_unpack("lamin_spatial_docs.zip")
-    for path in Path("lamin_spatial_docs/").glob("*"):
+    pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
+    for path in Path("rxrx_lamin_docs/").glob("*"):
         if path.name == "rxrx.ipynb":
             sync_path(path, Path("docs") / path.name)
         elif path.name == "vitessce.ipynb":
