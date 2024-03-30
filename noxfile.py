@@ -44,6 +44,7 @@ USECASES = """
 ../by-datatype
 pipelines
 atlases
+integrations
 ```
 """
 
