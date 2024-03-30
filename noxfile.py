@@ -204,7 +204,7 @@ def docs(session):
     session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
     prefix = "." if Path("./lndocs").exists() else ".."
     if nox.options.default_venv_backend == "none":
-        session.run(*f"uv pip install --system {prefix}/lndocs".split())
+        session.run(*f"pip install {prefix}/lndocs".split())
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
