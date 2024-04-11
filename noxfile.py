@@ -135,11 +135,12 @@ def pull_artifacts(session):
         if (
             path.name == "index.md"
             or path.name in {"storage", "storage.md"}  # not user facing
+            # dummy files, actual content in lamin-docs
             or path.name
-            == {
+            in {
                 "features-lamindb.md",
                 "features-laminhub.md",
-            }  # dummy files, actual content in lamin-docs
+            }
             or path.name == "faq"  # directory treated below
         ):
             continue
