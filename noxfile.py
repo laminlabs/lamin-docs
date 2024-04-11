@@ -63,10 +63,11 @@ OTHER_TOPICS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Other topics
+:caption: Key topics
 
 features
 access
+security
 faq
 influences
 glossary
