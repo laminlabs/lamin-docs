@@ -39,11 +39,11 @@ USECASES = """
 :hidden:
 :caption: Use cases
 
-../data-flow
-../by-registry
-../by-datatype
-pipelines
 atlases
+../by-datatype
+../by-registry
+../data-flow
+pipelines
 integrations
 ```
 """
