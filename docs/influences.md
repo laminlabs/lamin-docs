@@ -26,7 +26,7 @@ See:
 
 ### redun
 
-Despite Lamin's different scope, the workflow manager [redun](https://github.com/insitro/redun) greatly influenced LaminDB. In particular, naming choices in LaminDB's `Artifact` class (`.hash`, `.stage()`) & hashing strategies for sets are inspired by redun's `File` class.
+Despite Lamin's different scope, the workflow manager [redun](https://github.com/insitro/redun) greatly influenced LaminDB. In particular, concepts in LaminDB's `Artifact` class (`.hash`, `.cache()` in lamindb ~ `.stage()` in redun) & hashing strategies for sets are inspired by redun's `File` class.
 
 Similar to redun, Lamin tries to achieve idempotency but for different use cases & using largely differing designs.
 

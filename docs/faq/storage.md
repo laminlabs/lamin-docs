@@ -123,7 +123,7 @@ artifact.save()  # save the change to the database
 If you delete an artifact from storage outside LaminDB, you are left with a file record without valid storage. In this case, you can:
 
 - use `ln.delete(permanent=True)` to delete the file record from database
-- alternatively, if you'd like to keep the record, link the storage back via `file.stage()`
+- alternatively, if you'd like to keep the record, link the storage back via `file.cache()`
 
 ```python
 file.description = "My new description"
