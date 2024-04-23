@@ -1,7 +1,7 @@
 **Access data & metadata across storage (files, arrays) & database (SQL) backends.**
 
 - Query & search: {class}`~lamindb.core.Registry.filter`, {class}`~lamindb.core.Registry.search`
-- Stage, load & stream artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`, {class}`~lamindb.Artifact.backed`
+- Cache, load & stream artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`, {class}`~lamindb.Artifact.backed`
 - Manage {class}`~lamindb.Feature`, {class}`~lamindb.FeatureSet`, {class}`~lamindb.ULabel`
 - Plug-in custom [schemas](/schemas) & manage schema migrations
 - Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/data), [MuData](docs:multimodal), [SOMA](docs:cellxgene), ... backed by [parquet](/tutorial), [zarr](/data), [TileDB](docs:cellxgene), [HDF5](/data), [h5ad](/data), [DuckDB](docs:rxrx), ...
