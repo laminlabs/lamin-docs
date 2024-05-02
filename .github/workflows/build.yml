@@ -27,8 +27,8 @@ jobs:
       - name: Checkout laminci
         uses: actions/checkout@v3
         with:
-          repository: laminlabs/lndocs
-          ssh-key: ${{ secrets.READ_LNDOCS }}
+          repository: laminlabs/laminci
+          token: ${{ secrets.GH_TOKEN_DEPLOY_LAMINAPP }}
           path: laminci
           ref: docshtmls
       - uses: actions/setup-python@v4
