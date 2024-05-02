@@ -4,6 +4,7 @@ from subprocess import run
 from typing import Dict
 
 import nox
+from laminci import upload_html_artifact
 from laminci.nox import login_testuser1, run_pre_commit
 
 nox.options.default_venv_backend = "none"
@@ -216,3 +217,4 @@ def docs(session):
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
     session.run("lndocs", "--strip-prefix", "--error-on-index")  # "--strict")
+    upload_html_artifact()
