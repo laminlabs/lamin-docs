@@ -30,7 +30,7 @@ jobs:
           repository: laminlabs/lndocs
           ssh-key: ${{ secrets.READ_LNDOCS }}
           path: laminci
-          ref: main
+          ref: docshtmls
       - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
