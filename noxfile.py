@@ -207,8 +207,11 @@ def docs(session):
         *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
     )
     session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
+    session.run(
+        *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
+    )
     login_testuser1(session)
-    session.run(*"lamin init --storage ./docsbuild --schema bionty".split())
+    session.run(*"lamin init --storage ./docsbuild --schema bionty,wetlab".split())
     prefix = "." if Path("./lndocs").exists() else ".."
     if nox.options.default_venv_backend == "none":
         session.run(*f"pip install {prefix}/lndocs".split())
