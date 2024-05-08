@@ -49,6 +49,7 @@ jobs:
       - run: nox -s pull_artifacts
       - run: nox -s docs
       - uses: cloudflare/pages-action@v1
+        id: cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 472bdad691b4483dea759eadb37110bd
@@ -57,6 +58,12 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           wranglerVersion: "3"
+      - name: Comment Deploy
+        if: steps.cloudflare.outputs.url != ''
+        uses: ./.github/actions/comment-docs-preview-in-pr
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_url: "${{ steps.cloudflare.outputs.url }}"
       - name: Read lamin-project.yaml
         id: lamin-project
         uses: CumulusDS/get-yaml-paths-action@v0.1.0
