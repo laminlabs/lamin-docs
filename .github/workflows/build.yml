@@ -48,6 +48,15 @@ jobs:
       # - run: nox -s install
       - run: nox -s pull_artifacts
       - run: nox -s docs
+      - uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 472bdad691b4483dea759eadb37110bd
+          projectName: lamin-docs
+          directory: "_build/html"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          wranglerVersion: "3"
       - name: Read lamin-project.yaml
         id: lamin-project
         uses: CumulusDS/get-yaml-paths-action@v0.1.0
