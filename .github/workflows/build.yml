@@ -58,9 +58,8 @@ jobs:
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           wranglerVersion: "3"
-      - name: Comment Deploy
+      - uses: ./.github/actions/comment-docs-preview-in-pr
         if: steps.cloudflare.outputs.url != ''
-        uses: ./.github/actions/comment-docs-preview-in-pr
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           deploy_url: "${{ steps.cloudflare.outputs.url }}"
