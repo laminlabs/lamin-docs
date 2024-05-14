@@ -4,7 +4,7 @@
 - Cache, load & stream artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`, {class}`~lamindb.Artifact.backed`
 - Manage {class}`~lamindb.Feature`, {class}`~lamindb.FeatureSet`, {class}`~lamindb.ULabel`
 - Plug-in custom [schemas](/schemas) & manage schema migrations
-- Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/data), [MuData](docs:multimodal), [SOMA](docs:cellxgene), ... backed by [parquet](/tutorial), [zarr](/data), [TileDB](docs:cellxgene), [HDF5](/data), [h5ad](/data), [DuckDB](docs:rxrx), ...
+- Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/data), [MuData](multimodal), [SOMA](cellxgene), ... backed by [parquet](/tutorial), [zarr](/data), [TileDB](cellxgene), [HDF5](/data), [h5ad](/data), [DuckDB](rxrx), ...
 - Bridge artifacts and warehousing: {class}`~lamindb.Artifact`, {class}`~lamindb.Collection`
 - Leverage out-of-the-box PyTorch data loaders: {meth}`~lamindb.Collection.mapped`
 - Version artifacts, collections & transforms
@@ -12,7 +12,7 @@
 **Track data lineage across notebooks, pipelines & UI: {meth}`~lamindb.track`, {class}`~lamindb.Transform` & {class}`~lamindb.Run`.**
 
 - Execution reports, source code and Python environments for [notebooks & scripts](/track)
-- Integrate with workflow managers: [redun](docs:redun), [nextflow](docs:nextflow), [snakemake](docs:snakemake)
+- Integrate with workflow managers: [redun](redun), [nextflow](nextflow), [snakemake](snakemake)
 
 **Manage registries for experimental metadata & in-house ontologies, import public ontologies.**
 
@@ -39,9 +39,9 @@
   - Currently two SQL backends for managing metadata: SQLite & Postgres
 - Scalable: metadata tables support 100s of millions of entries
 - Auditable: data & metadata records are hashed, timestamped, and attributed to users (soon to come: LaminDB Log)
-- [Access](docs:access) management:
+- [Access](access) management:
   - High-level access management through Lamin's collaborator roles
   - Fine-grained access management via storage & SQL roles (soon to come: Lamin Vault)
-- [Secure](docs:access): embedded in your infrastructure (Lamin has no access to your data & metadata)
+- [Secure](access): embedded in your infrastructure (Lamin has no access to your data & metadata)
 - Tested & typed (up to Django Model fields)
-- [Idempotent](docs:faq/idempotency) & [ACID](docs:faq/acid) operations
+- [Idempotent](faq/idempotency) & [ACID](faq/acid) operations
