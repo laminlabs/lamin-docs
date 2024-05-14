@@ -218,4 +218,4 @@ def docs(session):
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
-    session.run("lndocs", "--strip-prefix", "--error-on-index")  # "--strict")
+    session.run("lndocs", "--strip-prefix", "--error-on-index", "--strict")
