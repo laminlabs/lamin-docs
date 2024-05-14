@@ -221,5 +221,5 @@ def docs(session):
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
-    strict = " --strict" if IS_PR else ""
+    strict = " --strict" if not IS_PR else ""
     session.run(*f"lndocs --strip-prefix --error-on-index{strict}".split())
