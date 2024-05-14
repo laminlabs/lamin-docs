@@ -1,3 +1,4 @@
+import os
 import shutil
 from pathlib import Path
 from subprocess import run
@@ -7,6 +8,8 @@ import nox
 from laminci.nox import login_testuser1, run_pre_commit
 
 nox.options.default_venv_backend = "none"
+
+IS_PR = os.getenv("GITHUB_EVENT_NAME") != "push"
 
 
 @nox.session
@@ -218,4 +221,5 @@ def docs(session):
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
-    session.run("lndocs", "--strip-prefix", "--error-on-index", "--strict")
+    strict = " --strict" if IS_PR else ""
+    session.run(*f"lndocs --strip-prefix --error-on-index{strict}".split())
