@@ -1,6 +1,6 @@
-/ /introduction 301
+/bionty-base/* https://bionty-base.lamin.ai/:splat 301
+/nbproject/* https://nbproject.lamin.ai/:splat 301
+/readfcs/* https://readfcs.lamin.ai/:splat 301
 /guide /introduction 301
 /reference /lamindb 301
-/bionty-base https://bionty-base.lamin.ai 301
-/nbproject https://nbproject.lamin.ai 301
-/readfcs https://readfcs.lamin.ai 301
+/ /introduction 301
