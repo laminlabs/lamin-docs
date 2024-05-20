@@ -3,5 +3,4 @@
 /reference /lamindb 301
 /bionty-base https://bionty-base.lamin.ai 301
 /nbproject https://nbproject.lamin.ai 301
-/readfcs https://nbproject.lamin.ai 301
-/lamin-utils https://github.com/laminlabs/lamin-utils 301
+/readfcs https://readfcs.lamin.ai 301
