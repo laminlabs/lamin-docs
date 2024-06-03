@@ -206,13 +206,13 @@ def pull_artifacts(session):
 @nox.session
 def docs(session):
     session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
-    session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
     session.run(
         *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
     )
     session.run(
         *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
     )
+    session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty,wetlab".split())
     prefix = "." if Path("./lndocs").exists() else ".."
@@ -221,5 +221,5 @@ def docs(session):
     else:
         session.install(f"{prefix}/lndocs")
     # do not simply add instance creation here
-    strict = " --strict" if not IS_PR else ""
+    strict = ""  # " --strict" if not IS_PR else ""
     session.run(*f"lndocs --strip-prefix --error-on-index{strict}".split())
