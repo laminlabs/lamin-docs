@@ -1,3 +1,5 @@
+See [pricing](https://lamin.ai/pricing).
+
 **Secure & intuitive access management.**
 
 ```{include} access-laminhub.md
