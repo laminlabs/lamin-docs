@@ -207,12 +207,12 @@ def pull_artifacts(session):
 def docs(session):
     session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
     session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
-    )
-    session.run(
         *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
     )
     session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
+    session.run(
+        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    )
     login_testuser1(session)
     session.run(*"lamin init --storage ./docsbuild --schema bionty,wetlab".split())
     prefix = "." if Path("./lndocs").exists() else ".."
