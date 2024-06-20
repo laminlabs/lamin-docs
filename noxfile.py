@@ -47,7 +47,8 @@ atlases
 ../by-registry
 ../data-flow
 pipelines
-integrations
+mlops
+visualization
 ```
 """
 
@@ -164,6 +165,10 @@ def pull_artifacts(session):
     Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
         "docs/snakemake.ipynb"
     )
+
+    # mlops
+    pull_from_s3_and_unpack("lamin_mlops_docs.zip")
+    Path("lamin_mlops_docs/wandb.ipynb").rename("docs/wandb.ipynb")
 
     # cellxgene-lamin
     pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")

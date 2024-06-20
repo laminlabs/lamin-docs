@@ -1,7 +1,7 @@
-# Integrations
+# MLOps
 
 ```{toctree}
 :maxdepth: 1
 
-vitessce
+wandb
 ```
