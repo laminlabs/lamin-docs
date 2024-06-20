@@ -48,7 +48,7 @@ atlases
 ../data-flow
 pipelines
 mlops
-integrations
+visualization
 ```
 """
 
