@@ -47,6 +47,7 @@ atlases
 ../by-registry
 ../data-flow
 pipelines
+mlops
 integrations
 ```
 """
