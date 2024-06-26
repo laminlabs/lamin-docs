@@ -16,20 +16,16 @@ Explore in the hub UI or `lamin load owner/instance` via the CLI:
 
 <p style="font-weight: bolder; margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See validated datasets in context of ontologies & experimental metadata.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DjVOPEBiAcGlt3Gq7Qc1.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DjVOPEBiAcGlt3Gq3APh.png" width="700px">
 
 <p style="font-weight: bolder; margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Query & search.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/L188T2JjzZHWHfv2S0ib.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/L188T2JjzZHWHfv2sZGu.png" width="700px">
 
 <p style="font-weight: bolder; margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See scripts, notebooks & pipelines with their inputs & outputs.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J8aBoM.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J8dJfH.png" width="700px">
 
 <p style="font-weight: bolder; margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Track pipelines, notebooks & UI transforms in one registry.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/Lhrd2f8vzLNp8qxsjEiI.png" width="700px">
-
-<p style="font-weight: bolder; margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See parents and children of transforms.</p>
-
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/n9FHd5zGp9jIzPb1Qqh0.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/IpV8Kiq4xUbgXhzlUYT7.png" width="700px">
