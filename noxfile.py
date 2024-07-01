@@ -46,6 +46,7 @@ atlases
 ../by-datatype
 ../by-registry
 ../data-flow
+integrations
 pipelines
 mlops
 visualization
