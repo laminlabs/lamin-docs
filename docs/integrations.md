@@ -4,7 +4,7 @@ LaminDB integrates with popular tools you may already use in your stack.
 
 ## GitHub
 
-- Sync script transforms with git commits, see [here](https://docs.lamin.ai/track#sync-script-transforms-with-github).
+- Sync script transforms with git commits, see [Track notebooks & scripts](https://docs.lamin.ai/track#sync-script-transforms-with-github).
 
 ## MLOps
 
