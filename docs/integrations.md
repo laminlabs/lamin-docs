@@ -1,10 +1,10 @@
 # Integrations
 
-LaminDB integrates with popular tools you may already use in your stack.
+LaminDB integrates with a variety of popular tools that you may already use in your stack.
 
 ## GitHub
 
-- Sync script transforms with git commits, see [Track notebooks & scripts](https://docs.lamin.ai/track#sync-script-transforms-with-github).
+- Sync script transforms with git commits. Learn more about this feature [here](https://docs.lamin.ai/track#sync-script-transforms-with-github).
 
 ## MLOps
 
@@ -16,10 +16,15 @@ LaminDB integrates with popular tools you may already use in your stack.
 - [Nextflow](nextflow)
 - [Snakemake](snakemake)
 
+## Array backend
+
+- [TileDB-SOMA](https://docs.lamin.ai/scrna6)
+- [DuckDB](https://docs.lamin.ai/rxrx#use-duckdb-to-query-metadata)
+
 ## Visualization
 
 - [Vitessce](vitessce)
 
-## ELN
+## Electronic Lab Notebook (ELN)
 
-- We sync schema and data from your Benchling registries in team/enterprise plan. [Reach out](https://lamin.ai/contact) to learn more!
+- Sync schema and data from your Benchling registries with our team/enterprise plan. [Reach out](https://lamin.ai/contact) to learn more!
