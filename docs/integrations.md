@@ -22,4 +22,4 @@ LaminDB integrates with popular tools you may already use in your stack.
 
 ## ELN
 
-- We sync schema and data from your Benchling registries in team/enterprise plan, [Reach out](https://lamin.ai/contact) to learn more!
+- We sync schema and data from your Benchling registries in team/enterprise plan. [Reach out](https://lamin.ai/contact) to learn more!
