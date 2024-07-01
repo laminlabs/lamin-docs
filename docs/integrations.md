@@ -8,17 +8,17 @@ LaminDB integrates with popular tools you may already use in your stack.
 
 ## MLOps
 
-- [wandb](wandb)
+- [Weights & Biases](wandb)
 
 ## Workflow manager
 
 - [redun](redun)
-- [nextflow](nextflow)
-- [snakemake](snakemake)
+- [Nextflow](nextflow)
+- [Snakemake](snakemake)
 
 ## Visualization
 
-- [vitessce](vitessce)
+- [Vitessce](vitessce)
 
 ## ELN
 
