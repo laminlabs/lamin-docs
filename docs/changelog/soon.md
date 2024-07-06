@@ -2,18 +2,18 @@
 
 ## Use cases
 
-```{include} latest/usecases.md
+```{include} soon/usecases.md
 
 ```
 
 ## LaminHub
 
-```{include} latest/laminhub.md
+```{include} soon/laminhub.md
 
 ```
 
 ## LaminDB
 
-```{include} latest/lamindb.md
+```{include} soon/lamindb.md
 
 ```

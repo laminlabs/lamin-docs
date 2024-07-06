@@ -14,6 +14,7 @@ LaminDB implements "migration-based versioning". When upgrading your LaminDB ins
 
 changelog/soon
 changelog/2023
+changelog/2022
 ```
 
 ```{eval-rst}
