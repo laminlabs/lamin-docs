@@ -1,4 +1,4 @@
-[New](/changelog) · {doc}`changelog/soon` · {doc}`changelog/2023` · {doc}`changelog/2022`
+[Recent](/changelog) · {doc}`changelog/soon` · {doc}`changelog/2023` · {doc}`changelog/2022`
 
 # Changelog
 
@@ -10,13 +10,21 @@ LaminDB implements "migration-based versioning". When upgrading your LaminDB ins
 
 ```
 
+```{hint}
+
+Get notified about new LaminDB releases by [watching releases](https://github.blog/changelog/2018-11-27-watch-releases/) for the `lamindb` [GitHub repository](https://github.com/laminlabs/lamindb).
+
+```
+
 ```{eval-rst}
 .. role:: small
 ```
 
-## 0.74
+## Hub 0.19
 
-### 0.74.1 {small}`2024-06-19`
+## DB 0.74
+
+### 0.74.1 {small}`2024-06-26`
 
 - ♻️ Refactor `ln.settings` [PR](https://github.com/laminlabs/lamindb/pull/1711) [@falexwolf](https://github.com/falexwolf)
   - ✨ you can now pass custom names for scripts via `ln.settings.transform.name = "My script"`
@@ -25,7 +33,7 @@ LaminDB implements "migration-based versioning". When upgrading your LaminDB ins
 - 📝 New [tiledbsoma guide](https://lamin.ai/docs/scrna6) [PR](https://github.com/laminlabs/lamin-usecases/pull/130) [Koncopd](https://github.com/Koncopd)
 - 📝 Update hub screenshots [PR](https://github.com/laminlabs/lamindb/pull/1714) [@sunnyosun](https://github.com/sunnyosun)
 
-### 0.74.0 {small}`2024-06-19`
+### 0.74.0 {small}`2024-06-20`
 
 - ✨ You can now distinguish model-like and dataset-like artifacts via a `type` field in the `Artifact` registry
   - 🚸 Leverage `artifact.params.add_values()` to annotate model-like artifacts like you leverage `artifact.features.add_values()` to annotate dataset-like artifacts
@@ -34,7 +42,7 @@ LaminDB implements "migration-based versioning". When upgrading your LaminDB ins
 - 📝 New [wandb guide](https://docs.lamin.ai/wandb) [PR](https://github.com/laminlabs/lamin-mlops/pull/2) [felix0097](https://github.com/felix0097)
 - ♻️ Refactor after upath upgrade [PR](https://github.com/laminlabs/lamindb/pull/1699) [PR](https://github.com/laminlabs/lamindb/pull/1700) [@Koncopd](https://github.com/Koncopd)
 
-## 0.73
+## DB 0.73
 
 ### 0.73.2 {small}`2024-06-13`
 
@@ -91,7 +99,7 @@ Various improvements:
 - 🚸 Better ordering of fields in dataframe & record representations [PR](https://github.com/laminlabs/lamindb/pull/1674) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improved API reference: docs now show relationship attributes [PR](https://github.com/laminlabs/lamindb/pull/1680) [@falexwolf](https://github.com/falexwolf)
 
-## 0.72
+## DB 0.72
 
 ### 0.72.1 {small}`2024-05-19`
 
@@ -116,7 +124,7 @@ Various improvements:
   - Dropped linking `Bionty` entities directly against `Collection`
   - Pruned & squashed migrations for faster instance creation
 
-## 0.71
+## DB 0.71
 
 ### 0.71.3 {small}`2024-05-14`
 
@@ -150,7 +158,7 @@ Various improvements:
 - 🚸 Proper progress bars for upload and download [PR](https://github.com/laminlabs/lamindb/pull/1610) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Make save return self [PR](https://github.com/laminlabs/lamindb/pull/1606) [@falexwolf](https://github.com/falexwolf)
 
-## 0.70
+## DB 0.70
 
 ### 0.70.4 {small}`2024-04-24`
 
@@ -180,7 +188,7 @@ Various improvements:
 - 🚸 Enable to label transforms via `transform.ulabels` [PR](https://github.com/laminlabs/lnschema-core/pull/370) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate `stage()` in favor of `cache()` [PR](https://github.com/laminlabs/lamindb/pull/1572) [@falexwolf](https://github.com/falexwolf)
 
-## 0.69
+## DB 0.69
 
 ### 0.69.10 {small}`2024-04-12`
 
@@ -246,7 +254,7 @@ Other changes:
 - 🚸 Return `storage_idx` in `MappedCollection` [PR](https://github.com/laminlabs/lamindb/pull/1504) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Add a JSON field to `Run` [PR](https://github.com/laminlabs/lamindb/pull/1505) [@falexwolf](https://github.com/falexwolf)
 
-## 0.68
+## DB 0.68
 
 ### 0.68.2 {small}`2024-03-11`
 
@@ -294,7 +302,7 @@ artifact.labels.add(labels)
 - 🚚 Rename `.dev` to `.core` [PR](https://github.com/laminlabs/lamindb/pull/1464) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Improved `MappedCollection` [PR](https://github.com/laminlabs/lamindb/pull/1460) [PR](https://github.com/laminlabs/lamindb/pull/1448) [@Koncopd](https://github.com/Koncopd)
 
-## 0.67
+## DB 0.67
 
 ### 0.67.3 {small}`2024-02-02`
 
@@ -319,7 +327,7 @@ artifact.labels.add(labels)
 
 - 🚚 Rename `.bionty` to `.public`, `.from_bionty` to `.from_public` [PR](https://github.com/laminlabs/lamindb/pull/1394) [@sunnyosun](https://github.com/sunnyosun)
 
-## 0.66
+## DB 0.66
 
 ### 0.66.1 {small}`2024-01-09`
 
@@ -334,7 +342,7 @@ artifact.labels.add(labels)
 - 🎨 Introduce ordered collections and simplify `.mapped()` [PR1390](https://github.com/laminlabs/lamindb/pull/1390) [@falexwolf](https://github.com/falexwolf)
 - 📝 Re-write quickstart [PR1387](https://github.com/laminlabs/lamindb/pull/1387) [@falexwolf](https://github.com/falexwolf)
 
-## 0.65
+## DB 0.65
 
 ### 0.65.1 {small}`2024-01-05`
 
