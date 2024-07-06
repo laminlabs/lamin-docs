@@ -1,5 +1,6 @@
 # Changelog
 
+- 💚 Prevent UI testing against prod [PR](https://github.com/laminlabs/laminhub/pull/859) [@fredericenard](https://github.com/fredericenard)
 - :bug: Stop settings from flickering [PR](https://github.com/laminlabs/laminhub/pull/858) [@chaichontat](https://github.com/chaichontat)
 - 👷 Fix access token for changelog creation [PR](https://github.com/laminlabs/laminhub/pull/857) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move to laminci [PR](https://github.com/laminlabs/lamin-mlops/pull/15) [@falexwolf](https://github.com/falexwolf)
