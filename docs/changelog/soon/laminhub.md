@@ -1,0 +1,2 @@
+- 🐛 Stop settings from flickering [PR](https://github.com/laminlabs/laminhub/pull/858) [@chaichontat](https://github.com/chaichontat)
+- 👷 Fix access token for changelog creation [PR](https://github.com/laminlabs/laminhub/pull/857) [@falexwolf](https://github.com/falexwolf)
