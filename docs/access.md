@@ -6,7 +6,7 @@ LaminDB doesn't come with access management but relies on the underlying data in
 
 ## LaminHub
 
-```{include} access-laminhub.md
+```{include} includes/access-laminhub.md
 
 ```
 

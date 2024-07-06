@@ -2,12 +2,12 @@
 
 ## LaminDB
 
-```{include} features-lamindb.md
+```{include} includes/features-lamindb.md
 
 ```
 
 ## LaminHub
 
-```{include} features-laminhub.md
+```{include} includes/features-laminhub.md
 
 ```
