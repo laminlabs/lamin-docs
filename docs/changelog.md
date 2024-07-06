@@ -1,3 +1,5 @@
+{doc}`changelog/soon` · [Current](/changelog) · {doc}`changelog/2023` · {doc}`changelog/2022`
+
 # Changelog
 
 ```{note}
@@ -6,15 +8,6 @@ If using LaminHub, please use the latest version of LaminDB.
 
 LaminDB implements "migration-based versioning". When upgrading your LaminDB installation to a new `minor` version in `major.minor.patch`, you also migrate your database by calling `lamin migrate deploy`.
 
-```
-
-```{toctree}
-:maxdepth: 1
-:hidden:
-
-changelog/soon
-changelog/2023
-changelog/2022
 ```
 
 ```{eval-rst}
