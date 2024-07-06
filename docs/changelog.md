@@ -1,4 +1,4 @@
-{doc}`changelog/soon` [changelog](Current) {doc}`changelog/2023` {doc}`changelog/2022`
+{doc}`changelog/soon` · [Current](/changelog) · {doc}`changelog/2023` · {doc}`changelog/2022`
 
 # Changelog
 
