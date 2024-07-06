@@ -12,7 +12,7 @@ LaminDB implements "migration-based versioning". When upgrading your LaminDB ins
 :maxdepth: 1
 :hidden:
 
-changelog/pre-releases
+changelog/soon
 changelog/2023
 ```
 
