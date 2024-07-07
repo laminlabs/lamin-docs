@@ -1,3 +1,4 @@
+- 👷 Use laminci doc-changes [PR](https://github.com/laminlabs/lamindb-setup/pull/790) [@falexwolf](https://github.com/falexwolf)
 - 📝 Refactor docs [PR](https://github.com/laminlabs/lamindb/pull/1721) [@falexwolf](https://github.com/falexwolf)
 - 👷 Write to lamin-docs changelog [PR](https://github.com/laminlabs/lamin-mlops/pull/14) [@falexwolf](https://github.com/falexwolf)
 - 👷 Use lamin-dev for transfer unit test [PR](https://github.com/laminlabs/lamindb/pull/1719) [@sunnyosun](https://github.com/sunnyosun)
