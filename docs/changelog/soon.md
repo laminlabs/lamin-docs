@@ -1,18 +1,18 @@
 # Soon
 
-## Use cases
+## Use
 
 ```{include} soon/usecases.md
 
 ```
 
-## LaminHub
+## Hub
 
 ```{include} soon/laminhub.md
 
 ```
 
-## LaminDB
+## DB
 
 ```{include} soon/lamindb.md
 
