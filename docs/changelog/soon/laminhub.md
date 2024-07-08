@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/871) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI [PR](https://github.com/laminlabs/laminhub/pull/876) [@fredericenard](https://github.com/fredericenard)
 - ✅ Preventing reusing same instance name when testing instance creation [PR](https://github.com/laminlabs/laminhub/pull/875) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor env variables access [PR](https://github.com/laminlabs/laminhub/pull/873) [@fredericenard](https://github.com/fredericenard)
