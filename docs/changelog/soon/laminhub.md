@@ -1,3 +1,4 @@
+- ✅ Preventing reusing same instance name when testing instance creation [PR](https://github.com/laminlabs/laminhub/pull/875) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor env variables access [PR](https://github.com/laminlabs/laminhub/pull/873) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix integration tests [PR](https://github.com/laminlabs/laminhub/pull/872) [@fredericenard](https://github.com/fredericenard)
 - 👷 Refactor doc-changes [PR](https://github.com/laminlabs/laminhub/pull/860) [@falexwolf](https://github.com/falexwolf)
