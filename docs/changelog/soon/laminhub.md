@@ -1,3 +1,4 @@
+- 💚 Fix integration tests [PR](https://github.com/laminlabs/laminhub/pull/872) [@fredericenard](https://github.com/fredericenard)
 - 👷 Refactor doc-changes [PR](https://github.com/laminlabs/laminhub/pull/860) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Stop settings from flickering [PR](https://github.com/laminlabs/laminhub/pull/858) [@chaichontat](https://github.com/chaichontat)
 - 👷 Fix access token for changelog creation [PR](https://github.com/laminlabs/laminhub/pull/857) [@falexwolf](https://github.com/falexwolf)
