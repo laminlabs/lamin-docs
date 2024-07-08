@@ -2,7 +2,7 @@
 
 ```{important}
 
-Please see our Trust Center at [trust.lamin.ai](https://trust.lamin.ai) for controls, subprocessors, and certifications. We're currently undergoing our first audits.
+Please see our [Trust Center](https://trust.lamin.ai) for controls, subprocessors, and certifications. We're currently undergoing our first audits.
 
 ```
 
@@ -16,21 +16,18 @@ Lamin obtains no access to your data when you use LaminDB.
 
 ### LaminHub Basic
 
-- Signing up on LaminHub uses an auth flow from an identity provider, storing user handle & email address.
-- If you register a LaminDB instance on LaminHub, storage locations (AWS S3 or GCP bucket names) are stored.
-- Lamin isn't able to access your data and you won't be able to see your data on LaminHub.
+Signing up on LaminHub uses an auth flow from an identity provider, storing user handle & email address. See our [privacy policy](https://lamin.ai/legal/privacy-policy).
+
+If you register a LaminDB instance on LaminHub, storage locations (AWS S3 or GCP bucket names) are stored. Lamin isn't able to access your data and you won't be able to see your data on LaminHub.
 
 ### LaminHub Team & Enterprise
 
-Both on the Team & Enterprise plan, LaminHub provides a layer for AWS that makes access management more secure & intuitive ({doc}`access`):
-
-- Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive federated access tokens for data on AWS or GCP. These tokens are short-lived and thereby minimize attack surface.
-- LaminHub's permission system makes it easy to minimize attack surfaces by implementing the principle of least privilege.
-
-All cloud data in LaminDB instances is hosted in AWS S3 and GCP storage, which are decoupled from VPCs. Metadata is hosted in dedicated Postgres servers with automated access management.
+All cloud data in LaminDB instances is hosted in your or our AWS S3 and GCP buckets, which are decoupled from VPCs. Metadata is hosted in dedicated Postgres servers with automated access management.
 
 - On the **Team plan**, distributed Postgres server endpoints, by default, are accessible from any IP on the public internet while being protected through vulnerability scans. Access from suspicious IP addresses is immediately black-listed. You can opt to only allow access from specific whitelisted IP addresses.
 - On the **Enterprise plan**, Postgres servers can be deployed in your VPC in your AWS account.
+
+On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes storage access management more secure & intuitive ({doc}`access`).
 
 ## Security at Lamin
 
