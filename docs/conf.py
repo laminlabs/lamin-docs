@@ -12,7 +12,7 @@ project = "Lamin Docs"
 html_title = f"{project}"
 html_context["github_repo"] = "lamin-docs"  # noqa
 
-ogp_site_url = "https://lamin.ai/docs"
+ogp_site_url = "https://docs.lamin.ai"
 ogp_site_name = project
 
 # We're actually using this for the link behind the brand of the page!
