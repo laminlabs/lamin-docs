@@ -1,3 +1,4 @@
+- 📝 Polish bio-registries how-to [PR](https://github.com/laminlabs/lamindb/pull/1722) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add a test for dynamically changing user settings [PR](https://github.com/laminlabs/lamindb-setup/pull/791) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Use new hub fixture [PR](https://github.com/laminlabs/lamindb-setup/pull/789) [@falexwolf](https://github.com/falexwolf)
 - 👷 Use laminci doc-changes [PR](https://github.com/laminlabs/lamindb-setup/pull/790) [@falexwolf](https://github.com/falexwolf)
