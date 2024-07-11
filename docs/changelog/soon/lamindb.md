@@ -1,3 +1,4 @@
+- ✨ Add global `prune-django-api` setting [PR](https://github.com/laminlabs/lamin-cli/pull/53) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Bump Django upper bound [PR](https://github.com/laminlabs/lamindb-setup/pull/793) [@fredericenard](https://github.com/fredericenard)
 - 📝 Polish bio-registries how-to [PR](https://github.com/laminlabs/lamindb/pull/1722) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add a test for dynamically changing user settings [PR](https://github.com/laminlabs/lamindb-setup/pull/791) [@falexwolf](https://github.com/falexwolf)
