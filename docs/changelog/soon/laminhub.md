@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/887) [@fredericenard](https://github.com/fredericenard)
 - 💚 Replace GITHUB_TOKEN by GH_LAMINAPP_DEPLOY_TOKEN [PR](https://github.com/laminlabs/laminhub/pull/882) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix sentry issues [PR](https://github.com/laminlabs/laminhub/pull/879) [@chaichontat](https://github.com/chaichontat)
 - 💚 Merge integration tests and deployment in the same workflow [PR](https://github.com/laminlabs/laminhub/pull/877) [@fredericenard](https://github.com/fredericenard)
