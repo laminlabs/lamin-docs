@@ -1,3 +1,4 @@
+- 🐛 Fix transfer instance ownership [PR](https://github.com/laminlabs/laminhub/pull/888) [@fredericenard](https://github.com/fredericenard)
 - 🗃️ Make `json` field from `schema` table nullable [PR](https://github.com/laminlabs/laminhub/pull/886) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Enable accessing hub db prod without AWS credentials [PR](https://github.com/laminlabs/laminhub/pull/885) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/887) [@fredericenard](https://github.com/fredericenard)
