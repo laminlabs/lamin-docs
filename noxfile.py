@@ -134,9 +134,6 @@ def sync_path(path, target_path):
 
 @nox.session
 def pull_artifacts(session):
-    assert Path("docs/includes/features-lamindb.md").exists()
-    print(Path("docs/includes/features-lamindb.md").exists())
-    quit()
     # lamindb
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
@@ -214,6 +211,9 @@ def pull_artifacts(session):
         content = content.replace("can-validate\n", "\n")
         content = content.replace("annotate-for-developers\n", "\n")
         f.write(content)
+
+    print(Path("docs/includes/features-lamindb.md").exists())
+    return Path("docs/includes/features-lamindb.md").exists()
 
 
 @nox.session
