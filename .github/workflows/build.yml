@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-    timeout-minutes: 6
+    timeout-minutes: 8
 
     steps:
       - uses: actions/checkout@v3
@@ -38,10 +38,7 @@ jobs:
         with:
           path: ~/.cache/pre-commit
           key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
-      - name: Install Python dependencies
-        run: |
-          python -m pip install -U pip
-          pip install -U laminci
+      - run: pip install "laminci@git+https://x-access-token:${{ secrets.LAMIN_BUILD_DOCS }}@github.com/laminlabs/laminci"
       - name: Configure AWS
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -52,12 +49,10 @@ jobs:
       # - run: nox -s install
       - run: nox -s pull_artifacts
       - run: nox -s docs
-      - uses: cloudflare/pages-action@v1
+      - uses: cloudflare/wrangler-action@v3
         id: cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 472bdad691b4483dea759eadb37110bd
-          projectName: lamin-docs
-          directory: "_build/html"
+          command: pages deploy "_build/html" --project-name=lamin-docs
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          wranglerVersion: "3"

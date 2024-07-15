@@ -137,18 +137,13 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
+    # remove the two below for safety
+    Path("lamindb_docs/includes/features-lamindb.md").unlink()
+    Path("lamindb_docs/includes/features-laminhub.md").unlink()
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
-            or path.name in {"storage", "storage.md"}  # not user facing
-            or path.name
-            == "changelog.md"  # just temporarily, lamindb has no changelog anymore
-            # dummy files, actual content in lamin-docs
-            or path.name
-            in {
-                "features-lamindb.md",
-                "features-laminhub.md",
-            }
+            or path.name in {"storage", "storage.md", "includes"}  # not user facing
             or path.name == "faq"  # directory treated below
         ):
             continue
@@ -198,6 +193,7 @@ def pull_artifacts(session):
             or path.name == "changelog.md"
         ):
             continue
+        print("copying", path)
         sync_path(path, Path("docs") / path.name)
 
     # amend toctree
@@ -209,6 +205,8 @@ def pull_artifacts(session):
         content = content.replace("can-validate\n", "\n")
         content = content.replace("annotate-for-developers\n", "\n")
         f.write(content)
+
+    assert Path("docs/includes/features-lamindb.md").exists()
 
 
 @nox.session
