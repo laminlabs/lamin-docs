@@ -153,7 +153,7 @@ def pull_artifacts(session):
             or path.name == "faq"  # directory treated below
         ):
             continue
-        print("synching", path)
+        print("copying", path)
         sync_path(path, Path("docs") / path.name)
 
     # lamindb faq
@@ -200,6 +200,7 @@ def pull_artifacts(session):
             or path.name == "changelog.md"
         ):
             continue
+        print("copying", path)
         sync_path(path, Path("docs") / path.name)
 
     # amend toctree
@@ -213,7 +214,8 @@ def pull_artifacts(session):
         f.write(content)
 
     print(Path("docs/includes/features-lamindb.md").exists())
-    return Path("docs/includes/features-lamindb.md").exists()
+    print(Path("docs/includes/access-laminhub.md").exists())
+    assert Path("docs/includes/features-lamindb.md").exists()
 
 
 @nox.session
