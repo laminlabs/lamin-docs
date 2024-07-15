@@ -137,6 +137,9 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
+    # remove the two below for safety
+    Path("lamindb_docs/includes/features-lamindb.md").unlink()
+    Path("lamindb_docs/includes/features-laminhub.md").unlink()
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
