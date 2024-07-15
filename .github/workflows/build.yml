@@ -48,11 +48,11 @@ jobs:
       # - run: nox -s lint
       # - run: nox -s install
       - run: nox -s pull_artifacts
-      # - run: nox -s docs
-      # - uses: cloudflare/wrangler-action@v3
-      #   id: cloudflare
-      #   with:
-      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      #     accountId: 472bdad691b4483dea759eadb37110bd
-      #     command: pages deploy "_build/html" --project-name=lamin-docs
-      #     gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - run: nox -s docs
+      - uses: cloudflare/wrangler-action@v3
+        id: cloudflare
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 472bdad691b4483dea759eadb37110bd
+          command: pages deploy "_build/html" --project-name=lamin-docs
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
