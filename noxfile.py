@@ -143,17 +143,10 @@ def pull_artifacts(session):
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
-            or path.name in {"storage", "storage.md"}  # not user facing
-            # dummy files, actual content in lamin-docs
-            or path.name
-            in {
-                "features-lamindb.md",
-                "features-laminhub.md",
-            }
+            or path.name in {"storage", "storage.md", "includes"}  # not user facing
             or path.name == "faq"  # directory treated below
         ):
             continue
-        print("copying", path)
         sync_path(path, Path("docs") / path.name)
 
     # lamindb faq
@@ -213,8 +206,6 @@ def pull_artifacts(session):
         content = content.replace("annotate-for-developers\n", "\n")
         f.write(content)
 
-    print(Path("docs/includes/features-lamindb.md").exists())
-    print(Path("docs/includes/access-laminhub.md").exists())
     assert Path("docs/includes/features-lamindb.md").exists()
 
 
