@@ -141,8 +141,6 @@ def pull_artifacts(session):
         if (
             path.name == "index.md"
             or path.name in {"storage", "storage.md"}  # not user facing
-            or path.name
-            == "changelog.md"  # just temporarily, lamindb has no changelog anymore
             # dummy files, actual content in lamin-docs
             or path.name
             in {
@@ -152,6 +150,7 @@ def pull_artifacts(session):
             or path.name == "faq"  # directory treated below
         ):
             continue
+        print("synching", path)
         sync_path(path, Path("docs") / path.name)
 
     # lamindb faq
