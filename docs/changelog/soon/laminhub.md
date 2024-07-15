@@ -1,3 +1,4 @@
+- 👷 Refactor pre-commit setup with auto-fix [PR](https://github.com/laminlabs/laminhub/pull/892) [@chaichontat](https://github.com/chaichontat)
 - 🗃️ Apply schema table migration [PR](https://github.com/laminlabs/laminhub/pull/890) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix transfer instance ownership [PR](https://github.com/laminlabs/laminhub/pull/888) [@fredericenard](https://github.com/fredericenard)
 - 🗃️ Make `json` field from `schema` table nullable [PR](https://github.com/laminlabs/laminhub/pull/886) [@fredericenard](https://github.com/fredericenard)
