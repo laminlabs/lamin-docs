@@ -148,6 +148,7 @@ def pull_artifacts(session):
             or path.name == "faq"  # directory treated below
         ):
             continue
+        print("copying", path)
         sync_path(path, Path("docs") / path.name)
 
     # lamindb faq
