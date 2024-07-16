@@ -1,3 +1,4 @@
+- ♻️ Also include `full_clean` in Django API [PR](https://github.com/laminlabs/lamindb-setup/pull/797) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor schema synchronization [PR](https://github.com/laminlabs/lamindb-setup/pull/787) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix private_django_api encoding on Windows [PR](https://github.com/laminlabs/lamindb-setup/pull/795) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Rename ModelBase to RegistryMeta [PR](https://github.com/laminlabs/lamindb-setup/pull/794) [@fredericenard](https://github.com/fredericenard)
