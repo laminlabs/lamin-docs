@@ -1,3 +1,4 @@
+- 📝 Better CLI docs [PR](https://github.com/laminlabs/lamindb/pull/1736) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify CLI docs [PR](https://github.com/laminlabs/lamin-cli/pull/54) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor schema synchronization with hub [PR](https://github.com/laminlabs/lamindb-setup/pull/787) [@fredericenard](https://github.com/fredericenard)
 - 🎨 Add generic Annotator [PR](https://github.com/laminlabs/lamindb/pull/1732) [@sunnyosun](https://github.com/sunnyosun)
