@@ -1,5 +1,3 @@
-[Recent](/changelog) · {doc}`/changelog/soon` · {doc}`/changelog/2024` · {doc}`/changelog/2023` · {doc}`/changelog/2022`
-
 # Changelog
 
 ```{note}
@@ -9,6 +7,16 @@
 💡 LaminDB implements "migration-based versioning". When upgrading your LaminDB installation to a new `minor` version in `major.minor.patch`, you also migrate your database by calling `lamin migrate deploy`.
 
 💡 Get notified about new LaminDB releases by watching releases for the [lamindb GitHub repository](https://github.com/laminlabs/lamindb).
+
+```
+
+```{toctree}
+:hidden:
+
+/changelog/soon
+/changelog/2024
+/changelog/2023
+/changelog/2022
 
 ```
 
