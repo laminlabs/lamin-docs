@@ -1,3 +1,4 @@
+- :white_check_mark: Add invalid transform type and finish before track tests [PR](https://github.com/laminlabs/lamindb/pull/1738) [@Zethson](https://github.com/Zethson)
 - 🚚 Rename `Registry` to `Record` [PR](https://github.com/laminlabs/lamindb/pull/1740) [@falexwolf](https://github.com/falexwolf)
 - 🧪 More tests for Annotator [PR](https://github.com/laminlabs/lamindb/pull/1737) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Move `mudata` import in TYPE_CHECKING [PR](https://github.com/laminlabs/lamindb/pull/1735) [@fredericenard](https://github.com/fredericenard)
