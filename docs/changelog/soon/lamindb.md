@@ -1,3 +1,4 @@
+- 🐛 Move `mudata` import in TYPE_CHECKING [PR](https://github.com/laminlabs/lamindb/pull/1735) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Upgrade submodules [PR](https://github.com/laminlabs/lamindb/pull/1733) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Enable Ruff security rules (bandit) [PR](https://github.com/laminlabs/lamindb/pull/1686) [@Zethson](https://github.com/Zethson)
 - 📝 Better CLI docs [PR](https://github.com/laminlabs/lamindb/pull/1736) [@falexwolf](https://github.com/falexwolf)
