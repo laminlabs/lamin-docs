@@ -1,3 +1,4 @@
+- ⬆️ Upgrade submodules [PR](https://github.com/laminlabs/lamindb/pull/1733) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Enable Ruff security rules (bandit) [PR](https://github.com/laminlabs/lamindb/pull/1686) [@Zethson](https://github.com/Zethson)
 - 📝 Better CLI docs [PR](https://github.com/laminlabs/lamindb/pull/1736) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify CLI docs [PR](https://github.com/laminlabs/lamin-cli/pull/54) [@falexwolf](https://github.com/falexwolf)
