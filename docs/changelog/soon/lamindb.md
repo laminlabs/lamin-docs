@@ -1,3 +1,4 @@
+- 🚚 Rename `column` to `column_name` [PR](https://github.com/laminlabs/lamindb-setup/pull/799) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Rename Registry to Record [PR](https://github.com/laminlabs/lamindb-setup/pull/798) [@fredericenard](https://github.com/fredericenard)
 - :white_check_mark: Add invalid transform type and finish before track tests [PR](https://github.com/laminlabs/lamindb/pull/1738) [@Zethson](https://github.com/Zethson)
 - 🚚 Rename `Registry` to `Record` [PR](https://github.com/laminlabs/lamindb/pull/1740) [@falexwolf](https://github.com/falexwolf)
