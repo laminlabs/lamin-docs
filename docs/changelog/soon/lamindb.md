@@ -1,3 +1,4 @@
+- 🐛 Fix return values of `.save()` for a few classes [PR](https://github.com/laminlabs/lamindb/pull/1741) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/1742) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Rename `column` to `column_name` [PR](https://github.com/laminlabs/lamindb-setup/pull/799) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Rename Registry to Record [PR](https://github.com/laminlabs/lamindb-setup/pull/798) [@fredericenard](https://github.com/fredericenard)
