@@ -1,3 +1,4 @@
+- ♻️ Rename Artifact.backed to Artifact.open [PR](https://github.com/laminlabs/lamindb/pull/1747) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Remove generic Annotator, refactor annotate guides [PR](https://github.com/laminlabs/lamindb/pull/1744) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix return values of `.save()` for a few classes [PR](https://github.com/laminlabs/lamindb/pull/1741) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/1742) [@fredericenard](https://github.com/fredericenard)
