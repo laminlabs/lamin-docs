@@ -8,5 +8,6 @@
 
 guide
 api
+integrations
 changelog
 ```
