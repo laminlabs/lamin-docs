@@ -228,6 +228,6 @@ def docs(session):
         session.run(*f"pip install {prefix}/lndocs".split())
     else:
         session.install(f"{prefix}/lndocs")
-    # do not simply add instance creation here TODO
+    # TODO
     strict = ""  # " --strict" if not IS_PR else ""
     session.run(*f"lndocs --strip-prefix --error-on-index{strict}".split())
