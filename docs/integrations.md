@@ -2,7 +2,7 @@
 
 ## Git
 
-Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-script-transforms-with-github).
+Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-script-transforms-with-github)
 
 ## MLOps
 
@@ -16,8 +16,8 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 
 ## Array stores
 
-- [tiledbsoma](https://docs.lamin.ai/scrna6)
-- [DuckDB](https://docs.lamin.ai/rxrx#use-duckdb-to-query-metadata)
+- `tiledbsoma`: [inhouse guide](scrna6) or [cellxgene](query-census)
+- [DuckDB](rxrx)
 
 ## Visualization tools
 
