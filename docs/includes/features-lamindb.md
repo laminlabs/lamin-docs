@@ -1,10 +1,10 @@
 **Access data & metadata across storage (files, arrays) & database (SQL) backends.**
 
-- Query & search: {class}`~lamindb.core.Registry.filter`, {class}`~lamindb.core.Registry.search`
+- Query & search: {class}`~lamindb.core.Record.filter`, {class}`~lamindb.core.Record.search`
 - Cache, load & stream artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`, {class}`~lamindb.Artifact.backed`
 - Manage {class}`~lamindb.Feature`, {class}`~lamindb.FeatureSet`, {class}`~lamindb.ULabel`
 - Plug-in custom [schemas](/schemas) & manage schema migrations
-- Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/data), [MuData](multimodal), [SOMA](cellxgene), ... backed by [parquet](/tutorial), [zarr](/data), [TileDB](cellxgene), [HDF5](/data), [h5ad](/data), [DuckDB](rxrx), ...
+- Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/arrays), [MuData](multimodal), [SOMA](cellxgene), ... backed by [parquet](/tutorial), [zarr](/arrays), [TileDB](cellxgene), [HDF5](/arrays), [h5ad](/arrays), [DuckDB](rxrx), ...
 - Create iterable collections of artifacts: {class}`~lamindb.Artifact`, {class}`~lamindb.Collection`
 - Use PyTorch data loaders: {meth}`~lamindb.Collection.mapped`
 - Version artifacts, collections & transforms: {class}`~lamindb.core.IsVersioned`
