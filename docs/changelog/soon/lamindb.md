@@ -1,23 +1,33 @@
-- :truck: Deprecate `Annotate` in favor of `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1749) [@falexwolf](https://github.com/falexwolf)
-- 📝 Refactor docs, including annotate guide [PR](https://github.com/laminlabs/lamindb/pull/1748) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Rename Artifact.backed to Artifact.open [PR](https://github.com/laminlabs/lamindb/pull/1747) [@Koncopd](https://github.com/Koncopd)
-- ♻️ Remove generic Annotator, refactor annotate guides [PR](https://github.com/laminlabs/lamindb/pull/1744) [@sunnyosun](https://github.com/sunnyosun)
-- 🐛 Fix return values of `.save()` for a few classes [PR](https://github.com/laminlabs/lamindb/pull/1741) [@falexwolf](https://github.com/falexwolf)
-- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/1742) [@fredericenard](https://github.com/fredericenard)
-- 🚚 Rename `column` to `column_name` [PR](https://github.com/laminlabs/lamindb-setup/pull/799) [@fredericenard](https://github.com/fredericenard)
-- 🚚 Rename Registry to Record [PR](https://github.com/laminlabs/lamindb-setup/pull/798) [@fredericenard](https://github.com/fredericenard)
-- :white_check_mark: Add invalid transform type and finish before track tests [PR](https://github.com/laminlabs/lamindb/pull/1738) [@Zethson](https://github.com/Zethson)
-- 🚚 Rename `Registry` to `Record` [PR](https://github.com/laminlabs/lamindb/pull/1740) [@falexwolf](https://github.com/falexwolf)
-- 🧪 More tests for Annotator [PR](https://github.com/laminlabs/lamindb/pull/1737) [@sunnyosun](https://github.com/sunnyosun)
-- 🐛 Move `mudata` import in TYPE_CHECKING [PR](https://github.com/laminlabs/lamindb/pull/1735) [@fredericenard](https://github.com/fredericenard)
-- ⬆️ Upgrade submodules [PR](https://github.com/laminlabs/lamindb/pull/1733) [@fredericenard](https://github.com/fredericenard)
-- 🔒 Enable Ruff security rules (bandit) [PR](https://github.com/laminlabs/lamindb/pull/1686) [@Zethson](https://github.com/Zethson)
-- 📝 Better CLI docs [PR](https://github.com/laminlabs/lamindb/pull/1736) [@falexwolf](https://github.com/falexwolf)
-- 💄 Prettify CLI docs [PR](https://github.com/laminlabs/lamin-cli/pull/54) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Refactor schema synchronization with hub [PR](https://github.com/laminlabs/lamindb-setup/pull/787) [@fredericenard](https://github.com/fredericenard)
-- 🎨 Add generic Annotator [PR](https://github.com/laminlabs/lamindb/pull/1732) [@sunnyosun](https://github.com/sunnyosun)
-- ✨ `Artifact.backed()` for `tiledbsoma` stores [PR](https://github.com/laminlabs/lamindb/pull/53) [@Koncopd](https://github.com/Koncopd)
+The API is now cleaner and fields are typed.
+
+```{dropdown} Details
+
+All users who don't use Django outside of lamindb can set Django's internal API that clutters the `Record` name spaces by running: `lamin set private-django-api` on the command line.
+
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8uTijEvtSEh0zeeNvwZx.png" width="400px">
+
+```
+
 - 🚸 Cleaner API [PR](https://github.com/laminlabs/lamindb/pull/1723) [@falexwolf](https://github.com/falexwolf) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add global `private-django-api` setting [PR](https://github.com/laminlabs/lamin-cli/pull/53) [@falexwolf](https://github.com/falexwolf)
-- 📝 Polish bio-registries how-to [PR](https://github.com/laminlabs/lamindb/pull/1722) [@falexwolf](https://github.com/falexwolf)
-- 🏷️ Add types to fields of core registries [PR](https://github.com/laminlabs/lamindb/pull/1716) [@falexwolf](https://github.com/falexwolf)
+- 🏷️ Add types to fields [PR](https://github.com/laminlabs/lamindb/pull/1716) [@falexwolf](https://github.com/falexwolf)
+
+`tiledbsoma` is now better supported.
+
+- ✨ `Artifact.open()` for `tiledbsoma` stores [PR](https://github.com/laminlabs/lamindb/pull/53) [@Koncopd](https://github.com/Koncopd)
+
+Better names.
+
+- 🚚 Deprecate `Artifact.backed()` in favor of `Artifact.open()` [PR](https://github.com/laminlabs/lamindb/pull/1747) [@Koncopd](https://github.com/Koncopd)
+- 🚚 Deprecate `Annotate` in favor of `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1749) [@falexwolf](https://github.com/falexwolf)
+- 🚚 Deprecate `Registry` in favor of `Record` [PR](https://github.com/laminlabs/lamindb-setup/pull/798) [@fredericenard](https://github.com/fredericenard)
+
+Better documentation.
+
+- 📝 Improve the curation guide [PR](https://github.com/laminlabs/lamindb/pull/1748) [PR](https://github.com/laminlabs/lamindb/pull/1744) [@sunnyosun](https://github.com/sunnyosun) [@falexwolf](https://github.com/falexwolf)
+- 📝 Improve the CLI docs [PR](https://github.com/laminlabs/lamindb/pull/1736) [@falexwolf](https://github.com/falexwolf)
+
+Security updates & bug fixes.
+
+- 🔒 Enable Ruff security rules (bandit) & CodeQL [PR](https://github.com/laminlabs/lamindb/pull/1686) [@Zethson](https://github.com/Zethson)
+- 🐛 Fix return values of `.save()` for a few classes [PR](https://github.com/laminlabs/lamindb/pull/1741) [@falexwolf](https://github.com/falexwolf)
