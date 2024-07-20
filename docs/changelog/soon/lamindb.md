@@ -1,3 +1,4 @@
+- :truck: Deprecate `Annotate` in favor of `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1749) [@falexwolf](https://github.com/falexwolf)
 - 📝 Refactor docs, including annotate guide [PR](https://github.com/laminlabs/lamindb/pull/1748) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename Artifact.backed to Artifact.open [PR](https://github.com/laminlabs/lamindb/pull/1747) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Remove generic Annotator, refactor annotate guides [PR](https://github.com/laminlabs/lamindb/pull/1744) [@sunnyosun](https://github.com/sunnyosun)
