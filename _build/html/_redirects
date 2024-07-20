@@ -2,5 +2,7 @@
 /nbproject/* https://nbproject.lamin.ai/:splat 301
 /readfcs/* https://readfcs.lamin.ai/:splat 301
 /guide /introduction 301
-/reference /lamindb 301
+/api /lamindb 301
+/meta /records 301
+/data /arrays 301
 / /introduction 301
