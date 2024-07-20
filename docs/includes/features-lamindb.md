@@ -23,7 +23,7 @@
 
 **Validate, standardize & annotate based on registries: {class}`~lamindb.core.CanValidate.validate` & {class}`~lamindb.core.CanValidate.standardize`.**
 
-- Use a high-level annotation & validation flow: {class}`~lamindb.Annotate`
+- Use a high-level curation flow: {class}`~lamindb.Curate`
 - Inspect validation failures: {class}`~lamindb.core.CanValidate.inspect`
 - Annotate with features & labels: {class}`~lamindb.core.FeatureManager`
 - Save data & metadata ACID: {class}`~lamindb.Artifact.save`
