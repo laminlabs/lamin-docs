@@ -203,9 +203,7 @@ def pull_artifacts(session):
         content = f.read()
     with open("docs/guide.md", "w") as f:
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
-        content = add_line_after(content, "annotate", "public-ontologies")
-        content = content.replace("can-validate\n", "\n")
-        content = content.replace("annotate-for-developers\n", "\n")
+        content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
 
     assert Path("docs/includes/features-lamindb.md").exists()
