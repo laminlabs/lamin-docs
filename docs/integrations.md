@@ -2,9 +2,9 @@
 
 LaminDB integrates with a variety of popular tools that you may already use in your stack.
 
-## GitHub
+## Git
 
-- Sync script transforms with git commits. Learn more about this feature [here](https://docs.lamin.ai/track#sync-script-transforms-with-github).
+Sync tracked scripts in lamindb with git commits: [guide](track#sync-script-transforms-with-github).
 
 ## MLOps
 
