@@ -1,3 +1,4 @@
+- 💚 Fix lnci password [PR](https://github.com/laminlabs/laminhub/pull/906) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor query builder [PR](https://github.com/laminlabs/laminhub/pull/819) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix install_pg_trgm [PR](https://github.com/laminlabs/laminhub/pull/903) [@fredericenard](https://github.com/fredericenard)
 - 🚀 Install pg_trgm endpoint [PR](https://github.com/laminlabs/laminhub/pull/901) [@fredericenard](https://github.com/fredericenard)
