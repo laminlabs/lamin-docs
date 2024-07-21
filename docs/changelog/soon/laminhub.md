@@ -1,3 +1,4 @@
+- ♻️ Refactor query builder [PR](https://github.com/laminlabs/laminhub/pull/819) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix install_pg_trgm [PR](https://github.com/laminlabs/laminhub/pull/903) [@fredericenard](https://github.com/fredericenard)
 - 🚀 Install pg_trgm endpoint [PR](https://github.com/laminlabs/laminhub/pull/901) [@fredericenard](https://github.com/fredericenard)
 - 👷 Refactor pre-commit setup with auto-fix [PR](https://github.com/laminlabs/laminhub/pull/892) [@chaichontat](https://github.com/chaichontat)
