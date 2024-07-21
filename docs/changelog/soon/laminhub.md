@@ -1,3 +1,4 @@
+- Use loguru for stack traces and keep logs from CI [PR](https://github.com/laminlabs/laminhub/pull/908) [@chaichontat](https://github.com/chaichontat)
 - 💚 Fix test_router_relations_artifact [PR](https://github.com/laminlabs/laminhub/pull/907) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix lnci password [PR](https://github.com/laminlabs/laminhub/pull/906) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor query builder [PR](https://github.com/laminlabs/laminhub/pull/819) [@fredericenard](https://github.com/fredericenard)
