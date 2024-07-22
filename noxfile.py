@@ -226,7 +226,9 @@ def docs(session):
         session.run(*f"pip install {prefix}/lndocs".split())
     else:
         session.install(f"{prefix}/lndocs")
-    process = subprocess.run(*"lndocs --strip-prefix --error-on-index --strict".split())
+    process = subprocess.run(
+        "lndocs --strip-prefix --error-on-index --strict", shell=True
+    )
     if process.returncode != 0:
         # rerun without strict option so see all warnings
         session.run(*"lndocs --strip-prefix --error-on-index".split())
