@@ -1,0 +1,1 @@
+- ⚡️ Speed up parents [PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)
