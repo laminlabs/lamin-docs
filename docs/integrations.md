@@ -2,7 +2,7 @@
 
 ## Git
 
-Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-script-transforms-with-github)
+Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scripts-with-github)
 
 ## MLOps
 

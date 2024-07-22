@@ -48,7 +48,7 @@ Better names.
 
 - 🚚 Deprecate `Artifact.backed()` in favor of `Artifact.open()` [PR](https://github.com/laminlabs/lamindb/pull/1747) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Deprecate `Annotate` in favor of `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1749) [@falexwolf](https://github.com/falexwolf)
-- 🚚 Deprecate `Registry` in favor of `Record` [PR](https://github.com/laminlabs/lamindb-setup/pull/798) [@fredericenard](https://github.com/fredericenard)
+- 🚚 Deprecate `Registry` in favor of `Record` [PR](https://github.com/laminlabs/lamindb/pull/1740) [@falexwolf](https://github.com/falexwolf)
 
 Better documentation.
 
