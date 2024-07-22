@@ -1,3 +1,4 @@
+- :construction_worker: Introduce ESLint checks [PR](https://github.com/laminlabs/laminhub/pull/912) [@chaichontat](https://github.com/chaichontat)
 - :fire: Remove latest report [PR](https://github.com/laminlabs/laminhub/pull/911) [@chaichontat](https://github.com/chaichontat)
 - :arrow_up: Update dependencies [PR](https://github.com/laminlabs/laminhub/pull/910) [@chaichontat](https://github.com/chaichontat)
 - Use loguru for stack traces and keep logs from CI [PR](https://github.com/laminlabs/laminhub/pull/908) [@chaichontat](https://github.com/chaichontat)
