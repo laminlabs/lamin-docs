@@ -1,5 +1,6 @@
 import os
 import shutil
+import subprocess
 from pathlib import Path
 from subprocess import run
 from typing import Dict
@@ -225,6 +226,9 @@ def docs(session):
         session.run(*f"pip install {prefix}/lndocs".split())
     else:
         session.install(f"{prefix}/lndocs")
-    # TODO
-    strict = ""  # " --strict" if not IS_PR else ""
-    session.run(*f"lndocs --strip-prefix --error-on-index{strict}".split())
+    process = subprocess.run(*"lndocs --strip-prefix --error-on-index --strict".split())
+    if process.returncode != 0:
+        # rerun without strict option so see all warnings
+        session.run(*"lndocs --strip-prefix --error-on-index".split())
+        # exit with error
+        exit(1)
