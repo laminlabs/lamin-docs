@@ -1,3 +1,4 @@
+- ✨ Implement groupby endpoint [PR](https://github.com/laminlabs/laminhub/pull/893) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix loguru integration in Sentry [PR](https://github.com/laminlabs/laminhub/pull/913) [@fredericenard](https://github.com/fredericenard)
 - :construction_worker: Introduce ESLint checks [PR](https://github.com/laminlabs/laminhub/pull/912) [@chaichontat](https://github.com/chaichontat)
 - :fire: Remove latest report [PR](https://github.com/laminlabs/laminhub/pull/911) [@chaichontat](https://github.com/chaichontat)
