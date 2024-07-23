@@ -5,5 +5,5 @@
 /api /lamindb 301
 /meta /records 301
 /data /arrays 301
-/lamindb.registry /lamindb.record 301
+/lamindb.core.registry /lamindb.core.record 301
 / /introduction 301
