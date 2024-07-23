@@ -1,3 +1,4 @@
+- :green_heart: automerge: do not run rebase ops unless merged [PR](https://github.com/laminlabs/laminhub/pull/925) [@chaichontat](https://github.com/chaichontat)
 - :arrow_down: Remove Husky [PR](https://github.com/laminlabs/laminhub/pull/923) [@chaichontat](https://github.com/chaichontat)
 - :bug: Remove duplicated collections [PR](https://github.com/laminlabs/laminhub/pull/917) [@chaichontat](https://github.com/chaichontat)
 - ✨ Implement groupby endpoint [PR](https://github.com/laminlabs/laminhub/pull/893) [@fredericenard](https://github.com/fredericenard)
