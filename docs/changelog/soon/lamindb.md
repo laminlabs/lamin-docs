@@ -1,1 +1,2 @@
+- 🐛 Do not start supabase autorefresh process [PR](https://github.com/laminlabs/lamindb-setup/pull/801) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Speed up parents [PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)
