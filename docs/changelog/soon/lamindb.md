@@ -1,3 +1,4 @@
+- ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/lamindb/pull/1752) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Migrate to pydantic >2 [PR](https://github.com/laminlabs/lamindb-setup/pull/802) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Do not start supabase autorefresh process [PR](https://github.com/laminlabs/lamindb-setup/pull/801) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Speed up parents [PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)
