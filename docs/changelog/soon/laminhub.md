@@ -1,3 +1,4 @@
+- :arrow_down: Remove Husky [PR](https://github.com/laminlabs/laminhub/pull/923) [@chaichontat](https://github.com/chaichontat)
 - :bug: Remove duplicated collections [PR](https://github.com/laminlabs/laminhub/pull/917) [@chaichontat](https://github.com/chaichontat)
 - ✨ Implement groupby endpoint [PR](https://github.com/laminlabs/laminhub/pull/893) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix loguru integration in Sentry [PR](https://github.com/laminlabs/laminhub/pull/913) [@fredericenard](https://github.com/fredericenard)
