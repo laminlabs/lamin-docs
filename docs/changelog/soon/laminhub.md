@@ -1,3 +1,4 @@
+- :green_heart: Automerge method depends on branch [PR](https://github.com/laminlabs/laminhub/pull/938) [@chaichontat](https://github.com/chaichontat)
 - 💄 Add details in hover card [PR](https://github.com/laminlabs/laminhub/pull/748) [@chaichontat](https://github.com/chaichontat)
 - 👷 Allow automerge for all branches [PR](https://github.com/laminlabs/laminhub/pull/937) [@chaichontat](https://github.com/chaichontat)
 - Revert "Test Buildjet" [PR](https://github.com/laminlabs/laminhub/pull/936) [@chaichontat](https://github.com/chaichontat)
