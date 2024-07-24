@@ -1,3 +1,4 @@
+- 💡 Add comment about security within the edge function [PR](https://github.com/laminlabs/laminhub/pull/929) [@fredericenard](https://github.com/fredericenard)
 - 🔒 Fix permission vulnerability [PR](https://github.com/laminlabs/laminhub/pull/928) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Base supabase handler [PR](https://github.com/laminlabs/laminhub/pull/927) [@fredericenard](https://github.com/fredericenard)
 - :green_heart: automerge: do not run rebase ops unless merged [PR](https://github.com/laminlabs/laminhub/pull/925) [@chaichontat](https://github.com/chaichontat)
