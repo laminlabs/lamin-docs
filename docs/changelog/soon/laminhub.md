@@ -1,3 +1,4 @@
+- 💄 Add details in hover card [PR](https://github.com/laminlabs/laminhub/pull/748) [@chaichontat](https://github.com/chaichontat)
 - 👷 Allow automerge for all branches [PR](https://github.com/laminlabs/laminhub/pull/937) [@chaichontat](https://github.com/chaichontat)
 - Revert "Test Buildjet" [PR](https://github.com/laminlabs/laminhub/pull/936) [@chaichontat](https://github.com/chaichontat)
 - Test Buildjet [PR](https://github.com/laminlabs/laminhub/pull/926) [@chaichontat](https://github.com/chaichontat)
