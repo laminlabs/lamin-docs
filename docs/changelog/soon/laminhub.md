@@ -1,3 +1,4 @@
+- Test Buildjet [PR](https://github.com/laminlabs/laminhub/pull/926) [@chaichontat](https://github.com/chaichontat)
 - ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/laminhub/pull/922) [@falexwolf](https://github.com/falexwolf)
 - :bug: Fix collection filter [PR](https://github.com/laminlabs/laminhub/pull/933) [@chaichontat](https://github.com/chaichontat)
 - 👷 Prevent cancel in progress [PR](https://github.com/laminlabs/laminhub/pull/931) [@fredericenard](https://github.com/fredericenard)
