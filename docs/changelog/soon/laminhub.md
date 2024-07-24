@@ -1,3 +1,4 @@
+- 👷 Prevent cancel in progress [PR](https://github.com/laminlabs/laminhub/pull/931) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Fix misclassification of permissions_cache test [PR](https://github.com/laminlabs/laminhub/pull/930) [@fredericenard](https://github.com/fredericenard)
 - 🔒 Prevent excessive resource consumption from malicious attack [PR](https://github.com/laminlabs/laminhub/pull/919) [@fredericenard](https://github.com/fredericenard)
 - 💡 Add comment about security within the edge function [PR](https://github.com/laminlabs/laminhub/pull/929) [@fredericenard](https://github.com/fredericenard)
