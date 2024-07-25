@@ -1,3 +1,4 @@
+- ✨ Add `add_from_df` method to BioRecord [PR](https://github.com/laminlabs/lamindb/pull/1754) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Reorganize hub client so that storage table in hub can get an instance FK [PR](https://github.com/laminlabs/lamindb/pull/1753) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Reorganize so that storage table in hub can get an instance fk [PR](https://github.com/laminlabs/lamindb-setup/pull/803) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/lamindb/pull/1752) [@falexwolf](https://github.com/falexwolf)
