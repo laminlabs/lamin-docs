@@ -24,7 +24,7 @@
 .. role:: small
 ```
 
-## 2024-07-22 {small}`DB 0.74.3`
+## 2024-07-26 {small}`DB 0.74.3`
 
 ⚡ Speed up populating parent records by an order of magnitude, remove the `parents` keyword ([PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)).
 
