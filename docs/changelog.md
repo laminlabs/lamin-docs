@@ -26,11 +26,17 @@
 
 ## 2024-07-22 {small}`DB 0.74.3`
 
-- ⚡ Speed up populating ontological parent records by an order of magnitude, remove the `parents` keyword. [PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)
+⚡ Speed up populating ontological parent records by an order of magnitude, remove the `parents` keyword. [PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)
+
+Features.
+
 - ✨ Allow for multiple local storage locations with the same root path [PR](https://github.com/laminlabs/lamindb/pull/1753) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `add_from_df` method to `BioRecord` [PR](https://github.com/laminlabs/lamindb/pull/1754) [@sunnyosun](https://github.com/sunnyosun)
+
+Chores.
+
 - ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/lamindb/pull/1752) [@falexwolf](https://github.com/falexwolf)
-- 👷 Do not start supabase autorefresh process [PR](https://github.com/laminlabs/lamindb-setup/pull/801) [@Koncopd](https://github.com/Koncopd)
+- 👷 Resolve hanging CI [PR](https://github.com/laminlabs/lamindb-setup/pull/801) [@Koncopd](https://github.com/Koncopd)
 
 ## 2024-07-22 {small}`DB 0.74.2`
 
