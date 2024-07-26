@@ -1,2 +1,3 @@
+- 👷 Refactor CI setup [PR](https://github.com/laminlabs/cellxgene-lamin/pull/70) [@falexwolf](https://github.com/falexwolf)
 - 👷 Write changes to different file [PR](https://github.com/laminlabs/lamin-mlops/pull/17) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move to laminci [PR](https://github.com/laminlabs/lamin-mlops/pull/15) [@falexwolf](https://github.com/falexwolf)
