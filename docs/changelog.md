@@ -26,7 +26,7 @@
 
 ## 2024-07-22 {small}`DB 0.74.3`
 
-⚡ Speed up populating ontological parent records by an order of magnitude, remove the `parents` keyword. [PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)
+⚡ Speed up populating parent records by an order of magnitude, remove the `parents` keyword ([PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)).
 
 Features.
 
