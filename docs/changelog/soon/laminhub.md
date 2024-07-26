@@ -1,3 +1,4 @@
+- 🚚 Turn `storage.instance_id` into a foreign key to `instance`, remove unique constraint on `storage.root` [PR](https://github.com/laminlabs/laminhub/pull/897) [@falexwolf](https://github.com/falexwolf)
 - :green_heart: Automerge method depends on branch [PR](https://github.com/laminlabs/laminhub/pull/938) [@chaichontat](https://github.com/chaichontat)
 - 💄 Add details in hover card [PR](https://github.com/laminlabs/laminhub/pull/748) [@chaichontat](https://github.com/chaichontat)
 - 👷 Allow automerge for all branches [PR](https://github.com/laminlabs/laminhub/pull/937) [@chaichontat](https://github.com/chaichontat)
