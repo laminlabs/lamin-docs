@@ -8,7 +8,7 @@
 
 💡 Get notified about new LaminDB releases by watching releases for the [lamindb GitHub repository](https://github.com/laminlabs/lamindb).
 
-🪜 For upcoming older changes, see: {doc}`changelog/2024` · {doc}`changelog/2023` · {doc}`changelog/2022`
+🪜 For older changes, see: {doc}`changelog/2024` · {doc}`changelog/2023` · {doc}`changelog/2022`
 
 ```
 
