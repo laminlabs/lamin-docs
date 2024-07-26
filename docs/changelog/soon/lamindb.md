@@ -1,2 +1,3 @@
+- 🐛 Fix register [PR](https://github.com/laminlabs/lamindb-setup/pull/805) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename PublicSource to Source [PR](https://github.com/laminlabs/lamindb/pull/1755) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Rename PublicSource to Source [PR](https://github.com/laminlabs/lamindb-setup/pull/804) [@sunnyosun](https://github.com/sunnyosun)
