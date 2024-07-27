@@ -32,7 +32,7 @@ Overhauled the REST API: better performance and architecture.
 
 - ⚡ Optimize query builder [@fredericenard](https://github.com/fredericenard)
 - ✨ GroupBy endpoint [@fredericenard](https://github.com/fredericenard)
-- ♻️ Improved API schema [PR](https://github.com/laminlabs/laminhub/pull/914) [@fredericenard](https://github.com/fredericenard)
+- ♻️ Improved API schema [@fredericenard](https://github.com/fredericenard) [@chaichontat](https://github.com/chaichontat)
 
 UI improvements.
 
