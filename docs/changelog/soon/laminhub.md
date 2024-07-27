@@ -1,46 +1,52 @@
+New features.
+
+- ✨ Implement groupby endpoint [PR](https://github.com/laminlabs/laminhub/pull/893) [@fredericenard](https://github.com/fredericenard)
+
+API and Database Improvements.
+
 - ♻️ Improve API schema [PR](https://github.com/laminlabs/laminhub/pull/914) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Turn `storage.instance_id` into a foreign key to `instance`, remove unique constraint on `storage.root` [PR](https://github.com/laminlabs/laminhub/pull/897) [@falexwolf](https://github.com/falexwolf)
-- :green_heart: Automerge method depends on branch [PR](https://github.com/laminlabs/laminhub/pull/938) [@chaichontat](https://github.com/chaichontat)
-- 💄 Add details in hover card [PR](https://github.com/laminlabs/laminhub/pull/748) [@chaichontat](https://github.com/chaichontat)
-- 👷 Allow automerge for all branches [PR](https://github.com/laminlabs/laminhub/pull/937) [@chaichontat](https://github.com/chaichontat)
-- Revert "Test Buildjet" [PR](https://github.com/laminlabs/laminhub/pull/936) [@chaichontat](https://github.com/chaichontat)
-- Test Buildjet [PR](https://github.com/laminlabs/laminhub/pull/926) [@chaichontat](https://github.com/chaichontat)
-- ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/laminhub/pull/922) [@falexwolf](https://github.com/falexwolf)
-- :bug: Fix collection filter [PR](https://github.com/laminlabs/laminhub/pull/933) [@chaichontat](https://github.com/chaichontat)
-- 👷 Prevent cancel in progress [PR](https://github.com/laminlabs/laminhub/pull/931) [@fredericenard](https://github.com/fredericenard)
-- 🚚 Fix misclassification of permissions_cache test [PR](https://github.com/laminlabs/laminhub/pull/930) [@fredericenard](https://github.com/fredericenard)
-- 🔒 Prevent excessive resource consumption from malicious attack [PR](https://github.com/laminlabs/laminhub/pull/919) [@fredericenard](https://github.com/fredericenard)
-- 💡 Add comment about security within the edge function [PR](https://github.com/laminlabs/laminhub/pull/929) [@fredericenard](https://github.com/fredericenard)
+- 🗃️ Turn schema.json into a nullable field [PR](https://github.com/laminlabs/laminhub/pull/886) [@fredericenard](https://github.com/fredericenard)
+
+Security Enhancements.
+
 - 🔒 Fix permission vulnerability [PR](https://github.com/laminlabs/laminhub/pull/928) [@fredericenard](https://github.com/fredericenard)
-- ♻️ Base supabase handler [PR](https://github.com/laminlabs/laminhub/pull/927) [@fredericenard](https://github.com/fredericenard)
-- :green_heart: automerge: do not run rebase ops unless merged [PR](https://github.com/laminlabs/laminhub/pull/925) [@chaichontat](https://github.com/chaichontat)
-- :arrow_down: Remove Husky [PR](https://github.com/laminlabs/laminhub/pull/923) [@chaichontat](https://github.com/chaichontat)
-- :bug: Remove duplicated collections [PR](https://github.com/laminlabs/laminhub/pull/917) [@chaichontat](https://github.com/chaichontat)
-- ✨ Implement groupby endpoint [PR](https://github.com/laminlabs/laminhub/pull/893) [@fredericenard](https://github.com/fredericenard)
-- 🐛 Fix loguru integration in Sentry [PR](https://github.com/laminlabs/laminhub/pull/913) [@fredericenard](https://github.com/fredericenard)
-- :construction_worker: Introduce ESLint checks [PR](https://github.com/laminlabs/laminhub/pull/912) [@chaichontat](https://github.com/chaichontat)
-- :fire: Remove latest report [PR](https://github.com/laminlabs/laminhub/pull/911) [@chaichontat](https://github.com/chaichontat)
-- :arrow_up: Update dependencies [PR](https://github.com/laminlabs/laminhub/pull/910) [@chaichontat](https://github.com/chaichontat)
-- Use loguru for stack traces and keep logs from CI [PR](https://github.com/laminlabs/laminhub/pull/908) [@chaichontat](https://github.com/chaichontat)
-- 💚 Fix test_router_relations_artifact [PR](https://github.com/laminlabs/laminhub/pull/907) [@fredericenard](https://github.com/fredericenard)
-- 💚 Fix lnci password [PR](https://github.com/laminlabs/laminhub/pull/906) [@fredericenard](https://github.com/fredericenard)
-- ♻️ Refactor query builder [PR](https://github.com/laminlabs/laminhub/pull/819) [@fredericenard](https://github.com/fredericenard)
-- 💚 Fix install_pg_trgm [PR](https://github.com/laminlabs/laminhub/pull/903) [@fredericenard](https://github.com/fredericenard)
-- 🚀 Install pg_trgm endpoint [PR](https://github.com/laminlabs/laminhub/pull/901) [@fredericenard](https://github.com/fredericenard)
-- 👷 Refactor pre-commit setup with auto-fix [PR](https://github.com/laminlabs/laminhub/pull/892) [@chaichontat](https://github.com/chaichontat)
-- 🗃️ Apply schema table migration [PR](https://github.com/laminlabs/laminhub/pull/890) [@fredericenard](https://github.com/fredericenard)
-- 🐛 Fix transfer instance ownership [PR](https://github.com/laminlabs/laminhub/pull/888) [@fredericenard](https://github.com/fredericenard)
-- 🗃️ Make `json` field from `schema` table nullable [PR](https://github.com/laminlabs/laminhub/pull/886) [@fredericenard](https://github.com/fredericenard)
-- 🐛 Enable accessing hub db prod without AWS credentials [PR](https://github.com/laminlabs/laminhub/pull/885) [@fredericenard](https://github.com/fredericenard)
-- ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/887) [@fredericenard](https://github.com/fredericenard)
-- 💚 Replace GITHUB_TOKEN by GH_LAMINAPP_DEPLOY_TOKEN [PR](https://github.com/laminlabs/laminhub/pull/882) [@fredericenard](https://github.com/fredericenard)
-- 🐛 Fix sentry issues [PR](https://github.com/laminlabs/laminhub/pull/879) [@chaichontat](https://github.com/chaichontat)
-- 💚 Merge integration tests and deployment in the same workflow [PR](https://github.com/laminlabs/laminhub/pull/877) [@fredericenard](https://github.com/fredericenard)
-- ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/871) [@falexwolf](https://github.com/falexwolf)
-- 💚 Fix CI [PR](https://github.com/laminlabs/laminhub/pull/876) [@fredericenard](https://github.com/fredericenard)
-- ✅ Preventing reusing same instance name when testing instance creation [PR](https://github.com/laminlabs/laminhub/pull/875) [@fredericenard](https://github.com/fredericenard)
-- ♻️ Refactor env variables access [PR](https://github.com/laminlabs/laminhub/pull/873) [@fredericenard](https://github.com/fredericenard)
-- 💚 Fix integration tests [PR](https://github.com/laminlabs/laminhub/pull/872) [@fredericenard](https://github.com/fredericenard)
+- 🔒 Prevent excessive resource consumption from malicious attack [PR](https://github.com/laminlabs/laminhub/pull/919) [@fredericenard](https://github.com/fredericenard)
+
+User experience and Documentation.
+
+- 💡 Add comment about security within the edge function [PR](https://github.com/laminlabs/laminhub/pull/929) [@fredericenard](https://github.com/fredericenard)
 - 👷 Refactor doc-changes [PR](https://github.com/laminlabs/laminhub/pull/860) [@falexwolf](https://github.com/falexwolf)
+- 💄 Add details in hover card [PR](https://github.com/laminlabs/laminhub/pull/748) [@chaichontat](https://github.com/chaichontat)
+
+Bug Fixes.
+
+- 🐛 Fix collection filter [PR](https://github.com/laminlabs/laminhub/pull/933) [@chaichontat](https://github.com/chaichontat)
+- 🐛 Remove duplicated collections [PR](https://github.com/laminlabs/laminhub/pull/917) [@chaichontat](https://github.com/chaichontat)
+- 🐛 Fix loguru integration in Sentry [PR](https://github.com/laminlabs/laminhub/pull/913) [@fredericenard](https://github.com/fredericenard)
+- 💚 Fix test_router_relations_artifact [PR](https://github.com/laminlabs/laminhub/pull/907) [@fredericenard](https://github.com/fredericenard)
+- 🐛 Fix transfer instance ownership [PR](https://github.com/laminlabs/laminhub/pull/888) [@fredericenard](https://github.com/fredericenard)
+- 🐛 Fix sentry issues [PR](https://github.com/laminlabs/laminhub/pull/879) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Stop settings from flickering [PR](https://github.com/laminlabs/laminhub/pull/858) [@chaichontat](https://github.com/chaichontat)
-- 👷 Fix access token for changelog creation [PR](https://github.com/laminlabs/laminhub/pull/857) [@falexwolf](https://github.com/falexwolf)
+
+CI/CD and Development Workflow.
+
+- 👷 Allow automerge for all branches [PR](https://github.com/laminlabs/laminhub/pull/937) [@chaichontat](https://github.com/chaichontat)
+- 🔥 Remove Husky [PR](https://github.com/laminlabs/laminhub/pull/923) [@chaichontat](https://github.com/chaichontat)
+- 👷 Use loguru for stack traces and keep logs from CI [PR](https://github.com/laminlabs/laminhub/pull/908) [@chaichontat](https://github.com/chaichontat)
+- 👷 Refactor pre-commit setup with auto-fix [PR](https://github.com/laminlabs/laminhub/pull/892) [@chaichontat](https://github.com/chaichontat)
+- ✅ Preventing reusing same instance name when testing instance creation [PR](https://github.com/laminlabs/laminhub/pull/875) [@fredericenard](https://github.com/fredericenard)
+
+Dependency Updates.
+
+- ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/laminhub/pull/922) [@falexwolf](https://github.com/falexwolf)
+- ⬆️ Update UI dependencies [PR](https://github.com/laminlabs/laminhub/pull/910) [@chaichontat](https://github.com/chaichontat)
+- ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/887) [@fredericenard](https://github.com/fredericenard)
+
+Refactoring.
+
+- 🚚 Fix misclassification of permissions_cache test [PR](https://github.com/laminlabs/laminhub/pull/930) [@fredericenard](https://github.com/fredericenard)
+- ♻️ Base supabase handler [PR](https://github.com/laminlabs/laminhub/pull/927) [@fredericenard](https://github.com/fredericenard)
+- 🔥 Remove latest report [PR](https://github.com/laminlabs/laminhub/pull/911) [@chaichontat](https://github.com/chaichontat)
+- ♻️ Refactor env variables access [PR](https://github.com/laminlabs/laminhub/pull/873) [@fredericenard](https://github.com/fredericenard)
+- ♻️ Refactor query builder [PR](https://github.com/laminlabs/laminhub/pull/819) [@fredericenard](https://github.com/fredericenard)
