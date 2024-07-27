@@ -1,0 +1,1 @@
+- ⬆️ Upgrade lamindb [PR](https://github.com/laminlabs/laminhub/pull/943) [@fredericenard](https://github.com/fredericenard)
