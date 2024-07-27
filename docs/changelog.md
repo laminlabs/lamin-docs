@@ -26,6 +26,19 @@
 .. role:: small
 ```
 
+## 2024-07-26 {small}`Hub 0.25`
+
+Overhauled the REST API: better performance and architecture.
+
+- ⚡ Optimize query builder [@fredericenard](https://github.com/fredericenard)
+- ✨ GroupBy endpoint [@fredericenard](https://github.com/fredericenard)
+- ♻️ Improved API schema [@fredericenard](https://github.com/fredericenard) [@chaichontat](https://github.com/chaichontat)
+
+UI improvements.
+
+- 💄 Add details in hover card [@chaichontat](https://github.com/chaichontat)
+- 🐛 Stop settings from flickering [@chaichontat](https://github.com/chaichontat)
+
 ## 2024-07-26 {small}`DB 0.74.3`
 
 ⚡ Speed up populating parent records by an order of magnitude, remove the `parents` keyword ([PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)).
