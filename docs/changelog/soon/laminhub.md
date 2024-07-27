@@ -1,3 +1,4 @@
+- 📝 Update changelog for 0.25.0 [PR](https://github.com/laminlabs/laminhub/pull/941) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Improve API schema [PR](https://github.com/laminlabs/laminhub/pull/914) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Turn `storage.instance_id` into a foreign key to `instance`, remove unique constraint on `storage.root` [PR](https://github.com/laminlabs/laminhub/pull/897) [@falexwolf](https://github.com/falexwolf)
 - :green_heart: Automerge method depends on branch [PR](https://github.com/laminlabs/laminhub/pull/938) [@chaichontat](https://github.com/chaichontat)
