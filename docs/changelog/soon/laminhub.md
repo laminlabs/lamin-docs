@@ -1,3 +1,4 @@
+- ♻️ Remove useless string conversion [PR](https://github.com/laminlabs/laminhub/pull/948) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix test_router_grant_s3_permissions [PR](https://github.com/laminlabs/laminhub/pull/947) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Remove trailing slash in endpoints definitions [PR](https://github.com/laminlabs/laminhub/pull/946) [@fredericenard](https://github.com/fredericenard)
 - :white_check_mark: Show response in case of test failure [PR](https://github.com/laminlabs/laminhub/pull/945) [@chaichontat](https://github.com/chaichontat)
