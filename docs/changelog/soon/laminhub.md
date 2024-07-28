@@ -1,3 +1,4 @@
+- Revert "🐛 Fix test_router_upload" [PR](https://github.com/laminlabs/laminhub/pull/950) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix test_router_upload [PR](https://github.com/laminlabs/laminhub/pull/949) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Remove useless string conversion [PR](https://github.com/laminlabs/laminhub/pull/948) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix test_router_grant_s3_permissions [PR](https://github.com/laminlabs/laminhub/pull/947) [@fredericenard](https://github.com/fredericenard)
