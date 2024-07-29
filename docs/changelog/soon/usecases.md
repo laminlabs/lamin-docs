@@ -1,3 +1,4 @@
+- Fix uncovered line [PR](https://github.com/laminlabs/cellxgene-lamin/pull/71) [@Zethson](https://github.com/Zethson)
 - 📝 Prettify `cellxgene-curate` guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/68) [@falexwolf](https://github.com/falexwolf)
 - 👷 Refactor CI setup [PR](https://github.com/laminlabs/cellxgene-lamin/pull/70) [@falexwolf](https://github.com/falexwolf)
 - 👷 Write changes to different file [PR](https://github.com/laminlabs/lamin-mlops/pull/17) [@falexwolf](https://github.com/falexwolf)
