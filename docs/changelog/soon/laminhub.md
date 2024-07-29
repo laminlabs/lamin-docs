@@ -1,3 +1,4 @@
+- ✅ Skip test_router_upload [PR](https://github.com/laminlabs/laminhub/pull/951) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix weird search behaviour: compute similarity on concatenate fields [PR](https://github.com/laminlabs/laminhub/pull/942) [@fredericenard](https://github.com/fredericenard)
 - 🧑‍💻 Improve developer experience [PR](https://github.com/laminlabs/laminhub/pull/944) [@fredericenard](https://github.com/fredericenard)
 - Revert "🐛 Fix test_router_upload" [PR](https://github.com/laminlabs/laminhub/pull/950) [@fredericenard](https://github.com/fredericenard)
