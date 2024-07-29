@@ -1,3 +1,4 @@
+- 🏗️ Integrate `lnschema-bionty` and `bionty-base` into `bionty` [PR](https://github.com/laminlabs/lamindb-setup/pull/806) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor local hub conftest [PR](https://github.com/laminlabs/lamindb-setup/pull/807) [@fredericenard](https://github.com/fredericenard)
 - Add command custom order [PR](https://github.com/laminlabs/lamin-cli/pull/56) [@Zethson](https://github.com/Zethson)
 - 👷 Add a contributing guide, make installation from GitHub easier [PR](https://github.com/laminlabs/lamindb/pull/1760) [@falexwolf](https://github.com/falexwolf)
