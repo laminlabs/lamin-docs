@@ -1,3 +1,4 @@
+- Add command custom order [PR](https://github.com/laminlabs/lamin-cli/pull/56) [@Zethson](https://github.com/Zethson)
 - 👷 Add a contributing guide, make installation from GitHub easier [PR](https://github.com/laminlabs/lamindb/pull/1760) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix register [PR](https://github.com/laminlabs/lamindb-setup/pull/805) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename PublicSource to Source [PR](https://github.com/laminlabs/lamindb/pull/1755) [@sunnyosun](https://github.com/sunnyosun)
