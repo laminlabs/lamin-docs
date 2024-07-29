@@ -1,3 +1,4 @@
+- ✨ Enable social login with Azure [PR](https://github.com/laminlabs/laminhub/pull/956) [@fredericenard](https://github.com/fredericenard)
 - 🧑‍💻 Stop requiring SUPABASE_POSTGRES_DSN to be properly set when creating a migration [PR](https://github.com/laminlabs/laminhub/pull/953) [@fredericenard](https://github.com/fredericenard)
 - ✅ Skip test_router_upload [PR](https://github.com/laminlabs/laminhub/pull/951) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix weird search behaviour: compute similarity on concatenate fields [PR](https://github.com/laminlabs/laminhub/pull/942) [@fredericenard](https://github.com/fredericenard)
