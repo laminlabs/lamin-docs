@@ -1,3 +1,4 @@
+- 👷 Automate deployment of security compliance stack using Pulumi [PR](https://github.com/laminlabs/laminhub/pull/958) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove obsolete API deployment [PR](https://github.com/laminlabs/laminhub/pull/957) [@fredericenard](https://github.com/fredericenard)
 - ✨ Enable social login with Azure [PR](https://github.com/laminlabs/laminhub/pull/956) [@fredericenard](https://github.com/fredericenard)
 - 🧑‍💻 Stop requiring SUPABASE_POSTGRES_DSN to be properly set when creating a migration [PR](https://github.com/laminlabs/laminhub/pull/953) [@fredericenard](https://github.com/fredericenard)
