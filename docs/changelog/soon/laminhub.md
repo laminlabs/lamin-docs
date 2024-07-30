@@ -1,3 +1,4 @@
+- 👷 Integrate deployment of security stack in CI [PR](https://github.com/laminlabs/laminhub/pull/959) [@fredericenard](https://github.com/fredericenard)
 - 👷 Automate deployment of security compliance stack using Pulumi [PR](https://github.com/laminlabs/laminhub/pull/958) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove obsolete API deployment [PR](https://github.com/laminlabs/laminhub/pull/957) [@fredericenard](https://github.com/fredericenard)
 - ✨ Enable social login with Azure [PR](https://github.com/laminlabs/laminhub/pull/956) [@fredericenard](https://github.com/fredericenard)
