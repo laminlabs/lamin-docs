@@ -1,3 +1,4 @@
+- ♻️ Do not write storage records to hub for local test instances [PR](https://github.com/laminlabs/lamindb-setup/pull/809) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix populating `storage.instance_uid` during `init_instance` [PR](https://github.com/laminlabs/lamindb-setup/pull/808) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Release submodules [PR](https://github.com/laminlabs/lamindb/pull/1766) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Bump ruff [PR](https://github.com/laminlabs/lamindb/pull/1763) [@falexwolf](https://github.com/falexwolf)
