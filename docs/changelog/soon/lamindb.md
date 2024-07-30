@@ -1,3 +1,4 @@
+- 🐛 Fix parents save [PR](https://github.com/laminlabs/lamindb/pull/1767) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Better error message for synonym duplications [PR](https://github.com/laminlabs/lamindb/pull/1764) [@Zethson](https://github.com/Zethson)
 - 🎨 Enable deleting artifacts in all managed storage locations of the current instance [PR](https://github.com/laminlabs/lamindb/pull/1762) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do not write storage records to hub for local test instances [PR](https://github.com/laminlabs/lamindb-setup/pull/809) [@falexwolf](https://github.com/falexwolf)
