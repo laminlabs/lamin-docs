@@ -1,3 +1,4 @@
+- ✨ Revert to passing organism explicitly [PR](https://github.com/laminlabs/cellxgene-lamin/pull/75) [@Zethson](https://github.com/Zethson)
 - Fix curate throwing an exception on instantiation [PR](https://github.com/laminlabs/cellxgene-lamin/pull/72) [@Zethson](https://github.com/Zethson)
 - 💚 Install bionty from github in CI [PR](https://github.com/laminlabs/cellxgene-lamin/pull/74) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix ci [PR](https://github.com/laminlabs/cellxgene-lamin/pull/73) [@sunnyosun](https://github.com/sunnyosun)
