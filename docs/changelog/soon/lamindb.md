@@ -1,3 +1,4 @@
+- ♻️ Simplify bio-registries guide [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add more details to contributors guide [PR](https://github.com/laminlabs/lamindb/pull/1769) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix parents save [PR](https://github.com/laminlabs/lamindb/pull/1767) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Better error message for synonym duplications [PR](https://github.com/laminlabs/lamindb/pull/1764) [@Zethson](https://github.com/Zethson)
