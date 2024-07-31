@@ -1,3 +1,4 @@
+- 🔒 Verify Microsoft publisher domain [PR](https://github.com/laminlabs/laminhub/pull/967) [@fredericenard](https://github.com/fredericenard)
 - Revert "🐛 Try fixing azure auth" [PR](https://github.com/laminlabs/laminhub/pull/966) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Try fixing azure auth [PR](https://github.com/laminlabs/laminhub/pull/965) [@fredericenard](https://github.com/fredericenard)
 - 👷 Integrate deployment of security stack in CI [PR](https://github.com/laminlabs/laminhub/pull/959) [@fredericenard](https://github.com/fredericenard)
