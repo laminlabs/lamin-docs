@@ -1,3 +1,4 @@
+- 🚚 Rename save_from_df to import_from_source [PR](https://github.com/laminlabs/lamindb/pull/1772) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor ontology_id field recognition [PR](https://github.com/laminlabs/lamindb/pull/1771) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Simplify bio-registries guide [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add more details to contributors guide [PR](https://github.com/laminlabs/lamindb/pull/1769) [@Zethson](https://github.com/Zethson)
