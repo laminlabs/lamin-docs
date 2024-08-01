@@ -1,3 +1,4 @@
+- ✨ Backend search [PR](https://github.com/laminlabs/laminhub/pull/939) [@chaichontat](https://github.com/chaichontat)
 - :card_file_box: Disallow null for api_server_id for db_servers  [PR](https://github.com/laminlabs/laminhub/pull/969) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Debug AWS security deployment [PR](https://github.com/laminlabs/laminhub/pull/964) [@fredericenard](https://github.com/fredericenard)
 - :fire: Use secrets manager for all frontend env vars [PR](https://github.com/laminlabs/laminhub/pull/968) [@chaichontat](https://github.com/chaichontat)
