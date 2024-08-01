@@ -1,3 +1,4 @@
+- 🐛 Debug AWS security deployment [PR](https://github.com/laminlabs/laminhub/pull/964) [@fredericenard](https://github.com/fredericenard)
 - :fire: Use secrets manager for all frontend env vars [PR](https://github.com/laminlabs/laminhub/pull/968) [@chaichontat](https://github.com/chaichontat)
 - ⬆️ Upgrade lamindb: bionty mono-repo, wetlab schema upgrades [PR](https://github.com/laminlabs/laminhub/pull/963) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Verify Microsoft publisher domain [PR](https://github.com/laminlabs/laminhub/pull/967) [@fredericenard](https://github.com/fredericenard)
