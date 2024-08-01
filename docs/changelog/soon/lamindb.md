@@ -1,3 +1,4 @@
+- 🚚 Rename `.sources()` to `.list_source()` [PR](https://github.com/laminlabs/lamindb/pull/1775) [@sunnyosun](https://github.com/sunnyosun)
 - Fix create message [PR](https://github.com/laminlabs/lamindb/pull/1777) [@Zethson](https://github.com/Zethson)
 - ♻️ Refactor Source model [PR](https://github.com/laminlabs/lamindb/pull/1774) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor Source registry [PR](https://github.com/laminlabs/lamindb-setup/pull/811) [@sunnyosun](https://github.com/sunnyosun)
