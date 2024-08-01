@@ -1,3 +1,4 @@
+- :bug: Fix field/column mismatch [PR](https://github.com/laminlabs/laminhub/pull/973) [@chaichontat](https://github.com/chaichontat)
 - :construction_worker: Integrate UI deployment [PR](https://github.com/laminlabs/laminhub/pull/972) [@chaichontat](https://github.com/chaichontat)
 - ✨ Backend search [PR](https://github.com/laminlabs/laminhub/pull/939) [@chaichontat](https://github.com/chaichontat)
 - :card_file_box: Disallow null for api_server_id for db_servers  [PR](https://github.com/laminlabs/laminhub/pull/969) [@chaichontat](https://github.com/chaichontat)
