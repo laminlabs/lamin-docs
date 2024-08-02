@@ -1,3 +1,4 @@
+- 💚 Attempt fix [PR](https://github.com/laminlabs/lamin-usecases/pull/136) [@falexwolf](https://github.com/falexwolf)
 - ✨ Manually save collection [PR](https://github.com/laminlabs/cellxgene-lamin/pull/78) [@Zethson](https://github.com/Zethson)
 - ✨ Revert to passing organism explicitly [PR](https://github.com/laminlabs/cellxgene-lamin/pull/75) [@Zethson](https://github.com/Zethson)
 - Fix curate throwing an exception on instantiation [PR](https://github.com/laminlabs/cellxgene-lamin/pull/72) [@Zethson](https://github.com/Zethson)
