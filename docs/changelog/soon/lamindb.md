@@ -1,3 +1,4 @@
+- 🚑️ Fix bionty source entity [PR](https://github.com/laminlabs/lamindb-setup/pull/812) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fixes [PR](https://github.com/laminlabs/lamindb/pull/1782) [@falexwolf](https://github.com/falexwolf)
 - 🔧Fix Ruff configuration in pyproject.toml [PR](https://github.com/laminlabs/lamindb/pull/1780) [@Zethson](https://github.com/Zethson)
 - 🚚 Migrations for 0.75 [PR](https://github.com/laminlabs/lamindb/pull/1768) [@falexwolf](https://github.com/falexwolf)
