@@ -1,3 +1,4 @@
+- 🔧Fix Ruff configuration in pyproject.toml [PR](https://github.com/laminlabs/lamindb/pull/1780) [@Zethson](https://github.com/Zethson)
 - 🚚 Migrations for 0.75 [PR](https://github.com/laminlabs/lamindb/pull/1768) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrations [PR](https://github.com/laminlabs/lamin-cli/pull/57) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add a test case for a field that starts with an underscore [PR](https://github.com/laminlabs/lamindb-setup/pull/810) [@falexwolf](https://github.com/falexwolf)
