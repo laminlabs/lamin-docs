@@ -1,3 +1,4 @@
+- 💚 Fixes [PR](https://github.com/laminlabs/lamindb/pull/1782) [@falexwolf](https://github.com/falexwolf)
 - 🔧Fix Ruff configuration in pyproject.toml [PR](https://github.com/laminlabs/lamindb/pull/1780) [@Zethson](https://github.com/Zethson)
 - 🚚 Migrations for 0.75 [PR](https://github.com/laminlabs/lamindb/pull/1768) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrations [PR](https://github.com/laminlabs/lamin-cli/pull/57) [@falexwolf](https://github.com/falexwolf)
