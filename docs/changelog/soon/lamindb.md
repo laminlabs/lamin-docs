@@ -1,3 +1,4 @@
+- 🚚 Migrations [PR](https://github.com/laminlabs/lamin-cli/pull/57) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add a test case for a field that starts with an underscore [PR](https://github.com/laminlabs/lamindb-setup/pull/810) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `.sources()` to `.list_source()` [PR](https://github.com/laminlabs/lamindb/pull/1775) [@sunnyosun](https://github.com/sunnyosun)
 - Fix create message [PR](https://github.com/laminlabs/lamindb/pull/1777) [@Zethson](https://github.com/Zethson)
