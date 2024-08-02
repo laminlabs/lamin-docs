@@ -1,3 +1,4 @@
+- 🎨 Fix passing `source` to `.validate` and `.inspect` [PR](https://github.com/laminlabs/lamindb/pull/1781) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Track write operations on array stores [PR](https://github.com/laminlabs/lamindb/pull/1756) [@Koncopd](https://github.com/Koncopd)
 - 🚑️ Fix bionty source entity [PR](https://github.com/laminlabs/lamindb-setup/pull/812) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fixes [PR](https://github.com/laminlabs/lamindb/pull/1782) [@falexwolf](https://github.com/falexwolf)
