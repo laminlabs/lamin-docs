@@ -1,0 +1,1 @@
+- 🐛 Fix Rich rendering [PR](https://github.com/laminlabs/lamin-cli/pull/58) [@Zethson](https://github.com/Zethson)
