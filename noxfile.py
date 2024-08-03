@@ -144,7 +144,7 @@ def pull_artifacts(session):
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
-            or path.name in {"storage", "storage.md", "includes"}  # not user facing
+            or path.name in {"storage", "storage.md"}  # not user facing
             or path.name == "faq"  # directory treated below
         ):
             continue
