@@ -2,11 +2,11 @@
 
 ```{note}
 
-🤝 If using Laminlaminhub, please use the latest version of Laminlamindb.
+🤝 If using LaminHub, please use the latest version of LaminDB.
 
-💡 Laminlamindb implements "migration-based versioning". When upgrading your Laminlamindb installation to a new `minor` version in `major.minor.patch`, you also migrate your database by calling `lamin migrate deploy`.
+💡 LaminDB implements "migration-based versioning". When upgrading your LaminDB installation to a new `minor` version in `major.minor.patch`, you also migrate your database by calling `lamin migrate deploy`.
 
-💡 Get notified about new Laminlamindb releases by watching releases for the [lamindb Gitlaminhub repository](https://github.com/laminlabs/lamindb).
+💡 Get notified about new LaminDB releases by watching releases for the [lamindb GitHub repository](https://github.com/laminlabs/lamindb).
 
 🪜 For older changes, see: {doc}`changelog/2024` · {doc}`changelog/2023` · {doc}`changelog/2022`
 
