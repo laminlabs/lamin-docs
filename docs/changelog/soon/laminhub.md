@@ -1,3 +1,4 @@
+- :arrow_up: Frontend dependencies update [PR](https://github.com/laminlabs/laminhub/pull/976) [@chaichontat](https://github.com/chaichontat)
 - :zap: Unify all table code [PR](https://github.com/laminlabs/laminhub/pull/975) [@chaichontat](https://github.com/chaichontat)
 - ⬆️ Upgrade lamindb to 0.75 [PR](https://github.com/laminlabs/laminhub/pull/970) [@falexwolf](https://github.com/falexwolf)
 - :bug: Fix field/column mismatch [PR](https://github.com/laminlabs/laminhub/pull/973) [@chaichontat](https://github.com/chaichontat)
