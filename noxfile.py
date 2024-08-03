@@ -137,7 +137,6 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
-    # remove the two below for safety
     Path("lamindb_docs/includes/features-lamindb.md").unlink()
     Path("lamindb_docs/includes/features-laminhub.md").unlink()
     Path("lamindb_docs/changelog.md").unlink()
@@ -151,60 +150,60 @@ def pull_artifacts(session):
         print("copying", path)
         sync_path(path, Path("docs") / path.name)
 
-    # lamindb faq
-    for path in Path("lamindb_docs/faq").glob("*"):
-        sync_path(path, Path("docs/faq") / path.name)
-    replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
+    # # lamindb faq
+    # for path in Path("lamindb_docs/faq").glob("*"):
+    #     sync_path(path, Path("docs/faq") / path.name)
+    # replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
-    # pipelines
-    pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
-    Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
-    pull_from_s3_and_unpack("nextflow_lamin_docs.zip")
-    Path("nextflow_lamin_docs/mcmicro.ipynb").rename("docs/nextflow.ipynb")
-    pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
-    Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
-        "docs/snakemake.ipynb"
-    )
+    # # pipelines
+    # pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
+    # Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
+    # pull_from_s3_and_unpack("nextflow_lamin_docs.zip")
+    # Path("nextflow_lamin_docs/mcmicro.ipynb").rename("docs/nextflow.ipynb")
+    # pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
+    # Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
+    #     "docs/snakemake.ipynb"
+    # )
 
-    # mlops
-    pull_from_s3_and_unpack("lamin_mlops_docs.zip")
-    Path("lamin_mlops_docs/wandb.ipynb").rename("docs/wandb.ipynb")
+    # # mlops
+    # pull_from_s3_and_unpack("lamin_mlops_docs.zip")
+    # Path("lamin_mlops_docs/wandb.ipynb").rename("docs/wandb.ipynb")
 
-    # cellxgene-lamin
-    pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
-    for path in Path("cellxgene_lamin_docs/").glob("*"):
-        if path.name.endswith(
-            ("cellxgene.ipynb", "census.ipynb", "cellxgene-curate.ipynb")
-        ):
-            sync_path(path, Path("docs") / path.name)
+    # # cellxgene-lamin
+    # pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
+    # for path in Path("cellxgene_lamin_docs/").glob("*"):
+    #     if path.name.endswith(
+    #         ("cellxgene.ipynb", "census.ipynb", "cellxgene-curate.ipynb")
+    #     ):
+    #         sync_path(path, Path("docs") / path.name)
 
-    # lamin-spatial
-    pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
-    for path in Path("rxrx_lamin_docs/").glob("*"):
-        if path.name == "rxrx.ipynb":
-            sync_path(path, Path("docs") / path.name)
-        elif path.name == "vitessce.ipynb":
-            sync_path(path, Path("docs") / path.name)
+    # # lamin-spatial
+    # pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
+    # for path in Path("rxrx_lamin_docs/").glob("*"):
+    #     if path.name == "rxrx.ipynb":
+    #         sync_path(path, Path("docs") / path.name)
+    #     elif path.name == "vitessce.ipynb":
+    #         sync_path(path, Path("docs") / path.name)
 
-    # use-cases
-    pull_from_s3_and_unpack("lamin_usecases_docs.zip")
-    for path in Path("lamin_usecases_docs/").glob("*"):
-        if (
-            path.name == "index.md"
-            or path.name == "usecases.md"
-            or path.name == "changelog.md"
-        ):
-            continue
-        print("copying", path)
-        sync_path(path, Path("docs") / path.name)
+    # # use-cases
+    # pull_from_s3_and_unpack("lamin_usecases_docs.zip")
+    # for path in Path("lamin_usecases_docs/").glob("*"):
+    #     if (
+    #         path.name == "index.md"
+    #         or path.name == "usecases.md"
+    #         or path.name == "changelog.md"
+    #     ):
+    #         continue
+    #     print("copying", path)
+    #     sync_path(path, Path("docs") / path.name)
 
-    # amend toctree
-    with open("docs/guide.md") as f:
-        content = f.read()
-    with open("docs/guide.md", "w") as f:
-        content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
-        content = add_line_after(content, "curate", "public-ontologies")
-        f.write(content)
+    # # amend toctree
+    # with open("docs/guide.md") as f:
+    #     content = f.read()
+    # with open("docs/guide.md", "w") as f:
+    #     content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
+    #     content = add_line_after(content, "curate", "public-ontologies")
+    #     f.write(content)
 
     assert Path("docs/includes/features-lamindb.md").exists()
 
