@@ -70,6 +70,27 @@ Various updates.
 - 🚸 Introduce `BioRecord.import_from_source()` to bulk import records
 - 🚸 More reliable `ontology_id` field recognition
 - ✨ Better error message for synonym duplications [PR](https://github.com/laminlabs/lamindb/pull/1764) [@Zethson](https://github.com/Zethson)
+- 🚚 Let all link model fields start with `links_` [PR](https://github.com/laminlabs/bionty/pull/19) | [falexwolf](https://github.com/falexwolf)
+- 🎨 Make `CellMarker.name` unique together with `organism` [PR](https://github.com/laminlabs/bionty/pull/22) | [sunnyosun](https://github.com/sunnyosun)
+
+New ontologies.
+
+- ✨ New ontology: Protein-uniprot-2024-03 | [PR](https://github.com/laminlabs/bionty-base/pull/582) | [sunnyosun](https://github.com/sunnyosun)
+- ✨ New ontology: Gene-ensembl-111/112 | [PR](https://github.com/laminlabs/bionty-base/pull/578) | [Zethson](https://github.com/Zethson)
+- ✨ New ontology: ExperimentalFactor-efo-3.63 | [PR](https://github.com/laminlabs/bionty-base/pull/577) | [Zethson](https://github.com/Zethson)
+- ✨ New ontology: CellType-cl-2024-02-13 | [PR](https://github.com/laminlabs/bionty-base/pull/576) | [Zethson](https://github.com/Zethson)
+- ✨ New Ontology: Tissue-uberon-2024-02-20 | [PR](https://github.com/laminlabs/bionty-base/pull/575) | [Zethson](https://github.com/Zethson)
+- ✨ New ontology: Organism-ensembl-release-111 and Organism-ensembl-release-112 | [PR](https://github.com/laminlabs/bionty-base/pull/574) | [sunnyosun](https://github.com/sunnyosun)
+- ✨ New Ontology: Disease-mondo-2024-02-06 | [PR](https://github.com/laminlabs/bionty-base/pull/572) | [Zethson](https://github.com/Zethson)
+- ✨ New Ontology: Disease-DOID-2024-01-31 | [PR](https://github.com/laminlabs/bionty-base/pull/571) | [Zethson](https://github.com/Zethson)
+- ✨ New Ontology: Phenotype-hp-2024-03-06 | [PR](https://github.com/laminlabs/bionty-base/pull/570) | [Zethson](https://github.com/Zethson)
+- ✨ New Ontology: Phenotype-mp-2024-02-07 | [PR](https://github.com/laminlabs/bionty-base/pull/569) | [Zethson](https://github.com/Zethson)
+- ✨ New ontology: Phenotype-zp-2024-01-22 | [PR](https://github.com/laminlabs/bionty-base/pull/568) | [Zethson](https://github.com/Zethson)
+- ✨ New ontology: Pathway-pw-7.82 | [PR](https://github.com/laminlabs/bionty-base/pull/567) | [Zethson](https://github.com/Zethson)
+- ⬆️ Latest `DRON` version (`Drug`) | [PR](https://github.com/laminlabs/bionty-base/pull/566) | [Zethson](https://github.com/Zethson)
+- ♻️ Update BFXPipeline | [PR](https://github.com/laminlabs/bionty-base/pull/564) | [Zethson](https://github.com/Zethson)
+- ✨ Add new ICD 10-CM | [PR](https://github.com/laminlabs/bionty-base/pull/554) | [Zethson](https://github.com/Zethson)
+- ✨ Add ICD ontology | [PR](https://github.com/laminlabs/bionty/pull/538) | [Zethson](https://github.com/Zethson)
 
 ## 2024-07-26 {small}`laminhub 0.25`
 
