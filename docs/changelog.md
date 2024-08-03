@@ -32,23 +32,23 @@
 
 🚸 A better structured API. [PR](https://github.com/laminlabs/lamindb/pull/1768) [@falexwolf](https://github.com/falexwolf)
 
-- Easier typing & maintenance of categorical fields by leveraging `Literal` instead of Django's migration-dependent `choices`
-- Less clutter in auto-complete:
-  - All fields pointing to link records start with `links_`
-  - Several `Artifact` fields are now private: `accessor`, `key_is_virtual`, `feature_values`, `param_values`, `hash_type`, `previous_runs`
-- More consistency:
-  - Rename `Transform.parents` to `Transform.predecessors` to disambiguate procedural/temporal hierarchies from ontological/conceptual hierachies
-  - Feature names are now guaranteed to be unique in a lamindb instance `Feature.name`
-  - Consistent length of hash fields across the board: 22
-  - Rename `input_of` to `input_of_runs`
-  - `Transform.latest_report` is now a property point to `Transform.latest_run.report` to simply the schema
-- Better definition of `Collection`:
-  - Rename fields `.artifact` to `.meta_artifact` and `.unordered_artifacts` to `.artifacts`
+- 🚸 Easier typing & maintenance of categorical fields via `typing.Literal` instead of Django's migration-dependent `CharField.choices`
+- 🚸 Less clutter in auto-complete
+  - 🚚 All fields pointing to link records start with `links_`
+  - 🚚 Several fields for `Artifact` are now private via `_` prefix: `accessor`, `key_is_virtual`, `feature_values`, `param_values`, `hash_type`, `previous_runs`
+- 🎨 More consistency
+  - 🚚 Rename `Transform.parents` to `Transform.predecessors` to disambiguate procedural/temporal from ontological/conceptual hierachies
+  - 🎨 Feature names are now guaranteed to be unique in a lamindb instance `Feature.name`
+  - 🎨 Consistent length of hash fields: `HASH_LENGTH=22`
+  - 🚚 Rename `input_of` to `input_of_runs`
+  - 🎨 `Transform.latest_report` is now a property point to `Transform.latest_run.report` to simplify the schema
+- 🚸 Better definition of `Collection`
+  - 🚚 Rename fields `.artifact` to `.meta_artifact` and `.unordered_artifacts` to `.artifacts`
   - Iteration over an ordered `QuerySet` of artifacts is now possible via `.ordered_artifacts`
   - For collections that have a single data artifact, access it via `.data_artifact`
-- Towards searchable source code:
-  - rename `Transform.source_code` to `Transform._source_code_artifact`
-  - re-introduce `Transform.source_code` as a text field together with a field `hash`
+- 🏗️ Towards searchable source code
+  - 🚚 Rename `Transform.source_code` to `Transform._source_code_artifact`
+  - Re-introduce `Transform.source_code` as a text field together with a field `hash`
 
 Better storage management.
 
@@ -63,7 +63,7 @@ Various updates.
 
 ## 2024-08-03 {small}`bionty 0.47`
 
-🏗️ Bionty is now a single Python package: `lnschema-bionty` and `bionty-base` are now integrated into `bionty` . [PR](https://github.com/laminlabs/lamindb/pull/1757) [PR](https://github.com/laminlabs/lamindb/pull/1772) [PR](https://github.com/laminlabs/lamindb/pull/1755) [PR](https://github.com/laminlabs/lamindb/pull/1773) [PR](https://github.com/laminlabs/lamindb/pull/1775) [PR](https://github.com/laminlabs/lamindb/pull/1771)
+🏗️ Bionty is now a single Python package: `lnschema-bionty` and `bionty-base` are now integrated into `bionty`. [PR](https://github.com/laminlabs/lamindb/pull/1757) [PR](https://github.com/laminlabs/lamindb/pull/1772) [PR](https://github.com/laminlabs/lamindb/pull/1755) [PR](https://github.com/laminlabs/lamindb/pull/1773) [PR](https://github.com/laminlabs/lamindb/pull/1775) [PR](https://github.com/laminlabs/lamindb/pull/1771)
 
 - 📝 Considerably simpler guide: {doc}`/bio-registries` guide [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Rename `PublicSource` to `Source`, `.sources()` to `.list_source()`, `from_public` to `from_source`
