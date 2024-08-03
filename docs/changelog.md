@@ -63,15 +63,26 @@ Various updates.
 
 ## 2024-08-03 {small}`bionty 0.47`
 
-🏗️ Bionty is now a single Python package: `lnschema-bionty` and `bionty-base` are now integrated into `bionty`. [PR](https://github.com/laminlabs/lamindb/pull/1757) [PR](https://github.com/laminlabs/lamindb/pull/1772) [PR](https://github.com/laminlabs/lamindb/pull/1755) [PR](https://github.com/laminlabs/lamindb/pull/1773) [PR](https://github.com/laminlabs/lamindb/pull/1775) [PR](https://github.com/laminlabs/lamindb/pull/1771)
+🏗️ Bionty is now a single Python package. [PR](https://github.com/laminlabs/lamindb/pull/1757) [PR](https://github.com/laminlabs/lamindb/pull/1772) [PR](https://github.com/laminlabs/lamindb/pull/1773) [PR](https://github.com/laminlabs/lamindb/pull/1775) [PR](https://github.com/laminlabs/lamindb/pull/1771)
 
-- 📝 Considerably simpler guide: {doc}`/bio-registries` guide [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
-- 🚚 Rename `PublicSource` to `Source`, `.sources()` to `.list_source()`, `from_public` to `from_source`
-- 🚸 Introduce `BioRecord.import_from_source()` to bulk import records
+- 🏗️ `lnschema-bionty` and `bionty-base` are integrated into `bionty`
+- 🚸 Considerably simpler UX: see {doc}`/bio-registries` [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
+- ⚠️ Once you load an instance, you'll be asked to uninstall `lnschema_bionty` and `lamin migrate deploy`
+- ⚠️ On the SQL level, tables are now prefixed with `bionty_` instead of `lnschema_bionty_`
+- ⚠️ On the Django level, you can mount the `bionty` instead of the `lnschema_bionty` apps
+
+🚸 You can now import from in-house ontology sources. [PR](https://github.com/laminlabs/lamindb/pull/1755) [@sunnyosun](https://github.com/sunnyosun)
+
+- 🚚 Rename `PublicSource` to `Source` & `from_public` to `from_source`
+- Import from any parquet file into your registry, akin to how Bionty imports public ontology sources
+
+User experience.
+
+- ⚡ Performantly import bulk records via `.import_from_source()`
 - 🚸 More reliable `ontology_id` field recognition
 - ✨ Better error message for synonym duplications [PR](https://github.com/laminlabs/lamindb/pull/1764) [@Zethson](https://github.com/Zethson)
-- 🚚 Let all link model fields start with `links_` [PR](https://github.com/laminlabs/bionty/pull/19) [falexwolf](https://github.com/falexwolf)
-- 🎨 Make `CellMarker.name` unique together with `organism` [PR](https://github.com/laminlabs/bionty/pull/22) [sunnyosun](https://github.com/sunnyosun)
+- 🚚 All link model fields start with `links_` [PR](https://github.com/laminlabs/bionty/pull/19) [falexwolf](https://github.com/falexwolf)
+- 🎨 `CellMarker.name` is now unique together with `organism` [PR](https://github.com/laminlabs/bionty/pull/22) [sunnyosun](https://github.com/sunnyosun)
 
 New ontologies.
 
