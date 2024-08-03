@@ -1,3 +1,4 @@
+- Buildjet for reusable tests [PR](https://github.com/laminlabs/laminhub/pull/982) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix backend queries for self-referential many-to-many fields [PR](https://github.com/laminlabs/laminhub/pull/977) [@fredericenard](https://github.com/fredericenard)
 - :lipstick: Capture edge function stderr [PR](https://github.com/laminlabs/laminhub/pull/981) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix values routers: rename schema to module [PR](https://github.com/laminlabs/laminhub/pull/980) [@fredericenard](https://github.com/fredericenard)
