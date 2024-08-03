@@ -42,6 +42,7 @@
   - 🎨 Consistent length of hash fields: `HASH_LENGTH=22`
   - 🚚 Rename `input_of` to `input_of_runs`
   - 🎨 `Transform.latest_report` is now a property point to `Transform.latest_run.report` to simplify the schema
+  - 🎨 `Artifact.type` now defaults to `None` when passing a `path` so that auxiliary files and folders aren't labeled as `dataset`
 - 🚸 Better definition of `Collection`
   - 🚚 Rename fields `.artifact` to `.meta_artifact` and `.unordered_artifacts` to `.artifacts`
   - Iteration over an ordered `QuerySet` of artifacts is now possible via `.ordered_artifacts`
