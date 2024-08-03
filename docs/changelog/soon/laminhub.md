@@ -1,3 +1,4 @@
+- 🐛 Fix values routers: rename schema to module [PR](https://github.com/laminlabs/laminhub/pull/980) [@fredericenard](https://github.com/fredericenard)
 - 👷 Remove test s3 storages in pytest_unconfigure [PR](https://github.com/laminlabs/laminhub/pull/978) [@fredericenard](https://github.com/fredericenard)
 - :arrow_up: Frontend dependencies update [PR](https://github.com/laminlabs/laminhub/pull/976) [@chaichontat](https://github.com/chaichontat)
 - :zap: Unify all table code [PR](https://github.com/laminlabs/laminhub/pull/975) [@chaichontat](https://github.com/chaichontat)
