@@ -39,14 +39,13 @@ jobs:
           path: ~/.cache/pre-commit
           key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
       - run: pip install "laminci@git+https://x-access-token:${{ secrets.LAMIN_BUILD_DOCS }}@github.com/laminlabs/laminci"
-      - name: Configure AWS
-        uses: aws-actions/configure-aws-credentials@v1
+      - run: pip install dirsync
+      - uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-central-1
+          aws-region: us-east-1
       # - run: nox -s lint
-      # - run: nox -s install
       - run: nox -s pull_artifacts
       - run: nox -s docs
       - uses: cloudflare/wrangler-action@v3

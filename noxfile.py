@@ -6,6 +6,7 @@ from subprocess import run
 from typing import Dict
 
 import nox
+from dirsync import sync
 from laminci.nox import login_testuser1, run_pre_commit
 
 nox.options.default_venv_backend = "none"
@@ -137,7 +138,6 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb_docs.zip")
     Path("lamindb_docs/README.md").rename("README.md")
-    # remove the two below for safety
     Path("lamindb_docs/includes/features-lamindb.md").unlink()
     Path("lamindb_docs/includes/features-laminhub.md").unlink()
     Path("lamindb_docs/changelog.md").unlink()
@@ -148,8 +148,11 @@ def pull_artifacts(session):
             or path.name == "faq"  # directory treated below
         ):
             continue
-        print("copying", path)
-        sync_path(path, Path("docs") / path.name)
+        print("synching", path)
+        if path.is_dir():
+            sync(path, Path("docs") / path.name, "sync", create=True, ctime=True)
+        else:
+            sync_path(path, Path("docs") / path.name)
 
     # lamindb faq
     for path in Path("lamindb_docs/faq").glob("*"):
