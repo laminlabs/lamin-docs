@@ -63,13 +63,43 @@ Various updates.
 
 ## 2024-08-03 {small}`bionty 0.47`
 
-🏗️ Bionty is now a single Python package: `lnschema-bionty` and `bionty-base` are now integrated into `bionty`. [PR](https://github.com/laminlabs/lamindb/pull/1757) [PR](https://github.com/laminlabs/lamindb/pull/1772) [PR](https://github.com/laminlabs/lamindb/pull/1755) [PR](https://github.com/laminlabs/lamindb/pull/1773) [PR](https://github.com/laminlabs/lamindb/pull/1775) [PR](https://github.com/laminlabs/lamindb/pull/1771)
+🏗️ Bionty is now a single Python package. [PR](https://github.com/laminlabs/lamindb/pull/1757) [PR](https://github.com/laminlabs/lamindb/pull/1772) [PR](https://github.com/laminlabs/lamindb/pull/1773) [PR](https://github.com/laminlabs/lamindb/pull/1775) [PR](https://github.com/laminlabs/lamindb/pull/1771)
 
-- 📝 Considerably simpler guide: {doc}`/bio-registries` guide [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
-- 🚚 Rename `PublicSource` to `Source`, `.sources()` to `.list_source()`, `from_public` to `from_source`
-- 🚸 Introduce `BioRecord.import_from_source()` to bulk import records
+- 🏗️ `lnschema-bionty` and `bionty-base` are integrated into `bionty`
+- 🚸 Considerably simpler UX: see {doc}`/bio-registries` [PR](https://github.com/laminlabs/lamindb/pull/1770) [@sunnyosun](https://github.com/sunnyosun)
+- ⚠️ Once you load an instance, you'll be asked to uninstall `lnschema_bionty` and `lamin migrate deploy`
+- ⚠️ On the SQL level, tables are now prefixed with `bionty_` instead of `lnschema_bionty_`
+- ⚠️ On the Django level, you can mount the `bionty` instead of the `lnschema_bionty` apps
+
+🚸 You can now import from in-house ontology sources. [PR](https://github.com/laminlabs/lamindb/pull/1755) [@sunnyosun](https://github.com/sunnyosun)
+
+- 🚚 Rename `PublicSource` to `Source` & `from_public` to `from_source`
+- Import from any parquet file into your registry, akin to how Bionty imports public ontology sources
+
+User experience.
+
+- ⚡ Performantly import bulk records via `.import_from_source()`
 - 🚸 More reliable `ontology_id` field recognition
 - ✨ Better error message for synonym duplications [PR](https://github.com/laminlabs/lamindb/pull/1764) [@Zethson](https://github.com/Zethson)
+- 🚚 All link model fields start with `links_` [PR](https://github.com/laminlabs/bionty/pull/19) [falexwolf](https://github.com/falexwolf)
+- 🎨 `CellMarker.name` is now unique together with `organism` [PR](https://github.com/laminlabs/bionty/pull/22) [sunnyosun](https://github.com/sunnyosun)
+
+New ontologies.
+
+- ✨ Add ICD ontology for `Disease` [PR](https://github.com/laminlabs/bionty/pull/538) [PR](https://github.com/laminlabs/bionty-base/pull/554) [Zethson](https://github.com/Zethson)
+- 🍱 New `Protein` version: `uniprot-2024-03` [PR](https://github.com/laminlabs/bionty-base/pull/582) [sunnyosun](https://github.com/sunnyosun)
+- 🍱 New `Gene` version: `ensembl-111/112` [PR](https://github.com/laminlabs/bionty-base/pull/578) [Zethson](https://github.com/Zethson)
+- 🍱 New `ExperimentalFactor` version: `efo-3.63` [PR](https://github.com/laminlabs/bionty-base/pull/577) [Zethson](https://github.com/Zethson)
+- 🍱 New `CellType` version: `cl-2024-02-13` [PR](https://github.com/laminlabs/bionty-base/pull/576) [Zethson](https://github.com/Zethson)
+- 🍱 New `Tissue` version: `uberon-2024-02-20` [PR](https://github.com/laminlabs/bionty-base/pull/575) [Zethson](https://github.com/Zethson)
+- 🍱 New `Organism` version: `ensembl-release-111` & `ensembl-release-112` [PR](https://github.com/laminlabs/bionty-base/pull/574) [sunnyosun](https://github.com/sunnyosun)
+- 🍱 New `Disease` version: `mondo-2024-02-06` [PR](https://github.com/laminlabs/bionty-base/pull/572) [Zethson](https://github.com/Zethson)
+- 🍱 New `Disease` version: `DOID-2024-01-31` [PR](https://github.com/laminlabs/bionty-base/pull/571) [Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `hp-2024-03-06` [PR](https://github.com/laminlabs/bionty-base/pull/570) [Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `mp-2024-02-07` [PR](https://github.com/laminlabs/bionty-base/pull/569) [Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `zp-2024-01-22` [PR](https://github.com/laminlabs/bionty-base/pull/568) [Zethson](https://github.com/Zethson)
+- 🍱 New `Pathway` version: `pw-7.82` [PR](https://github.com/laminlabs/bionty-base/pull/567) [Zethson](https://github.com/Zethson)
+- 🍱 New `Drug` version: `DRON-2024-03-02` [PR](https://github.com/laminlabs/bionty-base/pull/566) [Zethson](https://github.com/Zethson)
 
 ## 2024-07-26 {small}`laminhub 0.25`
 
