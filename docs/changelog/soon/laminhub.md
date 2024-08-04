@@ -1,3 +1,4 @@
+- :zap: Improve filtering performance [PR](https://github.com/laminlabs/laminhub/pull/990) [@chaichontat](https://github.com/chaichontat)
 - :green_heart: Fix CI Python cache [PR](https://github.com/laminlabs/laminhub/pull/989) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Filter on joined table [PR](https://github.com/laminlabs/laminhub/pull/988) [@chaichontat](https://github.com/chaichontat)
 - Backend filter [PR](https://github.com/laminlabs/laminhub/pull/987) [@chaichontat](https://github.com/chaichontat)
