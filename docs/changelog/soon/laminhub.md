@@ -1,3 +1,4 @@
+- 🔥 Remove obsolete ORM module and remaining code duplications [PR](https://github.com/laminlabs/laminhub/pull/960) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix duplicated results when filtering against to many fields [PR](https://github.com/laminlabs/laminhub/pull/986) [@fredericenard](https://github.com/fredericenard)
 - ✨ Implement limit for to many relations [PR](https://github.com/laminlabs/laminhub/pull/985) [@fredericenard](https://github.com/fredericenard)
 - 🔒 Handle sqlalchemy errors [PR](https://github.com/laminlabs/laminhub/pull/983) [@chaichontat](https://github.com/chaichontat)
