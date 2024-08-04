@@ -1,3 +1,4 @@
+- :green_heart: Fix CI Python cache [PR](https://github.com/laminlabs/laminhub/pull/989) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Filter on joined table [PR](https://github.com/laminlabs/laminhub/pull/988) [@chaichontat](https://github.com/chaichontat)
 - Backend filter [PR](https://github.com/laminlabs/laminhub/pull/987) [@chaichontat](https://github.com/chaichontat)
 - 🔥 Remove obsolete ORM module and remaining code duplications [PR](https://github.com/laminlabs/laminhub/pull/960) [@fredericenard](https://github.com/fredericenard)
