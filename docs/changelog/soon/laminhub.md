@@ -1,3 +1,4 @@
+- :green_heart: Prevent deployment of prod env to staging [PR](https://github.com/laminlabs/laminhub/pull/992) [@chaichontat](https://github.com/chaichontat)
 - :zap: Improve filtering performance [PR](https://github.com/laminlabs/laminhub/pull/990) [@chaichontat](https://github.com/chaichontat)
 - :green_heart: Fix CI Python cache [PR](https://github.com/laminlabs/laminhub/pull/989) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Filter on joined table [PR](https://github.com/laminlabs/laminhub/pull/988) [@chaichontat](https://github.com/chaichontat)
