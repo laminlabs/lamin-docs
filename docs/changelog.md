@@ -31,10 +31,10 @@
 ✨ Track mutations of array stores. [PR](https://github.com/laminlabs/lamindb/pull/1756) [@Koncopd](https://github.com/Koncopd)
 
 - Artifacts that store mutable arrays can lead to non-reproducible queries.
-- To monitor reproduciblity and data lineage, mutations are now tracked when a context manager and `Artifact.open()` is used:
+- To monitor reproduciblity and data lineage, mutations are now tracked when a context manager and `Artifact.open(mode="w")` for `tiledbsoma` array stores is used:
 
   ```python
-  with artifact.open() as array:
+  with artifact.open(mode="w") as array:
       # mutate `artifact`
 
   # `artifact` now points to a new version of the artifact with an updated hash
