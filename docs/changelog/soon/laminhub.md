@@ -1,3 +1,4 @@
+- ✨ Implement limit for to many relations [PR](https://github.com/laminlabs/laminhub/pull/985) [@fredericenard](https://github.com/fredericenard)
 - 🔒 Handle sqlalchemy errors [PR](https://github.com/laminlabs/laminhub/pull/983) [@chaichontat](https://github.com/chaichontat)
 - Buildjet for reusable tests [PR](https://github.com/laminlabs/laminhub/pull/982) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix backend queries for self-referential many-to-many fields [PR](https://github.com/laminlabs/laminhub/pull/977) [@fredericenard](https://github.com/fredericenard)
