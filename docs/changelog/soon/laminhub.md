@@ -1,3 +1,4 @@
+- :sparkles: Show total record and schema counts [PR](https://github.com/laminlabs/laminhub/pull/994) [@chaichontat](https://github.com/chaichontat)
 - :green_heart: Prevent deployment of prod env to staging [PR](https://github.com/laminlabs/laminhub/pull/992) [@chaichontat](https://github.com/chaichontat)
 - :zap: Improve filtering performance [PR](https://github.com/laminlabs/laminhub/pull/990) [@chaichontat](https://github.com/chaichontat)
 - :green_heart: Fix CI Python cache [PR](https://github.com/laminlabs/laminhub/pull/989) [@chaichontat](https://github.com/chaichontat)
