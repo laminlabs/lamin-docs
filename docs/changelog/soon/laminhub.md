@@ -1,3 +1,4 @@
+- 🧑‍💻 Enable alias for measures [PR](https://github.com/laminlabs/laminhub/pull/1002) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix instance creation test flakiness [PR](https://github.com/laminlabs/laminhub/pull/1000) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Add redirect to dashboard for azure auth [PR](https://github.com/laminlabs/laminhub/pull/999) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix issue with security stack name [PR](https://github.com/laminlabs/laminhub/pull/998) [@fredericenard](https://github.com/fredericenard)
