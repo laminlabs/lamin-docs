@@ -28,7 +28,7 @@
 
 ## 2024-08-03 {small}`lamindb 0.75`
 
-✨ Track mutations of array stores. [PR](https://github.com/laminlabs/lamindb/pull/1756) [@Koncopd](https://github.com/Koncopd)
+✨ Track mutations of array stores. [Guide](scrna6.ipynb#update-the-array-store) [PR](https://github.com/laminlabs/lamindb/pull/1756) [@Koncopd](https://github.com/Koncopd)
 
 - Artifacts that store mutable arrays can lead to non-reproducible queries.
 - To monitor reproduciblity and data lineage, mutations are now tracked when a context manager and `Artifact.open(mode="w")` for `tiledbsoma` array stores is used:
