@@ -1,3 +1,4 @@
+- 🚸 Add redirect to dashboard for azure auth [PR](https://github.com/laminlabs/laminhub/pull/999) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix issue with security stack name [PR](https://github.com/laminlabs/laminhub/pull/998) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Try fixing azure auth [PR](https://github.com/laminlabs/laminhub/pull/997) [@fredericenard](https://github.com/fredericenard)
 - 👷 Deploy staging frontend via GH actions [PR](https://github.com/laminlabs/laminhub/pull/995) [@chaichontat](https://github.com/chaichontat)
