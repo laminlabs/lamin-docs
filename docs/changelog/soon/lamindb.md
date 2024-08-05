@@ -1,3 +1,4 @@
+- 🚚 Rename `RecordMeta` to `Registry` [PR](https://github.com/laminlabs/lamindb-setup/pull/814) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `using_key` for source and organism [PR](https://github.com/laminlabs/lamindb/pull/1784) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Improve bio-registry tutorial wording [PR](https://github.com/laminlabs/lamindb/pull/1783) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix Rich rendering [PR](https://github.com/laminlabs/lamin-cli/pull/58) [@Zethson](https://github.com/Zethson)
