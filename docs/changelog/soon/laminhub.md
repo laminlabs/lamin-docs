@@ -1,3 +1,4 @@
+- :fire: Exclude parents/children from filtering [PR](https://github.com/laminlabs/laminhub/pull/1003) [@chaichontat](https://github.com/chaichontat)
 - 🧑‍💻 Enable alias for measures [PR](https://github.com/laminlabs/laminhub/pull/1002) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix instance creation test flakiness [PR](https://github.com/laminlabs/laminhub/pull/1000) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Add redirect to dashboard for azure auth [PR](https://github.com/laminlabs/laminhub/pull/999) [@fredericenard](https://github.com/fredericenard)
