@@ -1,1 +1,2 @@
+- ✨ Improve bio-registry tutorial wording [PR](https://github.com/laminlabs/lamindb/pull/1783) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix Rich rendering [PR](https://github.com/laminlabs/lamin-cli/pull/58) [@Zethson](https://github.com/Zethson)
