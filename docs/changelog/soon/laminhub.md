@@ -1,3 +1,4 @@
+- 👷 Deploy staging frontend via GH actions [PR](https://github.com/laminlabs/laminhub/pull/995) [@chaichontat](https://github.com/chaichontat)
 - :lipstick: Footer on every page [PR](https://github.com/laminlabs/laminhub/pull/993) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Show total record and schema counts [PR](https://github.com/laminlabs/laminhub/pull/994) [@chaichontat](https://github.com/chaichontat)
 - :green_heart: Prevent deployment of prod env to staging [PR](https://github.com/laminlabs/laminhub/pull/992) [@chaichontat](https://github.com/chaichontat)
