@@ -1,3 +1,4 @@
+- ✏️ Ensure list is passed to from_values [PR](https://github.com/laminlabs/lamindb/pull/1796) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix var_index validation [PR](https://github.com/laminlabs/lamindb/pull/1790) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix validate message [PR](https://github.com/laminlabs/lamindb/pull/1794) [@Zethson](https://github.com/Zethson)
 - ♻️ Replace ORM with Record or Registry [PR](https://github.com/laminlabs/lamindb/pull/1791) [@falexwolf](https://github.com/falexwolf)
