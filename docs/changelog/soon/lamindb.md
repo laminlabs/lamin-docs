@@ -1,3 +1,4 @@
+- ✏️ Fix mudata validate [PR](https://github.com/laminlabs/lamindb/pull/1797) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve curate docs [PR](https://github.com/laminlabs/lamindb/pull/1795) [@Zethson](https://github.com/Zethson)
 - ✏️ Ensure list is passed to from_values [PR](https://github.com/laminlabs/lamindb/pull/1796) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix var_index validation [PR](https://github.com/laminlabs/lamindb/pull/1790) [@sunnyosun](https://github.com/sunnyosun)
