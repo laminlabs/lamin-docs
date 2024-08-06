@@ -1,3 +1,4 @@
+- ⬆️ Update Curate [PR](https://github.com/laminlabs/lamin-usecases/pull/139) [@sunnyosun](https://github.com/sunnyosun)
 - 👷 Refactor CI & prettify public ontologies page [PR](https://github.com/laminlabs/lamin-usecases/pull/138) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify cellxgene guide & refactor CI setup [PR](https://github.com/laminlabs/cellxgene-lamin/pull/82) [@falexwolf](https://github.com/falexwolf)
 - 📝 Mutate tiledbsoma store [PR](https://github.com/laminlabs/lamin-usecases/pull/137) [@Koncopd](https://github.com/Koncopd)
