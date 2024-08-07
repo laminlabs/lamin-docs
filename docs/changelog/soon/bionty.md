@@ -1,3 +1,4 @@
+- 🍱 New ontology: Phenotype-pato-2024-03-28 [PR](https://github.com/laminlabs/bionty/pull/69) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Phenotype-mp-2024-06-18 [PR](https://github.com/laminlabs/bionty/pull/68) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Disease-mondo-2024-06-04 [PR](https://github.com/laminlabs/bionty/pull/67) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Phenotype-hp-2024-04-26 [PR](https://github.com/laminlabs/bionty/pull/66) [@Zethson](https://github.com/Zethson)
