@@ -1,2 +1,3 @@
+- ✨ New ontology: celltype-cl-2024-01-04 [PR](https://github.com/laminlabs/bionty/pull/53) [@Zethson](https://github.com/Zethson)
 - 🔇 Remove warning of loading non-default source [PR](https://github.com/laminlabs/bionty/pull/32) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `sync_all_sources_to_latest` [PR](https://github.com/laminlabs/bionty/pull/31) [@sunnyosun](https://github.com/sunnyosun)
