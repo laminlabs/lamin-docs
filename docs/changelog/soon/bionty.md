@@ -1,3 +1,4 @@
+- ✨ New ontology: Tissue-uberon-2024-01-18 [PR](https://github.com/laminlabs/bionty/pull/56) [@Zethson](https://github.com/Zethson)
 - ✨ New ontology: Disease-mondo-2024-01-03 [PR](https://github.com/laminlabs/bionty/pull/55) [@Zethson](https://github.com/Zethson)
 - ✨ New ontology: ExperimentalFactor-efo-3.62.0 [PR](https://github.com/laminlabs/bionty/pull/54) [@Zethson](https://github.com/Zethson)
 - ✨ New ontology: celltype-cl-2024-01-04 [PR](https://github.com/laminlabs/bionty/pull/53) [@Zethson](https://github.com/Zethson)
