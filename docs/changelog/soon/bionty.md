@@ -1,3 +1,4 @@
+- 🍱 New ontology: Phenotype-hp-2024-04-26 [PR](https://github.com/laminlabs/bionty/pull/66) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Pathway-go-2024-06-17 [PR](https://github.com/laminlabs/bionty/pull/64) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: ExperimentalFactor-efo-3.66.0 [PR](https://github.com/laminlabs/bionty/pull/63) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Drug-dron-2024-08-05 [PR](https://github.com/laminlabs/bionty/pull/62) [@Zethson](https://github.com/Zethson)
