@@ -1,3 +1,4 @@
+- 🍱 New ontology: ExperimentalFactor-efo-3.66.0 [PR](https://github.com/laminlabs/bionty/pull/63) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Drug-dron-2024-08-05 [PR](https://github.com/laminlabs/bionty/pull/62) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Disease-doid-2024-05-29 [PR](https://github.com/laminlabs/bionty/pull/60) [@Zethson](https://github.com/Zethson)
 - ✨ New ontology: CellType-cl-2024-05-15 [PR](https://github.com/laminlabs/bionty/pull/59) [@Zethson](https://github.com/Zethson)
