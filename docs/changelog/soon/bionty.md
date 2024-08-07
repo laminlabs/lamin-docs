@@ -1,3 +1,4 @@
+- ✨ New ontology: CellType-cl-2024-05-15 [PR](https://github.com/laminlabs/bionty/pull/59) [@Zethson](https://github.com/Zethson)
 - ✨ Add update ontologies script [PR](https://github.com/laminlabs/bionty/pull/57) [@Zethson](https://github.com/Zethson)
 - ✨ New ontology: Tissue-uberon-2024-01-18 [PR](https://github.com/laminlabs/bionty/pull/56) [@Zethson](https://github.com/Zethson)
 - ✨ New ontology: Disease-mondo-2024-01-03 [PR](https://github.com/laminlabs/bionty/pull/55) [@Zethson](https://github.com/Zethson)
