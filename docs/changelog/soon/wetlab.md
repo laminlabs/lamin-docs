@@ -1,2 +1,0 @@
-- ♻️ Model categoricals via simple `Literal` | [PR](https://github.com/laminlabs/wetlab/pull/60) | [falexwolf](https://github.com/falexwolf)
-- ✨ Improved support for perturbations | [PR](https://github.com/laminlabs/wetlab/pull/56) | [Zethson](https://github.com/Zethson)
