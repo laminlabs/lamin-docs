@@ -1,3 +1,4 @@
+- 🐛 Fix duplication error when adding back a collaborator after deletion [PR](https://github.com/laminlabs/laminhub/pull/1022) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix add collaborator [PR](https://github.com/laminlabs/laminhub/pull/1020) [@fredericenard](https://github.com/fredericenard)
 - :zap: Cache getRecord [PR](https://github.com/laminlabs/laminhub/pull/1004) [@chaichontat](https://github.com/chaichontat)
 - 👷 Implement UI health checks [PR](https://github.com/laminlabs/laminhub/pull/1006) [@fredericenard](https://github.com/fredericenard)
