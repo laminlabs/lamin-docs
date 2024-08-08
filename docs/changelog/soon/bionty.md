@@ -1,3 +1,4 @@
+- 💚 Fix ci [PR](https://github.com/laminlabs/bionty/pull/75) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New ontology: Tissue-uberon-2024-05-13 Phenotype-zp-2024-04-18 [PR](https://github.com/laminlabs/bionty/pull/71) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Pathway-pw-7.84 [PR](https://github.com/laminlabs/bionty/pull/70) [@Zethson](https://github.com/Zethson)
 - 🍱 New ontology: Phenotype-pato-2024-03-28 [PR](https://github.com/laminlabs/bionty/pull/69) [@Zethson](https://github.com/Zethson)
