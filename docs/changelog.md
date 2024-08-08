@@ -30,22 +30,11 @@
 
 Features.
 
-- 🚸 In Vitessce integration, enable a Vitessce button next to a dataset, also, document valid suffixes [PR](https://github.com/laminlabs/lamindb/pull/1799) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow exclude values in Curate.validate [PR](https://github.com/laminlabs/lamindb/pull/1798) [@sunnyosun](https://github.com/sunnyosun)
-
-User experience.
-
-- 🔇 Remove warning of loading non-default source [PR](https://github.com/laminlabs/bionty/pull/32) [@sunnyosun](https://github.com/sunnyosun)
-
-Docs.
-
-- 📝 Improve curate docs [PR](https://github.com/laminlabs/lamindb/pull/1795) [@Zethson](https://github.com/Zethson)
 
 Use cases.
 
-- 📝 Mutate tiledbsoma store [PR](https://github.com/laminlabs/lamin-usecases/pull/137) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor and improved UX of cellxgene curate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/81) [@Zethson](https://github.com/Zethson)
-- 🚸 Improved support for perturbation models | [PR](https://github.com/laminlabs/wetlab/pull/56) | [Zethson](https://github.com/Zethson)
 
 ## 2024-08-03 {small}`bionty 0.48`
 
