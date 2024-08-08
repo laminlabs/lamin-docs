@@ -1,3 +1,4 @@
+- 🐛 Fix add collaborator [PR](https://github.com/laminlabs/laminhub/pull/1020) [@fredericenard](https://github.com/fredericenard)
 - :zap: Cache getRecord [PR](https://github.com/laminlabs/laminhub/pull/1004) [@chaichontat](https://github.com/chaichontat)
 - 👷 Implement UI health checks [PR](https://github.com/laminlabs/laminhub/pull/1006) [@fredericenard](https://github.com/fredericenard)
 - :fire: Exclude parents/children from filtering [PR](https://github.com/laminlabs/laminhub/pull/1003) [@chaichontat](https://github.com/chaichontat)
