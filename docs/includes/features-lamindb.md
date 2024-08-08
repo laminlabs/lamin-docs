@@ -32,7 +32,7 @@ Manage storage (files, folders, arrays) and a SQL database (SQLite, Postgres) ba
 
 **Organize and share data across a mesh of LaminDB instances.**
 
-- Create & load database instances like git repos: `lamin init` & `lamin load`
+- Create & load database instances like git repos: {doc}`docs:cli#lamin-init` & {doc}`docs:cli#lamin-load`
 - Zero-copy [transfer](/transfer) data across instances
 
 **Integrate with analytics tools.**
