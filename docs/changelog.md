@@ -28,8 +28,10 @@
 
 ## 2024-08-03 {small}`lamindb 0.75.1`
 
-Features.
+Fixes of `lamindb.Curate` to enable better UX of cellxgene Curate.
 
+- 🐛 Fix `using_key` for passing `source` and `organism` to `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1784) [@sunnyosun](https://github.com/sunnyosun)
+- 🐛 Fix `var_index` validation in `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/1790) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Allow exclude values in Curate.validate [PR](https://github.com/laminlabs/lamindb/pull/1798) [@sunnyosun](https://github.com/sunnyosun)
 
 Use cases.
