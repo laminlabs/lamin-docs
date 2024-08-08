@@ -1,1 +1,1 @@
-
+- 🐛 Fix Feature constructor error message [PR](https://github.com/laminlabs/lamindb/pull/1804) [@Zethson](https://github.com/Zethson)
