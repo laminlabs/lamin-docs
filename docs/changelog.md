@@ -26,21 +26,17 @@
 .. role:: small
 ```
 
-## 2024-08-03 {small}`lamindb 0.75.1`
+## 2024-08-08 {small}`lamindb 0.75.1`
 
-Fixes of `lamindb.Curate` to enable better UX of cellxgene Curate.
+🚸 Improved the `cellxgene_lamin` curation guide.
 
-- 🐛 Fix `using_key` for passing `source` and `organism` to `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1784) [@sunnyosun](https://github.com/sunnyosun)
-- 🐛 Fix `var_index` validation in `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/1790) [@sunnyosun](https://github.com/sunnyosun)
-- ✨ Allow exclude values in Curate.validate [PR](https://github.com/laminlabs/lamindb/pull/1798) [@sunnyosun](https://github.com/sunnyosun)
+- 🐛 Fixes for `lamindb.Curate` [PR](https://github.com/laminlabs/lamindb/pull/1784) [PR](https://github.com/laminlabs/lamindb/pull/1790) [@sunnyosun](https://github.com/sunnyosun)
+- ✨ Allow excluding values in `Curate.validate` [PR](https://github.com/laminlabs/lamindb/pull/1798) [@sunnyosun](https://github.com/sunnyosun)
+- 📝 Refactor curation guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/81) [@Zethson](https://github.com/Zethson)
 
-Use cases.
+## 2024-08-08 {small}`bionty 0.48`
 
-- ♻️ Refactor and improved UX of cellxgene curate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/81) [@Zethson](https://github.com/Zethson)
-
-## 2024-08-03 {small}`bionty 0.48`
-
-New ontologies.
+New ontology versions.
 
 - 🍱 New `Tissue` version: `uberon-2024-05-13` [PR](https://github.com/laminlabs/bionty/pull/71) [@Zethson](https://github.com/Zethson)
 - 🍱 New `Tissue` version: `uberon-2024-01-18` [PR](https://github.com/laminlabs/bionty/pull/56) [@Zethson](https://github.com/Zethson)
