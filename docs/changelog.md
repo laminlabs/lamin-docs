@@ -26,6 +26,39 @@
 .. role:: small
 ```
 
+## 2024-08-03 {small}`lamindb 0.75.1`
+
+Fixes of `lamindb.Curate` to enable better UX of cellxgene Curate.
+
+- 🐛 Fix `using_key` for passing `source` and `organism` to `Curate` [PR](https://github.com/laminlabs/lamindb/pull/1784) [@sunnyosun](https://github.com/sunnyosun)
+- 🐛 Fix `var_index` validation in `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/1790) [@sunnyosun](https://github.com/sunnyosun)
+- ✨ Allow exclude values in Curate.validate [PR](https://github.com/laminlabs/lamindb/pull/1798) [@sunnyosun](https://github.com/sunnyosun)
+
+Use cases.
+
+- ♻️ Refactor and improved UX of cellxgene curate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/81) [@Zethson](https://github.com/Zethson)
+
+## 2024-08-03 {small}`bionty 0.48`
+
+New ontologies.
+
+- 🍱 New `Tissue` version: `uberon-2024-05-13` [PR](https://github.com/laminlabs/bionty/pull/71) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Tissue` version: `uberon-2024-01-18` [PR](https://github.com/laminlabs/bionty/pull/56) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `zp-2024-04-18` [PR](https://github.com/laminlabs/bionty/pull/71) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `pato-2024-03-28` [PR](https://github.com/laminlabs/bionty/pull/69) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `mp-2024-06-18` [PR](https://github.com/laminlabs/bionty/pull/68) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Phenotype` version: `hp-2024-04-26` [PR](https://github.com/laminlabs/bionty/pull/66) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Pathway` version: `pw-7.84` [PR](https://github.com/laminlabs/bionty/pull/70) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Pathway` version: `go-2024-06-17` [PR](https://github.com/laminlabs/bionty/pull/64) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Disease` version: `mondo-2024-06-04` [PR](https://github.com/laminlabs/bionty/pull/67) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Disease` version: `doid-2024-05-29` [PR](https://github.com/laminlabs/bionty/pull/60) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Disease` version: `mondo-2024-01-03` [PR](https://github.com/laminlabs/bionty/pull/55) [@Zethson](https://github.com/Zethson)
+- 🍱 New `ExperimentalFactor` version: `efo-3.66.0` [PR](https://github.com/laminlabs/bionty/pull/63) [@Zethson](https://github.com/Zethson)
+- 🍱 New `ExperimentalFactor` version: `efo-3.62.0` [PR](https://github.com/laminlabs/bionty/pull/54) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Drug` version: `dron-2024-08-05` [PR](https://github.com/laminlabs/bionty/pull/62) [@Zethson](https://github.com/Zethson)
+- 🍱 New `CellType` version: `cl-2024-05-15` [PR](https://github.com/laminlabs/bionty/pull/59) [@Zethson](https://github.com/Zethson)
+- 🍱 New `CellType` version: `cl-2024-01-04` [PR](https://github.com/laminlabs/bionty/pull/53) [@Zethson](https://github.com/Zethson)
+
 ## 2024-08-03 {small}`lamindb 0.75`
 
 ✨ Track mutations of array stores. [Guide](scrna6.ipynb#update-the-array-store) [PR](https://github.com/laminlabs/lamindb/pull/1756) [@Koncopd](https://github.com/Koncopd)
