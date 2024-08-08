@@ -47,6 +47,8 @@ Use cases.
 - ♻️ Refactor and improved UX of cellxgene curate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/81) [@Zethson](https://github.com/Zethson)
 - 🚸 Improved support for perturbation models | [PR](https://github.com/laminlabs/wetlab/pull/56) | [Zethson](https://github.com/Zethson)
 
+## 2024-08-03 {small}`bionty 0.48`
+
 New ontologies.
 
 - 🍱 New `Tissue` version: `uberon-2024-05-13` [PR](https://github.com/laminlabs/bionty/pull/71) [@Zethson](https://github.com/Zethson)
