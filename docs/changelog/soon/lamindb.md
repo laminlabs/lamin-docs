@@ -1,3 +1,4 @@
+- ⬆️ Release submodules [PR](https://github.com/laminlabs/lamindb/pull/1803) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 In Vitessce integration, enable a Vitessce button next to a dataset, also, document valid suffixes [PR](https://github.com/laminlabs/lamindb/pull/1799) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move definition of suffixes into lamindb [PR](https://github.com/laminlabs/lamindb-setup/pull/815) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow exclude values in Curate.validate [PR](https://github.com/laminlabs/lamindb/pull/1798) [@sunnyosun](https://github.com/sunnyosun)
