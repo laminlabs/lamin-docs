@@ -1,2 +1,3 @@
+- 🎨 Adopt new MuDat push/pull interface [PR](https://github.com/laminlabs/lamindb/pull/1807) [@Zethson](https://github.com/Zethson)
 - 🎨 Make some more backward accessors private and type the rest [PR](https://github.com/laminlabs/lamindb/pull/1805) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix Feature constructor error message [PR](https://github.com/laminlabs/lamindb/pull/1804) [@Zethson](https://github.com/Zethson)
