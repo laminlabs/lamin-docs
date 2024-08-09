@@ -1,1 +1,1 @@
-
+- 🎨 Increase the max length of Protein.gene_symbol [PR](https://github.com/laminlabs/bionty/pull/77) [@sunnyosun](https://github.com/sunnyosun)
