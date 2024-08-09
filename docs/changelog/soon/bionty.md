@@ -1,1 +1,2 @@
+- 🐛 Fix `set_as_currently_used` [PR](https://github.com/laminlabs/bionty/pull/78) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Increase the max length of Protein.gene_symbol [PR](https://github.com/laminlabs/bionty/pull/77) [@sunnyosun](https://github.com/sunnyosun)
