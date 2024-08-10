@@ -1,3 +1,4 @@
+- :construction: Pulumi: do not print dots while waiting [PR](https://github.com/laminlabs/laminhub/pull/1028) [@chaichontat](https://github.com/chaichontat)
 - 🔥 Remove healthchecks (moved in laminhub-monitoring) [PR](https://github.com/laminlabs/laminhub/pull/1027) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor nox, CLI and remove LocalResources [PR](https://github.com/laminlabs/laminhub/pull/1017) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix duplication error when adding back a collaborator after deletion [PR](https://github.com/laminlabs/laminhub/pull/1022) [@fredericenard](https://github.com/fredericenard)
