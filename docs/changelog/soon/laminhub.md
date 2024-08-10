@@ -1,3 +1,4 @@
+- ♻️ Improve env variables management for laminhub-rest deployment [PR](https://github.com/laminlabs/laminhub/pull/1033) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor dev and cli [PR](https://github.com/laminlabs/laminhub/pull/1031) [@fredericenard](https://github.com/fredericenard)
 - :construction: Pulumi: do not print dots while waiting [PR](https://github.com/laminlabs/laminhub/pull/1028) [@chaichontat](https://github.com/chaichontat)
 - 🔥 Remove healthchecks (moved in laminhub-monitoring) [PR](https://github.com/laminlabs/laminhub/pull/1027) [@fredericenard](https://github.com/fredericenard)
