@@ -1,3 +1,4 @@
+- ♻️ Better dialogue working with outdated instance settings and remove… [PR](https://github.com/laminlabs/lamindb-setup/pull/818) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix length limitation for external hash parsing [PR](https://github.com/laminlabs/lamindb-setup/pull/820) [@falexwolf](https://github.com/falexwolf)
 - ✅ Propagate `laminhub` updates in hub-local/conftest [PR](https://github.com/laminlabs/lamindb-setup/pull/819) [@fredericenard](https://github.com/fredericenard)
 - ⚡️ Speed up `BioRecord.import_from_source` [PR](https://github.com/laminlabs/lamindb/pull/1808) [@sunnyosun](https://github.com/sunnyosun)
