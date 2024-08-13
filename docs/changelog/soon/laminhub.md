@@ -1,3 +1,4 @@
+- ✏️ Fix ontology_id display [PR](https://github.com/laminlabs/laminhub/pull/1041) [@sunnyosun](https://github.com/sunnyosun)
 - 🚀 On prem deployment [PR](https://github.com/laminlabs/laminhub/pull/1016) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix circular import in `seed_local_dev` function [PR](https://github.com/laminlabs/laminhub/pull/1038) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Fix missing Microsoft signup button and rename Azure to Microsoft [PR](https://github.com/laminlabs/laminhub/pull/1034) [@fredericenard](https://github.com/fredericenard)
