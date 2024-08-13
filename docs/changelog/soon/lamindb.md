@@ -1,3 +1,4 @@
+- ⚡️ Add boolean field `IsVersioned.is_latest` to speed up queries for latest versions [PR](https://github.com/laminlabs/lamindb/pull/1811) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Query the default storage on connecting an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/816) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Better dialogue working with outdated instance settings and remove… [PR](https://github.com/laminlabs/lamindb-setup/pull/818) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix length limitation for external hash parsing [PR](https://github.com/laminlabs/lamindb-setup/pull/820) [@falexwolf](https://github.com/falexwolf)
