@@ -1,0 +1,1 @@
+- 🐛Fix Papalexi missing hto:technique [PR](https://github.com/laminlabs/lamindb/pull/1813) [@Zethson](https://github.com/Zethson)
