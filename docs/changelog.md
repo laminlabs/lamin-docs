@@ -26,6 +26,12 @@
 .. role:: small
 ```
 
+## 2024-08-10 {small}`laminhub 0.26`
+
+- 🚸 Backend search & filter via multiple relationships [@chaichontat](https://github.com/chaichontat) [@fredericenard](https://github.com/fredericenard)
+- ✨ Login via Microsoft [@fredericenard](https://github.com/fredericenard)
+- 💄 Details in hover cards [@chaichontat](https://github.com/chaichontat)
+
 ## 2024-08-08 {small}`lamindb 0.75.1`
 
 🚸 Improved the `cellxgene_lamin` curation guide.
