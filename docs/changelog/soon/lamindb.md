@@ -1,1 +1,2 @@
+- ✨ New features for MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/1812) [@Koncopd](https://github.com/Koncopd)
 - 🐛Fix Papalexi missing hto:technique [PR](https://github.com/laminlabs/lamindb/pull/1813) [@Zethson](https://github.com/Zethson)
