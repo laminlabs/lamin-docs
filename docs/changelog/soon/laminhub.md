@@ -1,3 +1,4 @@
+- 🥅 Improve error handling for create instance router [PR](https://github.com/laminlabs/laminhub/pull/874) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Simplify permissions policies [PR](https://github.com/laminlabs/laminhub/pull/1040) [@fredericenard](https://github.com/fredericenard)
 - ✏️ Fix ontology_id display [PR](https://github.com/laminlabs/laminhub/pull/1041) [@sunnyosun](https://github.com/sunnyosun)
 - 🚀 On prem deployment [PR](https://github.com/laminlabs/laminhub/pull/1016) [@fredericenard](https://github.com/fredericenard)
