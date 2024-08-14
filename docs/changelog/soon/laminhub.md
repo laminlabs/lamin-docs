@@ -1,3 +1,4 @@
+- 🔥 Remove all global secrets from rest-api container [PR](https://github.com/laminlabs/laminhub/pull/1048) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Reduce lamin dependencies within containers to the minimum [PR](https://github.com/laminlabs/laminhub/pull/1047) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Simplify setup for on prem deployments [PR](https://github.com/laminlabs/laminhub/pull/1044) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Refactor env and secrets management [PR](https://github.com/laminlabs/laminhub/pull/1045) [@fredericenard](https://github.com/fredericenard)
