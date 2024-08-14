@@ -141,6 +141,7 @@ def pull_artifacts(session):
     Path("lamindb_docs/includes/features-lamindb.md").unlink()
     Path("lamindb_docs/includes/features-laminhub.md").unlink()
     Path("lamindb_docs/changelog.md").unlink()
+    Path("lamindb_docs/rest.md").unlink()
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
