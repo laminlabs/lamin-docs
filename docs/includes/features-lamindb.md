@@ -1,6 +1,6 @@
 **Manage data & metadata with a unified Python API (“lakehouse”).**
 
-Manage storage (files, folders, arrays) and a SQL database (SQLite, Postgres) backend.
+Manage storage (files, folders, arrays) with a SQL database (SQLite, Postgres).
 
 - Query & search across artifacts ({class}`~lamindb.Artifact`) & metadata records ({class}`~lamindb.core.Record`): {class}`~lamindb.core.Record.filter`, {class}`~lamindb.core.Record.search`
 - Query large array stores like CellXGene Census: {class}`~lamindb.Artifact.open` → [guide](/query-census)
@@ -32,7 +32,7 @@ Manage storage (files, folders, arrays) and a SQL database (SQLite, Postgres) ba
 
 **Organize and share data across a mesh of LaminDB instances.**
 
-- Create & load database instances like git repos: `lamin init` & `lamin load`
+- Create & load instances like git repos: `lamin init` & `lamin load`
 - Zero-copy [transfer](/transfer) data across instances
 
 **Integrate with analytics tools.**
