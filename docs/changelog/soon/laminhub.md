@@ -1,0 +1,1 @@
+- ♻️ Refactor env and secrets management [PR](https://github.com/laminlabs/laminhub/pull/1045) [@fredericenard](https://github.com/fredericenard)
