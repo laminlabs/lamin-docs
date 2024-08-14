@@ -1,3 +1,4 @@
+- Simplify BFXPipeline [PR](https://github.com/laminlabs/bionty/pull/86) [@Zethson](https://github.com/Zethson)
 - ✨ Move to parquet for bfxpipelines  [PR](https://github.com/laminlabs/bionty/pull/84) [@Zethson](https://github.com/Zethson)
 - 🐛 Add dron missing entry [PR](https://github.com/laminlabs/bionty/pull/82) [@Zethson](https://github.com/Zethson)
 - 🎨 Make `source_artifact_of` and `source_dataframe_of` private [PR](https://github.com/laminlabs/bionty/pull/80) [@sunnyosun](https://github.com/sunnyosun)
