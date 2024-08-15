@@ -1,3 +1,4 @@
+- 🐛 Fix self-referential fields [PR](https://github.com/laminlabs/laminhub/pull/1054) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Dissociate roles creation from api deployment [PR](https://github.com/laminlabs/laminhub/pull/1057) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Support transform revisions [PR](https://github.com/laminlabs/laminhub/pull/1056) [@chaichontat](https://github.com/chaichontat)
 - 🚚 Move test_router_relations_artifact [PR](https://github.com/laminlabs/laminhub/pull/1053) [@fredericenard](https://github.com/fredericenard)
