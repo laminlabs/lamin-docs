@@ -1,3 +1,4 @@
+- ✨ Add include_rel & update DevelopmentalStage and Tissue [PR](https://github.com/laminlabs/bionty/pull/87) [@Zethson](https://github.com/Zethson)
 - ✨ Add register_source_in_bionty_assets [PR](https://github.com/laminlabs/bionty/pull/85) [@sunnyosun](https://github.com/sunnyosun)
 - Simplify BFXPipeline [PR](https://github.com/laminlabs/bionty/pull/86) [@Zethson](https://github.com/Zethson)
 - ✨ Move to parquet for bfxpipelines  [PR](https://github.com/laminlabs/bionty/pull/84) [@Zethson](https://github.com/Zethson)
