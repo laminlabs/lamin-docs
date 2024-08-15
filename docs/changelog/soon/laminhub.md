@@ -1,3 +1,4 @@
+- 🚚 Move test_router_relations_artifact [PR](https://github.com/laminlabs/laminhub/pull/1053) [@fredericenard](https://github.com/fredericenard)
 - :arrow_up: Add eslint-config-prettier dep [PR](https://github.com/laminlabs/laminhub/pull/1052) [@chaichontat](https://github.com/chaichontat)
 - 🔥 Remove all global secrets from rest-api container [PR](https://github.com/laminlabs/laminhub/pull/1048) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Reduce lamin dependencies within containers to the minimum [PR](https://github.com/laminlabs/laminhub/pull/1047) [@fredericenard](https://github.com/fredericenard)
