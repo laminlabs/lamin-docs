@@ -2,12 +2,11 @@ import os
 import shutil
 import subprocess
 from pathlib import Path
-from subprocess import run
 from typing import Dict
 
 import nox
 from dirsync import sync
-from laminci.nox import login_testuser1, run_pre_commit
+from laminci.nox import run, run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
@@ -21,8 +20,8 @@ def lint(session: nox.Session) -> None:
 
 @nox.session
 def install(session: nox.Session) -> None:
-    session.run(*"git clone https://github.com/laminlabs/lamindb --depth 1".split())
-    session.run(*"pip install ./lamindb[aws,bionty]".split())
+    run(session, "git clone https://github.com/laminlabs/lamindb --depth 1")
+    run(session, "pip install ./lamindb[aws,bionty]")
 
 
 # for FAQ
@@ -117,7 +116,7 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
 
 
 def pull_from_s3_and_unpack(zip_filename) -> None:
-    run(
+    subprocess.run(
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
         shell=True,
     )
@@ -215,26 +214,22 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
-    session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    # session.run(
+    #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    # )
+    # run(session, "pip install git+https://github.com/laminlabs/bionty")
+    run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
+    run(
+        session,
+        "pip install lamindb[bionty]@git+https://github.com/laminlabs/lamindb@release",
     )
-    session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
-    session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
-    )
-    session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
-    login_testuser1(session)
-    session.run(*"lamin init --storage ./docsbuild --schema bionty,wetlab".split())
-    prefix = "." if Path("./lndocs").exists() else ".."
-    if nox.options.default_venv_backend == "none":
-        session.run(*f"pip install {prefix}/lndocs".split())
-    else:
-        session.install(f"{prefix}/lndocs")
+    run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
+    run(session, "pip install ./lndocs")
     process = subprocess.run(
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
     if process.returncode != 0:
         # rerun without strict option so see all warnings
-        session.run(*"lndocs --strip-prefix --error-on-index".split())
+        run(session, "lndocs --strip-prefix --error-on-index")
         # exit with error
         exit(1)
