@@ -2,12 +2,11 @@ import os
 import shutil
 import subprocess
 from pathlib import Path
-from subprocess import run
 from typing import Dict
 
 import nox
 from dirsync import sync
-from laminci.nox import login_testuser1, run_pre_commit
+from laminci.nox import run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
@@ -117,7 +116,7 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
 
 
 def pull_from_s3_and_unpack(zip_filename) -> None:
-    run(
+    subprocess.run(
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
         shell=True,
     )
@@ -215,15 +214,14 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
-    session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
-    )
-    session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
-    session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
-    )
-    session.run(*"pip install git+https://github.com/laminlabs/lamindb@release".split())
-    login_testuser1(session)
+    # session.run(
+    #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
+    # )
+    # session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
+    # session.run(
+    #     *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
+    # )
+    # run(sesion, "pip install git+https://github.com/laminlabs/lamindb@release")
     session.run(*"lamin init --storage ./docsbuild --schema bionty,wetlab".split())
     prefix = "." if Path("./lndocs").exists() else ".."
     if nox.options.default_venv_backend == "none":
