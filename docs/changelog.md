@@ -26,7 +26,7 @@
 .. role:: small
 ```
 
-## 2024-08-16 {small}`lamindb 0.76.1`
+## 2024-08-16 {small}`db 0.76.1`
 
 🚸 Overhauled context tracking experience with `ln.context.track()` [Details & PR](https://github.com/laminlabs/lamindb/pull/1816) [@falexwolf](https://github.com/falexwolf) [@chaichontat](https://github.com/chaichontat)
 
@@ -64,20 +64,20 @@ More changes:
 - 🚸 Update `.get()` to accept expressions [PR](https://github.com/laminlabs/lamindb/pull/1815) [@falexwolf](https://github.com/falexwolf)
 - ✨ `MappedCollection` compatible with latest `scdataloader` [PR](https://github.com/laminlabs/lamindb/pull/1812) [@Koncopd](https://github.com/Koncopd)
 
-## 2024-08-14 {small}`lamindb 0.76`
+## 2024-08-14 {small}`db 0.76`
 
 - ⚡️ Add boolean field `IsVersioned.is_latest` to speed up queries for latest versions [PR](https://github.com/laminlabs/lamindb/pull/1811) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix length limitation for external hash parsing [PR](https://github.com/laminlabs/lamindb-setup/pull/820) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `BioRecord.import_from_source` [PR](https://github.com/laminlabs/lamindb/pull/1808) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Make more backward accessors private and type the rest [PR](https://github.com/laminlabs/lamindb/pull/1805) [@falexwolf](https://github.com/falexwolf)
 
-## 2024-08-10 {small}`laminhub 0.26`
+## 2024-08-10 {small}`hub 0.26`
 
 - 🚸 Backend search & filter via multiple relationships [@chaichontat](https://github.com/chaichontat) [@fredericenard](https://github.com/fredericenard)
 - ✨ Login via Microsoft [@fredericenard](https://github.com/fredericenard)
 - 💄 Details in hover cards [@chaichontat](https://github.com/chaichontat)
 
-## 2024-08-08 {small}`lamindb 0.75.1`
+## 2024-08-08 {small}`db 0.75.1`
 
 🚸 Improved the `cellxgene_lamin` curation guide.
 
@@ -106,7 +106,7 @@ New ontology versions.
 - 🍱 New `CellType` version: `cl-2024-05-15` [PR](https://github.com/laminlabs/bionty/pull/59) [@Zethson](https://github.com/Zethson)
 - 🍱 New `CellType` version: `cl-2024-01-04` [PR](https://github.com/laminlabs/bionty/pull/53) [@Zethson](https://github.com/Zethson)
 
-## 2024-08-03 {small}`lamindb 0.75`
+## 2024-08-03 {small}`db 0.75`
 
 ✨ Track mutations of array stores. [Guide](scrna6.ipynb#update-the-array-store) [PR](https://github.com/laminlabs/lamindb/pull/1756) [@Koncopd](https://github.com/Koncopd)
 
@@ -194,7 +194,7 @@ New ontologies.
 - 🍱 New `Pathway` version: `pw-7.82` [PR](https://github.com/laminlabs/bionty-base/pull/567) [Zethson](https://github.com/Zethson)
 - 🍱 New `Drug` version: `DRON-2024-03-02` [PR](https://github.com/laminlabs/bionty-base/pull/566) [Zethson](https://github.com/Zethson)
 
-## 2024-07-26 {small}`laminhub 0.25`
+## 2024-07-26 {small}`hub 0.25`
 
 Overhauled the REST API: better performance and architecture.
 
@@ -207,7 +207,7 @@ UI improvements.
 - 💄 Add details in hover card [@chaichontat](https://github.com/chaichontat)
 - 🐛 Stop settings from flickering [@chaichontat](https://github.com/chaichontat)
 
-## 2024-07-26 {small}`lamindb 0.74.3`
+## 2024-07-26 {small}`db 0.74.3`
 
 ⚡ Speed up populating parent records by an order of magnitude, remove the `parents` keyword ([PR](https://github.com/laminlabs/lamindb/pull/1750) [@sunnyosun](https://github.com/sunnyosun)).
 
@@ -221,7 +221,7 @@ Chores.
 - ⬆️ Upgrade to pydantic v2 [PR](https://github.com/laminlabs/lamindb/pull/1752) [@falexwolf](https://github.com/falexwolf)
 - 👷 Resolve hanging CI [PR](https://github.com/laminlabs/lamindb-setup/pull/801) [@Koncopd](https://github.com/Koncopd)
 
-## 2024-07-22 {small}`lamindb 0.74.2`
+## 2024-07-22 {small}`db 0.74.2`
 
 The API is now cleaner and fields are typed.
 
@@ -257,7 +257,7 @@ Security updates & bug fixes.
 - 🔒 Enable Ruff security rules (bandit) & CodeQL [PR](https://github.com/laminlabs/lamindb/pull/1686) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix return values of `.save()` for a few classes [PR](https://github.com/laminlabs/lamindb/pull/1741) [@falexwolf](https://github.com/falexwolf)
 
-## 2024-07-01 {small}`laminhub 0.24`
+## 2024-07-01 {small}`hub 0.24`
 
 - ✨ Add a checkbox for instance setting `keep-artifacts-local` [PR](https://github.com/laminlabs/laminhub/pull/855) [@chaichontat](https://github.com/chaichontat) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ New endpoint: `create-instance` [PR](https://github.com/laminlabs/laminhub/pull/724) [@fredericenard](https://github.com/fredericenard)
@@ -265,7 +265,7 @@ Security updates & bug fixes.
 - ✨ Image preview [PR](https://github.com/laminlabs/laminhub/pull/779) [@chaichontat](https://github.com/chaichontat)
 - ✨ Artifact backlinks [PR](https://github.com/laminlabs/laminhub/pull/727) [@chaichontat](https://github.com/chaichontat)
 
-## 2024-06-26 {small}`lamindb 0.74.1`
+## 2024-06-26 {small}`db 0.74.1`
 
 ♻️ Refactor `ln.settings` [PR](https://github.com/laminlabs/lamindb/pull/1711) [@falexwolf](https://github.com/falexwolf).
 
@@ -285,7 +285,7 @@ Docs.
 
 - 📝 Update hub screenshots [PR](https://github.com/laminlabs/lamindb/pull/1714) [@sunnyosun](https://github.com/sunnyosun)
 
-## 2024-06-20 {small}`lamindb 0.74`
+## 2024-06-20 {small}`db 0.74`
 
 ✨ You can now distinguish model-like and dataset-like artifacts via a `type` field in the `Artifact` registry.
 
