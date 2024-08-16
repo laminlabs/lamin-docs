@@ -6,7 +6,7 @@ from typing import Dict
 
 import nox
 from dirsync import sync
-from laminci.nox import run_pre_commit
+from laminci.nox import run, run_pre_commit
 
 nox.options.default_venv_backend = "none"
 
@@ -20,8 +20,8 @@ def lint(session: nox.Session) -> None:
 
 @nox.session
 def install(session: nox.Session) -> None:
-    session.run(*"git clone https://github.com/laminlabs/lamindb --depth 1".split())
-    session.run(*"pip install ./lamindb[aws,bionty]".split())
+    run(session, "git clone https://github.com/laminlabs/lamindb --depth 1")
+    run(session, "pip install ./lamindb[aws,bionty]")
 
 
 # for FAQ
@@ -217,15 +217,15 @@ def docs(session):
     # session.run(
     #     *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
     # )
-    # session.run(*"pip install git+https://github.com/laminlabs/bionty".split())
+    # run(session, "pip install git+https://github.com/laminlabs/bionty")
     # session.run(
     #     *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
     # )
     # run(sesion, "pip install git+https://github.com/laminlabs/lamindb@release")
-    session.run(*"lamin init --storage ./docsbuild --schema bionty,wetlab".split())
+    run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
     prefix = "." if Path("./lndocs").exists() else ".."
     if nox.options.default_venv_backend == "none":
-        session.run(*f"pip install {prefix}/lndocs".split())
+        run(session, f"pip install {prefix}/lndocs")
     else:
         session.install(f"{prefix}/lndocs")
     process = subprocess.run(
@@ -233,6 +233,6 @@ def docs(session):
     )
     if process.returncode != 0:
         # rerun without strict option so see all warnings
-        session.run(*"lndocs --strip-prefix --error-on-index".split())
+        run(session, "lndocs --strip-prefix --error-on-index")
         # exit with error
         exit(1)
