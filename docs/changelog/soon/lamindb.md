@@ -1,1 +1,1 @@
-
+- 📝Minor docstring improvements [PR](https://github.com/laminlabs/lamindb/pull/1820) [@Zethson](https://github.com/Zethson)
