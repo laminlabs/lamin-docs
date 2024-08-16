@@ -1,3 +1,4 @@
+- :bug: Fix installation order [PR](https://github.com/laminlabs/bionty/pull/90) [@Zethson](https://github.com/Zethson)
 - ✏️ Fix key_is_virtual [PR](https://github.com/laminlabs/bionty/pull/89) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add include_rel & update DevelopmentalStage and Tissue [PR](https://github.com/laminlabs/bionty/pull/87) [@Zethson](https://github.com/Zethson)
 - ✨ Add register_source_in_bionty_assets [PR](https://github.com/laminlabs/bionty/pull/85) [@sunnyosun](https://github.com/sunnyosun)
