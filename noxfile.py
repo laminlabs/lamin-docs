@@ -221,7 +221,7 @@ def docs(session):
     run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
     run(
         session,
-        "pip install lamindb[bionty]git+https://github.com/laminlabs/lamindb@release",
+        "pip install lamindb[bionty]@git+https://github.com/laminlabs/lamindb@release",
     )
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
     prefix = "." if Path("./lndocs").exists() else ".."
