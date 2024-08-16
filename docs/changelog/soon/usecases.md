@@ -1,0 +1,1 @@
+- 🐛 Fix scrna3 notebook [PR](https://github.com/laminlabs/lamin-usecases/pull/140) [@Koncopd](https://github.com/Koncopd)
