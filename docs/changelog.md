@@ -41,7 +41,7 @@ ln.context.track()
 
 Now:
 
-<img width="700" alt="image" src="https://github.com/user-attachments/assets/72f93c70-7766-4f6e-b883-b04b0110900a">
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/fcb4c82a-fd61-468d-aff7-4c878edeeba4">
 
 Previously:
 
