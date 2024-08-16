@@ -1,3 +1,4 @@
+- ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/1818) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix tuple from init_storage [PR](https://github.com/laminlabs/lamindb/pull/1817) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Make `set_managed_storage()` safer [PR](https://github.com/laminlabs/lamindb-setup/pull/822) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Overhauled context tracking experience with `ln.context.track()` [PR](https://github.com/laminlabs/lamindb/pull/1816) [@falexwolf](https://github.com/falexwolf)
