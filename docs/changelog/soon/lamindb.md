@@ -1,1 +1,2 @@
+- ✅ Test failing set_managed_storage [PR](https://github.com/laminlabs/lamindb-setup/pull/824) [@Koncopd](https://github.com/Koncopd)
 - 📝Minor docstring improvements [PR](https://github.com/laminlabs/lamindb/pull/1820) [@Zethson](https://github.com/Zethson)
