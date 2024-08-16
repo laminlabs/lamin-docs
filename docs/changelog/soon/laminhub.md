@@ -1,3 +1,4 @@
+- 💄 Fix duration calculation [PR](https://github.com/laminlabs/laminhub/pull/1061) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Use `storage.instance_id` to retrieve the default storage [PR](https://github.com/laminlabs/laminhub/pull/1042) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix self-referential fields [PR](https://github.com/laminlabs/laminhub/pull/1054) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Dissociate roles creation from api deployment [PR](https://github.com/laminlabs/laminhub/pull/1057) [@fredericenard](https://github.com/fredericenard)
