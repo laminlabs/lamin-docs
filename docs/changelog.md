@@ -62,7 +62,7 @@ If you don't label with a semantic version tag, you'll get an auto-generated rev
 More changes:
 
 - 🚸 Update `.get()` to accept expressions [PR](https://github.com/laminlabs/lamindb/pull/1815) [@falexwolf](https://github.com/falexwolf)
-- ✨ `MappedCollection` compatible with latest `scdataloader` [PR](https://github.com/laminlabs/lamindb/pull/1812) [@Koncopd](https://github.com/Koncopd)
+- ✨ `MappedCollection` compatible with latest `scdataloader` [PR](https://github.com/laminlabs/lamindb/pull/1812) [@Koncopd](https://github.com/Koncopd) [PR](https://github.com/laminlabs/lamindb/pull/1809) [@jkobject](https://github.com/jkobject)
 
 ## 2024-08-14 {small}`db 0.76`
 
