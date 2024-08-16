@@ -224,8 +224,7 @@ def docs(session):
         "pip install lamindb[bionty]@git+https://github.com/laminlabs/lamindb@release",
     )
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
-    prefix = "." if Path("./lndocs").exists() else ".."
-    session.install(f"{prefix}/lndocs")
+    run(session, "pip install ./lndocs")
     process = subprocess.run(
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
