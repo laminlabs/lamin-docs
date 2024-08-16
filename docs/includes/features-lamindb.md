@@ -11,7 +11,7 @@ Manage storage (files, folders, arrays) with a SQL database (SQLite, Postgres).
 - Create iterable collections of artifacts & data loaders: {class}`~lamindb.Collection` {meth}`~lamindb.Collection.mapped`
 - Version artifacts, collections & transforms: {class}`~lamindb.core.IsVersioned`
 
-**Track data lineage across notebooks, pipelines & UI: {meth}`~lamindb.track`, {class}`~lamindb.Transform` & {class}`~lamindb.Run`.**
+**Track data lineage across notebooks, pipelines & UI: {meth}`~lamindb.context.track`, {class}`~lamindb.Transform` & {class}`~lamindb.Run`.**
 
 - Execution reports, source code and Python environments for [notebooks & scripts](/track)
 - Integrate with workflow managers: [redun](redun), [nextflow](nextflow), [snakemake](snakemake)
