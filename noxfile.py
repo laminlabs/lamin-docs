@@ -221,13 +221,13 @@ def docs(session):
     # session.run(
     #     *"pip install --no-deps git+https://github.com/laminlabs/wetlab".split()  # noqa
     # )
-    # run(sesion, "pip install git+https://github.com/laminlabs/lamindb@release")
+    run(
+        session,
+        "uv pip install --system git+https://github.com/laminlabs/lamindb@release",
+    )
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
     prefix = "." if Path("./lndocs").exists() else ".."
-    if nox.options.default_venv_backend == "none":
-        run(session, f"pip install {prefix}/lndocs")
-    else:
-        session.install(f"{prefix}/lndocs")
+    session.install(f"{prefix}/lndocs")
     process = subprocess.run(
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
