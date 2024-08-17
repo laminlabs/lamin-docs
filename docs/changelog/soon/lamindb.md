@@ -1,2 +1,3 @@
+- 📝Use RST to render headers for lamindb API summary [PR](https://github.com/laminlabs/lamindb/pull/1822) [@Zethson](https://github.com/Zethson)
 - ✅ Test failing set_managed_storage [PR](https://github.com/laminlabs/lamindb-setup/pull/824) [@Koncopd](https://github.com/Koncopd)
 - 📝Minor docstring improvements [PR](https://github.com/laminlabs/lamindb/pull/1820) [@Zethson](https://github.com/Zethson)
