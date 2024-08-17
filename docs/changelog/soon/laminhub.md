@@ -1,3 +1,4 @@
+- :art: Keep colors in local stdout [PR](https://github.com/laminlabs/laminhub/pull/1065) [@chaichontat](https://github.com/chaichontat)
 - ⚗️ Try deploying with Fargate [PR](https://github.com/laminlabs/laminhub/pull/1051) [@fredericenard](https://github.com/fredericenard)
 - 💄 Fix duration calculation [PR](https://github.com/laminlabs/laminhub/pull/1061) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Use `storage.instance_id` to retrieve the default storage [PR](https://github.com/laminlabs/laminhub/pull/1042) [@Koncopd](https://github.com/Koncopd)
