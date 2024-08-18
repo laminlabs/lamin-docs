@@ -1,3 +1,4 @@
+- 💚 Fix integration tests: Add wetlab and bionty [PR](https://github.com/laminlabs/laminhub/pull/1067) [@fredericenard](https://github.com/fredericenard)
 - :art: Keep colors in local stdout [PR](https://github.com/laminlabs/laminhub/pull/1065) [@chaichontat](https://github.com/chaichontat)
 - ⚗️ Try deploying with Fargate [PR](https://github.com/laminlabs/laminhub/pull/1051) [@fredericenard](https://github.com/fredericenard)
 - 💄 Fix duration calculation [PR](https://github.com/laminlabs/laminhub/pull/1061) [@sunnyosun](https://github.com/sunnyosun)
