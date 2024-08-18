@@ -1,3 +1,4 @@
+- ✨ Enable storing Pulumi state on S3 [PR](https://github.com/laminlabs/laminhub/pull/1068) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix integration tests: Add wetlab and bionty [PR](https://github.com/laminlabs/laminhub/pull/1067) [@fredericenard](https://github.com/fredericenard)
 - :art: Keep colors in local stdout [PR](https://github.com/laminlabs/laminhub/pull/1065) [@chaichontat](https://github.com/chaichontat)
 - ⚗️ Try deploying with Fargate [PR](https://github.com/laminlabs/laminhub/pull/1051) [@fredericenard](https://github.com/fredericenard)
