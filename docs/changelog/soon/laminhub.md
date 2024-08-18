@@ -1,3 +1,4 @@
+- 🚑 Fix swarm instances [PR](https://github.com/laminlabs/laminhub/pull/1073) [@fredericenard](https://github.com/fredericenard)
 - :lock: Fix open redirect in Chrome [PR](https://github.com/laminlabs/laminhub/pull/1069) [@chaichontat](https://github.com/chaichontat)
 - ✨ Enable storing Pulumi state on S3 [PR](https://github.com/laminlabs/laminhub/pull/1068) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix integration tests: Add wetlab and bionty [PR](https://github.com/laminlabs/laminhub/pull/1067) [@fredericenard](https://github.com/fredericenard)
