@@ -1,3 +1,4 @@
+- 🔒 Use github as an IDP to get AWS credentials [PR](https://github.com/laminlabs/laminhub/pull/1071) [@fredericenard](https://github.com/fredericenard)
 - 🏗️ Manage iam roles and policies with Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1075) [@fredericenard](https://github.com/fredericenard)
 - 🚑 Fix swarm instances [PR](https://github.com/laminlabs/laminhub/pull/1073) [@fredericenard](https://github.com/fredericenard)
 - :lock: Fix open redirect in Chrome [PR](https://github.com/laminlabs/laminhub/pull/1069) [@chaichontat](https://github.com/chaichontat)
