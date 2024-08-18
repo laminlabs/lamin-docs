@@ -66,7 +66,7 @@ More changes:
 
 ## 2024-08-14 {small}`db 0.76`
 
-- ⚡️ Add boolean field `IsVersioned.is_latest` to speed up queries for latest versions [PR](https://github.com/laminlabs/lamindb/pull/1811) [@falexwolf](https://github.com/falexwolf)
+- ⚡️ Add boolean field `IsVersioned.is_latest` to speed up queries for latest versions [PR](https://github.com/laminlabs/lamindb/pull/1811) [@falexwolf](https://github.com/falexwolf) [@fredericenard](https://github.com/fredericenard) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix length limitation for external hash parsing [PR](https://github.com/laminlabs/lamindb-setup/pull/820) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `BioRecord.import_from_source` [PR](https://github.com/laminlabs/lamindb/pull/1808) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Make more backward accessors private and type the rest [PR](https://github.com/laminlabs/lamindb/pull/1805) [@falexwolf](https://github.com/falexwolf)
