@@ -1,1 +1,2 @@
+- :sparkles: Specify 5.0.0 explicitly [PR](https://github.com/laminlabs/cellxgene-lamin/pull/84) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix scrna3 notebook [PR](https://github.com/laminlabs/lamin-usecases/pull/140) [@Koncopd](https://github.com/Koncopd)
