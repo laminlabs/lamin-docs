@@ -1,3 +1,4 @@
+- 👷 Initialize AWS account with Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1076) [@fredericenard](https://github.com/fredericenard)
 - :truck: Use Authorization in header [PR](https://github.com/laminlabs/laminhub/pull/1064) [@chaichontat](https://github.com/chaichontat)
 - 🔒 Use github as an IDP to get AWS credentials [PR](https://github.com/laminlabs/laminhub/pull/1071) [@fredericenard](https://github.com/fredericenard)
 - 🏗️ Manage iam roles and policies with Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1075) [@fredericenard](https://github.com/fredericenard)
