@@ -1,3 +1,4 @@
+- 🐛 None as default for ARNs in EnvWithSecrets [PR](https://github.com/laminlabs/laminhub/pull/1081) [@fredericenard](https://github.com/fredericenard)
 - 👷 Enable providing a secret ARN to the rest server [PR](https://github.com/laminlabs/laminhub/pull/1080) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove useless deployment scripts [PR](https://github.com/laminlabs/laminhub/pull/1078) [@fredericenard](https://github.com/fredericenard)
 - 👷 Initialize AWS account with Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1076) [@fredericenard](https://github.com/fredericenard)
