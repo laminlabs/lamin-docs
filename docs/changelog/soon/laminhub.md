@@ -1,3 +1,4 @@
+- 👷 Enable providing a secret ARN to the rest server [PR](https://github.com/laminlabs/laminhub/pull/1080) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove useless deployment scripts [PR](https://github.com/laminlabs/laminhub/pull/1078) [@fredericenard](https://github.com/fredericenard)
 - 👷 Initialize AWS account with Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1076) [@fredericenard](https://github.com/fredericenard)
 - :truck: Use Authorization in header [PR](https://github.com/laminlabs/laminhub/pull/1064) [@chaichontat](https://github.com/chaichontat)
