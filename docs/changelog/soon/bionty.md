@@ -1,3 +1,4 @@
+- :sparkles: Add chebi & chembl [PR](https://github.com/laminlabs/bionty/pull/94) [@Zethson](https://github.com/Zethson)
 - :memo: Delete comparison [PR](https://github.com/laminlabs/bionty/pull/93) [@Zethson](https://github.com/Zethson)
 - :memo: Move bionty-base docs [PR](https://github.com/laminlabs/bionty/pull/91) [@Zethson](https://github.com/Zethson)
 - :bug: Fix installation order [PR](https://github.com/laminlabs/bionty/pull/90) [@Zethson](https://github.com/Zethson)
