@@ -1,5 +1,3 @@
-LaminHub provides a layer for AWS & GCP that makes access management more secure & intuitive.
-
 Rather than configuring storage & database permissions directly on AWS or GCP, LaminHub allows you to manage collaborators for databases & storage locations in the same way you manage access to repositories on GitHub. However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you in full control of your data with direct API access to databases & storage locations on AWS or GCP.
 
 How does it work?

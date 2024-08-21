@@ -1,18 +1,16 @@
-See [pricing](https://lamin.ai/pricing).
+Basic features of LaminHub are free. See [pricing](https://lamin.ai/pricing).
 
 **Secure & intuitive access management.**
 
-```{include} /includes/access-laminhub.md
-
-```
+Rather than configuring storage & database permissions directly on AWS or GCP, LaminHub allows you to manage collaborators for databases & storage locations in the same way you manage access to repositories on GitHub. See {doc}`access`.
 
 **A UI to work with LaminDB instances.**
 
 Explore in the hub UI or `lamin load owner/instance` via the CLI:
 
-- [lamin.ai/laminlabs/arrayloader-benchmarks](https://lamin.ai/laminlabs/arrayloader-benchmarks) - Work with ML models & benchmarks
-- [lamin.ai/laminlabs/cellxgene](https://lamin.ai/laminlabs/cellxgene) - An instance with the CELLxGENE data ([guide](cellxgene))
 - [lamin.ai/laminlabs/lamindata](https://lamin.ai/laminlabs/lamindata) - A generic demo instance with various data types
+- [lamin.ai/laminlabs/cellxgene](https://lamin.ai/laminlabs/cellxgene) - An instance with the CELLxGENE data ([guide](cellxgene))
+- [lamin.ai/laminlabs/arrayloader-benchmarks](https://lamin.ai/laminlabs/arrayloader-benchmarks) - Work with ML models & benchmarks
 
 <p style="font-weight: bolder; margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See validated datasets in context of ontologies & experimental metadata.</p>
 
