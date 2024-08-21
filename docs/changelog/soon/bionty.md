@@ -1,3 +1,4 @@
+- ✨ Allow add source to entity [PR](https://github.com/laminlabs/bionty/pull/92) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New `CellLine` version: `depmap-2024-Q2` [PR](https://github.com/laminlabs/bionty/pull/96) [@Zethson](https://github.com/Zethson)
 - :sparkles: Add chebi & chembl [PR](https://github.com/laminlabs/bionty/pull/94) [@Zethson](https://github.com/Zethson)
 - :memo: Delete comparison [PR](https://github.com/laminlabs/bionty/pull/93) [@Zethson](https://github.com/Zethson)
