@@ -1,4 +1,4 @@
-See for yourself by browsing the demo instances in the hub UI or `lamin load owner/instance` them from the hub via the CLI.
+See for yourself by browsing the demo instances in the hub UI or `lamin load owner/instance` them via the CLI.
 
 - [lamin.ai/laminlabs/lamindata](https://lamin.ai/laminlabs/lamindata) - A generic demo instance with various data types
 - [lamin.ai/laminlabs/cellxgene](https://lamin.ai/laminlabs/cellxgene) - An instance that interfaces the CELLxGENE data ([guide](cellxgene))
@@ -24,6 +24,6 @@ Rather than configuring storage & database permissions directly on AWS or GCP, L
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J8dJfH.png" width="700px">
 
-<p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Track pipelines, notebooks & UI transforms in one registry.</p>
+<p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Track pipelines, notebooks & UI transforms in one place.</p>
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/IpV8Kiq4xUbgXhzlUYT7.png" width="700px">
