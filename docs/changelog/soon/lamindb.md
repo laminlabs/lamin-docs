@@ -1,3 +1,4 @@
+- ✨ Allow add source to entity [PR](https://github.com/laminlabs/lamindb/pull/1824) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ API to create and append to tiledbsoma stores [PR](https://github.com/laminlabs/lamindb/pull/1823) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Validate that storage does not contain .lamindb [PR](https://github.com/laminlabs/lamindb-setup/pull/826) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename hub status for storage [PR](https://github.com/laminlabs/lamindb-setup/pull/825) [@Koncopd](https://github.com/Koncopd)
