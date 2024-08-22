@@ -1,3 +1,4 @@
+- ✨ Improve tiledbsoma integration [PR](https://github.com/laminlabs/lamindb/pull/1827) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Replace `.filter(...).one()` with `.get(...)` [PR](https://github.com/laminlabs/lamindb/pull/1829) [@falexwolf](https://github.com/falexwolf)
 - 📝 Simplify introduction [PR](https://github.com/laminlabs/lamindb/pull/1828) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow add source to entity [PR](https://github.com/laminlabs/lamindb/pull/1824) [@sunnyosun](https://github.com/sunnyosun)
