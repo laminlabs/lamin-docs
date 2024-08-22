@@ -1,3 +1,4 @@
+- ♻️ Remove Django from endpoints [PR](https://github.com/laminlabs/laminhub/pull/1018) [@fredericenard](https://github.com/fredericenard)
 - 💄 Show Vitessce button next to dataset instead of the config file [PR](https://github.com/laminlabs/laminhub/pull/1037) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 None as default for ARNs in EnvWithSecrets [PR](https://github.com/laminlabs/laminhub/pull/1081) [@fredericenard](https://github.com/fredericenard)
 - 👷 Enable providing a secret ARN to the rest server [PR](https://github.com/laminlabs/laminhub/pull/1080) [@fredericenard](https://github.com/fredericenard)
