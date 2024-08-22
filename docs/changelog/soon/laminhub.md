@@ -1,3 +1,4 @@
+- ⏪ Temporary reverts to enable prod deployment [PR](https://github.com/laminlabs/laminhub/pull/1086) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fetch storage in artifact._actions [PR](https://github.com/laminlabs/laminhub/pull/1083) [@sunnyosun](https://github.com/sunnyosun)
 - 🚀 Deploy on a new aws account [PR](https://github.com/laminlabs/laminhub/pull/1079) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Remove Django from endpoints [PR](https://github.com/laminlabs/laminhub/pull/1018) [@fredericenard](https://github.com/fredericenard)
