@@ -1,3 +1,4 @@
+- 🔒 More granular security groups [PR](https://github.com/laminlabs/laminhub/pull/1088) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Create utils package for Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1084) [@fredericenard](https://github.com/fredericenard)
 - Revert "⏪ Temporary reverts to enable prod deployment" [PR](https://github.com/laminlabs/laminhub/pull/1087) [@fredericenard](https://github.com/fredericenard)
 - ⏪ Temporary reverts to enable prod deployment [PR](https://github.com/laminlabs/laminhub/pull/1086) [@fredericenard](https://github.com/fredericenard)
