@@ -1,3 +1,4 @@
+- 🐛 Fix passing source to curate.add_from_validated [PR](https://github.com/laminlabs/lamindb/pull/1838) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Add finished_at to vitessce runs [PR](https://github.com/laminlabs/lamindb/pull/1834) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Simpler icons [PR](https://github.com/laminlabs/lamindb/pull/1832) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Improve tiledbsoma integration [PR](https://github.com/laminlabs/lamindb/pull/1827) [@Koncopd](https://github.com/Koncopd)
