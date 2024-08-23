@@ -1,3 +1,4 @@
+- 🐛 Fix wrong AWS region in server environment [PR](https://github.com/laminlabs/laminhub/pull/1096) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Simplify deployment logic [PR](https://github.com/laminlabs/laminhub/pull/1091) [@fredericenard](https://github.com/fredericenard)
 - :construction: Allow dispatch test deployment [PR](https://github.com/laminlabs/laminhub/pull/1093) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Remove scverse/spatial from access_aws [PR](https://github.com/laminlabs/laminhub/pull/1090) [@Koncopd](https://github.com/Koncopd)
