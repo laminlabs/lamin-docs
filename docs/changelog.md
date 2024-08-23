@@ -49,11 +49,9 @@ artifact_v2 = ln.Artifact.from_df(df_updated, key="my_datasets/my_study1.parquet
 - 🚚 Deprecate `is_new_version_of` argument in favor of `revises`
 - 🚚 Deprecate passing `version` to constructors; rather set `.version` after creating records
 
-Further updates.
+More changes.
 
 - 💄 Simpler icons [PR](https://github.com/laminlabs/lamindb/pull/1832) [@sunnyosun](https://github.com/sunnyosun)
-- ✨ Improve tiledbsoma integration [PR](https://github.com/laminlabs/lamindb/pull/1827) [@Koncopd](https://github.com/Koncopd)
-- ✨ Allow add source to entity [PR](https://github.com/laminlabs/lamindb/pull/1824) [@sunnyosun](https://github.com/sunnyosun)
 
 ## 2024-08-16 {small}`db 0.76.1`
 
