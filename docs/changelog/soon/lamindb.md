@@ -1,3 +1,4 @@
+- 🚸 Enable versioning artifacts based on `key` akin to the AWS S3 behavior [PR](https://github.com/laminlabs/lamindb/pull/1839) [@falexwolf](https://github.com/falexwolf)
 - 🎨Fix Future Pandas rename categoricals warning [PR](https://github.com/laminlabs/lamindb/pull/1840) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix passing source to curate.add_from_validated [PR](https://github.com/laminlabs/lamindb/pull/1838) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Add finished_at to vitessce runs [PR](https://github.com/laminlabs/lamindb/pull/1834) [@sunnyosun](https://github.com/sunnyosun)
