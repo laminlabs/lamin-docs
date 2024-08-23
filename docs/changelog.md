@@ -26,6 +26,35 @@
 .. role:: small
 ```
 
+## 2024-08-23 {small}`db 0.76.2`
+
+🚸 Simplify versioning. [PR](https://github.com/laminlabs/lamindb/pull/1839) [@falexwolf](https://github.com/falexwolf)
+
+:::{dropdown} Semantic version strings in `.version` are now optional as in git.
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/8407d8ee-6d8c-408d-a4f0-1925ebeae39b">
+
+:::
+
+:::{dropdown} For `Artifact` & `Transform`, you can now also create new versions by passing the `key` argument.
+
+```python
+artifact_v1 = ln.Artifact.from_df(df, key="my_datasets/my_study1.parquet").save()
+# below automatically creates a new version of artifact_v1 because the `key` matches
+artifact_v2 = ln.Artifact.from_df(df_updated, key="my_datasets/my_study1.parquet").save()
+```
+
+:::
+
+- 🚚 Deprecate `is_new_version_of` argument in favor of `revises`
+- 🚚 Deprecate passing `version` to constructors; rather set `.version` after creating records
+
+Further updates.
+
+- 💄 Simpler icons [PR](https://github.com/laminlabs/lamindb/pull/1832) [@sunnyosun](https://github.com/sunnyosun)
+- ✨ Improve tiledbsoma integration [PR](https://github.com/laminlabs/lamindb/pull/1827) [@Koncopd](https://github.com/Koncopd)
+- ✨ Allow add source to entity [PR](https://github.com/laminlabs/lamindb/pull/1824) [@sunnyosun](https://github.com/sunnyosun)
+
 ## 2024-08-16 {small}`db 0.76.1`
 
 🚸 Overhauled context tracking experience with `ln.context.track()` [Details & PR](https://github.com/laminlabs/lamindb/pull/1816) [@falexwolf](https://github.com/falexwolf) [@chaichontat](https://github.com/chaichontat)
@@ -61,7 +90,7 @@ If you don't label with a semantic version tag, you'll get an auto-generated rev
 
 More changes:
 
-- 🚸 Update `.get()` to accept expressions [PR](https://github.com/laminlabs/lamindb/pull/1815) [@falexwolf](https://github.com/falexwolf)
+- 🚸 Update `.get()` to accept expressions so that it can replace `.filter(...).one()` [PR](https://github.com/laminlabs/lamindb/pull/1815) [@falexwolf](https://github.com/falexwolf)
 - ✨ `MappedCollection` compatible with latest `scdataloader` [PR](https://github.com/laminlabs/lamindb/pull/1812) [@Koncopd](https://github.com/Koncopd) [PR](https://github.com/laminlabs/lamindb/pull/1809) [@jkobject](https://github.com/jkobject)
 
 ## 2024-08-14 {small}`db 0.76`
