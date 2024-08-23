@@ -1,3 +1,4 @@
+- ♻️ Simplify deployment logic [PR](https://github.com/laminlabs/laminhub/pull/1091) [@fredericenard](https://github.com/fredericenard)
 - :construction: Allow dispatch test deployment [PR](https://github.com/laminlabs/laminhub/pull/1093) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Remove scverse/spatial from access_aws [PR](https://github.com/laminlabs/laminhub/pull/1090) [@Koncopd](https://github.com/Koncopd)
 - 🔒 More granular security groups [PR](https://github.com/laminlabs/laminhub/pull/1088) [@fredericenard](https://github.com/fredericenard)
