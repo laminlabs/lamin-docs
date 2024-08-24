@@ -1,0 +1,1 @@
+- 📝 Re-work introduction [PR](https://github.com/laminlabs/lamindb/pull/1844) [@falexwolf](https://github.com/falexwolf)
