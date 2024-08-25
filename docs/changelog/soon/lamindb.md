@@ -1,3 +1,4 @@
+- :memo: Add reference to cxg in from_anndata [PR](https://github.com/laminlabs/lamindb/pull/1841) [@Zethson](https://github.com/Zethson)
 - 🔥 Remove `lamin register` command, legacy login `password`, and prettify docs [PR](https://github.com/laminlabs/lamindb/pull/1846) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `lamin register` and password argument of `lamin login` [PR](https://github.com/laminlabs/lamin-cli/pull/63) [@falexwolf](https://github.com/falexwolf)
 - 📝 Re-work introduction [PR](https://github.com/laminlabs/lamindb/pull/1844) [@falexwolf](https://github.com/falexwolf)
