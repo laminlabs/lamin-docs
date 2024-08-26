@@ -1,9 +1,1 @@
-- ✨ Instance overview page [PR](https://github.com/laminlabs/laminhub/pull/974) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: Save external avatars [PR](https://github.com/laminlabs/laminhub/pull/1097) [@chaichontat](https://github.com/chaichontat)
-- 🔒 More granular security groups [PR](https://github.com/laminlabs/laminhub/pull/1088) [@fredericenard](https://github.com/fredericenard)
-- ♻️ Create utils package for Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1084) [@fredericenard](https://github.com/fredericenard)
-- 💄 Show Vitessce button next to dataset instead of the config file [PR](https://github.com/laminlabs/laminhub/pull/1037) [@sunnyosun](https://github.com/sunnyosun)
-- :truck: Use Authorization in header [PR](https://github.com/laminlabs/laminhub/pull/1064) [@chaichontat](https://github.com/chaichontat)
-- 🏗️ Manage iam roles and policies with Pulumi [PR](https://github.com/laminlabs/laminhub/pull/1075) [@fredericenard](https://github.com/fredericenard)
-- :lock: Fix open redirect in Chrome [PR](https://github.com/laminlabs/laminhub/pull/1069) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix self-referential fields [PR](https://github.com/laminlabs/laminhub/pull/1054) [@fredericenard](https://github.com/fredericenard)
+
