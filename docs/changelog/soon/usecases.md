@@ -1,3 +1,4 @@
+- 🐛 Fix install of old scanpy [PR](https://github.com/laminlabs/lamin-usecases/pull/145) [@Koncopd](https://github.com/Koncopd)
 - 📝 Use `save_tiledbsoma_experiment` in scrna6 [PR](https://github.com/laminlabs/lamin-usecases/pull/144) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Simplify syntax [PR](https://github.com/laminlabs/lamin-usecases/pull/143) [@falexwolf](https://github.com/falexwolf)
 - 📝 Use tiledbsoma integration API [PR](https://github.com/laminlabs/lamin-usecases/pull/141) [@Koncopd](https://github.com/Koncopd)
