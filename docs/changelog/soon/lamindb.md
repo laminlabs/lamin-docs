@@ -1,3 +1,4 @@
+- ✅ Split unit tests into unit-core and unit-storage [PR](https://github.com/laminlabs/lamindb/pull/1847) [@Koncopd](https://github.com/Koncopd)
 - ♻️ New tiledbsoma API: `save_tiledbsoma_experiment` [PR](https://github.com/laminlabs/lamindb/pull/1842) [@Koncopd](https://github.com/Koncopd)
 - :memo: Add reference to cxg in from_anndata [PR](https://github.com/laminlabs/lamindb/pull/1841) [@Zethson](https://github.com/Zethson)
 - 🔥 Remove `lamin register` command, legacy login `password`, and prettify docs [PR](https://github.com/laminlabs/lamindb/pull/1846) [@falexwolf](https://github.com/falexwolf)
