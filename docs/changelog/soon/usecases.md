@@ -1,3 +1,4 @@
+- 📝 Use `save_tiledbsoma_experiment` in scrna6 [PR](https://github.com/laminlabs/lamin-usecases/pull/144) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Simplify syntax [PR](https://github.com/laminlabs/lamin-usecases/pull/143) [@falexwolf](https://github.com/falexwolf)
 - 📝 Use tiledbsoma integration API [PR](https://github.com/laminlabs/lamin-usecases/pull/141) [@Koncopd](https://github.com/Koncopd)
 - :sparkles: Specify 5.0.0 explicitly [PR](https://github.com/laminlabs/cellxgene-lamin/pull/84) [@Zethson](https://github.com/Zethson)
