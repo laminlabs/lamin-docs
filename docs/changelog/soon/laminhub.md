@@ -1,3 +1,4 @@
+- :recycle: Clean up collaborator logic [PR](https://github.com/laminlabs/laminhub/pull/1092) [@chaichontat](https://github.com/chaichontat)
 - ✨ Instance overview page [PR](https://github.com/laminlabs/laminhub/pull/974) [@chaichontat](https://github.com/chaichontat)
 - :lipstick: Show a `v` instead of an `r` also for untagged versions [PR](https://github.com/laminlabs/laminhub/pull/1095) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Save external avatars [PR](https://github.com/laminlabs/laminhub/pull/1097) [@chaichontat](https://github.com/chaichontat)
