@@ -1,3 +1,4 @@
+- 🎨 Move the source FK to BioRecord [PR](https://github.com/laminlabs/lamindb/pull/1853) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛Fix finish calling statement [PR](https://github.com/laminlabs/lamindb/pull/1852) [@Zethson](https://github.com/Zethson)
 - :art: Improve ln.finish() error message [PR](https://github.com/laminlabs/lamindb/pull/1850) [@Zethson](https://github.com/Zethson)
 - 🔇 Remove `AnnData` mutation warnings in `save_tiledbsoma_experiment` [PR](https://github.com/laminlabs/lamindb/pull/1849) [@Koncopd](https://github.com/Koncopd)
