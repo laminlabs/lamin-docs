@@ -1,2 +1,3 @@
+- 🐛 Fix display of revision number [PR](https://github.com/laminlabs/laminhub/pull/1113) [@falexwolf](https://github.com/falexwolf)
 - Revert "🏗️ Optionally define a root path for the api" [PR](https://github.com/laminlabs/laminhub/pull/1111) [@fredericenard](https://github.com/fredericenard)
 - 🏗️ Optionally define a root path for the api [PR](https://github.com/laminlabs/laminhub/pull/1109) [@fredericenard](https://github.com/fredericenard)
