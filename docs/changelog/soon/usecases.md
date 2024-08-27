@@ -1,3 +1,4 @@
+- ♻️ Call `save_tiledbsoma_experiment` via `ln.integrations` in scrna6 [PR](https://github.com/laminlabs/lamin-usecases/pull/146) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix install of old scanpy [PR](https://github.com/laminlabs/lamin-usecases/pull/145) [@Koncopd](https://github.com/Koncopd)
 - 📝 Use `save_tiledbsoma_experiment` in scrna6 [PR](https://github.com/laminlabs/lamin-usecases/pull/144) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Simplify syntax [PR](https://github.com/laminlabs/lamin-usecases/pull/143) [@falexwolf](https://github.com/falexwolf)
