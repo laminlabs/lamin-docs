@@ -1,3 +1,4 @@
+- :bug: Fix empty revision in transform cell [PR](https://github.com/laminlabs/laminhub/pull/1115) [@chaichontat](https://github.com/chaichontat)
 - ✨ SSO login [PR](https://github.com/laminlabs/laminhub/pull/1112) [@sunnyosun](https://github.com/sunnyosun)
 - Revert "🐛 Fix display of revision number" [PR](https://github.com/laminlabs/laminhub/pull/1114) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix display of revision number [PR](https://github.com/laminlabs/laminhub/pull/1113) [@falexwolf](https://github.com/falexwolf)
