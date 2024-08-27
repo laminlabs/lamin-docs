@@ -1,3 +1,4 @@
+- :art: Improve ln.finish() error message [PR](https://github.com/laminlabs/lamindb/pull/1850) [@Zethson](https://github.com/Zethson)
 - 🔇 Remove `AnnData` mutation warnings in `save_tiledbsoma_experiment` [PR](https://github.com/laminlabs/lamindb/pull/1849) [@Koncopd](https://github.com/Koncopd)
 - ✅ Split unit tests into unit-core and unit-storage [PR](https://github.com/laminlabs/lamindb/pull/1847) [@Koncopd](https://github.com/Koncopd)
 - ♻️ New tiledbsoma API: `save_tiledbsoma_experiment` [PR](https://github.com/laminlabs/lamindb/pull/1842) [@Koncopd](https://github.com/Koncopd)
