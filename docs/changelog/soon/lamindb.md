@@ -1,3 +1,4 @@
+- 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/827) [@Koncopd](https://github.com/Koncopd)
 - Attempt to keep issue template config file formatting [PR](https://github.com/laminlabs/lamindb/pull/1865) [@Zethson](https://github.com/Zethson)
 - 👷 Add issue templates [PR](https://github.com/laminlabs/lamindb/pull/1854) [@Zethson](https://github.com/Zethson)
 - 🚚 Deprecate `Curate` in favor of `Curator` and make `CuratorBase` the base class of `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/1864) [@sunnyosun](https://github.com/sunnyosun)
