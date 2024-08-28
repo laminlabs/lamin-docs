@@ -1,3 +1,4 @@
+- 💚 Fix broken lamindb-setup CI due to changes in laminhub_rest [PR](https://github.com/laminlabs/laminhub/pull/1121) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix id parameter in get record endpoint [PR](https://github.com/laminlabs/laminhub/pull/1119) [@fredericenard](https://github.com/fredericenard)
 - ⚡ Filter stats [PR](https://github.com/laminlabs/laminhub/pull/1101) [@fredericenard](https://github.com/fredericenard)
 - :bulb: Use visible artifact counts in count-card [PR](https://github.com/laminlabs/laminhub/pull/1118) [@chaichontat](https://github.com/chaichontat)
