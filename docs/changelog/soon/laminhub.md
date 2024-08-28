@@ -1,3 +1,4 @@
+- :recycle: Remove redundant DataTablePagination component rendering [PR](https://github.com/laminlabs/laminhub/pull/1126) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix button visibility logic based on query data length [PR](https://github.com/laminlabs/laminhub/pull/1125) [@chaichontat](https://github.com/chaichontat)
 - :lock: Add security headers to layout.server.ts for enhanced protection [PR](https://github.com/laminlabs/laminhub/pull/1123) [@chaichontat](https://github.com/chaichontat)
 - 💚 Fix broken lamindb-setup CI due to changes in laminhub_rest [PR](https://github.com/laminlabs/laminhub/pull/1121) [@Koncopd](https://github.com/Koncopd)
