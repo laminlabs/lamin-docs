@@ -1,3 +1,4 @@
+- 📝 Improve the curate-df guide [PR](https://github.com/laminlabs/lamindb/pull/1859) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Move the source FK to BioRecord [PR](https://github.com/laminlabs/lamindb/pull/1853) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛Fix finish calling statement [PR](https://github.com/laminlabs/lamindb/pull/1852) [@Zethson](https://github.com/Zethson)
 - :art: Improve ln.finish() error message [PR](https://github.com/laminlabs/lamindb/pull/1850) [@Zethson](https://github.com/Zethson)
