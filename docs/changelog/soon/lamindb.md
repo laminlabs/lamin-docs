@@ -1,3 +1,4 @@
+- 👷 Add issue templates [PR](https://github.com/laminlabs/lamindb/pull/1854) [@Zethson](https://github.com/Zethson)
 - 🚚 Deprecate `Curate` in favor of `Curator` and make `CuratorBase` the base class of `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/1864) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve the curate-df guide [PR](https://github.com/laminlabs/lamindb/pull/1859) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Move the source FK to BioRecord [PR](https://github.com/laminlabs/lamindb/pull/1853) [@sunnyosun](https://github.com/sunnyosun)
