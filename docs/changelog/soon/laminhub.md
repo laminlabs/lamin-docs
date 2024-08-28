@@ -1,3 +1,4 @@
+- :bulb: Use visible artifact counts in count-card [PR](https://github.com/laminlabs/laminhub/pull/1118) [@chaichontat](https://github.com/chaichontat)
 - :green_heart: Resolve all UI lints [PR](https://github.com/laminlabs/laminhub/pull/1117) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix empty revision in transform cell [PR](https://github.com/laminlabs/laminhub/pull/1115) [@chaichontat](https://github.com/chaichontat)
 - ✨ SSO login [PR](https://github.com/laminlabs/laminhub/pull/1112) [@sunnyosun](https://github.com/sunnyosun)
