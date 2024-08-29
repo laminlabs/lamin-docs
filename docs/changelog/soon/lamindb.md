@@ -1,3 +1,4 @@
+- ♻️ Use ln.Curator instead of ln.Curate [PR](https://github.com/laminlabs/lamindb/pull/1877) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade s3fs, gcsfs to 2024.6.1 [PR](https://github.com/laminlabs/lamindb-setup/pull/828) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Increase max chars of version field and fix UserDoesNotExist [PR](https://github.com/laminlabs/lamindb/pull/1872) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Check for csc_matrix in MappedCollection and raise error [PR](https://github.com/laminlabs/lamindb/pull/1874) [@Koncopd](https://github.com/Koncopd)
