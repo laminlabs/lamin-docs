@@ -1,3 +1,4 @@
+- ♻️ Increase max chars of version field and fix UserDoesNotExist [PR](https://github.com/laminlabs/lamindb/pull/1872) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Check for csc_matrix in MappedCollection and raise error [PR](https://github.com/laminlabs/lamindb/pull/1874) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Make `.get()` aware of trash again [PR](https://github.com/laminlabs/lamindb/pull/1871) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Change signature of save_tiledbsoma_experiment [PR](https://github.com/laminlabs/lamindb/pull/1870) [@Koncopd](https://github.com/Koncopd)
