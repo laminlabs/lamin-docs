@@ -1,3 +1,4 @@
+- 🐛 Fix curate exclude [PR](https://github.com/laminlabs/lamindb/pull/1878) [@sunnyosun](https://github.com/sunnyosun)
 - :bug: Fix validating no passed categoricals [PR](https://github.com/laminlabs/lamindb/pull/1869) [@Zethson](https://github.com/Zethson)
 - 🐛 Use local scope for sign out [PR](https://github.com/laminlabs/lamindb-setup/pull/829) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/1876) [@Koncopd](https://github.com/Koncopd)
