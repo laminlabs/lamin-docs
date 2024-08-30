@@ -1,3 +1,4 @@
+- ⬆️ Add a lower bound for gotrue [PR](https://github.com/laminlabs/lamindb-setup/pull/830) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix curate [PR](https://github.com/laminlabs/lamindb/pull/1879) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix curate exclude [PR](https://github.com/laminlabs/lamindb/pull/1878) [@sunnyosun](https://github.com/sunnyosun)
 - :bug: Fix validating no passed categoricals [PR](https://github.com/laminlabs/lamindb/pull/1869) [@Zethson](https://github.com/Zethson)
