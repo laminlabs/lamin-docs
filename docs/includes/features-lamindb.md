@@ -26,7 +26,7 @@
 **Validate, standardize & annotate.**
 
 - Validate & standardize metadata: {class}`~lamindb.core.CanValidate.validate`, {class}`~lamindb.core.CanValidate.standardize`.
-- High-level curation flow including annotation: {class}`~lamindb.Curate`
+- High-level curation flow including annotation: {class}`~lamindb.Curator`
 - Inspect validation failures: {class}`~lamindb.core.CanValidate.inspect`
 
 **Organize and share data across a mesh of LaminDB instances.**
