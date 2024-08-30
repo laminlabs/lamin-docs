@@ -1,1 +1,2 @@
+- 💚 Fix hub tests [PR](https://github.com/laminlabs/lamindb/pull/1881) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade anndata to 0.10.9 [PR](https://github.com/laminlabs/lamindb/pull/1875) [@Koncopd](https://github.com/Koncopd)
