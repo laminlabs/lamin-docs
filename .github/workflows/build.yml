@@ -48,10 +48,11 @@ jobs:
       # - run: nox -s lint
       - run: nox -s pull_artifacts
       - run: nox -s docs
+      - run: rm -r ./_build/html/.doctrees # do not want to deploy with cloudflare
       - uses: cloudflare/wrangler-action@v3
         id: cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: 472bdad691b4483dea759eadb37110bd
-          command: pages deploy "_build/html" --project-name=lamin-docs --exclude="_build/html/.doctrees"
+          command: pages deploy "_build/html" --project-name=lamin-docs
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
