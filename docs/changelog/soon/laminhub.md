@@ -1,3 +1,4 @@
+- :sparkles: Show only is_latest [PR](https://github.com/laminlabs/laminhub/pull/1131) [@chaichontat](https://github.com/chaichontat)
 - 🧑‍💻 Default value for aws region [PR](https://github.com/laminlabs/laminhub/pull/1127) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Upgrade lamindb to 0.76.3 [PR](https://github.com/laminlabs/laminhub/pull/1133) [@falexwolf](https://github.com/falexwolf)
 - 🚀 Pfizer deployment [PR](https://github.com/laminlabs/laminhub/pull/1099) [@fredericenard](https://github.com/fredericenard)
