@@ -1,3 +1,4 @@
+- 🚀 Pfizer deployment [PR](https://github.com/laminlabs/laminhub/pull/1099) [@fredericenard](https://github.com/fredericenard)
 - :bug: Fix run timestamp display to use 'started_at' instead of 'created_at' in tooltip [PR](https://github.com/laminlabs/laminhub/pull/1137) [@chaichontat](https://github.com/chaichontat)
 - :zap: Allow transform URL without run uid [PR](https://github.com/laminlabs/laminhub/pull/1136) [@chaichontat](https://github.com/chaichontat)
 - :lock: Conditional CSP and HSTS headers for development and productio… [PR](https://github.com/laminlabs/laminhub/pull/1129) [@chaichontat](https://github.com/chaichontat)
