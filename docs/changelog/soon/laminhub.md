@@ -1,3 +1,4 @@
+- :zap: Allow transform URL without run uid [PR](https://github.com/laminlabs/laminhub/pull/1136) [@chaichontat](https://github.com/chaichontat)
 - :lock: Conditional CSP and HSTS headers for development and productio… [PR](https://github.com/laminlabs/laminhub/pull/1129) [@chaichontat](https://github.com/chaichontat)
 - :recycle: Remove redundant DataTablePagination component rendering [PR](https://github.com/laminlabs/laminhub/pull/1126) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix button visibility logic based on query data length [PR](https://github.com/laminlabs/laminhub/pull/1125) [@chaichontat](https://github.com/chaichontat)
