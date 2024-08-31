@@ -48,6 +48,7 @@ jobs:
       # - run: nox -s lint
       - run: nox -s pull_artifacts
       - run: nox -s docs
+      - run: rm -r ./_build/html/.doctrees # do not want to deploy with cloudflare
       - uses: cloudflare/wrangler-action@v3
         id: cloudflare
         with:
