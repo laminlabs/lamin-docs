@@ -1,3 +1,4 @@
+- 📝 Link `laminr` and fix docs [PR](https://github.com/laminlabs/lamindb/pull/1883) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document inherited class members [PR](https://github.com/laminlabs/lamindb/pull/1882) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix hub tests [PR](https://github.com/laminlabs/lamindb/pull/1881) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade anndata to 0.10.9 [PR](https://github.com/laminlabs/lamindb/pull/1875) [@Koncopd](https://github.com/Koncopd)
