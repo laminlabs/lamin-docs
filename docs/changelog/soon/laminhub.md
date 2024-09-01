@@ -1,3 +1,4 @@
+- 🔥 Remove settings.py [PR](https://github.com/laminlabs/laminhub/pull/1140) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Enable empty request body [PR](https://github.com/laminlabs/laminhub/pull/1139) [@fredericenard](https://github.com/fredericenard)
 - ✨ Optionally return foreign keys [PR](https://github.com/laminlabs/laminhub/pull/1134) [@fredericenard](https://github.com/fredericenard)
 - ✨ Enable to create api keys [PR](https://github.com/laminlabs/laminhub/pull/1132) [@fredericenard](https://github.com/fredericenard)
