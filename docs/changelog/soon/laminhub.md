@@ -1,3 +1,4 @@
+- 🐛 Remove secret jwt from supabase env [PR](https://github.com/laminlabs/laminhub/pull/1142) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove connector.py [PR](https://github.com/laminlabs/laminhub/pull/1141) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove settings.py [PR](https://github.com/laminlabs/laminhub/pull/1140) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Enable empty request body [PR](https://github.com/laminlabs/laminhub/pull/1139) [@fredericenard](https://github.com/fredericenard)
