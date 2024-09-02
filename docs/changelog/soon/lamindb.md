@@ -1,3 +1,4 @@
+- 🐛 Fix categoricals and sources being checked [PR](https://github.com/laminlabs/lamindb/pull/1880) [@Zethson](https://github.com/Zethson)
 - 🚑️ Sort sources by id [PR](https://github.com/laminlabs/lamindb-setup/pull/831) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Link `laminr` and fix docs [PR](https://github.com/laminlabs/lamindb/pull/1883) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document inherited class members [PR](https://github.com/laminlabs/lamindb/pull/1882) [@falexwolf](https://github.com/falexwolf)
