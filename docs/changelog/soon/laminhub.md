@@ -1,3 +1,4 @@
+- :zap: Use non-empty table endpoint instead of counts [PR](https://github.com/laminlabs/laminhub/pull/1157) [@chaichontat](https://github.com/chaichontat)
 - :zap: Optimize instance statistics queries and add endpoint to list non-empty tables [PR](https://github.com/laminlabs/laminhub/pull/1155) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix missing Django types [PR](https://github.com/laminlabs/laminhub/pull/1154) [@fredericenard](https://github.com/fredericenard)
 - :bug: Fix detailed collection artifact table [PR](https://github.com/laminlabs/laminhub/pull/1152) [@chaichontat](https://github.com/chaichontat)
