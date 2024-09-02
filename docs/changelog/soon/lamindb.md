@@ -1,3 +1,4 @@
+- 🐛 Fix key check in curate [PR](https://github.com/laminlabs/lamindb/pull/1887) [@sunnyosun](https://github.com/sunnyosun)
 - ⚡️ Improvements to `save_tiledbsoma_experiment` [PR](https://github.com/laminlabs/lamindb/pull/1885) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix categoricals and sources being checked [PR](https://github.com/laminlabs/lamindb/pull/1880) [@Zethson](https://github.com/Zethson)
 - 🚑️ Sort sources by id [PR](https://github.com/laminlabs/lamindb-setup/pull/831) [@sunnyosun](https://github.com/sunnyosun)
