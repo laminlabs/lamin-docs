@@ -1,3 +1,4 @@
+- Simplify code [PR](https://github.com/laminlabs/cellxgene-lamin/pull/90) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix source validation [PR](https://github.com/laminlabs/cellxgene-lamin/pull/88) [@Zethson](https://github.com/Zethson)
 - :bug: Fix analysis-flow registration [PR](https://github.com/laminlabs/lamin-usecases/pull/148) [@Zethson](https://github.com/Zethson)
 - :bug: Fix CI [PR](https://github.com/laminlabs/cellxgene-lamin/pull/87) [@Zethson](https://github.com/Zethson)
