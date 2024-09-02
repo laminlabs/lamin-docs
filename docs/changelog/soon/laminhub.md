@@ -1,3 +1,4 @@
+- 🐛 Fix missing Django types [PR](https://github.com/laminlabs/laminhub/pull/1154) [@fredericenard](https://github.com/fredericenard)
 - :bug: Fix detailed collection artifact table [PR](https://github.com/laminlabs/laminhub/pull/1152) [@chaichontat](https://github.com/chaichontat)
 - 💄 Moved SSO login to a dedicated page [PR](https://github.com/laminlabs/laminhub/pull/1153) [@chaichontat](https://github.com/chaichontat)
 - :arrow_up: Update dependencies in package.json and pnpm-lock.yaml to latest versions. [PR](https://github.com/laminlabs/laminhub/pull/1151) [@chaichontat](https://github.com/chaichontat)
