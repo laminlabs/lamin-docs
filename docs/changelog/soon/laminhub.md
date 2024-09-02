@@ -1,3 +1,4 @@
+- 💄 Moved SSO login to a dedicated page [PR](https://github.com/laminlabs/laminhub/pull/1153) [@chaichontat](https://github.com/chaichontat)
 - :arrow_up: Update dependencies in package.json and pnpm-lock.yaml to latest versions. [PR](https://github.com/laminlabs/laminhub/pull/1151) [@chaichontat](https://github.com/chaichontat)
 - :construction_worker: Separate test and deploy Pulumi workflows [PR](https://github.com/laminlabs/laminhub/pull/1148) [@chaichontat](https://github.com/chaichontat)
 - ⬆️ Update lamindb submodule [PR](https://github.com/laminlabs/laminhub/pull/1146) [@sunnyosun](https://github.com/sunnyosun)
