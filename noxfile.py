@@ -223,6 +223,7 @@ def docs(session):
         session,
         "pip install lamindb[bionty]@git+https://github.com/laminlabs/lamindb@release",
     )
+    run(session, "lamin set private-django-api true")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
     run(session, "pip install ./lndocs")
     process = subprocess.run(
