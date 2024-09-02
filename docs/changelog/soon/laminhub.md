@@ -1,3 +1,4 @@
+- :construction_worker: Separate test and deploy Pulumi workflows [PR](https://github.com/laminlabs/laminhub/pull/1148) [@chaichontat](https://github.com/chaichontat)
 - ⬆️ Update lamindb submodule [PR](https://github.com/laminlabs/laminhub/pull/1146) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Remove secret jwt from supabase env [PR](https://github.com/laminlabs/laminhub/pull/1142) [@fredericenard](https://github.com/fredericenard)
 - 🔥 Remove connector.py [PR](https://github.com/laminlabs/laminhub/pull/1141) [@fredericenard](https://github.com/fredericenard)
