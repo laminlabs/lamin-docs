@@ -1,3 +1,4 @@
+- ✅ Test anonymous init with bionty [PR](https://github.com/laminlabs/lamindb-setup/pull/835) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not call hub if the owner is anonymous on connect [PR](https://github.com/laminlabs/lamindb-setup/pull/834) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/1888) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Allow all Django fields in schema check [PR](https://github.com/laminlabs/lamindb-setup/pull/832) [@sunnyosun](https://github.com/sunnyosun)
