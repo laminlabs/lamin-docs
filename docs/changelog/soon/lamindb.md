@@ -1,3 +1,4 @@
+- ✅ Disentangle 07-keep-artifacts-local for prod and staging [PR](https://github.com/laminlabs/lamindb-setup/pull/837) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test close instance before init [PR](https://github.com/laminlabs/lamindb-setup/pull/836) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test anonymous init with bionty [PR](https://github.com/laminlabs/lamindb-setup/pull/835) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not call hub if the owner is anonymous on connect [PR](https://github.com/laminlabs/lamindb-setup/pull/834) [@Koncopd](https://github.com/Koncopd)
