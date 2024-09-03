@@ -1,1 +1,2 @@
+- 🎨 Do not track source dataframe as run input [PR](https://github.com/laminlabs/bionty/pull/103) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix docs for use with inheritance, formatting errors, and refactor [PR](https://github.com/laminlabs/bionty/pull/102) [@falexwolf](https://github.com/falexwolf)
