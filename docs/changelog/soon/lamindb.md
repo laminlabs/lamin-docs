@@ -1,3 +1,4 @@
+- 🚸 Make source code searchable [PR](https://github.com/laminlabs/lamindb/pull/1855) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Store source code in the database, not on S3 [PR](https://github.com/laminlabs/lamin-cli/pull/64) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove password arg from API [PR](https://github.com/laminlabs/lamindb-setup/pull/839) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Do not show traceback for basic login errors [PR](https://github.com/laminlabs/lamindb-setup/pull/838) [@falexwolf](https://github.com/falexwolf)
