@@ -1,3 +1,4 @@
+- 🧑‍💻 Enable running prod environment without secrets [PR](https://github.com/laminlabs/laminhub/pull/1161) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Rename edge function [PR](https://github.com/laminlabs/laminhub/pull/1162) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Polish API key edge functions [PR](https://github.com/laminlabs/laminhub/pull/1145) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Revamp settings and add change handle [PR](https://github.com/laminlabs/laminhub/pull/1159) [@chaichontat](https://github.com/chaichontat)
