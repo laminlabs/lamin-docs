@@ -1,3 +1,4 @@
+- ✨ Allow login with new API key [PR](https://github.com/laminlabs/lamindb-setup/pull/840) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix list concat [PR](https://github.com/laminlabs/lamindb/pull/1893) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix list concat [PR](https://github.com/laminlabs/lamindb/pull/1892) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor passing an internal storage path [PR](https://github.com/laminlabs/lamindb/pull/1891) [@falexwolf](https://github.com/falexwolf)
