@@ -1,3 +1,4 @@
+- ♻️ Refactor passing an internal storage path [PR](https://github.com/laminlabs/lamindb/pull/1891) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support lists as values in validation [PR](https://github.com/laminlabs/lamindb/pull/1890) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Make source code searchable [PR](https://github.com/laminlabs/lamindb/pull/1855) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Store source code in the database, not on S3 [PR](https://github.com/laminlabs/lamin-cli/pull/64) [@falexwolf](https://github.com/falexwolf)
