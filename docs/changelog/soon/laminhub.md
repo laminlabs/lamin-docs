@@ -1,3 +1,4 @@
+- 🐛 Fix limit_to_many [PR](https://github.com/laminlabs/laminhub/pull/1174) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Add debounce and state handling to settings modals [PR](https://github.com/laminlabs/laminhub/pull/1172) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix duplicated queries [PR](https://github.com/laminlabs/laminhub/pull/1170) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix limit_to_many [PR](https://github.com/laminlabs/laminhub/pull/1171) [@fredericenard](https://github.com/fredericenard)
