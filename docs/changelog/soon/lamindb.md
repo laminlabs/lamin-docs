@@ -1,3 +1,4 @@
+- 🐛 Fix list concat [PR](https://github.com/laminlabs/lamindb/pull/1892) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor passing an internal storage path [PR](https://github.com/laminlabs/lamindb/pull/1891) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support lists as values in validation [PR](https://github.com/laminlabs/lamindb/pull/1890) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Make source code searchable [PR](https://github.com/laminlabs/lamindb/pull/1855) [@falexwolf](https://github.com/falexwolf)
