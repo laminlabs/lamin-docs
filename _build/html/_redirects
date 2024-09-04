@@ -6,5 +6,5 @@
 /api /lamindb 301
 /meta /records 301
 /data /arrays 301
-/lamindb.core.registry /lamindb.core.record 301
+/scrna6 /scrna-tiledbsoma 301
 / /introduction 301
