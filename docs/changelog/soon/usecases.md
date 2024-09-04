@@ -1,3 +1,4 @@
+- 💄 Polish `scrna-tiledbsoma` [PR](https://github.com/laminlabs/lamin-usecases/pull/150) [@falexwolf](https://github.com/falexwolf)
 - 📝 Append `AnnData` to `tilledbsoma` store in scrna6 [PR](https://github.com/laminlabs/lamin-usecases/pull/149) [@Koncopd](https://github.com/Koncopd)
 - Simplify code [PR](https://github.com/laminlabs/cellxgene-lamin/pull/90) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix source validation [PR](https://github.com/laminlabs/cellxgene-lamin/pull/88) [@Zethson](https://github.com/Zethson)
