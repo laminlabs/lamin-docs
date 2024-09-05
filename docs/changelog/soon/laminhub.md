@@ -1,3 +1,4 @@
+- 🐛 Fix and test self referenced field retrieval [PR](https://github.com/laminlabs/laminhub/pull/1195) [@fredericenard](https://github.com/fredericenard)
 - :lipstick: Re-order footer [PR](https://github.com/laminlabs/laminhub/pull/1191) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add beta API key support in the UI [PR](https://github.com/laminlabs/laminhub/pull/1187) [@chaichontat](https://github.com/chaichontat)
 - :art: Prettify front page [PR](https://github.com/laminlabs/laminhub/pull/1186) [@chaichontat](https://github.com/chaichontat)
