@@ -1,3 +1,4 @@
+- ✨ Support `refSpecUrl` in vitessce.json [PR](https://github.com/laminlabs/laminhub/pull/1198) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix and test self referenced field retrieval [PR](https://github.com/laminlabs/laminhub/pull/1195) [@fredericenard](https://github.com/fredericenard)
 - :lipstick: Re-order footer [PR](https://github.com/laminlabs/laminhub/pull/1191) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add beta API key support in the UI [PR](https://github.com/laminlabs/laminhub/pull/1187) [@chaichontat](https://github.com/chaichontat)
