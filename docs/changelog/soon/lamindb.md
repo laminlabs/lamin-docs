@@ -1,3 +1,4 @@
+- 🐛 noxfile: fix "install" session [PR](https://github.com/laminlabs/lamindb/pull/1898) [@ap--](https://github.com/ap--)
 - ♻️ Give `save_vitessce_config` a deterministic uid [PR](https://github.com/laminlabs/lamindb/pull/1897) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Update github actions versions [PR](https://github.com/laminlabs/lamindb-setup/pull/845) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test user input for CLI & improve `Context` docs [PR](https://github.com/laminlabs/lamindb/pull/1895) [@falexwolf](https://github.com/falexwolf)
