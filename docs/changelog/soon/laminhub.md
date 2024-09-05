@@ -1,3 +1,4 @@
+- ✨ Add beta API key support in the UI [PR](https://github.com/laminlabs/laminhub/pull/1187) [@chaichontat](https://github.com/chaichontat)
 - :art: Prettify front page [PR](https://github.com/laminlabs/laminhub/pull/1186) [@chaichontat](https://github.com/chaichontat)
 - :bug: Handle Python versioning [PR](https://github.com/laminlabs/laminhub/pull/1185) [@chaichontat](https://github.com/chaichontat)
 - :bug: Show only is_latest in lamindb>=0.76 [PR](https://github.com/laminlabs/laminhub/pull/1184) [@chaichontat](https://github.com/chaichontat)
