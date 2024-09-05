@@ -1,2 +1,3 @@
+- ✅ More monkey patching [PR](https://github.com/laminlabs/lamin-cli/pull/67) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add create_api_key function to generate new API key [PR](https://github.com/laminlabs/lamindb-setup/pull/842) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Monkey patch user input [PR](https://github.com/laminlabs/lamin-cli/pull/66) [@falexwolf](https://github.com/falexwolf)
