@@ -1,0 +1,1 @@
+- 💚 Update github actions [PR](https://github.com/laminlabs/lamin-usecases/pull/151) [@Koncopd](https://github.com/Koncopd)
