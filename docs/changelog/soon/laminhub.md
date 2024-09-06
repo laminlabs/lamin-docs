@@ -1,3 +1,4 @@
+- :sparkles: Show avatar for runs and dashboard [PR](https://github.com/laminlabs/laminhub/pull/1215) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Implement proper version-based feature gating [PR](https://github.com/laminlabs/laminhub/pull/1213) [@chaichontat](https://github.com/chaichontat)
 - :art: Add artifact size and count badges to dashboard [PR](https://github.com/laminlabs/laminhub/pull/1205) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Add feature set to dashboard [PR](https://github.com/laminlabs/laminhub/pull/1204) [@chaichontat](https://github.com/chaichontat)
