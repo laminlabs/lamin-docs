@@ -1,3 +1,4 @@
+- ✨ Add `lamin_setup.on_import` entry point [PR](https://github.com/laminlabs/lamindb-setup/pull/846) [@ap--](https://github.com/ap--)
 - ✨ Allow login with Beta API key via CLI [PR](https://github.com/laminlabs/lamindb/pull/1896) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow login with new API key [PR](https://github.com/laminlabs/lamin-cli/pull/65) [@Koncopd](https://github.com/Koncopd)
 - 🐛 noxfile: fix "install" session [PR](https://github.com/laminlabs/lamindb/pull/1898) [@ap--](https://github.com/ap--)
