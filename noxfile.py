@@ -227,7 +227,6 @@ def docs(session):
     run(session, "lamin set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
-    run(session, "pip install ./lndocs")
     process = subprocess.run(
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
