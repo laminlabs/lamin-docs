@@ -172,6 +172,7 @@ def pull_artifacts(session):
     # mlops
     pull_from_s3_and_unpack("lamin-mlops.zip")
     Path("lamin-mlops/wandb.ipynb").rename("docs/wandb.ipynb")
+    Path("lamin-mlops/mnist.ipynb").rename("docs/mnist.ipynb")
 
     # cellxgene-lamin
     pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
