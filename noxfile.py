@@ -6,9 +6,8 @@ from typing import Dict
 
 import nox
 from dirsync import sync
+from laminci import run_notebooks
 from laminci.nox import run, run_pre_commit
-
-nox.options.default_venv_backend = "none"
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") != "push"
 
@@ -141,6 +140,7 @@ def pull_artifacts(session):
     Path("lamindb_docs/includes/features-laminhub.md").unlink()
     Path("lamindb_docs/changelog.md").unlink()
     Path("lamindb_docs/rest.md").unlink()
+    Path("lamindb_docs/introduction.ipynb").unlink()
     for path in Path("lamindb_docs").glob("*"):
         if (
             path.name == "index.md"
@@ -215,18 +215,17 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
-    session.run(
-        *"pip install --no-deps git+https://github.com/laminlabs/lnschema-core".split()  # noqa
-    )
+    run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")
     # run(session, "pip install git+https://github.com/laminlabs/bionty")
     run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
     run(
         session,
-        "pip install lamindb[bionty]@git+https://github.com/laminlabs/lamindb@release",
+        "pip install"
+        " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
     )
     run(session, "lamin set private-django-api true")
+    run_notebooks("docs/introduction.ipynb")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
-    run(session, "pip install ./lndocs")
     process = subprocess.run(
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
