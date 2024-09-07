@@ -1,3 +1,4 @@
+- 📝 Move introduction to lamin-docs [PR](https://github.com/laminlabs/lamindb/pull/1902) [@falexwolf](https://github.com/falexwolf)
 - ✨ `lamin get` via `key` or `uid` [PR](https://github.com/laminlabs/lamindb/pull/1901) [@falexwolf](https://github.com/falexwolf)
 - ✨ Get entity by key or uid [PR](https://github.com/laminlabs/lamin-cli/pull/69) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix query for latest version in manual transform constructor [PR](https://github.com/laminlabs/lamindb/pull/1900) [@falexwolf](https://github.com/falexwolf)
