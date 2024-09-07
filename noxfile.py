@@ -222,7 +222,8 @@ def docs(session):
     run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
     run(
         session,
-        "pip install lamindb[bionty]@git+https://github.com/laminlabs/lamindb@release",
+        "pip install"
+        " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
     )
     run(session, "lamin set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
