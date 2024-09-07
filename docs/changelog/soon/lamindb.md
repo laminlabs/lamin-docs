@@ -1,0 +1,1 @@
+- 🐛 Fix query for latest version in manual transform constructor [PR](https://github.com/laminlabs/lamindb/pull/1900) [@falexwolf](https://github.com/falexwolf)
