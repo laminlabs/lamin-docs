@@ -1,3 +1,4 @@
+- ♻️ Replace inheriting from `HasFeatures` & `HasParams` with composition [PR](https://github.com/laminlabs/lamindb/pull/1904) [@falexwolf](https://github.com/falexwolf)
 - 👷 Speed up tests [PR](https://github.com/laminlabs/lamindb/pull/1903) [@falexwolf](https://github.com/falexwolf)
 - 📝 Move introduction to lamin-docs [PR](https://github.com/laminlabs/lamindb/pull/1902) [@falexwolf](https://github.com/falexwolf)
 - ✨ `lamin get` via `key` or `uid` [PR](https://github.com/laminlabs/lamindb/pull/1901) [@falexwolf](https://github.com/falexwolf)
