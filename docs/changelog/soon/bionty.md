@@ -1,1 +1,2 @@
+- 🎨 Remove reverse relationship from Source to biorecord [PR](https://github.com/laminlabs/bionty/pull/105) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Unlink backward relationship with `Run` & `User` [PR](https://github.com/laminlabs/bionty/pull/104) [@falexwolf](https://github.com/falexwolf)
