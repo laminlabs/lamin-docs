@@ -1,0 +1,1 @@
+- 🐛 Fix parents update [PR](https://github.com/laminlabs/lamindb/pull/1917) [@sunnyosun](https://github.com/sunnyosun)
