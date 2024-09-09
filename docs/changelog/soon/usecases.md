@@ -1,2 +1,3 @@
+- 📝 Link access pages [PR](https://github.com/laminlabs/lamin-usecases/pull/152) [@Zethson](https://github.com/Zethson)
 - 🏗️ Simplify repo and prettify notebooks [PR](https://github.com/laminlabs/lamin-mlops/pull/19) [@falexwolf](https://github.com/falexwolf)
 - 💚 Update github actions [PR](https://github.com/laminlabs/lamin-usecases/pull/151) [@Koncopd](https://github.com/Koncopd)
