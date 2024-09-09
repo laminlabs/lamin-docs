@@ -1,0 +1,1 @@
+- 🐛 Fix parents update [PR](https://github.com/laminlabs/bionty/pull/107) [@sunnyosun](https://github.com/sunnyosun)
