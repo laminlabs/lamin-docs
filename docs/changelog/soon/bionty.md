@@ -1,0 +1,1 @@
+- 🚚 Unlink backward relationship with `Run` & `User` [PR](https://github.com/laminlabs/bionty/pull/104) [@falexwolf](https://github.com/falexwolf)
