@@ -1,3 +1,4 @@
+- 🐛 Fix `collection.describe()` [PR](https://github.com/laminlabs/lamindb/pull/1912) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/1911) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix all registry docs [PR](https://github.com/laminlabs/lamindb/pull/1910) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade *-artifact actions [PR](https://github.com/laminlabs/lamindb/pull/1909) [@Koncopd](https://github.com/Koncopd)
