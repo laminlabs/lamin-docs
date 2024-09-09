@@ -1,3 +1,4 @@
+- ✏️ Fix copy featureset [PR](https://github.com/laminlabs/laminhub/pull/1235) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Generate instance settings with an edge function [PR](https://github.com/laminlabs/laminhub/pull/1209) [@fredericenard](https://github.com/fredericenard)
 - 🍱 Update footer to include trademark [PR](https://github.com/laminlabs/laminhub/pull/1234) [@sunnyosun](https://github.com/sunnyosun)
 - :lock: Add CORS handling for API key creation [PR](https://github.com/laminlabs/laminhub/pull/1230) [@chaichontat](https://github.com/chaichontat)
