@@ -1,3 +1,4 @@
+- Default to non-beta API key [PR](https://github.com/laminlabs/laminhub/pull/1237) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Hide ID column [PR](https://github.com/laminlabs/laminhub/pull/1236) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix copy featureset [PR](https://github.com/laminlabs/laminhub/pull/1235) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Generate instance settings with an edge function [PR](https://github.com/laminlabs/laminhub/pull/1209) [@fredericenard](https://github.com/fredericenard)
