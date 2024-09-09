@@ -1,3 +1,4 @@
+- :lock: Add CORS handling for API key creation [PR](https://github.com/laminlabs/laminhub/pull/1230) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add imprint page [PR](https://github.com/laminlabs/laminhub/pull/1229) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Reset api key table and fix encoding [PR](https://github.com/laminlabs/laminhub/pull/1227) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Show avatar for runs and dashboard [PR](https://github.com/laminlabs/laminhub/pull/1215) [@chaichontat](https://github.com/chaichontat)
