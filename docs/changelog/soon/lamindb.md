@@ -1,3 +1,4 @@
+- ⬆️ Upgrade *-artifact actions [PR](https://github.com/laminlabs/lamindb-setup/pull/849) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Better logging during transfer, describe, track() and raise an error if transferring outdated artifact [PR](https://github.com/laminlabs/lamindb/pull/1908) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove deprecated `artifact.backed()` [PR](https://github.com/laminlabs/lamindb/pull/1907) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Replace relation of `Collection` to `FeatureSet` with indirect relation through `Artifact` [PR](https://github.com/laminlabs/lamindb/pull/1905) [@falexwolf](https://github.com/falexwolf)
