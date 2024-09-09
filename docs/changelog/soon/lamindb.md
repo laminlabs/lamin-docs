@@ -1,3 +1,4 @@
+- ✨ Load instance settings with edge function [PR](https://github.com/laminlabs/lamindb-setup/pull/848) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable negations in `filter()`, improve `registries` guide [PR](https://github.com/laminlabs/lamindb/pull/1913) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `collection.describe()` [PR](https://github.com/laminlabs/lamindb/pull/1912) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/1911) [@sunnyosun](https://github.com/sunnyosun)
