@@ -1,3 +1,4 @@
+- 🐛 Reload transform upon passing same uid [PR](https://github.com/laminlabs/lamindb/pull/1915) [@falexwolf](https://github.com/falexwolf)
 - ✨ Load instance settings with edge function [PR](https://github.com/laminlabs/lamindb-setup/pull/848) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable negations in `filter()`, improve `registries` guide [PR](https://github.com/laminlabs/lamindb/pull/1913) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `collection.describe()` [PR](https://github.com/laminlabs/lamindb/pull/1912) [@falexwolf](https://github.com/falexwolf)
