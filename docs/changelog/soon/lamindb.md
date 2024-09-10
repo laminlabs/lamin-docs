@@ -1,1 +1,2 @@
+- ✅ Test connect_instance_new for anonymous [PR](https://github.com/laminlabs/lamindb-setup/pull/850) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix parents update [PR](https://github.com/laminlabs/lamindb/pull/1917) [@sunnyosun](https://github.com/sunnyosun)
