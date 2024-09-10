@@ -1,3 +1,4 @@
+- 🍱 Update landing page screenshots [PR](https://github.com/laminlabs/laminhub/pull/1240) [@sunnyosun](https://github.com/sunnyosun)
 - Default to non-beta API key [PR](https://github.com/laminlabs/laminhub/pull/1237) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Hide ID column [PR](https://github.com/laminlabs/laminhub/pull/1236) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix copy featureset [PR](https://github.com/laminlabs/laminhub/pull/1235) [@sunnyosun](https://github.com/sunnyosun)
