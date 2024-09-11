@@ -1,3 +1,4 @@
+- 💄 Order transforms by updated_at [PR](https://github.com/laminlabs/laminhub/pull/1244) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix get-instance-settings for anonymous and non-collaborators of public instances [PR](https://github.com/laminlabs/laminhub/pull/1241) [@Koncopd](https://github.com/Koncopd)
 - 💄 Add transform version in overview and hover text for bars [PR](https://github.com/laminlabs/laminhub/pull/1242) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 Update landing page screenshots [PR](https://github.com/laminlabs/laminhub/pull/1240) [@sunnyosun](https://github.com/sunnyosun)
