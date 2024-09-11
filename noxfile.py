@@ -178,7 +178,7 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("cellxgene-lamin.zip")
     for path in Path("cellxgene-lamin/").glob("*"):
         if path.name.endswith(
-            ("cellxgene.ipynb", "census.ipynb", "cellxgene-curate.ipynb")
+            ("cellxgene.ipynb", "cellxgene-curate.ipynb")
         ):
             sync_path(path, Path("docs") / path.name)
 
