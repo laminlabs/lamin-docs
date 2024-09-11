@@ -1,3 +1,4 @@
+- 🐛 Fix test_router_get_instance_statistics [PR](https://github.com/laminlabs/laminhub/pull/1247) [@fredericenard](https://github.com/fredericenard)
 - 💄 Fix the landing page screenshot [PR](https://github.com/laminlabs/laminhub/pull/1245) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Order transforms by updated_at [PR](https://github.com/laminlabs/laminhub/pull/1244) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix get-instance-settings for anonymous and non-collaborators of public instances [PR](https://github.com/laminlabs/laminhub/pull/1241) [@Koncopd](https://github.com/Koncopd)
