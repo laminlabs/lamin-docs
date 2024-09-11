@@ -1,3 +1,4 @@
+- :sparkles: More complete feature pages [PR](https://github.com/laminlabs/laminhub/pull/1225) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Add lamindb_version to get-instance-settings [PR](https://github.com/laminlabs/laminhub/pull/1248) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix test_router_get_instance_statistics [PR](https://github.com/laminlabs/laminhub/pull/1247) [@fredericenard](https://github.com/fredericenard)
 - 💄 Fix the landing page screenshot [PR](https://github.com/laminlabs/laminhub/pull/1245) [@sunnyosun](https://github.com/sunnyosun)
