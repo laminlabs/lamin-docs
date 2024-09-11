@@ -1,3 +1,4 @@
+- 📝 Edit cellxgene guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/92) [@Koncopd](https://github.com/Koncopd)
 - 📝 Reorganize and integrate tiledbsoma guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/91) [@Koncopd](https://github.com/Koncopd)
 - 📝 Link access pages [PR](https://github.com/laminlabs/lamin-usecases/pull/152) [@Zethson](https://github.com/Zethson)
 - 🏗️ Simplify repo and prettify notebooks [PR](https://github.com/laminlabs/lamin-mlops/pull/19) [@falexwolf](https://github.com/falexwolf)
