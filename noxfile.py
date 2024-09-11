@@ -175,24 +175,22 @@ def pull_artifacts(session):
     Path("lamin-mlops/mnist.ipynb").rename("docs/mnist.ipynb")
 
     # cellxgene-lamin
-    pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
-    for path in Path("cellxgene_lamin_docs/").glob("*"):
-        if path.name.endswith(
-            ("cellxgene.ipynb", "census.ipynb", "cellxgene-curate.ipynb")
-        ):
+    pull_from_s3_and_unpack("cellxgene-lamin.zip")
+    for path in Path("cellxgene-lamin/").glob("*"):
+        if path.name.endswith(("cellxgene.ipynb", "cellxgene-curate.ipynb")):
             sync_path(path, Path("docs") / path.name)
 
     # lamin-spatial
-    pull_from_s3_and_unpack("rxrx_lamin_docs.zip")
-    for path in Path("rxrx_lamin_docs/").glob("*"):
+    pull_from_s3_and_unpack("lamin-spatial.zip")
+    for path in Path("lamin-spatial/").glob("*"):
         if path.name == "rxrx.ipynb":
             sync_path(path, Path("docs") / path.name)
         elif path.name == "vitessce.ipynb":
             sync_path(path, Path("docs") / path.name)
 
     # use-cases
-    pull_from_s3_and_unpack("lamin_usecases_docs.zip")
-    for path in Path("lamin_usecases_docs/").glob("*"):
+    pull_from_s3_and_unpack("lamin-usecases.zip")
+    for path in Path("lamin-usecases/").glob("*"):
         if (
             path.name == "index.md"
             or path.name == "usecases.md"
