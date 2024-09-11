@@ -175,8 +175,8 @@ def pull_artifacts(session):
     Path("lamin-mlops/mnist.ipynb").rename("docs/mnist.ipynb")
 
     # cellxgene-lamin
-    pull_from_s3_and_unpack("cellxgene_lamin_docs.zip")
-    for path in Path("cellxgene_lamin_docs/").glob("*"):
+    pull_from_s3_and_unpack("cellxgene-lamin.zip")
+    for path in Path("cellxgene-lamin/").glob("*"):
         if path.name.endswith(
             ("cellxgene.ipynb", "census.ipynb", "cellxgene-curate.ipynb")
         ):
