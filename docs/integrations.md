@@ -16,7 +16,7 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 
 ## Array stores
 
-- `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or [cellxgene](query-census)
+- `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or [cellxgene](cellxgene)
 - [DuckDB](rxrx)
 
 ## Visualization tools

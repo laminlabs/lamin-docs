@@ -1,7 +1,7 @@
 **Manage data & metadata with a unified Python API (“lakehouse”).**
 
 - Query & search across artifacts ({class}`~lamindb.Artifact`) & metadata records ({class}`~lamindb.core.Record`): {class}`~lamindb.core.Record.filter`, {class}`~lamindb.core.Record.search`
-- Query large array stores: {class}`~lamindb.Artifact.open` → [guide](/query-census)
+- Query large array stores: {class}`~lamindb.Artifact.open` → [guide](cellxgene)
 - Cache artifacts on disk & load them into memory: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`
 - Manage features & labels: {class}`~lamindb.Feature`, {class}`~lamindb.FeatureSet`, {class}`~lamindb.ULabel`
 - Plug-in custom [schemas](/schemas) & manage schema migrations
