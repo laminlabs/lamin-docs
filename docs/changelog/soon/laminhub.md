@@ -1,3 +1,4 @@
+- 🐛 Fix self referential fields filtering [PR](https://github.com/laminlabs/laminhub/pull/1250) [@fredericenard](https://github.com/fredericenard)
 - 💄 Landing page [PR](https://github.com/laminlabs/laminhub/pull/1219) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: More complete feature pages [PR](https://github.com/laminlabs/laminhub/pull/1225) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Add lamindb_version to get-instance-settings [PR](https://github.com/laminlabs/laminhub/pull/1248) [@Koncopd](https://github.com/Koncopd)
