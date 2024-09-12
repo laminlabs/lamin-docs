@@ -1,3 +1,4 @@
+- 💄 Remove 'The hub of your data' [PR](https://github.com/laminlabs/laminhub/pull/1251) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix self referential fields filtering [PR](https://github.com/laminlabs/laminhub/pull/1250) [@fredericenard](https://github.com/fredericenard)
 - 💄 Landing page [PR](https://github.com/laminlabs/laminhub/pull/1219) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: More complete feature pages [PR](https://github.com/laminlabs/laminhub/pull/1225) [@chaichontat](https://github.com/chaichontat)
