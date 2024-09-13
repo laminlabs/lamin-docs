@@ -1,3 +1,4 @@
+- 📝 Track all anndatas in scrna-tiledbsoma [PR](https://github.com/laminlabs/lamin-usecases/pull/153) [@Koncopd](https://github.com/Koncopd)
 - Fix cellxgene-schema validate numpy error [PR](https://github.com/laminlabs/cellxgene-lamin/pull/95) [@Zethson](https://github.com/Zethson)
 - 📝 Consistently use slice for arrays [PR](https://github.com/laminlabs/cellxgene-lamin/pull/93) [@Koncopd](https://github.com/Koncopd)
 - 📝 Edit cellxgene guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/92) [@Koncopd](https://github.com/Koncopd)
