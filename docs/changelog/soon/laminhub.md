@@ -1,3 +1,4 @@
+- :bug: Fix data loading states and query schema validation [PR](https://github.com/laminlabs/laminhub/pull/1253) [@chaichontat](https://github.com/chaichontat)
 - 💄 Remove 'The hub of your data' [PR](https://github.com/laminlabs/laminhub/pull/1251) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix self referential fields filtering [PR](https://github.com/laminlabs/laminhub/pull/1250) [@fredericenard](https://github.com/fredericenard)
 - 💄 Landing page [PR](https://github.com/laminlabs/laminhub/pull/1219) [@chaichontat](https://github.com/chaichontat)
