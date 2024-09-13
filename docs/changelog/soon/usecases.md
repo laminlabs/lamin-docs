@@ -1,3 +1,4 @@
+- Fix cellxgene-schema validate numpy error [PR](https://github.com/laminlabs/cellxgene-lamin/pull/95) [@Zethson](https://github.com/Zethson)
 - 📝 Consistently use slice for arrays [PR](https://github.com/laminlabs/cellxgene-lamin/pull/93) [@Koncopd](https://github.com/Koncopd)
 - 📝 Edit cellxgene guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/92) [@Koncopd](https://github.com/Koncopd)
 - 📝 Reorganize and integrate tiledbsoma guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/91) [@Koncopd](https://github.com/Koncopd)
