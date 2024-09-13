@@ -1,3 +1,4 @@
+- ✨ Improve curation save terms msg [PR](https://github.com/laminlabs/lamindb/pull/1926) [@Zethson](https://github.com/Zethson)
 - 🎨 Fix issue templates labels [PR](https://github.com/laminlabs/lamindb/pull/1927) [@Zethson](https://github.com/Zethson)
 - 🔧 Use LAMINDB_DJANGO_DATABASE_URL instead of DATABASE_URL [PR](https://github.com/laminlabs/lamindb-setup/pull/852) [@Koncopd](https://github.com/Koncopd)
 - ✅ Use connect_instance_new for Koncopd, sunnyosun and falexwolf for local testing [PR](https://github.com/laminlabs/lamindb-setup/pull/851) [@Koncopd](https://github.com/Koncopd)
