@@ -1,3 +1,4 @@
+- 🐛 Fix missing db secret arn [PR](https://github.com/laminlabs/laminhub/pull/1261) [@fredericenard](https://github.com/fredericenard)
 - 🔐 Add bucket policy to Pfizer s3 [PR](https://github.com/laminlabs/laminhub/pull/1260) [@fredericenard](https://github.com/fredericenard)
 - 🚀 Pfizer on-prem s3 [PR](https://github.com/laminlabs/laminhub/pull/1257) [@fredericenard](https://github.com/fredericenard)
 - :lock: Add domain-based CSP and HSTS conditions [PR](https://github.com/laminlabs/laminhub/pull/1258) [@chaichontat](https://github.com/chaichontat)
