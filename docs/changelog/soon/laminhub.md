@@ -1,3 +1,4 @@
+- 🚀 Pfizer on-prem s3 [PR](https://github.com/laminlabs/laminhub/pull/1257) [@fredericenard](https://github.com/fredericenard)
 - :lock: Add domain-based CSP and HSTS conditions [PR](https://github.com/laminlabs/laminhub/pull/1258) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add schema display with accordion & table [PR](https://github.com/laminlabs/laminhub/pull/1255) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix data loading states and query schema validation [PR](https://github.com/laminlabs/laminhub/pull/1253) [@chaichontat](https://github.com/chaichontat)
