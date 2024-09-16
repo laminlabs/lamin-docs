@@ -214,13 +214,13 @@ def pull_artifacts(session):
 @nox.session
 def docs(session):
     run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")
-    run(session, "pip install git+https://github.com/laminlabs/bionty")
     run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
     run(
         session,
         "pip install"
         " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
     )
+    run(session, "pip install -U git+https://github.com/laminlabs/bionty")
     run(session, "lamin set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
