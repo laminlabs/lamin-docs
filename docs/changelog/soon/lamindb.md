@@ -1,3 +1,4 @@
+- 🐛 Proper re-login if api_key is present in env files [PR](https://github.com/laminlabs/lamindb-setup/pull/853) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add UX issue template [PR](https://github.com/laminlabs/lamindb/pull/1928) [@Zethson](https://github.com/Zethson)
 - ✨ Improve curation save terms msg [PR](https://github.com/laminlabs/lamindb/pull/1926) [@Zethson](https://github.com/Zethson)
 - 🎨 Fix issue templates labels [PR](https://github.com/laminlabs/lamindb/pull/1927) [@Zethson](https://github.com/Zethson)
