@@ -1,2 +1,3 @@
+- :sparkles: Add parameter validation [PR](https://github.com/laminlabs/bionty/pull/111) [@Zethson](https://github.com/Zethson)
 - 📝 Add explicit sphinx headers [PR](https://github.com/laminlabs/bionty/pull/110) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix parents update [PR](https://github.com/laminlabs/bionty/pull/107) [@sunnyosun](https://github.com/sunnyosun)
