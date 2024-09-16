@@ -1,3 +1,4 @@
+- ✅ Test re-login in CLI [PR](https://github.com/laminlabs/lamindb/pull/1929) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test re-login [PR](https://github.com/laminlabs/lamin-cli/pull/70) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Proper re-login if api_key is present in env files [PR](https://github.com/laminlabs/lamindb-setup/pull/853) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add UX issue template [PR](https://github.com/laminlabs/lamindb/pull/1928) [@Zethson](https://github.com/Zethson)
