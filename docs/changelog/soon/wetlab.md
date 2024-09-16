@@ -1,1 +1,2 @@
+- 📝 Add sphinx section headers [PR](https://github.com/laminlabs/wetlab/pull/66) [@Zethson](https://github.com/Zethson)
 - 📝 Harmonize landing page doc style with bionty docstyle [PR](https://github.com/laminlabs/wetlab/pull/65) [@Zethson](https://github.com/Zethson)
