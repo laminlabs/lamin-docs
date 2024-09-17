@@ -13,18 +13,12 @@ It's the directory or cloud bucket that you pass when initializing a LaminDB ins
 lamin init --storage ./default-storage  # or s3://default-bucket or gs://default-bucket
 ```
 
-It's easiest to see and update default storage in the Python API ({attr}`~lamindb.core.Settings.storage`):
+You can see and update default storage like so ({attr}`~lamindb.core.Settings.storage`):
 
 ```python
 import lamindb as ln
 ln.settings.storage  # set via ln.settings.storage = "s3://other-bucket"
 #> s3://default-bucket
-```
-
-You can also change it using the CLI via
-
-```
-lamin set --storage s3://other-bucket
 ```
 
 ## Where is my SQLite file?
@@ -132,21 +126,19 @@ file.save()  # save the change to the database
 
 ## How do I version a file?
 
-You use the `is_new_version_of` parameter:
+You use the `revises` parameter:
 
 ```python
-new_artifact = ln.Artifact(df, is_new_version_of=old_file)
+new_artifact = ln.Artifact(df, revises=old_file)
 ```
 
-Then, `new_artifact` automatically has the `version` field set, incrementing the version number by one.
-
-You can also pass a custom version:
+or you pass a `key`:
 
 ```python
-new_artifact = ln.Artifact(df, version="1.1", is_new_version_of=old_file)
+new_artifact = ln.Artifact(df, key="my_dataset.parquet")
 ```
 
-It doesn't matter which old version of the file you use, any old version is good!
+The new artifact becomes the latest version of family of artifacts that has the same `key`.
 
 ## How to set up a public read-only instance on an s3 bucket?
 
