@@ -1,3 +1,4 @@
+- 🎨 No longer populate `storage_id` in instance table during `init` [PR](https://github.com/laminlabs/lamindb-setup/pull/856) [@falexwolf](https://github.com/falexwolf)
 - 🔊 More logging for import_from_source [PR](https://github.com/laminlabs/lamindb/pull/1934) [@sunnyosun](https://github.com/sunnyosun)
 - 🔊 Warning instead of hint in _track_run_input [PR](https://github.com/laminlabs/lamindb/pull/1933) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Speed up feature add_from [PR](https://github.com/laminlabs/lamindb/pull/1931) [@sunnyosun](https://github.com/sunnyosun)
