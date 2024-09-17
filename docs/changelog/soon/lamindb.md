@@ -1,3 +1,4 @@
+- 🎨 Speed up feature add_from [PR](https://github.com/laminlabs/lamindb/pull/1931) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add n_observations to tiledbsoma artifacts [PR](https://github.com/laminlabs/lamindb/pull/1930) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test re-login in CLI [PR](https://github.com/laminlabs/lamindb/pull/1929) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test re-login [PR](https://github.com/laminlabs/lamin-cli/pull/70) [@Koncopd](https://github.com/Koncopd)
