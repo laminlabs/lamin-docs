@@ -1,3 +1,4 @@
+- 🍱 New ExperimentalFactor version: efo-3.65.0 [PR](https://github.com/laminlabs/bionty/pull/113) [@Zethson](https://github.com/Zethson)
 - 🍱 New CellType version: cl-2024-04-05 [PR](https://github.com/laminlabs/bionty/pull/112) [@Zethson](https://github.com/Zethson)
 - :sparkles: Add parameter validation [PR](https://github.com/laminlabs/bionty/pull/111) [@Zethson](https://github.com/Zethson)
 - 📝 Add explicit sphinx headers [PR](https://github.com/laminlabs/bionty/pull/110) [@Zethson](https://github.com/Zethson)
