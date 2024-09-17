@@ -1,3 +1,4 @@
+- 🔊 More logging for import_from_source [PR](https://github.com/laminlabs/lamindb/pull/1934) [@sunnyosun](https://github.com/sunnyosun)
 - 🔊 Warning instead of hint in _track_run_input [PR](https://github.com/laminlabs/lamindb/pull/1933) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Speed up feature add_from [PR](https://github.com/laminlabs/lamindb/pull/1931) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add n_observations to tiledbsoma artifacts [PR](https://github.com/laminlabs/lamindb/pull/1930) [@Koncopd](https://github.com/Koncopd)
