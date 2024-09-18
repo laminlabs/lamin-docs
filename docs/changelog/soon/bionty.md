@@ -1,3 +1,4 @@
+- 🍱 New Tissue version: uberon-2024-03-22 [PR](https://github.com/laminlabs/bionty/pull/118) [@Zethson](https://github.com/Zethson)
 - 🔊 More logging for `import_from_source` [PR](https://github.com/laminlabs/bionty/pull/117) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New Disease version: mondo-2024-05-08 [PR](https://github.com/laminlabs/bionty/pull/115) [@Zethson](https://github.com/Zethson)
 - 🍱 New ExperimentalFactor version: efo-3.65.0 [PR](https://github.com/laminlabs/bionty/pull/113) [@Zethson](https://github.com/Zethson)
