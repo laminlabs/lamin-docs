@@ -1,3 +1,4 @@
+- 📝 Add data loader examples to cellxgene guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/100) [@Koncopd](https://github.com/Koncopd)
 - ✨ Use uv tool for cellxgene-schema [PR](https://github.com/laminlabs/cellxgene-lamin/pull/99) [@Zethson](https://github.com/Zethson)
 - ✨ Add support for schema 5.1.0 [PR](https://github.com/laminlabs/cellxgene-lamin/pull/97) [@Zethson](https://github.com/Zethson)
 - 📝 Track all anndatas in scrna-tiledbsoma [PR](https://github.com/laminlabs/lamin-usecases/pull/153) [@Koncopd](https://github.com/Koncopd)
