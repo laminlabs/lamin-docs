@@ -1,3 +1,4 @@
+- ✨ Allow to use Collection.mapped without saving [PR](https://github.com/laminlabs/lamindb/pull/1942) [@Koncopd](https://github.com/Koncopd)
 - 🎨  Remove `stream` argument from `artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/1941) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable displaying images, document artifact loaders [PR](https://github.com/laminlabs/lamindb/pull/1938) [@falexwolf](https://github.com/falexwolf)
 - 🎨 No longer populate `storage_id` in instance table during `init` [PR](https://github.com/laminlabs/lamindb-setup/pull/856) [@falexwolf](https://github.com/falexwolf)
