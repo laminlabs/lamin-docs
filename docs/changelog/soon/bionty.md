@@ -1,3 +1,4 @@
+- :speaker: Consistent handling of yes/no logging [PR](https://github.com/laminlabs/bionty/pull/114) [@falexwolf](https://github.com/falexwolf)
 - 🍱 New Tissue version: uberon-2024-03-22 [PR](https://github.com/laminlabs/bionty/pull/118) [@Zethson](https://github.com/Zethson)
 - 🔊 More logging for `import_from_source` [PR](https://github.com/laminlabs/bionty/pull/117) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New Disease version: mondo-2024-05-08 [PR](https://github.com/laminlabs/bionty/pull/115) [@Zethson](https://github.com/Zethson)
