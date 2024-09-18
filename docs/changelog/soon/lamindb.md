@@ -1,3 +1,4 @@
+- ⚡️ Cleanup on error in Artifact.load [PR](https://github.com/laminlabs/lamindb/pull/1943) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to use Collection.mapped without saving [PR](https://github.com/laminlabs/lamindb/pull/1942) [@Koncopd](https://github.com/Koncopd)
 - 🎨  Remove `stream` argument from `artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/1941) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable displaying images, document artifact loaders [PR](https://github.com/laminlabs/lamindb/pull/1938) [@falexwolf](https://github.com/falexwolf)
