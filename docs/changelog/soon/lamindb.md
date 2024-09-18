@@ -1,3 +1,4 @@
+- 🚸 Simplify CLI commands [PR](https://github.com/laminlabs/lamindb/pull/1945) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Simplify CLI commands [PR](https://github.com/laminlabs/lamin-cli/pull/72) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable getting the latest run environment for a transform [PR](https://github.com/laminlabs/lamindb/pull/1944) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable getting the latest run environment for a transform [PR](https://github.com/laminlabs/lamin-cli/pull/71) [@falexwolf](https://github.com/falexwolf)
