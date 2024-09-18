@@ -213,7 +213,7 @@ def pull_artifacts(session):
 
 @nox.session
 def docs(session):
-    run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")
+    # run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")  # noqa
     # run(session, "pip install git+https://github.com/laminlabs/bionty")
     run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
     run(
