@@ -1,3 +1,4 @@
+- 🚸 Do not throw an error but prompt upon `ln.context.track()` in a notebook [PR](https://github.com/laminlabs/lamindb/pull/1925) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Cleanup on error in Artifact.load [PR](https://github.com/laminlabs/lamindb/pull/1943) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to use Collection.mapped without saving [PR](https://github.com/laminlabs/lamindb/pull/1942) [@Koncopd](https://github.com/Koncopd)
 - 🎨  Remove `stream` argument from `artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/1941) [@Koncopd](https://github.com/Koncopd)
