@@ -1,3 +1,4 @@
+- 🐛 Fix filter_index default value [PR](https://github.com/laminlabs/laminhub/pull/1290) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix filtering and improve error handling [PR](https://github.com/laminlabs/laminhub/pull/1287) [@fredericenard](https://github.com/fredericenard)
 - 🧑‍💻 Local prod with secrets [PR](https://github.com/laminlabs/laminhub/pull/1289) [@fredericenard](https://github.com/fredericenard)
 - 🧑‍💻 Create local public instance in dev mode [PR](https://github.com/laminlabs/laminhub/pull/1288) [@fredericenard](https://github.com/fredericenard)
