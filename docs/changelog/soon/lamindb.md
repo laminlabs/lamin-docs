@@ -1,2 +1,3 @@
+- 🐛 Fix unload [PR](https://github.com/laminlabs/lamindb/pull/1947) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix unload [PR](https://github.com/laminlabs/lamin-cli/pull/73) [@Koncopd](https://github.com/Koncopd)
 - 📝 Use unload in notebooks [PR](https://github.com/laminlabs/lamindb/pull/1946) [@Koncopd](https://github.com/Koncopd)
