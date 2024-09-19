@@ -1,0 +1,1 @@
+- 📝 Improve map_legacy_ids docs [PR](https://github.com/laminlabs/bionty/pull/120) [@Zethson](https://github.com/Zethson)
