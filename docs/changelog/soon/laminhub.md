@@ -1,3 +1,4 @@
+- 🐛 Fix local ui: Adding missing DEPLOYMENT_DOMAINS env variable [PR](https://github.com/laminlabs/laminhub/pull/1286) [@fredericenard](https://github.com/fredericenard)
 - 🧱 Increase db size for Pfizer [PR](https://github.com/laminlabs/laminhub/pull/1285) [@fredericenard](https://github.com/fredericenard)
 - Revert "✨ Implement RDS proxy to enhance scalabiltity and enable routing postgres requests to custom domains" [PR](https://github.com/laminlabs/laminhub/pull/1278) [@fredericenard](https://github.com/fredericenard)
 - ✨ Implement RDS proxy to enhance scalabiltity and enable routing postgres requests to custom domains [PR](https://github.com/laminlabs/laminhub/pull/1276) [@fredericenard](https://github.com/fredericenard)
