@@ -1,0 +1,1 @@
+- 📝 Use unload in notebooks [PR](https://github.com/laminlabs/lamindb/pull/1946) [@Koncopd](https://github.com/Koncopd)
