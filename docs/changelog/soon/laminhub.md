@@ -1,3 +1,4 @@
+- 💄 Sort transforms by `created_at` instead of `updated_at` [PR](https://github.com/laminlabs/laminhub/pull/1291) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Do not show hidden file when hovering over artifact accessors [PR](https://github.com/laminlabs/laminhub/pull/1284) [@adamdev21](https://github.com/adamdev21)
 - 🐛 Fix filter_index default value [PR](https://github.com/laminlabs/laminhub/pull/1290) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix filtering and improve error handling [PR](https://github.com/laminlabs/laminhub/pull/1287) [@fredericenard](https://github.com/fredericenard)
