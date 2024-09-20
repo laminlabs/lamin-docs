@@ -1,3 +1,4 @@
+- Do not re-encode vitessce url if it's non-lamin [PR](https://github.com/laminlabs/laminhub/pull/1300) [@sunnyosun](https://github.com/sunnyosun)
 - :zap: Make nonempty a promise [PR](https://github.com/laminlabs/laminhub/pull/1298) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Replace 'Group' by 'Count' [PR](https://github.com/laminlabs/laminhub/pull/1293) [@fredericenard](https://github.com/fredericenard)
 - 🍱 Update the process graph [PR](https://github.com/laminlabs/laminhub/pull/1295) [@sunnyosun](https://github.com/sunnyosun)
