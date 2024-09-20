@@ -1,3 +1,4 @@
+- 💚 Better cleanup in unit-core tests [PR](https://github.com/laminlabs/lamindb/pull/1957) [@Koncopd](https://github.com/Koncopd)
 - ✨ Store artifacts under their virtual keys in cache [PR](https://github.com/laminlabs/lamindb/pull/1954) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to set cache destinations via cache_key in cloud_to_local [PR](https://github.com/laminlabs/lamindb-setup/pull/861) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Enable setting storage uid prior to instance init [PR](https://github.com/laminlabs/lamindb-setup/pull/860) [@falexwolf](https://github.com/falexwolf)
