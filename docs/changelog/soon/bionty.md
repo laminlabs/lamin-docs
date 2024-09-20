@@ -1,1 +1,2 @@
+- 📝 Fix bulk create ref [PR](https://github.com/laminlabs/bionty/pull/121) [@Zethson](https://github.com/Zethson)
 - 📝 Improve map_legacy_ids docs [PR](https://github.com/laminlabs/bionty/pull/120) [@Zethson](https://github.com/Zethson)
