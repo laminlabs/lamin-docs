@@ -1,3 +1,4 @@
+- 🐛 Ensure `is_latest` is set to `False` in previous version if matching on `artifact.key` [PR](https://github.com/laminlabs/lamindb/pull/1958) [@falexwolf](https://github.com/falexwolf)
 - 🚸 No traceback for invalid arguments [PR](https://github.com/laminlabs/lamindb/pull/1956) [@falexwolf](https://github.com/falexwolf)
 - 💚 Better cleanup in unit-core tests [PR](https://github.com/laminlabs/lamindb/pull/1957) [@Koncopd](https://github.com/Koncopd)
 - ✨ Store artifacts under their virtual keys in cache [PR](https://github.com/laminlabs/lamindb/pull/1954) [@Koncopd](https://github.com/Koncopd)
