@@ -1,3 +1,4 @@
+- 🚸 No traceback for invalid arguments [PR](https://github.com/laminlabs/lamindb/pull/1956) [@falexwolf](https://github.com/falexwolf)
 - 💚 Better cleanup in unit-core tests [PR](https://github.com/laminlabs/lamindb/pull/1957) [@Koncopd](https://github.com/Koncopd)
 - ✨ Store artifacts under their virtual keys in cache [PR](https://github.com/laminlabs/lamindb/pull/1954) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to set cache destinations via cache_key in cloud_to_local [PR](https://github.com/laminlabs/lamindb-setup/pull/861) [@Koncopd](https://github.com/Koncopd)
