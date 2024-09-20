@@ -1,3 +1,4 @@
+- ✨ Allow to set cache destinations via cache_key in cloud_to_local [PR](https://github.com/laminlabs/lamindb-setup/pull/861) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Enable setting storage uid prior to instance init [PR](https://github.com/laminlabs/lamindb-setup/pull/860) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix unload [PR](https://github.com/laminlabs/lamindb/pull/1947) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix unload [PR](https://github.com/laminlabs/lamin-cli/pull/73) [@Koncopd](https://github.com/Koncopd)
