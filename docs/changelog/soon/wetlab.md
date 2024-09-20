@@ -1,3 +1,4 @@
+- :sparkles: Add chembl ID to Compound [PR](https://github.com/laminlabs/wetlab/pull/69) [@Zethson](https://github.com/Zethson)
 - 🎨 Custom link tables [PR](https://github.com/laminlabs/wetlab/pull/68) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add Compound [PR](https://github.com/laminlabs/wetlab/pull/63) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Remove wetlab headers [PR](https://github.com/laminlabs/wetlab/pull/67) [@Zethson](https://github.com/Zethson)
