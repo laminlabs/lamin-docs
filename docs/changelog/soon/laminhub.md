@@ -1,3 +1,4 @@
+- Add clinicore schema [PR](https://github.com/laminlabs/laminhub/pull/1306) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade lamindb to 0.76.7 [PR](https://github.com/laminlabs/laminhub/pull/1302) [@falexwolf](https://github.com/falexwolf)
 - Do not re-encode vitessce url if it's non-lamin [PR](https://github.com/laminlabs/laminhub/pull/1300) [@sunnyosun](https://github.com/sunnyosun)
 - :zap: Make nonempty a promise [PR](https://github.com/laminlabs/laminhub/pull/1298) [@chaichontat](https://github.com/chaichontat)
