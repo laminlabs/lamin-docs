@@ -1,3 +1,4 @@
+- 💄 Show border of avatars [PR](https://github.com/laminlabs/laminhub/pull/1322) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Show version of artifacts in/output [PR](https://github.com/laminlabs/laminhub/pull/1321) [@sunnyosun](https://github.com/sunnyosun)
 - 🔈 Fix Search term hint [PR](https://github.com/laminlabs/laminhub/pull/1320) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Fix no data error on dashboard [PR](https://github.com/laminlabs/laminhub/pull/1316) [@sunnyosun](https://github.com/sunnyosun)
