@@ -1,3 +1,4 @@
+- :bug: Fix nullable field and reset filter logic [PR](https://github.com/laminlabs/laminhub/pull/1323) [@chaichontat](https://github.com/chaichontat)
 - 💄 Show border of avatars [PR](https://github.com/laminlabs/laminhub/pull/1322) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Show version of artifacts in/output [PR](https://github.com/laminlabs/laminhub/pull/1321) [@sunnyosun](https://github.com/sunnyosun)
 - 🔈 Fix Search term hint [PR](https://github.com/laminlabs/laminhub/pull/1320) [@sunnyosun](https://github.com/sunnyosun)
