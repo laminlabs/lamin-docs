@@ -1,3 +1,4 @@
+- 🔈 Fix Search term hint [PR](https://github.com/laminlabs/laminhub/pull/1320) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Fix no data error on dashboard [PR](https://github.com/laminlabs/laminhub/pull/1316) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix collection page [PR](https://github.com/laminlabs/laminhub/pull/1315) [@sunnyosun](https://github.com/sunnyosun)
 - 🔒 Configure RLS for api_key table [PR](https://github.com/laminlabs/laminhub/pull/1304) [@fredericenard](https://github.com/fredericenard)
