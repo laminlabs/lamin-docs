@@ -1,3 +1,4 @@
+- 🐛 Fix collection page [PR](https://github.com/laminlabs/laminhub/pull/1315) [@sunnyosun](https://github.com/sunnyosun)
 - 🔒 Configure RLS for api_key table [PR](https://github.com/laminlabs/laminhub/pull/1304) [@fredericenard](https://github.com/fredericenard)
 - Add clinicore schema [PR](https://github.com/laminlabs/laminhub/pull/1306) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade lamindb to 0.76.7 [PR](https://github.com/laminlabs/laminhub/pull/1302) [@falexwolf](https://github.com/falexwolf)
