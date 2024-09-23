@@ -1,0 +1,1 @@
+- 📝 Hide ln.Artifact output [PR](https://github.com/laminlabs/cellxgene-lamin/pull/101) [@Koncopd](https://github.com/Koncopd)
