@@ -1,3 +1,4 @@
+- 🚸 Order runs by created_at [PR](https://github.com/laminlabs/laminhub/pull/1299) [@adamdev21](https://github.com/adamdev21)
 - 🚸 Display revisions for in/output artifacts [PR](https://github.com/laminlabs/laminhub/pull/1329) [@sunnyosun](https://github.com/sunnyosun)
 - 🧱 Extend schema to manage cloud resources [PR](https://github.com/laminlabs/laminhub/pull/1311) [@fredericenard](https://github.com/fredericenard)
 - 🚀 Deploy 2024-09-24 (#1327) [PR](https://github.com/laminlabs/laminhub/pull/1328) [@sunnyosun](https://github.com/sunnyosun)
