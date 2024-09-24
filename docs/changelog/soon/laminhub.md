@@ -1,3 +1,4 @@
+- 🧱 Extend schema to manage cloud resources [PR](https://github.com/laminlabs/laminhub/pull/1311) [@fredericenard](https://github.com/fredericenard)
 - 🚀 Deploy 2024-09-24 (#1327) [PR](https://github.com/laminlabs/laminhub/pull/1328) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Use key as download name for transform [PR](https://github.com/laminlabs/laminhub/pull/1326) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Default background color for avatar fallback [PR](https://github.com/laminlabs/laminhub/pull/1325) [@sunnyosun](https://github.com/sunnyosun)
