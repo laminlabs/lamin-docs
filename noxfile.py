@@ -69,7 +69,6 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Key topics
 
-features
 access
 security
 faq
