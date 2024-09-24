@@ -1,3 +1,4 @@
+- 🐛 Fix s3 path display [PR](https://github.com/laminlabs/laminhub/pull/1324) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Only show linked labels in filters [PR](https://github.com/laminlabs/laminhub/pull/1310) [@adamdev21](https://github.com/adamdev21)
 - ♻️ Improve query builder [PR](https://github.com/laminlabs/laminhub/pull/1312) [@fredericenard](https://github.com/fredericenard)
 - :bug: Fix nullable field and reset filter logic [PR](https://github.com/laminlabs/laminhub/pull/1323) [@chaichontat](https://github.com/chaichontat)
