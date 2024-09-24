@@ -1,0 +1,1 @@
+- ♻️ Overhaul `init` for more convenient use in laminhub [PR](https://github.com/laminlabs/lamindb-setup/pull/857) [@Koncopd](https://github.com/Koncopd)
