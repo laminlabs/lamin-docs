@@ -1,1 +1,2 @@
+- ✨ Add perturbation use-case [PR](https://github.com/laminlabs/lamin-usecases/pull/142) [@Zethson](https://github.com/Zethson)
 - 📝 Hide ln.Artifact output [PR](https://github.com/laminlabs/cellxgene-lamin/pull/101) [@Koncopd](https://github.com/Koncopd)
