@@ -1,1 +1,2 @@
+- 📝 Add docs for cache and document environment variables [PR](https://github.com/laminlabs/lamindb/pull/1964) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Overhaul `init` for more convenient use in laminhub [PR](https://github.com/laminlabs/lamindb-setup/pull/857) [@Koncopd](https://github.com/Koncopd)
