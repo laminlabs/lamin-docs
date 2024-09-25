@@ -1,3 +1,4 @@
+- Create deployment infra Pulumi projects [PR](https://github.com/laminlabs/laminhub/pull/1341) [@fredericenard](https://github.com/fredericenard)
 - 🐛  Fix ulabel filtering on Artifacts [PR](https://github.com/laminlabs/laminhub/pull/1338) [@adamdev21](https://github.com/adamdev21)
 - 📝 Bump pricing from 500 to 600 [PR](https://github.com/laminlabs/laminhub/pull/1337) [@falexwolf](https://github.com/falexwolf)
 - Revert "♻️ Improve query builder" [PR](https://github.com/laminlabs/laminhub/pull/1332) [@fredericenard](https://github.com/fredericenard)
