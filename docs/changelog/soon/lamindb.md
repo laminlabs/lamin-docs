@@ -1,3 +1,4 @@
+- ♻️ Remove eliminated arguments from load [PR](https://github.com/laminlabs/lamin-cli/pull/74) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Simplify connect by eliminating db and storage arguments [PR](https://github.com/laminlabs/lamindb-setup/pull/865) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add docs for cache and document environment variables [PR](https://github.com/laminlabs/lamindb/pull/1964) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Overhaul `init` for more convenient use in laminhub [PR](https://github.com/laminlabs/lamindb-setup/pull/857) [@Koncopd](https://github.com/Koncopd)
