@@ -42,8 +42,8 @@ USECASES = """
 :hidden:
 :caption: Use cases
 
-atlases
 ../by-datatype
+atlases
 ../by-registry
 ../data-flow
 pipelines
