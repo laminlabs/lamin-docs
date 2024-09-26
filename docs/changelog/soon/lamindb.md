@@ -1,3 +1,4 @@
+- ✨ Enable to store notebooks as artifacts [PR](https://github.com/laminlabs/lamin-cli/pull/75) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove eliminated arguments from load [PR](https://github.com/laminlabs/lamindb/pull/1969) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Remove eliminated arguments from load [PR](https://github.com/laminlabs/lamin-cli/pull/74) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Simplify connect by eliminating db and storage arguments [PR](https://github.com/laminlabs/lamindb-setup/pull/865) [@Koncopd](https://github.com/Koncopd)
