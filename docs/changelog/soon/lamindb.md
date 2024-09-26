@@ -1,3 +1,4 @@
+- 🚸 Better dialogue upon clashing transform keys [PR](https://github.com/laminlabs/lamindb/pull/1979) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow filtering obs indices in MappedCollection based on obs column [PR](https://github.com/laminlabs/lamindb/pull/1974) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix flaky cache test [PR](https://github.com/laminlabs/lamindb/pull/1978) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable notebook and script templates [PR](https://github.com/laminlabs/lamindb/pull/1977) [@falexwolf](https://github.com/falexwolf)
