@@ -1,3 +1,4 @@
+- 💚 Fix flaky cache test [PR](https://github.com/laminlabs/lamindb/pull/1978) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable notebook and script templates [PR](https://github.com/laminlabs/lamindb/pull/1977) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable to store notebooks as artifacts [PR](https://github.com/laminlabs/lamin-cli/pull/75) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove eliminated arguments from load [PR](https://github.com/laminlabs/lamindb/pull/1969) [@Koncopd](https://github.com/Koncopd)
