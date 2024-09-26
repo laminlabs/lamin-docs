@@ -1,1 +1,2 @@
+- ✨ Enable to `lamin get` from non-lamin.ai domains [PR](https://github.com/laminlabs/lamin-cli/pull/76) [@falexwolf](https://github.com/falexwolf)
 - 📝 Revise advice on managing notebook templates [PR](https://github.com/laminlabs/lamindb/pull/1981) [@falexwolf](https://github.com/falexwolf)
