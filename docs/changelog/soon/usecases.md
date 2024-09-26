@@ -1,0 +1,1 @@
+- 📝 Add obs_filter example for mapped in scrna5 [PR](https://github.com/laminlabs/lamin-usecases/pull/158) [@Koncopd](https://github.com/Koncopd)
