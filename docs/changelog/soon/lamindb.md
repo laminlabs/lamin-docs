@@ -1,3 +1,4 @@
+- ⚡️ Speed up describe [PR](https://github.com/laminlabs/lamindb/pull/1973) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Minimal `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/1982) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Simplify `ln.track()` - part 2 [PR](https://github.com/laminlabs/lamin-cli/pull/78) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Simplify `ln.track()` - part 1 [PR](https://github.com/laminlabs/lamin-cli/pull/77) [@falexwolf](https://github.com/falexwolf)
