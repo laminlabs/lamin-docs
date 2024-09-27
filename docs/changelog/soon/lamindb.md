@@ -1,3 +1,4 @@
+- ✨ Track transfers as transforms [PR](https://github.com/laminlabs/lamindb/pull/1985) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add another test for running with tracked params, logging cosmetics [PR](https://github.com/laminlabs/lamindb/pull/1984) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix tests [PR](https://github.com/laminlabs/lamin-cli/pull/81) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add a test for tracking with params [PR](https://github.com/laminlabs/lamin-cli/pull/80) [@falexwolf](https://github.com/falexwolf)
