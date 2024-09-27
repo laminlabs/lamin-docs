@@ -1,3 +1,4 @@
+- 🗃️ Update infra related tables (2) [PR](https://github.com/laminlabs/laminhub/pull/1351) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Key display in Artifact detail page [PR](https://github.com/laminlabs/laminhub/pull/1346) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Rename edge functions [PR](https://github.com/laminlabs/laminhub/pull/1342) [@fredericenard](https://github.com/fredericenard)
 - 🗃️ Update infra related tables [PR](https://github.com/laminlabs/laminhub/pull/1345) [@fredericenard](https://github.com/fredericenard)
