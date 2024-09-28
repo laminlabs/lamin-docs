@@ -1,3 +1,4 @@
+- 🚸 Transfer: Warn about inconsistencies between source & target instances [PR](https://github.com/laminlabs/lamindb/pull/1992) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Warn about inconsistent lamindb versions during `connect_hub` [PR](https://github.com/laminlabs/lamindb-setup/pull/869) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Move `.from_values()` from `Record` to `CanValidate` [PR](https://github.com/laminlabs/lamindb/pull/1993) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document how to work with run parameters [PR](https://github.com/laminlabs/lamindb/pull/1989) [@falexwolf](https://github.com/falexwolf)
