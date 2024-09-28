@@ -1,3 +1,4 @@
+- 📝 Document how to work with run parameters [PR](https://github.com/laminlabs/lamindb/pull/1989) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify track logging [PR](https://github.com/laminlabs/lamin-cli/pull/82) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename hub edge functions [PR](https://github.com/laminlabs/lamindb/pull/1988) [@falexwolf](https://github.com/falexwolf)
 - 🚸 `lamin load` → `lamin connect` & `lamin get` → `lamin load` [PR](https://github.com/laminlabs/lamindb/pull/1983) [@Koncopd](https://github.com/Koncopd)
