@@ -1,3 +1,4 @@
+- 🚚 Rename hub edge functions [PR](https://github.com/laminlabs/lamindb/pull/1988) [@falexwolf](https://github.com/falexwolf)
 - 🚸 `lamin load` → `lamin connect` & `lamin get` → `lamin load` [PR](https://github.com/laminlabs/lamindb/pull/1983) [@Koncopd](https://github.com/Koncopd)
 - 🚸 `lamin load` → `lamin connect` & `lamin get` → `lamin load` [PR](https://github.com/laminlabs/lamin-cli/pull/79) [@Koncopd](https://github.com/Koncopd)
 - ✨ Track transfers as transforms [PR](https://github.com/laminlabs/lamindb/pull/1985) [@falexwolf](https://github.com/falexwolf)
