@@ -1,3 +1,4 @@
+- 🎨 Move `.from_values()` from `Record` to `CanValidate` [PR](https://github.com/laminlabs/lamindb/pull/1993) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document how to work with run parameters [PR](https://github.com/laminlabs/lamindb/pull/1989) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify track logging [PR](https://github.com/laminlabs/lamin-cli/pull/82) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename hub edge functions [PR](https://github.com/laminlabs/lamindb/pull/1988) [@falexwolf](https://github.com/falexwolf)
