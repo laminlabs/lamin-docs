@@ -1,3 +1,4 @@
+- 🚸 A friendly message when report is not yet uploaded [PR](https://github.com/laminlabs/laminhub/pull/1359) [@sunnyosun](https://github.com/sunnyosun)
 - 🥅 More explicit error message for JWT [PR](https://github.com/laminlabs/laminhub/pull/1356) [@fredericenard](https://github.com/fredericenard)
 - 🗃️ Update infra related tables (3) [PR](https://github.com/laminlabs/laminhub/pull/1355) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Upgrade lamindb & fix names in UI [PR](https://github.com/laminlabs/laminhub/pull/1354) [@falexwolf](https://github.com/falexwolf)
