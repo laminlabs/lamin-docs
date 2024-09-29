@@ -1,3 +1,4 @@
+- 🚸 Improve `lamin load` UX for notebooks & scripts [PR](https://github.com/laminlabs/lamindb/pull/1994) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve `lamin load` for notebooks & scripts [PR](https://github.com/laminlabs/lamin-cli/pull/83) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Transfer: Warn about inconsistencies between source & target instances [PR](https://github.com/laminlabs/lamindb/pull/1992) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Warn about inconsistent lamindb versions during `connect_hub` [PR](https://github.com/laminlabs/lamindb-setup/pull/869) [@falexwolf](https://github.com/falexwolf)
