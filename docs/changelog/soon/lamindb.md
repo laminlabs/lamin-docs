@@ -1,3 +1,4 @@
+- ⚡️ Speed up `ln.connect()` [PR](https://github.com/laminlabs/lamindb-setup/pull/871) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `from_values` [PR](https://github.com/laminlabs/lamindb/pull/1970) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Improve `lamin load` UX for notebooks & scripts [PR](https://github.com/laminlabs/lamindb/pull/1994) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve `lamin load` for notebooks & scripts [PR](https://github.com/laminlabs/lamin-cli/pull/83) [@falexwolf](https://github.com/falexwolf)
