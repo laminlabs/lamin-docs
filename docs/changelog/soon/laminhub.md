@@ -1,3 +1,4 @@
+- 💄 Fix copy text overflow [PR](https://github.com/laminlabs/laminhub/pull/1360) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Make feature and featureset title the same size [PR](https://github.com/laminlabs/laminhub/pull/1361) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 A friendly message when report is not yet uploaded [PR](https://github.com/laminlabs/laminhub/pull/1359) [@sunnyosun](https://github.com/sunnyosun)
 - 🥅 More explicit error message for JWT [PR](https://github.com/laminlabs/laminhub/pull/1356) [@fredericenard](https://github.com/fredericenard)
