@@ -220,7 +220,7 @@ def docs(session):
         "pip install"
         " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
     )
-    run(session, "lamin set private-django-api true")
+    run(session, "lamin settings set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
     process = subprocess.run(

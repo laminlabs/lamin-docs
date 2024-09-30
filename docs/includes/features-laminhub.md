@@ -1,4 +1,4 @@
-See for yourself by browsing the demo instances in the hub UI or `lamin load owner/instance` them via the CLI.
+See for yourself by browsing the demo instances in the hub UI or `lamin connect owner/instance` them via the CLI.
 
 - [lamin.ai/laminlabs/lamindata](https://lamin.ai/laminlabs/lamindata) - A generic demo instance with various data types
 - [lamin.ai/laminlabs/cellxgene](https://lamin.ai/laminlabs/cellxgene) - An instance that interfaces the CELLxGENE data ([guide](cellxgene))
