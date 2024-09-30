@@ -6,11 +6,11 @@ HERE = Path(__file__).parent
 sys.path[:0] = [str(HERE), str(HERE.parent)]
 
 from lamin_sphinx import *  # noqa
-from lamin_sphinx import html_theme_options, html_context  # noqa
+from lamin_sphinx import html_theme_options, html_context
 
 project = "Lamin Docs"
 html_title = f"{project}"
-html_context["github_repo"] = "lamin-docs"  # noqa
+html_context["github_repo"] = "lamin-docs"
 
 ogp_site_url = "https://docs.lamin.ai"
 ogp_site_name = project
