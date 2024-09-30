@@ -1,3 +1,4 @@
+- 🐛  Fix `lamin get` to `lamin load` and show the URL [PR](https://github.com/laminlabs/laminhub/pull/1371) [@falexwolf](https://github.com/falexwolf)
 - :bug: Set the load button in transform to get [PR](https://github.com/laminlabs/laminhub/pull/1370) [@chaichontat](https://github.com/chaichontat)
 - 💄 Display `lamin connect` and `lamin load` without introducing a 500 error [PR](https://github.com/laminlabs/laminhub/pull/1366) [@falexwolf](https://github.com/falexwolf)
 - 💄 Update the counts of linked metadata records in Artifact detail page [PR](https://github.com/laminlabs/laminhub/pull/1335) [@adamdev21](https://github.com/adamdev21)
