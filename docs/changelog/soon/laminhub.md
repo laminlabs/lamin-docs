@@ -1,3 +1,4 @@
+- ⏪️ Revert PR 1309 - 💄 Display `lamin connect` and `lamin load` ... [PR](https://github.com/laminlabs/laminhub/pull/1364) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix linting [PR](https://github.com/laminlabs/laminhub/pull/1362) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Fix copy text overflow [PR](https://github.com/laminlabs/laminhub/pull/1360) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Make feature and featureset title the same size [PR](https://github.com/laminlabs/laminhub/pull/1361) [@sunnyosun](https://github.com/sunnyosun)

@@ -133,14 +133,16 @@ def sync_path(path, target_path):
 @nox.session
 def pull_artifacts(session):
     # lamindb
-    pull_from_s3_and_unpack("lamindb_docs.zip")
-    Path("lamindb_docs/README.md").rename("README.md")
-    Path("lamindb_docs/includes/features-lamindb.md").unlink()
-    Path("lamindb_docs/includes/features-laminhub.md").unlink()
-    Path("lamindb_docs/changelog.md").unlink()
-    Path("lamindb_docs/rest.md").unlink()
-    Path("lamindb_docs/introduction.ipynb").unlink()
-    for path in Path("lamindb_docs").glob("*"):
+    pull_from_s3_and_unpack("lamindb.zip")
+    Path("lamindb/README.md").rename("README.md")
+    quit()
+    Path("lamindb/conf.py").unlink()
+    Path("lamindb/includes/features-lamindb.md").unlink()
+    Path("lamindb/includes/features-laminhub.md").unlink()
+    Path("lamindb/changelog.md").unlink()
+    Path("lamindb/rest.md").unlink()
+    Path("lamindb/introduction.ipynb").unlink()
+    for path in Path("lamindb").glob("*"):
         if (
             path.name == "index.md"
             or path.name in {"storage", "storage.md"}  # not user facing
@@ -154,7 +156,7 @@ def pull_artifacts(session):
             sync_path(path, Path("docs") / path.name)
 
     # lamindb faq
-    for path in Path("lamindb_docs/faq").glob("*"):
+    for path in Path("lamindb/faq").glob("*"):
         sync_path(path, Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
@@ -220,7 +222,7 @@ def docs(session):
         "pip install"
         " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
     )
-    run(session, "lamin set private-django-api true")
+    run(session, "lamin settings set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
     process = subprocess.run(
