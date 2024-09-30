@@ -1,0 +1,1 @@
+- 🐛 Use connect instead of load and disconnect instead of unload [PR](https://github.com/laminlabs/lamindb-setup/pull/873) [@Koncopd](https://github.com/Koncopd)
