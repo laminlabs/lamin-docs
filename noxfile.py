@@ -114,7 +114,7 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
 
 
 def pull_from_s3_and_unpack(zip_filename) -> None:
-    subprocess.run(
+    subprocess.run(  # noqa S602
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
         shell=True,
     )
@@ -209,12 +209,12 @@ def pull_artifacts(session):
         content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
 
-    assert Path("docs/includes/features-lamindb.md").exists()
+    assert Path("docs/includes/features-lamindb.md").exists()  # noqa S101
 
 
 @nox.session
 def docs(session):
-    # run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")  # noqa
+    # run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")
     # run(session, "pip install git+https://github.com/laminlabs/bionty")
     run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
     run(
@@ -225,7 +225,7 @@ def docs(session):
     run(session, "lamin settings set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
     run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
-    process = subprocess.run(
+    process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
     if process.returncode != 0:
