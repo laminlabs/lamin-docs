@@ -135,7 +135,6 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
     Path("lamindb/README.md").rename("README.md")
-    quit()
     Path("lamindb/conf.py").unlink()
     Path("lamindb/includes/features-lamindb.md").unlink()
     Path("lamindb/includes/features-laminhub.md").unlink()
