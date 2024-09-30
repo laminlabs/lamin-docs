@@ -1,2 +1,4 @@
+- ⚡ Lazy reload of module upon `ln.connect()` [PR](https://github.com/laminlabs/bionty/pull/123) [@falexwolf](https://github.com/falexwolf)
+- 🎨 Do not require organism if field is ontology_ud or uid [PR](https://github.com/laminlabs/bionty/pull/122) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix bulk create ref [PR](https://github.com/laminlabs/bionty/pull/121) [@Zethson](https://github.com/Zethson)
 - 📝 Improve map_legacy_ids docs [PR](https://github.com/laminlabs/bionty/pull/120) [@Zethson](https://github.com/Zethson)
