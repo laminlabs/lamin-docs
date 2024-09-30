@@ -135,7 +135,6 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
     Path("lamindb/README.md").rename("README.md")
-    quit()
     Path("lamindb/conf.py").unlink()
     Path("lamindb/includes/features-lamindb.md").unlink()
     Path("lamindb/includes/features-laminhub.md").unlink()
@@ -149,7 +148,7 @@ def pull_artifacts(session):
             or path.name == "faq"  # directory treated below
         ):
             continue
-        print("synching", path)
+        print("syncing", path)
         if path.is_dir():
             sync(path, Path("docs") / path.name, "sync", create=True, ctime=True)
         else:
@@ -196,9 +195,10 @@ def pull_artifacts(session):
             path.name == "index.md"
             or path.name == "usecases.md"
             or path.name == "changelog.md"
+            or path.name == "conf.py"
         ):
             continue
-        print("copying", path)
+        print("syncing", path)
         sync_path(path, Path("docs") / path.name)
 
     # amend toctree
