@@ -216,7 +216,10 @@ def pull_artifacts(session):
 def docs(session):
     # run(session, "pip install --no-deps git+https://github.com/laminlabs/lnschema-core")
     # run(session, "pip install git+https://github.com/laminlabs/bionty")
-    run(session, "pip install --no-deps git+https://github.com/laminlabs/wetlab")
+    run(
+        session,
+        "pip install --no-deps git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/findrefs",
+    )
     run(
         session,
         "pip install"
@@ -224,7 +227,7 @@ def docs(session):
     )
     run(session, "lamin settings set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
-    run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab")
+    run(session, "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs")
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --error-on-index --strict", shell=True
     )
