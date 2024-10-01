@@ -1,3 +1,4 @@
+- 🔒 Add authenticated role to JWT [PR](https://github.com/laminlabs/laminhub/pull/1375) [@fredericenard](https://github.com/fredericenard)
 - 💄 Display 6 featuresets per page [PR](https://github.com/laminlabs/laminhub/pull/1373) [@adamdev21](https://github.com/adamdev21)
 - 🗃️ Update infra related tables (4) [PR](https://github.com/laminlabs/laminhub/pull/1372) [@fredericenard](https://github.com/fredericenard)
 - 🐛  Fix `lamin get` to `lamin load` and show the URL [PR](https://github.com/laminlabs/laminhub/pull/1371) [@falexwolf](https://github.com/falexwolf)
