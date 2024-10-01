@@ -1,3 +1,4 @@
+- ✨ Add a reference manager schema module: `findrefs` [PR](https://github.com/laminlabs/lamindb/pull/2009) [@falexwolf](https://github.com/falexwolf)
 - 💄 Strip `NotebookNotSaved` from report after `ln.finish()` [PR](https://github.com/laminlabs/lamindb/pull/2007) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix label name display in `.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2006) [@falexwolf](https://github.com/falexwolf)
 - 📝 Prettify track guide [PR](https://github.com/laminlabs/lamindb/pull/2003) [@falexwolf](https://github.com/falexwolf)
