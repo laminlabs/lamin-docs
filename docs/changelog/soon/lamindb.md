@@ -1,3 +1,4 @@
+- ♻️ Some minor improvements [PR](https://github.com/laminlabs/lamindb/pull/2018) [@falexwolf](https://github.com/falexwolf)
 - 📝 Use `anon=True` access for `UPath.view_tree()` in tutorial [PR](https://github.com/laminlabs/lamindb/pull/2016) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Remove creates one artifact per file in the directory warning [PR](https://github.com/laminlabs/lamindb/pull/2015) [@Zethson](https://github.com/Zethson)
 - ♻️ Move lamindb_setup.settings.storage.cache_dir to lamindb_setup.settings.cache_dir [PR](https://github.com/laminlabs/lamindb/pull/2013) [@Koncopd](https://github.com/Koncopd)
