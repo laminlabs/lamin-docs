@@ -1,0 +1,1 @@
+- ♻️ Return `lnid` in `get-instance-settings-v1` [PR](https://github.com/laminlabs/laminhub/pull/1380) [@Koncopd](https://github.com/Koncopd)
