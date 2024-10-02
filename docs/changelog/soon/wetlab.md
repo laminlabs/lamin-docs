@@ -1,3 +1,4 @@
+- 📝 Add typehints [PR](https://github.com/laminlabs/wetlab/pull/73) [@Zethson](https://github.com/Zethson)
 - ⚡ Lazy reload of module upon `ln.connect()` [PR](https://github.com/laminlabs/wetlab/pull/71) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix recursive repr [PR](https://github.com/laminlabs/wetlab/pull/70) [@Zethson](https://github.com/Zethson)
 - :sparkles: Add chembl ID to Compound [PR](https://github.com/laminlabs/wetlab/pull/69) [@Zethson](https://github.com/Zethson)
