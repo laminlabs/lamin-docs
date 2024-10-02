@@ -1,3 +1,4 @@
+- ✨ Add version drop down to `Artifact` & `Collection` pages, simplify the version-uid handling [PR](https://github.com/laminlabs/laminhub/pull/1347) [@adamdev21](https://github.com/adamdev21)
 - ✨ Add hover card for ulabels [PR](https://github.com/laminlabs/laminhub/pull/1350) [@adamdev21](https://github.com/adamdev21)
 - 🔒 Add authenticated role to JWT [PR](https://github.com/laminlabs/laminhub/pull/1375) [@fredericenard](https://github.com/fredericenard)
 - 💄 Display 6 featuresets per page [PR](https://github.com/laminlabs/laminhub/pull/1373) [@adamdev21](https://github.com/adamdev21)
