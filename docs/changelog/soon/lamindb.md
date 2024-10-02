@@ -1,0 +1,1 @@
+- ✨ Allow lamin cache set with non-existing directories [PR](https://github.com/laminlabs/lamin-cli/pull/85) [@Koncopd](https://github.com/Koncopd)
