@@ -1,2 +1,3 @@
+- ♻️ Move settings.storage.cache_dir to settings.cache_dir [PR](https://github.com/laminlabs/lamindb-setup/pull/875) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Use shutil.move instead of Path.rename [PR](https://github.com/laminlabs/lamin-cli/pull/86) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow lamin cache set with non-existing directories [PR](https://github.com/laminlabs/lamin-cli/pull/85) [@Koncopd](https://github.com/Koncopd)
