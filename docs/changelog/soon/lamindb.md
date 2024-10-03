@@ -1,3 +1,4 @@
+- 🐛 Fix walrus and duplicated updated_at [PR](https://github.com/laminlabs/lamindb/pull/2020) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Some minor improvements [PR](https://github.com/laminlabs/lamindb/pull/2018) [@falexwolf](https://github.com/falexwolf)
 - 📝 Use `anon=True` access for `UPath.view_tree()` in tutorial [PR](https://github.com/laminlabs/lamindb/pull/2016) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Remove creates one artifact per file in the directory warning [PR](https://github.com/laminlabs/lamindb/pull/2015) [@Zethson](https://github.com/Zethson)
