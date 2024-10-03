@@ -1,3 +1,4 @@
+- ✨ Add typehints [PR](https://github.com/laminlabs/clinicore/pull/12) [@Zethson](https://github.com/Zethson)
 - 🏗️ Lazy reload upon import [PR](https://github.com/laminlabs/clinicore/pull/9) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix perturbation usecase [PR](https://github.com/laminlabs/lamin-usecases/pull/160) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Minimal `ln.track()` [PR](https://github.com/laminlabs/lamin-usecases/pull/159) [@falexwolf](https://github.com/falexwolf)
