@@ -1,3 +1,4 @@
+- ⬆️ Drop python 3.8 support [PR](https://github.com/laminlabs/lamindb-setup/pull/880) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Migrate to edge function in `connect()` [PR](https://github.com/laminlabs/lamindb/pull/2017) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Base `connect_hub()` off of edge function [PR](https://github.com/laminlabs/lamindb-setup/pull/879) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix walrus and duplicated updated_at [PR](https://github.com/laminlabs/lamindb/pull/2020) [@Koncopd](https://github.com/Koncopd)
