@@ -162,7 +162,7 @@ def pull_artifacts(session):
     # pipelines
     pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
     Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
-    pull_from_s3_and_unpack("nextflow_lamin_docs.zip")
+    pull_from_s3_and_unpack("nextflow-lamin.zip")
     Path("nextflow_lamin_docs/nf_core_scrnaseq.ipynb").rename("docs/nextflow.ipynb")
     Path("nextflow_lamin_docs/register_scrnaseq_run.py").rename(
         "docs/register_scrnaseq_run.py"
