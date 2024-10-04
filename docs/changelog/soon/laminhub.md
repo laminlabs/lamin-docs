@@ -1,3 +1,4 @@
+- ✨ Create a `ULabels` page [PR](https://github.com/laminlabs/laminhub-public/pull/8) [@falexwolf](https://github.com/falexwolf)
 - 👷 Add the `doc-changes` action [PR](https://github.com/laminlabs/laminhub-public/pull/9) [@falexwolf](https://github.com/falexwolf)
 - 🧑‍💻 Remove error handling in _get_sqlalchemy_filter [PR](https://github.com/laminlabs/laminhub/pull/1385) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix duplicated alias in ValuesQueryBuilder [PR](https://github.com/laminlabs/laminhub/pull/1384) [@fredericenard](https://github.com/fredericenard)
