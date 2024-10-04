@@ -1,3 +1,4 @@
+- ⬆️ Drop python 3.8 support [PR](https://github.com/laminlabs/cellxgene-lamin/pull/102) [@Koncopd](https://github.com/Koncopd)
 - Simplify perturbation  [PR](https://github.com/laminlabs/lamin-usecases/pull/161) [@Zethson](https://github.com/Zethson)
 - 📝 Document how this related to OMOP [PR](https://github.com/laminlabs/clinicore/pull/13) [@Zethson](https://github.com/Zethson)
 - ✨ Add typehints [PR](https://github.com/laminlabs/clinicore/pull/12) [@Zethson](https://github.com/Zethson)
