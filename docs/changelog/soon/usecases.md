@@ -1,8 +1,0 @@
-- ⬆️ Drop python 3.8 support [PR](https://github.com/laminlabs/cellxgene-lamin/pull/102) [@Koncopd](https://github.com/Koncopd)
-- Simplify perturbation  [PR](https://github.com/laminlabs/lamin-usecases/pull/161) [@Zethson](https://github.com/Zethson)
-- 📝 Document how this related to OMOP [PR](https://github.com/laminlabs/clinicore/pull/13) [@Zethson](https://github.com/Zethson)
-- ✨ Add typehints [PR](https://github.com/laminlabs/clinicore/pull/12) [@Zethson](https://github.com/Zethson)
-- 🏗️ Lazy reload upon import [PR](https://github.com/laminlabs/clinicore/pull/9) [@falexwolf](https://github.com/falexwolf)
-- 💚 Fix perturbation usecase [PR](https://github.com/laminlabs/lamin-usecases/pull/160) [@falexwolf](https://github.com/falexwolf)
-- 🚸 Minimal `ln.track()` [PR](https://github.com/laminlabs/lamin-usecases/pull/159) [@falexwolf](https://github.com/falexwolf)
-- 📝 Add obs_filter example for mapped in scrna5 [PR](https://github.com/laminlabs/lamin-usecases/pull/158) [@Koncopd](https://github.com/Koncopd)

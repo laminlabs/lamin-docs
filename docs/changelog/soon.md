@@ -23,9 +23,3 @@
 ```{include} soon/bionty.md
 
 ```
-
-## wetlab
-
-```{include} soon/wetlab.md
-
-```
