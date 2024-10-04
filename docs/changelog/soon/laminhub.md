@@ -1,3 +1,4 @@
+- ✨ Add version drop down to `Artifact` & `Collection` pages, simplify the version-uid handling [PR](https://github.com/laminlabs/laminhub-public/pull/10) [@falexwolf](https://github.com/falexwolf)
 - ✨ Create a `ULabels` page [PR](https://github.com/laminlabs/laminhub-public/pull/8) [@falexwolf](https://github.com/falexwolf)
 - 👷 Add the `doc-changes` action [PR](https://github.com/laminlabs/laminhub-public/pull/9) [@falexwolf](https://github.com/falexwolf)
 - 🧑‍💻 Remove error handling in _get_sqlalchemy_filter [PR](https://github.com/laminlabs/laminhub/pull/1385) [@fredericenard](https://github.com/fredericenard)
