@@ -1,1 +1,1 @@
-
+- Auto-generate changelog at `docs.lamin.ai/changelog` [PR](https://github.com/laminlabs/laminr/pull/15) [@falexwolf](https://github.com/falexwolf)
