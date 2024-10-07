@@ -1,0 +1,1 @@
+- 💄 Prettify plotting panels on `Overview` page & fix edge cases [PR](https://github.com/laminlabs/laminhub-public/pull/12) [@falexwolf](https://github.com/falexwolf)
