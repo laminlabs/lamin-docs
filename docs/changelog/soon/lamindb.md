@@ -1,3 +1,4 @@
+- 📝 Document how to query by nested run parameters [PR](https://github.com/laminlabs/lamindb/pull/2024) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Query with typed labels through `.features` [PR](https://github.com/laminlabs/lamindb/pull/2023) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Make `lamindb-setup` a dependency of `lamin-cli` [PR](https://github.com/laminlabs/lamindb/pull/2021) [@falexwolf](https://github.com/falexwolf)
 - ➕ Add `lamindb_setup` as a dependency to make `lamin-cli` standalone installable [PR](https://github.com/laminlabs/lamin-cli/pull/87) [@falexwolf](https://github.com/falexwolf)
