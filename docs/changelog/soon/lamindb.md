@@ -1,3 +1,4 @@
+- ✅ Add more tests for querying via `.features` [PR](https://github.com/laminlabs/lamindb/pull/2028) [@falexwolf](https://github.com/falexwolf)
 - ✨ Overhaul `save_vitessce_config()` to support multiple artifacts and non-`.zarr` [PR](https://github.com/laminlabs/lamindb/pull/1953) [@keller-mark](https://github.com/keller-mark)
 - 🐛 Fix save sphinx references [PR](https://github.com/laminlabs/lamin-cli/pull/88) [@Zethson](https://github.com/Zethson)
 - 📝 Document how to query by nested run parameters [PR](https://github.com/laminlabs/lamindb/pull/2024) [@falexwolf](https://github.com/falexwolf)
