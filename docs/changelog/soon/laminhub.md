@@ -1,1 +1,2 @@
+- 🚸 Overhauled filter selectors [PR](https://github.com/laminlabs/laminhub-public/pull/13) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify plotting panels on `Overview` page & fix edge cases [PR](https://github.com/laminlabs/laminhub-public/pull/12) [@falexwolf](https://github.com/falexwolf)
