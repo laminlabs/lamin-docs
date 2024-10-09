@@ -1,1 +1,2 @@
+- 🔥 Remove `__getitem__` from `QuerySet` [PR](https://github.com/laminlabs/lamindb/pull/2034) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Do not double track runs [PR](https://github.com/laminlabs/lamindb/pull/2032) [@falexwolf](https://github.com/falexwolf)
