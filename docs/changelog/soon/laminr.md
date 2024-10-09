@@ -1,2 +1,3 @@
+- Allow unauthenticated users to connect to an instance [PR](https://github.com/laminlabs/laminr/pull/19) [@rcannood](https://github.com/rcannood)
 - Create pkgdown docs [PR](https://github.com/laminlabs/laminr/pull/13) [@rcannood](https://github.com/rcannood)
 - Auto-generate changelog at `docs.lamin.ai/changelog` [PR](https://github.com/laminlabs/laminr/pull/15) [@falexwolf](https://github.com/falexwolf)
