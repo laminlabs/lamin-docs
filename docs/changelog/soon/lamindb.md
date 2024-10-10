@@ -1,3 +1,4 @@
+- 🎨  for circular input/outputs [PR](https://github.com/laminlabs/lamindb/pull/2041) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Clearer feedback when somebody tries to switch the default instance [PR](https://github.com/laminlabs/lamindb-setup/pull/882) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Properly resolve schema mismatch [PR](https://github.com/laminlabs/lamindb/pull/2040) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛Fix track message [PR](https://github.com/laminlabs/lamindb/pull/2036) [@Zethson](https://github.com/Zethson)
