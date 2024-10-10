@@ -1,3 +1,4 @@
+- 🚸 Clearer feedback when somebody tries to switch the default instance [PR](https://github.com/laminlabs/lamindb-setup/pull/882) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Properly resolve schema mismatch [PR](https://github.com/laminlabs/lamindb/pull/2040) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛Fix track message [PR](https://github.com/laminlabs/lamindb/pull/2036) [@Zethson](https://github.com/Zethson)
 - 🚸 Raise SystemExit on storage=None in init [PR](https://github.com/laminlabs/lamindb-setup/pull/881) [@Koncopd](https://github.com/Koncopd)
