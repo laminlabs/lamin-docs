@@ -1,3 +1,4 @@
+- Add `Record` print methods [PR](https://github.com/laminlabs/laminr/pull/22) [@lazappi](https://github.com/lazappi)
 - Log into Lamin in CI [PR](https://github.com/laminlabs/laminr/pull/23) [@rcannood](https://github.com/rcannood)
 - Allow unauthenticated users to connect to an instance [PR](https://github.com/laminlabs/laminr/pull/19) [@rcannood](https://github.com/rcannood)
 - Create pkgdown docs [PR](https://github.com/laminlabs/laminr/pull/13) [@rcannood](https://github.com/rcannood)
