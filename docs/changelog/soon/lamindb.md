@@ -1,3 +1,4 @@
+- ♻️ Properly resolve schema mismatch [PR](https://github.com/laminlabs/lamindb/pull/2040) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛Fix track message [PR](https://github.com/laminlabs/lamindb/pull/2036) [@Zethson](https://github.com/Zethson)
 - 🚸 Raise SystemExit on storage=None in init [PR](https://github.com/laminlabs/lamindb-setup/pull/881) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove `__getitem__` from `QuerySet` [PR](https://github.com/laminlabs/lamindb/pull/2034) [@sunnyosun](https://github.com/sunnyosun)
