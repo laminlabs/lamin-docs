@@ -1,3 +1,4 @@
+- Update documentation [PR](https://github.com/laminlabs/laminr/pull/29) [@rcannood](https://github.com/rcannood)
 - Return `NULL` when a record's related field is empty [PR](https://github.com/laminlabs/laminr/pull/28) [@rcannood](https://github.com/rcannood)
 - minor fix in usage vignette [PR](https://github.com/laminlabs/laminr/pull/32) [@rcannood](https://github.com/rcannood)
 - Add usage vignette [PR](https://github.com/laminlabs/laminr/pull/18) [@rcannood](https://github.com/rcannood)
