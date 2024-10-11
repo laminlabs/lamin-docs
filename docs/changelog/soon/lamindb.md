@@ -1,3 +1,4 @@
+- 🚸 Do not error if a schema module of an instance isn't installed [PR](https://github.com/laminlabs/lamindb-setup/pull/883) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `get` with using_key [PR](https://github.com/laminlabs/lamindb/pull/2042) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨  for circular input/outputs [PR](https://github.com/laminlabs/lamindb/pull/2041) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Clearer feedback when somebody tries to switch the default instance [PR](https://github.com/laminlabs/lamindb-setup/pull/882) [@falexwolf](https://github.com/falexwolf)
