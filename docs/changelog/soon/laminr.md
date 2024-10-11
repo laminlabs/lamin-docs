@@ -1,3 +1,4 @@
+- minor fix in usage vignette [PR](https://github.com/laminlabs/laminr/pull/32) [@rcannood](https://github.com/rcannood)
 - Add usage vignette [PR](https://github.com/laminlabs/laminr/pull/18) [@rcannood](https://github.com/rcannood)
 - Add a simple unit test which queries laminlabs/lamindata [PR](https://github.com/laminlabs/laminr/pull/27) [@rcannood](https://github.com/rcannood)
 - bump action from v4.5.0 to v4 [PR](https://github.com/laminlabs/laminr/pull/26) [@rcannood](https://github.com/rcannood)
