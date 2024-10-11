@@ -1,0 +1,1 @@
+- 🐛 Return include fields when one of them is empty [PR](https://github.com/laminlabs/lamindb/pull/2044) [@sunnyosun](https://github.com/sunnyosun)
