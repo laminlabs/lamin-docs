@@ -1,0 +1,1 @@
+- 📝 More consistent and simpler docs [PR](https://github.com/laminlabs/bionty/pull/127) [@falexwolf](https://github.com/falexwolf)
