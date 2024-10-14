@@ -1,3 +1,4 @@
+- ✨ Overwrite access_token after renewal [PR](https://github.com/laminlabs/lamindb-setup/pull/885) [@Koncopd](https://github.com/Koncopd)
 - 📝 Consistent documentation for all schema modules [PR](https://github.com/laminlabs/lamindb/pull/2047) [@falexwolf](https://github.com/falexwolf)
 - 🧪 More tests of df include [PR](https://github.com/laminlabs/lamindb/pull/2045) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Return include fields when one of them is empty [PR](https://github.com/laminlabs/lamindb/pull/2044) [@sunnyosun](https://github.com/sunnyosun)
