@@ -1,3 +1,4 @@
+- Document classes [PR](https://github.com/laminlabs/laminr/pull/36) [@rcannood](https://github.com/rcannood)
 - Make InstanceAPI print methods public [PR](https://github.com/laminlabs/laminr/pull/37) [@lazappi](https://github.com/lazappi)
 - Add printing to remaining classes [PR](https://github.com/laminlabs/laminr/pull/31) [@lazappi](https://github.com/lazappi)
 - Improve error messages [PR](https://github.com/laminlabs/laminr/pull/30) [@rcannood](https://github.com/rcannood)
