@@ -1,3 +1,4 @@
+- 🎨 Remove update in add_ontology_from_df [PR](https://github.com/laminlabs/lamindb/pull/2051) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix loading artifact by key and give clear errors if no artifacts or transforms found [PR](https://github.com/laminlabs/lamindb/pull/2050) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix loading artifact by key and give clear errors if no artifacts or transforms found [PR](https://github.com/laminlabs/lamin-cli/pull/91) [@Koncopd](https://github.com/Koncopd)
 - ✨ Overwrite access_token after renewal [PR](https://github.com/laminlabs/lamindb-setup/pull/885) [@Koncopd](https://github.com/Koncopd)
