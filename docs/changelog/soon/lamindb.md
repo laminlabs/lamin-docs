@@ -1,3 +1,4 @@
+- 🔊 Deprecate login with --key [PR](https://github.com/laminlabs/lamin-cli/pull/92) [@Koncopd](https://github.com/Koncopd)
 - 📝 Make `key` legacy, `api_key` primary [PR](https://github.com/laminlabs/lamindb-setup/pull/886) [@Koncopd](https://github.com/Koncopd)
 - 🍱 Add `omop`, `cellregistry`, `ourprojects` [PR](https://github.com/laminlabs/lamindb/pull/2049) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Remove update in add_ontology_from_df [PR](https://github.com/laminlabs/lamindb/pull/2051) [@sunnyosun](https://github.com/sunnyosun)
