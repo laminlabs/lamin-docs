@@ -1,3 +1,4 @@
+- ✏️ Fix logging integer values [PR](https://github.com/laminlabs/lamindb/pull/2056) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Only register new features in add_new_from_columns [PR](https://github.com/laminlabs/lamindb/pull/2057) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve save_artifact docs [PR](https://github.com/laminlabs/lamindb/pull/2055) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Upon `Validator`, populate `ref_is_name` fields in link tables [PR](https://github.com/laminlabs/lamindb/pull/2053) [@sunnyosun](https://github.com/sunnyosun)
