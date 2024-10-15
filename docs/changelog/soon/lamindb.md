@@ -1,3 +1,4 @@
+- 📝 Improve save_artifact docs [PR](https://github.com/laminlabs/lamindb/pull/2055) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Upon `Validator`, populate `ref_is_name` fields in link tables [PR](https://github.com/laminlabs/lamindb/pull/2053) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Update login docs for new API key [PR](https://github.com/laminlabs/lamindb/pull/2054) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Deprecate login with --key [PR](https://github.com/laminlabs/lamin-cli/pull/92) [@Koncopd](https://github.com/Koncopd)
