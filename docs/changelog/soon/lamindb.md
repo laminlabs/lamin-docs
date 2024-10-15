@@ -1,3 +1,4 @@
+- 🔥 Remove `.list_source()` [PR](https://github.com/laminlabs/lamindb/pull/2058) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix logging integer values [PR](https://github.com/laminlabs/lamindb/pull/2056) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Only register new features in add_new_from_columns [PR](https://github.com/laminlabs/lamindb/pull/2057) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve save_artifact docs [PR](https://github.com/laminlabs/lamindb/pull/2055) [@sunnyosun](https://github.com/sunnyosun)
