@@ -1,3 +1,4 @@
+- ♻️ Move cloud_to_local to lnamindb_setup.settings [PR](https://github.com/laminlabs/lamindb-setup/pull/887) [@Koncopd](https://github.com/Koncopd)
 - 🔈 Fix add new logging [PR](https://github.com/laminlabs/lamindb/pull/2059) [@sunnyosun](https://github.com/sunnyosun)
 - 🔥 Remove `.list_source()` [PR](https://github.com/laminlabs/lamindb/pull/2058) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix logging integer values [PR](https://github.com/laminlabs/lamindb/pull/2056) [@sunnyosun](https://github.com/sunnyosun)
