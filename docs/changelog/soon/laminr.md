@@ -1,3 +1,4 @@
+- update version, add luke as an author [PR](https://github.com/laminlabs/laminr/pull/39) [@rcannood](https://github.com/rcannood)
 - Document classes [PR](https://github.com/laminlabs/laminr/pull/36) [@rcannood](https://github.com/rcannood)
 - Make InstanceAPI print methods public [PR](https://github.com/laminlabs/laminr/pull/37) [@lazappi](https://github.com/lazappi)
 - Add printing to remaining classes [PR](https://github.com/laminlabs/laminr/pull/31) [@lazappi](https://github.com/lazappi)
