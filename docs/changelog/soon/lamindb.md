@@ -1,3 +1,4 @@
+- 📝 Document how to subclass `Curator` [PR](https://github.com/laminlabs/lamindb/pull/2022) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix tracking of notebooks on PyCharm [PR](https://github.com/laminlabs/lamindb/pull/2064) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Move cloud_to_local to lnamindb_setup.settings [PR](https://github.com/laminlabs/lamindb/pull/2062) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Move cloud_to_local to lnamindb_setup.settings [PR](https://github.com/laminlabs/lamindb-setup/pull/887) [@Koncopd](https://github.com/Koncopd)
