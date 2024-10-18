@@ -1,1 +1,2 @@
+- 🔥 Remove `Curator.add_validated_from()` [PR](https://github.com/laminlabs/lamin-usecases/pull/164) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Fix Curator.from_mudata [PR](https://github.com/laminlabs/lamin-usecases/pull/165) [@sunnyosun](https://github.com/sunnyosun)
