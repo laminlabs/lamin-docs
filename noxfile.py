@@ -232,7 +232,7 @@ def docs(session):
     run_notebooks("docs/introduction.ipynb")
     run(
         session,
-        "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs,clinicore",
+        "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs,clinicore,cellregistry,omop,ourprojects",
     )
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --error-on-index --strict", shell=True
