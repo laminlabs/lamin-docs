@@ -1,3 +1,4 @@
+- 🔥 Remove curator.add_validated_from [PR](https://github.com/laminlabs/lamindb/pull/2081) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Enable curating multiple categorical features per artifact against the same label registry [PR](https://github.com/laminlabs/lamindb/pull/2080) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `Collection.append()` [PR](https://github.com/laminlabs/lamindb/pull/2077) [@Koncopd](https://github.com/Koncopd)
 - ✨ Error when renaming internal features and labels [PR](https://github.com/laminlabs/lamindb/pull/2061) [@sunnyosun](https://github.com/sunnyosun)
