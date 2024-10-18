@@ -1,3 +1,4 @@
+- 🚚 Add unique constraints and fix `gene_ref_is_symbol` to `label_ref_is_name` [PR](https://github.com/laminlabs/bionty/pull/133) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `.list_source()` [PR](https://github.com/laminlabs/bionty/pull/130) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Remove update in add_ontology_from_df [PR](https://github.com/laminlabs/bionty/pull/129) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 More consistent and simpler docs [PR](https://github.com/laminlabs/bionty/pull/127) [@falexwolf](https://github.com/falexwolf)
