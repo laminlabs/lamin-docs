@@ -1,3 +1,4 @@
+- ✨ Error when renaming internal features and labels [PR](https://github.com/laminlabs/lamindb/pull/2061) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Use settings.paths in tests directly [PR](https://github.com/laminlabs/lamindb-setup/pull/888) [@Koncopd](https://github.com/Koncopd)
 - 📝 Document how to subclass `Curator` [PR](https://github.com/laminlabs/lamindb/pull/2022) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix tracking of notebooks on PyCharm [PR](https://github.com/laminlabs/lamindb/pull/2064) [@Koncopd](https://github.com/Koncopd)
