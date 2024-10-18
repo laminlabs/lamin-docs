@@ -1,3 +1,4 @@
+- ✨ First draft of `Cell` registry [PR](https://github.com/laminlabs/cellregistry/pull/1) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `Curator.add_validated_from()` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/105) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish scrna guide, add another cell type feature: `cell_type_untrusted` [PR](https://github.com/laminlabs/lamin-usecases/pull/162) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `Curator.add_validated_from()` [PR](https://github.com/laminlabs/lamin-usecases/pull/164) [@falexwolf](https://github.com/falexwolf)
