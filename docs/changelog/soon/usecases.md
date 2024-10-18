@@ -1,0 +1,1 @@
+- 🎨 Fix Curator.from_mudata [PR](https://github.com/laminlabs/lamin-usecases/pull/165) [@sunnyosun](https://github.com/sunnyosun)
