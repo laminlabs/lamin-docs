@@ -1,3 +1,4 @@
+- update readme [PR](https://github.com/laminlabs/laminr/pull/51) [@rcannood](https://github.com/rcannood)
 - simplify lamin_cli installation instructions [PR](https://github.com/laminlabs/laminr/pull/33) [@rcannood](https://github.com/rcannood)
 - update version, add luke as an author [PR](https://github.com/laminlabs/laminr/pull/39) [@rcannood](https://github.com/rcannood)
 - Document classes [PR](https://github.com/laminlabs/laminr/pull/36) [@rcannood](https://github.com/rcannood)
