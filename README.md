@@ -1,3 +1,3 @@
 # Lamin Docs
 
-Read the [docs](https://lamin.ai/docs).
+Read the [docs](https://docs.lamin.ai).
