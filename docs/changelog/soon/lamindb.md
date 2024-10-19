@@ -1,0 +1,1 @@
+- 💚 Fix docs [PR](https://github.com/laminlabs/lamindb/pull/2083) [@falexwolf](https://github.com/falexwolf)
