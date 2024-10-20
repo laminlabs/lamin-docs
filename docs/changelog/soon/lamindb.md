@@ -1,1 +1,2 @@
+- 🔇 Fix Curator logging [PR](https://github.com/laminlabs/lamindb/pull/2085) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix docs [PR](https://github.com/laminlabs/lamindb/pull/2083) [@falexwolf](https://github.com/falexwolf)
