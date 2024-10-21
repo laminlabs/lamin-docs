@@ -1,3 +1,4 @@
+- ✨ Set anon for specified public s3 buckets if aws credentials fail [PR](https://github.com/laminlabs/lamindb-setup/pull/889) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Raise ValidationError [PR](https://github.com/laminlabs/lamindb/pull/2086) [@sunnyosun](https://github.com/sunnyosun)
 - 🔇 Fix Curator logging [PR](https://github.com/laminlabs/lamindb/pull/2085) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix docs [PR](https://github.com/laminlabs/lamindb/pull/2083) [@falexwolf](https://github.com/falexwolf)
