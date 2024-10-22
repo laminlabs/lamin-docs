@@ -1,3 +1,4 @@
+- ✨ Improve save message [PR](https://github.com/laminlabs/lamin-cli/pull/94) [@Zethson](https://github.com/Zethson)
 - ♻️ Use UPath.drive to get bucket [PR](https://github.com/laminlabs/lamindb-setup/pull/890) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix TypeError [PR](https://github.com/laminlabs/lamindb/pull/2089) [@Zethson](https://github.com/Zethson)
 - ⬆️ Remove the pin on scipy [PR](https://github.com/laminlabs/lamindb/pull/2087) [@Koncopd](https://github.com/Koncopd)
