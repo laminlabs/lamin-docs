@@ -1,3 +1,4 @@
+- ♻️ Use UPath.drive to get bucket [PR](https://github.com/laminlabs/lamindb-setup/pull/890) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix TypeError [PR](https://github.com/laminlabs/lamindb/pull/2089) [@Zethson](https://github.com/Zethson)
 - ⬆️ Remove the pin on scipy [PR](https://github.com/laminlabs/lamindb/pull/2087) [@Koncopd](https://github.com/Koncopd)
 - ✨ Set anon for specified public s3 buckets if aws credentials fail [PR](https://github.com/laminlabs/lamindb-setup/pull/889) [@Koncopd](https://github.com/Koncopd)
