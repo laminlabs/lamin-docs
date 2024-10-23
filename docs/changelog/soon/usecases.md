@@ -1,3 +1,4 @@
+- 🎨 Use from_source instead of from_public [PR](https://github.com/laminlabs/lamin-usecases/pull/167) [@Zethson](https://github.com/Zethson)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-mlops/pull/20) [@Koncopd](https://github.com/Koncopd)
 - 📝 Polish scrna guide, add another cell type feature: cell_type_untrusted [PR](https://github.com/laminlabs/lamin-usecases/pull/166) [@falexwolf](https://github.com/falexwolf)
 - ✨ First draft of `Cell` registry [PR](https://github.com/laminlabs/cellregistry/pull/1) [@falexwolf](https://github.com/falexwolf)
