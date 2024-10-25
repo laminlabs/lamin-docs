@@ -1,3 +1,4 @@
+- Remove link tables from print output [PR](https://github.com/laminlabs/laminr/pull/55) [@lazappi](https://github.com/lazappi)
 - Add progress bar [PR](https://github.com/laminlabs/laminr/pull/58) [@lazappi](https://github.com/lazappi)
 - Add get_records() to API and df() to Registry [PR](https://github.com/laminlabs/laminr/pull/54) [@lazappi](https://github.com/lazappi)
 - update readme [PR](https://github.com/laminlabs/laminr/pull/51) [@rcannood](https://github.com/rcannood)
