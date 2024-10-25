@@ -1,3 +1,4 @@
+- ✨ More flexible Curator & 🐛 support for paths [PR](https://github.com/laminlabs/cellxgene-lamin/pull/104) [@Zethson](https://github.com/Zethson)
 - 📝Polish docstrings [PR](https://github.com/laminlabs/findrefs/pull/1) [@Zethson](https://github.com/Zethson)
 - 🎨 Use from_source instead of from_public [PR](https://github.com/laminlabs/lamin-usecases/pull/167) [@Zethson](https://github.com/Zethson)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-mlops/pull/20) [@Koncopd](https://github.com/Koncopd)
