@@ -1,3 +1,4 @@
+- ♻️ Improve upload code [PR](https://github.com/laminlabs/lamindb-setup/pull/892) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Proper numerous for Curator stdout [PR](https://github.com/laminlabs/lamindb/pull/2107) [@Zethson](https://github.com/Zethson)
 - ✨ Recursively query parents and children [PR](https://github.com/laminlabs/lamindb/pull/2106) [@Koncopd](https://github.com/Koncopd)
 - ✨ Restrict stdout of validation messages of Curator to max 10 terms [PR](https://github.com/laminlabs/lamindb/pull/2094) [@Zethson](https://github.com/Zethson)
