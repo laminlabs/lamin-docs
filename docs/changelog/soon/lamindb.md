@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2114) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Improve upload code [PR](https://github.com/laminlabs/lamindb-setup/pull/892) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Proper numerous for Curator stdout [PR](https://github.com/laminlabs/lamindb/pull/2107) [@Zethson](https://github.com/Zethson)
 - ✨ Recursively query parents and children [PR](https://github.com/laminlabs/lamindb/pull/2106) [@Koncopd](https://github.com/Koncopd)
