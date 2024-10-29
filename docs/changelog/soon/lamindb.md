@@ -1,3 +1,4 @@
+- ♻️ Refactor imports and update upath code [PR](https://github.com/laminlabs/lamindb/pull/2116) [@Koncopd](https://github.com/Koncopd)
 - ✨ Stream pyarrow.dataset.dataset supported formats in Artifact.open() [PR](https://github.com/laminlabs/lamindb/pull/2115) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2114) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Improve upload code [PR](https://github.com/laminlabs/lamindb-setup/pull/892) [@Koncopd](https://github.com/Koncopd)
