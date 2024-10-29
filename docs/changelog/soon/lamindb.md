@@ -1,3 +1,4 @@
+- 🐛 Fix list validation in Curator [PR](https://github.com/laminlabs/lamindb/pull/2119) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Add parquet example to arrays.ipynb [PR](https://github.com/laminlabs/lamindb/pull/2118) [@Koncopd](https://github.com/Koncopd)
 - 📝 Fix docs for settings [PR](https://github.com/laminlabs/lamindb-setup/pull/895) [@Koncopd](https://github.com/Koncopd)
 - ✨ Python 3.12 support [PR](https://github.com/laminlabs/lamindb/pull/2092) [@Zethson](https://github.com/Zethson)
