@@ -1,1 +1,2 @@
+- 🎨 Refactor flatten_unique [PR](https://github.com/laminlabs/lamindb/pull/2121) [@Zethson](https://github.com/Zethson)
 - 💚 Fix CI build [PR](https://github.com/laminlabs/lamindb-setup/pull/896) [@Koncopd](https://github.com/Koncopd)
