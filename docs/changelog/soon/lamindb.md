@@ -1,0 +1,1 @@
+- 💚 Fix CI build [PR](https://github.com/laminlabs/lamindb-setup/pull/896) [@Koncopd](https://github.com/Koncopd)
