@@ -1,3 +1,4 @@
+- ⬆️ Release sub modules [PR](https://github.com/laminlabs/lamindb/pull/2120) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix list validation in Curator [PR](https://github.com/laminlabs/lamindb/pull/2119) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Add parquet example to arrays.ipynb [PR](https://github.com/laminlabs/lamindb/pull/2118) [@Koncopd](https://github.com/Koncopd)
 - 📝 Fix docs for settings [PR](https://github.com/laminlabs/lamindb-setup/pull/895) [@Koncopd](https://github.com/Koncopd)
