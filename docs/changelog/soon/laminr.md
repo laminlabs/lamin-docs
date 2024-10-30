@@ -1,3 +1,4 @@
+- Add Records container class [PR](https://github.com/laminlabs/laminr/pull/59) [@lazappi](https://github.com/lazappi)
 - Refactor documentation [PR](https://github.com/laminlabs/laminr/pull/67) [@rcannood](https://github.com/rcannood)
 - Fix macOS runner [PR](https://github.com/laminlabs/laminr/pull/66) [@rcannood](https://github.com/rcannood)
 - Add check_requires() function and update installation docs [PR](https://github.com/laminlabs/laminr/pull/56) [@lazappi](https://github.com/lazappi)
