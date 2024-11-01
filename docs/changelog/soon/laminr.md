@@ -1,3 +1,4 @@
+- 🎨 Reword laminr docs [PR](https://github.com/laminlabs/laminr/pull/72) [@Zethson](https://github.com/Zethson)
 - Improve API error messages [PR](https://github.com/laminlabs/laminr/pull/70) [@lazappi](https://github.com/lazappi)
 - Add Records container class [PR](https://github.com/laminlabs/laminr/pull/59) [@lazappi](https://github.com/lazappi)
 - Refactor documentation [PR](https://github.com/laminlabs/laminr/pull/67) [@rcannood](https://github.com/rcannood)
