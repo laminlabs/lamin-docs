@@ -1,3 +1,4 @@
+- Modify Registry$print() to show fields by module [PR](https://github.com/laminlabs/laminr/pull/71) [@lazappi](https://github.com/lazappi)
 - add lifecycle badge [PR](https://github.com/laminlabs/laminr/pull/73) [@rcannood](https://github.com/rcannood)
 - Adjust print colours [PR](https://github.com/laminlabs/laminr/pull/69) [@lazappi](https://github.com/lazappi)
 - 🎨 Reword laminr docs [PR](https://github.com/laminlabs/laminr/pull/72) [@Zethson](https://github.com/Zethson)
