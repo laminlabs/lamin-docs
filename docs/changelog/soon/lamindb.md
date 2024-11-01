@@ -1,3 +1,4 @@
+- 📝 Recursive query of parents and children example [PR](https://github.com/laminlabs/lamindb/pull/2126) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add extra groups for all schemas [PR](https://github.com/laminlabs/lamindb/pull/2123) [@Zethson](https://github.com/Zethson)
 - 🎨 Refactor flatten_unique [PR](https://github.com/laminlabs/lamindb/pull/2121) [@Zethson](https://github.com/Zethson)
 - 💚 Fix CI build [PR](https://github.com/laminlabs/lamindb-setup/pull/896) [@Koncopd](https://github.com/Koncopd)
