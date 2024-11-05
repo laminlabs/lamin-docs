@@ -1,3 +1,4 @@
+- ✨ Support Hugging Face paths [PR](https://github.com/laminlabs/lamindb/pull/2128) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support Hugging Face paths [PR](https://github.com/laminlabs/lamindb-setup/pull/897) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix transfering artifacts from a source instance with fewer schema modules [PR](https://github.com/laminlabs/lamindb/pull/2132) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix hard-coded "name" field during search [PR](https://github.com/laminlabs/lamindb/pull/2130) [@sunnyosun](https://github.com/sunnyosun)
