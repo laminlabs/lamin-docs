@@ -1,3 +1,4 @@
+- ✨ Truncate standardization output [PR](https://github.com/laminlabs/lamindb/pull/2103) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix registering Gene columns in DataFrameCurator [PR](https://github.com/laminlabs/lamindb/pull/2131) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Recursive query of parents and children example [PR](https://github.com/laminlabs/lamindb/pull/2126) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add extra groups for all schemas [PR](https://github.com/laminlabs/lamindb/pull/2123) [@Zethson](https://github.com/Zethson)
