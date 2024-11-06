@@ -1,3 +1,4 @@
+- ✨ Add field support for bionty base [PR](https://github.com/laminlabs/bionty/pull/146) [@Zethson](https://github.com/Zethson)
 - 🎨 Raise `OrganismNotSet` instead of `AssertionError` when `organism` is not set [PR](https://github.com/laminlabs/bionty/pull/144) [@Zethson](https://github.com/Zethson)
 - 🎨 Proper deprecation warning [PR](https://github.com/laminlabs/bionty/pull/138) [@Zethson](https://github.com/Zethson)
 - 🐛 Hide from_public from TOC [PR](https://github.com/laminlabs/bionty/pull/135) [@Zethson](https://github.com/Zethson)
