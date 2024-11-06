@@ -1,3 +1,4 @@
+- 📝 Explain what can be registered as Artifact and show Hugging Face integration [PR](https://github.com/laminlabs/lamindb/pull/2136) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support Hugging Face paths [PR](https://github.com/laminlabs/lamindb/pull/2128) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support Hugging Face paths [PR](https://github.com/laminlabs/lamindb-setup/pull/897) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix transfering artifacts from a source instance with fewer schema modules [PR](https://github.com/laminlabs/lamindb/pull/2132) [@sunnyosun](https://github.com/sunnyosun)
