@@ -1,3 +1,4 @@
+- ✨ Raise TypeError if a string is passed to `var_index` of `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2105) [@Zethson](https://github.com/Zethson)
 - ✨ Warn if curating against gene symbols [PR](https://github.com/laminlabs/lamindb/pull/2142) [@Zethson](https://github.com/Zethson)
 - 🎨 Improve saving validated output [PR](https://github.com/laminlabs/lamindb/pull/2140) [@Zethson](https://github.com/Zethson)
 - ✨ Compute hash for files in Google Cloud Storage and Hugging Face [PR](https://github.com/laminlabs/lamindb/pull/2139) [@Koncopd](https://github.com/Koncopd)
