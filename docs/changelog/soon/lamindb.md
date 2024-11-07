@@ -1,3 +1,4 @@
+- ✨ Warn if curating against gene symbols [PR](https://github.com/laminlabs/lamindb/pull/2142) [@Zethson](https://github.com/Zethson)
 - 🎨 Improve saving validated output [PR](https://github.com/laminlabs/lamindb/pull/2140) [@Zethson](https://github.com/Zethson)
 - ✨ Compute hash for files in Google Cloud Storage and Hugging Face [PR](https://github.com/laminlabs/lamindb/pull/2139) [@Koncopd](https://github.com/Koncopd)
 - ✨ Compute hash for files in Google Cloud Storage and Hugging Face [PR](https://github.com/laminlabs/lamindb-setup/pull/898) [@Koncopd](https://github.com/Koncopd)
