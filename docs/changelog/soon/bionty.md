@@ -1,3 +1,4 @@
+- 🎨 Rename import_from_source [PR](https://github.com/laminlabs/bionty/pull/150) [@Zethson](https://github.com/Zethson)
 - 📝 Fix keep docstring standardize gene [PR](https://github.com/laminlabs/bionty/pull/148) [@Zethson](https://github.com/Zethson)
 - ✨ Add field support for bionty base [PR](https://github.com/laminlabs/bionty/pull/146) [@Zethson](https://github.com/Zethson)
 - 🎨 Raise `OrganismNotSet` instead of `AssertionError` when `organism` is not set [PR](https://github.com/laminlabs/bionty/pull/144) [@Zethson](https://github.com/Zethson)
