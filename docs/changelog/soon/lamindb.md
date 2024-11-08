@@ -1,3 +1,4 @@
+- 🎨 Make EHRCurator immutable [PR](https://github.com/laminlabs/lamindb/pull/2149) [@Zethson](https://github.com/Zethson)
 - 🎨 Rename import_from_source [PR](https://github.com/laminlabs/lamindb/pull/2146) [@Zethson](https://github.com/Zethson)
 - ✅ Test registering GCP paths [PR](https://github.com/laminlabs/lamindb/pull/2145) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Validate minimum `uid` length [PR](https://github.com/laminlabs/lamindb/pull/2144) [@falexwolf](https://github.com/falexwolf)
