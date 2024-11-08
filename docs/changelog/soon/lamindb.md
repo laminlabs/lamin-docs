@@ -1,3 +1,4 @@
+- 🎨 Rename import_from_source [PR](https://github.com/laminlabs/lamindb/pull/2146) [@Zethson](https://github.com/Zethson)
 - ✅ Test registering GCP paths [PR](https://github.com/laminlabs/lamindb/pull/2145) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Validate minimum `uid` length [PR](https://github.com/laminlabs/lamindb/pull/2144) [@falexwolf](https://github.com/falexwolf)
 - ✨ Raise TypeError if a string is passed to `var_index` of `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2105) [@Zethson](https://github.com/Zethson)
