@@ -1,3 +1,4 @@
+- 📝 Add hide-output for some cells & links to storage engines [PR](https://github.com/laminlabs/lamindb/pull/2151) [@Zethson](https://github.com/Zethson)
 - 🚸 Enable autocompletion for inherited methods in Jupyter [PR](https://github.com/laminlabs/lamindb/pull/2148) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Make EHRCurator immutable [PR](https://github.com/laminlabs/lamindb/pull/2149) [@Zethson](https://github.com/Zethson)
 - 🎨 Rename import_from_source [PR](https://github.com/laminlabs/lamindb/pull/2146) [@Zethson](https://github.com/Zethson)
