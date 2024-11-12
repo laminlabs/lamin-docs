@@ -1,3 +1,4 @@
+- ✨ Improve runtime formatting [PR](https://github.com/laminlabs/lamindb/pull/2157) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade fsspec to 2024.10.0 [PR](https://github.com/laminlabs/lamindb/pull/2153) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade fsspec to 2024.10.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/899) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade anndata to 0.11.0 [PR](https://github.com/laminlabs/lamindb/pull/2152) [@Koncopd](https://github.com/Koncopd)
