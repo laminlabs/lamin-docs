@@ -1,3 +1,4 @@
+- update installation instructions [PR](https://github.com/laminlabs/laminr/pull/74) [@rcannood](https://github.com/rcannood)
 - Modify Registry$print() to show fields by module [PR](https://github.com/laminlabs/laminr/pull/71) [@lazappi](https://github.com/lazappi)
 - add lifecycle badge [PR](https://github.com/laminlabs/laminr/pull/73) [@rcannood](https://github.com/rcannood)
 - Adjust print colours [PR](https://github.com/laminlabs/laminr/pull/69) [@lazappi](https://github.com/lazappi)
