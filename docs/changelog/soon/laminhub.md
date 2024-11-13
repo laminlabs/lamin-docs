@@ -1,3 +1,4 @@
+- :feat Resizable columns [PR](https://github.com/laminlabs/laminhub-public/pull/19) [@chaichontat](https://github.com/chaichontat)
 - :feat Time series plot [PR](https://github.com/laminlabs/laminhub-public/pull/18) [@chaichontat](https://github.com/chaichontat)
 - v0.29.0 [PR](https://github.com/laminlabs/laminhub-public/pull/15) [@chaichontat](https://github.com/chaichontat)
 - 💄 Simplify text on landing page [PR](https://github.com/laminlabs/laminhub-public/pull/14) [@falexwolf](https://github.com/falexwolf)
