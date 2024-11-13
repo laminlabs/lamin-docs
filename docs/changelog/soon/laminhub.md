@@ -1,3 +1,4 @@
+- :ux Invalid filter triggers error [PR](https://github.com/laminlabs/laminhub-public/pull/21) [@chaichontat](https://github.com/chaichontat)
 - :bug Fix intermittent page reloading [PR](https://github.com/laminlabs/laminhub-public/pull/20) [@chaichontat](https://github.com/chaichontat)
 - :feat Resizable columns [PR](https://github.com/laminlabs/laminhub-public/pull/19) [@chaichontat](https://github.com/chaichontat)
 - :feat Time series plot [PR](https://github.com/laminlabs/laminhub-public/pull/18) [@chaichontat](https://github.com/chaichontat)
