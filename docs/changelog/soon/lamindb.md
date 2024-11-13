@@ -1,3 +1,5 @@
+- 🎨 Improve runtime formatting code [PR](https://github.com/laminlabs/lamindb/pull/2162) [@Zethson](https://github.com/Zethson)
+- ⚡️ Improve speed and relevance of search [PR](https://github.com/laminlabs/lamindb/pull/2163) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Only apply exact length uid constraint for internal entities [PR](https://github.com/laminlabs/lamindb/pull/2167) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade anndata to 0.11.1 [PR](https://github.com/laminlabs/lamindb/pull/2166) [@Zethson](https://github.com/Zethson)
 - 🚸 Enable to query with records from a different database instance [PR](https://github.com/laminlabs/lamindb/pull/2164) [@falexwolf](https://github.com/falexwolf)
