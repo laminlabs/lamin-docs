@@ -1,1 +1,10 @@
-
+- :feat Detailed page with stem UID links now redirects to the latest version [PR](https://github.com/laminlabs/laminhub-public/pull/23) [@chaichontat](https://github.com/chaichontat)
+- :feat UID copy button are now in custom tables [PR](https://github.com/laminlabs/laminhub-public/pull/22) [@chaichontat](https://github.com/chaichontat)
+- :ux Invalid filter triggers error [PR](https://github.com/laminlabs/laminhub-public/pull/21) [@chaichontat](https://github.com/chaichontat)
+- :bug Fix intermittent page reloading [PR](https://github.com/laminlabs/laminhub-public/pull/20) [@chaichontat](https://github.com/chaichontat)
+- :feat Resizable columns [PR](https://github.com/laminlabs/laminhub-public/pull/19) [@chaichontat](https://github.com/chaichontat)
+- :feat Time series plot [PR](https://github.com/laminlabs/laminhub-public/pull/18) [@chaichontat](https://github.com/chaichontat)
+- v0.29.0 [PR](https://github.com/laminlabs/laminhub-public/pull/15) [@chaichontat](https://github.com/chaichontat)
+- 💄 Simplify text on landing page [PR](https://github.com/laminlabs/laminhub-public/pull/14) [@falexwolf](https://github.com/falexwolf)
+- 🚸 Overhauled filter selectors [PR](https://github.com/laminlabs/laminhub-public/pull/13) [@falexwolf](https://github.com/falexwolf)
+- 💄 Prettify plotting panels on `Overview` page & fix edge cases [PR](https://github.com/laminlabs/laminhub-public/pull/12) [@falexwolf](https://github.com/falexwolf)
