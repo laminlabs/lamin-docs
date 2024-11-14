@@ -1,3 +1,4 @@
+- 🚸 Refactor `ln.track()` to improve logging and method signature [PR](https://github.com/laminlabs/lamindb/pull/2176) [@falexwolf](https://github.com/falexwolf)
 - ✅ Update regex to account for track param rename, add tests [PR](https://github.com/laminlabs/lamin-cli/pull/96) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/900) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support saving R code including `.qmd` and `.Rmd` [PR](https://github.com/laminlabs/lamindb/pull/2169) [@falexwolf](https://github.com/falexwolf)
