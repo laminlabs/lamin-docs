@@ -1,3 +1,4 @@
+- 🐛 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/900) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support saving R code including `.qmd` and `.Rmd` [PR](https://github.com/laminlabs/lamindb/pull/2169) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support saving R code including `.qmd` and `.Rmd` [PR](https://github.com/laminlabs/lamin-cli/pull/95) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Improve Record.search runtime [PR](https://github.com/laminlabs/lamindb/pull/2168) [@Koncopd](https://github.com/Koncopd)
