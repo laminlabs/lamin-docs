@@ -1,3 +1,4 @@
+- ✅ Clean up test properly [PR](https://github.com/laminlabs/bionty/pull/161) [@Zethson](https://github.com/Zethson)
 - Fix jobs run on fork CI [PR](https://github.com/laminlabs/bionty/pull/159) [@Zethson](https://github.com/Zethson)
 - ✨ Add fork protected CI [PR](https://github.com/laminlabs/bionty/pull/157) [@Zethson](https://github.com/Zethson)
 - 📝 Add symbol mapping FAQ reference to Gene  [PR](https://github.com/laminlabs/bionty/pull/149) [@Zethson](https://github.com/Zethson)
