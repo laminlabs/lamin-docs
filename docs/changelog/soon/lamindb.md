@@ -1,0 +1,1 @@
+- ⚡️ Additional search rule for truncated searches [PR](https://github.com/laminlabs/lamindb/pull/2183) [@Koncopd](https://github.com/Koncopd)
