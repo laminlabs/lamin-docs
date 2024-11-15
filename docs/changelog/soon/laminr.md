@@ -1,3 +1,4 @@
+- add badge [PR](https://github.com/laminlabs/laminr/pull/82) [@rcannood](https://github.com/rcannood)
 - Add more file handlers [PR](https://github.com/laminlabs/laminr/pull/81) [@rcannood](https://github.com/rcannood)
 - update desc [PR](https://github.com/laminlabs/laminr/pull/77) [@rcannood](https://github.com/rcannood)
 - update installation instructions [PR](https://github.com/laminlabs/laminr/pull/74) [@rcannood](https://github.com/rcannood)
