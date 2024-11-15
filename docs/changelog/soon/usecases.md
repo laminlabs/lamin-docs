@@ -1,3 +1,4 @@
+- 💚 Lower bound on tiledbsoma in by_datatype [PR](https://github.com/laminlabs/lamin-usecases/pull/169) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Add missing validate call [PR](https://github.com/laminlabs/lamin-usecases/pull/168) [@Zethson](https://github.com/Zethson)
 - 🐛Fix docstring [PR](https://github.com/laminlabs/ourprojects/pull/1) [@Zethson](https://github.com/Zethson)
 - ✨ More flexible Curator & 🐛 support for paths [PR](https://github.com/laminlabs/cellxgene-lamin/pull/104) [@Zethson](https://github.com/Zethson)
