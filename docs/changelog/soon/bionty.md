@@ -1,3 +1,4 @@
+- ✨ Add fork protected CI [PR](https://github.com/laminlabs/bionty/pull/157) [@Zethson](https://github.com/Zethson)
 - 📝 Add symbol mapping FAQ reference to Gene  [PR](https://github.com/laminlabs/bionty/pull/149) [@Zethson](https://github.com/Zethson)
 - 🎨 Rename import_from_source [PR](https://github.com/laminlabs/bionty/pull/150) [@Zethson](https://github.com/Zethson)
 - 📝 Fix keep docstring standardize gene [PR](https://github.com/laminlabs/bionty/pull/148) [@Zethson](https://github.com/Zethson)
