@@ -1,3 +1,4 @@
+- Add more file handlers [PR](https://github.com/laminlabs/laminr/pull/81) [@rcannood](https://github.com/rcannood)
 - update desc [PR](https://github.com/laminlabs/laminr/pull/77) [@rcannood](https://github.com/rcannood)
 - update installation instructions [PR](https://github.com/laminlabs/laminr/pull/74) [@rcannood](https://github.com/rcannood)
 - Modify Registry$print() to show fields by module [PR](https://github.com/laminlabs/laminr/pull/71) [@lazappi](https://github.com/lazappi)
