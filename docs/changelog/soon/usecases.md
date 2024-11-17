@@ -1,3 +1,4 @@
+- 🎨 Add blank=True [PR](https://github.com/laminlabs/cellregistry/pull/2) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Squash migrations [PR](https://github.com/laminlabs/wetlab/pull/75) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `blank=True` [PR](https://github.com/laminlabs/wetlab/pull/74) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Lower bound on tiledbsoma in by_datatype [PR](https://github.com/laminlabs/lamin-usecases/pull/169) [@Koncopd](https://github.com/Koncopd)
