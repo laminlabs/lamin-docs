@@ -1,3 +1,4 @@
+- 🎨 Use Field defaults [PR](https://github.com/laminlabs/findrefs/pull/2) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Set `blank=True` [PR](https://github.com/laminlabs/ourprojects/pull/2) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `blank=True` [PR](https://github.com/laminlabs/clinicore/pull/14) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Add blank=True [PR](https://github.com/laminlabs/cellregistry/pull/2) [@sunnyosun](https://github.com/sunnyosun)
