@@ -7,6 +7,7 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 ## MLOps
 
 - [Weights & Biases](wandb)
+- Hugging Face paths are supported: `ln.Artifact("hf://datasets/laminlabs/repo/sharded_parquet")`
 
 ## Workflow managers
 
