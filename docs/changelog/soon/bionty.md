@@ -1,3 +1,4 @@
+- 🎨 Squash migrations [PR](https://github.com/laminlabs/bionty/pull/162) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Use field defaults [PR](https://github.com/laminlabs/bionty/pull/158) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Clean up test properly [PR](https://github.com/laminlabs/bionty/pull/161) [@Zethson](https://github.com/Zethson)
 - Fix jobs run on fork CI [PR](https://github.com/laminlabs/bionty/pull/159) [@Zethson](https://github.com/Zethson)
