@@ -12,6 +12,12 @@ Rather than configuring storage & database permissions directly on AWS or GCP, L
 
 **A UI to work with LaminDB instances.**
 
+<p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See an overview of all datasets, models, code, and metadata in your instance.</p>
+
+<a href="https://lamin.ai/laminlabs/lamindata">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YuefPQlAfeHcQvtq0000.png" width="700px">
+</a>
+
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See validated datasets in context of ontologies & experimental metadata.</p>
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DjVOPEBiAcGlt3Gq3APh.png" width="700px">
