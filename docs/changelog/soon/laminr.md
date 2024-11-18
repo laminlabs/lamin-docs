@@ -1,3 +1,4 @@
+- Create records from data frames [PR](https://github.com/laminlabs/laminr/pull/78) [@lazappi](https://github.com/lazappi)
 - add badge [PR](https://github.com/laminlabs/laminr/pull/82) [@rcannood](https://github.com/rcannood)
 - Add more file handlers [PR](https://github.com/laminlabs/laminr/pull/81) [@rcannood](https://github.com/rcannood)
 - update desc [PR](https://github.com/laminlabs/laminr/pull/77) [@rcannood](https://github.com/rcannood)
