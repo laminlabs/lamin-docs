@@ -1,2 +1,3 @@
+- 🩹 Check anndata version to import read_zarr [PR](https://github.com/laminlabs/lamindb/pull/2185) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable Django field validation and Literal validation [PR](https://github.com/laminlabs/lamindb/pull/2177) [@sunnyosun](https://github.com/sunnyosun)
 - ⚡️ Additional search rule for truncated searches [PR](https://github.com/laminlabs/lamindb/pull/2183) [@Koncopd](https://github.com/Koncopd)
