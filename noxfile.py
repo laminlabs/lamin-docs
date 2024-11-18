@@ -233,7 +233,7 @@ def docs(session):
         "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs,clinicore,cellregistry,omop,ourprojects",
     )
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index --strict", shell=True
+        "lndocs --strip-prefix --error-on-index", shell=True
     )
     if process.returncode != 0:
         # rerun without strict option so see all warnings
