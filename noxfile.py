@@ -25,6 +25,17 @@ def install(session: nox.Session) -> None:
 
 # for FAQ
 
+INTRODUCITION = """
+```{toctree}
+:hidden:
+:caption: Overview
+
+introduction
+tutorial
+tutorial2
+```
+"""
+
 FAQ_MATCH = """\
 ```
 """
@@ -208,6 +219,7 @@ def pull_artifacts(session):
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
+        content = content.replace("# Guide", "# Guide" + INTRODUCITION)
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
@@ -227,7 +239,10 @@ def docs(session):
         " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
     )
     run(session, "lamin settings set private-django-api true")
+    # below will soon be consolidated and run faster
     run_notebooks("docs/introduction.ipynb")
+    run_notebooks("docs/tutorial.ipynb")
+    run_notebooks("docs/tutorial2.ipynb")
     run(
         session,
         "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs,clinicore,cellregistry,omop,ourprojects",
