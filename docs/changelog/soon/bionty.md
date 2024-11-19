@@ -1,3 +1,4 @@
+- ✨  Reintroduce taxa [PR](https://github.com/laminlabs/bionty/pull/168) [@Zethson](https://github.com/Zethson)
 - 🔊 Raise error if organism can't be created from bionty [PR](https://github.com/laminlabs/bionty/pull/167) [@sunnyosun](https://github.com/sunnyosun)
 - ✨Add support for local source files [PR](https://github.com/laminlabs/bionty/pull/156) [@mossjacob](https://github.com/mossjacob)
 - 🎨 Polish code [PR](https://github.com/laminlabs/bionty/pull/164) [@Zethson](https://github.com/Zethson)
