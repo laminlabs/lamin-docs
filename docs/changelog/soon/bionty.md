@@ -1,3 +1,4 @@
+- 🎨 Polish code [PR](https://github.com/laminlabs/bionty/pull/164) [@Zethson](https://github.com/Zethson)
 - ✨ Support `taxa="plants"` in `EnsemblGene` [PR](https://github.com/laminlabs/bionty/pull/153) [@mossjacob](https://github.com/mossjacob)
 - 🎨 Squash migrations [PR](https://github.com/laminlabs/bionty/pull/162) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Use field defaults [PR](https://github.com/laminlabs/bionty/pull/158) [@sunnyosun](https://github.com/sunnyosun)
