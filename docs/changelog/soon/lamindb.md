@@ -1,0 +1,1 @@
+- 🔇 Suppress hf filesystem warning due to not being explicitly implemented in upath [PR](https://github.com/laminlabs/lamindb-setup/pull/902) [@Koncopd](https://github.com/Koncopd)
