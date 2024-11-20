@@ -1,3 +1,4 @@
+- Add basic CELLxGENE workflow [PR](https://github.com/laminlabs/laminr/pull/75) [@lazappi](https://github.com/lazappi)
 - Add PR template [PR](https://github.com/laminlabs/laminr/pull/88) [@lazappi](https://github.com/lazappi)
 - Expand support for creating new artifacts [PR](https://github.com/laminlabs/laminr/pull/85) [@lazappi](https://github.com/lazappi)
 - Add tracking of runs [PR](https://github.com/laminlabs/laminr/pull/83) [@lazappi](https://github.com/lazappi)
