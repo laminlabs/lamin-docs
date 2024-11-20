@@ -1,5 +1,0 @@
-- ⬆️ Prepare release [PR](https://github.com/laminlabs/lamindb/pull/2189) [@sunnyosun](https://github.com/sunnyosun)
-- 🔊 Prompt to use laminr on trying to load .rds files [PR](https://github.com/laminlabs/lamindb/pull/2188) [@Koncopd](https://github.com/Koncopd)
-- 🩹 Check anndata version to import read_zarr [PR](https://github.com/laminlabs/lamindb/pull/2185) [@Koncopd](https://github.com/Koncopd)
-- ✨ Enable Django field validation and Literal validation [PR](https://github.com/laminlabs/lamindb/pull/2177) [@sunnyosun](https://github.com/sunnyosun)
-- ⚡️ Additional search rule for truncated searches [PR](https://github.com/laminlabs/lamindb/pull/2183) [@Koncopd](https://github.com/Koncopd)
