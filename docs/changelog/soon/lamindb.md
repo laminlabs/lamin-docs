@@ -1,1 +1,2 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2194) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Suppress hf filesystem warning due to not being explicitly implemented in upath [PR](https://github.com/laminlabs/lamindb-setup/pull/902) [@Koncopd](https://github.com/Koncopd)
