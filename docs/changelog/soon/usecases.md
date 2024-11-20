@@ -1,0 +1,1 @@
+- 💚 Fix literal [PR](https://github.com/laminlabs/lamin-usecases/pull/170) [@sunnyosun](https://github.com/sunnyosun)
