@@ -1,3 +1,4 @@
+- Update vignettes [PR](https://github.com/laminlabs/laminr/pull/94) [@lazappi](https://github.com/lazappi)
 - Prep release 0.2.0 [PR](https://github.com/laminlabs/laminr/pull/93) [@rcannood](https://github.com/rcannood)
 - Add RStudio addin [PR](https://github.com/laminlabs/laminr/pull/90) [@rcannood](https://github.com/rcannood)
 - Minor fixes to Instance$track() [PR](https://github.com/laminlabs/laminr/pull/89) [@lazappi](https://github.com/lazappi)
