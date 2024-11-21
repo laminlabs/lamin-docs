@@ -1,3 +1,4 @@
+- 🎨 Re-create 1st migration [PR](https://github.com/laminlabs/ourprojects/pull/4) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Clean up [PR](https://github.com/laminlabs/ourprojects/pull/3) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Clean up [PR](https://github.com/laminlabs/cellregistry/pull/3) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Clean up [PR](https://github.com/laminlabs/clinicore/pull/15) [@sunnyosun](https://github.com/sunnyosun)
