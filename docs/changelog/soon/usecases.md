@@ -1,3 +1,4 @@
+- fix typo [PR](https://github.com/laminlabs/cellregistry/pull/4) [@Zethson](https://github.com/Zethson)
 - 🎨 Re-create 1st migration [PR](https://github.com/laminlabs/ourprojects/pull/4) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Clean up [PR](https://github.com/laminlabs/ourprojects/pull/3) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Clean up [PR](https://github.com/laminlabs/cellregistry/pull/3) [@sunnyosun](https://github.com/sunnyosun)
