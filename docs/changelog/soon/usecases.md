@@ -1,3 +1,4 @@
+- 🎨 Clean up [PR](https://github.com/laminlabs/clinicore/pull/15) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Update lamindb [PR](https://github.com/laminlabs/findrefs/pull/4) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Update lamindb deps [PR](https://github.com/laminlabs/wetlab/pull/76) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix literal [PR](https://github.com/laminlabs/lamin-usecases/pull/170) [@sunnyosun](https://github.com/sunnyosun)
