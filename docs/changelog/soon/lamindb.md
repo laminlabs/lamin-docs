@@ -1,2 +1,3 @@
+- 🍱 Add `.rds` as a valid simple path suffix [PR](https://github.com/laminlabs/lamindb-setup/pull/905) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Add `.qs` file as a valid simple suffix [PR](https://github.com/laminlabs/lamindb-setup/pull/904) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Make search in bionty consistent with the lamindb implementation [PR](https://github.com/laminlabs/lamindb/pull/2205) [@Koncopd](https://github.com/Koncopd)
