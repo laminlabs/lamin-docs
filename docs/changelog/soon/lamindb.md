@@ -1,3 +1,4 @@
+- 🎨 Make search in bionty consistent with the lamindb implementation [PR](https://github.com/laminlabs/lamindb/pull/2205) [@Koncopd](https://github.com/Koncopd)
 - 💚 Ensure storage records are deleted for tests with create-s3 [PR](https://github.com/laminlabs/lamindb-setup/pull/903) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Make search rules the same across all systems [PR](https://github.com/laminlabs/lamindb/pull/2199) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update core [PR](https://github.com/laminlabs/lamindb/pull/2197) [@sunnyosun](https://github.com/sunnyosun)
