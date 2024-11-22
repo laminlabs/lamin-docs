@@ -1,0 +1,1 @@
+- Polish the get-started guide [PR](https://github.com/laminlabs/laminr/pull/97) [@falexwolf](https://github.com/falexwolf)
