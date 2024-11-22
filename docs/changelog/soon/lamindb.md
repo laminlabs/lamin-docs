@@ -1,3 +1,4 @@
+- 💚 Ensure storage records are deleted for tests with create-s3 [PR](https://github.com/laminlabs/lamindb-setup/pull/903) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Make search rules the same across all systems [PR](https://github.com/laminlabs/lamindb/pull/2199) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update core [PR](https://github.com/laminlabs/lamindb/pull/2197) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Mark `.qmd` & `.Rmd` files as notebooks, not scripts [PR](https://github.com/laminlabs/lamindb/pull/2196) [@falexwolf](https://github.com/falexwolf)
