@@ -224,7 +224,7 @@ def docs(session):
     run(
         session,
         "pip install"
-        " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@release",
+        " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@main",
     )
     run(session, "lamin settings set private-django-api true")
     run_notebooks("docs/introduction.ipynb")
