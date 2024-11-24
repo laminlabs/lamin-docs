@@ -1,1 +1,2 @@
+- 🎨 Simplify coupling to `lamindb_setup` [PR](https://github.com/laminlabs/bionty/pull/171) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Make search consistent with the lamindb implementation [PR](https://github.com/laminlabs/bionty/pull/170) [@Koncopd](https://github.com/Koncopd)
