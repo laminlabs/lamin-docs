@@ -2,6 +2,9 @@
 
 ```{glossary}
 
+FAIR
+    FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
+
 feature
     A feature is an individual measurable property of a phenomenon [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))], a measured event like a microscopy image or transcriptomic readout of a biological system.
 
@@ -9,6 +12,9 @@ feature
 
 label
     A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
+
+ORM
+    Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
 
 observation
     In statistics (machine learning), an observation refers to a particular measured instance of a set of random variable.
