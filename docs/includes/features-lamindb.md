@@ -1,5 +1,7 @@
 Any LaminDB instance comes with an underlying SQL metadata database to organize files, folders, and arrays across any number of storage locations.
 
+The following detailed specs are for the Python package `lamindb`. For the analogous R package `laminr`, see the [R docs](https://laminr.lamin.ai).
+
 **Manage data & metadata with a unified API (“lakehouse”).**
 
 - Query & search across data & metadata: {class}`~lamindb.core.Record.filter`, {class}`~lamindb.core.Record.search`
