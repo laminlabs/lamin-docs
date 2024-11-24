@@ -1,3 +1,4 @@
+- 📝 Move `tutorial` and `tutorial2` to `lamin-docs` [PR](https://github.com/laminlabs/lamindb/pull/2184) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix tiledbsoma installation in CI [PR](https://github.com/laminlabs/lamindb/pull/2208) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Simplify coupling of `bionty` and `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/2207) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor setup bionty sources [PR](https://github.com/laminlabs/lamindb-setup/pull/906) [@falexwolf](https://github.com/falexwolf)
