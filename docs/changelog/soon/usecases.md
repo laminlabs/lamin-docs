@@ -1,3 +1,4 @@
+- 📝 Adapt usecases to the new search [PR](https://github.com/laminlabs/lamin-usecases/pull/171) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add script to add references to existing corpus [PR](https://github.com/laminlabs/cellxgene-lamin/pull/108) [@Zethson](https://github.com/Zethson)
 - ✨ Add Person and Reference models [PR](https://github.com/laminlabs/ourprojects/pull/5) [@Zethson](https://github.com/Zethson)
 - fix typo [PR](https://github.com/laminlabs/cellregistry/pull/4) [@Zethson](https://github.com/Zethson)
