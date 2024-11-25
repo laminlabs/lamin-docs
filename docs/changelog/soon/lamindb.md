@@ -1,3 +1,4 @@
+- 🩹 Add a lower bound on nbconvert to avoid problems with lxml [PR](https://github.com/laminlabs/lamindb/pull/2216) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Check protocol first in check_path_is_child_of_root [PR](https://github.com/laminlabs/lamindb/pull/2215) [@Koncopd](https://github.com/Koncopd)
 - 📝 Prettify gene symbols guide & logging [PR](https://github.com/laminlabs/lamindb/pull/2210) [@falexwolf](https://github.com/falexwolf)
 - 📝 Move `tutorial` and `tutorial2` to `lamin-docs` [PR](https://github.com/laminlabs/lamindb/pull/2184) [@falexwolf](https://github.com/falexwolf)
