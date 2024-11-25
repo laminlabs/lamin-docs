@@ -1,1 +1,1 @@
-
+- v0.31.0 [PR](https://github.com/laminlabs/laminhub-public/pull/25) [@chaichontat](https://github.com/chaichontat)
