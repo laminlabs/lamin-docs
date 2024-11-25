@@ -1,2 +1,3 @@
+- Remove feature warning from README [PR](https://github.com/laminlabs/laminr/pull/100) [@lazappi](https://github.com/lazappi)
 - Cosmetic fixes to `get-started` [PR](https://github.com/laminlabs/laminr/pull/102) [@falexwolf](https://github.com/falexwolf)
 - Polish the get-started guide [PR](https://github.com/laminlabs/laminr/pull/97) [@falexwolf](https://github.com/falexwolf)
