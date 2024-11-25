@@ -17,12 +17,6 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-@nox.session
-def install(session: nox.Session) -> None:
-    run(session, "git clone https://github.com/laminlabs/lamindb --depth 1")
-    run(session, "pip install ./lamindb[aws,bionty]")
-
-
 # for FAQ
 
 INTRODUCITION = """
@@ -228,7 +222,7 @@ def pull_artifacts(session):
 
 
 @nox.session
-def docs(session):
+def install(session):
     run(
         session,
         "pip install --no-deps git+https://github.com/laminlabs/lnschema-core git+https://github.com/laminlabs/bionty git+https://github.com/laminlabs/lamindb-setup git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/findrefs git+https://github.com/laminlabs/clinicore git+https://github.com/laminlabs/cellregistry git+https://github.com/laminlabs/omop git+https://github.com/laminlabs/ourprojects",
@@ -239,16 +233,27 @@ def docs(session):
         " lamindb[bionty,jupyter,aws]@git+https://github.com/laminlabs/lamindb@main",
     )
     run(session, "lamin settings set private-django-api true")
-    # below will soon be consolidated and run faster
+
+
+@nox.session
+def run_nbs(session):
     run_notebooks("docs/introduction.ipynb")
     run_notebooks("docs/tutorial.ipynb")
     run_notebooks("docs/tutorial2.ipynb")
+
+
+@nox.session
+def init(session):
     run(
         session,
         "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs,clinicore,cellregistry,omop,ourprojects",
     )
+
+
+@nox.session
+def docs(session):
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index", shell=True
+        "lndocs --strict --strip-prefix --error-on-index", shell=True
     )
     if process.returncode != 0:
         # rerun without strict option so see all warnings

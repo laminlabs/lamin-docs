@@ -31,9 +31,9 @@ The following detailed specs are for the Python package `lamindb`. For the analo
 
 **Validate, standardize & annotate.**
 
-- Validate & standardize metadata: {class}`~lamindb.core.CanValidate.validate`, {class}`~lamindb.core.CanValidate.standardize`.
+- Validate & standardize metadata: {class}`~lamindb.core.CanCurate.validate`, {class}`~lamindb.core.CanCurate.standardize`.
 - High-level curation flow including annotation: {class}`~lamindb.Curator`
-- Inspect validation failures: {class}`~lamindb.core.CanValidate.inspect`
+- Inspect validation failures: {class}`~lamindb.core.CanCurate.inspect`
 
 **Organize and share data across a mesh of LaminDB instances.**
 
