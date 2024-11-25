@@ -17,7 +17,7 @@ label
     A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
 
 lakehouse
-    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with the data management and ACID transaction support of a data warehouse, enabling both structured and unstructured data analytics in a single framework. Some of the early lakehouse frameworks were Databrick's [Delta Lake](https://delta.io/), Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](). Later examples include [Dremio](https://www.dremio.com/), [Starburst](https://www.starburst.io/) and others. Here is a [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, a [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, a [glossary entry](https://www.databricks.com/glossary/data-lakehouse) and a [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
+    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with the data management and ACID transaction support of a data warehouse, enabling both structured and unstructured data analytics in a single framework. Lakehouse frameworks include Databrick's [Delta Lake](https://delta.io/), Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), [Starburst](https://www.starburst.io/) and others. Here is a [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, a [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, a [glossary entry](https://www.databricks.com/glossary/data-lakehouse) and a [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
 ORM
     Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
@@ -28,9 +28,9 @@ observation
     In biology, an observation typically corresponds to measuring (reading out) a set of properties from a biological sample.
 
 record
-    A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that store values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
+    A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    In LaminDB, a metadata record is modeled as a {class}`~lamindb.Record`.
+    In LaminDB, a metadata record is modeled as a {class}`~lamindb.core.Record`.
 
 sample
     In biology, a sample is an instance or part of a biological system.

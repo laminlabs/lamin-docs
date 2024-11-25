@@ -4,12 +4,12 @@
 
 Additional registries can be found here:
 
-- [bionty](bionty): Basic biological entities, coupled to public ontologies
-- [wetlab](wetlab): Basic wetlab entities
-- [clinicore](clinicore): Basic clinical entities
-- [cellregistry](cellregistry): A registry for single cells
-- [ourprojects](ourprojects): Manage projects, teams & references
-- [omop](omop): OMOP Common Data Model
+- [bionty](/bionty): Basic biological entities, coupled to public ontologies
+- [wetlab](/wetlab): Basic wetlab entities
+- [clinicore](/clinicore): Basic clinical entities
+- [cellregistry](/cellregistry): A registry for single cells
+- [ourprojects](/ourprojects): Manage projects, teams & references
+- [omop](/omop): OMOP Common Data Model
 
 Please [reach out](https://lamin.ai/contact) to have your schema module featured.
 
