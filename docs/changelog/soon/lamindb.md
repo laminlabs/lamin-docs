@@ -1,3 +1,4 @@
+- ✨ Improve annotating with, retrieving & removing feature values [PR](https://github.com/laminlabs/lamindb/pull/2218) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Add a lower bound on nbconvert to avoid problems with lxml [PR](https://github.com/laminlabs/lamindb/pull/2216) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Check protocol first in check_path_is_child_of_root [PR](https://github.com/laminlabs/lamindb/pull/2215) [@Koncopd](https://github.com/Koncopd)
 - 📝 Prettify gene symbols guide & logging [PR](https://github.com/laminlabs/lamindb/pull/2210) [@falexwolf](https://github.com/falexwolf)
