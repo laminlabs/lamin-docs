@@ -1,3 +1,4 @@
+- 🎨 Fix cellxgene-schema CLI [PR](https://github.com/laminlabs/cellxgene-lamin/pull/110) [@Zethson](https://github.com/Zethson)
 - 📝 Edit search queries for public ontologies [PR](https://github.com/laminlabs/lamin-usecases/pull/173) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix cell type curation [PR](https://github.com/laminlabs/lamin-usecases/pull/172) [@Zethson](https://github.com/Zethson)
 - 📝 Adapt usecases to the new search [PR](https://github.com/laminlabs/lamin-usecases/pull/171) [@Koncopd](https://github.com/Koncopd)
