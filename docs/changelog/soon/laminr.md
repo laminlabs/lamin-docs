@@ -1,3 +1,4 @@
+- Simplify README [PR](https://github.com/laminlabs/laminr/pull/116) [@falexwolf](https://github.com/falexwolf)
 - Allow connecting to private LaminDB instances [PR](https://github.com/laminlabs/laminr/pull/118) [@rcannood](https://github.com/rcannood)
 - Use host system user for running tests [PR](https://github.com/laminlabs/laminr/pull/119) [@rcannood](https://github.com/rcannood)
 - update roadmap [PR](https://github.com/laminlabs/laminr/pull/112) [@rcannood](https://github.com/rcannood)
