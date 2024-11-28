@@ -1,3 +1,4 @@
+- 🎨 Separate labels fetching from printing [PR](https://github.com/laminlabs/lamindb/pull/2225) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Update custom schema submodules [PR](https://github.com/laminlabs/lamindb/pull/2223) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Add `.standardize()` to `Curator` and refactor [PR](https://github.com/laminlabs/lamindb/pull/2186) [@sunnyosun](https://github.com/sunnyosun)
 - 👷 Simplify issue templates [PR](https://github.com/laminlabs/lamindb/pull/2220) [@falexwolf](https://github.com/falexwolf)
