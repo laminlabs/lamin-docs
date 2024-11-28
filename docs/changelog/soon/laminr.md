@@ -1,3 +1,4 @@
+- Allow connecting to private LaminDB instances [PR](https://github.com/laminlabs/laminr/pull/118) [@rcannood](https://github.com/rcannood)
 - Use host system user for running tests [PR](https://github.com/laminlabs/laminr/pull/119) [@rcannood](https://github.com/rcannood)
 - update roadmap [PR](https://github.com/laminlabs/laminr/pull/112) [@rcannood](https://github.com/rcannood)
 - Update `get-started` with resolutions of questions from demo [PR](https://github.com/laminlabs/laminr/pull/113) [@falexwolf](https://github.com/falexwolf)
