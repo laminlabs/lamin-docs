@@ -1,3 +1,4 @@
+- 🏷️ Remove duplicated typing in Curator [PR](https://github.com/laminlabs/lamindb/pull/2232) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Enable features with `dtype = 'str'` [PR](https://github.com/laminlabs/lamindb/pull/2226) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Fix EHRCurator warning & validation [PR](https://github.com/laminlabs/lamindb/pull/2230) [@Zethson](https://github.com/Zethson)
 - 🎨 Separate labels fetching from printing [PR](https://github.com/laminlabs/lamindb/pull/2225) [@sunnyosun](https://github.com/sunnyosun)
