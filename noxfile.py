@@ -227,7 +227,7 @@ def install(session):
     run(
         session,
         "pip install"
-        " lamindb[bionty,jupyter,aws]@git+https://github.com/laminlabs/lamindb@pandastypes",
+        " lamindb[bionty,jupyter,aws]@git+https://github.com/laminlabs/lamindb@main",
     )
     run(session, "lamin settings set private-django-api true")
 
