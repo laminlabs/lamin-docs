@@ -1,3 +1,4 @@
+- 🎨 Centralize a small test dataset for curation [PR](https://github.com/laminlabs/lamindb/pull/2234) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Let `.from_values()` return `RecordList` and better treat categorical [PR](https://github.com/laminlabs/lamindb/pull/2233) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Remove duplicated typing in Curator [PR](https://github.com/laminlabs/lamindb/pull/2232) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Enable features with `dtype = 'str'` [PR](https://github.com/laminlabs/lamindb/pull/2226) [@falexwolf](https://github.com/falexwolf)
