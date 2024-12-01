@@ -1,3 +1,4 @@
+- 🚸 Improve UX of `db$track()` and `db$finish()` [PR](https://github.com/laminlabs/lamindb/pull/2213) [@falexwolf](https://github.com/falexwolf)
 - 💄 Create a more intuitive `artifact.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2236) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Improve R UX [PR](https://github.com/laminlabs/lamin-cli/pull/98) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable to include features in `Artifact.df()` [PR](https://github.com/laminlabs/lamindb/pull/2238) [@falexwolf](https://github.com/falexwolf)
