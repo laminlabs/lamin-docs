@@ -1,3 +1,4 @@
+- ✨ Tracking artifacts loaded from other instances [PR](https://github.com/laminlabs/laminr/pull/124) [@lazappi](https://github.com/lazappi)
 - 🚸 Improve UX of `db$track()` and `db$finish()` [PR](https://github.com/laminlabs/laminr/pull/120) [@lazappi](https://github.com/lazappi)
 - Simplify README [PR](https://github.com/laminlabs/laminr/pull/116) [@falexwolf](https://github.com/falexwolf)
 - Allow connecting to private LaminDB instances [PR](https://github.com/laminlabs/laminr/pull/118) [@rcannood](https://github.com/rcannood)
