@@ -1,3 +1,4 @@
+- ✨ Add `Artifact$open()` method [PR](https://github.com/laminlabs/laminr/pull/117) [@lazappi](https://github.com/lazappi)
 - 🐛 Fix error message when fetching the instance details fails [PR](https://github.com/laminlabs/laminr/pull/123) [@rcannood](https://github.com/rcannood)
 - ✨ Tracking artifacts loaded from other instances [PR](https://github.com/laminlabs/laminr/pull/124) [@lazappi](https://github.com/lazappi)
 - 🚸 Improve UX of `db$track()` and `db$finish()` [PR](https://github.com/laminlabs/laminr/pull/120) [@lazappi](https://github.com/lazappi)
