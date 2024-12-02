@@ -1,0 +1,1 @@
+- ✅ More tests for Artifact.df() [PR](https://github.com/laminlabs/lamindb/pull/2241) [@falexwolf](https://github.com/falexwolf)
