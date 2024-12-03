@@ -1,0 +1,1 @@
+- 📝 Add gitmoji instructions to PR template [PR](https://github.com/laminlabs/laminr/pull/126) [@lazappi](https://github.com/lazappi)
