@@ -1,3 +1,4 @@
+- 🐛 Fix IPython import error [PR](https://github.com/laminlabs/lamindb/pull/2250) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Update describe layout [PR](https://github.com/laminlabs/lamindb/pull/2247) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix the error on existing cache on copy to cache in Artifact.save [PR](https://github.com/laminlabs/lamindb/pull/2248) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add Curator for tiledbsoma stores [PR](https://github.com/laminlabs/lamindb/pull/2228) [@Koncopd](https://github.com/Koncopd)
