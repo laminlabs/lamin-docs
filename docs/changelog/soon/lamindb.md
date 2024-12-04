@@ -1,3 +1,4 @@
+- ⬆️ Update wetlab [PR](https://github.com/laminlabs/lamindb/pull/2251) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix IPython import error [PR](https://github.com/laminlabs/lamindb/pull/2250) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Update describe layout [PR](https://github.com/laminlabs/lamindb/pull/2247) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix the error on existing cache on copy to cache in Artifact.save [PR](https://github.com/laminlabs/lamindb/pull/2248) [@Koncopd](https://github.com/Koncopd)
