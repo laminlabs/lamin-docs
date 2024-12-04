@@ -1,3 +1,4 @@
+- ⬆️ Unpin supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/909) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update wetlab [PR](https://github.com/laminlabs/lamindb/pull/2251) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix IPython import error [PR](https://github.com/laminlabs/lamindb/pull/2250) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Update describe layout [PR](https://github.com/laminlabs/lamindb/pull/2247) [@sunnyosun](https://github.com/sunnyosun)
