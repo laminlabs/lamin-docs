@@ -1,3 +1,4 @@
+- ✨ Rename `Treatment` to `Perturbation`, add `Donor` registry, improve `GeneticPerturbationSystem` typing [PR](https://github.com/laminlabs/wetlab/pull/80) [@Zethson](https://github.com/Zethson)
 - 🎨 Fix link tables of Biosample and Techsample [PR](https://github.com/laminlabs/wetlab/pull/81) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix for 0.77.1 [PR](https://github.com/laminlabs/lamin-usecases/pull/174) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Fix cellxgene-schema CLI [PR](https://github.com/laminlabs/cellxgene-lamin/pull/110) [@Zethson](https://github.com/Zethson)
