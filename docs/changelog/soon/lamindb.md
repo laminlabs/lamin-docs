@@ -1,3 +1,4 @@
+- 🐛 Fix describing no label features [PR](https://github.com/laminlabs/lamindb/pull/2253) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade lamindb-setup (unpin supabase) [PR](https://github.com/laminlabs/lamindb/pull/2252) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Unpin supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/909) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update wetlab [PR](https://github.com/laminlabs/lamindb/pull/2251) [@sunnyosun](https://github.com/sunnyosun)
