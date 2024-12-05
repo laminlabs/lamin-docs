@@ -1,3 +1,4 @@
+- 🩹 Correct handling of strings in cloud_to_local [PR](https://github.com/laminlabs/lamindb-setup/pull/910) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix describing no label features [PR](https://github.com/laminlabs/lamindb/pull/2253) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade lamindb-setup (unpin supabase) [PR](https://github.com/laminlabs/lamindb/pull/2252) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Unpin supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/909) [@Koncopd](https://github.com/Koncopd)
