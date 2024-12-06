@@ -1,3 +1,4 @@
+- Allow editing of transform name and attaching/detaching labels [PR](https://github.com/laminlabs/laminhub-public/pull/30) [@awgaan](https://github.com/awgaan)
 - ✨ Dynamic code copy for R and Python [PR](https://github.com/laminlabs/laminhub-public/pull/27) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Improve speed and relevance of search [PR](https://github.com/laminlabs/laminhub-public/pull/26) [@falexwolf](https://github.com/falexwolf)
 - v0.31.0 [PR](https://github.com/laminlabs/laminhub-public/pull/25) [@chaichontat](https://github.com/chaichontat)
