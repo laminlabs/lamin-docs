@@ -1,3 +1,4 @@
+- 🐛 Better error behavior for repeated calls of `standardize` [PR](https://github.com/laminlabs/lamindb/pull/2266) [@Zethson](https://github.com/Zethson)
 - ✨ Add an artifact loader for .yaml [PR](https://github.com/laminlabs/lamindb/pull/2270) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix the error on special chars in search strings [PR](https://github.com/laminlabs/lamindb/pull/2261) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Remove quotes and rename sessions in describe [PR](https://github.com/laminlabs/lamindb/pull/2259) [@sunnyosun](https://github.com/sunnyosun)
