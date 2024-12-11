@@ -1,3 +1,4 @@
+- 🐛 Fix very long runtimes for Artifact.describe [PR](https://github.com/laminlabs/lamindb/pull/2273) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix organism in curator.standardize [PR](https://github.com/laminlabs/lamindb/pull/2272) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Better error behavior for repeated calls of `standardize` [PR](https://github.com/laminlabs/lamindb/pull/2266) [@Zethson](https://github.com/Zethson)
 - ✨ Add an artifact loader for .yaml [PR](https://github.com/laminlabs/lamindb/pull/2270) [@Koncopd](https://github.com/Koncopd)
