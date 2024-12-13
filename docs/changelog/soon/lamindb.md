@@ -1,3 +1,4 @@
+- ⬇️ Exclude s3fs==2024.10.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/911) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamin-utils to 0.13.10 (escape search string in bionty search) [PR](https://github.com/laminlabs/lamindb/pull/2274) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix very long runtimes for Artifact.describe [PR](https://github.com/laminlabs/lamindb/pull/2273) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix organism in curator.standardize [PR](https://github.com/laminlabs/lamindb/pull/2272) [@sunnyosun](https://github.com/sunnyosun)
