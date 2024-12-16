@@ -1,3 +1,4 @@
+- 🐛 Fix docs & import [PR](https://github.com/laminlabs/wetlab/pull/87) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Create the Biologic registry [PR](https://github.com/laminlabs/wetlab/pull/86) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix pert nb [PR](https://github.com/laminlabs/lamin-usecases/pull/176) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Fix model relationships [PR](https://github.com/laminlabs/wetlab/pull/83) [@sunnyosun](https://github.com/sunnyosun)
