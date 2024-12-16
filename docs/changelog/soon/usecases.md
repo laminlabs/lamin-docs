@@ -1,3 +1,4 @@
+- 📝 Fix pert nb [PR](https://github.com/laminlabs/lamin-usecases/pull/176) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Fix model relationships [PR](https://github.com/laminlabs/wetlab/pull/83) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Rename `Treatment` to `Perturbation`, add `Donor` registry, improve `GeneticPerturbationSystem` typing [PR](https://github.com/laminlabs/wetlab/pull/80) [@Zethson](https://github.com/Zethson)
 - 🎨 Fix link tables of Biosample and Techsample [PR](https://github.com/laminlabs/wetlab/pull/81) [@sunnyosun](https://github.com/sunnyosun)
