@@ -1,3 +1,4 @@
+- 🔊 Log tiledbsoma write path [PR](https://github.com/laminlabs/lamindb/pull/2278) [@Koncopd](https://github.com/Koncopd)
 - 🛠️ Update wetlab [PR](https://github.com/laminlabs/lamindb/pull/2277) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix curator.validate from public [PR](https://github.com/laminlabs/lamindb/pull/2275) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix typos in describe sections [PR](https://github.com/laminlabs/lamindb/pull/2271) [@falexwolf](https://github.com/falexwolf)
