@@ -1,3 +1,4 @@
+- ✨ Safer gene mapping [PR](https://github.com/laminlabs/lamindb/pull/2283) [@Zethson](https://github.com/Zethson)
 - 🩹 Enable annotating existing artifacts with `Curate.save_artifact()` [PR](https://github.com/laminlabs/lamindb/pull/2280) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Log tiledbsoma write path [PR](https://github.com/laminlabs/lamindb/pull/2278) [@Koncopd](https://github.com/Koncopd)
 - 🛠️ Update wetlab [PR](https://github.com/laminlabs/lamindb/pull/2277) [@Zethson](https://github.com/Zethson)
