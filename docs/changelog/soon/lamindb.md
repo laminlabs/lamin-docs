@@ -1,1 +1,2 @@
+- 🎨 Proper type check of FeatureSet rename [PR](https://github.com/laminlabs/lamindb/pull/2289) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix feature set renaming [PR](https://github.com/laminlabs/lamindb/pull/2288) [@sunnyosun](https://github.com/sunnyosun)
