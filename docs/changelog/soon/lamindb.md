@@ -1,0 +1,1 @@
+- 🐛 Fix feature set renaming [PR](https://github.com/laminlabs/lamindb/pull/2288) [@sunnyosun](https://github.com/sunnyosun)
