@@ -1,3 +1,4 @@
+- ✨ Allow to synchronize via st_size if st_mtime is not present in UPath.stat() [PR](https://github.com/laminlabs/lamindb-setup/pull/913) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Let `Curator.from_tiledbsoma()` validate and annotate all `.obs` columns [PR](https://github.com/laminlabs/lamindb/pull/2287) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Proper type check of FeatureSet rename [PR](https://github.com/laminlabs/lamindb/pull/2289) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix feature set renaming [PR](https://github.com/laminlabs/lamindb/pull/2288) [@sunnyosun](https://github.com/sunnyosun)
