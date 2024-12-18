@@ -1,3 +1,4 @@
+- 🎨 Raise ValueError when trying to search a None value [PR](https://github.com/laminlabs/lamindb/pull/2294) [@Zethson](https://github.com/Zethson)
 - ✨ Allow to register artifacts with http urls [PR](https://github.com/laminlabs/lamindb/pull/2291) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to synchronize via st_size if st_mtime is not present in UPath.stat() [PR](https://github.com/laminlabs/lamindb-setup/pull/913) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Let `Curator.from_tiledbsoma()` validate and annotate all `.obs` columns [PR](https://github.com/laminlabs/lamindb/pull/2287) [@falexwolf](https://github.com/falexwolf)
