@@ -1,3 +1,4 @@
+- ✅ Check reading X in tiledbsoma tests [PR](https://github.com/laminlabs/lamindb/pull/2298) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Add defensive organism check [PR](https://github.com/laminlabs/lamindb/pull/2297) [@Zethson](https://github.com/Zethson)
 - 🎨 Raise ValueError when trying to search a None value [PR](https://github.com/laminlabs/lamindb/pull/2294) [@Zethson](https://github.com/Zethson)
 - ✨ Allow to register artifacts with http urls [PR](https://github.com/laminlabs/lamindb/pull/2291) [@Koncopd](https://github.com/Koncopd)
