@@ -1,3 +1,4 @@
+- 🎨 Add defensive organism check [PR](https://github.com/laminlabs/lamindb/pull/2297) [@Zethson](https://github.com/Zethson)
 - 🎨 Raise ValueError when trying to search a None value [PR](https://github.com/laminlabs/lamindb/pull/2294) [@Zethson](https://github.com/Zethson)
 - ✨ Allow to register artifacts with http urls [PR](https://github.com/laminlabs/lamindb/pull/2291) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to synchronize via st_size if st_mtime is not present in UPath.stat() [PR](https://github.com/laminlabs/lamindb-setup/pull/913) [@Koncopd](https://github.com/Koncopd)
