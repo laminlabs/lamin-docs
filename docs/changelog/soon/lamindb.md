@@ -1,3 +1,4 @@
+- 🚸 Simplify installation & API overview [PR](https://github.com/laminlabs/lamindb/pull/2302) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Make lamin_run_uid categorical in tiledbsoma stores [PR](https://github.com/laminlabs/lamindb/pull/2300) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Fix NA values in Curator.add_new_from [PR](https://github.com/laminlabs/lamindb/pull/2299) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Prepare for deletion of the storage_id column from the instance table [PR](https://github.com/laminlabs/lamindb-setup/pull/915) [@Koncopd](https://github.com/Koncopd)
