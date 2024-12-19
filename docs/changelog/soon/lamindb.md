@@ -1,3 +1,4 @@
+- 🎨 Fix NA values in Curator.add_new_from [PR](https://github.com/laminlabs/lamindb/pull/2299) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Prepare for deletion of the storage_id column from the instance table [PR](https://github.com/laminlabs/lamindb-setup/pull/915) [@Koncopd](https://github.com/Koncopd)
 - ✅ Check reading X in tiledbsoma tests [PR](https://github.com/laminlabs/lamindb/pull/2298) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Add defensive organism check [PR](https://github.com/laminlabs/lamindb/pull/2297) [@Zethson](https://github.com/Zethson)
