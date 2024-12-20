@@ -1,2 +1,3 @@
+- 🚸 Improve the user experience for setting up Python & reticulate [PR](https://github.com/laminlabs/laminr/pull/129) [@lazappi](https://github.com/lazappi)
 - 🐛 Fix CI setup [PR](https://github.com/laminlabs/laminr/pull/125) [@rcannood](https://github.com/rcannood)
 - 📝 Add gitmoji instructions to PR template [PR](https://github.com/laminlabs/laminr/pull/126) [@lazappi](https://github.com/lazappi)
