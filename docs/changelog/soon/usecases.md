@@ -1,3 +1,4 @@
+- ✨ PertCurator [PR](https://github.com/laminlabs/wetlab/pull/88) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Fix import [PR](https://github.com/laminlabs/cellxgene-lamin/pull/112) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix docs & import [PR](https://github.com/laminlabs/wetlab/pull/87) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Create the Biologic registry [PR](https://github.com/laminlabs/wetlab/pull/86) [@falexwolf](https://github.com/falexwolf)
