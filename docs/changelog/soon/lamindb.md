@@ -1,3 +1,4 @@
+- ⬆️ Release submodules [PR](https://github.com/laminlabs/lamindb/pull/2306) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix NA values in Curator.add_new_from [PR](https://github.com/laminlabs/lamindb/pull/2305) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `SpatialDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2290) [@Zethson](https://github.com/Zethson)
 - 🚸 Simplify installation & API overview [PR](https://github.com/laminlabs/lamindb/pull/2302) [@falexwolf](https://github.com/falexwolf)
