@@ -229,7 +229,7 @@ def pull_artifacts(session):
 def install(session):
     run(
         session,
-        "pip install --no-deps git+https://github.com/laminlabs/lnschema-core git+https://github.com/laminlabs/bionty git+https://github.com/laminlabs/lamindb-setup git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/findrefs git+https://github.com/laminlabs/clinicore git+https://github.com/laminlabs/cellregistry git+https://github.com/laminlabs/omop git+https://github.com/laminlabs/ourprojects",
+        "pip install --no-deps git+https://github.com/laminlabs/lnschema-core git+https://github.com/laminlabs/bionty git+https://github.com/laminlabs/lamindb-setup git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/clinicore git+https://github.com/laminlabs/cellregistry git+https://github.com/laminlabs/ourprojects",
     )
     run(
         session,
