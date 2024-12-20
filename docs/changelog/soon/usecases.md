@@ -1,3 +1,4 @@
+- ⬆️ Unpin tiledbsoma in CI [PR](https://github.com/laminlabs/lamin-usecases/pull/177) [@Koncopd](https://github.com/Koncopd)
 - ✨ PertCurator [PR](https://github.com/laminlabs/wetlab/pull/88) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Fix import [PR](https://github.com/laminlabs/cellxgene-lamin/pull/112) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix docs & import [PR](https://github.com/laminlabs/wetlab/pull/87) [@falexwolf](https://github.com/falexwolf)
