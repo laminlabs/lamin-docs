@@ -210,7 +210,7 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("wetlab.zip")
     sync_path(
         Path("wetlab/guide/pert-curator.ipynb"),
-        Path("docs/by-datatype/perturbation.ipynb"),
+        Path("docs/perturbation.ipynb"),
     )
 
     # amend toctree
