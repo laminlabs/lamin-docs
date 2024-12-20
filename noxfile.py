@@ -206,6 +206,13 @@ def pull_artifacts(session):
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
 
+    # wetlab (must be after use-cases)
+    pull_from_s3_and_unpack("wetlab.zip")
+    sync_path(
+        Path("wetlab/guide/pert-curator.ipynb"),
+        Path("docs/by-datatype/perturbation.ipynb"),
+    )
+
     # amend toctree
     with open("docs/guide.md") as f:
         content = f.read()
