@@ -1,3 +1,4 @@
+- ✏️ Fix NA values in Curator.add_new_from [PR](https://github.com/laminlabs/lamindb/pull/2305) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `SpatialDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2290) [@Zethson](https://github.com/Zethson)
 - 🚸 Simplify installation & API overview [PR](https://github.com/laminlabs/lamindb/pull/2302) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Make lamin_run_uid categorical in tiledbsoma stores [PR](https://github.com/laminlabs/lamindb/pull/2300) [@Koncopd](https://github.com/Koncopd)
