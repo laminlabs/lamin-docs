@@ -236,6 +236,7 @@ def install(session):
         "pip install"
         " lamindb[bionty,jupyter,aws]@git+https://github.com/laminlabs/lamindb@main",
     )
+    run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
 
