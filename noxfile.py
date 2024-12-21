@@ -206,6 +206,13 @@ def pull_artifacts(session):
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
 
+    # wetlab (must be after use-cases)
+    pull_from_s3_and_unpack("wetlab.zip")
+    sync_path(
+        Path("wetlab/guide/pert-curator.ipynb"),
+        Path("docs/perturbation.ipynb"),
+    )
+
     # amend toctree
     with open("docs/guide.md") as f:
         content = f.read()
@@ -222,13 +229,14 @@ def pull_artifacts(session):
 def install(session):
     run(
         session,
-        "pip install --no-deps git+https://github.com/laminlabs/lnschema-core git+https://github.com/laminlabs/bionty git+https://github.com/laminlabs/lamindb-setup git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/findrefs git+https://github.com/laminlabs/clinicore git+https://github.com/laminlabs/cellregistry git+https://github.com/laminlabs/omop git+https://github.com/laminlabs/ourprojects",
+        "pip install --no-deps git+https://github.com/laminlabs/lnschema-core git+https://github.com/laminlabs/bionty git+https://github.com/laminlabs/lamindb-setup git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/clinicore git+https://github.com/laminlabs/cellregistry git+https://github.com/laminlabs/ourprojects",
     )
     run(
         session,
         "pip install"
         " lamindb[bionty,jupyter,aws]@git+https://github.com/laminlabs/lamindb@main",
     )
+    run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
 
@@ -243,7 +251,7 @@ def run_nbs(session):
 def init(session):
     run(
         session,
-        "lamin init --storage ./docsbuild --schema bionty,wetlab,findrefs,clinicore,cellregistry,omop,ourprojects",
+        "lamin init --storage ./docsbuild --schema bionty,wetlab,clinicore,cellregistry,ourprojects",
     )
 
 
