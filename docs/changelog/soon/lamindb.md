@@ -1,3 +1,4 @@
+- 🐛 Fix init instance tests and add init of a local instance in cwd [PR](https://github.com/laminlabs/lamindb-setup/pull/917) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Make tiledbsoma integration compatible with tiledbsoma==1.15.0 [PR](https://github.com/laminlabs/lamindb/pull/2307) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Release submodules [PR](https://github.com/laminlabs/lamindb/pull/2306) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix NA values in Curator.add_new_from [PR](https://github.com/laminlabs/lamindb/pull/2305) [@sunnyosun](https://github.com/sunnyosun)
