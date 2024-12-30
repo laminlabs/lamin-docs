@@ -1,3 +1,4 @@
+- 🐛 Fix double download of files in http [PR](https://github.com/laminlabs/lamindb-setup/pull/919) [@Koncopd](https://github.com/Koncopd)
 - 👷 Isolate curator tests [PR](https://github.com/laminlabs/lamindb/pull/2304) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix init instance tests and add init of a local instance in cwd [PR](https://github.com/laminlabs/lamindb-setup/pull/917) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Make tiledbsoma integration compatible with tiledbsoma==1.15.0 [PR](https://github.com/laminlabs/lamindb/pull/2307) [@Koncopd](https://github.com/Koncopd)
