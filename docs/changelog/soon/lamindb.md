@@ -1,3 +1,4 @@
+- 🐛 Fix source in from_values [PR](https://github.com/laminlabs/lamindb/pull/2310) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Improve `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2308) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Minimal `ln.track()` 2 [PR](https://github.com/laminlabs/lamin-cli/pull/99) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Fix progress tracking in http downloads [PR](https://github.com/laminlabs/lamindb-setup/pull/920) [@Koncopd](https://github.com/Koncopd)
