@@ -1,3 +1,4 @@
+- ♻️ Eliminate mocks from base [PR](https://github.com/laminlabs/lamindb/pull/2315) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Do not reload lamindb on lamin connect [PR](https://github.com/laminlabs/lamin-cli/pull/101) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Add the option not to reload lamindb on connect [PR](https://github.com/laminlabs/lamindb-setup/pull/923) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Standardize name [PR](https://github.com/laminlabs/lamindb/pull/2312) [@sunnyosun](https://github.com/sunnyosun)
