@@ -1,3 +1,4 @@
+- 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/clinicore/pull/16) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/wetlab/pull/89) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Unpin tiledbsoma in CI [PR](https://github.com/laminlabs/lamin-usecases/pull/177) [@Koncopd](https://github.com/Koncopd)
 - ✨ PertCurator [PR](https://github.com/laminlabs/wetlab/pull/88) [@sunnyosun](https://github.com/sunnyosun)
