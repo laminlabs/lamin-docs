@@ -1,3 +1,4 @@
+- 🎨 Standardize name [PR](https://github.com/laminlabs/lamindb/pull/2312) [@sunnyosun](https://github.com/sunnyosun)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/lamindb/pull/2309) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/lamindb-setup/pull/921) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/lamin-cli/pull/100) [@falexwolf](https://github.com/falexwolf)
