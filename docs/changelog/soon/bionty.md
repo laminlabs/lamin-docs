@@ -1,0 +1,1 @@
+- 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/bionty/pull/177) [@falexwolf](https://github.com/falexwolf)
