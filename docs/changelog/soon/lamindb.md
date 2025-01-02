@@ -1,3 +1,4 @@
+- 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/lamindb-setup/pull/921) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/lamin-cli/pull/100) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix source in from_values [PR](https://github.com/laminlabs/lamindb/pull/2310) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Improve `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2308) [@falexwolf](https://github.com/falexwolf)
