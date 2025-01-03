@@ -1,3 +1,4 @@
+- 💄 Create a more intuitive artifact page [PR](https://github.com/laminlabs/laminhub-public/pull/31) [@chaichontat](https://github.com/chaichontat)
 - Allow editing of transform name and attaching/detaching labels [PR](https://github.com/laminlabs/laminhub-public/pull/30) [@awgaan](https://github.com/awgaan)
 - ✨ Dynamic code copy for R and Python [PR](https://github.com/laminlabs/laminhub-public/pull/27) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Improve speed and relevance of search [PR](https://github.com/laminlabs/laminhub-public/pull/26) [@falexwolf](https://github.com/falexwolf)
