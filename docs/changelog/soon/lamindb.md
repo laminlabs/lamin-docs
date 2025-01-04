@@ -1,3 +1,4 @@
+- 🚸 Only auto-search `._name_field` on sub-classes of `CanCurate` [PR](https://github.com/laminlabs/lamindb/pull/2319) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Do not raise an exception when default AWS credentials fail [PR](https://github.com/laminlabs/lamindb-setup/pull/924) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Eliminate mocks from base [PR](https://github.com/laminlabs/lamindb/pull/2315) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Do not reload lamindb on lamin connect [PR](https://github.com/laminlabs/lamin-cli/pull/101) [@Koncopd](https://github.com/Koncopd)
