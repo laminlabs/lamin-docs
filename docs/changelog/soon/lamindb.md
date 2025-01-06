@@ -1,3 +1,4 @@
+- ✨ Capture logs of scripts during `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2325) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish track notebook [PR](https://github.com/laminlabs/lamindb/pull/2322) [@falexwolf](https://github.com/falexwolf)
 - ⬇️ Upper bound scipy because 1.15.0 is incompatible with anndata backed sparse [PR](https://github.com/laminlabs/lamindb/pull/2321) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Only auto-search `._name_field` on sub-classes of `CanCurate` [PR](https://github.com/laminlabs/lamindb/pull/2319) [@falexwolf](https://github.com/falexwolf)
