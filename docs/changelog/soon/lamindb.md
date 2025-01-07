@@ -1,3 +1,4 @@
+- ✨ Correct hashing of etag for http links [PR](https://github.com/laminlabs/lamindb-setup/pull/926) [@Koncopd](https://github.com/Koncopd)
 - ✨ Hide underscore attributes in __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2329) [@Zethson](https://github.com/Zethson)
 - 🎨 Add ruff notebook formatting & remove F401 ignore [PR](https://github.com/laminlabs/lamindb/pull/2327) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix timeout errors for big downloads from http [PR](https://github.com/laminlabs/lamindb-setup/pull/925) [@Koncopd](https://github.com/Koncopd)
