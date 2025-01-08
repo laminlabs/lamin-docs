@@ -1,3 +1,4 @@
+- ✨ Also search git blob hash in remote branches [PR](https://github.com/laminlabs/lamindb/pull/2332) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix signal outside main thread [PR](https://github.com/laminlabs/lamindb/pull/2333) [@Koncopd](https://github.com/Koncopd)
 - ✨ Use etag as hash for http Artifacts [PR](https://github.com/laminlabs/lamindb/pull/2330) [@Koncopd](https://github.com/Koncopd)
 - ✨ Correct hashing of etag for http links [PR](https://github.com/laminlabs/lamindb-setup/pull/926) [@Koncopd](https://github.com/Koncopd)
