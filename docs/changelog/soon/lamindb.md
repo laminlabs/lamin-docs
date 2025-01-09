@@ -6,7 +6,7 @@
 - 🐛 Fix signal outside main thread [PR](https://github.com/laminlabs/lamindb/pull/2333) [@Koncopd](https://github.com/Koncopd)
 - ✨ Use etag as hash for http Artifacts [PR](https://github.com/laminlabs/lamindb/pull/2330) [@Koncopd](https://github.com/Koncopd)
 - ✨ Correct hashing of etag for http links [PR](https://github.com/laminlabs/lamindb-setup/pull/926) [@Koncopd](https://github.com/Koncopd)
-- ✨ Hide underscore attributes in __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2329) [@Zethson](https://github.com/Zethson)
+- ✨ Hide underscore attributes in **repr** [PR](https://github.com/laminlabs/lamindb/pull/2329) [@Zethson](https://github.com/Zethson)
 - 🎨 Add ruff notebook formatting & remove F401 ignore [PR](https://github.com/laminlabs/lamindb/pull/2327) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix timeout errors for big downloads from http [PR](https://github.com/laminlabs/lamindb-setup/pull/925) [@Koncopd](https://github.com/Koncopd)
 - ✨ Capture logs of scripts during `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2325) [@falexwolf](https://github.com/falexwolf)
