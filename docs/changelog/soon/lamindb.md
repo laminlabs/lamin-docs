@@ -1,3 +1,4 @@
+- ✨ Better error message when attempting to save a file while not being connected to an instance [PR](https://github.com/laminlabs/lamin-cli/pull/103) [@Zethson](https://github.com/Zethson)
 - ✨ Hide traceback for InstanceNotEmpty using Click Exception [PR](https://github.com/laminlabs/lamindb-setup/pull/930) [@Zethson](https://github.com/Zethson)
 - 🎨 Simplify InstanceNotEmpty UX [PR](https://github.com/laminlabs/lamindb-setup/pull/929) [@Zethson](https://github.com/Zethson)
 - ✨ Also search git blob hash in remote branches [PR](https://github.com/laminlabs/lamindb/pull/2332) [@Zethson](https://github.com/Zethson)
