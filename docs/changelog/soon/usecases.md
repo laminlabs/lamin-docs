@@ -1,3 +1,4 @@
+- ✅  Fail CI if `cellxgene-schema` CLI validation fails [PR](https://github.com/laminlabs/cellxgene-lamin/pull/111) [@Zethson](https://github.com/Zethson)
 - 🎨 Set up sources dynamically [PR](https://github.com/laminlabs/wetlab/pull/91) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not check embedding in .validate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/114) [@sunnyosun](https://github.com/sunnyosun)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/ourprojects/pull/7) [@falexwolf](https://github.com/falexwolf)
