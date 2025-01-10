@@ -1,3 +1,4 @@
+- 🐛 Fix default values [PR](https://github.com/laminlabs/cellxgene-lamin/pull/119) [@Zethson](https://github.com/Zethson)
 - ✅  Fail CI if `cellxgene-schema` CLI validation fails [PR](https://github.com/laminlabs/cellxgene-lamin/pull/111) [@Zethson](https://github.com/Zethson)
 - 🎨 Set up sources dynamically [PR](https://github.com/laminlabs/wetlab/pull/91) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not check embedding in .validate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/114) [@sunnyosun](https://github.com/sunnyosun)
