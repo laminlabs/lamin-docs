@@ -1,3 +1,4 @@
+- ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/932) [@Koncopd](https://github.com/Koncopd)
 - ✨ Check for more CI environments [PR](https://github.com/laminlabs/lamindb-setup/pull/931) [@Zethson](https://github.com/Zethson)
 - 🥅 Clear error on running track in an interactive session [PR](https://github.com/laminlabs/lamindb/pull/2334) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Use Ruff instead of flake8 + black [PR](https://github.com/laminlabs/lamin-cli/pull/104) [@Zethson](https://github.com/Zethson)
