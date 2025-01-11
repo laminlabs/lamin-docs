@@ -1,3 +1,4 @@
+- 🎨 Deprecate `n_objects`, introduce better `deprecated` decorator [PR](https://github.com/laminlabs/lamindb/pull/2339) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Polish the deprecated decorator [PR](https://github.com/laminlabs/lamindb-setup/pull/937) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Database migrations for lamindb 1.0a2 [PR](https://github.com/laminlabs/lamindb/pull/2338) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Database migrations for lamindb 1.0a1 [PR](https://github.com/laminlabs/lamindb/pull/2323) [@falexwolf](https://github.com/falexwolf)
