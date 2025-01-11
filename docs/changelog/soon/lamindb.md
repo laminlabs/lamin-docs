@@ -1,3 +1,4 @@
+- 🚚 Upgrade to lamindb 1.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/927) [@falexwolf](https://github.com/falexwolf)
 - ✅ Do not use create-s3 in test_init_no_writes [PR](https://github.com/laminlabs/lamindb-setup/pull/935) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Check hash equality on transform if finding `key` [PR](https://github.com/laminlabs/lamindb/pull/2337) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/932) [@Koncopd](https://github.com/Koncopd)
