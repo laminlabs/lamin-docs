@@ -1,3 +1,4 @@
+- 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/lamindb/pull/2340) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/lamindb-setup/pull/938) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Deprecate `n_objects`, introduce better `deprecated` decorator [PR](https://github.com/laminlabs/lamindb/pull/2339) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Polish the deprecated decorator [PR](https://github.com/laminlabs/lamindb-setup/pull/937) [@falexwolf](https://github.com/falexwolf)
