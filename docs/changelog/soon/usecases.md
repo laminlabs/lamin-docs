@@ -1,3 +1,4 @@
+- 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/wetlab/pull/90) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/ourprojects/pull/8) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix default values [PR](https://github.com/laminlabs/cellxgene-lamin/pull/119) [@Zethson](https://github.com/Zethson)
 - ✅  Fail CI if `cellxgene-schema` CLI validation fails [PR](https://github.com/laminlabs/cellxgene-lamin/pull/111) [@Zethson](https://github.com/Zethson)
