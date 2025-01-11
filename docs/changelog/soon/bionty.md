@@ -1,3 +1,4 @@
+- 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/bionty/pull/178) [@falexwolf](https://github.com/falexwolf)
 - ✨ Upgrade Ruff and mypy [PR](https://github.com/laminlabs/bionty/pull/184) [@Zethson](https://github.com/Zethson)
 - 🍱 New `CellType` version: `cl`-`2024-08-16` [PR](https://github.com/laminlabs/bionty/pull/183) [@Zethson](https://github.com/Zethson)
 - 🍱 New `Disease` version: `mondo`-`2024-08-06` [PR](https://github.com/laminlabs/bionty/pull/182) [@Zethson](https://github.com/Zethson)
