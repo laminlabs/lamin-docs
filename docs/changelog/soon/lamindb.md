@@ -1,3 +1,4 @@
+- 🚚 Database migrations for lamindb 1.0a1 [PR](https://github.com/laminlabs/lamindb/pull/2323) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/lamin-cli/pull/102) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Upgrade to lamindb 1.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/927) [@falexwolf](https://github.com/falexwolf)
 - ✅ Do not use create-s3 in test_init_no_writes [PR](https://github.com/laminlabs/lamindb-setup/pull/935) [@Koncopd](https://github.com/Koncopd)
