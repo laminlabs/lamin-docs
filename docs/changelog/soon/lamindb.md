@@ -1,3 +1,4 @@
+- 🚚 Database migrations for lamindb 1.0a2 [PR](https://github.com/laminlabs/lamindb/pull/2338) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Database migrations for lamindb 1.0a1 [PR](https://github.com/laminlabs/lamindb/pull/2323) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/lamin-cli/pull/102) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Upgrade to lamindb 1.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/927) [@falexwolf](https://github.com/falexwolf)
