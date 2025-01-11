@@ -1,2 +1,3 @@
+- 🍱 New `CellType` version: `cl`-`2024-08-16` [PR](https://github.com/laminlabs/bionty/pull/183) [@Zethson](https://github.com/Zethson)
 - 🍱 New `Disease` version: `mondo`-`2024-08-06` [PR](https://github.com/laminlabs/bionty/pull/182) [@Zethson](https://github.com/Zethson)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/bionty/pull/177) [@falexwolf](https://github.com/falexwolf)
