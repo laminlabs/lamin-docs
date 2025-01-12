@@ -1,3 +1,4 @@
+- 🎨 Raise error when modifying key [PR](https://github.com/laminlabs/lamindb/pull/2326) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/lamin-cli/pull/107) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/lamindb/pull/2340) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/lamindb-setup/pull/938) [@falexwolf](https://github.com/falexwolf)
