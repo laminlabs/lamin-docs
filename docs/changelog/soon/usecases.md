@@ -1,3 +1,4 @@
+- 🎨 Make sure `pert_` column categories are consistent [PR](https://github.com/laminlabs/wetlab/pull/92) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/wetlab/pull/93) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade to lamindb 1.0a1 [PR](https://github.com/laminlabs/lamin-usecases/pull/178) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/clinicore/pull/17) [@falexwolf](https://github.com/falexwolf)
