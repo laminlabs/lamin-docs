@@ -1,3 +1,4 @@
+- ⬆️ Upgrade anndata [PR](https://github.com/laminlabs/lamindb/pull/2344) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Integrate `ourprojects` into lamindb [PR](https://github.com/laminlabs/lamindb/pull/2342) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Support | seperated multi-values in Curator [PR](https://github.com/laminlabs/lamindb/pull/2341) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Raise error when modifying key [PR](https://github.com/laminlabs/lamindb/pull/2326) [@sunnyosun](https://github.com/sunnyosun)
