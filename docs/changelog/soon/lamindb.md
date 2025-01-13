@@ -1,3 +1,4 @@
+- ♻️ Refactor key and name change checks [PR](https://github.com/laminlabs/lamindb/pull/2345) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Migrate to lamindb 1.0a4 [PR](https://github.com/laminlabs/lamindb/pull/2343) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade anndata [PR](https://github.com/laminlabs/lamindb/pull/2344) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Integrate `ourprojects` into lamindb [PR](https://github.com/laminlabs/lamindb/pull/2342) [@falexwolf](https://github.com/falexwolf)
