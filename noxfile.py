@@ -255,8 +255,14 @@ def install(session):
         str(tmp_lamindb_path / "sub/bionty"),
         str(tmp_lamindb_path / "sub/wetlab"),
     )
+    session.run(
+        "uv",
+        "pip",
+        "install",
+        "--system",
+        f"{str(tmp_lamindb_path)}[bionty,jupyter]",
+    )
 
-    run(session, "pip install rich-click")
     run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
