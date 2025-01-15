@@ -260,7 +260,7 @@ def install(session):
         "pip",
         "install",
         "--system",
-        f"{str(tmp_lamindb_path)}[bionty,jupyter]",
+        f"{str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
     )
 
     run(session, "pip install spatialdata")  # temporarily
