@@ -233,37 +233,16 @@ def install(session):
 
     run(
         session,
-        "git",
-        "clone",
-        "-b",
-        "main",
-        "--depth",
-        "1",
-        "--recursive",
-        "--shallow-submodules",
-        "https://github.com/laminlabs/lamindb",
-        str(tmp_lamindb_path),
+        f"git clone -b main --depth 1--recursive --shallow-submodules https://github.com/laminlabs/lamindb {str(tmp_lamindb_path)}",
     )
 
     run(
         session,
-        "uv",
-        "pip",
-        "install",
-        "--system",
-        "--no-deps",
-        str(tmp_lamindb_path / "sub/lamindb-setup"),
-        str(tmp_lamindb_path / "sub/lamin-cli"),
-        str(tmp_lamindb_path / "sub/bionty"),
-        str(tmp_lamindb_path / "sub/wetlab"),
+        f"uv pip install --system --no-deps {str(tmp_lamindb_path / 'sub/lamindb-setup')} {str(tmp_lamindb_path / 'sub/lamin-cli')} {str(tmp_lamindb_path / 'sub/bionty')} {str(tmp_lamindb_path / 'sub/wetlab')}",
     )
     run(
         session,
-        "uv",
-        "pip",
-        "install",
-        "--system",
-        f"{str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
+        f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
     )
     run(session, "pip install git+https://github.com/laminlabs/cellregistry")
 
