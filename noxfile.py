@@ -6,7 +6,7 @@ from pathlib import Path
 import nox
 from dirsync import sync
 from laminci import run_notebooks
-from laminci.nox import run, run_pre_commit
+from laminci.nox import install_lamindb, run, run_pre_commit
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") != "push"
 
@@ -226,16 +226,8 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    run(
-        session,
-        "pip install git+https://github.com/laminlabs/bionty@main"
-        " git+https://github.com/laminlabs/lamindb-setup@main git+https://github.com/laminlabs/wetlab@main"
-        " git+https://github.com/laminlabs/clinicore@main git+https://github.com/laminlabs/cellregistry@main --no-deps",
-    )
-    run(
-        session,
-        "pip install"
-        " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@main --no-deps",
+    install_lamindb(
+        session, branch="main", extras="bionty,wetlab,clinicore,cellregistry"
     )
     run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
