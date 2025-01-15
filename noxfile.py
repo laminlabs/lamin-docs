@@ -248,10 +248,10 @@ def install(session):
         "install",
         "--system",
         "--no-deps",
-        f"{tmp_lamindb_path}./lamindb/sub/lamindb-setup",
-        f"{tmp_lamindb_path}./lamindb/sub/lamin-cli",
-        f"{tmp_lamindb_path}./lamindb/sub/bionty",
-        f"{tmp_lamindb_path}./lamindb/sub/wetlab",
+        f"{tmp_lamindb_path}/lamindb/sub/lamindb-setup",
+        f"{tmp_lamindb_path}/lamindb/sub/lamin-cli",
+        f"{tmp_lamindb_path}/lamindb/sub/bionty",
+        f"{tmp_lamindb_path}/lamindb/sub/wetlab",
     )
 
     run(session, "pip install spatialdata")  # temporarily
