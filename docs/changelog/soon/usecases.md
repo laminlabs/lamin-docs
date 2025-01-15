@@ -1,3 +1,4 @@
+- 🎨 Remove lnschema-core [PR](https://github.com/laminlabs/cellregistry/pull/5) [@Zethson](https://github.com/Zethson)
 - 💚 Fix [PR](https://github.com/laminlabs/lamin-usecases/pull/179) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Make sure `pert_` column categories are consistent [PR](https://github.com/laminlabs/wetlab/pull/92) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/wetlab/pull/93) [@falexwolf](https://github.com/falexwolf)
