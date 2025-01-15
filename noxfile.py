@@ -234,7 +234,7 @@ def install(session):
     )
     run(
         session,
-        "pip install"
+        "pip install "
         "git+https://github.com/laminlabs/lamin-cli@main"
         " lamindb[jupyter]@git+https://github.com/laminlabs/lamindb@main --no-deps",
     )
