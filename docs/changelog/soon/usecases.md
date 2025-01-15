@@ -6,7 +6,7 @@
 - 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/wetlab/pull/90) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/ourprojects/pull/8) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix default values [PR](https://github.com/laminlabs/cellxgene-lamin/pull/119) [@Zethson](https://github.com/Zethson)
-- ✅  Fail CI if `cellxgene-schema` CLI validation fails [PR](https://github.com/laminlabs/cellxgene-lamin/pull/111) [@Zethson](https://github.com/Zethson)
+- ✅ Fail CI if `cellxgene-schema` CLI validation fails [PR](https://github.com/laminlabs/cellxgene-lamin/pull/111) [@Zethson](https://github.com/Zethson)
 - 🎨 Set up sources dynamically [PR](https://github.com/laminlabs/wetlab/pull/91) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not check embedding in .validate [PR](https://github.com/laminlabs/cellxgene-lamin/pull/114) [@sunnyosun](https://github.com/sunnyosun)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/ourprojects/pull/7) [@falexwolf](https://github.com/falexwolf)
