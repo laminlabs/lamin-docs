@@ -1,3 +1,4 @@
+- ✨ Allow filtering by multiple obs columns in MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/2352) [@Koncopd](https://github.com/Koncopd)
 - 🩹 migrate without setting auto-connect to False [PR](https://github.com/laminlabs/lamindb-setup/pull/942) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Error on auto-connect [PR](https://github.com/laminlabs/lamindb-setup/pull/941) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add contenttypes Django plugin [PR](https://github.com/laminlabs/lamindb-setup/pull/940) [@falexwolf](https://github.com/falexwolf)
