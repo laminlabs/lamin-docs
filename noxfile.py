@@ -2,7 +2,6 @@ import os
 import shutil
 import subprocess
 from pathlib import Path
-from typing import Dict
 
 import nox
 from dirsync import sync
@@ -98,7 +97,7 @@ glossary
 # OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
 
 
-def replace_content(filename: Path, mapped_content: Dict[str, str]) -> None:
+def replace_content(filename: Path, mapped_content: dict[str, str]) -> None:
     with open(filename) as f:
         content = f.read()
     with open(filename, "w") as f:

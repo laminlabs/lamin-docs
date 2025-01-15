@@ -1,1 +1,7 @@
+- 🚚 Rename `FeatureSet` to `Schema` and migrate to lamindb 1.0a5 [PR](https://github.com/laminlabs/bionty/pull/186) [@falexwolf](https://github.com/falexwolf)
+- 🚚 Deprecate the `--schema` argument of `lamin init` in favor of `--modules` [PR](https://github.com/laminlabs/bionty/pull/185) [@falexwolf](https://github.com/falexwolf)
+- 🚚 Migrate to lamindb 1.0 [PR](https://github.com/laminlabs/bionty/pull/178) [@falexwolf](https://github.com/falexwolf)
+- ✨ Upgrade Ruff and mypy [PR](https://github.com/laminlabs/bionty/pull/184) [@Zethson](https://github.com/Zethson)
+- 🍱 New `CellType` version: `cl`-`2024-08-16` [PR](https://github.com/laminlabs/bionty/pull/183) [@Zethson](https://github.com/Zethson)
+- 🍱 New `Disease` version: `mondo`-`2024-08-06` [PR](https://github.com/laminlabs/bionty/pull/182) [@Zethson](https://github.com/Zethson)
 - 🏗️ Integrate `lnschema-core` into `lamindb` [PR](https://github.com/laminlabs/bionty/pull/177) [@falexwolf](https://github.com/falexwolf)

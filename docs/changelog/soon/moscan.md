@@ -1,1 +1,2 @@
+- 🎨 Remove pip pre config [PR](https://github.com/laminlabs/moscan/pull/3) [@Zethson](https://github.com/Zethson)
 - 💚 Fix CI [PR](https://github.com/laminlabs/moscan/pull/1) [@falexwolf](https://github.com/falexwolf)
