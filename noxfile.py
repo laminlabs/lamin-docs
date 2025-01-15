@@ -233,7 +233,7 @@ def install(session):
 
     run(
         session,
-        f"git clone -b main --depth 1--recursive --shallow-submodules https://github.com/laminlabs/lamindb {str(tmp_lamindb_path)}",
+        f"git clone -b main --depth 1 --recursive --shallow-submodules https://github.com/laminlabs/lamindb {str(tmp_lamindb_path)}",
     )
 
     run(
