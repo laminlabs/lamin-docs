@@ -1,3 +1,4 @@
+- 👷 Upgrade supabase-cli in hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/943) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix downstream integration tests [PR](https://github.com/laminlabs/lamindb/pull/2351) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow filtering by multiple obs columns in MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/2352) [@Koncopd](https://github.com/Koncopd)
 - 🩹 migrate without setting auto-connect to False [PR](https://github.com/laminlabs/lamindb-setup/pull/942) [@Koncopd](https://github.com/Koncopd)
