@@ -226,21 +226,34 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    run(
-        session,
-        "pip install git+https://github.com/laminlabs/bionty@main"
-        " git+https://github.com/laminlabs/lamindb-setup@main git+https://github.com/laminlabs/wetlab@main"
-        " git+https://github.com/laminlabs/clinicore@main git+https://github.com/laminlabs/cellregistry@main",
+    from pathlib import Path
+
+    tmp_lamindb_path = Path("tmp_lamindb")
+    tmp_lamindb_path.mkdir(parents=True, exist_ok=True)
+    session.run(
+        "git",
+        "clone",
+        "-b",
+        "main",
+        "--depth",
+        "1",
+        "--recursive",
+        "--shallow-submodules",
+        "https://github.com/laminlabs/lamindb",
+        f"{tmp_lamindb_path}",
     )
-    run(
-        session,
-        "pip install git+https://github.com/laminlabs/lamin-cli@main",
+    session.run(
+        "uv",
+        "pip",
+        "install",
+        "--system",
+        "--no-deps",
+        f"{tmp_lamindb_path}./lamindb/sub/lamindb-setup",
+        f"{tmp_lamindb_path}./lamindb/sub/lamin-cli",
+        f"{tmp_lamindb_path}./lamindb/sub/bionty",
+        f"{tmp_lamindb_path}./lamindb/sub/wetlab",
     )
-    run(
-        session,
-        "pip install "
-        " lamindb[jupyter]@git+https://github.com/laminlabs/lamindb@main --no-deps",
-    )
+
     run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
