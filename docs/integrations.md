@@ -8,14 +8,13 @@ Additional registries can be found here:
 - [wetlab](/wetlab): Basic wetlab entities
 - [clinicore](/clinicore): Basic clinical entities
 - [cellregistry](/cellregistry): A registry for single cells
-- [ourprojects](/ourprojects): Manage projects, teams & references
 - [omop](/omop): OMOP Common Data Model
 
 Please [reach out](https://lamin.ai/contact) to have your schema module featured.
 
 ## Git
 
-Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scripts-with-github)
+Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scripts-with-git)
 
 ## MLOps
 
