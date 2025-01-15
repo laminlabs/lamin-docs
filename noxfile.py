@@ -231,7 +231,8 @@ def install(session):
     tmp_lamindb_path = Path("tmp_lamindb")
     tmp_lamindb_path.mkdir(parents=True, exist_ok=True)
 
-    session.run(
+    run(
+        session,
         "git",
         "clone",
         "-b",
@@ -244,7 +245,8 @@ def install(session):
         str(tmp_lamindb_path),
     )
 
-    session.run(
+    run(
+        session,
         "uv",
         "pip",
         "install",
@@ -255,16 +257,17 @@ def install(session):
         str(tmp_lamindb_path / "sub/bionty"),
         str(tmp_lamindb_path / "sub/wetlab"),
     )
-    session.run(
+    run(
+        session,
         "uv",
         "pip",
         "install",
         "--system",
         f"{str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
     )
-    session.run("uv pip install --system git+https://github.com/laminlabs/cellregistry")
+    run(session, "pip install git+https://github.com/laminlabs/cellregistry")
 
-    run(session, "uv pip install --system spatialdata")  # temporarily
+    run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
 
