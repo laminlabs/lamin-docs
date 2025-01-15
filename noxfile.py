@@ -230,7 +230,11 @@ def install(session):
         session,
         "pip install git+https://github.com/laminlabs/bionty@main"
         " git+https://github.com/laminlabs/lamindb-setup@main git+https://github.com/laminlabs/wetlab@main"
-        " git+https://github.com/laminlabs/clinicore@main git+https://github.com/laminlabs/cellregistry@main git+https://github.com/laminlabs/lamin-cli@main",
+        " git+https://github.com/laminlabs/clinicore@main git+https://github.com/laminlabs/cellregistry@main",
+    )
+    run(
+        session,
+        "pip install git+https://github.com/laminlabs/lamin-cli@main",
     )
     run(
         session,
