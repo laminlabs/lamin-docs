@@ -238,7 +238,7 @@ def install(session):
 
     run(
         session,
-        f"uv pip install --system --no-deps {str(tmp_lamindb_path / 'sub/lamindb-setup')} {str(tmp_lamindb_path / 'sub/lamin-cli')} {str(tmp_lamindb_path / 'sub/bionty')} {str(tmp_lamindb_path / 'sub/wetlab')}",
+        f"uv pip install --system --no-deps {str(tmp_lamindb_path / 'sub/lamindb-setup')} {str(tmp_lamindb_path / 'sub/lamin-cli')} {str(tmp_lamindb_path / 'sub/bionty')} {str(tmp_lamindb_path / 'sub/wetlab')} {str(tmp_lamindb_path / 'sub/clinicore')}",
     )
     run(
         session,
@@ -246,7 +246,7 @@ def install(session):
     )
     run(session, "pip install git+https://github.com/laminlabs/cellregistry")
 
-    run(session, "pip install spatialdata")  # temporarily
+    run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
 
