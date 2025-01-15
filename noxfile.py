@@ -230,6 +230,7 @@ def install(session):
 
     tmp_lamindb_path = Path("tmp_lamindb")
     tmp_lamindb_path.mkdir(parents=True, exist_ok=True)
+
     session.run(
         "git",
         "clone",
@@ -240,18 +241,19 @@ def install(session):
         "--recursive",
         "--shallow-submodules",
         "https://github.com/laminlabs/lamindb",
-        f"{tmp_lamindb_path}",
+        str(tmp_lamindb_path),
     )
+
     session.run(
         "uv",
         "pip",
         "install",
         "--system",
         "--no-deps",
-        f"{tmp_lamindb_path}/lamindb/sub/lamindb-setup",
-        f"{tmp_lamindb_path}/lamindb/sub/lamin-cli",
-        f"{tmp_lamindb_path}/lamindb/sub/bionty",
-        f"{tmp_lamindb_path}/lamindb/sub/wetlab",
+        str(tmp_lamindb_path / "sub/lamindb-setup"),
+        str(tmp_lamindb_path / "sub/lamin-cli"),
+        str(tmp_lamindb_path / "sub/bionty"),
+        str(tmp_lamindb_path / "sub/wetlab"),
     )
 
     run(session, "pip install spatialdata")  # temporarily
