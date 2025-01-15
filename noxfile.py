@@ -228,12 +228,14 @@ def pull_artifacts(session):
 def install(session):
     run(
         session,
-        "pip install --no-deps git+https://github.com/laminlabs/lnschema-core git+https://github.com/laminlabs/bionty git+https://github.com/laminlabs/lamindb-setup git+https://github.com/laminlabs/wetlab git+https://github.com/laminlabs/clinicore git+https://github.com/laminlabs/cellregistry git+https://github.com/laminlabs/ourprojects",
+        "pip install git+https://github.com/laminlabs/bionty@main"
+        " git+https://github.com/laminlabs/lamindb-setup@main git+https://github.com/laminlabs/wetlab@main"
+        " git+https://github.com/laminlabs/clinicore@main git+https://github.com/laminlabs/cellregistry@main --no-deps",
     )
     run(
         session,
         "pip install"
-        " lamindb[bionty,jupyter,aws]@git+https://github.com/laminlabs/lamindb@main",
+        " lamindb[bionty,jupyter]@git+https://github.com/laminlabs/lamindb@main --no-deps",
     )
     run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
@@ -250,7 +252,7 @@ def run_nbs(session):
 def init(session):
     run(
         session,
-        "lamin init --storage ./docsbuild --schema bionty,wetlab,clinicore,cellregistry,ourprojects",
+        "lamin init --storage ./docsbuild --schema bionty,wetlab,clinicore,cellregistry",
     )
 
 
