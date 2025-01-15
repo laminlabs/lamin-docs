@@ -244,7 +244,7 @@ def install(session):
         session,
         f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
     )
-    run(session, "pip install git+https://github.com/laminlabs/cellregistry")
+    run(session, "pip install --no-deps git+https://github.com/laminlabs/cellregistry")
 
     run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
