@@ -256,6 +256,7 @@ def install(session):
         str(tmp_lamindb_path / "sub/wetlab"),
     )
 
+    run(session, "pip install rich-click")
     run(session, "pip install spatialdata")  # temporarily
     run(session, "lamin settings set private-django-api true")
 
