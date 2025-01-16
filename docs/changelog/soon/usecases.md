@@ -1,3 +1,4 @@
+- 💚 Map feature `donor_id` to `Donor.name` [PR](https://github.com/laminlabs/wetlab/pull/95) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Sort curated columns in `PertCurator` [PR](https://github.com/laminlabs/wetlab/pull/94) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Remove lnschema-core [PR](https://github.com/laminlabs/cellregistry/pull/5) [@Zethson](https://github.com/Zethson)
 - 💚 Fix [PR](https://github.com/laminlabs/lamin-usecases/pull/179) [@falexwolf](https://github.com/falexwolf)
