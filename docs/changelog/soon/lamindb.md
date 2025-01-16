@@ -5,7 +5,7 @@
 - 🩹 migrate without setting auto-connect to False [PR](https://github.com/laminlabs/lamindb-setup/pull/942) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Error on auto-connect [PR](https://github.com/laminlabs/lamindb-setup/pull/941) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add contenttypes Django plugin [PR](https://github.com/laminlabs/lamindb-setup/pull/940) [@falexwolf](https://github.com/falexwolf)
-- 🚚  Rename `FeatureSet` to `Schema` and migrate to lamindb 1.0a5 [PR](https://github.com/laminlabs/lamindb/pull/2348) [@falexwolf](https://github.com/falexwolf)
+- 🚚 Rename `FeatureSet` to `Schema` and migrate to lamindb 1.0a5 [PR](https://github.com/laminlabs/lamindb/pull/2348) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Skip deleting storage when deleting outdated versions of folder-like artifacts [PR](https://github.com/laminlabs/lamindb/pull/2349) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor key and name change checks [PR](https://github.com/laminlabs/lamindb/pull/2345) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Migrate to lamindb 1.0a4 [PR](https://github.com/laminlabs/lamindb/pull/2343) [@falexwolf](https://github.com/falexwolf)

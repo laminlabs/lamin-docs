@@ -10,7 +10,7 @@ The following detailed specs are for the Python package `lamindb`. For the analo
 - Slice large array stores: {class}`~lamindb.Artifact.open` → [guide](cellxgene)
 - Cache & load artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`
 - Manage features & labels: {class}`~lamindb.Feature`, {class}`~lamindb.FeatureSet`, {class}`~lamindb.ULabel`
-- Plug-in custom [schemas](/schemas) & manage schema migrations
+- Plug-in custom [modules](/modules) & manage schema migrations
 - Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/arrays), [MuData](multimodal), [SOMA](cellxgene), ... backed by [parquet](/tutorial), [zarr](/arrays), [TileDB](cellxgene), [HDF5](/arrays), [h5ad](/arrays), [DuckDB](rxrx), ...
 - Create iterable collections of artifacts with data loaders: {class}`~lamindb.Collection`
 - Version artifacts, collections & transforms: {class}`~lamindb.core.IsVersioned`
