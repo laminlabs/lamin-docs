@@ -265,10 +265,9 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
-    pass
-    # run_notebooks("docs/introduction.ipynb")
-    # run_notebooks("docs/tutorial.ipynb")
-    # run_notebooks("docs/tutorial2.ipynb")
+    run_notebooks("docs/introduction.ipynb")
+    run_notebooks("docs/tutorial.ipynb")
+    run_notebooks("docs/tutorial2.ipynb")
 
 
 @nox.session
