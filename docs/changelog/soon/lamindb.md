@@ -1,3 +1,4 @@
+- 🚸 For the user, do *not yet* rename `FeatureSet` to `Schema` [PR](https://github.com/laminlabs/lamindb/pull/2354) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate to 1.0a6 [PR](https://github.com/laminlabs/lamindb/pull/2353) [@falexwolf](https://github.com/falexwolf)
 - 👷 Upgrade supabase-cli in hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/943) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix downstream integration tests [PR](https://github.com/laminlabs/lamindb/pull/2351) [@falexwolf](https://github.com/falexwolf)
