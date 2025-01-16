@@ -1,0 +1,1 @@
+- 🔥 Remove thread error suppression on Windows [PR](https://github.com/laminlabs/lamindb-setup/pull/944) [@Koncopd](https://github.com/Koncopd)
