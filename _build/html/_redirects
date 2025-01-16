@@ -3,7 +3,7 @@
 /readfcs/* https://readfcs.lamin.ai/:splat 301
 /guide /introduction 301
 /features /introduction 301
-/changelog /changelog/2024 301
+/changelog /changelog/2025 301
 /api /lamindb 301
 /curate /curate-df 301
 /query-search /registries 301

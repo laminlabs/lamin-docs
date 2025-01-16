@@ -56,6 +56,17 @@ visualization
 ```
 """
 
+BY_DATATYPE_ORIG = """
+multimodal
+```
+"""
+
+BY_DATATYPE = """
+multimodal
+perturbation
+```
+"""
+
 # for other topics
 
 OTHER_TOPICS_ORIG = """
@@ -204,6 +215,8 @@ def pull_artifacts(session):
             continue
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
+
+    replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
 
     # wetlab (must be after use-cases)
     pull_from_s3_and_unpack("wetlab.zip")
