@@ -1,3 +1,4 @@
+- 🔊 Eliminate warning [PR](https://github.com/laminlabs/lamindb/pull/2359) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve migration dialogue and allow `None` in `connect()` [PR](https://github.com/laminlabs/lamindb/pull/2357) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Accept `None` in `connect()` and improve migration dialogue [PR](https://github.com/laminlabs/lamindb-setup/pull/947) [@falexwolf](https://github.com/falexwolf)
 - 🚸 More backward compat [PR](https://github.com/laminlabs/lamindb/pull/2355) [@falexwolf](https://github.com/falexwolf)
