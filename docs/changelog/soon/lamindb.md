@@ -1,3 +1,4 @@
+- 🚸 Improve migration dialogue and allow `None` in `connect()` [PR](https://github.com/laminlabs/lamindb/pull/2357) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Accept `None` in `connect()` and improve migration dialogue [PR](https://github.com/laminlabs/lamindb-setup/pull/947) [@falexwolf](https://github.com/falexwolf)
 - 🚸 More backward compat [PR](https://github.com/laminlabs/lamindb/pull/2355) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Allow to use lamin cache clear when no instance loaded [PR](https://github.com/laminlabs/lamindb-setup/pull/945) [@Koncopd](https://github.com/Koncopd)
