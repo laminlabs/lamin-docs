@@ -1,3 +1,4 @@
+- 🐛 Block non-admin users from integrating lnschema-core [PR](https://github.com/laminlabs/lamindb/pull/2362) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix hub-local CI [PR](https://github.com/laminlabs/lamindb-setup/pull/950) [@Koncopd](https://github.com/Koncopd)
 - 👷 Do not skip curator on push events, do not green checkmark it if it's not being run [PR](https://github.com/laminlabs/lamindb/pull/2360) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Eliminate warning [PR](https://github.com/laminlabs/lamindb/pull/2359) [@falexwolf](https://github.com/falexwolf)
