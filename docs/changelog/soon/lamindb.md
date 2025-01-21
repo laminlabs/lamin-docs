@@ -1,1 +1,0 @@
-- 🚚 Revert `Collection.description` back to unlimited length `TextField` [PR](https://github.com/laminlabs/lamindb/pull/2369) [@falexwolf](https://github.com/falexwolf)
