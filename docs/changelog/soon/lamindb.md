@@ -1,1 +1,2 @@
+- 🚸 In `ln.track()`, do not update transform `description` if it is `None` and improve logging in RStudio sessions [PR](https://github.com/laminlabs/lamindb/pull/2365) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix docs build by dropping SpatialData type annotations on central Curator class [PR](https://github.com/laminlabs/lamindb/pull/2364) [@falexwolf](https://github.com/falexwolf)
