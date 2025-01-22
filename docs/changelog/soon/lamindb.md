@@ -1,0 +1,1 @@
+- 👷 Prettify `build.yml` and adjust coverage calculation if a job isn't run [PR](https://github.com/laminlabs/lamindb/pull/2361) [@falexwolf](https://github.com/falexwolf)
