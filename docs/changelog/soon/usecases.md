@@ -1,3 +1,4 @@
+- ✨ Upgrade ruff and pre-commit config [PR](https://github.com/laminlabs/lamin-usecases/pull/180) [@Zethson](https://github.com/Zethson)
 - ⏪️ Revert donor to ULabel [PR](https://github.com/laminlabs/wetlab/pull/99) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Map feature `donor_id` to `Donor.name` [PR](https://github.com/laminlabs/wetlab/pull/95) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Sort curated columns in `PertCurator` [PR](https://github.com/laminlabs/wetlab/pull/94) [@sunnyosun](https://github.com/sunnyosun)
