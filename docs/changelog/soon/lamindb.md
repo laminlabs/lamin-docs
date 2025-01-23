@@ -1,3 +1,4 @@
+- 🐛 Fix init (when the instance exists) and connect with migration for cloud sqlite instances [PR](https://github.com/laminlabs/lamindb/pull/2373) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix migration for cloud sqlite instances [PR](https://github.com/laminlabs/lamindb-setup/pull/951) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support Python 3.13 [PR](https://github.com/laminlabs/lamindb/pull/2366) [@Zethson](https://github.com/Zethson)
 - 👷 Prettify `build.yml` and adjust coverage calculation if a job isn't run [PR](https://github.com/laminlabs/lamindb/pull/2361) [@falexwolf](https://github.com/falexwolf)
