@@ -1,3 +1,4 @@
+- 🐛 Further fixes and tests for Artifact.replace [PR](https://github.com/laminlabs/lamindb/pull/2377) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Enable users to re-run `ln.finish()` and better resolve multiple users attempting to edit the same notebook draft [PR](https://github.com/laminlabs/lamindb/pull/2376) [@falexwolf](https://github.com/falexwolf)
 - 🚸 No longer throw a `NotebookNotSaved` error in `ln.finish()` but wait for the user or gracefully exit [PR](https://github.com/laminlabs/lamindb/pull/2375) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Resolve save FutureWarning [PR](https://github.com/laminlabs/lamin-cli/pull/108) [@Zethson](https://github.com/Zethson)
