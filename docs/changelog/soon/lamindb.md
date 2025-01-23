@@ -1,3 +1,4 @@
+- 🚸 Resolve save FutureWarning [PR](https://github.com/laminlabs/lamin-cli/pull/108) [@Zethson](https://github.com/Zethson)
 - ✅ Update and test replace for folder artifacts [PR](https://github.com/laminlabs/lamindb/pull/2374) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix init (when the instance exists) and connect with migration for cloud sqlite instances [PR](https://github.com/laminlabs/lamindb/pull/2373) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix migration for cloud sqlite instances [PR](https://github.com/laminlabs/lamindb-setup/pull/951) [@Koncopd](https://github.com/Koncopd)
