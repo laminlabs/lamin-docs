@@ -1,0 +1,1 @@
+- 👷 Add rhub GHA workflow [PR](https://github.com/laminlabs/laminr/pull/141) [@lazappi](https://github.com/lazappi)
