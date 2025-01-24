@@ -1,3 +1,4 @@
+- ✅ Test folder replacement correctly [PR](https://github.com/laminlabs/lamindb/pull/2381) [@Koncopd](https://github.com/Koncopd)
 - 🚸 In `ln.finish()` enhance experience of waiting for editor flush (attempt 2) [PR](https://github.com/laminlabs/lamindb/pull/2380) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Further fixes and tests for Artifact.replace [PR](https://github.com/laminlabs/lamindb/pull/2377) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Enable users to re-run `ln.finish()` and better resolve multiple users attempting to edit the same notebook draft [PR](https://github.com/laminlabs/lamindb/pull/2376) [@falexwolf](https://github.com/falexwolf)
