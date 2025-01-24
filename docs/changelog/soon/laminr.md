@@ -1,8 +1,0 @@
-- :rocket: Release 0.4.0 [PR](https://github.com/laminlabs/laminr/pull/137) [@rcannood](https://github.com/rcannood)
-- 🚸 Add setup vignette to website navbar [PR](https://github.com/laminlabs/laminr/pull/132) [@lazappi](https://github.com/lazappi)
-- 🚚 Migrate to lamindb v1 [PR](https://github.com/laminlabs/laminr/pull/136) [@falexwolf](https://github.com/falexwolf)
-- 🚸 Prepare for release 0.3.1 [PR](https://github.com/laminlabs/laminr/pull/133) [@rcannood](https://github.com/rcannood)
-- 🚸 Check attaching to environment in install_lamindb() [PR](https://github.com/laminlabs/laminr/pull/135) [@lazappi](https://github.com/lazappi)
-- 🚸 Improve the user experience for setting up Python & reticulate [PR](https://github.com/laminlabs/laminr/pull/129) [@lazappi](https://github.com/lazappi)
-- 🐛 Fix CI setup [PR](https://github.com/laminlabs/laminr/pull/125) [@rcannood](https://github.com/rcannood)
-- 📝 Add gitmoji instructions to PR template [PR](https://github.com/laminlabs/laminr/pull/126) [@lazappi](https://github.com/lazappi)
