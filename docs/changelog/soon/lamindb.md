@@ -1,3 +1,4 @@
+- 🐛 Filter the latest transform on saving by filename [PR](https://github.com/laminlabs/lamin-cli/pull/109) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test folder replacement correctly [PR](https://github.com/laminlabs/lamindb/pull/2381) [@Koncopd](https://github.com/Koncopd)
 - 🚸 In `ln.finish()` enhance experience of waiting for editor flush (attempt 2) [PR](https://github.com/laminlabs/lamindb/pull/2380) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Further fixes and tests for Artifact.replace [PR](https://github.com/laminlabs/lamindb/pull/2377) [@Koncopd](https://github.com/Koncopd)
