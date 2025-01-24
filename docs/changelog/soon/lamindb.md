@@ -1,2 +1,3 @@
+- 🐛 Fix SpatialDataCurator import [PR](https://github.com/laminlabs/lamindb/pull/2387) [@Zethson](https://github.com/Zethson)
 - 🧑‍💻 Enable mypy again [PR](https://github.com/laminlabs/lamindb/pull/2382) [@Zethson](https://github.com/Zethson)
 - ✨ Python 3.13 support [PR](https://github.com/laminlabs/lamindb/pull/2371) [@Zethson](https://github.com/Zethson)
