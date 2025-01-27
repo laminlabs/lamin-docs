@@ -1,1 +1,2 @@
+- ⬆️ Bump R dependency to >= 4.1 [PR](https://github.com/laminlabs/laminr/pull/142) [@lazappi](https://github.com/lazappi)
 - 👷 Add rhub GHA workflow [PR](https://github.com/laminlabs/laminr/pull/141) [@lazappi](https://github.com/lazappi)
