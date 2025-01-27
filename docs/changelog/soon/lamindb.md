@@ -1,3 +1,4 @@
+- ✨ Check for corrupted cache in Artifact.open [PR](https://github.com/laminlabs/lamindb/pull/2395) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix sample level metadata optional [PR](https://github.com/laminlabs/lamindb/pull/2391) [@Zethson](https://github.com/Zethson)
 - ✨ Check for corrupted cache in Artifact.load [PR](https://github.com/laminlabs/lamindb/pull/2386) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix SpatialDataCurator import [PR](https://github.com/laminlabs/lamindb/pull/2387) [@Zethson](https://github.com/Zethson)
