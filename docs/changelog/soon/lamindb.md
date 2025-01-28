@@ -1,3 +1,4 @@
+- ✨ Lamin-cli ruff [PR](https://github.com/laminlabs/lamindb/pull/2398) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup (check instance modules on import) [PR](https://github.com/laminlabs/lamindb/pull/2393) [@Koncopd](https://github.com/Koncopd)
 - 🥅 Check instance.modules when loading a lamindb schema module [PR](https://github.com/laminlabs/lamindb-setup/pull/946) [@Koncopd](https://github.com/Koncopd)
 - ✨ Check for corrupted cache in Artifact.open [PR](https://github.com/laminlabs/lamindb/pull/2395) [@Koncopd](https://github.com/Koncopd)
