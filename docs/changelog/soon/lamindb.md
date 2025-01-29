@@ -1,3 +1,4 @@
+- ✨ Schema-based curators: `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2388) [@falexwolf](https://github.com/falexwolf)
 - ✨ Require keyword parameters for `Artifact.from_x` methods [PR](https://github.com/laminlabs/lamindb/pull/2401) [@Zethson](https://github.com/Zethson)
 - 🐛 Account for VSCode appending languageid to markdown cell [PR](https://github.com/laminlabs/lamin-cli/pull/110) [@falexwolf](https://github.com/falexwolf)
 - :art: Add Ruff & better save error message [PR](https://github.com/laminlabs/lamin-cli/pull/106) [@falexwolf](https://github.com/falexwolf)
