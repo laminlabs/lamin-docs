@@ -1,3 +1,4 @@
+- ♻️ Squash migrations [PR](https://github.com/laminlabs/bionty/pull/187) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Port simplified deprecation strategy [PR](https://github.com/laminlabs/bionty/pull/189) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Create backward accessors on `SchemaFeature` link models [PR](https://github.com/laminlabs/bionty/pull/188) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `FeatureSet` to `Schema` and migrate to lamindb 1.0a5 [PR](https://github.com/laminlabs/bionty/pull/186) [@falexwolf](https://github.com/falexwolf)
