@@ -1,3 +1,4 @@
+- 🐛 Account for VSCode appending languageid to markdown cell [PR](https://github.com/laminlabs/lamin-cli/pull/110) [@falexwolf](https://github.com/falexwolf)
 - :art: Add Ruff & better save error message [PR](https://github.com/laminlabs/lamin-cli/pull/106) [@falexwolf](https://github.com/falexwolf)
 - ✨ Lamin-cli ruff [PR](https://github.com/laminlabs/lamindb/pull/2398) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup (check instance modules on import) [PR](https://github.com/laminlabs/lamindb/pull/2393) [@Koncopd](https://github.com/Koncopd)
