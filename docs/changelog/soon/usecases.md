@@ -1,3 +1,4 @@
+- ♻️ Squash migrations [PR](https://github.com/laminlabs/wetlab/pull/101) [@falexwolf](https://github.com/falexwolf)
 - ✨ Upgrade ruff and pre-commit config [PR](https://github.com/laminlabs/lamin-usecases/pull/180) [@Zethson](https://github.com/Zethson)
 - ⏪️ Revert donor to ULabel [PR](https://github.com/laminlabs/wetlab/pull/99) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Map feature `donor_id` to `Donor.name` [PR](https://github.com/laminlabs/wetlab/pull/95) [@sunnyosun](https://github.com/sunnyosun)
