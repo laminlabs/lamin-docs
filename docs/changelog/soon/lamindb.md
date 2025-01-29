@@ -1,3 +1,4 @@
+- 🚸 Validate existing records in the DB irrespective of whether an ontology `source` is passed or not [PR](https://github.com/laminlabs/lamindb/pull/2370) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2367) [@falexwolf](https://github.com/falexwolf)
 - ✨ Schema-based curators: `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2388) [@falexwolf](https://github.com/falexwolf)
 - ✨ Require keyword parameters for `Artifact.from_x` methods [PR](https://github.com/laminlabs/lamindb/pull/2401) [@Zethson](https://github.com/Zethson)
