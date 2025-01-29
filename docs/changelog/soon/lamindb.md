@@ -1,3 +1,4 @@
+- ✨ Infer n_observations in Artifact.from_anndata [PR](https://github.com/laminlabs/lamindb/pull/2404) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improved error message for saving via CLI [PR](https://github.com/laminlabs/lamindb/pull/2379) [@Zethson](https://github.com/Zethson)
 - ✨ Better error message when attempting to save a file while not being connected to an instance [PR](https://github.com/laminlabs/lamin-cli/pull/105) [@falexwolf](https://github.com/falexwolf)
 - ✨ Improve local storage not found warning message [PR](https://github.com/laminlabs/lamindb-setup/pull/955) [@Zethson](https://github.com/Zethson)
