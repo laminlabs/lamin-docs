@@ -1,3 +1,4 @@
+- 📝 Clarify Collection.append [PR](https://github.com/laminlabs/lamindb/pull/2407) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Fix warning about artifacts in trash [PR](https://github.com/laminlabs/lamindb/pull/2406) [@ap--](https://github.com/ap--)
 - 🚚 Move CellXGene `Curator` from `cellxgene-lamin` here [PR](https://github.com/laminlabs/lamindb/pull/2403) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Increase timeout for edge functions [PR](https://github.com/laminlabs/lamindb-setup/pull/957) [@Koncopd](https://github.com/Koncopd)
