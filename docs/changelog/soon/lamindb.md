@@ -1,3 +1,4 @@
+- 🚚 Move CellXGene `Curator` from `cellxgene-lamin` here [PR](https://github.com/laminlabs/lamindb/pull/2403) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Increase timeout for edge functions [PR](https://github.com/laminlabs/lamindb-setup/pull/957) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Remove the bound on storage3 [PR](https://github.com/laminlabs/lamindb/pull/2405) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Remove upper bound on storage3 [PR](https://github.com/laminlabs/lamindb-setup/pull/956) [@Koncopd](https://github.com/Koncopd)
