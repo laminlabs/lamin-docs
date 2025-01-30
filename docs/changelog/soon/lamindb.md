@@ -1,3 +1,4 @@
+- ⚡️ Safer resolve in check_path_is_child_of_root [PR](https://github.com/laminlabs/lamindb/pull/2409) [@Koncopd](https://github.com/Koncopd)
 - 📝 Clarify Collection.append [PR](https://github.com/laminlabs/lamindb/pull/2407) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Fix warning about artifacts in trash [PR](https://github.com/laminlabs/lamindb/pull/2406) [@ap--](https://github.com/ap--)
 - 🚚 Move CellXGene `Curator` from `cellxgene-lamin` here [PR](https://github.com/laminlabs/lamindb/pull/2403) [@falexwolf](https://github.com/falexwolf)
