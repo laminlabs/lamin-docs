@@ -1,3 +1,4 @@
+- ⬆️ Remove the bound on storage3 [PR](https://github.com/laminlabs/lamindb/pull/2405) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Remove upper bound on storage3 [PR](https://github.com/laminlabs/lamindb-setup/pull/956) [@Koncopd](https://github.com/Koncopd)
 - ✨ Infer n_observations in Artifact.from_anndata [PR](https://github.com/laminlabs/lamindb/pull/2404) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improved error message for saving via CLI [PR](https://github.com/laminlabs/lamindb/pull/2379) [@Zethson](https://github.com/Zethson)
