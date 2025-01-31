@@ -1,3 +1,4 @@
+- 🐛 Fix NaN in categorical columns for MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/2411) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Better user feedback during keyword validation in `Record` constructor [PR](https://github.com/laminlabs/lamindb/pull/2402) [@Zethson](https://github.com/Zethson)
 - ⚡️ Safer resolve in check_path_is_child_of_root [PR](https://github.com/laminlabs/lamindb/pull/2409) [@Koncopd](https://github.com/Koncopd)
 - 📝 Clarify Collection.append [PR](https://github.com/laminlabs/lamindb/pull/2407) [@Koncopd](https://github.com/Koncopd)
