@@ -1,3 +1,4 @@
+- 🚚 Bulk-rename old-style curators to `CatCurator` [PR](https://github.com/laminlabs/lamindb/pull/2413) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Self-contained definition of `CellxGene` schema / validation constraints [PR](https://github.com/laminlabs/lamindb/pull/2412) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move `PertCurator` from `wetlab` here and add `CellxGene` `Curator` test [PR](https://github.com/laminlabs/lamindb/pull/2408) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix NaN in categorical columns for MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/2411) [@Koncopd](https://github.com/Koncopd)
