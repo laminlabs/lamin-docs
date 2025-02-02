@@ -1,3 +1,4 @@
+- 🎨 Let `Curator.validate()` throw an error [PR](https://github.com/laminlabs/lamindb/pull/2417) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Re-purpose `BaseCurator` as `Curator`, introduce `CatCurator` and consolidate shared logic under `CatCurator` [PR](https://github.com/laminlabs/lamindb/pull/2416) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `organism` handling in curators [PR](https://github.com/laminlabs/lamindb/pull/2415) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Eliminate all logic related to `using_key` in curators [PR](https://github.com/laminlabs/lamindb/pull/2414) [@falexwolf](https://github.com/falexwolf)
