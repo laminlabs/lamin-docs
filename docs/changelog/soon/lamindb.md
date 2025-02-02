@@ -1,3 +1,4 @@
+- ♻️ Re-purpose `BaseCurator` as `Curator`, introduce `CatCurator` and consolidate shared logic under `CatCurator` [PR](https://github.com/laminlabs/lamindb/pull/2416) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `organism` handling in curators [PR](https://github.com/laminlabs/lamindb/pull/2415) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Eliminate all logic related to `using_key` in curators [PR](https://github.com/laminlabs/lamindb/pull/2414) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Bulk-rename old-style curators to `CatCurator` [PR](https://github.com/laminlabs/lamindb/pull/2413) [@falexwolf](https://github.com/falexwolf)
