@@ -1,3 +1,4 @@
+- ♻️ Refactor `organism` handling in curators [PR](https://github.com/laminlabs/lamindb/pull/2415) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Eliminate all logic related to `using_key` in curators [PR](https://github.com/laminlabs/lamindb/pull/2414) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Bulk-rename old-style curators to `CatCurator` [PR](https://github.com/laminlabs/lamindb/pull/2413) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Self-contained definition of `CellxGene` schema / validation constraints [PR](https://github.com/laminlabs/lamindb/pull/2412) [@falexwolf](https://github.com/falexwolf)
