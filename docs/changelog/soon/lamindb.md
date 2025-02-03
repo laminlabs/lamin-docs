@@ -1,3 +1,4 @@
+- ✨ Schema-based curators: `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2418) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Update path for hub fixtures [PR](https://github.com/laminlabs/lamindb-setup/pull/959) [@fredericenard](https://github.com/fredericenard)
 - 🎨 Let `Curator.validate()` throw an error [PR](https://github.com/laminlabs/lamindb/pull/2417) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Re-purpose `BaseCurator` as `Curator`, introduce `CatCurator` and consolidate shared logic under `CatCurator` [PR](https://github.com/laminlabs/lamindb/pull/2416) [@falexwolf](https://github.com/falexwolf)
