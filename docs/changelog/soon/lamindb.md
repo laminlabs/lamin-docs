@@ -1,3 +1,4 @@
+- ♻️ Clarify hash functions [PR](https://github.com/laminlabs/lamindb-setup/pull/960) [@falexwolf](https://github.com/falexwolf)
 - ✨ A first version of a `tracked()` function decorator [PR](https://github.com/laminlabs/lamindb/pull/2422) [@falexwolf](https://github.com/falexwolf)
 - ✨ Schema-based curators: `AnnDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2418) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Update path for hub fixtures [PR](https://github.com/laminlabs/lamindb-setup/pull/959) [@fredericenard](https://github.com/fredericenard)
