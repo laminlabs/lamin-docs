@@ -1,3 +1,4 @@
+- ✨ Support s3-compatible endpoint urls [PR](https://github.com/laminlabs/lamindb/pull/2420) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support s3-compatible endpoint urls [PR](https://github.com/laminlabs/lamindb-setup/pull/958) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Clarify hash functions [PR](https://github.com/laminlabs/lamindb-setup/pull/960) [@falexwolf](https://github.com/falexwolf)
 - ✨ A first version of a `tracked()` function decorator [PR](https://github.com/laminlabs/lamindb/pull/2422) [@falexwolf](https://github.com/falexwolf)
