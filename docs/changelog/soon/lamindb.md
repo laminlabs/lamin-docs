@@ -1,3 +1,4 @@
+- ♻️ Explicitly import lamindb in current_run [PR](https://github.com/laminlabs/lamindb/pull/2427) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve `ln.tracked()` user experience [PR](https://github.com/laminlabs/lamindb/pull/2426) [@falexwolf](https://github.com/falexwolf)
 - 🥅 Error at runtime with old s3fs [PR](https://github.com/laminlabs/lamindb-setup/pull/962) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support s3-compatible endpoint urls [PR](https://github.com/laminlabs/lamindb/pull/2420) [@Koncopd](https://github.com/Koncopd)
