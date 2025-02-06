@@ -1,3 +1,4 @@
+- ♻️ Update test script and check for its content beyond the hash [PR](https://github.com/laminlabs/lamin-cli/pull/113) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade fsspec packages (s3fs, gcsfs, universal_pathlib) [PR](https://github.com/laminlabs/lamindb/pull/2428) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade fsspec packages (s3fs, gcsfs, universal_pathlib) [PR](https://github.com/laminlabs/lamindb-setup/pull/963) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Explicitly import lamindb in current_run [PR](https://github.com/laminlabs/lamindb/pull/2427) [@Koncopd](https://github.com/Koncopd)
