@@ -1,3 +1,4 @@
+- ✨ Add finished_at [PR](https://github.com/laminlabs/nextflow-lamin/pull/45) [@Zethson](https://github.com/Zethson)
 - 🚚  Move `PertCurator` into `lamindb` [PR](https://github.com/laminlabs/wetlab/pull/103) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `artifact.biosamples` to `artifact.clinicore_biosamples` [PR](https://github.com/laminlabs/clinicore/pull/18) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/wetlab/pull/101) [@falexwolf](https://github.com/falexwolf)
