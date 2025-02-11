@@ -1,3 +1,4 @@
+- 🐛 Allow filtering on np.nan in obs_filter of MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/2443) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add Artifact.from_tiledbsoma with n_observations [PR](https://github.com/laminlabs/lamindb/pull/2438) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `var_index` standardization of `SpatialDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2433) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix tests [PR](https://github.com/laminlabs/lamin-cli/pull/114) [@Zethson](https://github.com/Zethson)
