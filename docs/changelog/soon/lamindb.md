@@ -1,3 +1,4 @@
+- 🐛 Fix Feature with description idempotency and 🚸 improve filter and get error behavior [PR](https://github.com/laminlabs/lamindb/pull/2442) [@Zethson](https://github.com/Zethson)
 - 🦺 Pass required fsspec options explicitly [PR](https://github.com/laminlabs/lamindb-setup/pull/966) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Robuster `var_index` curation of `SpatialDataCurator` [PR](https://github.com/laminlabs/lamindb/pull/2444) [@Zethson](https://github.com/Zethson)
 - 🐛 Allow filtering on np.nan in obs_filter of MappedCollection [PR](https://github.com/laminlabs/lamindb/pull/2443) [@Koncopd](https://github.com/Koncopd)
