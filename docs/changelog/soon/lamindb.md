@@ -1,3 +1,4 @@
+- ⬆️ Update lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2449) [@Zethson](https://github.com/Zethson)
 - 🐛 Normalize module names for robust checking in _check_instance_setup [PR](https://github.com/laminlabs/lamindb-setup/pull/967) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup (explicitly set version_aware and use_listings_cache) [PR](https://github.com/laminlabs/lamindb/pull/2445) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow passing `artifact` to `Curator` [PR](https://github.com/laminlabs/lamindb/pull/2441) [@sunnyosun](https://github.com/sunnyosun)
