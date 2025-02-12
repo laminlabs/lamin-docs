@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup (explicitly set version_aware and use_listings_cache) [PR](https://github.com/laminlabs/lamindb/pull/2445) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow passing `artifact` to `Curator` [PR](https://github.com/laminlabs/lamindb/pull/2441) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix Feature with description idempotency and 🚸 improve filter and get error behavior [PR](https://github.com/laminlabs/lamindb/pull/2442) [@Zethson](https://github.com/Zethson)
 - 🦺 Pass required fsspec options explicitly [PR](https://github.com/laminlabs/lamindb-setup/pull/966) [@Koncopd](https://github.com/Koncopd)
