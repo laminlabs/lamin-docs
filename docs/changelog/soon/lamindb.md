@@ -1,3 +1,4 @@
+- ✨ Allow to check the need for syncing without actually syncing [PR](https://github.com/laminlabs/lamindb-setup/pull/969) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Fix RemovedInDjango60Warning: CheckConstraint.check is deprecated [PR](https://github.com/laminlabs/lamindb/pull/2446) [@Zethson](https://github.com/Zethson)
 - 🚸 Full guarantee of avoiding duplicating `Transform`, `Artifact` & `Collection` in concurrent runs [PR](https://github.com/laminlabs/lamindb/pull/2432) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix dangling folders on upload failures [PR](https://github.com/laminlabs/lamindb/pull/2448) [@Koncopd](https://github.com/Koncopd)
