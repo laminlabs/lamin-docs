@@ -1,3 +1,4 @@
+- 🚸 Full guarantee of avoiding duplicating `Transform`, `Artifact` & `Collection` in concurrent runs [PR](https://github.com/laminlabs/lamindb/pull/2432) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix dangling folders on upload failures [PR](https://github.com/laminlabs/lamindb/pull/2448) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2449) [@Zethson](https://github.com/Zethson)
 - 🐛 Normalize module names for robust checking in _check_instance_setup [PR](https://github.com/laminlabs/lamindb-setup/pull/967) [@Koncopd](https://github.com/Koncopd)
