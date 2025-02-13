@@ -1,3 +1,4 @@
+- 🩹 Delete files before re-downloading them in UPath.synchronize [PR](https://github.com/laminlabs/lamindb-setup/pull/970) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix caching logic in `Artifact.open()` [PR](https://github.com/laminlabs/lamindb/pull/2454) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to check the need for syncing without actually syncing [PR](https://github.com/laminlabs/lamindb-setup/pull/969) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Fix RemovedInDjango60Warning: CheckConstraint.check is deprecated [PR](https://github.com/laminlabs/lamindb/pull/2446) [@Zethson](https://github.com/Zethson)
