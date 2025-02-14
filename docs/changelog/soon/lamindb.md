@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2460) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Restore `.feature_sets` as a `ManyToManyField` [PR](https://github.com/laminlabs/lamindb/pull/2453) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Delete files before re-downloading them in UPath.synchronize [PR](https://github.com/laminlabs/lamindb-setup/pull/970) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix caching logic in `Artifact.open()` [PR](https://github.com/laminlabs/lamindb/pull/2454) [@Koncopd](https://github.com/Koncopd)
