@@ -1,3 +1,4 @@
+- ✨ Add `Collection.open()` that returns `pyarrow` dataset [PR](https://github.com/laminlabs/lamindb/pull/2462) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2457) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2460) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Restore `.feature_sets` as a `ManyToManyField` [PR](https://github.com/laminlabs/lamindb/pull/2453) [@falexwolf](https://github.com/falexwolf)
