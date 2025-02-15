@@ -1,3 +1,4 @@
+- ⬆️ Test purged migrations [PR](https://github.com/laminlabs/lamindb/pull/2464) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `Collection.open()` that returns `pyarrow` dataset [PR](https://github.com/laminlabs/lamindb/pull/2462) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2457) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2460) [@Koncopd](https://github.com/Koncopd)
