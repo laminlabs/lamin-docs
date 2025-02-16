@@ -1,3 +1,4 @@
+- 🍱 Adjust migration to 8-char Source uid [PR](https://github.com/laminlabs/bionty/pull/194) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Increase uid length for `Source` to 8 chars [PR](https://github.com/laminlabs/bionty/pull/193) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Point to new squashed migration [PR](https://github.com/laminlabs/bionty/pull/191) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Reconfigure migrations [PR](https://github.com/laminlabs/bionty/pull/190) [@falexwolf](https://github.com/falexwolf)
