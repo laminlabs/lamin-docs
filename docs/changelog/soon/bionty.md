@@ -1,3 +1,4 @@
+- ♻️ Point to new squashed migration [PR](https://github.com/laminlabs/bionty/pull/191) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Reconfigure migrations [PR](https://github.com/laminlabs/bionty/pull/190) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Improve `from_source` docstrings for entities [PR](https://github.com/laminlabs/bionty/pull/179) [@Zethson](https://github.com/Zethson)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/bionty/pull/187) [@falexwolf](https://github.com/falexwolf)
