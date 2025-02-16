@@ -1,3 +1,4 @@
+- 🚚 Rename `CatCurator` to `CatManager` [PR](https://github.com/laminlabs/lamindb/pull/2467) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Prettify AnnDataCurator implementation [PR](https://github.com/laminlabs/lamindb/pull/2466) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better error for malformed categorical dtype [PR](https://github.com/laminlabs/lamindb/pull/2465) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Test purged migrations [PR](https://github.com/laminlabs/lamindb/pull/2464) [@falexwolf](https://github.com/falexwolf)
