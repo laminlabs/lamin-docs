@@ -1,3 +1,4 @@
+- ♻️ Increase uid length for `Source` to 8 chars [PR](https://github.com/laminlabs/bionty/pull/193) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Point to new squashed migration [PR](https://github.com/laminlabs/bionty/pull/191) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Reconfigure migrations [PR](https://github.com/laminlabs/bionty/pull/190) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Improve `from_source` docstrings for entities [PR](https://github.com/laminlabs/bionty/pull/179) [@Zethson](https://github.com/Zethson)
