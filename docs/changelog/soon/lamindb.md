@@ -1,3 +1,4 @@
+- ✨ Support endpoint_url in operations with tiledbsoma [PR](https://github.com/laminlabs/lamindb/pull/2476) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Make new version upon passing existing `key` to `Collection` [PR](https://github.com/laminlabs/lamindb/pull/2474) [@falexwolf](https://github.com/falexwolf)
 - 📝 Show `ln.Collection.open()` in arrays.ipynb [PR](https://github.com/laminlabs/lamindb/pull/2472) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add auxiliary field `nullable` to `Feature` [PR](https://github.com/laminlabs/lamindb/pull/2471) [@falexwolf](https://github.com/falexwolf)
