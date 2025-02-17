@@ -1,3 +1,4 @@
+- ➕ Add pyyaml to dependencies [PR](https://github.com/laminlabs/lamindb/pull/2477) [@Koncopd](https://github.com/Koncopd)
 - 🎨 A `ManyToMany` between `Schema.components` and `.composites` [PR](https://github.com/laminlabs/lamindb/pull/2473) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support endpoint_url in operations with tiledbsoma [PR](https://github.com/laminlabs/lamindb/pull/2476) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Make new version upon passing existing `key` to `Collection` [PR](https://github.com/laminlabs/lamindb/pull/2474) [@falexwolf](https://github.com/falexwolf)
