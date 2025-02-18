@@ -1,3 +1,4 @@
+- 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/971) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `save_tiledbsoma_experiment` for paths with endpoints [PR](https://github.com/laminlabs/lamindb/pull/2478) [@Koncopd](https://github.com/Koncopd)
 - ➕ Add pyyaml to dependencies [PR](https://github.com/laminlabs/lamindb/pull/2477) [@Koncopd](https://github.com/Koncopd)
 - 🎨 A `ManyToMany` between `Schema.components` and `.composites` [PR](https://github.com/laminlabs/lamindb/pull/2473) [@falexwolf](https://github.com/falexwolf)
