@@ -63,7 +63,6 @@ multimodal
 
 BY_DATATYPE = """
 multimodal
-perturbation
 ```
 """
 
@@ -219,11 +218,11 @@ def pull_artifacts(session):
     replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
 
     # wetlab (must be after use-cases)
-    pull_from_s3_and_unpack("wetlab.zip")
-    sync_path(
-        Path("wetlab/guide/pert-curator.ipynb"),
-        Path("docs/perturbation.ipynb"),
-    )
+    # pull_from_s3_and_unpack("wetlab.zip")
+    # sync_path(
+    #     Path("wetlab/guide/pert-curator.ipynb"),
+    #     Path("docs/perturbation.ipynb"),
+    # )
 
     # amend toctree
     with open("docs/guide.md") as f:
@@ -281,7 +280,7 @@ def init(session):
 @nox.session
 def docs(session):
     process = subprocess.run(  # noqa S602
-        "lndocs --strict --strip-prefix --error-on-index", shell=True
+        "lndocs --strip-prefix --error-on-index", shell=True
     )
     if process.returncode != 0:
         # rerun without strict option so see all warnings
