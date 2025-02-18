@@ -63,7 +63,6 @@ multimodal
 
 BY_DATATYPE = """
 multimodal
-perturbation
 ```
 """
 
@@ -219,11 +218,11 @@ def pull_artifacts(session):
     replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
 
     # wetlab (must be after use-cases)
-    pull_from_s3_and_unpack("wetlab.zip")
-    sync_path(
-        Path("wetlab/guide/pert-curator.ipynb"),
-        Path("docs/perturbation.ipynb"),
-    )
+    # pull_from_s3_and_unpack("wetlab.zip")
+    # sync_path(
+    #     Path("wetlab/guide/pert-curator.ipynb"),
+    #     Path("docs/perturbation.ipynb"),
+    # )
 
     # amend toctree
     with open("docs/guide.md") as f:
