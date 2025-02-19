@@ -1,3 +1,4 @@
+- ♻️ Exclude `DoesNotExist` in `private-django-api` [PR](https://github.com/laminlabs/lamindb-setup/pull/973) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add endpoint_url option to docs [PR](https://github.com/laminlabs/lamindb/pull/2487) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Automatically add missing columns upon `.standardize()` if `nullable` is `True` [PR](https://github.com/laminlabs/lamindb/pull/2485) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow to specify `fsspec` upload options in `Artifact.save` [PR](https://github.com/laminlabs/lamindb/pull/2486) [@Koncopd](https://github.com/Koncopd)
