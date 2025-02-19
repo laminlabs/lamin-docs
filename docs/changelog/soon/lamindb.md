@@ -1,3 +1,4 @@
+- ✨ Allow to specify `fsspec` upload options in `Artifact.save` [PR](https://github.com/laminlabs/lamindb/pull/2486) [@Koncopd](https://github.com/Koncopd)
 - ✨ Write `Artifact.n_observations` in `Artifact.from_df()` [PR](https://github.com/laminlabs/lamindb/pull/2484) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix related model field check in .filter [PR](https://github.com/laminlabs/lamindb/pull/2482) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix docs build [PR](https://github.com/laminlabs/lamindb/pull/2481) [@falexwolf](https://github.com/falexwolf)
