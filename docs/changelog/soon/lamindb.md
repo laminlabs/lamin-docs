@@ -1,3 +1,4 @@
+- 🐛 Automatically add missing columns upon `.standardize()` if `nullable` is `True` [PR](https://github.com/laminlabs/lamindb/pull/2485) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow to specify `fsspec` upload options in `Artifact.save` [PR](https://github.com/laminlabs/lamindb/pull/2486) [@Koncopd](https://github.com/Koncopd)
 - ✨ Write `Artifact.n_observations` in `Artifact.from_df()` [PR](https://github.com/laminlabs/lamindb/pull/2484) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix related model field check in .filter [PR](https://github.com/laminlabs/lamindb/pull/2482) [@Koncopd](https://github.com/Koncopd)
