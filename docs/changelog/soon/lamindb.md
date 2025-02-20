@@ -1,3 +1,4 @@
+- 🐛 Fix `.add_new_from` message [PR](https://github.com/laminlabs/lamindb/pull/2497) [@Zethson](https://github.com/Zethson)
 - 🐛 Run pip freeze with current python interpreter [PR](https://github.com/laminlabs/lamindb/pull/2495) [@ap--](https://github.com/ap--)
 - ⬆️ Upgrade bionty [PR](https://github.com/laminlabs/lamindb/pull/2494) [@Zethson](https://github.com/Zethson)
 - fix typo [PR](https://github.com/laminlabs/lamindb/pull/2492) [@Zethson](https://github.com/Zethson)
