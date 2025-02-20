@@ -1,3 +1,4 @@
+- ⬆️ Upgrade bionty [PR](https://github.com/laminlabs/lamindb/pull/2494) [@Zethson](https://github.com/Zethson)
 - fix typo [PR](https://github.com/laminlabs/lamindb/pull/2492) [@Zethson](https://github.com/Zethson)
 - 🐛 Do not resolve http links when registering [PR](https://github.com/laminlabs/lamindb/pull/2491) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix notebook re-run with same hash [PR](https://github.com/laminlabs/lamindb/pull/2489) [@falexwolf](https://github.com/falexwolf)
