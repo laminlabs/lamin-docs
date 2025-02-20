@@ -1,3 +1,4 @@
+- 🐛 Do not resolve http links when registering [PR](https://github.com/laminlabs/lamindb/pull/2491) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix notebook re-run with same hash [PR](https://github.com/laminlabs/lamindb/pull/2489) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Exclude `DoesNotExist` in `private-django-api` [PR](https://github.com/laminlabs/lamindb-setup/pull/973) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add endpoint_url option to docs [PR](https://github.com/laminlabs/lamindb/pull/2487) [@Koncopd](https://github.com/Koncopd)
