@@ -1,3 +1,4 @@
+- 🎨 Improve `from_source` docstrings for entities [PR](https://github.com/laminlabs/bionty/pull/192) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Resquash migrations [PR](https://github.com/laminlabs/bionty/pull/197) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add data migration for source uids [PR](https://github.com/laminlabs/bionty/pull/196) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Adjust migration to 8-char Source uid [PR](https://github.com/laminlabs/bionty/pull/194) [@falexwolf](https://github.com/falexwolf)
