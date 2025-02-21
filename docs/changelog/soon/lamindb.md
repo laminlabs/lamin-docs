@@ -1,3 +1,4 @@
+- 💚 Fix prettier pre-commit hook [PR](https://github.com/laminlabs/lamindb/pull/2499) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix prettier pre-commit hook [PR](https://github.com/laminlabs/lamindb-setup/pull/975) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Update submodules [PR](https://github.com/laminlabs/lamindb/pull/2498) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `.add_new_from` message [PR](https://github.com/laminlabs/lamindb/pull/2497) [@Zethson](https://github.com/Zethson)
