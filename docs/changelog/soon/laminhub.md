@@ -1,3 +1,4 @@
+- ✨ Group ulabels by type [PR](https://github.com/laminlabs/laminhub-public/pull/37) [@awgaan](https://github.com/awgaan)
 - 🐛 Fix display of dropdown behind `Schema` filter button on `Artifacts` page [PR](https://github.com/laminlabs/laminhub-public/pull/36) [@falexwolf](https://github.com/falexwolf)
 - 💄 Display transform keys [PR](https://github.com/laminlabs/laminhub-public/pull/34) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Create a more intuitive artifact page [PR](https://github.com/laminlabs/laminhub-public/pull/31) [@chaichontat](https://github.com/chaichontat)
