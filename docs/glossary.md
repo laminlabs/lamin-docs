@@ -5,7 +5,7 @@
 FAIR
     FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
 
-GUI
+UI
     Graphical user interface, for instance, a browser-based data catalog.
 
 feature
