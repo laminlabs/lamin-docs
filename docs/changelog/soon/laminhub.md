@@ -1,3 +1,4 @@
+- 🚸 De-duplicate versions in the card boxes of the `Overview` page [PR](https://github.com/laminlabs/laminhub-public/pull/38) [@falexwolf](https://github.com/falexwolf)
 - ✨ Group ulabels by type [PR](https://github.com/laminlabs/laminhub-public/pull/37) [@awgaan](https://github.com/awgaan)
 - 🐛 Fix display of dropdown behind `Schema` filter button on `Artifacts` page [PR](https://github.com/laminlabs/laminhub-public/pull/36) [@falexwolf](https://github.com/falexwolf)
 - 💄 Display transform keys [PR](https://github.com/laminlabs/laminhub-public/pull/34) [@sunnyosun](https://github.com/sunnyosun)
