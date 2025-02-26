@@ -255,7 +255,7 @@ def install(session):
     )
     run(
         session,
-        f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
+        f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter,gcp]",
     )
     run(session, "pip install --no-deps git+https://github.com/laminlabs/cellregistry")
 
