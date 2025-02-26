@@ -1,3 +1,4 @@
+- ✨ Allow to use `Artifact.open()` and `Artifact.load()` for `.gz` files [PR](https://github.com/laminlabs/lamindb/pull/2506) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/976) [@Koncopd](https://github.com/Koncopd)
 - ✨ Extend schema json [PR](https://github.com/laminlabs/lamindb-setup/pull/961) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Raise consistency error if a source path suffix doesn't match the artifact `key` suffix [PR](https://github.com/laminlabs/lamindb/pull/2490) [@falexwolf](https://github.com/falexwolf)
