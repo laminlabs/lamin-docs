@@ -1,3 +1,4 @@
+- ♻️ Small corrections [PR](https://github.com/laminlabs/lamindb/pull/2509) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to use `Artifact.open()` and `Artifact.load()` for `.gz` files [PR](https://github.com/laminlabs/lamindb/pull/2506) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/976) [@Koncopd](https://github.com/Koncopd)
 - ✨ Extend schema json [PR](https://github.com/laminlabs/lamindb-setup/pull/961) [@fredericenard](https://github.com/fredericenard)
