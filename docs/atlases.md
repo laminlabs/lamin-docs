@@ -8,5 +8,6 @@ The following use cases demonstrate how to use LaminDB to query popular atlases.
 :maxdepth: 1
 
 cellxgene
+arc-virtual-cell-atlas
 rxrx
 ```
