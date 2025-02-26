@@ -1,3 +1,4 @@
+- ✨ Support R2 [PR](https://github.com/laminlabs/lamindb-setup/pull/979) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Fix `UPath.view_tree` on gs [PR](https://github.com/laminlabs/lamindb-setup/pull/977) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Small corrections [PR](https://github.com/laminlabs/lamindb/pull/2509) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to use `Artifact.open()` and `Artifact.load()` for `.gz` files [PR](https://github.com/laminlabs/lamindb/pull/2506) [@Koncopd](https://github.com/Koncopd)
