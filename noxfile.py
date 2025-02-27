@@ -255,7 +255,7 @@ def install(session):
     )
     run(
         session,
-        f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter]",
+        f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter,gcp]",
     )
     run(session, "pip install --no-deps git+https://github.com/laminlabs/cellregistry")
 
@@ -268,6 +268,7 @@ def run_nbs(session):
     run_notebooks("docs/introduction.ipynb")
     run_notebooks("docs/tutorial.ipynb")
     run_notebooks("docs/tutorial2.ipynb")
+    run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
 
 
 @nox.session
