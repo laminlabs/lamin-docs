@@ -1,3 +1,4 @@
+- 🚸 Make the `obs` and `var` `DataFrameCurator` objects accessible via `AnnDataCurator.slots` [PR](https://github.com/laminlabs/lamindb/pull/2505) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Better error message upon re-creation of schema with same name and different hash [PR](https://github.com/laminlabs/lamindb/pull/2511) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Force no compression in `Collection.mapped` even for files with `.gz` extension [PR](https://github.com/laminlabs/lamindb/pull/2510) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support R2 [PR](https://github.com/laminlabs/lamindb-setup/pull/979) [@Koncopd](https://github.com/Koncopd)
