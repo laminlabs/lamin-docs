@@ -1,3 +1,4 @@
+- 🎨 When re-creating an `Artifact`, link subsequent runs instead of updating `.run` and linking previous runs [PR](https://github.com/laminlabs/lamindb/pull/2515) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Raise `NotImplementedError` in `Artifact.load()` if there is no loader [PR](https://github.com/laminlabs/lamindb/pull/2514) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support R2 [PR](https://github.com/laminlabs/lamindb-setup/pull/979) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to use `Artifact.open()` and `Artifact.load()` for `.gz` files [PR](https://github.com/laminlabs/lamindb/pull/2506) [@Koncopd](https://github.com/Koncopd)
