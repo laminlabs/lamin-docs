@@ -1,3 +1,4 @@
+- 🐛 Fix tissue docstring [PR](https://github.com/laminlabs/bionty/pull/204) [@Zethson](https://github.com/Zethson)
 - 🍱 New `ExperimentalFactor` version: `efo-3.69.0` [PR](https://github.com/laminlabs/bionty/pull/203) [@Zethson](https://github.com/Zethson)
 - 🎨 Remove md5 related code [PR](https://github.com/laminlabs/bionty/pull/201) [@Zethson](https://github.com/Zethson)
 - ✨ Unpin pronto [PR](https://github.com/laminlabs/bionty/pull/108) [@Zethson](https://github.com/Zethson)
