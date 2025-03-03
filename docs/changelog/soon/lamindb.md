@@ -1,3 +1,4 @@
+- ✨ Prepare for permission management [PR](https://github.com/laminlabs/lamindb-setup/pull/974) [@Koncopd](https://github.com/Koncopd)
 - ✨ Introduce `Artifact.from_spatialdata()` and re-factor validation of `spatialdata` stores [PR](https://github.com/laminlabs/lamindb/pull/2461) [@Zethson](https://github.com/Zethson)
 - 🎨 When re-creating an `Artifact`, link subsequent runs instead of updating `.run` and linking previous runs [PR](https://github.com/laminlabs/lamindb/pull/2515) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Raise `NotImplementedError` in `Artifact.load()` if there is no loader [PR](https://github.com/laminlabs/lamindb/pull/2514) [@Koncopd](https://github.com/Koncopd)
