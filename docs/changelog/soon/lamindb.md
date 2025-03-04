@@ -1,3 +1,4 @@
+- ♻️ Re-export link models [PR](https://github.com/laminlabs/lamindb/pull/2523) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test fine-grained permissions [PR](https://github.com/laminlabs/lamindb/pull/2512) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Re-structure internal API away from monkey-patching Django models [PR](https://github.com/laminlabs/lamindb/pull/2516) [@falexwolf](https://github.com/falexwolf)
 - ✨ Prepare for permission management [PR](https://github.com/laminlabs/lamindb-setup/pull/974) [@Koncopd](https://github.com/Koncopd)
