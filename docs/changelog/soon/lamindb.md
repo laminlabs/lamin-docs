@@ -1,3 +1,4 @@
+- ⬆️ Bump django to >= 5.1 [PR](https://github.com/laminlabs/lamindb-setup/pull/982) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable `ln.track(project="My project")` to auto-link entities to projects [PR](https://github.com/laminlabs/lamindb/pull/2529) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/981) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade Bionty [PR](https://github.com/laminlabs/lamindb/pull/2518) [@Zethson](https://github.com/Zethson)
