@@ -1,3 +1,4 @@
+- ♻️ Refactor internals of legacy feature logic in `Collection` [PR](https://github.com/laminlabs/lamindb/pull/2528) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Ignore Dask legacy DataFrame warning [PR](https://github.com/laminlabs/lamindb/pull/2525) [@Zethson](https://github.com/Zethson)
 - 🔊 Do not show track warning for read-only connections [PR](https://github.com/laminlabs/lamindb/pull/2527) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Re-export link models [PR](https://github.com/laminlabs/lamindb/pull/2523) [@falexwolf](https://github.com/falexwolf)
