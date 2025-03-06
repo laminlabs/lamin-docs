@@ -1,3 +1,4 @@
+- ✨ Read fine_grained_access column from the instances table [PR](https://github.com/laminlabs/lamindb-setup/pull/983) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Introduce `.slots` in `Schema`, `Curator`, and `FeatureManager` to access schemas and curators by dataset slot [PR](https://github.com/laminlabs/lamindb/pull/2530) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Bump django to >= 5.1 [PR](https://github.com/laminlabs/lamindb-setup/pull/982) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable `ln.track(project="My project")` to auto-link entities to projects [PR](https://github.com/laminlabs/lamindb/pull/2529) [@falexwolf](https://github.com/falexwolf)
