@@ -1,3 +1,4 @@
+- ✨ Add `.load()` for artifacts holding `SpatialData` objects [PR](https://github.com/laminlabs/lamindb/pull/2532) [@Zethson](https://github.com/Zethson)
 - 🩹 Do not overwrite `._state_db` of models when the current instance is passed to `.using` [PR](https://github.com/laminlabs/lamindb/pull/2534) [@Koncopd](https://github.com/Koncopd)
 - ✨ Read fine_grained_access column from the instances table [PR](https://github.com/laminlabs/lamindb-setup/pull/983) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Introduce `.slots` in `Schema`, `Curator`, and `FeatureManager` to access schemas and curators by dataset slot [PR](https://github.com/laminlabs/lamindb/pull/2530) [@sunnyosun](https://github.com/sunnyosun)
