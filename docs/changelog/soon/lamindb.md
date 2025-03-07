@@ -1,3 +1,4 @@
+- 🐛 Fix passing a path manually when no path found by `nbproject` [PR](https://github.com/laminlabs/lamindb/pull/2537) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `.load()` for artifacts holding `SpatialData` objects [PR](https://github.com/laminlabs/lamindb/pull/2532) [@Zethson](https://github.com/Zethson)
 - 🩹 Do not overwrite `._state_db` of models when the current instance is passed to `.using` [PR](https://github.com/laminlabs/lamindb/pull/2534) [@Koncopd](https://github.com/Koncopd)
 - ✨ Read fine_grained_access column from the instances table [PR](https://github.com/laminlabs/lamindb-setup/pull/983) [@Koncopd](https://github.com/Koncopd)
