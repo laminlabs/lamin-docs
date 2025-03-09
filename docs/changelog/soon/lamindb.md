@@ -1,3 +1,4 @@
+- 🚸 Do not evaluate filter on feature annotations in `.df(features=True`) [PR](https://github.com/laminlabs/lamindb/pull/2542) [@falexwolf](https://github.com/falexwolf)
 - ⬆️  Upgrade nbproject [PR](https://github.com/laminlabs/lamindb/pull/2541) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix passing a path manually when no path found by `nbproject` [PR](https://github.com/laminlabs/lamindb/pull/2537) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `.load()` for artifacts holding `SpatialData` objects [PR](https://github.com/laminlabs/lamindb/pull/2532) [@Zethson](https://github.com/Zethson)
