@@ -4,8 +4,8 @@ The following detailed specs are for the Python package `lamindb`. For the analo
 
 **Manage data & metadata with a unified API (“lakehouse”).**
 
-- Query & search across data & metadata: {class}`~lamindb.core.Record.filter`, {class}`~lamindb.core.Record.search`
-- Model entities as an {term}`ORM` which their own registry: {class}`~lamindb.core.Record`
+- Query & search across data & metadata: {class}`~lamindb.models.Record.filter`, {class}`~lamindb.models.Record.search`
+- Model entities as an {term}`ORM` which their own registry: {class}`~lamindb.models.Record`
 - Model files and folders as datasets & models via one class: {class}`~lamindb.Artifact`
 - Slice large array stores: {class}`~lamindb.Artifact.open` → [guide](cellxgene)
 - Cache & load artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`
@@ -32,9 +32,9 @@ The following detailed specs are for the Python package `lamindb`. For the analo
 
 **Validate, standardize & annotate.**
 
-- Validate & standardize metadata: {class}`~lamindb.core.CanCurate.validate`, {class}`~lamindb.core.CanCurate.standardize`.
+- Validate & standardize metadata: {class}`~lamindb.models.CanCurate.validate`, {class}`~lamindb.models.CanCurate.standardize`.
 - High-level curation flow including annotation: {class}`~lamindb.Curator`
-- Inspect validation failures: {class}`~lamindb.core.CanCurate.inspect`
+- Inspect validation failures: {class}`~lamindb.models.CanCurate.inspect`
 
 **Organize and share data across a mesh of LaminDB instances.**
 

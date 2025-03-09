@@ -30,7 +30,7 @@ observation
 record
     A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    In LaminDB, a metadata record is modeled as a {class}`~lamindb.core.Record`.
+    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.Record`.
 
 sample
     In biology, a sample is an instance or part of a biological system.
