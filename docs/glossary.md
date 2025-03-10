@@ -2,16 +2,23 @@
 
 ```{glossary}
 
+artifact
+    Stores a dataset or model as a file or folder.
+
+curator
+    - Object class designed to ensure your dataset conforms to a desired schema. 
+    - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
+
 FAIR
     FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
-
-UI
-    Graphical user interface, for instance, a browser-based data catalog.
 
 feature
     A feature is a property of a measurement [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))]. It's equivalent to a {term}`variable` in statistics and is typically equated with a dimension of a dataset.
 
     LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions and equates them with statistical variables.
+
+instance
+    Shorthand for "LaminDB instance", a database that manages metadata for datasets in different storage locations.
 
 label
     A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
@@ -30,7 +37,9 @@ observation
 record
     A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.Record`.
+    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.Record` and represents a row in a in a reqistry (a table in the SQL database).
+
+    It automatically sets up important behaviors and methods (like filtering, querying, and converting records to DataFrames) needed to interact with the metadata database.
 
 sample
     In biology, a sample is an instance or part of a biological system.
@@ -48,5 +57,17 @@ variable
     An independent variable is sometimes called a {term}`feature`, "predictor variable", "regressor", "covariate", "explanatory variable", "risk factor", "input variable", among others [[Wikipedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)].
 
     A dependent variable is sometimes called a "response variable", "regressand", "criterion", "predicted variable", "measured variable", "explained variable", "experimental variable", "responding variable", "outcome variable", "output variable", "target" or "label".
+
+schema
+    Blueprint for your data’s structure. Tool for curating and validating the organization of your data, helping maintain data integrity as it evolves through various processing steps.
+
+registry
+    A table in a SQL database (SQLite/Postgres) holding records.
+
+transform
+    A piece of code (script, notebook, pipeline, function) that can be applied to input data to produce output data.
+
+UI
+    Graphical user interface, for instance, a browser-based data catalog.
 
 ```
