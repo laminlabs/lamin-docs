@@ -1,3 +1,4 @@
+- ♻️ Better names for hub functions [PR](https://github.com/laminlabs/lamindb-setup/pull/984) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `FeatureManager._add_set_from_spatialdata` [PR](https://github.com/laminlabs/lamindb/pull/2539) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamin-cli & bionty & lamin-utils [PR](https://github.com/laminlabs/lamindb/pull/2540) [@Zethson](https://github.com/Zethson)
 - ✨ Add `lamin load` for Collections [PR](https://github.com/laminlabs/lamin-cli/pull/119) [@Zethson](https://github.com/Zethson)
