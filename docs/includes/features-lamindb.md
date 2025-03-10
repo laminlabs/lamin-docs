@@ -12,7 +12,7 @@ The following detailed specs are for the Python package `lamindb`. For the analo
 - Manage features & labels: {class}`~lamindb.Feature`, {class}`~lamindb.Schema`, {class}`~lamindb.ULabel`
 - Use array formats in memory & storage: [DataFrame](/tutorial), [AnnData](/arrays), [MuData](multimodal), [tiledbsoma](cellxgene), ... backed by [parquet](/tutorial), [zarr](/arrays), [tiledb](cellxgene), [HDF5](/arrays), [h5ad](/arrays), [DuckDB](rxrx), ...
 - Create iterable & queryable collections of artifacts with data loaders: {class}`~lamindb.Collection`
-- Version artifacts, collections & transforms: {class}`~lamindb.core.IsVersioned`
+- Version artifacts, collections & transforms: {class}`~lamindb.models.IsVersioned`
 
 **Track data lineage across notebooks, scripts, pipelines & UI.**
 
