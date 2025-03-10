@@ -2,16 +2,23 @@
 
 ```{glossary}
 
+artifact
+    Stores a dataset or model as a file or folder.
+
+curator
+    - Object class designed to ensure your dataset conforms to a desired schema. 
+    - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
+
 FAIR
     FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
-
-UI
-    Graphical user interface, for instance, a browser-based data catalog.
 
 feature
     A feature is a property of a measurement [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))]. It's equivalent to a {term}`variable` in statistics and is typically equated with a dimension of a dataset.
 
     LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions and equates them with statistical variables.
+
+instance
+    Shorthand for "LaminDB instance", a database that manages metadata for datasets in different storage locations.
 
 label
     A label refers to a descriptor or tag that is assigned to something to describe, identify, or categorize it.
@@ -54,20 +61,13 @@ variable
 schema
     Blueprint for your data’s structure. Tool for curating and validating the organization of your data, helping maintain data integrity as it evolves through various processing steps.
 
-curator
-    - Object class designed to ensure your dataset conforms to a desired schema. 
-    - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
-
 registry
     A table in a SQL database (SQLite/Postgres) holding records.
-
-instance
-    A database that manages metadata for datasets in different storage locations.
 
 transform
     A piece of code (script, notebook, pipeline, function) that can be applied to input data to produce output data.
 
-artifact
-    Stores a dataset or model as a file or folder.
+UI
+    Graphical user interface, for instance, a browser-based data catalog.
 
 ```
