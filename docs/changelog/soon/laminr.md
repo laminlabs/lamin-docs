@@ -1,6 +1,0 @@
-- 👷 Skip tests that require Python on CRAN [PR](https://github.com/laminlabs/laminr/pull/153) [@lazappi](https://github.com/lazappi)
-- Prep release 1.0.0 [PR](https://github.com/laminlabs/laminr/pull/152) [@rcannood](https://github.com/rcannood)
-- 🏗️  Replace API with {reticulate} [PR](https://github.com/laminlabs/laminr/pull/146) [@lazappi](https://github.com/lazappi)
-- 🚸 Automatically refresh user tokens [PR](https://github.com/laminlabs/laminr/pull/145) [@lazappi](https://github.com/lazappi)
-- ⬆️ Bump R dependency to >= 4.1 [PR](https://github.com/laminlabs/laminr/pull/142) [@lazappi](https://github.com/lazappi)
-- 👷 Add rhub GHA workflow [PR](https://github.com/laminlabs/laminr/pull/141) [@lazappi](https://github.com/lazappi)
