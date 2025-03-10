@@ -30,7 +30,9 @@ observation
 record
     A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.Record`.
+    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.Record` and represents a row in a in a reqistry (a table in the SQL database).
+
+    It automatically sets up important behaviors and methods (like filtering, querying, and converting records to DataFrames) needed to interact with the metadata database.
 
 sample
     In biology, a sample is an instance or part of a biological system.
@@ -57,8 +59,7 @@ curator
     - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
 
 registry
-    - A specialized kind of Record that represents a table in the metadata SQL database. A record is an instance (or row) of that registry.
-    - It automatically sets up important behaviors and methods (like filtering, querying, and converting records to DataFrames) needed to interact with the metadata database.
+    A table in a SQL database (SQLite/Postgres) holding records.
 
 instance
     A database that manages metadata for datasets in different storage locations.
