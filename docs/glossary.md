@@ -49,4 +49,24 @@ variable
 
     A dependent variable is sometimes called a "response variable", "regressand", "criterion", "predicted variable", "measured variable", "explained variable", "experimental variable", "responding variable", "outcome variable", "output variable", "target" or "label".
 
+schema
+    Blueprint for your data’s structure. Tool for curating and validating the organization of your data, helping maintain data integrity as it evolves through various processing steps.
+
+curator
+    - Object class designed to ensure your dataset conforms to a desired schema. 
+    - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
+
+registry
+    - A specialized kind of Record that represents a table in the metadata SQL database. A record is an instance (or row) of that registry.
+    - It automatically sets up important behaviors and methods (like filtering, querying, and converting records to DataFrames) needed to interact with the metadata database.
+
+instance
+    A database that manages metadata for datasets in different storage locations.
+
+transform
+    A piece of code (script, notebook, pipeline, function) that can be applied to input data to produce output data.
+
+artifact
+    Stores a dataset or model as a file or folder.
+
 ```
