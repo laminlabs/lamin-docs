@@ -1,1 +1,2 @@
+- ⬆️ Upgrade lamin-cli & bionty & lamin-utils [PR](https://github.com/laminlabs/lamindb/pull/2540) [@Zethson](https://github.com/Zethson)
 - ✨ Add `lamin load` for Collections [PR](https://github.com/laminlabs/lamin-cli/pull/119) [@Zethson](https://github.com/Zethson)
