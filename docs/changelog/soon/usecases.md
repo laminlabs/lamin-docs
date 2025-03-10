@@ -1,3 +1,4 @@
+- 📝 Fix for 1.2.0 [PR](https://github.com/laminlabs/lamin-usecases/pull/185) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add `PertCurator` notebook back [PR](https://github.com/laminlabs/wetlab/pull/105) [@falexwolf](https://github.com/falexwolf)
 - 💚 Prettify and fix [PR](https://github.com/laminlabs/lamin-mlops/pull/21) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add finished_at [PR](https://github.com/laminlabs/nextflow-lamin/pull/45) [@Zethson](https://github.com/Zethson)
