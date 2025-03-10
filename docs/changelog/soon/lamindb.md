@@ -1,0 +1,1 @@
+- ✨ Add `lamin load` for Collections [PR](https://github.com/laminlabs/lamin-cli/pull/119) [@Zethson](https://github.com/Zethson)
