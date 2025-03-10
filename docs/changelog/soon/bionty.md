@@ -1,3 +1,4 @@
+- 📝 Fix docs [PR](https://github.com/laminlabs/bionty/pull/209) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Standardize organism scientific names [PR](https://github.com/laminlabs/bionty/pull/208) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `import_source` edge cases [PR](https://github.com/laminlabs/bionty/pull/205) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix tissue docstring [PR](https://github.com/laminlabs/bionty/pull/204) [@Zethson](https://github.com/Zethson)
