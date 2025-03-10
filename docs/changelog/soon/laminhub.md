@@ -1,3 +1,4 @@
+- 🚸 Indicate re-created artifacts for all runs [PR](https://github.com/laminlabs/laminhub-public/pull/40) [@falexwolf](https://github.com/falexwolf)
 - 💄 Clean up Overview page [PR](https://github.com/laminlabs/laminhub-public/pull/39) [@falexwolf](https://github.com/falexwolf)
 - 🚸 De-duplicate versions in the card boxes of the `Overview` page [PR](https://github.com/laminlabs/laminhub-public/pull/38) [@falexwolf](https://github.com/falexwolf)
 - ✨ Group ulabels by type [PR](https://github.com/laminlabs/laminhub-public/pull/37) [@awgaan](https://github.com/awgaan)
