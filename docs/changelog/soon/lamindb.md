@@ -1,3 +1,4 @@
+- 🔊 Better messages for migrations sync state [PR](https://github.com/laminlabs/lamindb-setup/pull/985) [@falexwolf](https://github.com/falexwolf)
 - ✨ Implement MuDataCurator [PR](https://github.com/laminlabs/lamindb/pull/2543) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Better names for hub functions [PR](https://github.com/laminlabs/lamindb-setup/pull/984) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `FeatureManager._add_set_from_spatialdata` [PR](https://github.com/laminlabs/lamindb/pull/2539) [@Zethson](https://github.com/Zethson)
