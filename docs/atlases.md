@@ -9,5 +9,6 @@ The following use cases demonstrate how to use LaminDB to query popular atlases.
 
 cellxgene
 arc-virtual-cell-atlas
+hubmap
 rxrx
 ```
