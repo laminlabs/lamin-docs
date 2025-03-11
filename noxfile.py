@@ -269,6 +269,7 @@ def run_nbs(session):
     run_notebooks("docs/tutorial.ipynb")
     run_notebooks("docs/tutorial2.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
+    run_notebooks("docs/hubmap.ipynb")
 
 
 @nox.session
