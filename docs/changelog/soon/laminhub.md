@@ -1,3 +1,4 @@
+- ✨ Add `lamin.ai/explore` [PR](https://github.com/laminlabs/laminhub-public/pull/43) [@falexwolf](https://github.com/falexwolf)
 - ✨ Show projects for artifacts and transforms [PR](https://github.com/laminlabs/laminhub-public/pull/41) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Indicate re-created artifacts for all runs [PR](https://github.com/laminlabs/laminhub-public/pull/40) [@falexwolf](https://github.com/falexwolf)
 - 💄 Clean up Overview page [PR](https://github.com/laminlabs/laminhub-public/pull/39) [@falexwolf](https://github.com/falexwolf)
