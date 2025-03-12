@@ -1,3 +1,4 @@
+- ✨ Allow to pass synchronization arguments in `Artifact.cache()` [PR](https://github.com/laminlabs/lamindb/pull/2553) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix permissions test [PR](https://github.com/laminlabs/lamindb/pull/2550) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Integrate SDC `save_artifact` with general `save_artifact` [PR](https://github.com/laminlabs/lamindb/pull/2545) [@Zethson](https://github.com/Zethson)
 - 🔊 Better messages for migrations sync state [PR](https://github.com/laminlabs/lamindb-setup/pull/985) [@falexwolf](https://github.com/falexwolf)
