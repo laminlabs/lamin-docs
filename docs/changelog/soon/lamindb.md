@@ -1,3 +1,4 @@
+- 🐛 Error if trying to register an instance without a storage in the hub [PR](https://github.com/laminlabs/lamindb-setup/pull/989) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Refactor `organism` constraints during validation [PR](https://github.com/laminlabs/lamindb/pull/2554) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add Schema based SpatialDataCurator [PR](https://github.com/laminlabs/lamindb/pull/2552) [@Zethson](https://github.com/Zethson)
 - ⬆️ Python 3.13 support  [PR](https://github.com/laminlabs/lamindb/pull/2384) [@Zethson](https://github.com/Zethson)
