@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamind-setup (fine-grained permissions) [PR](https://github.com/laminlabs/lamindb/pull/2559) [@Koncopd](https://github.com/Koncopd)
 - ✨ Request a db token for instances with fine-grained permissions [PR](https://github.com/laminlabs/lamindb-setup/pull/987) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor `PertAnnDataCatManager` [PR](https://github.com/laminlabs/lamindb/pull/2558) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Support CELLxGENE schema 5.2.0 [PR](https://github.com/laminlabs/lamindb/pull/2556) [@sunnyosun](https://github.com/sunnyosun)
