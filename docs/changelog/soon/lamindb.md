@@ -1,3 +1,4 @@
+- ♻️ Refactor `PertAnnDataCatManager` [PR](https://github.com/laminlabs/lamindb/pull/2558) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Support CELLxGENE schema 5.2.0 [PR](https://github.com/laminlabs/lamindb/pull/2556) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor `CellxGeneAnnDataCatManager` [PR](https://github.com/laminlabs/lamindb/pull/2555) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Error if trying to register an instance without a storage in the hub [PR](https://github.com/laminlabs/lamindb-setup/pull/989) [@Koncopd](https://github.com/Koncopd)
