@@ -1,3 +1,4 @@
+- 🚸 Skip `ln.track()` when connected in read-only mode [PR](https://github.com/laminlabs/lamindb/pull/2561) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix organism requirement [PR](https://github.com/laminlabs/lamindb/pull/2560) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade lamind-setup (fine-grained permissions) [PR](https://github.com/laminlabs/lamindb/pull/2559) [@Koncopd](https://github.com/Koncopd)
 - ✨ Request a db token for instances with fine-grained permissions [PR](https://github.com/laminlabs/lamindb-setup/pull/987) [@Koncopd](https://github.com/Koncopd)
