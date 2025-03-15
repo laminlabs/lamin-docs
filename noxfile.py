@@ -16,7 +16,7 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-# for FAQ
+# for Introduction & FAQ
 
 INTRODUCTION = """
 ```{toctree}
