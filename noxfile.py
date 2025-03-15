@@ -69,7 +69,27 @@ perturbation
 
 # for API
 
-ADD_TO_API = """
+ORIG_API = """
+```{toctree}
+:maxdepth: 1
+:caption: CLI & lamindb
+:hidden:
+
+cli
+lamindb
+```
+"""
+
+REPLACE_API = """
+```{toctree}
+:maxdepth: 1
+:caption: CLI & lamindb
+:hidden:
+
+cli
+lamindb
+```
+
 ```{toctree}
 :maxdepth: 1
 :caption: R & REST
@@ -239,6 +259,7 @@ def pull_artifacts(session):
     )
 
     # amend toctree
+    replace_content("docs/api.md", {ORIG_API: REPLACE_API})
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
