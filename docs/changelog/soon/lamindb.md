@@ -1,3 +1,4 @@
+- 💚 Fix uv resolver for spatialdata [PR](https://github.com/laminlabs/lamindb/pull/2564) [@Koncopd](https://github.com/Koncopd)
 - 🔇 No logging message if database is behind by minor version [PR](https://github.com/laminlabs/lamindb-setup/pull/991) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `lamin get` for artifacts and `lamin load` for collections [PR](https://github.com/laminlabs/lamindb/pull/2563) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `lamin load` for collections [PR](https://github.com/laminlabs/lamin-cli/pull/120) [@falexwolf](https://github.com/falexwolf)
