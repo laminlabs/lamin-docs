@@ -1,3 +1,4 @@
+- ✨ Add `lamin load` for collections [PR](https://github.com/laminlabs/lamin-cli/pull/120) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `lamin get` for artifacts [PR](https://github.com/laminlabs/lamin-cli/pull/121) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move non-lamindb docs to `lamin-docs` [PR](https://github.com/laminlabs/lamindb/pull/2562) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Skip `ln.track()` when connected in read-only mode [PR](https://github.com/laminlabs/lamindb/pull/2561) [@falexwolf](https://github.com/falexwolf)
