@@ -1,3 +1,4 @@
+- 💚 Fix [PR](https://github.com/laminlabs/cellxgene-lamin/pull/122) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move `Curator` to `lamindb` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/120) [@falexwolf](https://github.com/falexwolf)
 - ✏️ Use key instead of description [PR](https://github.com/laminlabs/nextflow-lamin/pull/47) [@Zethson](https://github.com/Zethson)
 - 📝 Fix for 1.2.0 [PR](https://github.com/laminlabs/lamin-usecases/pull/185) [@falexwolf](https://github.com/falexwolf)
