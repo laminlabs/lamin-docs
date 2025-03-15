@@ -18,7 +18,7 @@ def lint(session: nox.Session) -> None:
 
 # for FAQ
 
-INTRODUCITION = """
+INTRODUCTION = """
 ```{toctree}
 :hidden:
 :caption: Overview
@@ -39,6 +39,34 @@ faq/storage
 """
 
 # for Guide
+
+ORIG_HOW_TO = """\
+```{toctree}
+:hidden:
+:caption: "How to"
+
+query-search
+track
+curate
+bio-registries
+transfer
+```
+"""
+
+REPLACE_HOW_TO = """\
+```{toctree}
+:hidden:
+:caption: "How to"
+
+setup
+query-search
+track
+curate
+bio-registries
+transfer
+```
+"""
+
 
 USECASES = """
 ```{toctree}
@@ -115,7 +143,7 @@ OTHER_TOPICS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Key topics
+:caption: Other
 
 access
 security
@@ -263,7 +291,8 @@ def pull_artifacts(session):
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
-        content = content.replace("# Guide", "# Guide" + INTRODUCITION)
+        content = content.replace("# Guide", "# Guide" + INTRODUCTION)
+        content = content.replace(ORIG_HOW_TO, REPLACE_HOW_TO)
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
