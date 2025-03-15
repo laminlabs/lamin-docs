@@ -1,9 +1,10 @@
 # `REST`
 
-See the Swagger UI [here](https://us-east-1.api.lamin.ai/docs).
+See the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
 
-Currently, our hosted offer is based on 3 REST APIs for 3 AWS data centers:
+Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 
-- `https://us-east-1.api.lamin.ai`
-- `https://us-west-2.api.lamin.ai`
-- `https://eu-central-1.api.lamin.ai`
+- `https://aws.us-east-1.lamin.ai`
+- `https://aws.us-west-2.api.lamin.ai`
+- `https://aws.eu-central-1.api.lamin.ai`
+- `https://aws.eu-west-2.api.lamin.ai`

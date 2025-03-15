@@ -67,6 +67,19 @@ perturbation
 ```
 """
 
+# for API
+
+ADD_TO_API = """
+```{toctree}
+:maxdepth: 1
+:caption: R & REST
+:hidden:
+
+laminr
+rest
+```
+"""
+
 # for other topics
 
 OTHER_TOPICS_ORIG = """
@@ -270,6 +283,7 @@ def run_nbs(session):
     run_notebooks("docs/tutorial2.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
     run_notebooks("docs/hubmap.ipynb")
+    run_notebooks("docs/setup.ipynb")
 
 
 @nox.session
