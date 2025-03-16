@@ -213,7 +213,6 @@ def pull_artifacts(session):
     Path("lamindb/README.md").rename("README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
-    Path("lamindb/rest.md").unlink()
     for path in Path("lamindb").glob("*"):
         if (
             path.name == "index.md"
