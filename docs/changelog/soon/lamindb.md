@@ -1,3 +1,4 @@
+- 📝 Re-structure curation guides [PR](https://github.com/laminlabs/lamindb/pull/2568) [@falexwolf](https://github.com/falexwolf)
 - 📝 Clean up curators API docs & the main curator guide [PR](https://github.com/laminlabs/lamindb/pull/2567) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add more constructor signatures and specific inherited types [PR](https://github.com/laminlabs/lamindb/pull/2566) [@falexwolf](https://github.com/falexwolf)
 - 👷 Move docs from Netlify to Cloudflare [PR](https://github.com/laminlabs/lamindb/pull/2565) [@falexwolf](https://github.com/falexwolf)
