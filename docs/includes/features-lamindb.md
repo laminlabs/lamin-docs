@@ -51,7 +51,7 @@ The following detailed specs are for the Python package `lamindb`. For the analo
   - Flexible storage backends (local, S3, GCP, https, HF, R2, anything [fsspec](https://github.com/fsspec) supports)
   - Two SQL backends for managing metadata: SQLite & Postgres
 - Scalable: metadata registries support 100s of millions of entries, storage is as scalable as S3
-- Plug-in custom [schema modules](/modules) & manage database schema migrations
+- Plug-in custom [schema modules](/setup.ipynb#manage-schema-modules) & manage database schema migrations
 - Auditable: data & metadata records are hashed, timestamped, and attributed to users (full audit log to come)
 - [Secure](access): embedded in your infrastructure
 - Tested, typed, [idempotent](faq/idempotency) & [ACID](faq/acid)

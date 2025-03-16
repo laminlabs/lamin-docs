@@ -6,6 +6,7 @@
 /changelog /changelog/2025 301
 /api /lamindb 301
 /curate /curate-df 301
+/modules /setup 301
 /query-search /registries 301
 /scrna6 /scrna-tiledbsoma 301
 /scrna5 /scrna-mappedcollection 301

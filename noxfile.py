@@ -16,9 +16,9 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-# for FAQ
+# for Introduction & FAQ
 
-INTRODUCITION = """
+INTRODUCTION = """
 ```{toctree}
 :hidden:
 :caption: Overview
@@ -39,6 +39,34 @@ faq/storage
 """
 
 # for Guide
+
+ORIG_HOW_TO = """\
+```{toctree}
+:hidden:
+:caption: "How to"
+
+query-search
+track
+curate
+bio-registries
+transfer
+```
+"""
+
+REPLACE_HOW_TO = """\
+```{toctree}
+:hidden:
+:caption: "How to"
+
+setup
+query-search
+track
+curate
+bio-registries
+transfer
+```
+"""
+
 
 USECASES = """
 ```{toctree}
@@ -67,6 +95,39 @@ perturbation
 ```
 """
 
+# for API
+
+ORIG_API = """
+```{toctree}
+:maxdepth: 1
+:caption: CLI & lamindb
+:hidden:
+
+cli
+lamindb
+```
+"""
+
+REPLACE_API = """
+```{toctree}
+:maxdepth: 1
+:caption: CLI & lamindb
+:hidden:
+
+cli
+lamindb
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: R & REST
+:hidden:
+
+laminr
+rest
+```
+"""
+
 # for other topics
 
 OTHER_TOPICS_ORIG = """
@@ -82,7 +143,7 @@ OTHER_TOPICS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Key topics
+:caption: Other
 
 access
 security
@@ -152,7 +213,6 @@ def pull_artifacts(session):
     Path("lamindb/README.md").rename("README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
-    Path("lamindb/rest.md").unlink()
     for path in Path("lamindb").glob("*"):
         if (
             path.name == "index.md"
@@ -226,10 +286,12 @@ def pull_artifacts(session):
     )
 
     # amend toctree
+    replace_content("docs/api.md", {ORIG_API: REPLACE_API})
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
-        content = content.replace("# Guide", "# Guide" + INTRODUCITION)
+        content = content.replace("# Guide", "# Guide" + INTRODUCTION)
+        content = content.replace(ORIG_HOW_TO, REPLACE_HOW_TO)
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
@@ -270,6 +332,7 @@ def run_nbs(session):
     run_notebooks("docs/tutorial2.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
     run_notebooks("docs/hubmap.ipynb")
+    run_notebooks("docs/setup.ipynb")
 
 
 @nox.session
