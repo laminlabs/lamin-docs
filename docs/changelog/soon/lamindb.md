@@ -1,3 +1,4 @@
+- 🚸 Add more constructor signatures and specific inherited types [PR](https://github.com/laminlabs/lamindb/pull/2566) [@falexwolf](https://github.com/falexwolf)
 - 👷 Move docs from Netlify to Cloudflare [PR](https://github.com/laminlabs/lamindb/pull/2565) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix uv resolver for spatialdata [PR](https://github.com/laminlabs/lamindb/pull/2564) [@Koncopd](https://github.com/Koncopd)
 - 🔇 No logging message if database is behind by minor version [PR](https://github.com/laminlabs/lamindb-setup/pull/991) [@falexwolf](https://github.com/falexwolf)
