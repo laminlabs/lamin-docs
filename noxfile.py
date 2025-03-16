@@ -86,12 +86,14 @@ visualization
 
 BY_DATATYPE_ORIG = """
 multimodal
+ehr
 ```
 """
 
 BY_DATATYPE = """
 multimodal
 perturbation
+ehr
 ```
 """
 
