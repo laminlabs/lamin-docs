@@ -108,7 +108,7 @@ For more, see the [R docs](https://laminr.lamin.ai/).
 :::
 ::::
 
-```{include} walkthrough.ipynb
+```{include} includes/walkthrough.ipynb
 
 ```
 
