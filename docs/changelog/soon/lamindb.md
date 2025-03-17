@@ -1,1 +1,2 @@
+- 🔥 Move source tests to bionty [PR](https://github.com/laminlabs/lamindb/pull/2571) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix faq/key [PR](https://github.com/laminlabs/lamindb/pull/2570) [@Koncopd](https://github.com/Koncopd)
