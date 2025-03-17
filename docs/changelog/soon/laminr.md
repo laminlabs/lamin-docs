@@ -1,1 +1,2 @@
+- ⬆️ Update dependencies [PR](https://github.com/laminlabs/laminr/pull/156) [@lazappi](https://github.com/lazappi)
 - :memo: Clarify announcement for v1 migration [PR](https://github.com/laminlabs/laminr/pull/154) [@falexwolf](https://github.com/falexwolf)
