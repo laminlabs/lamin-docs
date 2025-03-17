@@ -1,3 +1,4 @@
+- 🔥 Make EFO parsing the same as other ontologies [PR](https://github.com/laminlabs/bionty/pull/214) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Remove deprecated methods, updated examples [PR](https://github.com/laminlabs/bionty/pull/213) [@sunnyosun](https://github.com/sunnyosun)
 - 🧪 Test sources [PR](https://github.com/laminlabs/bionty/pull/212) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Make `add_source` independent of the `bionty-assets` instance [PR](https://github.com/laminlabs/bionty/pull/211) [@sunnyosun](https://github.com/sunnyosun)
