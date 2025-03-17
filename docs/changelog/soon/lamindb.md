@@ -1,0 +1,1 @@
+- 📝 Fix faq/key [PR](https://github.com/laminlabs/lamindb/pull/2570) [@Koncopd](https://github.com/Koncopd)
