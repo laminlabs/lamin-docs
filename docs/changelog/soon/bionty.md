@@ -1,3 +1,4 @@
+- ♻️ Make `add_source` independent of the `bionty-assets` instance [PR](https://github.com/laminlabs/bionty/pull/211) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix docs [PR](https://github.com/laminlabs/bionty/pull/209) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Standardize organism scientific names [PR](https://github.com/laminlabs/bionty/pull/208) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `import_source` edge cases [PR](https://github.com/laminlabs/bionty/pull/205) [@Zethson](https://github.com/Zethson)
