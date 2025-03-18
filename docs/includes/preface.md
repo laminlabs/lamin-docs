@@ -1,9 +1,3 @@
-[![stars](https://img.shields.io/github/stars/laminlabs/lamindb?logo=GitHub&color=yellow)](https://github.com/laminlabs/lamindb)
-[![pypi](https://img.shields.io/pypi/v/lamindb?color=blue&label=pypi%20package)](https://pypi.org/project/lamindb)
-[![cran](https://www.r-pkg.org/badges/version/laminr?color=green)](https://cran.r-project.org/package=laminr)
-
-# Introduction
-
 LaminDB is an open-source data framework for better computational biology.
 It lets you track data transformations, curate datasets, manage metadata, and query a built-in database for common biological data types.
 
