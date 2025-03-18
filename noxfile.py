@@ -143,7 +143,7 @@ OTHER_TOPICS = """
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Other
+:caption: Other topics
 
 access
 security
