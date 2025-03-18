@@ -1,3 +1,4 @@
+- ♻️ Refactor default source configuration [PR](https://github.com/laminlabs/lamindb/pull/2572) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Refactor bionty source config [PR](https://github.com/laminlabs/lamindb-setup/pull/992) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Add `uint` as a valid `dtype`, in `AnnDataCurator`, make `'obs'` schema optional and allow `'uns'` schema [PR](https://github.com/laminlabs/lamindb/pull/2569) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Move source tests to bionty [PR](https://github.com/laminlabs/lamindb/pull/2571) [@sunnyosun](https://github.com/sunnyosun)
