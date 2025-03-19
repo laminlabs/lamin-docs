@@ -1,5 +1,5 @@
-LaminDB is an open-source data framework for better computational biology.
-It lets you track data transformations, curate datasets, manage metadata, and query a built-in database for common biological data types.
+LaminDB is an open-source data framework to enable learning at scale in computational biology.
+It lets you track data transformations, curate datasets, manage metadata, and query a built-in database for biological entities & data structures.
 
 :::{dropdown} Why?
 
