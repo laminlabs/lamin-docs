@@ -1,3 +1,4 @@
+- ♻️ Remove leading underscore prefix in `lamin.db` filename [PR](https://github.com/laminlabs/lamindb-setup/pull/996) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix rename of a legacy sqlite file and refactor space registration on init [PR](https://github.com/laminlabs/lamindb-setup/pull/995) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Move the lamindb SQLite file into the `.lamindb/` folder [PR](https://github.com/laminlabs/lamindb-setup/pull/993) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor organism in curators [PR](https://github.com/laminlabs/lamindb/pull/2573) [@sunnyosun](https://github.com/sunnyosun)
