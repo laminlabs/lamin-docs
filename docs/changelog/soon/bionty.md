@@ -1,3 +1,4 @@
+- ♻️ Refactor `import_source` [PR](https://github.com/laminlabs/bionty/pull/216) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor default source configuration [PR](https://github.com/laminlabs/bionty/pull/215) [@sunnyosun](https://github.com/sunnyosun)
 - 🔥 Make EFO parsing the same as other ontologies [PR](https://github.com/laminlabs/bionty/pull/214) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Remove deprecated methods, updated examples [PR](https://github.com/laminlabs/bionty/pull/213) [@sunnyosun](https://github.com/sunnyosun)
