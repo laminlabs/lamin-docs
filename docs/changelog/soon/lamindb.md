@@ -1,3 +1,4 @@
+- ✨ Write and use db_permissions [PR](https://github.com/laminlabs/lamindb-setup/pull/994) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix permissions test [PR](https://github.com/laminlabs/lamindb/pull/2577) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `mute` argument to `Artifact.cache()` and `Artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/2575) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor default source configuration [PR](https://github.com/laminlabs/lamindb/pull/2572) [@sunnyosun](https://github.com/sunnyosun)
