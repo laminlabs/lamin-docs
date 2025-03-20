@@ -1,0 +1,15 @@
+/bionty-base/* https://bionty-base.lamin.ai/:splat 301
+/nbproject/* https://nbproject.lamin.ai/:splat 301
+/readfcs/* https://readfcs.lamin.ai/:splat 301
+/guide /introduction 301
+/features /introduction 301
+/changelog /changelog/2025 301
+/api /lamindb 301
+/curate-df /curate 301
+/ehrcuration /ehr 301
+/curate-any /faq/curate-any 301
+/modules /setup 301
+/query-search /registries 301
+/scrna6 /scrna-tiledbsoma 301
+/scrna5 /scrna-mappedcollection 301
+/ /introduction 301
