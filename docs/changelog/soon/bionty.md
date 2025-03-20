@@ -1,3 +1,4 @@
+- 🔥 Clean up base docs [PR](https://github.com/laminlabs/bionty/pull/218) [@sunnyosun](https://github.com/sunnyosun)
 - 🔥 Remove local source yaml files [PR](https://github.com/laminlabs/bionty/pull/217) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor `import_source` [PR](https://github.com/laminlabs/bionty/pull/216) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor default source configuration [PR](https://github.com/laminlabs/bionty/pull/215) [@sunnyosun](https://github.com/sunnyosun)
