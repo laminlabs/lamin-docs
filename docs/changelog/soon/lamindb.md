@@ -1,3 +1,4 @@
+- 🐛 Only call `mark_storage_root` to check write access if the storage record has been just created [PR](https://github.com/laminlabs/lamindb-setup/pull/999) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Bump timeouts [PR](https://github.com/laminlabs/lamindb-setup/pull/998) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Remove leading underscore prefix in `lamin.db` filename [PR](https://github.com/laminlabs/lamindb-setup/pull/996) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix rename of a legacy sqlite file and refactor space registration on init [PR](https://github.com/laminlabs/lamindb-setup/pull/995) [@Koncopd](https://github.com/Koncopd)
