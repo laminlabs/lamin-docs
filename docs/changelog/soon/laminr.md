@@ -1,3 +1,4 @@
+- 📝  Update documentation site [PR](https://github.com/laminlabs/laminr/pull/159) [@lazappi](https://github.com/lazappi)
 - :memo: Prepare for release 1.0.1 [PR](https://github.com/laminlabs/laminr/pull/157) [@rcannood](https://github.com/rcannood)
 - ⬆️ Update dependencies [PR](https://github.com/laminlabs/laminr/pull/156) [@lazappi](https://github.com/lazappi)
 - :memo: Clarify announcement for v1 migration [PR](https://github.com/laminlabs/laminr/pull/154) [@falexwolf](https://github.com/falexwolf)
