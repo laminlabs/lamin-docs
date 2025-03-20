@@ -1,3 +1,4 @@
+- 🐛 Fix typo [PR](https://github.com/laminlabs/lamindb-setup/pull/1001) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove all local yamls in bionty [PR](https://github.com/laminlabs/lamindb/pull/2581) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Remove source yamls in bionty [PR](https://github.com/laminlabs/lamindb-setup/pull/1000) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Only call `mark_storage_root` to check write access if the storage record has been just created [PR](https://github.com/laminlabs/lamindb-setup/pull/999) [@Koncopd](https://github.com/Koncopd)
