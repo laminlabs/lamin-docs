@@ -1,3 +1,4 @@
+- 🚚 Rename `_is_initialized` to `storage_uid.txt` [PR](https://github.com/laminlabs/lamindb-setup/pull/997) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix typo [PR](https://github.com/laminlabs/lamindb-setup/pull/1001) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove all local yamls in bionty [PR](https://github.com/laminlabs/lamindb/pull/2581) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Remove source yamls in bionty [PR](https://github.com/laminlabs/lamindb-setup/pull/1000) [@sunnyosun](https://github.com/sunnyosun)
