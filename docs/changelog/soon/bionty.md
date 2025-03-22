@@ -1,3 +1,4 @@
+- ✨ Support custom source [PR](https://github.com/laminlabs/bionty/pull/222) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor `sync_public_sources` [PR](https://github.com/laminlabs/bionty/pull/221) [@sunnyosun](https://github.com/sunnyosun)
 - 🔥 Clean up base docs [PR](https://github.com/laminlabs/bionty/pull/218) [@sunnyosun](https://github.com/sunnyosun)
 - 🔥 Remove local source yaml files [PR](https://github.com/laminlabs/bionty/pull/217) [@sunnyosun](https://github.com/sunnyosun)
