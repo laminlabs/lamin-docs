@@ -1,3 +1,4 @@
+- 📝 Improve contribution guidelines [PR](https://github.com/laminlabs/lamindb/pull/2583) [@alexras](https://github.com/alexras)
 - 🐛 More extensive validation for updates to `artifact.key` and `artifact.suffix` [PR](https://github.com/laminlabs/lamindb/pull/2589) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Use the current working directory as default storage during `lamin init`, drop deprecated `--schema` arg, refactor conventions for files written during init [PR](https://github.com/laminlabs/lamindb/pull/2587) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Default to current working directory during `lamin init` and drop `--schema` arg [PR](https://github.com/laminlabs/lamin-cli/pull/122) [@falexwolf](https://github.com/falexwolf)
