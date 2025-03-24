@@ -1,3 +1,4 @@
+- ✨ Enable update existing records to a new ontology [PR](https://github.com/laminlabs/lamindb/pull/2593) [@sunnyosun](https://github.com/sunnyosun)
 - 📌 Pin pims to patched version [PR](https://github.com/laminlabs/lamindb/pull/2597) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade bionty and wetlab [PR](https://github.com/laminlabs/lamindb/pull/2586) [@Zethson](https://github.com/Zethson)
 - 🐛 Enable transferring features pointing to multiple labels [PR](https://github.com/laminlabs/lamindb/pull/2595) [@sunnyosun](https://github.com/sunnyosun)
