@@ -1,3 +1,4 @@
+- 🐛 Fix source fetching [PR](https://github.com/laminlabs/bionty/pull/224) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Support custom source [PR](https://github.com/laminlabs/bionty/pull/222) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor `sync_public_sources` [PR](https://github.com/laminlabs/bionty/pull/221) [@sunnyosun](https://github.com/sunnyosun)
 - 🔥 Clean up base docs [PR](https://github.com/laminlabs/bionty/pull/218) [@sunnyosun](https://github.com/sunnyosun)
