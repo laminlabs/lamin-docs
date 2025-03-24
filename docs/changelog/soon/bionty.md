@@ -1,3 +1,4 @@
+- 📝 Document import_source better [PR](https://github.com/laminlabs/bionty/pull/225) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Enable ontology upgrade [PR](https://github.com/laminlabs/bionty/pull/223) [@sunnyosun](https://github.com/sunnyosun)
 - ➖ Remove pronto from main dependencies [PR](https://github.com/laminlabs/bionty/pull/220) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix source fetching [PR](https://github.com/laminlabs/bionty/pull/224) [@sunnyosun](https://github.com/sunnyosun)
