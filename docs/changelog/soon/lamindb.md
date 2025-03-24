@@ -1,3 +1,4 @@
+- ⬆️ Upgrade bionty and wetlab [PR](https://github.com/laminlabs/lamindb/pull/2586) [@Zethson](https://github.com/Zethson)
 - 🐛 Enable transferring features pointing to multiple labels [PR](https://github.com/laminlabs/lamindb/pull/2595) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve contribution guidelines [PR](https://github.com/laminlabs/lamindb/pull/2583) [@alexras](https://github.com/alexras)
 - 🐛 More extensive validation for updates to `artifact.key` and `artifact.suffix` [PR](https://github.com/laminlabs/lamindb/pull/2589) [@falexwolf](https://github.com/falexwolf)
