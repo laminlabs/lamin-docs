@@ -1,3 +1,4 @@
+- 🚸 Avoid requiring `coerce_dtype` for `"int"` and `"float"` in case an integer or float `pd.Series.dtype` only deviates by numerical precision/range [PR](https://github.com/laminlabs/lamindb/pull/2592) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable update existing records to a new ontology [PR](https://github.com/laminlabs/lamindb/pull/2593) [@sunnyosun](https://github.com/sunnyosun)
 - 📌 Pin pims to patched version [PR](https://github.com/laminlabs/lamindb/pull/2597) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade bionty and wetlab [PR](https://github.com/laminlabs/lamindb/pull/2586) [@Zethson](https://github.com/Zethson)
