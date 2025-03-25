@@ -41,6 +41,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 ::::{tab-set}
 :::{tab-item} Python
+:sync: python
 
 Install the `lamindb` Python package.
 
@@ -71,6 +72,7 @@ ln.finish()  # mark the run as finished & save a report for the current notebook
 
 :::
 :::{tab-item} R
+:sync: r
 
 Install the `laminr` R and the `lamindb` Python packages.
 
@@ -97,17 +99,15 @@ filepath <- artifact$cache()  # cache the artifact on disk
 
 # do your work
 
-ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a folder
+ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a file
 ln$finish()  # mark the run finished
 ```
 
-If you did _not_ use RStudio's notebook mode, save your notebook to see it on LaminHub.
+If you did _not_ use RStudio's notebook mode, create an html export externally and run.
 
 ```shell
 lamin save my-analysis.Rmd  #  save an html report for a `.qmd` or `.Rmd` file
 ```
-
-For more, see the [R docs](https://laminr.lamin.ai/).
 
 :::
 ::::
