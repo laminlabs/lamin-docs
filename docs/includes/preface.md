@@ -99,7 +99,7 @@ filepath <- artifact$cache()  # cache the artifact on disk
 
 # do your work
 
-ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a folder
+ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a file
 ln$finish()  # mark the run finished
 ```
 
