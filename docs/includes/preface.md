@@ -41,6 +41,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 ::::{tab-set}
 :::{tab-item} Python
+:sync: python
 
 Install the `lamindb` Python package.
 
@@ -71,6 +72,7 @@ ln.finish()  # mark the run as finished & save a report for the current notebook
 
 :::
 :::{tab-item} R
+:sync: r
 
 Install the `laminr` R and the `lamindb` Python packages.
 

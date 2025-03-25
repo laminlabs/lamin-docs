@@ -22,6 +22,7 @@ lamin init --storage ./my-data-folder
 
 :::
 :::{tab-item} Python
+:sync: python
 
 ```python
 import lamindb as ln
@@ -42,6 +43,7 @@ lamin connect account-handle/instance-name
 
 :::
 :::{tab-item} Python
+:sync: python
 
 ```python
 import lamindb as ln
@@ -50,6 +52,7 @@ ln.connect("account-handle/instance-name")
 
 :::
 :::{tab-item} R
+:sync: r
 
 ```R
 library(laminr)
