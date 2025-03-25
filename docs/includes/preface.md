@@ -72,14 +72,11 @@ ln.finish()  # mark the run as finished & save a report for the current notebook
 :::
 :::{tab-item} R
 
+Install the `laminr` R and the `lamindb` Python packages.
+
 ```R
 install.packages("laminr", dependencies = TRUE)  # install the laminr package from CRAN
-```
-
-Install the `lamindb` Python package.
-
-```R
-laminr::install_lamindb()  # install lamindb for usage via reticulate
+laminr::install_lamindb(extra_packages = c("bionty"))  # install lamindb & bionty for use via reticulate
 ```
 
 Connect to a LaminDB instance.
@@ -92,8 +89,8 @@ Access an input dataset and save an output dataset.
 
 ```R
 library(laminr)
+ln <- import_module("lamindb")  # instantiate the central `ln` object of the API
 
-ln <- import_module("lamindb")
 ln$track()  # track a run of your notebook or script
 artifact <- ln$Artifact$get("3TNCsZZcnIBv2WGb0001")  # get an artifact by uid
 filepath <- artifact$cache()  # cache the artifact on disk
@@ -107,7 +104,7 @@ ln$finish()  # mark the run finished
 If you did _not_ use RStudio's notebook mode, save your notebook to see it on LaminHub.
 
 ```shell
-lamin save my-analysis.Rmd  #  save an html report for `.qmd` or `.Rmd` file
+lamin save my-analysis.Rmd  #  save an html report for a `.qmd` or `.Rmd` file
 ```
 
 For more, see the [R docs](https://laminr.lamin.ai/).
