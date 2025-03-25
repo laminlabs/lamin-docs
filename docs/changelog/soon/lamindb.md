@@ -1,3 +1,4 @@
+- ⚡️ Make upload of large directories more robust by reducing batch size [PR](https://github.com/laminlabs/lamindb-setup/pull/1005) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix docs [PR](https://github.com/laminlabs/lamindb/pull/2599) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test RLS for space All [PR](https://github.com/laminlabs/lamindb/pull/2596) [@Koncopd](https://github.com/Koncopd)
 - ➖ Remove pims pin [PR](https://github.com/laminlabs/lamindb/pull/2598) [@Zethson](https://github.com/Zethson)
