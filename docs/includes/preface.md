@@ -103,13 +103,11 @@ ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save 
 ln$finish()  # mark the run finished
 ```
 
-If you did _not_ use RStudio's notebook mode, save your notebook to see it on LaminHub.
+If you did _not_ use RStudio's notebook mode, create an html export externally and run.
 
 ```shell
 lamin save my-analysis.Rmd  #  save an html report for a `.qmd` or `.Rmd` file
 ```
-
-For more, see the [R docs](https://laminr.lamin.ai/).
 
 :::
 ::::
