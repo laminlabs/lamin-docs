@@ -1,3 +1,4 @@
+- 💚 Fix docs [PR](https://github.com/laminlabs/lamindb/pull/2599) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test RLS for space All [PR](https://github.com/laminlabs/lamindb/pull/2596) [@Koncopd](https://github.com/Koncopd)
 - ➖ Remove pims pin [PR](https://github.com/laminlabs/lamindb/pull/2598) [@Zethson](https://github.com/Zethson)
 - 🚸 Avoid requiring `coerce_dtype` for `"int"` and `"float"` in case an integer or float `pd.Series.dtype` only deviates by numerical precision/range [PR](https://github.com/laminlabs/lamindb/pull/2592) [@falexwolf](https://github.com/falexwolf)
