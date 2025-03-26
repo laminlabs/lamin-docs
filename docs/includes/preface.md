@@ -43,20 +43,15 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 :::{tab-item} Python
 :sync: python
 
-Install the `lamindb` Python package.
+For setup, install the `lamindb` Python package and connect to a LaminDB instance.
 
 ```shell
 pip install 'lamindb[jupyter,bionty]'  # support notebooks & biological ontologies
-```
-
-Connect to a LaminDB instance.
-
-```shell
-lamin login  # <-- you can skip this for public, local, and self-hosted instances
+lamin login  # <-- you can skip this for public, local & self-hosted instances
 lamin connect account/instance  # <-- replace with your instance
 ```
 
-Access an input dataset and save an output dataset.
+In your Python session, you access an input dataset and save an output dataset.
 
 ```python
 import lamindb as ln
@@ -75,140 +70,50 @@ ln.finish()  # mark the run as finished & save a report for the current notebook
 :::{tab-item} R
 :sync: r
 
-Install the `laminr` R and the `lamindb` Python packages.
+For setup, install the `laminr` and `lamindb` packages and connect to a LaminDB instance.
 
 ```R
 install.packages("laminr", dependencies = TRUE)  # install the laminr package from CRAN
 laminr::install_lamindb(extra_packages = c("bionty"))  # install lamindb & bionty for use via reticulate
-```
-
-Connect to a LaminDB instance.
-
-```R
 laminr::lamin_login()  # <-- you can skip this for public, local, and self-hosted instances
 laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
 ```
 
-Access an input dataset and save an output dataset.
+In your R session, you access an input dataset and save an output dataset.
 
 ```R
 library(laminr)
-ln <- import_module("lamindb")  # instantiate the central `ln` object of the API
-ln$track()  # track a run of your notebook or script
+ln <- import_module("lamindb")  # instantiate the central object of the API
 
-# Access
+# Access inputs
 
+ln$track()  # track your run of a notebook or script
 artifact <- ln$Artifact$using("laminlabs/cellxgene")$get("7dVluLROpalzEh8m")  # https://lamin.ai/laminlabs/cellxgene/artifact/7dVluLROpalzEh8m
-adata <- artifact$load()  # load the artifact into memory
+adata <- artifact$load()  # load the artifact into memory or sync to cache via filepath <- artifact$cache()
 
-# Transform
+# Your transformation
 
-library(Seurat)
-
-# Create a Seurat object
-seurat_obj <- CreateSeuratObject(
-  counts = as(Matrix::t(adata$X), "CsparseMatrix"),
-  meta.data = adata$obs
-)
-# Add gene metadata
-seurat_obj[["RNA"]] <- AddMetaData(
-  GetAssay(seurat_obj), adata$var
-)
-# Set cell identities to the provided cell type annotation
+library(Seurat)  # find marker genes with Seurat
+seurat_obj <- CreateSeuratObject(counts = as(Matrix::t(adata$X), "CsparseMatrix"), meta.data = adata$obs)
+seurat_obj[["RNA"]] <- AddMetaData(GetAssay(seurat_obj), adata$var)
 Idents(seurat_obj) <- "cell_type"
-# Normalise the data
 seurat_obj <- NormalizeData(seurat_obj)
-# Test for marker genes (the output is a data.frame)
-markers <- FindAllMarkers(
-  seurat_obj,
-  features = Features(seurat_obj)[1:100] # Only test a few features for speed
-)
-
-# Save
-
-ln$Artifact$from_df(markers, key = "my-datasets/my-markers.parquet")$save()
-
+markers <- FindAllMarkers(seurat_obj, features = Features(seurat_obj)[1:100])
 seurat_path <- tempfile(fileext = ".rds")
 saveRDS(seurat_obj, seurat_path)
 
+# Save outputs
+
 ln$Artifact(seurat_path, key = "my-datasets/my-seurat-object.rds")$save()
-ln$finish()  # finish the run
+ln$Artifact$from_df(markers, key = "my-datasets/my-markers.parquet")$save()
+ln$finish()  # finish the run, save source code & run report
 ```
 
-If you did _not_ use RStudio's notebook mode, create an html export externally and run.
+If you did _not_ use RStudio's notebook mode, create an html export and run the following on the CLI.
 
 ```shell
-lamin save my-analysis.Rmd  #  save an html report for a `.qmd` or `.Rmd` file
-```
-
-If you prefer a path to a local file or folder, call `path <- artifact$cache()`.
-
-```R
-filepath <- artifact$cache()  # sync the artifact to a local cache
+lamin save my-analysis.Rmd  #  save source code and html report for a `.qmd` or `.Rmd` file
 ```
 
 :::
 ::::
-
-```{r get-artifact}
-artifact <- ln$Artifact$using("laminlabs/cellxgene")$get("7dVluLROpalzEh8mNyxk")
-artifact
-```
-
-<div class="alert alert-info" role="alert">
-**Tip**
-
-You can view detailed information about this dataset on LaminHub: .
-
-You can search and query more CELLxGENE datasets here: https://lamin.ai/laminlabs/cellxgene/artifacts.
-
-</div>
-
-To download the dataset and load it into memory, run:
-
-```{r load-artifact}
-adata <- artifact$load()
-adata
-```
-
-This artifact contains an [`AnnData`](https://anndata.readthedocs.io) object.
-
-<div class="alert alert-info" role="alert">
-**Tip**
-
-If you prefer a path to a local file or folder, call `path <- artifact$cache()`.
-
-</div>
-
-## Work with the dataset
-
-Once you have loaded a dataset you can perform any analysis with it as you would normally.
-Here, marker genes are calculated for each of the provided cell type labels using [**{Seurat}**](https://satijalab.org/seurat/).
-
-```{r create-seurat}
-library(Seurat)
-
-# Create a Seurat object
-seurat_obj <- CreateSeuratObject(
-  counts = as(Matrix::t(adata$X), "CsparseMatrix"),
-  meta.data = adata$obs
-)
-# Add gene metadata
-seurat_obj[["RNA"]] <- AddMetaData(
-  GetAssay(seurat_obj), adata$var
-)
-# Set cell identities to the provided cell type annotation
-Idents(seurat_obj) <- "cell_type"
-# Normalise the data
-seurat_obj <- NormalizeData(seurat_obj)
-# Test for marker genes (the output is a data.frame)
-markers <- FindAllMarkers(
-  seurat_obj,
-  features = Features(seurat_obj)[1:100] # Only test a few features for speed
-)
-# Display the marker genes
-knitr::kable(markers)
-# Plot the marker genes
-DotPlot(seurat_obj, features = unique(markers$gene)) +
-  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, vjust = 0.5))
-```
