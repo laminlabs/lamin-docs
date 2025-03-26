@@ -1,0 +1,1 @@
+- ⬇️ Add upper bound on gotrue [PR](https://github.com/laminlabs/lamindb-setup/pull/1009) [@Koncopd](https://github.com/Koncopd)
