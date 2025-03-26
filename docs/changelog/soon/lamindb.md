@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup and adapt permissions test to laminhub refactor [PR](https://github.com/laminlabs/lamindb/pull/2600) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Use pyjwt to decode access_token [PR](https://github.com/laminlabs/lamindb-setup/pull/1008) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix laminhub imports in tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1006) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Make upload of large directories more robust by reducing batch size [PR](https://github.com/laminlabs/lamindb-setup/pull/1005) [@Koncopd](https://github.com/Koncopd)
