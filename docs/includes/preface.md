@@ -52,6 +52,7 @@ pip install 'lamindb[jupyter,bionty]'  # support notebooks & biological ontologi
 Connect to a LaminDB instance.
 
 ```shell
+lamin login  # <-- you can skip this for public, local, and self-hosted instances
 lamin connect account/instance  # <-- replace with your instance
 ```
 
@@ -84,6 +85,7 @@ laminr::install_lamindb(extra_packages = c("bionty"))  # install lamindb & biont
 Connect to a LaminDB instance.
 
 ```R
+laminr::lamin_login()  # <-- you can skip this for public, local, and self-hosted instances
 laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
 ```
 
@@ -92,12 +94,37 @@ Access an input dataset and save an output dataset.
 ```R
 library(laminr)
 ln <- import_module("lamindb")  # instantiate the central `ln` object of the API
-
 ln$track()  # track a run of your notebook or script
-artifact <- ln$Artifact$get("3TNCsZZcnIBv2WGb0001")  # get an artifact by uid
-filepath <- artifact$cache()  # cache the artifact on disk
 
-# do your work
+# Access
+
+artifact <- ln$Artifact$using("laminlabs/cellxgene")$get("7dVluLROpalzEh8m")  # https://lamin.ai/laminlabs/cellxgene/artifact/7dVluLROpalzEh8m
+adata <- artifact$load()  # load the artifact into memory
+
+# Transform
+
+library(Seurat)
+
+# Create a Seurat object
+seurat_obj <- CreateSeuratObject(
+  counts = as(Matrix::t(adata$X), "CsparseMatrix"),
+  meta.data = adata$obs
+)
+# Add gene metadata
+seurat_obj[["RNA"]] <- AddMetaData(
+  GetAssay(seurat_obj), adata$var
+)
+# Set cell identities to the provided cell type annotation
+Idents(seurat_obj) <- "cell_type"
+# Normalise the data
+seurat_obj <- NormalizeData(seurat_obj)
+# Test for marker genes (the output is a data.frame)
+markers <- FindAllMarkers(
+  seurat_obj,
+  features = Features(seurat_obj)[1:100] # Only test a few features for speed
+)
+
+# Save
 
 ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a file
 ln$finish()  # mark the run finished
@@ -109,5 +136,74 @@ If you did _not_ use RStudio's notebook mode, create an html export externally a
 lamin save my-analysis.Rmd  #  save an html report for a `.qmd` or `.Rmd` file
 ```
 
+If you prefer a path to a local file or folder, call `path <- artifact$cache()`.
+
+```R
+filepath <- artifact$cache()  # sync the artifact to a local cache
+```
+
 :::
 ::::
+
+```{r get-artifact}
+artifact <- ln$Artifact$using("laminlabs/cellxgene")$get("7dVluLROpalzEh8mNyxk")
+artifact
+```
+
+<div class="alert alert-info" role="alert">
+**Tip**
+
+You can view detailed information about this dataset on LaminHub: .
+
+You can search and query more CELLxGENE datasets here: https://lamin.ai/laminlabs/cellxgene/artifacts.
+
+</div>
+
+To download the dataset and load it into memory, run:
+
+```{r load-artifact}
+adata <- artifact$load()
+adata
+```
+
+This artifact contains an [`AnnData`](https://anndata.readthedocs.io) object.
+
+<div class="alert alert-info" role="alert">
+**Tip**
+
+If you prefer a path to a local file or folder, call `path <- artifact$cache()`.
+
+</div>
+
+## Work with the dataset
+
+Once you have loaded a dataset you can perform any analysis with it as you would normally.
+Here, marker genes are calculated for each of the provided cell type labels using [**{Seurat}**](https://satijalab.org/seurat/).
+
+```{r create-seurat}
+library(Seurat)
+
+# Create a Seurat object
+seurat_obj <- CreateSeuratObject(
+  counts = as(Matrix::t(adata$X), "CsparseMatrix"),
+  meta.data = adata$obs
+)
+# Add gene metadata
+seurat_obj[["RNA"]] <- AddMetaData(
+  GetAssay(seurat_obj), adata$var
+)
+# Set cell identities to the provided cell type annotation
+Idents(seurat_obj) <- "cell_type"
+# Normalise the data
+seurat_obj <- NormalizeData(seurat_obj)
+# Test for marker genes (the output is a data.frame)
+markers <- FindAllMarkers(
+  seurat_obj,
+  features = Features(seurat_obj)[1:100] # Only test a few features for speed
+)
+# Display the marker genes
+knitr::kable(markers)
+# Plot the marker genes
+DotPlot(seurat_obj, features = unique(markers$gene)) +
+  ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, vjust = 0.5))
+```
