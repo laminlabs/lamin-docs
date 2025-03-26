@@ -126,8 +126,13 @@ markers <- FindAllMarkers(
 
 # Save
 
-ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a file
-ln$finish()  # mark the run finished
+ln$Artifact$from_df(markers, key = "my-datasets/my-markers.parquet")$save()
+
+seurat_path <- tempfile(fileext = ".rds")
+saveRDS(seurat_obj, seurat_path)
+
+ln$Artifact(seurat_path, key = "my-datasets/my-seurat-object.rds")$save()
+ln$finish()  # finish the run
 ```
 
 If you did _not_ use RStudio's notebook mode, create an html export externally and run.
