@@ -43,19 +43,15 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 :::{tab-item} Python
 :sync: python
 
-Install the `lamindb` Python package.
+For setup, install the `lamindb` Python package and connect to a LaminDB instance.
 
 ```shell
 pip install 'lamindb[jupyter,bionty]'  # support notebooks & biological ontologies
-```
-
-Connect to a LaminDB instance.
-
-```shell
+lamin login  # <-- you can skip this for public, local & self-hosted instances
 lamin connect account/instance  # <-- replace with your instance
 ```
 
-Access an input dataset and save an output dataset.
+In your Python session, you access an input dataset and save an output dataset.
 
 ```python
 import lamindb as ln
@@ -74,39 +70,26 @@ ln.finish()  # mark the run as finished & save a report for the current notebook
 :::{tab-item} R
 :sync: r
 
-Install the `laminr` R and the `lamindb` Python packages.
+For setup, install the `laminr` and `lamindb` packages and connect to a LaminDB instance.
 
 ```R
 install.packages("laminr", dependencies = TRUE)  # install the laminr package from CRAN
 laminr::install_lamindb(extra_packages = c("bionty"))  # install lamindb & bionty for use via reticulate
-```
-
-Connect to a LaminDB instance.
-
-```R
+laminr::lamin_login()  # <-- you can skip this for public, local, and self-hosted instances
 laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
 ```
 
-Access an input dataset and save an output dataset.
+In your R session, you access an input dataset and save an output dataset.
 
-```R
-library(laminr)
-ln <- import_module("lamindb")  # instantiate the central `ln` object of the API
-
-ln$track()  # track a run of your notebook or script
-artifact <- ln$Artifact$get("3TNCsZZcnIBv2WGb0001")  # get an artifact by uid
-filepath <- artifact$cache()  # cache the artifact on disk
-
-# do your work
-
-ln$Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a file
-ln$finish()  # mark the run finished
+```{eval-rst}
+.. literalinclude:: includes/r-quickstart.R
+   :language: R
 ```
 
-If you did _not_ use RStudio's notebook mode, create an html export externally and run.
+If you did _not_ use RStudio's notebook mode, create an html export and then run the following.
 
-```shell
-lamin save my-analysis.Rmd  #  save an html report for a `.qmd` or `.Rmd` file
+```R
+laminr::lamin_save("my-analyis.Rmd")  #  save source code and html report for a `.qmd` or `.Rmd` file
 ```
 
 :::

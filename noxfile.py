@@ -231,9 +231,13 @@ def pull_artifacts(session):
         sync_path(path, Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
+    # laminr
+    pull_from_s3_and_unpack("laminr.zip")
+    Path("laminr/r-quickstart.R").rename("docs/includes/r-quickstart.R")
+
     # pipelines
-    pull_from_s3_and_unpack("redun_lamin_fasta_docs.zip")
-    Path("redun_lamin_fasta_docs/redun.ipynb").rename("docs/redun.ipynb")
+    pull_from_s3_and_unpack("redun-lamin.zip")
+    Path("redun-lamin/redun.ipynb").rename("docs/redun.ipynb")
     pull_from_s3_and_unpack("nextflow-lamin.zip")
     Path("nextflow-lamin/nf_core_scrnaseq.ipynb").rename("docs/nextflow.ipynb")
     Path("nextflow-lamin/register_scrnaseq_run.py").rename(
