@@ -86,10 +86,10 @@ In your R session, you access an input dataset and save an output dataset.
    :language: R
 ```
 
-If you did _not_ use RStudio's notebook mode, create an html export and run the following on the CLI.
+If you did _not_ use RStudio's notebook mode, create an html export and then run the following.
 
-```shell
-lamin save my-analysis.Rmd  #  save source code and html report for a `.qmd` or `.Rmd` file
+```R
+laminr::lamin_save("my-analyis.Rmd")  #  save source code and html report for a `.qmd` or `.Rmd` file
 ```
 
 :::
