@@ -1,2 +1,3 @@
+- 🔇 Do not print warning about missing schema modules [PR](https://github.com/laminlabs/lamindb-setup/pull/1010) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix transfer through reticulate when target instances has no schema modules [PR](https://github.com/laminlabs/lamindb/pull/2602) [@falexwolf](https://github.com/falexwolf)
 - ⬇️ Add upper bound on gotrue [PR](https://github.com/laminlabs/lamindb-setup/pull/1009) [@Koncopd](https://github.com/Koncopd)
