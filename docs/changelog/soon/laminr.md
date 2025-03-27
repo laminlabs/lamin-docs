@@ -1,3 +1,4 @@
+- 👷 Separate Seurat analysis from rest of the introduction notebook [PR](https://github.com/laminlabs/laminr/pull/163) [@falexwolf](https://github.com/falexwolf)
 - 💚 Back to temporary instance in introduction [PR](https://github.com/laminlabs/laminr/pull/161) [@falexwolf](https://github.com/falexwolf)
 - 👷 Build docs with Cloudflare [PR](https://github.com/laminlabs/laminr/pull/160) [@falexwolf](https://github.com/falexwolf)
 - 📌 Set minimum {reticulate} dependency [PR](https://github.com/laminlabs/laminr/pull/158) [@lazappi](https://github.com/lazappi)
