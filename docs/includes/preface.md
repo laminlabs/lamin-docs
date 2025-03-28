@@ -43,7 +43,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 :::{tab-item} Python
 :sync: python
 
-```{include} includes/setup-lamindb.md
+```{include} includes/quick-setup-lamindb.md
 
 ```
 
@@ -58,7 +58,7 @@ In a Python session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene
 :::{tab-item} R
 :sync: r
 
-```{include} includes/setup-laminr.md
+```{include} includes/quick-setup-laminr.md
 
 ```
 

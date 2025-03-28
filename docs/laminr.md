@@ -2,9 +2,11 @@
 
 R client for LaminDB [[source](https://github.com/laminlabs/laminr)].
 
-```{include} includes/setup-laminr.md
+```{include} includes/quick-setup-laminr.md
 
 ```
+
+For more detailed instructions, see {doc}`setup-laminr`.
 
 In an R session, create the central API object as follows.
 
@@ -25,3 +27,10 @@ In addition to `lamindb`'s functionality, `laminr` exposes some functionality of
 - `lamin_logout`
 - `lamin_save`
 - `install_lamindb`
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+
+setup-laminr.md
+```
