@@ -8,14 +8,14 @@ Leave alone training models on historical data, orthogonal assays, or datasets g
 
 Biological datasets are typically managed with versioned storage systems (file systems, object storage, git, dvc), {term}`UI`-focused community or SaaS platforms, structureless data lakes, rigid data warehouses (SQL, monolithic arrays), and data lakehouses for tabular data.
 
-LaminDB goes beyond these systems with a lakehouse that models biological datasets beyond tables with enough structure to enable queries and enough freedom to keep the pace of R&D high.
+LaminDB goes further with a lakehouse that models biological datasets beyond tables with enough structure to enable queries and enough freedom to keep the pace of R&D high.
 
-For data structures like `DataFrame`, `AnnData`, `.zarr`, `.tiledbsoma`, etc., LaminDB tracks and provides the rich context that collaborative biological research requires:
+For data structures like `DataFrame`, `AnnData`, `.zarr`, `.tiledbsoma`, etc., LaminDB tracks the rich context that collaborative biological research requires and uses it to validate and index datasets to enable queries. In particular, you get
 
 - data lineage: data sources and transformations; scientists and machine learning models
 - domain knowledge and experimental metadata: the features and labels derived from domain entities
 
-In this [blog post](https://lamin.ai/blog/problems), we discuss a breadth of data management problems of the field.
+In this [blog post](https://blog.lamin.ai/problems), we discuss a breadth of data management problems of the field.
 
 :::
 
