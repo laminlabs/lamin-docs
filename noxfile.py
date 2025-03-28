@@ -181,6 +181,7 @@ def pull_artifacts(session):
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
     Path("lamindb/api.md").unlink()
+    Path("lamindb/guide.md").unlink()
     for path in Path("lamindb").glob("*"):
         if (
             path.name == "index.md"
