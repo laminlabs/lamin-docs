@@ -43,15 +43,11 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 :::{tab-item} Python
 :sync: python
 
-For setup, install the `lamindb` Python package and connect to a LaminDB instance.
+```{include} includes/quick-setup-lamindb.md
 
-```shell
-pip install 'lamindb[jupyter,bionty]'  # support notebooks & biological ontologies
-lamin login  # <-- you can skip this for public, local & self-hosted instances
-lamin connect account/instance  # <-- replace with your instance
 ```
 
-In your Python session, you transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
+In a Python session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
 
 ```{eval-rst}
 .. literalinclude:: includes/py-quickstart.py
@@ -62,16 +58,11 @@ In your Python session, you transfer an scRNA-seq dataset from the `laminlabs/ce
 :::{tab-item} R
 :sync: r
 
-For setup, install the `laminr` and `lamindb` packages and connect to a LaminDB instance.
+```{include} includes/quick-setup-laminr.md
 
-```R
-install.packages("laminr", dependencies = TRUE)  # install the laminr package from CRAN
-laminr::install_lamindb(extra_packages = c("bionty"))  # install lamindb & bionty for use via reticulate
-laminr::lamin_login()  # <-- you can skip this for public, local, and self-hosted instances
-laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
 ```
 
-In your R session, you transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Seurat, and save results.
+In an R session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Seurat, and save results.
 
 ```{eval-rst}
 .. literalinclude:: includes/r-quickstart.R
