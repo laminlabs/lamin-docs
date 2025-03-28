@@ -6,17 +6,12 @@ R client for LaminDB [source](https://github.com/laminlabs/laminr).
 
 ```
 
-```{r disconnect, include = FALSE}
-# Disconnect from this instance at the end of the vignette
-withr::defer(laminr::lamin_disconnect())
-```
-
-# Import
-
-To start working with **{laminr}**, import the **lamindb** module:
+In an R session, create the central API object as follows.
 
 ```{r import-lamindb}
+library(laminr)
+
 ln <- import_module("lamindb")
 ```
 
-This is equivalent to `import lamindb as ln` in Python.
+The `ln` object offers the full `lamindb` API and can be used in the same way up to replacing `.` with `$`.
