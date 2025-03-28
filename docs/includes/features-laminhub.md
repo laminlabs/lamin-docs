@@ -28,7 +28,7 @@ Rather than configuring storage & database permissions directly on AWS or GCP, L
 
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See scripts, notebooks & pipelines with their inputs & outputs.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J8dJfH.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J80003.png" width="700px">
 
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Track pipelines, notebooks & UI transforms in one place.</p>
 
