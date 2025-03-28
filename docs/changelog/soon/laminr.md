@@ -1,3 +1,4 @@
+- ♻️ Make R and Python quickstarts parallel [PR](https://github.com/laminlabs/laminr/pull/170) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Dispatch CI from pre-release event in lamindb [PR](https://github.com/laminlabs/laminr/pull/168) [@falexwolf](https://github.com/falexwolf)
 - 👷 Separate Seurat analysis from rest of the introduction notebook [PR](https://github.com/laminlabs/laminr/pull/163) [@falexwolf](https://github.com/falexwolf)
 - 💚 Back to temporary instance in introduction [PR](https://github.com/laminlabs/laminr/pull/161) [@falexwolf](https://github.com/falexwolf)
