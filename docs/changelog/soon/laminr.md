@@ -1,3 +1,4 @@
+- ♻️ Move `setup.Rmd` to `lamin-docs` [PR](https://github.com/laminlabs/laminr/pull/172) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make R and Python quickstarts parallel [PR](https://github.com/laminlabs/laminr/pull/170) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Dispatch CI from pre-release event in lamindb [PR](https://github.com/laminlabs/laminr/pull/168) [@falexwolf](https://github.com/falexwolf)
 - 👷 Separate Seurat analysis from rest of the introduction notebook [PR](https://github.com/laminlabs/laminr/pull/163) [@falexwolf](https://github.com/falexwolf)
