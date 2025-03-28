@@ -8,14 +8,14 @@ Leave alone training models on historical data, orthogonal assays, or datasets g
 
 Biological datasets are typically managed with versioned storage systems (file systems, object storage, git, dvc), {term}`UI`-focused community or SaaS platforms, structureless data lakes, rigid data warehouses (SQL, monolithic arrays), and data lakehouses for tabular data.
 
-LaminDB goes beyond these systems with a lakehouse that models biological datasets beyond tables with enough structure to enable queries and enough freedom to keep the pace of R&D high.
+LaminDB goes further with a lakehouse that models biological datasets beyond tables with enough structure to enable queries and enough freedom to keep the pace of R&D high.
 
-For data structures like `DataFrame`, `AnnData`, `.zarr`, `.tiledbsoma`, etc., LaminDB tracks and provides the rich context that collaborative biological research requires:
+For data structures like `DataFrame`, `AnnData`, `.zarr`, `.tiledbsoma`, etc., LaminDB tracks the rich context that collaborative biological research requires and uses it to validate and index datasets to enable queries. In particular, you get
 
 - data lineage: data sources and transformations; scientists and machine learning models
 - domain knowledge and experimental metadata: the features and labels derived from domain entities
 
-In this [blog post](https://lamin.ai/blog/problems), we discuss a breadth of data management problems of the field.
+In this [blog post](https://blog.lamin.ai/problems), we discuss a breadth of data management problems of the field.
 
 :::
 
@@ -51,19 +51,11 @@ lamin login  # <-- you can skip this for public, local & self-hosted instances
 lamin connect account/instance  # <-- replace with your instance
 ```
 
-In your Python session, you access an input dataset and save an output dataset.
+In your Python session, you transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
 
-```python
-import lamindb as ln
-
-ln.track()  # track a run of your notebook or script
-artifact = ln.Artifact.get("3TNCsZZcnIBv2WGb0001")  # get an artifact by uid
-filepath = artifact.cache()  # cache the artifact on disk
-
-# do your work
-
-ln.Artifact("./my_dataset.csv", key="my_results/my_dataset.csv").save()  # save a file
-ln.finish()  # mark the run as finished & save a report for the current notebook/script
+```{eval-rst}
+.. literalinclude:: includes/py-quickstart.py
+   :language: python
 ```
 
 :::
@@ -79,7 +71,7 @@ laminr::lamin_login()  # <-- you can skip this for public, local, and self-hoste
 laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
 ```
 
-In your R session, you access an input dataset and save an output dataset.
+In your R session, you transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Seurat, and save results.
 
 ```{eval-rst}
 .. literalinclude:: includes/r-quickstart.R
@@ -89,7 +81,7 @@ In your R session, you access an input dataset and save an output dataset.
 If you did _not_ use RStudio's notebook mode, create an html export and then run the following.
 
 ```R
-laminr::lamin_save("my-analyis.Rmd")  #  save source code and html report for a `.qmd` or `.Rmd` file
+laminr::lamin_save("my-analyis.Rmd")  # save source code and html report for a `.qmd` or `.Rmd` file
 ```
 
 :::

@@ -29,6 +29,10 @@ repos:
       - id: ruff
         args: [--fix, --exit-non-zero-on-fix, --unsafe-fixes]
       - id: ruff-format
+        exclude: |
+          (?x)(
+            docs/includes/py-quickstart.py
+          )
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
     hooks:

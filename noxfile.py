@@ -95,39 +95,6 @@ ehr
 ```
 """
 
-# for API
-
-ORIG_API = """
-```{toctree}
-:maxdepth: 1
-:caption: CLI & lamindb
-:hidden:
-
-cli
-lamindb
-```
-"""
-
-REPLACE_API = """
-```{toctree}
-:maxdepth: 1
-:caption: CLI & lamindb
-:hidden:
-
-cli
-lamindb
-```
-
-```{toctree}
-:maxdepth: 1
-:caption: R & REST
-:hidden:
-
-laminr
-rest
-```
-"""
-
 # for other topics
 
 OTHER_TOPICS_ORIG = """
@@ -213,6 +180,7 @@ def pull_artifacts(session):
     Path("lamindb/README.md").rename("README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
+    Path("lamindb/api.md").unlink()
     for path in Path("lamindb").glob("*"):
         if (
             path.name == "index.md"
@@ -290,7 +258,6 @@ def pull_artifacts(session):
     )
 
     # amend toctree
-    replace_content("docs/api.md", {ORIG_API: REPLACE_API})
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
@@ -323,14 +290,16 @@ def install(session):
         session,
         f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter,gcp]",
     )
-    run(session, "pip install --no-deps git+https://github.com/laminlabs/cellregistry")
-
     run(session, "uv pip install --system spatialdata")  # temporarily
+    run(session, "uv pip install --system scanpy")
     run(session, "lamin settings set private-django-api true")
 
 
 @nox.session
 def run_nbs(session):
+    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa: S605
+    exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa: S605
+    assert exit_status == 0  # noqa: S101
     run_notebooks("docs/introduction.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
     run_notebooks("docs/hubmap.ipynb")
@@ -341,7 +310,7 @@ def run_nbs(session):
 def init(session):
     run(
         session,
-        "lamin init --storage ./docsbuild --modules bionty,wetlab,clinicore,cellregistry",
+        "lamin init --storage ./docsbuild --modules bionty,wetlab,clinicore",
     )
 
 
