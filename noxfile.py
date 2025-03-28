@@ -331,6 +331,8 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
+    exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa: S605
+    assert exit_status == 0  # noqa: S101
     run_notebooks("docs/introduction.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
     run_notebooks("docs/hubmap.ipynb")
