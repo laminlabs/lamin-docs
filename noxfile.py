@@ -310,7 +310,7 @@ def run_nbs(session):
 def init(session):
     run(
         session,
-        "lamin init --storage ./docsbuild --modules bionty,wetlab,clinicore,cellregistry",
+        "lamin init --storage ./docsbuild --modules bionty,wetlab,clinicore",
     )
 
 
