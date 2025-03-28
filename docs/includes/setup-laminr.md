@@ -9,6 +9,6 @@ laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
 
 If you don't have write access to an instance, create a local instance.
 
-```{r init}
-lamin_init(storage = "./mydata", modules = c("bionty"))
+```R
+laminr::lamin_init(storage = "./mydata", modules = c("bionty"))
 ```

@@ -47,7 +47,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 ```
 
-In your Python session, you transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
+In a Python session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
 
 ```{eval-rst}
 .. literalinclude:: includes/py-quickstart.py
@@ -62,7 +62,7 @@ In your Python session, you transfer an scRNA-seq dataset from the `laminlabs/ce
 
 ```
 
-In your R session, you transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Seurat, and save results.
+In an R session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Seurat, and save results.
 
 ```{eval-rst}
 .. literalinclude:: includes/r-quickstart.R
