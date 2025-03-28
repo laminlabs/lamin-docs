@@ -1,10 +1,11 @@
 # APIs
 
-Core APIs.
+Use the left sidbar to browse core APIs and modules.
 
 ```{toctree}
 :maxdepth: 1
-:caption: CLI & lamindb
+:caption: Core APIs
+:hidden:
 
 cli
 lamindb
@@ -12,11 +13,10 @@ laminr
 rest
 ```
 
-Modules.
-
 ```{toctree}
 :maxdepth: 1
 :caption: Modules
+:hidden:
 
 bionty
 wetlab
