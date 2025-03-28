@@ -20,11 +20,11 @@ Rather than configuring storage & database permissions directly on AWS or GCP, L
 
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See validated datasets in context of ontologies & experimental metadata.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DjVOPEBiAcGlt3Gq3APh.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DjVOPEBiAcGlt3Gq0001.png" width="700px">
 
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Query & search.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/L188T2JjzZHWHfv2sZGu.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/L188T2JjzZHWHfv20001.png" width="700px">
 
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">See scripts, notebooks & pipelines with their inputs & outputs.</p>
 
@@ -32,4 +32,4 @@ Rather than configuring storage & database permissions directly on AWS or GCP, L
 
 <p style="margin-top: 1rem; margin-bottom: 0.5rem; background: transparent">Track pipelines, notebooks & UI transforms in one place.</p>
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/IpV8Kiq4xUbgXhzlUYT7.png" width="700px">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/IpV8Kiq4xUbgXhzl0000.png" width="700px">
