@@ -331,6 +331,7 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
+    os.system("lamin init --storage ./test-quickstart")  # noqa: S605
     exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa: S605
     assert exit_status == 0  # noqa: S101
     run_notebooks("docs/introduction.ipynb")
