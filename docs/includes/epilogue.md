@@ -1,15 +1,6 @@
 ## Design
 
-### World model
-
-1. Teams need to have enough freedom to initiate work independently but enough structure to easily integrate datasets later on
-2. Batched datasets ({class}`~lamindb.Artifact`) from physical instruments are transformed ({class}`~lamindb.Transform`) into useful representations
-3. Learning needs features ({class}`~lamindb.Feature`, {class}`~bionty.CellMarker`, ...) and labels ({class}`~lamindb.ULabel`, {class}`~bionty.CellLine`, ...)
-4. Insights connect dataset representations with experimental metadata and knowledge (ontologies)
-
-### Architecture
-
-LaminDB is a distributed system like git that can be run or hosted anywhere. As infrastructure, you merely need a database (SQLite/Postgres) and a storage location (file system, S3, GCP, HuggingFace, ...).
+LaminDB is a distributed system like git that can be run or hosted anywhere. It only needs a SQLite or Postgres database and a storage location (file system, S3, GCP, HuggingFace, ...).
 
 You can easily create your new local instance:
 
@@ -17,7 +8,7 @@ You can easily create your new local instance:
 :::{tab-item} Shell
 
 ```bash
-lamin init --storage ./my-data-folder
+lamin init --storage ./mydir
 ```
 
 :::
@@ -26,7 +17,16 @@ lamin init --storage ./my-data-folder
 
 ```python
 import lamindb as ln
-ln.setup.init(storage="./my-data-folder")
+ln.setup.init(storage="./mydir")
+```
+
+:::
+:::{tab-item} R
+:sync: r
+
+```R
+library(laminr)
+lamin_init(storage="./mydir")
 ```
 
 :::
@@ -38,7 +38,7 @@ Or you can let collaborators connect to a cloud-hosted instance:
 :::{tab-item} Shell
 
 ```bash
-lamin connect account-handle/instance-name
+lamin connect account/instance
 ```
 
 :::
@@ -47,7 +47,7 @@ lamin connect account-handle/instance-name
 
 ```python
 import lamindb as ln
-ln.connect("account-handle/instance-name")
+ln.connect("account/instance")
 ```
 
 :::
@@ -56,17 +56,16 @@ ln.connect("account-handle/instance-name")
 
 ```R
 library(laminr)
-ln <- connect("account-handle/instance-name")
+ln <- import_module("lamindb")
+ln <- ln$connect("account/instance")
 ```
 
 :::
 ::::
 
-For learning more about how to create & host LaminDB instances on distributed infrastructure, see {doc}`setup`. LaminDB instances work standalone but can optionally be managed by LaminHub. For an architecture diagram of LaminHub, [reach out](https://lamin.ai/contact)!
+For learning more about how to create & host LaminDB instances, see {doc}`setup`. LaminDB instances work standalone but can optionally be managed by LaminHub. For an architecture diagram of LaminHub, [reach out](https://lamin.ai/contact)!
 
 ### Database schema & API
-
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XoTQFCmmj2uU4d2xyj9u.png" width="350px" style="background: transparent" align="right">
 
 LaminDB provides a SQL schema for common metadata entities: {class}`~lamindb.Artifact`, {class}`~lamindb.Collection`, {class}`~lamindb.Transform`, {class}`~lamindb.Feature`, {class}`~lamindb.ULabel` etc. - see the [API reference](/api) or the [source code](https://github.com/laminlabs/lnschema-core/blob/main/lnschema_core/models.py).
 
