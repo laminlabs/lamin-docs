@@ -1,4 +1,4 @@
-## Design
+# Design & architecture
 
 LaminDB is a distributed system like git that can be run or hosted anywhere. It only needs a SQLite or Postgres database and a storage location (file system, S3, GCP, HuggingFace, ...).
 
@@ -65,7 +65,7 @@ ln <- ln$connect("account/instance")
 
 For learning more about how to create & host LaminDB instances, see {doc}`setup`. LaminDB instances work standalone but can optionally be managed by LaminHub. For an architecture diagram of LaminHub, [reach out](https://lamin.ai/contact)!
 
-### Database schema & API
+## Database schema & API
 
 LaminDB provides a SQL schema for common metadata entities: {class}`~lamindb.Artifact`, {class}`~lamindb.Collection`, {class}`~lamindb.Transform`, {class}`~lamindb.Feature`, {class}`~lamindb.ULabel` etc. - see the [API reference](/api) or the [source code](https://github.com/laminlabs/lnschema-core/blob/main/lnschema_core/models.py).
 
@@ -82,9 +82,9 @@ On top of the metadata schema, LaminDB is a Python API that models datasets as a
 
 Note that the schemas of datasets (e.g., `.parquet` files, `.h5ad` arrays, etc.) are modeled through the `Feature` registry and do not require migrations to be updated.
 
-### Custom registries
+## Schema modules
 
-LaminDB can be extended with registry modules building on the [Django](https://github.com/django/django) ecosystem. Examples are:
+LaminDB can be extended with schema modules building on the [Django](https://github.com/django/django) ecosystem. Examples are:
 
 - [bionty](./bionty): Registries for basic biological entities, coupled to public ontologies.
 - [wetlab](https://github.com/laminlabs/wetlab): Registries for samples, treatments, etc.
@@ -94,7 +94,9 @@ If you'd like to create your own module:
 1. Create a git repository with registries similar to [wetlab](https://github.com/laminlabs/wetlab)
 2. Create & deploy migrations via `lamin migrate create` and `lamin migrate deploy`
 
-### Repositories
+For more information, see {doc}`setup`.
+
+## Repositories
 
 LaminDB and its plugins consist in open-source Python libraries & publicly hosted metadata assets:
 
@@ -116,7 +118,3 @@ For a comprehensive list of open-sourced software, browse our [GitHub account](h
 - [bionty-assets](https://github.com/laminlabs/bionty-assets): Assets for public biological ontologies.
 
 LaminHub is not open-sourced.
-
-### Influences
-
-LaminDB was influenced by many other projects, see {doc}`docs:influences`.

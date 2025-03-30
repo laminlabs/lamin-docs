@@ -112,6 +112,7 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
+design
 access
 security
 faq
@@ -268,7 +269,7 @@ def pull_artifacts(session):
         content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
 
-    assert Path("docs/includes/features-lamindb.md").exists()  # noqa S101
+    assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
 
 
 @nox.session

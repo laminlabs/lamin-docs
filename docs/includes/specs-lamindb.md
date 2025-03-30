@@ -1,9 +1,8 @@
-Any LaminDB instance comes with an underlying SQL metadata database to organize files, folders, and arrays across any number of storage locations.
-
-The following detailed specs are for the Python package `lamindb`. For the analogous R package `laminr`, see the [R docs](https://laminr.lamin.ai).
+The Python & R packages `lamindb` & `laminr` share _almost_ the same API (`.` → `$`).
 
 **Manage data & metadata with a unified API (“lakehouse”).**
 
+- Use a built-in SQLite/Postgres database to organize files, folders & arrays across any number of storage locations
 - Query & search across data & metadata: {class}`~lamindb.models.Record.filter`, {class}`~lamindb.models.Record.search`
 - Model entities as an {term}`ORM` which their own registry: {class}`~lamindb.models.Record`
 - Model files and folders as datasets & models via one class: {class}`~lamindb.Artifact`
