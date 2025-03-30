@@ -112,6 +112,7 @@ OTHER_TOPICS = """
 :hidden:
 :caption: Other topics
 
+design
 access
 security
 faq
