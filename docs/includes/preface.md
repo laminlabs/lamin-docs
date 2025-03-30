@@ -21,7 +21,7 @@ In this [blog post](https://blog.lamin.ai/problems), we discuss a breadth of dat
 
 :::{dropdown} LaminDB specs
 
-```{include} includes/features-lamindb.md
+```{include} includes/specs-lamindb.md
 
 ```
 
@@ -29,9 +29,9 @@ In this [blog post](https://blog.lamin.ai/problems), we discuss a breadth of dat
 
 LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
-:::{dropdown} LaminHub overview
+:::{dropdown} LaminHub specs
 
-```{include} includes/features-laminhub.md
+```{include} includes/specs-laminhub.md
 
 ```
 

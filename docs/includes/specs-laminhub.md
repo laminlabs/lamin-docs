@@ -1,14 +1,8 @@
-See for yourself by browsing the demo instances in the hub UI or `lamin connect owner/instance` them via the CLI.
-
-- [lamin.ai/laminlabs/lamindata](https://lamin.ai/laminlabs/lamindata) - A generic demo instance with various data types
-- [lamin.ai/laminlabs/cellxgene](https://lamin.ai/laminlabs/cellxgene) - An instance that interfaces the CELLxGENE data ([guide](cellxgene))
-- [lamin.ai/laminlabs/arrayloader-benchmarks](https://lamin.ai/laminlabs/arrayloader-benchmarks) - Work with ML models & benchmarks
-
-See the [pricing page](https://lamin.ai/pricing). Basic LaminHub features are free.
+Explore at [lamin.ai/explore](https://lamin.ai/explore).
 
 **Secure & intuitive access management.**
 
-Rather than configuring storage & database permissions directly on AWS or GCP, LaminHub allows you to manage collaborators for databases & storage locations in the same way you manage access to repositories on GitHub. See {doc}`access`.
+Rather than configuring storage & database permissions directly on AWS or GCP, LaminHub allows you to manage access similar to how you'd do it on GitHub or Notion. See {doc}`access`.
 
 **A UI to work with LaminDB instances.**
 
