@@ -1,3 +1,4 @@
+- ♻️ Prettify MappedCollection data preparation [PR](https://github.com/laminlabs/lamindb/pull/2610) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Fix typing in `ULabelProject` and `PersonProject` [PR](https://github.com/laminlabs/lamindb/pull/2607) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test allowing SELECT on space all for jwt role by default [PR](https://github.com/laminlabs/lamindb/pull/2605) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Return an empty set not a dict for modules [PR](https://github.com/laminlabs/lamindb-setup/pull/1011) [@falexwolf](https://github.com/falexwolf)
