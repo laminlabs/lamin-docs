@@ -1,3 +1,4 @@
+- ✨ By data-type - imaging [PR](https://github.com/laminlabs/lamin-usecases/pull/182) [@Zethson](https://github.com/Zethson)
 - 🎨 Polish nbs [PR](https://github.com/laminlabs/lamin-mlops/pull/22) [@Zethson](https://github.com/Zethson)
 - 🎨 Make compound name TextField and fix related names [PR](https://github.com/laminlabs/wetlab/pull/108) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Move `ehrcuration.ipynb` from lamindb here to seed data type `EHR` [PR](https://github.com/laminlabs/lamin-usecases/pull/188) [@falexwolf](https://github.com/falexwolf)
