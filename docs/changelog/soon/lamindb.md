@@ -1,3 +1,4 @@
+- ⬆️ Upgrade anndata to 0.11.4 [PR](https://github.com/laminlabs/lamindb/pull/2613) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test RLS for write roles [PR](https://github.com/laminlabs/lamindb/pull/2616) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Order `IsVersioned.versions` query set [PR](https://github.com/laminlabs/lamindb/pull/2608) [@falexwolf](https://github.com/falexwolf)
 - ✅ Set LAMIN_CLOUD_VERSION in hub-local tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1013) [@Koncopd](https://github.com/Koncopd)
