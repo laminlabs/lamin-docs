@@ -1,3 +1,4 @@
+- ♻️ Order `IsVersioned.versions` query set [PR](https://github.com/laminlabs/lamindb/pull/2608) [@falexwolf](https://github.com/falexwolf)
 - ✅ Set LAMIN_CLOUD_VERSION in hub-local tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1013) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Prettify MappedCollection data preparation [PR](https://github.com/laminlabs/lamindb/pull/2610) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Fix typing in `ULabelProject` and `PersonProject` [PR](https://github.com/laminlabs/lamindb/pull/2607) [@Koncopd](https://github.com/Koncopd)
