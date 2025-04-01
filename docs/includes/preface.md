@@ -94,6 +94,6 @@ artifact.view_lineage()
 
 Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/qQ6DCPnSKWMvA5GC0000).
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/mfFvKdqpvlbOyQ1d0000.png" width="300">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/mfFvKdqpvlbOyQ1d0000.png" width="800">
 :::
 ::::
