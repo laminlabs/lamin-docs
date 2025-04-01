@@ -1,0 +1,1 @@
+- ⚡️ Use UPath.synchronize in s3_bionty_assets [PR](https://github.com/laminlabs/bionty/pull/231) [@Koncopd](https://github.com/Koncopd)
