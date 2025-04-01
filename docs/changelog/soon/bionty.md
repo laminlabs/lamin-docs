@@ -1,1 +1,2 @@
+- 🚑 Fix `organism` passing to `from_source` [PR](https://github.com/laminlabs/bionty/pull/233) [@sunnyosun](https://github.com/sunnyosun)
 - ⚡️ Use UPath.synchronize in s3_bionty_assets [PR](https://github.com/laminlabs/bionty/pull/231) [@Koncopd](https://github.com/Koncopd)
