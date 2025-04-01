@@ -40,7 +40,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 ## Quickstart
 
 ::::{tab-set}
-:::{tab-item} Python
+:::{tab-item} Py
 :sync: python
 
 ```{include} includes/quick-setup-lamindb.md
@@ -81,7 +81,7 @@ laminr::lamin_save("my-analyis.Rmd")  # save source code and html report for a `
 The script produced the following data lineage.
 
 ::::{tab-set}
-:::{tab-item} Python
+:::{tab-item} Py
 
 ```python
 artifact.view_lineage()
