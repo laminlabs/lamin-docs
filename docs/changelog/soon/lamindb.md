@@ -1,3 +1,4 @@
+- ⬆️ Upgrade bionty (rework s3_bionty_assets) [PR](https://github.com/laminlabs/lamindb/pull/2619) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade anndata to 0.11.4 [PR](https://github.com/laminlabs/lamindb/pull/2613) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test RLS for write roles [PR](https://github.com/laminlabs/lamindb/pull/2616) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Order `IsVersioned.versions` query set [PR](https://github.com/laminlabs/lamindb/pull/2608) [@falexwolf](https://github.com/falexwolf)
