@@ -16,5 +16,5 @@ sc.tl.rank_genes_groups(adata, groupby="cell_type")
 
 # Save outputs --------------------------------------------
 
-artifact = ln.Artifact.from_anndata(adata, key="my-datasets/my-result.h5ad").save()  # save versioned output
+ln.Artifact.from_anndata(adata, key="my-datasets/my-result.h5ad").save()  # save versioned output
 ln.finish()  # finish the run, save source code & run report
