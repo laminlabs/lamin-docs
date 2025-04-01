@@ -77,3 +77,23 @@ laminr::lamin_save("my-analyis.Rmd")  # save source code and html report for a `
 
 :::
 ::::
+
+The script produced the following data lineage.
+
+::::{tab-set}
+:::{tab-item} Python
+
+```python
+artifact.view_lineage()
+```
+
+<div style="height: 0.5em;"></div>
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/A0W45AGQfmsxFhyq0000.png" width="300">
+:::
+:::{tab-item} Hub
+
+Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/qQ6DCPnSKWMvA5GC0000).
+
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/mfFvKdqpvlbOyQ1d0000.png" width="300">
+:::
+::::
