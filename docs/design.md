@@ -12,7 +12,7 @@ lamin init --storage ./mydir
 ```
 
 :::
-:::{tab-item} Python
+:::{tab-item} Py
 :sync: python
 
 ```python
@@ -42,7 +42,7 @@ lamin connect account/instance
 ```
 
 :::
-:::{tab-item} Python
+:::{tab-item} Py
 :sync: python
 
 ```python

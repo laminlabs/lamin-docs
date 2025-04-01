@@ -10,7 +10,7 @@ adata = artifact.load()[:, :100]  # load into memory or sync to cache: filepath 
 
 import scanpy as sc  # find marker genes with Scanpy
 
-sc.pp.normalize_total(adata, target_sum=1e4)
+sc.pp.normalize_total(adata)
 sc.pp.log1p(adata)
 sc.tl.rank_genes_groups(adata, groupby="cell_type")
 
