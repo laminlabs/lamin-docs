@@ -1,3 +1,4 @@
+- 🚸 Allow renaming artifacts & transforms within the same version family [PR](https://github.com/laminlabs/lamindb/pull/2614) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable to pass the stem uid to lamin save [PR](https://github.com/laminlabs/lamin-cli/pull/125) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade bionty (rework s3_bionty_assets) [PR](https://github.com/laminlabs/lamindb/pull/2619) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade anndata to 0.11.4 [PR](https://github.com/laminlabs/lamindb/pull/2613) [@Koncopd](https://github.com/Koncopd)
