@@ -1,3 +1,4 @@
+- ✅ Test fine-grained permissions through Team [PR](https://github.com/laminlabs/lamindb/pull/2630) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix SpatialData and MuData check [PR](https://github.com/laminlabs/lamindb/pull/2627) [@Zethson](https://github.com/Zethson)
 - ⬆️ `from_source` no longer returns `None` [PR](https://github.com/laminlabs/lamindb/pull/2628) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test RLS for hubmodule tables, lamindb_space, lamindb_user [PR](https://github.com/laminlabs/lamindb/pull/2624) [@Koncopd](https://github.com/Koncopd)
