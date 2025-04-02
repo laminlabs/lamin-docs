@@ -1,3 +1,4 @@
+- ⬆️ `from_source` no longer returns `None` [PR](https://github.com/laminlabs/lamindb/pull/2628) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test RLS for hubmodule tables, lamindb_space, lamindb_user [PR](https://github.com/laminlabs/lamindb/pull/2624) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Show link to hub in `view_lineage()` and render lineage through graphviz also in scripts [PR](https://github.com/laminlabs/lamindb/pull/2622) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix organism passing to `from_source` [PR](https://github.com/laminlabs/lamindb/pull/2621) [@sunnyosun](https://github.com/sunnyosun)
