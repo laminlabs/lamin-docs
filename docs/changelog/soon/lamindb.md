@@ -1,3 +1,4 @@
+- ✨ Support `minimal_set`, `maximal_set`, `ordered_set` in curators [PR](https://github.com/laminlabs/lamindb/pull/2632) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade fsspec packages to 2025.3.2  [PR](https://github.com/laminlabs/lamindb/pull/2631) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade fsspec packages to 2025.3.2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1014) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Add `return_graph` argument to `view_lineage()` [PR](https://github.com/laminlabs/lamindb/pull/2626) [@lazappi](https://github.com/lazappi)
