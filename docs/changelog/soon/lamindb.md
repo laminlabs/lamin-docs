@@ -1,3 +1,4 @@
+- 🚸 Add space management to `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2625) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support `minimal_set`, `maximal_set`, `ordered_set` in curators [PR](https://github.com/laminlabs/lamindb/pull/2632) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade fsspec packages to 2025.3.2  [PR](https://github.com/laminlabs/lamindb/pull/2631) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade fsspec packages to 2025.3.2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1014) [@Koncopd](https://github.com/Koncopd)
