@@ -1,3 +1,4 @@
+- 📝 Improve pytest instructions in contributors guide [PR](https://github.com/laminlabs/lamindb/pull/2633) [@Zethson](https://github.com/Zethson)
 - 🎨 Skip validation if a missing cat feature is not required [PR](https://github.com/laminlabs/lamindb/pull/2636) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Add space management to `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2625) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support `minimal_set`, `maximal_set`, `ordered_set` in curators [PR](https://github.com/laminlabs/lamindb/pull/2632) [@sunnyosun](https://github.com/sunnyosun)
