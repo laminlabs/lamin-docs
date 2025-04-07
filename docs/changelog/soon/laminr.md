@@ -1,3 +1,4 @@
+- ✨ Track R environment [PR](https://github.com/laminlabs/laminr/pull/179) [@lazappi](https://github.com/lazappi)
 - 👷 Re-activate and test docs preview [PR](https://github.com/laminlabs/laminr/pull/175) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move `setup.Rmd` to `lamin-docs` [PR](https://github.com/laminlabs/laminr/pull/172) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make R and Python quickstarts parallel [PR](https://github.com/laminlabs/laminr/pull/170) [@falexwolf](https://github.com/falexwolf)
