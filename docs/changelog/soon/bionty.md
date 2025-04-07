@@ -1,3 +1,4 @@
+- 🎨 Improve ensembl prefix detection [PR](https://github.com/laminlabs/bionty/pull/239) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Support auto-download of ensembl genes of all organisms [PR](https://github.com/laminlabs/bionty/pull/236) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Support Python 3.13 & remove support for Python 3.9 [PR](https://github.com/laminlabs/bionty/pull/237) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix add_source df [PR](https://github.com/laminlabs/bionty/pull/235) [@sunnyosun](https://github.com/sunnyosun)
