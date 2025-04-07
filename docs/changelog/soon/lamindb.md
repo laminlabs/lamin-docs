@@ -1,3 +1,4 @@
+- ⬇️ Fix `numcodecs==0.16.0` incompatibility with `zarr v2` [PR](https://github.com/laminlabs/lamindb/pull/2645) [@Koncopd](https://github.com/Koncopd)
 - 📝 Improve pytest instructions in contributors guide [PR](https://github.com/laminlabs/lamindb/pull/2633) [@Zethson](https://github.com/Zethson)
 - 🎨 Skip validation if a missing cat feature is not required [PR](https://github.com/laminlabs/lamindb/pull/2636) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Add space management to `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/2625) [@falexwolf](https://github.com/falexwolf)
