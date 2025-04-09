@@ -1,3 +1,4 @@
+- ♻️ Organize categorical curation code with `CatColumn` [PR](https://github.com/laminlabs/lamindb/pull/2644) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test writing to the default space through team [PR](https://github.com/laminlabs/lamindb/pull/2647) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Set db token only on the transaction level [PR](https://github.com/laminlabs/lamindb/pull/2641) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Set db token only on the transaction level [PR](https://github.com/laminlabs/lamindb-setup/pull/1015) [@Koncopd](https://github.com/Koncopd)
