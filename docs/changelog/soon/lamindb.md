@@ -1,3 +1,4 @@
+- ✅ Test writing to the default space through team [PR](https://github.com/laminlabs/lamindb/pull/2647) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Set db token only on the transaction level [PR](https://github.com/laminlabs/lamindb/pull/2641) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Set db token only on the transaction level [PR](https://github.com/laminlabs/lamindb-setup/pull/1015) [@Koncopd](https://github.com/Koncopd)
 - ⬇️ Fix `numcodecs==0.16.0` incompatibility with `zarr v2` [PR](https://github.com/laminlabs/lamindb/pull/2645) [@Koncopd](https://github.com/Koncopd)
