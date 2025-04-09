@@ -1,3 +1,4 @@
+- 🐛 Fix re-validation of `var_index` [PR](https://github.com/laminlabs/lamindb/pull/2648) [@sunnyosun](https://github.com/sunnyosun)
 - 🔇 Suppress aiobotocore traceback logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1017) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Organize categorical curation code with `CatColumn` [PR](https://github.com/laminlabs/lamindb/pull/2644) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test writing to the default space through team [PR](https://github.com/laminlabs/lamindb/pull/2647) [@Koncopd](https://github.com/Koncopd)
