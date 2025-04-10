@@ -1,3 +1,4 @@
+- 🚸 Enable to authenticate and set the current instance through env variables [PR](https://github.com/laminlabs/lamindb-setup/pull/1016) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix re-validation of `var_index` [PR](https://github.com/laminlabs/lamindb/pull/2648) [@sunnyosun](https://github.com/sunnyosun)
 - 🔇 Suppress aiobotocore traceback logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1017) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Organize categorical curation code with `CatColumn` [PR](https://github.com/laminlabs/lamindb/pull/2644) [@sunnyosun](https://github.com/sunnyosun)
