@@ -223,6 +223,7 @@ def pull_artifacts(session):
     Path("lamin-mlops/mnist.ipynb").rename("docs/mnist.ipynb")
     Path("lamin-mlops/wandb.ipynb").rename("docs/wandb.ipynb")
     Path("lamin-mlops/mlflow.ipynb").rename("docs/mlflow.ipynb")
+    Path("lamin-mlops/autoencoder.py").rename("docs/autoencoder.py")
 
     # cellxgene-lamin
     pull_from_s3_and_unpack("cellxgene-lamin.zip")
