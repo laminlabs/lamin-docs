@@ -1,3 +1,4 @@
+- ♻️ Remove `verbosity` argument on `CatManager` level [PR](https://github.com/laminlabs/lamindb/pull/2666) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove `organism` argument on `CatManager` level [PR](https://github.com/laminlabs/lamindb/pull/2665) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `lamin run` with a Modal backend [PR](https://github.com/laminlabs/lamindb/pull/2643) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `lamin run` with a Modal backend [PR](https://github.com/laminlabs/lamin-cli/pull/123) [@ragyhaddad](https://github.com/ragyhaddad)
