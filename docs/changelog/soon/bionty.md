@@ -1,3 +1,4 @@
+- 🚸 Make the default organism `"human"` instead of `None` [PR](https://github.com/laminlabs/bionty/pull/242) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better error message [PR](https://github.com/laminlabs/bionty/pull/241) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Do not check organism ensembl version in EnsemblGene [PR](https://github.com/laminlabs/bionty/pull/240) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Improve ensembl prefix detection [PR](https://github.com/laminlabs/bionty/pull/239) [@sunnyosun](https://github.com/sunnyosun)
