@@ -1,3 +1,4 @@
+- ♻️ Remove `organism` argument on `CatManager` level [PR](https://github.com/laminlabs/lamindb/pull/2665) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `lamin run` with a Modal backend [PR](https://github.com/laminlabs/lamindb/pull/2643) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `lamin run` with a Modal backend [PR](https://github.com/laminlabs/lamin-cli/pull/123) [@ragyhaddad](https://github.com/ragyhaddad)
 - 🚸 Enable to authenticate and set the current instance through env variables [PR](https://github.com/laminlabs/lamindb-setup/pull/1016) [@falexwolf](https://github.com/falexwolf)
