@@ -1,3 +1,4 @@
+- 🚸 Make default run for notebook in case none is found [PR](https://github.com/laminlabs/lamin-cli/pull/127) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Lamin API Key as Modal Secret  [PR](https://github.com/laminlabs/lamin-cli/pull/126) [@ragyhaddad](https://github.com/ragyhaddad)
 - 🍱 Compare lamindb with pydantic and pandera in an FAQ doc [PR](https://github.com/laminlabs/lamindb/pull/2664) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix conventions for examples in docs [PR](https://github.com/laminlabs/lamindb/pull/2667) [@falexwolf](https://github.com/falexwolf)
