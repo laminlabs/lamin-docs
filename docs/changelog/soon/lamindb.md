@@ -1,3 +1,4 @@
+- 🍱 Compare lamindb with pydantic and pandera in an FAQ doc [PR](https://github.com/laminlabs/lamindb/pull/2664) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix conventions for examples in docs [PR](https://github.com/laminlabs/lamindb/pull/2667) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove `verbosity` argument on `CatManager` level [PR](https://github.com/laminlabs/lamindb/pull/2666) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove `organism` argument on `CatManager` level [PR](https://github.com/laminlabs/lamindb/pull/2665) [@falexwolf](https://github.com/falexwolf)
