@@ -1,3 +1,4 @@
+- ✨ Define optional features on a per-schema level & improve schema hash calculation [PR](https://github.com/laminlabs/lamindb/pull/2635) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Eliminate duplicated parsing & record creation during curation [PR](https://github.com/laminlabs/lamindb/pull/2650) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make default run for notebook in case none is found [PR](https://github.com/laminlabs/lamin-cli/pull/127) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Lamin API Key as Modal Secret  [PR](https://github.com/laminlabs/lamin-cli/pull/126) [@ragyhaddad](https://github.com/ragyhaddad)
