@@ -1,3 +1,4 @@
+- 🚸 Enable to validate & annotate features *without* passing them to a schema [PR](https://github.com/laminlabs/lamindb/pull/2668) [@falexwolf](https://github.com/falexwolf)
 - ✨ Define optional features on a per-schema level & improve schema hash calculation [PR](https://github.com/laminlabs/lamindb/pull/2635) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Eliminate duplicated parsing & record creation during curation [PR](https://github.com/laminlabs/lamindb/pull/2650) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make default run for notebook in case none is found [PR](https://github.com/laminlabs/lamin-cli/pull/127) [@falexwolf](https://github.com/falexwolf)
