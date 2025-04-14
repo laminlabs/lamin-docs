@@ -1,3 +1,4 @@
+- 💚 Fix for lamindb 1.4 [PR](https://github.com/laminlabs/lamin-usecases/pull/189) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI for lamindb 1.4 [PR](https://github.com/laminlabs/cellxgene-lamin/pull/123) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add mlflow example [PR](https://github.com/laminlabs/lamin-mlops/pull/24) [@Zethson](https://github.com/Zethson)
 - ✨ New spatial data guide [PR](https://github.com/laminlabs/lamin-usecases/pull/181) [@Zethson](https://github.com/Zethson)
