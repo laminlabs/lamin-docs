@@ -1,3 +1,4 @@
+- 🚸 Enable to query by features & params through `Artifact.filter()` and `Run.filter()` [PR](https://github.com/laminlabs/lamindb/pull/2671) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix describe features [PR](https://github.com/laminlabs/lamindb/pull/2675) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 No longer throw an error but merely print a warning when updating a schema [PR](https://github.com/laminlabs/lamindb/pull/2673) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add `schema` as an argument to `Artifact.from_X()` [PR](https://github.com/laminlabs/lamindb/pull/2672) [@falexwolf](https://github.com/falexwolf)
