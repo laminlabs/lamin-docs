@@ -110,7 +110,7 @@ Follow these steps to configure your access control structure:
 
 *   Create or identify the **instances** required for your projects or environments.
 *   Assign **instance admins** who will manage collaborators and roles for that specific instance.
-*   Add **collaborators** (users or teams) to instances as needed. Remember they get default read access to the `"all"` space.
+*   Add **collaborators** (users or teams) to instances as needed. Remember they get default read access to the `"All"` space.
 
 ### 3. Create additional spaces for fine-grained access
 
