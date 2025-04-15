@@ -1,0 +1,1 @@
+- ✨ Add `.pt` and `.ckpt` to valid suffixes [PR](https://github.com/laminlabs/lamindb-setup/pull/1018) [@Zethson](https://github.com/Zethson)
