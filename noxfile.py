@@ -6,7 +6,7 @@ from pathlib import Path
 import nox
 from dirsync import sync
 from laminci import run_notebooks
-from laminci.nox import run, run_pre_commit
+from laminci.nox import install_lamindb, run, run_pre_commit
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") != "push"
 
@@ -276,24 +276,8 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    from pathlib import Path
-
-    tmp_lamindb_path = Path("tmp_lamindb")
-    tmp_lamindb_path.mkdir(parents=True, exist_ok=True)
-
-    run(
-        session,
-        f"git clone -b main --depth 1 --recursive --shallow-submodules https://github.com/laminlabs/lamindb {str(tmp_lamindb_path)}",
-    )
-
-    run(
-        session,
-        f"uv pip install --system --no-deps {str(tmp_lamindb_path / 'sub/lamindb-setup')} {str(tmp_lamindb_path / 'sub/lamin-cli')} {str(tmp_lamindb_path / 'sub/bionty')} {str(tmp_lamindb_path / 'sub/wetlab')} {str(tmp_lamindb_path / 'sub/clinicore')}",
-    )
-    run(
-        session,
-        f"uv pip install --system {str(tmp_lamindb_path.resolve())}[bionty,jupyter,gcp]",
-    )
+    branch = "featurefilter" if IS_PR else "release"
+    install_lamindb(session, branch=branch, extras="bionty,jupyter,gcp")
     run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "uv pip install --system scanpy")
     run(session, "lamin settings set private-django-api true")
