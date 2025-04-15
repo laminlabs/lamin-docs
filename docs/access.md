@@ -103,7 +103,7 @@ Follow these steps to configure your access control structure:
 
 ### 1. Set up your organization structure
 
-*   Ensure you have access to your designated **organization** and verify that you or another user in your organization has sufficient organization permissions (organization manager role). Contact support if no one has the required permissions to properly set up your access control structure.
+*   Ensure you have access to your designated **organization** and verify that you or another user in your organization has sufficient organization permissions (organization admin role). Contact support if no one has the required permissions to properly set up your access control structure.
 *   Create **teams** that reflect your working groups (e.g., research, clinical, data science, curation) and assign team admins.
 
 ### 2. Configure instances
