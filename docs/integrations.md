@@ -1,5 +1,19 @@
 # Integrations
 
+## Data storage
+
+Read & write:
+
+- Local file systems
+- Amazon S3
+- Google Cloud Storage
+- MinIO
+
+Read only:
+
+- http/https: `ln.Artifact("https://some-site.com/some.data")`
+- HuggingFace: `ln.Artifact("hf://datasets/org/repo/data")`
+
 ## Schema modules
 
 Additional registries can be found here:
@@ -26,20 +40,6 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 - [redun](redun)
 - [Nextflow](nextflow)
 - [Snakemake](snakemake)
-
-## Storage systems
-
-Read & write support - create an [instance](setup), register and slice [data](arrays):
-
-- Amazon S3
-- Google Cloud Storage
-
-Read-only support:
-
-- Hugging Face Hub:
-  `ln.Artifact("hf://datasets/org/repo/data")`
-- http / https:
-  `ln.Artifact("https://some-site.com/some.data")`
 
 ## Array stores
 
