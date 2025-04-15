@@ -1,15 +1,25 @@
 # Integrations
 
+## Data storage
+
+Read & write:
+
+- Local file systems
+- Amazon S3
+- S3 compatible storage services, e.g., MinIO & Cloudflare R2
+- Google Cloud Storage
+
+Read only:
+
+- http/https: `ln.Artifact("https://some-site.com/some.data")`
+- HuggingFace: `ln.Artifact("hf://datasets/org/repo/data")`
+
 ## Schema modules
 
-Additional registries can be found here:
-
-- [bionty](/bionty): Basic biological entities, coupled to public ontologies
+- [bionty](/bionty): Basic biological entities, with easy import from >20 public ontologies
 - [wetlab](/wetlab): Basic wetlab entities
 - [clinicore](/clinicore): Basic clinical entities
 - [omop](https://omop.lamin.ai): OMOP Common Data Model
-
-Please [reach out](https://lamin.ai/contact) to have your schema module featured.
 
 ## Git
 
