@@ -278,7 +278,10 @@ def pull_artifacts(session):
 def install(session):
     branch = "release" if IS_PR else "release"
     install_lamindb(
-        session, branch=branch, extras="bionty,jupyter,gcp", target_dir="tmp_lamindb"
+        session,
+        branch=branch,
+        extras="bionty,jupyter,gcp,wetlab",
+        target_dir="tmp_lamindb",
     )
     run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "uv pip install --system scanpy")
