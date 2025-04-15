@@ -1,3 +1,4 @@
+- 📝 Add another example to pandera guide [PR](https://github.com/laminlabs/lamindb/pull/2678) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/1021) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Enable to query by features & params through `Artifact.filter()` and `Run.filter()` [PR](https://github.com/laminlabs/lamindb/pull/2671) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix describe features [PR](https://github.com/laminlabs/lamindb/pull/2675) [@sunnyosun](https://github.com/sunnyosun)
