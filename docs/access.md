@@ -19,7 +19,7 @@ Our access management is built on a four-tier hierarchy, providing granular cont
 Spaces are areas within instances that allow specific permissions to be set on subsets of data for organization resources by department, project, or sensitivity level:
 * Each space has its own set of collaborators with their roles and permissions, independent of instance-level roles. 
 * Users must be both instance collaborators AND space collaborators to access resources in a space within an instance
-* Spaces must be attached to an instance to affect records within that instance (you need both instance and space admin permissions to do so)
+* Spaces must be attached to an instance before records from that instance can be assigned to the space (you need both instance and space admin permissions to create this attachment)
 * Spaces are applied at the database record level, and a record can only belong to one space
 
 <div align="center">
