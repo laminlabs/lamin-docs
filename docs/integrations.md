@@ -27,6 +27,20 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 - [Nextflow](nextflow)
 - [Snakemake](snakemake)
 
+## Storage systems
+
+Read & write support - create an [instance](setup), register and slice [data](arrays):
+
+- Amazon S3
+- Google Cloud Storage
+
+Read-only support:
+
+- Hugging Face Hub:
+  `ln.Artifact("hf://datasets/org/repo/data")`
+- http / https:
+  `ln.Artifact("https://some-site.com/some.data")`
+
 ## Array stores
 
 - `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or [cellxgene](cellxgene)
