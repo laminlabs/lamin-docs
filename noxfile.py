@@ -276,8 +276,10 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    branch = "featurefilter" if IS_PR else "release"
-    install_lamindb(session, branch=branch, extras="bionty,jupyter,gcp")
+    branch = "release" if IS_PR else "release"
+    install_lamindb(
+        session, branch=branch, extras="bionty,jupyter,gcp", target_dir="tmp_lamindb"
+    )
     run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "uv pip install --system scanpy")
     run(session, "lamin settings set private-django-api true")
