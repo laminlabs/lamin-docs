@@ -219,3 +219,16 @@ Users can be collaborators either directly as individual users or through team m
 - **Admins:** Have full control over the specific space, including managing permissions and content within that space.
 - **Read collaborators:** Can read data and view resources within that specific space across accessible instances.
 - **Write collaborators:** Can read, add, and modify data or resources within that specific space across accessible instances.
+
+## How does it work?
+
+Rather than configuring storage permissions on AWS and database permissions on Postgres, LaminHub allows you to manage collaborators for databases and storage locations in a similar way to how you manage access on Notion, Google Workspace, or Microsoft SharePoint.
+
+However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you in full control of your data with direct API access to databases and storage locations on AWS.
+
+Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive:
+
+- **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface. (This will soon be replaced by endpoints proxying S3).
+- **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
+
+LaminHub's permission system makes it easy to minimize attack surfaces by implementing the principle of least privilege.
