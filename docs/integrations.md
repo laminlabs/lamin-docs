@@ -6,8 +6,8 @@ Read & write:
 
 - Local file systems
 - Amazon S3
+- S3 Compatible Storages (such as MinIO)
 - Google Cloud Storage
-- MinIO
 
 Read only:
 
