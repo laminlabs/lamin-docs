@@ -280,7 +280,7 @@ def install(session):
     install_lamindb(
         session,
         branch=branch,
-        extras="bionty,jupyter,gcp,wetlab",
+        extras="bionty,jupyter,gcp,wetlab,clinicore",
         target_dir="tmp_lamindb",
     )
     run(session, "uv pip install --system spatialdata")  # temporarily
