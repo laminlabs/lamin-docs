@@ -29,8 +29,8 @@ Spaces are areas within instances that allow specific permissions to be set on s
 ### All space
 
 *   **Default "All" Space:** Every instance includes a default `"All"` space upon creation. This space typically holds common, non-sensitive resources.
-*   **Read Access:** All collaborators added to an instance automatically receive read access to the default `"All"` space.
-*   **Write Access:** Collaborators granted write or admin permissions at the instance level automatically receive write access to the default `"All"` space.
+*   **Read access:** All collaborators added to an instance automatically receive read access to the default `"All"` space.
+*   **Write access:** Collaborators granted write or admin permissions at the instance level automatically receive write access to the default `"All"` space.
 
 
 ### Teams
