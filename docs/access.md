@@ -27,7 +27,7 @@ A typical organization might structure its spaces within instances like this:
       - Only `"ML Team"` has access (read/write as needed).
       - Completely isolated from other teams unless explicitly granted.
 
-### Getting started guide 2
+### Getting started guide
 
 #### 1. Set up your organization structure
 
