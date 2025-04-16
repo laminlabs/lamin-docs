@@ -8,7 +8,7 @@ This document outlines the access control system, detailing its architecture, ke
 
 A typical organization might structure its spaces within instances like this:
 
-1.  **`"All"` dpace (default):**
+1.  **`"All"` space (default):**
 
     - **Purpose:** Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance.
     - **Access:** Generally broad read access for instance collaborators.
