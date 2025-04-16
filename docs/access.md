@@ -4,36 +4,7 @@ This document outlines the access control system, detailing its architecture, ke
 
 ## Quickstart
 
-### Example
-
-A typical organization might structure its spaces within instances like this:
-
-1.  **`"All"` dpace (default):**
-
-    - **Purpose:** Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance.
-    - **Access:** Generally broad read access for instance collaborators.
-
-2.  **`"Curation"` space:**
-
-    - **Purpose:** Stores sensitive curated data requiring stricter access control.
-    - **Access example:**
-      - `"Curation Team"` has write access.
-      - `"ML Team"` has read access.
-      - No access granted to other teams by default.
-
-3.  **`"ML"` space:**
-    - **Purpose:** Contains machine learning models, development resources, and potentially experimental data.
-    - **Access example:**
-      - Only `"ML Team"` has access (read/write as needed).
-      - Completely isolated from other teams unless explicitly granted.
-
-### Getting started guide
-
-#### 1. Set up your organization structure
-
-- Ensure you have access to your designated **organization** and verify that you or another user in your organization has sufficient organization permissions (organization admin role). Contact support if no one has the required permissions to properly set up your access control structure.
-
-#### 2. Add or remove an instance collaborator
+### Add or remove an instance collaborator
 
 1. Click on the settings icon in your instance (or via https://lamin.ai/your-organization/your-instance/settings), then select the **Collaborators** tab. You'll see a list of current collaborators with their roles.
 
@@ -53,7 +24,7 @@ A typical organization might structure its spaces within instances like this:
      <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
    </div>
 
-#### 3. Make space within an instance to restrict access
+### Create a restricted space with an instance
 
 Spaces allow you to partition your data with separate access controls within the same instance.
 
@@ -99,7 +70,7 @@ To attach an existing space to an instance:
      <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8Jt9qChPmWzDOkMM0000.png" style="width: 90%;"/>
    </div>
 
-#### 4. Make a team to bulk-manage access for multiple users
+### Create a team to manage access for multiple users
 
 Teams allow you to manage permissions for groups of users collectively, making it easier to handle access for departments or project groups.
 
@@ -153,16 +124,37 @@ To add a team to your instance:
      <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
    </div>
 
-## Concepts
+## Summary
 
-Our access management is built on a four-tier hierarchy, providing granular control over resources:
+Lamin's access management is built on:
 
 1.  **Organizations:** An organizational account can group users, instances, and other entities belonging to the same organization.
 2.  **Teams:** Groups of users within an organization. Roles and permissions can be assigned collectively to teams.
 3.  **Instances:** LaminDB instances are the central databases at the heart of the data platform similar to how git repositories are central to GitHub.
 4.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
 
-## Key features
+### Example
+
+You might structure an instance with spaces like this.
+
+1.  **`"All"` space:**
+
+    - Purpose: Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance.
+    - Access: Any instance collaborator has at least read access.
+
+2.  **`"Curation"` space:**
+
+    - Purpose: Stores sensitive curated data requiring stricter access control.
+    - Access example:
+      - `"Curation Team"` has write access.
+      - `"ML Team"` has read access.
+      - No access granted to other teams by default.
+
+3.  **`"ML"` space:**
+    - Purpose: Contains machine learning models, development resources, and potentially experimental data.
+    - Access example:
+      - Only `"ML Team"` has access (read/write as needed).
+      - Completely isolated from other teams unless explicitly granted.
 
 ### Spaces
 

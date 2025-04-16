@@ -2,7 +2,7 @@ Explore at [lamin.ai/explore](https://lamin.ai/explore).
 
 **Secure & intuitive access management.**
 
-Rather than configuring storage & database permissions directly on AWS or GCP, LaminHub allows you to manage access similar to how you'd do it on GitHub or Notion. See {doc}`access`.
+While you stay in full control over storage & database permissions directly on AWS or GCP, LaminHub allows you and your users to additionally manage access similar to how you'd do it on GitHub, Google Drive, Microsoft Sharepoint, or Notion. See {doc}`access`.
 
 **A UI to work with LaminDB instances.**
 
