@@ -124,6 +124,38 @@ To add a team to your instance:
      <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
    </div>
 
+### Manage access to entities through the API
+
+Select a space to put entities into.
+
+```python
+space = ln.Space.get(name="my space")
+```
+
+You can create an entity in this space by attaching the selected space explicitly.
+
+```python
+ulabel = ln.ULabel(name="new label")
+ulabel.space = space
+ulabel.save() # saved into the space "my space"
+```
+
+You can also move an existing entity into the space in the same way.
+
+```python
+ulabel = ln.ULabel.get(name="existing label")
+ulabel.space = space
+ulabel.save() # moved into the space "my space"
+```
+
+You can also specify a space to put new entities implicitly by providing the name of the space to `ln.track`.
+
+```python
+ln.track(space="my space")
+# saved into the space "my space"
+ulabel = ln.ULabel(name="new label").save()
+```
+
 ## Summary
 
 Lamin's access management is built on:
