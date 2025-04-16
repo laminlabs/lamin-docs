@@ -1,2 +1,3 @@
+- ✨ Refresh db token on expiration [PR](https://github.com/laminlabs/lamindb/pull/2674) [@Koncopd](https://github.com/Koncopd)
 - ✨ Refresh db token on expiration [PR](https://github.com/laminlabs/lamindb-setup/pull/1020) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `.pt` and `.ckpt` to valid suffixes [PR](https://github.com/laminlabs/lamindb-setup/pull/1018) [@Zethson](https://github.com/Zethson)
