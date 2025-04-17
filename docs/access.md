@@ -4,7 +4,7 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 ## How to
 
-### Add or remove an instance collaborator
+### Manage instance collaborators
 
 You need to be an instance admin.
 
@@ -26,22 +26,22 @@ You need to be an instance admin.
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
 </div>
 
-### Create a restricted space
+### Manage a restricted space
 
-Spaces allow you to partition your data with separate access controls within the same instance.
+You need to be an instance admin.
 
 To create a space:
 
-1. Go to the **Spaces** tab on your organization page, then click **Create space**.
+1. Click on the settings tab at the top right of your instance page, then select **Spaces** on the left sidebar, then click **Create space**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LA45MBNYosthrCKb0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0000.png" style="width: 90%;"/>
 </div>
 
 2. Enter a name for your space and click **Save**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/bRTJgrDBVJg0Xv7X0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TIlmKtBG63dse3sb0000.png" style="width: 90%;"/>
 </div>
 
 To add a collaborator to your space:
@@ -49,28 +49,22 @@ To add a collaborator to your space:
 1. Click the three-dot menu next to the space and select **Manage collaborators**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HdcNNk4mrS0kkwpr0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/AJjcfgITI4YXWmOF0000.png" style="width: 90%;"/>
 </div>
 
-2. Click **Add collaborator** and select a user.
+2. Click **Add collaborator** and select a user or team.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8538ULC90NWkEixx0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/60OjDFhxOmQqKWN30000.png" style="width: 60%;"/>
 </div>
 
-To attach an existing space to an instance:
-
-1. Click the three-dot menu next to the space and select **Manage instances**.
+3. Change the access role if you want the collaborator to have more than read access.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LHFcJ58FGpRCVYWH0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TT84gfGO05SZuNKx0000.png" style="width: 90%;"/>
 </div>
 
-2. Click **Attach instance** and select an instance.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8Jt9qChPmWzDOkMM0000.png" style="width: 90%;"/>
-</div>
+Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple instances, if desired.
 
 ### Use a restricted space
 
