@@ -6,7 +6,9 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 ### Add or remove an instance collaborator
 
-1. Click on the settings icon in your instance (or via https://lamin.ai/your-organization/your-instance/settings), then select the **Collaborators** tab. You'll see a list of current collaborators with their roles.
+You need to be an instance admin.
+
+1. Click on the settings tab at the top right of your instance page, then select the **Collaborators** tab. You'll see a list of current collaborators with their roles.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
@@ -28,7 +30,7 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 Spaces allow you to partition your data with separate access controls within the same instance.
 
-To create spaces:
+To create a space:
 
 1. Go to **Spaces** in the left sidebar of your organization settings (or via https://lamin.ai/your-organization/spaces), then click **Create space**.
 
