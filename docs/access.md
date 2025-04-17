@@ -8,7 +8,7 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 You need to be an instance admin.
 
-1. Click on the settings tab at the top right of your instance page, then select the **Collaborators** tab. You'll see a list of current collaborators with their roles.
+1. Click on the settings tab at the top right of your instance page, then select **Collaborators** on the left sidebar. You'll see a list of current collaborators with their roles.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
@@ -32,7 +32,7 @@ Spaces allow you to partition your data with separate access controls within the
 
 To create a space:
 
-1. Go to **Spaces** in the left sidebar of your organization settings (or via https://lamin.ai/your-organization/spaces), then click **Create space**.
+1. Go to the **Spaces** tab on your organization page, then click **Create space**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LA45MBNYosthrCKb0000.png" style="width: 90%;"/>
@@ -98,7 +98,7 @@ Teams allow you to manage permissions for groups of users collectively, making i
 
 To create a team:
 
-1. Go to **Teams** in the left sidebar of your organization settings (or via https://lamin.ai/your-organization/teams), and click **Create team**.
+1. Go to **Teams** tab of your organization page, and click **Create team**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SSdvjNqXhBqf0F2f0000.png" style="width: 90%;"/>
