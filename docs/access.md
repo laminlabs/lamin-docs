@@ -120,7 +120,7 @@ To add members to your team:
 
 To add a team to a space:
 
-1. From the space collaborators view, click **Add collaborator** and select a user.
+1. From the space collaborators view, click **Add collaborator** and select a team.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DHouTU5KeskTalTv0000.png" style="width: 90%;"/>
