@@ -55,7 +55,7 @@ To add a collaborator to your space:
 2. Click **Add collaborator** and select a user or team.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/60OjDFhxOmQqKWN30000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/60OjDFhxOmQqKWN30000.png" style="width: 60%;"/>
 </div>
 
 3. Change the access role if you want the collaborator to have more than read access.
