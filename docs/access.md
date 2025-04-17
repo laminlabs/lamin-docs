@@ -24,7 +24,7 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
 </div>
 
-### Create a restricted space with an instance
+### Create a restricted space
 
 Spaces allow you to partition your data with separate access controls within the same instance.
 
@@ -90,7 +90,7 @@ ulabel.save()  # save in space "my space"
 
 If a record isn't yet saved, setting the `.space` field determines the space in which you save the record.
 
-### Create a team to manage access for multiple users
+### Manage teams
 
 Teams allow you to manage permissions for groups of users collectively, making it easier to handle access for departments or project groups.
 
