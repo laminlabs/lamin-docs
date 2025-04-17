@@ -70,6 +70,26 @@ To attach an existing space to an instance:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8Jt9qChPmWzDOkMM0000.png" style="width: 90%;"/>
 </div>
 
+### Use spaces on the API
+
+By passing `space` to `ln.track()`, you configure the `space` in which you save records during a tracked compute session.
+
+```python
+ln.track(space="Our space")
+ln.ULabel(name="new label").save()  # saved into space "Our space"
+```
+
+To move an entity from one space to another, set the `.space` field of its record.
+
+```python
+space = ln.Space.get(name="my space")  # select a space
+ulabel = ln.ULabel.get(name="existing label")
+ulabel.space = space
+ulabel.save()  # save in space "my space"
+```
+
+If a record isn't yet saved, setting the `.space` field determines the space in which you save the record.
+
 ### Create a team to manage access for multiple users
 
 Teams allow you to manage permissions for groups of users collectively, making it easier to handle access for departments or project groups.
@@ -124,39 +144,30 @@ To add a team to your instance:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
 </div>
 
-### Manage access to entities through the API
+## Example
 
-Select a space to put entities into.
+One way of using spaces to restrict access within an instance is this.
 
-```python
-space = ln.Space.get(name="my space")
-```
+1.  **Default space: `"All"`**
 
-You can create an entity in this space by attaching the selected space explicitly.
+    - Purpose: Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance.
+    - Access: _Every_ instance collaborator has read or higher levels of access.
 
-```python
-ulabel = ln.ULabel(name="new label")
-ulabel.space = space
-ulabel.save() # saved into the space "my space"
-```
+2.  **Restricted space 1: `"Curation"`**
 
-You can also move an existing entity into the space in the same way.
+    - Purpose: Stores sensitive curated data requiring stricter access control.
+    - Access example:
+      - A `"Curation Team"` has write access.
+      - A `"ML Team"` has read access.
+      - No access granted to other teams by default.
 
-```python
-ulabel = ln.ULabel.get(name="existing label")
-ulabel.space = space
-ulabel.save() # moved into the space "my space"
-```
+3.  **Restricted space 2: `"ML"`**
+    - Purpose: Contains machine learning models, development resources, and potentially experimental data.
+    - Access example:
+      - Only `"ML Team"` has access (read/write as needed).
+      - Completely isolated from other teams & individuals unless explicitly granted.
 
-You can also specify a space to put new entities implicitly by providing the name of the space to `ln.track`.
-
-```python
-ln.track(space="my space")
-# saved into the space "my space"
-ulabel = ln.ULabel(name="new label").save()
-```
-
-## Summary
+## Definitions
 
 Lamin's access management is built on:
 
@@ -164,29 +175,7 @@ Lamin's access management is built on:
 2.  **Teams:** Groups of users within an organization. Roles and permissions can be assigned collectively to teams.
 3.  **Instances:** LaminDB instances are the central databases at the heart of the data platform similar to how git repositories are central to GitHub.
 4.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
-
-### Example
-
-You might structure an instance with spaces like this.
-
-1.  **`"All"` space:**
-
-    - Purpose: Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance.
-    - Access: Any instance collaborator has at least read access.
-
-2.  **`"Curation"` space:**
-
-    - Purpose: Stores sensitive curated data requiring stricter access control.
-    - Access example:
-      - `"Curation Team"` has write access.
-      - `"ML Team"` has read access.
-      - No access granted to other teams by default.
-
-3.  **`"ML"` space:**
-    - Purpose: Contains machine learning models, development resources, and potentially experimental data.
-    - Access example:
-      - Only `"ML Team"` has access (read/write as needed).
-      - Completely isolated from other teams unless explicitly granted.
+5.  **Storage locations:** Access to storage locations in the cloud are implied by a user's access to instances & spaces.
 
 ### Spaces
 
@@ -201,9 +190,9 @@ Spaces are areas within instances that allow specific permissions to be set on s
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/rbMZRx714tQe4kZQ0000.png" style="width: 90%;"/>
 </div>
 
-### All space
+The default space of an instance:
 
-- **Default "All" space:** Every instance includes a default `"All"` space upon creation. This space holds common resources that are meant to be accessible to all instance collaborators.
+- **Default space:** Every instance includes a default space with the name `"All"` upon creation. This space holds common resources that are meant to be accessible to all instance collaborators.
 - **Read collaborators:** All collaborators added to an instance automatically receive read access to the default `"All"` space.
 - **Write collaborators:** Collaborators granted write or admin permissions at the instance level automatically receive write access to the default `"All"` space.
 
