@@ -1,28 +1,28 @@
-# Access management
+# Manage access
 
-This document outlines the access control system, detailing its architecture, key features, roles, and implementation guidelines.
+Lamin allows you and your users to manage access similar to how you'd do it on GitHub, Google Drive, Microsoft Sharepoint, or Notion. Your infrastructure team stays in full control over storage & database permissions directly on AWS or GCP.
 
-## Quickstart
+## How to
 
 ### Add or remove an instance collaborator
 
 1. Click on the settings icon in your instance (or via https://lamin.ai/your-organization/your-instance/settings), then select the **Collaborators** tab. You'll see a list of current collaborators with their roles.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
+</div>
 
 2. Click **Add collaborator**, enter user handle and click **Save**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9n4SBjsaCLagDapV0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9n4SBjsaCLagDapV0000.png" style="width: 90%;"/>
+</div>
 
 3. To remove a collaborator, click the three-dot menu next to their name and select **Remove collaborator**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
+</div>
 
 ### Create a restricted space with an instance
 
@@ -32,43 +32,43 @@ To create spaces:
 
 1. Go to **Spaces** in the left sidebar of your organization settings (or via https://lamin.ai/your-organization/spaces), then click **Create space**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LA45MBNYosthrCKb0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LA45MBNYosthrCKb0000.png" style="width: 90%;"/>
+</div>
 
 2. Enter a name for your space and click **Save**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/bRTJgrDBVJg0Xv7X0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/bRTJgrDBVJg0Xv7X0000.png" style="width: 90%;"/>
+</div>
 
 To add a collaborator to your space:
 
 1. Click the three-dot menu next to the space and select **Manage collaborators**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HdcNNk4mrS0kkwpr0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HdcNNk4mrS0kkwpr0000.png" style="width: 90%;"/>
+</div>
 
 2. Click **Add collaborator** and select a user.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8538ULC90NWkEixx0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8538ULC90NWkEixx0000.png" style="width: 90%;"/>
+</div>
 
 To attach an existing space to an instance:
 
 1. Click the three-dot menu next to the space and select **Manage instances**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LHFcJ58FGpRCVYWH0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/LHFcJ58FGpRCVYWH0000.png" style="width: 90%;"/>
+</div>
 
 2. Click **Attach instance** and select an instance.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8Jt9qChPmWzDOkMM0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8Jt9qChPmWzDOkMM0000.png" style="width: 90%;"/>
+</div>
 
 ### Create a team to manage access for multiple users
 
@@ -78,51 +78,51 @@ To create a team:
 
 1. Go to **Teams** in the left sidebar of your organization settings (or via https://lamin.ai/your-organization/teams), and click **Create team**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SSdvjNqXhBqf0F2f0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SSdvjNqXhBqf0F2f0000.png" style="width: 90%;"/>
+</div>
 
 2. Enter a team name and click **Save**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9qNxlJmAjvf8DYPH0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9qNxlJmAjvf8DYPH0000.png" style="width: 90%;"/>
+</div>
 
 To add members to your team:
 
 1. Click the three-dot menu next to the team and select **Manage members**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XRW2QhHPDnJvgpGS0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XRW2QhHPDnJvgpGS0000.png" style="width: 90%;"/>
+</div>
 
 2. Click **Add member** and select a user.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/ZOKcBJniLj8DG7cD0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/ZOKcBJniLj8DG7cD0000.png" style="width: 90%;"/>
+</div>
 
 To add a team to a space:
 
 1. From the space collaborators view, click **Add collaborator** and select a user.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DHouTU5KeskTalTv0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DHouTU5KeskTalTv0000.png" style="width: 90%;"/>
+</div>
 
 To add a team to your instance:
 
 1. From the instance collaborators view click on the **Teams** tab and click **Add team**.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/r7KLAklCYyvxqPIe0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/r7KLAklCYyvxqPIe0000.png" style="width: 90%;"/>
+</div>
 
 2. Select a team.
 
-   <div align="center">
-     <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
-   </div>
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
+</div>
 
 ### Manage access to entities through the API
 
