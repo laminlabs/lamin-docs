@@ -32,7 +32,7 @@ You need to be an instance admin.
 
 To create a space:
 
-1. Click on the settings tab at the top right of your instance page, then select the **Spaces** on the left sidebar, then click **Create space**.
+1. Click on the settings tab at the top right of your instance page, then select **Spaces** on the left sidebar, then click **Create space**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0000.png" style="width: 90%;"/>
@@ -63,6 +63,8 @@ To add a collaborator to your space:
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TT84gfGO05SZuNKx0000.png" style="width: 90%;"/>
 </div>
+
+Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple instances, if desired.
 
 ### Use a restricted space
 
