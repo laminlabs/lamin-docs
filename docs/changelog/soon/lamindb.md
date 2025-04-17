@@ -1,3 +1,4 @@
+- ✅ Decrypt token inside RLS (adapt tests) [PR](https://github.com/laminlabs/lamindb/pull/2680) [@Koncopd](https://github.com/Koncopd)
 - ✅ Decrypt token inside RLS (adapt tests) [PR](https://github.com/laminlabs/lamindb-setup/pull/1023) [@Koncopd](https://github.com/Koncopd)
 - ✏️ Improve installation hint for zarr [PR](https://github.com/laminlabs/lamindb/pull/2681) [@namsaraeva](https://github.com/namsaraeva)
 - ✨ Refresh db token on expiration [PR](https://github.com/laminlabs/lamindb/pull/2674) [@Koncopd](https://github.com/Koncopd)
