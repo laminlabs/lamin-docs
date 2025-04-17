@@ -72,7 +72,7 @@ To attach an existing space to an instance:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8Jt9qChPmWzDOkMM0000.png" style="width: 90%;"/>
 </div>
 
-### Use spaces on the API
+### Use a restricted space
 
 By passing `space` to `ln.track()`, you configure the `space` in which you save records during a tracked compute session.
 
