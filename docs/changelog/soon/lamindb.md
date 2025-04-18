@@ -1,3 +1,4 @@
+- ✨ Enable executing notebooks via `jupyter nbconvert --execute` [PR](https://github.com/laminlabs/lamindb/pull/2684) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Execute notebooks via nbconvert [PR](https://github.com/laminlabs/lamin-cli/pull/128) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Do not delete version family if user wants to retain store by passing `storage=False` to `artifact.delete()` [PR](https://github.com/laminlabs/lamindb/pull/2683) [@falexwolf](https://github.com/falexwolf)
 - ✅ Decrypt token inside RLS (adapt tests) [PR](https://github.com/laminlabs/lamindb/pull/2680) [@Koncopd](https://github.com/Koncopd)
