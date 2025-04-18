@@ -1,3 +1,4 @@
+- 🐛 Do not delete version family if user wants to retain store by passing `storage=False` to `artifact.delete()` [PR](https://github.com/laminlabs/lamindb/pull/2683) [@falexwolf](https://github.com/falexwolf)
 - ✅ Decrypt token inside RLS (adapt tests) [PR](https://github.com/laminlabs/lamindb/pull/2680) [@Koncopd](https://github.com/Koncopd)
 - ✅ Decrypt token inside RLS (adapt tests) [PR](https://github.com/laminlabs/lamindb-setup/pull/1023) [@Koncopd](https://github.com/Koncopd)
 - ✏️ Improve installation hint for zarr [PR](https://github.com/laminlabs/lamindb/pull/2681) [@namsaraeva](https://github.com/namsaraeva)
