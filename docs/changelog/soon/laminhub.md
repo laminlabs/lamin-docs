@@ -1,3 +1,4 @@
+- 📝 Improve on-prem data infrastructure setup documentation [PR](https://github.com/laminlabs/laminhub-public/pull/49) [@fredericenard](https://github.com/fredericenard)
 - 💄 Update main landing page image [PR](https://github.com/laminlabs/laminhub-public/pull/44) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `lamin.ai/explore` [PR](https://github.com/laminlabs/laminhub-public/pull/43) [@falexwolf](https://github.com/falexwolf)
 - ✨ Show projects for artifacts and transforms [PR](https://github.com/laminlabs/laminhub-public/pull/41) [@sunnyosun](https://github.com/sunnyosun)
