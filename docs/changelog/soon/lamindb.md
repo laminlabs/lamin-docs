@@ -1,3 +1,4 @@
+- ✅ Temp table based authentication (adapt tests) [PR](https://github.com/laminlabs/lamindb-setup/pull/1024) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable curating the index of a dataframe [PR](https://github.com/laminlabs/lamindb/pull/2688) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Delete version family if user wants to retain store by passing `storage=False` to `artifact.delete()`, but retain warning [PR](https://github.com/laminlabs/lamindb/pull/2687) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable executing notebooks via `jupyter nbconvert --execute` [PR](https://github.com/laminlabs/lamindb/pull/2684) [@falexwolf](https://github.com/falexwolf)
