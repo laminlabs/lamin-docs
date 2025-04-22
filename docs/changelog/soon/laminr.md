@@ -1,3 +1,4 @@
+- ✨ Implement setting of wrapped object slots [PR](https://github.com/laminlabs/laminr/pull/188) [@lazappi](https://github.com/lazappi)
 - 📝 Update link in welcome vignette [PR](https://github.com/laminlabs/laminr/pull/190) [@lazappi](https://github.com/lazappi)
 - 🐛 Clear temporary instance storage [PR](https://github.com/laminlabs/laminr/pull/189) [@lazappi](https://github.com/lazappi)
 - 🚸  Update Python dependency management [PR](https://github.com/laminlabs/laminr/pull/183) [@lazappi](https://github.com/lazappi)
