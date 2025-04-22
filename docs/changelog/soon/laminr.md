@@ -1,3 +1,4 @@
+- 🐛 Clear temporary instance storage [PR](https://github.com/laminlabs/laminr/pull/189) [@lazappi](https://github.com/lazappi)
 - 🚸  Update Python dependency management [PR](https://github.com/laminlabs/laminr/pull/183) [@lazappi](https://github.com/lazappi)
 - 🐛 Allow running `lamin_connect()` multiple times [PR](https://github.com/laminlabs/laminr/pull/176) [@lazappi](https://github.com/lazappi)
 - ✨ Track R environment [PR](https://github.com/laminlabs/laminr/pull/179) [@lazappi](https://github.com/lazappi)
