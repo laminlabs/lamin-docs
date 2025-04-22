@@ -1,3 +1,4 @@
+- ✅ Test auth errors [PR](https://github.com/laminlabs/lamindb-setup/pull/1025) [@Koncopd](https://github.com/Koncopd)
 - ✅ Temp table based authentication (adapt tests) [PR](https://github.com/laminlabs/lamindb/pull/2682) [@Koncopd](https://github.com/Koncopd)
 - ✅ Temp table based authentication (adapt tests) [PR](https://github.com/laminlabs/lamindb-setup/pull/1024) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable curating the index of a dataframe [PR](https://github.com/laminlabs/lamindb/pull/2688) [@falexwolf](https://github.com/falexwolf)
