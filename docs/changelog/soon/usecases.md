@@ -1,3 +1,4 @@
+- ✨ Added a Vitessce screenshot to the spatial guide [PR](https://github.com/laminlabs/lamin-usecases/pull/192) [@namsaraeva](https://github.com/namsaraeva)
 - ⬆️ Update single-cell example notebooks to be compatible with most recent scportrait release [PR](https://github.com/laminlabs/lamin-usecases/pull/190) [@sophiamaedler](https://github.com/sophiamaedler)
 - 💚 Fix for lamindb 1.4 [PR](https://github.com/laminlabs/lamin-usecases/pull/189) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI for lamindb 1.4 [PR](https://github.com/laminlabs/cellxgene-lamin/pull/123) [@falexwolf](https://github.com/falexwolf)
