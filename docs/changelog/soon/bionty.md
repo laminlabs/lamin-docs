@@ -1,0 +1,1 @@
+- 🐛 Fix downloading old ensembl genes [PR](https://github.com/laminlabs/bionty/pull/243) [@sunnyosun](https://github.com/sunnyosun)
