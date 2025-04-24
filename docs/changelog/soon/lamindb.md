@@ -1,3 +1,4 @@
+- ⬆️ Fix downloading old ensembl genes [PR](https://github.com/laminlabs/lamindb/pull/2698) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `.using` with fine-grained access instances and permissions test [PR](https://github.com/laminlabs/lamindb/pull/2697) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test auth errors [PR](https://github.com/laminlabs/lamindb-setup/pull/1025) [@Koncopd](https://github.com/Koncopd)
 - ✅ Temp table based authentication (adapt tests) [PR](https://github.com/laminlabs/lamindb/pull/2682) [@Koncopd](https://github.com/Koncopd)
