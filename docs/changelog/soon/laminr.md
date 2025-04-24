@@ -1,0 +1,1 @@
+- 🔖 Prepare v1.1.0 release [PR](https://github.com/laminlabs/laminr/pull/193) [@lazappi](https://github.com/lazappi)
