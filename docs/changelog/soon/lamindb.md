@@ -1,3 +1,4 @@
+- ✨ Can save csv artifacts in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2696) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Allow passing `key` to `save_vitessce_config()` [PR](https://github.com/laminlabs/lamindb/pull/2694) [@namsaraeva](https://github.com/namsaraeva)
 - ✨ Enable labeling with project during `lamin save` [PR](https://github.com/laminlabs/lamin-cli/pull/130) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Fix downloading old ensembl genes [PR](https://github.com/laminlabs/lamindb/pull/2698) [@sunnyosun](https://github.com/sunnyosun)
