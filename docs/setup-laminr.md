@@ -37,57 +37,20 @@ This version may have bug fixes and new features but could also be unstable so i
 ## Installing Python **lamindb**
 
 Using **{laminr}** requires the Python **lamindb** package to be available.
+For most users, **lamindb** and other packages should be installed automatically as they are required.
+This is done using the **{reticulate}** [package requirement](https://rstudio.github.io/reticulate/articles/package.html#declaring-python-requirements) system.
 
-### Using the included Python environment
+If you encounter problems importing **lamindb** or connecting to a LaminDB instance this is often caused by failing to find a valid Python environment.
+You can check which environment is being used with `reticulate::py_config()`.
 
-The recommended way to use **{laminr}** is to connect to the included `r-lamindb` Python environment.
-This can be created using:
+### Forcing the automatic environment
 
-```r
-laminr::install_lamindb()
-```
+If **{reticulate}** has detected another environment and you want to force it use the automatically created one, run `Sys.setenv("RETICULATE_USE_MANAGED_VENV" = "yes")` **_before_** loading **{laminr}** or any other package that uses **{reticulate}**.
 
-This should be run before the first time you load the **{laminr}** library.
-The **{reticulate}** package will then be told to use this environment when **{laminr}** is loaded.
-
-#### Adding additional packages
-
-If you want to add additional packages to the environment, these can be specified using the `extra_packages` argument.
-For example, to add the **bionty** package:
-
-```r
-laminr::install_lamindb(extra_packages = "bionty")
-```
-
-Example of Python packages providing additional registries that may be used in your instance:
-
-- [**bionty**](https://docs.lamin.ai/bionty) - Basic biological entities, coupled to public ontologies
-- [**clinicore**](https://docs.lamin.ai/clinicore) - Basic clinical entities
-- [**omop**](https://omop.lamin.ai/) - OMOP Common Data Model
-- [**wetlab**](https://docs.lamin.ai/wetlab) - Basic wetlab entities
-
-Installing additional Python packages also be useful if you want to use another R package which expects a particular Python module to be installed.
-
-#### Adding **lamindb** to another environment
-
-To install **lamindb** into another environment, set the `envname` argument:
-
-```r
-laminr::install_lamindb(envname = "your-env")
-```
-
-Be aware that there may be dependency conflicts with packages already installed in the environment and installing **lamindb** may cause package versions to change.
-
-### Setting the Python environment
-
-Running `library(laminr)` will tell **{reticulate}** to use the included `r-lamindb` environment (if it has not already connected to another environment).
-
-If you prefer to not load the whole package, and instead call functions using `laminr::`, you should tell **{reticulate}** which environment to use by running `reticulate::use_virtualenv("r-lamindb")`.
-
-#### Using another environment
+### Using another environment
 
 In some cases you may prefer to use another Python environment.
-This may be the case if you use another R package which requires a Python module or if you are managing your own Python environment.
+This may be because you use another R package which requires a Python module or you are already managing your own Python environment including **lamindb**.
 
 Specifying another Python environment to use should be done **_before_** loading **{laminr}** (or **{reticulate}**) using one of these methods:
 
@@ -97,6 +60,11 @@ Specifying another Python environment to use should be done **_before_** loading
 
 Details of the current Python environment can be viewed using `reticulate::py_config()`.
 For more information about setting the active Python environment see `vignette("versions", package = "reticulate")` (also [available here](https://rstudio.github.io/reticulate/articles/versions.html)).
+
+### Creating a **lamindb** environment
+
+In previous version of **{laminr}** we recommended using the `install_lamindb()` function to create an environment with the correct dependencies.
+This function has now been deprecated and we recommend using the automatic requirement system instead.
 
 ## Logging in to LaminDB
 
