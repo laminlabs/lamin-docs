@@ -1,3 +1,4 @@
+- ✨ Update wrapping to inherit Python function arguments [PR](https://github.com/laminlabs/laminr/pull/191) [@lazappi](https://github.com/lazappi)
 - 📝 Update CHANGELOG [PR](https://github.com/laminlabs/laminr/pull/187) [@lazappi](https://github.com/lazappi)
 - ✨ Update `view_lineage()` to display graphs [PR](https://github.com/laminlabs/laminr/pull/180) [@lazappi](https://github.com/lazappi)
 - ✨ Implement setting of wrapped object slots [PR](https://github.com/laminlabs/laminr/pull/188) [@lazappi](https://github.com/lazappi)
