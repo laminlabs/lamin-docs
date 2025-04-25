@@ -1,3 +1,4 @@
+- ✏️ Fix typo in bio-registry guide [PR](https://github.com/laminlabs/lamindb/pull/2703) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `ordered_set` in curators [PR](https://github.com/laminlabs/lamindb/pull/2700) [@sunnyosun](https://github.com/sunnyosun)
 - 🥅 Do not raise exceptions on problems with `copy_or_move_to_cache` within `Artifact.save` [PR](https://github.com/laminlabs/lamindb/pull/2699) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow `lamin save` with cloud paths [PR](https://github.com/laminlabs/lamin-cli/pull/129) [@Koncopd](https://github.com/Koncopd)
