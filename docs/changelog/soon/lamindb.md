@@ -1,3 +1,4 @@
+-  ♻️ Refactor annotating with inferred feature sets [PR](https://github.com/laminlabs/lamindb/pull/2690) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Avoid non-lazy loads of settngs on import of `lamindb.models` [PR](https://github.com/laminlabs/lamindb/pull/2704) [@Koncopd](https://github.com/Koncopd)
 - ✏️ Fix typo in bio-registry guide [PR](https://github.com/laminlabs/lamindb/pull/2703) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `ordered_set` in curators [PR](https://github.com/laminlabs/lamindb/pull/2700) [@sunnyosun](https://github.com/sunnyosun)
