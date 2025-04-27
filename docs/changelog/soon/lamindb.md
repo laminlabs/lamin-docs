@@ -1,3 +1,4 @@
+- ♻️ Separate legacy curators from new curators [PR](https://github.com/laminlabs/lamindb/pull/2707) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Execute curator examples and also show them in the curation guide [PR](https://github.com/laminlabs/lamindb/pull/2706) [@falexwolf](https://github.com/falexwolf)
 -  ♻️ Refactor annotating with inferred feature sets [PR](https://github.com/laminlabs/lamindb/pull/2690) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Avoid non-lazy loads of settngs on import of `lamindb.models` [PR](https://github.com/laminlabs/lamindb/pull/2704) [@Koncopd](https://github.com/Koncopd)
