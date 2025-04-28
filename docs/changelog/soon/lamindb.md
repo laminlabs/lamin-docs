@@ -1,3 +1,4 @@
+- 🚸 Restore validation error messages, add their fine-grained testing, and prepare `var` refactor in curators [PR](https://github.com/laminlabs/lamindb/pull/2709) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Separate `CatManager` usage for `.cat` attribute and as legacy interface [PR](https://github.com/laminlabs/lamindb/pull/2708) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Separate legacy curators from new curators [PR](https://github.com/laminlabs/lamindb/pull/2707) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Execute curator examples and also show them in the curation guide [PR](https://github.com/laminlabs/lamindb/pull/2706) [@falexwolf](https://github.com/falexwolf)
