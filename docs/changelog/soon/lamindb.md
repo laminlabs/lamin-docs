@@ -1,3 +1,4 @@
+-  ♻️ `AnnData`: enable explicit transposition in `var` schema definition [PR](https://github.com/laminlabs/lamindb/pull/2710) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Restore validation error messages, add their fine-grained testing, and prepare `var` refactor in curators [PR](https://github.com/laminlabs/lamindb/pull/2709) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Separate `CatManager` usage for `.cat` attribute and as legacy interface [PR](https://github.com/laminlabs/lamindb/pull/2708) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Separate legacy curators from new curators [PR](https://github.com/laminlabs/lamindb/pull/2707) [@falexwolf](https://github.com/falexwolf)
