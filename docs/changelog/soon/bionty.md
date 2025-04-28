@@ -1,0 +1,1 @@
+- ♻️ Do not change global verbosity [PR](https://github.com/laminlabs/bionty/pull/245) [@falexwolf](https://github.com/falexwolf)
