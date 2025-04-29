@@ -1,3 +1,4 @@
+- ♻️ Clearer naming conventions in the internal curator codebase [PR](https://github.com/laminlabs/lamindb/pull/2717) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Do not annotate with more than `n_max_records = 1000` [PR](https://github.com/laminlabs/lamindb/pull/2713) [@falexwolf](https://github.com/falexwolf)
 - 🥅 Catch and clarify RLS error on `Record.save()` [PR](https://github.com/laminlabs/lamindb/pull/2715) [@Koncopd](https://github.com/Koncopd)
 -  ♻️ `AnnData`: enable explicit transposition in `var` schema definition [PR](https://github.com/laminlabs/lamindb/pull/2710) [@falexwolf](https://github.com/falexwolf)
