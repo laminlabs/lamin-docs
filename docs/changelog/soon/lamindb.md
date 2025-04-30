@@ -1,3 +1,4 @@
+- 📝 Document `uid` generation, prettify API reference docs [PR](https://github.com/laminlabs/lamindb/pull/2719) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clearer naming conventions in the internal curator codebase [PR](https://github.com/laminlabs/lamindb/pull/2717) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Do not annotate with more than `n_max_records = 1000` [PR](https://github.com/laminlabs/lamindb/pull/2713) [@falexwolf](https://github.com/falexwolf)
 - 🥅 Catch and clarify RLS error on `Record.save()` [PR](https://github.com/laminlabs/lamindb/pull/2715) [@Koncopd](https://github.com/Koncopd)
