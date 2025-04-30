@@ -1,3 +1,4 @@
+- 🔊 Fix modules warning in `.using` [PR](https://github.com/laminlabs/lamindb/pull/2722) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Eliminate monkey patching of `django.db.models.QuerySet` and `django.db.models.Manager` [PR](https://github.com/laminlabs/lamindb/pull/2637) [@Koncopd](https://github.com/Koncopd)
 - 📝 Document `uid` generation, prettify API reference docs [PR](https://github.com/laminlabs/lamindb/pull/2719) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clearer naming conventions in the internal curator codebase [PR](https://github.com/laminlabs/lamindb/pull/2717) [@falexwolf](https://github.com/falexwolf)
