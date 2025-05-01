@@ -1,3 +1,4 @@
+- ✨ Enable to validate against nested dicts in `spatialdata` [PR](https://github.com/laminlabs/lamindb/pull/2723) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add `max_length` to serialized schema [PR](https://github.com/laminlabs/lamindb-setup/pull/1026) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Enable passing the 12-char stem uid to `ln.track()`, detect renames of notebooks, better experience with `nbconvert` execution [PR](https://github.com/laminlabs/lamindb/pull/2718) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable passing the 12-char long stem uid to `ln.track()` [PR](https://github.com/laminlabs/lamin-cli/pull/132) [@falexwolf](https://github.com/falexwolf)
