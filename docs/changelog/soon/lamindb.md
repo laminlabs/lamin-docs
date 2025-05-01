@@ -1,3 +1,4 @@
+- 🚸 Enable passing the 12-char stem uid to `ln.track()`, detect renames of notebooks, better experience with `nbconvert` execution [PR](https://github.com/laminlabs/lamindb/pull/2718) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable passing the 12-char long stem uid to `ln.track()` [PR](https://github.com/laminlabs/lamin-cli/pull/132) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Fix modules warning in `.using` [PR](https://github.com/laminlabs/lamindb/pull/2722) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Eliminate monkey patching of `django.db.models.QuerySet` and `django.db.models.Manager` [PR](https://github.com/laminlabs/lamindb/pull/2637) [@Koncopd](https://github.com/Koncopd)
