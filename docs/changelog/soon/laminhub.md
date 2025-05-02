@@ -1,3 +1,4 @@
+- 📝 Add documentation to register a db server [PR](https://github.com/laminlabs/laminhub-public/pull/50) [@fredericenard](https://github.com/fredericenard)
 - 📝 Improve on-prem data infrastructure setup documentation [PR](https://github.com/laminlabs/laminhub-public/pull/49) [@fredericenard](https://github.com/fredericenard)
 - 💄 Update main landing page image [PR](https://github.com/laminlabs/laminhub-public/pull/44) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `lamin.ai/explore` [PR](https://github.com/laminlabs/laminhub-public/pull/43) [@falexwolf](https://github.com/falexwolf)

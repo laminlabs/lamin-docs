@@ -1,3 +1,4 @@
+- 🚸 Handle schema updates decently [PR](https://github.com/laminlabs/lamindb/pull/2733) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Allow pass _skip_validation to ULabel [PR](https://github.com/laminlabs/lamindb/pull/2732) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Prettier `Schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2731) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Rename `components` keyword argument of `Schema()` to `slots` [PR](https://github.com/laminlabs/lamindb/pull/2727) [@falexwolf](https://github.com/falexwolf)
