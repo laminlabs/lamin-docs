@@ -1,3 +1,4 @@
+- 🚚 Rename `components` keyword argument of `Schema()` to `slots` [PR](https://github.com/laminlabs/lamindb/pull/2727) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add `using` as an arg to the `Schema` constructor [PR](https://github.com/laminlabs/lamindb/pull/2705) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/2729) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/2728) [@sunnyosun](https://github.com/sunnyosun)
