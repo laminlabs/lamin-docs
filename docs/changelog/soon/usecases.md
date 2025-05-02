@@ -1,3 +1,4 @@
+- ♻️ Refactor `scrna` use case to leverage `schema`-based curator and prepare lamindb release 1.5.0 [PR](https://github.com/laminlabs/lamin-usecases/pull/191) [@falexwolf](https://github.com/falexwolf)
 - 📝 Update readme after release of 0.0.1 [PR](https://github.com/laminlabs/nf-lamin/pull/62) [@rcannood](https://github.com/rcannood)
 - 👷 Only issue slack notif upon repository dispatch [PR](https://github.com/laminlabs/nf-lamin/pull/61) [@falexwolf](https://github.com/falexwolf)
 - ✨ `nf-lamin` plugin v0.0.1 [PR](https://github.com/laminlabs/nf-lamin/pull/50) [@rcannood](https://github.com/rcannood)
