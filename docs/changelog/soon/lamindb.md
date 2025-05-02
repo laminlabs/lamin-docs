@@ -1,3 +1,4 @@
+- ♻️ Add `using` as an arg to the `Schema` constructor [PR](https://github.com/laminlabs/lamindb/pull/2705) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/2729) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/2728) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Fully functional `ULabel` subtype validation, better syntax for it [PR](https://github.com/laminlabs/lamindb/pull/2726) [@falexwolf](https://github.com/falexwolf)
