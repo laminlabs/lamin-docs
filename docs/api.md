@@ -1,6 +1,6 @@
 # APIs
 
-Use the left sidbar to browse core APIs and modules.
+Use the left sidebar to browse core APIs and modules.
 
 ```{toctree}
 :maxdepth: 1
