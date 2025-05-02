@@ -1,3 +1,4 @@
+- 🎨 Allow pass _skip_validation to ULabel [PR](https://github.com/laminlabs/lamindb/pull/2732) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Prettier `Schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2731) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Rename `components` keyword argument of `Schema()` to `slots` [PR](https://github.com/laminlabs/lamindb/pull/2727) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add `using` as an arg to the `Schema` constructor [PR](https://github.com/laminlabs/lamindb/pull/2705) [@falexwolf](https://github.com/falexwolf)
