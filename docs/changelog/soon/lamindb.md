@@ -1,3 +1,4 @@
+- ♻️ Support dictionary-type features in bulk queries, handle clean up of dictionary-type feature values [PR](https://github.com/laminlabs/lamindb/pull/2745) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Allow pass `_aux` to `ULabel` [PR](https://github.com/laminlabs/lamindb/pull/2744) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix curating DataFrame index & 🚸 Automatically pass validation of ensembl gene IDs  & ✨ add curator __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2742) [@Zethson](https://github.com/Zethson)
 - 🚸 For artifacts, improve (1) bulk annotation with features + (2) queries by features [PR](https://github.com/laminlabs/lamindb/pull/2740) [@falexwolf](https://github.com/falexwolf)
