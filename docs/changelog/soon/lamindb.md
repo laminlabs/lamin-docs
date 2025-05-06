@@ -1,3 +1,4 @@
+- 🎨 Allow pass `_aux` to `ULabel` [PR](https://github.com/laminlabs/lamindb/pull/2744) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix curating DataFrame index & 🚸 Automatically pass validation of ensembl gene IDs  & ✨ add curator __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2742) [@Zethson](https://github.com/Zethson)
 - 🚸 For artifacts, improve (1) bulk annotation with features + (2) queries by features [PR](https://github.com/laminlabs/lamindb/pull/2740) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `ArtifactQuerySet` with `.load()` and `.open()` and `.mapped()` [PR](https://github.com/laminlabs/lamindb/pull/2743) [@Koncopd](https://github.com/Koncopd)
