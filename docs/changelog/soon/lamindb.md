@@ -1,1 +1,2 @@
+- 👷 Refactor storage management during CI runs [PR](https://github.com/laminlabs/lamindb/pull/2748) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Adapt `save_tiledbsoma_experiment` to `tiledbsoma==1.16.2` [PR](https://github.com/laminlabs/lamindb/pull/2746) [@Koncopd](https://github.com/Koncopd)
