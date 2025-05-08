@@ -1,1 +1,2 @@
+- 🐛 Reset SpatialData path when access in-memory representation [PR](https://github.com/laminlabs/lamindb/pull/2751) [@Zethson](https://github.com/Zethson)
 - ✨ Implement `select_storage_or_parent` [PR](https://github.com/laminlabs/lamindb-setup/pull/1027) [@Koncopd](https://github.com/Koncopd)
