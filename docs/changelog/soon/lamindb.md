@@ -1,3 +1,4 @@
+- 🐛 Fix display of parents & children in view_parents [PR](https://github.com/laminlabs/lamindb/pull/2749) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix unique constraint in composite schemas [PR](https://github.com/laminlabs/lamindb/pull/2747) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix storage tests [PR](https://github.com/laminlabs/lamin-cli/pull/133) [@falexwolf](https://github.com/falexwolf)
 - 👷 Refactor storage management during CI runs [PR](https://github.com/laminlabs/lamindb/pull/2748) [@falexwolf](https://github.com/falexwolf)
