@@ -1,3 +1,4 @@
+- 🎨 Fix `feature.describe` when value is a list [PR](https://github.com/laminlabs/lamindb/pull/2754) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Mark internal lamindb-produced artifacts with `kind="__lamindb__"` instead of `_branch_code=0` [PR](https://github.com/laminlabs/lamindb/pull/2750) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Reset SpatialData path when access in-memory representation [PR](https://github.com/laminlabs/lamindb/pull/2751) [@Zethson](https://github.com/Zethson)
 - ✨ Implement `select_storage_or_parent` [PR](https://github.com/laminlabs/lamindb-setup/pull/1027) [@Koncopd](https://github.com/Koncopd)
