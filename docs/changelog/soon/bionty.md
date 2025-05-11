@@ -1,2 +1,3 @@
+- ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/bionty/pull/251) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor uid encoding so that it becomes usable in the hub [PR](https://github.com/laminlabs/bionty/pull/247) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do not change global verbosity [PR](https://github.com/laminlabs/bionty/pull/245) [@falexwolf](https://github.com/falexwolf)
