@@ -1,3 +1,4 @@
+- ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/clinicore/pull/20) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor spatialdata guide [PR](https://github.com/laminlabs/lamin-usecases/pull/193) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `scrna` use case to leverage `schema`-based curator and prepare lamindb release 1.5.0 [PR](https://github.com/laminlabs/lamin-usecases/pull/191) [@falexwolf](https://github.com/falexwolf)
 - 📝 Update readme after release of 0.0.1 [PR](https://github.com/laminlabs/nf-lamin/pull/62) [@rcannood](https://github.com/rcannood)
