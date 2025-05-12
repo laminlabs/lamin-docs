@@ -1,3 +1,4 @@
+- 🚸 Integrate the `Param` into the `Feature` registry [PR](https://github.com/laminlabs/lamindb/pull/2763) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/lamindb/pull/2760) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename instance and paths for writelog tests [PR](https://github.com/laminlabs/lamindb/pull/2761) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/lamindb-setup/pull/1030) [@falexwolf](https://github.com/falexwolf)
