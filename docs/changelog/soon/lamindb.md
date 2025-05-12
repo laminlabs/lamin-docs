@@ -1,3 +1,4 @@
+- ♻️ Check `central` for registered storages [PR](https://github.com/laminlabs/lamindb/pull/2753) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Correct field name in `_select_storage_or_parent` [PR](https://github.com/laminlabs/lamindb-setup/pull/1031) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Integrate the `Param` into the `Feature` registry [PR](https://github.com/laminlabs/lamindb/pull/2763) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/lamindb/pull/2760) [@falexwolf](https://github.com/falexwolf)
