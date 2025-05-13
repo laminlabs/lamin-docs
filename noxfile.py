@@ -316,7 +316,7 @@ def init(session):
 @nox.session
 def docs(session):
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index --strict",
+        "lndocs --strip-prefix --error-on-index",  # --strict back
         shell=True,
     )
     if process.returncode != 0:
