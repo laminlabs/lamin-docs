@@ -1,3 +1,4 @@
+- 👷 Log bionty version [PR](https://github.com/laminlabs/laminr/pull/196) [@falexwolf](https://github.com/falexwolf)
 - 👷 Update `lamindb` version used on GitHub actions [PR](https://github.com/laminlabs/laminr/pull/186) [@lazappi](https://github.com/lazappi)
 - 👷 Add render markdown manual step to test-docs GHA [PR](https://github.com/laminlabs/laminr/pull/181) [@lazappi](https://github.com/lazappi)
 - 🔖 Prepare v1.1.0 release [PR](https://github.com/laminlabs/laminr/pull/193) [@lazappi](https://github.com/lazappi)
