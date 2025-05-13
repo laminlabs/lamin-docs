@@ -1,3 +1,4 @@
+- 🐛 Fix schema transfer [PR](https://github.com/laminlabs/lamindb/pull/2767) [@Zethson](https://github.com/Zethson)
 - 🚸 Improve `DoesNotExist` error message upon `DBRecord.get()` [PR](https://github.com/laminlabs/lamindb/pull/2755) [@Zethson](https://github.com/Zethson)
 - ♻️ Check `central` for registered storages [PR](https://github.com/laminlabs/lamindb/pull/2753) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Correct field name in `_select_storage_or_parent` [PR](https://github.com/laminlabs/lamindb-setup/pull/1031) [@Koncopd](https://github.com/Koncopd)
