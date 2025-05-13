@@ -1,3 +1,4 @@
+- 🎨 Run all on dispatch & fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/196) [@Zethson](https://github.com/Zethson)
 - 💄 Polish scrna guide [PR](https://github.com/laminlabs/lamin-usecases/pull/194) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/wetlab/pull/113) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/clinicore/pull/20) [@falexwolf](https://github.com/falexwolf)
