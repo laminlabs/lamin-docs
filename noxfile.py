@@ -276,13 +276,19 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    branch = "release" if IS_PR else "release"
-    install_lamindb(
-        session,
-        branch=branch,
-        extras="bionty,jupyter,gcp,wetlab,clinicore",
-        target_dir="tmp_lamindb",
-    )
+    branch = "pypi" if IS_PR else "pypi"
+    if branch == "pypi":
+        run(
+            session,
+            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab,clinicore]",
+        )
+    else:
+        install_lamindb(
+            session,
+            branch=branch,
+            extras="bionty,jupyter,gcp,wetlab,clinicore",
+            target_dir="tmp_lamindb",
+        )
     run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "uv pip install --system scanpy")
     run(session, "lamin settings set private-django-api true")
@@ -310,8 +316,8 @@ def init(session):
 @nox.session
 def docs(session):
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index",
-        shell=True,  # TODO: --strict back
+        "lndocs --strip-prefix --error-on-index --strict",
+        shell=True,
     )
     if process.returncode != 0:
         # rerun without strict option so see all warnings
