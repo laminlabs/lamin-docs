@@ -1,3 +1,4 @@
+- 🔇 Remove dispatch success slack notification [PR](https://github.com/laminlabs/lamindb-setup/pull/1033) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Catch exceptions on creating lamin settings directory [PR](https://github.com/laminlabs/lamindb-setup/pull/1032) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve `DoesNotExist` error message upon `DBRecord.get()` [PR](https://github.com/laminlabs/lamindb/pull/2755) [@Zethson](https://github.com/Zethson)
 - ♻️ Check `central` for registered storages [PR](https://github.com/laminlabs/lamindb/pull/2753) [@Koncopd](https://github.com/Koncopd)
