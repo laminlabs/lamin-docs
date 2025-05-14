@@ -5,8 +5,8 @@
 Read & write:
 
 - Local file systems
-- Amazon S3
-- S3 compatible storage services, e.g., MinIO & Cloudflare R2
+- AWS S3
+- S3-compatible storage services, e.g., MinIO & Cloudflare R2
 - Google Cloud Storage
 
 Read only:
