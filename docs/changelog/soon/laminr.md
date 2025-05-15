@@ -1,3 +1,4 @@
+- :rocket: Release 1.1.1 [PR](https://github.com/laminlabs/laminr/pull/200) [@rcannood](https://github.com/rcannood)
 - :bug: Surround pak lockfile creation with try-catch to avoid breaking the finish process [PR](https://github.com/laminlabs/laminr/pull/198) [@rcannood](https://github.com/rcannood)
 - 👷 Log bionty version [PR](https://github.com/laminlabs/laminr/pull/196) [@falexwolf](https://github.com/falexwolf)
 - 👷 Update `lamindb` version used on GitHub actions [PR](https://github.com/laminlabs/laminr/pull/186) [@lazappi](https://github.com/lazappi)
