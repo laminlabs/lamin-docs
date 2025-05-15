@@ -1,3 +1,4 @@
+- 💚 Fix CI due to enabling fine-grained access on lamindata [PR](https://github.com/laminlabs/lamindb-setup/pull/1034) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve setting relationships of unsaved records UX [PR](https://github.com/laminlabs/lamindb/pull/2756) [@Zethson](https://github.com/Zethson)
 - 🔇 Remove dispatch success slack notification [PR](https://github.com/laminlabs/lamindb-setup/pull/1033) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Catch exceptions on creating lamin settings directory [PR](https://github.com/laminlabs/lamindb-setup/pull/1032) [@Koncopd](https://github.com/Koncopd)
