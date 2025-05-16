@@ -1,3 +1,4 @@
+- ✨ Add `is_run_input` to `Artifact.get()` and `Collection.get()` [PR](https://github.com/laminlabs/lamindb/pull/2771) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix legacy output attributes of transform [PR](https://github.com/laminlabs/lamindb/pull/2773) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI due to enabling fine-grained access on lamindata [PR](https://github.com/laminlabs/lamindb-setup/pull/1034) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve setting relationships of unsaved records UX [PR](https://github.com/laminlabs/lamindb/pull/2756) [@Zethson](https://github.com/Zethson)
