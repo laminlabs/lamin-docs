@@ -1,3 +1,4 @@
+- 🚸 Better error message when user passes manual `uid` to `track()` + anticipate that the user might want to create new transforms in some cases also if hash matches [PR](https://github.com/laminlabs/lamindb/pull/2774) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `is_run_input` to `Artifact.get()` and `Collection.get()` [PR](https://github.com/laminlabs/lamindb/pull/2771) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix legacy output attributes of transform [PR](https://github.com/laminlabs/lamindb/pull/2773) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI due to enabling fine-grained access on lamindata [PR](https://github.com/laminlabs/lamindb-setup/pull/1034) [@Koncopd](https://github.com/Koncopd)
