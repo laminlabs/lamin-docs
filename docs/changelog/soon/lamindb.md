@@ -1,3 +1,4 @@
+- 🩹 `_db` in `connect` now takes full precedence over hub and locally stored connections [PR](https://github.com/laminlabs/lamindb-setup/pull/1038) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2779) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not raise an error if a different db connection is explicitly provided on `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1037) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix connect test [PR](https://github.com/laminlabs/lamindb-setup/pull/1036) [@Koncopd](https://github.com/Koncopd)
