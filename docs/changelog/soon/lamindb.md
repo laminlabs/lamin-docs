@@ -1,3 +1,4 @@
+- 🥅 Do not fail if can not create cache dir [PR](https://github.com/laminlabs/lamindb-setup/pull/1039) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2781) [@Koncopd](https://github.com/Koncopd)
 - 🩹 `_db` in `connect` now takes full precedence over hub and locally stored connections [PR](https://github.com/laminlabs/lamindb-setup/pull/1038) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2779) [@Koncopd](https://github.com/Koncopd)
