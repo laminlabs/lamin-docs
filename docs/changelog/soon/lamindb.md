@@ -1,3 +1,4 @@
+- 🗃️ Set current space when transferring records [PR](https://github.com/laminlabs/lamindb/pull/2778) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Clearer error in `parse_cat_dtype` if cat dtype contains a module name and the module is not found [PR](https://github.com/laminlabs/lamindb/pull/2784) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2785) [@Koncopd](https://github.com/Koncopd)
 - 🥅 Do not fail if can not create cache dir [PR](https://github.com/laminlabs/lamindb-setup/pull/1039) [@Koncopd](https://github.com/Koncopd)
