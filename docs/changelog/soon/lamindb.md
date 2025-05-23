@@ -1,3 +1,4 @@
+- 🩹 Do not re-synchronize on `ImportError` in `Artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/2787) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve suffix mismatch error message [PR](https://github.com/laminlabs/lamindb/pull/2780) [@Zethson](https://github.com/Zethson)
 - 🗃️ Set current space when transferring records [PR](https://github.com/laminlabs/lamindb/pull/2778) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Clearer error in `parse_cat_dtype` if cat dtype contains a module name and the module is not found [PR](https://github.com/laminlabs/lamindb/pull/2784) [@Koncopd](https://github.com/Koncopd)
