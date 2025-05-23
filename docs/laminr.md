@@ -26,7 +26,7 @@ In addition to `lamindb`'s functionality, `laminr` exposes some functionality of
 - `lamin_login`
 - `lamin_logout`
 - `lamin_save`
-- `install_lamindb`
+- `lamin_settings`
 
 ```{toctree}
 :maxdepth: 1

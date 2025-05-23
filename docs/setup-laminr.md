@@ -63,7 +63,7 @@ For more information about setting the active Python environment see `vignette("
 
 ### Creating a **lamindb** environment
 
-In previous version of **{laminr}** we recommended using the `install_lamindb()` function to create an environment with the correct dependencies.
+In **{laminr}** versions prior to v1.1.0 we recommended using the `install_lamindb()` function to create an environment with the correct dependencies.
 This function has now been deprecated and we recommend using the automatic requirement system instead.
 
 ## Logging in to LaminDB
