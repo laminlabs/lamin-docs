@@ -1,3 +1,4 @@
+- ✨ Introduce a flexible `Record` registry [PR](https://github.com/laminlabs/lamindb/pull/2782) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Do not re-synchronize on `ImportError` in `Artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/2787) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve suffix mismatch error message [PR](https://github.com/laminlabs/lamindb/pull/2780) [@Zethson](https://github.com/Zethson)
 - 🗃️ Set current space when transferring records [PR](https://github.com/laminlabs/lamindb/pull/2778) [@Koncopd](https://github.com/Koncopd)
