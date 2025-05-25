@@ -1,3 +1,4 @@
+- 🎨 A couple minor additions to write logs [PR](https://github.com/laminlabs/lamindb/pull/2789) [@alexras](https://github.com/alexras)
 - ✨ Implement `writelog` backfill [PR](https://github.com/laminlabs/lamindb/pull/2738) [@alexras](https://github.com/alexras)
 - ✨ Introduce a flexible `Record` registry [PR](https://github.com/laminlabs/lamindb/pull/2782) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Do not re-synchronize on `ImportError` in `Artifact.load()` [PR](https://github.com/laminlabs/lamindb/pull/2787) [@Koncopd](https://github.com/Koncopd)
