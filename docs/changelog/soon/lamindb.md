@@ -1,3 +1,4 @@
+- ✨ Introduce a `Branch` registry [PR](https://github.com/laminlabs/lamindb-setup/pull/1040) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `DBRecord` to `SQLRecord` [PR](https://github.com/laminlabs/lamindb/pull/2790) [@falexwolf](https://github.com/falexwolf)
 - 🎨 A couple minor additions to write logs [PR](https://github.com/laminlabs/lamindb/pull/2789) [@alexras](https://github.com/alexras)
 - ✨ Implement `writelog` backfill [PR](https://github.com/laminlabs/lamindb/pull/2738) [@alexras](https://github.com/alexras)
