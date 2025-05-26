@@ -1,3 +1,4 @@
+- 🐛 Fix project labeling [PR](https://github.com/laminlabs/lamindb/pull/2792) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce a `Branch` registry [PR](https://github.com/laminlabs/lamindb/pull/2791) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce a `Branch` registry [PR](https://github.com/laminlabs/lamindb-setup/pull/1040) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `DBRecord` to `SQLRecord` [PR](https://github.com/laminlabs/lamindb/pull/2790) [@falexwolf](https://github.com/falexwolf)
