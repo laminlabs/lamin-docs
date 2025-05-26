@@ -1,3 +1,4 @@
+- 🐛 Handle empty values in `lamin_settings()` [PR](https://github.com/laminlabs/laminr/pull/202) [@lazappi](https://github.com/lazappi)
 - 🚸 Make sure instance modules are required [PR](https://github.com/laminlabs/laminr/pull/201) [@lazappi](https://github.com/lazappi)
 - :rocket: Release 1.1.1 [PR](https://github.com/laminlabs/laminr/pull/200) [@rcannood](https://github.com/rcannood)
 - :bug: Surround pak lockfile creation with try-catch to avoid breaking the finish process [PR](https://github.com/laminlabs/laminr/pull/198) [@rcannood](https://github.com/rcannood)
