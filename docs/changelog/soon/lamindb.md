@@ -1,3 +1,4 @@
+- 🏗️ Bulk of schema migrations for 1.6 [PR](https://github.com/laminlabs/lamindb/pull/2794) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix hub-local tests for "Make organization members independent from teams" [PR](https://github.com/laminlabs/lamindb-setup/pull/1035) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Add compatibility with zarr v3 [PR](https://github.com/laminlabs/lamindb/pull/2711) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix project labeling [PR](https://github.com/laminlabs/lamindb/pull/2792) [@falexwolf](https://github.com/falexwolf)
