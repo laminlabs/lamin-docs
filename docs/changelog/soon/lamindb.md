@@ -1,3 +1,4 @@
+- ♻️ No longer install `contenttypes` [PR](https://github.com/laminlabs/lamindb-setup/pull/1042) [@falexwolf](https://github.com/falexwolf)
 - ✨ Implement a `WriteLog` serde [PR](https://github.com/laminlabs/lamindb/pull/2796) [@alexras](https://github.com/alexras)
 - ✨ Add `WriteLog` replay [PR](https://github.com/laminlabs/lamindb/pull/2783) [@alexras](https://github.com/alexras)
 - ♻️ Do no longer duplicate tracking of predecessors through the corresponding link table on `Transform` [PR](https://github.com/laminlabs/lamindb/pull/2797) [@falexwolf](https://github.com/falexwolf)
