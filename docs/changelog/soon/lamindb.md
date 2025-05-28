@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2800) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to reset `django.conf.settings` to connect to another instance in the same process [PR](https://github.com/laminlabs/lamindb-setup/pull/1043) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Minor simplifications to `WriteLog` schema [PR](https://github.com/laminlabs/lamindb/pull/2798) [@falexwolf](https://github.com/falexwolf)
 - ♻️ No longer install `contenttypes` [PR](https://github.com/laminlabs/lamindb-setup/pull/1042) [@falexwolf](https://github.com/falexwolf)
