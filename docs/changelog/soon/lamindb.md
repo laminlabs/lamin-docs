@@ -1,3 +1,4 @@
+- ♻️ Support combined UID format for `lamindb_featurevalue` in `WriteLog` [PR](https://github.com/laminlabs/lamindb/pull/2799) [@alexras](https://github.com/alexras)
 - 🔈 Fix Pandera warning [PR](https://github.com/laminlabs/lamindb/pull/2803) [@Zethson](https://github.com/Zethson)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2802) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2800) [@Koncopd](https://github.com/Koncopd)
