@@ -1,3 +1,4 @@
+- ♻️ Move cloud-hitting tests into storage test group [PR](https://github.com/laminlabs/lamindb/pull/2804) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix transfer for cases in which genes are insufficiently populated [PR](https://github.com/laminlabs/lamindb/pull/2801) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Support combined UID format for `lamindb_featurevalue` in `WriteLog` [PR](https://github.com/laminlabs/lamindb/pull/2799) [@alexras](https://github.com/alexras)
 - 🔈 Fix Pandera warning [PR](https://github.com/laminlabs/lamindb/pull/2803) [@Zethson](https://github.com/Zethson)
