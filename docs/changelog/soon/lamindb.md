@@ -1,3 +1,4 @@
+- 🔈 Fix Pandera warning [PR](https://github.com/laminlabs/lamindb/pull/2803) [@Zethson](https://github.com/Zethson)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2802) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2800) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to reset `django.conf.settings` to connect to another instance in the same process [PR](https://github.com/laminlabs/lamindb-setup/pull/1043) [@Koncopd](https://github.com/Koncopd)
