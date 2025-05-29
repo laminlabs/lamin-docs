@@ -1,3 +1,4 @@
+- 🔊 Fix project hint in ln.track() [PR](https://github.com/laminlabs/lamindb/pull/2805) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support curating lists as values in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2676) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Move cloud-hitting tests into storage test group [PR](https://github.com/laminlabs/lamindb/pull/2804) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix transfer for cases in which genes are insufficiently populated [PR](https://github.com/laminlabs/lamindb/pull/2801) [@falexwolf](https://github.com/falexwolf)
