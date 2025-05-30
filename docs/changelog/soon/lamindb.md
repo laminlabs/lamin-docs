@@ -1,3 +1,4 @@
+- 👷 Exclude sub directory from source distribution on pypi [PR](https://github.com/laminlabs/lamindb/pull/2808) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Handle kind update [PR](https://github.com/laminlabs/lamindb/pull/2807) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move writelog to laminhub for time being [PR](https://github.com/laminlabs/lamindb/pull/2806) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Fix project hint in ln.track() [PR](https://github.com/laminlabs/lamindb/pull/2805) [@Koncopd](https://github.com/Koncopd)
