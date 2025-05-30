@@ -1,3 +1,4 @@
+- 🩹 Handle kind update [PR](https://github.com/laminlabs/lamindb/pull/2807) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move writelog to laminhub for time being [PR](https://github.com/laminlabs/lamindb/pull/2806) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Fix project hint in ln.track() [PR](https://github.com/laminlabs/lamindb/pull/2805) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support curating lists as values in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2676) [@sunnyosun](https://github.com/sunnyosun)
