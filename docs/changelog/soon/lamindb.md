@@ -1,3 +1,4 @@
+- ⬆️ Add a lower bound on pandera [PR](https://github.com/laminlabs/lamindb/pull/2812) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add tests and docs for multivalue curation [PR](https://github.com/laminlabs/lamindb/pull/2811) [@sunnyosun](https://github.com/sunnyosun)
 - 👷 Exclude sub directory from source distribution on pypi [PR](https://github.com/laminlabs/lamindb/pull/2808) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Handle kind update [PR](https://github.com/laminlabs/lamindb/pull/2807) [@falexwolf](https://github.com/falexwolf)
