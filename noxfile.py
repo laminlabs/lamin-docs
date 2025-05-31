@@ -316,7 +316,7 @@ def init(session):
 @nox.session
 def docs(session):
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index",  # --strict back
+        "lndocs --strip-prefix --error-on-index --export-text",  # --strict back
         shell=True,
     )
     if process.returncode != 0:
@@ -324,3 +324,11 @@ def docs(session):
         run(session, "lndocs --strip-prefix --error-on-index")
         # exit with error
         exit(1)
+    else:
+        import lamindb_setup as ln_setup
+
+        ln_setup.settings.auto_connect = False
+        import lamindb as ln
+
+        ln.connect("laminlabs/lamin-site-assets")
+        ln.Artifact("_build/lamin-docs.txt", key="docs-as-txt/lamin-docs.txt").save()
