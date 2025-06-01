@@ -1,3 +1,4 @@
+- ✨ Add schema-based `TiledbsomaExperimentCurator` [PR](https://github.com/laminlabs/lamindb/pull/2769) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix comparisons to `__isnull` for feature-based queries [PR](https://github.com/laminlabs/lamindb/pull/2809) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Add a lower bound on pandera [PR](https://github.com/laminlabs/lamindb/pull/2812) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add tests and docs for multivalue curation [PR](https://github.com/laminlabs/lamindb/pull/2811) [@sunnyosun](https://github.com/sunnyosun)
