@@ -1,3 +1,4 @@
+- 🐛 Ensure all models are properly imported in lamindb module root [PR](https://github.com/laminlabs/lamindb/pull/2815) [@fredericenard](https://github.com/fredericenard)
 - ✨ Add schema-based `TiledbsomaExperimentCurator` [PR](https://github.com/laminlabs/lamindb/pull/2769) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix comparisons to `__isnull` for feature-based queries [PR](https://github.com/laminlabs/lamindb/pull/2809) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Add a lower bound on pandera [PR](https://github.com/laminlabs/lamindb/pull/2812) [@Koncopd](https://github.com/Koncopd)
