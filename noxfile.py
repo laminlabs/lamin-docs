@@ -276,7 +276,7 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    branch = "release" if IS_PR else "release"
+    branch = "main" if IS_PR else "main"
     if branch == "pypi":
         run(
             session,
