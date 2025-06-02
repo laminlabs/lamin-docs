@@ -1,0 +1,1 @@
+- 🐛 Fix query feature associated labels from non-ULabel registries [PR](https://github.com/laminlabs/lamindb/pull/2818) [@sunnyosun](https://github.com/sunnyosun)
