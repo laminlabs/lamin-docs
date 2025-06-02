@@ -1,1 +1,2 @@
+- ✨ Flexible ontology sources [PR](https://github.com/laminlabs/lamindb/pull/2813) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix query feature associated labels from non-ULabel registries [PR](https://github.com/laminlabs/lamindb/pull/2818) [@sunnyosun](https://github.com/sunnyosun)
