@@ -3,8 +3,8 @@ The Python & R packages `lamindb` & `laminr` share _almost_ the same API (`.` �
 **Manage data & metadata with a unified API (“lakehouse”).**
 
 - Use a built-in SQLite/Postgres database to organize files, folders & arrays across any number of storage locations
-- Query & search across data & metadata: {class}`~lamindb.models.Record.filter`, {class}`~lamindb.models.Record.search`
-- Model entities as an {term}`ORM` which their own registry: {class}`~lamindb.models.Record`
+- Query & search across data & metadata: {class}`~lamindb.models.SQLRecord.filter`, {class}`~lamindb.models.SQLRecord.search`
+- Model entities as an {term}`ORM` which their own registry: {class}`~lamindb.models.SQLRecord`
 - Model files and folders as datasets & models via one class: {class}`~lamindb.Artifact`
 - Slice large array stores: {class}`~lamindb.Artifact.open` → [guide](cellxgene)
 - Cache & load artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`
