@@ -1,3 +1,4 @@
+- 🚸 Enable passing `--branch` and `--space` to `lamin save` [PR](https://github.com/laminlabs/lamin-cli/pull/134) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test access to the security schema [PR](https://github.com/laminlabs/lamindb/pull/2814) [@Koncopd](https://github.com/Koncopd)
 - ✨ Flexible ontology sources [PR](https://github.com/laminlabs/lamindb/pull/2813) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix query feature associated labels from non-ULabel registries [PR](https://github.com/laminlabs/lamindb/pull/2818) [@sunnyosun](https://github.com/sunnyosun)
