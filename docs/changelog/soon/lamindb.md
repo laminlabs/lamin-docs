@@ -1,2 +1,3 @@
+- Move `init` `expand_user` test [PR](https://github.com/laminlabs/lamindb-setup/pull/1045) [@Zethson](https://github.com/Zethson)
 - ✨ Expand user directory by default [PR](https://github.com/laminlabs/lamindb-setup/pull/1019) [@Zethson](https://github.com/Zethson)
 - ✨ Allow to use all http methods in `request_with_auth` [PR](https://github.com/laminlabs/lamindb-setup/pull/1044) [@Koncopd](https://github.com/Koncopd)
