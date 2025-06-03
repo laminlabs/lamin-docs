@@ -68,20 +68,26 @@ Note that you can also manage spaces from the **Spaces** tab of your **Organizat
 
 ### Use a restricted space
 
-By passing `space` to `ln.track()`, you configure the `space` in which you save records during a tracked compute session.
+To upload an artifact to a restricted space, pass `--space` to `lamin save`:
+
+```python
+lamin save ./myfile.txt --key myfile.txt --space "Our space"
+```
+
+By passing `space` to `ln.track()`, you determine where you save artifacts, collections, transforms, and runs in the remaining compute session.
 
 ```python
 ln.track(space="Our space")
-ln.ULabel(name="new label").save()  # saved into space "Our space"
+ln.Artifact("./myfile.txt", key="myfile.txt").save()  # saved into space "Our space"
 ```
 
-To move an entity from one space to another, set the `.space` field of its record.
+To move an entity into a restricted space, set the `.space` field of its record.
 
 ```python
-space = ln.Space.get(name="my space")  # select a space
+space = ln.Space.get(name="Our space")  # select a space
 ulabel = ln.ULabel.get(name="existing label")
 ulabel.space = space
-ulabel.save()  # save in space "my space"
+ulabel.save()  # saved in space "Our space"
 ```
 
 If a record isn't yet saved, setting the `.space` field determines the space in which you save the record.
