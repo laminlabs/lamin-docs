@@ -1,6 +1,0 @@
-- ♻️ No backward relationship on branch and space [PR](https://github.com/laminlabs/bionty/pull/256) [@falexwolf](https://github.com/falexwolf)
-- ✨ Flexible ontology sources [PR](https://github.com/laminlabs/bionty/pull/250) [@sunnyosun](https://github.com/sunnyosun)
-- ✨ Add record links to every registry [PR](https://github.com/laminlabs/bionty/pull/254) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/bionty/pull/251) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Refactor uid encoding so that it becomes usable in the hub [PR](https://github.com/laminlabs/bionty/pull/247) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Do not change global verbosity [PR](https://github.com/laminlabs/bionty/pull/245) [@falexwolf](https://github.com/falexwolf)
