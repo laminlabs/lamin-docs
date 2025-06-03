@@ -4,11 +4,11 @@ The Python & R packages `lamindb` & `laminr` share _almost_ the same API (`.` â†
 
 - Use a built-in SQLite/Postgres database to organize files, folders & arrays across any number of storage locations
 - Query & search across data & metadata: {class}`~lamindb.models.SQLRecord.filter`, {class}`~lamindb.models.SQLRecord.search`
-- Model entities as an {term}`ORM` which their own registry: {class}`~lamindb.models.SQLRecord`
-- Model files and folders as datasets & models via one class: {class}`~lamindb.Artifact`
+- Model entities via registries based on the Django {term}`ORM`: {class}`~lamindb.models.SQLRecord`
+- Model files and folders as datasets & models: {class}`~lamindb.Artifact`
 - Slice large array stores: {class}`~lamindb.Artifact.open` â†’ [guide](cellxgene)
 - Cache & load artifacts: {class}`~lamindb.Artifact.cache`, {class}`~lamindb.Artifact.load`
-- Manage features & labels: {class}`~lamindb.Feature`, {class}`~lamindb.Schema`, {class}`~lamindb.ULabel`
+- Manage features & labels: {class}`~lamindb.Feature`, {class}`~lamindb.Schema`, {class}`~lamindb.ULabel`, {class}`~bionty.Gene`, {class}`~bionty.Protein`, {class}`~bionty.CellType`, {class}`~bionty.CellLine`, ...
 - Use array formats in memory & storage: DataFrame, [AnnData](/arrays), [MuData](multimodal), [tiledbsoma](cellxgene), ... backed by parquet, [zarr](/arrays), [tiledb](cellxgene), [HDF5](/arrays), [h5ad](/arrays), [DuckDB](rxrx), ...
 - Create iterable & queryable collections of artifacts with data loaders: {class}`~lamindb.Collection`
 - Version artifacts, collections & transforms: {class}`~lamindb.models.IsVersioned`
@@ -27,7 +27,7 @@ The Python & R packages `lamindb` & `laminr` share _almost_ the same API (`.` â†
 - Use >20 public ontologies with module {mod}`bionty`: {class}`~bionty.Gene`, {class}`~bionty.Protein`, {class}`~bionty.CellMarker`, {class}`~bionty.ExperimentalFactor`, {class}`~bionty.CellType`, {class}`~bionty.CellLine`, {class}`~bionty.Tissue`, ...
 - Use a canonical wetlab database schema module {mod}`wetlab`
 - Safeguards against typos & duplications
-- Version ontology
+- Version ontologies and manage their life cycle
 
 **Validate, standardize & annotate.**
 
