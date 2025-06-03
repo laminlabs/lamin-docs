@@ -2,7 +2,11 @@
 
 ```{important}
 
-Please see our [Trust Center](https://trust.lamin.ai) for controls, subprocessors, and certifications. We're currently undergoing our first audits.
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/jo0O8ip85njL4wYj0000.png" width=100 style="background: transparent; margin-right: 5em;" align="right">
+
+Please see our [Trust Center](https://trust.lamin.ai) for controls & subprocessors.
+
+We're SOC2 certified and monitor compliance with HIPAA and ISO 27001.
 
 ```
 
@@ -27,7 +31,7 @@ All cloud data in LaminDB instances is hosted in your or our AWS S3 and GCP buck
 - On the **Team plan**, distributed Postgres server endpoints, by default, are accessible from any IP on the public internet while being protected through vulnerability scans. Access from suspicious IP addresses is immediately black-listed. You can opt to only allow access from specific whitelisted IP addresses.
 - On the **Enterprise plan**, Postgres servers can be deployed in your VPC in your AWS account.
 
-On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes storage access management more secure & intuitive ({doc}`access`).
+On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes access management more intuitive ({doc}`access`).
 
 ## Security at Lamin
 
