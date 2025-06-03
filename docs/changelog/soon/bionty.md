@@ -1,3 +1,4 @@
+- ♻️ No backward relationship on branch and space [PR](https://github.com/laminlabs/bionty/pull/256) [@falexwolf](https://github.com/falexwolf)
 - ✨ Flexible ontology sources [PR](https://github.com/laminlabs/bionty/pull/250) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add record links to every registry [PR](https://github.com/laminlabs/bionty/pull/254) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/bionty/pull/251) [@falexwolf](https://github.com/falexwolf)
