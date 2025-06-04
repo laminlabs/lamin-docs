@@ -1,3 +1,4 @@
+- ✨ Pure zarr v3 dataset [PR](https://github.com/laminlabs/modlyn/pull/7) [@Koncopd](https://github.com/Koncopd)
 - 👷 Try to fix docs [PR](https://github.com/laminlabs/modlyn/pull/6) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Remove pip pre config [PR](https://github.com/laminlabs/moscan/pull/3) [@Zethson](https://github.com/Zethson)
 - 💚 Fix CI [PR](https://github.com/laminlabs/moscan/pull/1) [@falexwolf](https://github.com/falexwolf)
