@@ -1,3 +1,4 @@
+- 🏷️ Mark as py.typed and improve typing of lamindb_setup.connect() [PR](https://github.com/laminlabs/lamindb-setup/pull/1047) [@ap--](https://github.com/ap--)
 - 🏷️ BaseSQLRecord.save should return self type [PR](https://github.com/laminlabs/lamindb/pull/2823) [@ap--](https://github.com/ap--)
 - 🏷️ Mark as py.typed to allow mypy inspection [PR](https://github.com/laminlabs/lamindb/pull/2822) [@ap--](https://github.com/ap--)
 - ♻️ Enable passing `branch` and `space` everywhere [PR](https://github.com/laminlabs/lamindb/pull/2821) [@falexwolf](https://github.com/falexwolf)
