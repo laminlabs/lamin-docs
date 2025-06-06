@@ -1,3 +1,4 @@
+- 🏷️ Mark as py.typed to allow mypy inspection [PR](https://github.com/laminlabs/lamindb/pull/2822) [@ap--](https://github.com/ap--)
 - ♻️ Enable passing `branch` and `space` everywhere [PR](https://github.com/laminlabs/lamindb/pull/2821) [@falexwolf](https://github.com/falexwolf)
 - Move `init` `expand_user` test [PR](https://github.com/laminlabs/lamindb-setup/pull/1045) [@Zethson](https://github.com/Zethson)
 - ✨ Expand user directory by default [PR](https://github.com/laminlabs/lamindb-setup/pull/1019) [@Zethson](https://github.com/Zethson)
