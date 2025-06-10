@@ -1,4 +1,4 @@
-# APIs
+# API Reference
 
 Use the left sidebar to browse core APIs and modules.
 
@@ -10,6 +10,7 @@ Use the left sidebar to browse core APIs and modules.
 cli
 lamindb
 laminr
+sql
 rest
 ```
 
