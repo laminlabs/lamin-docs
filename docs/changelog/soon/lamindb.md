@@ -1,3 +1,4 @@
+- 🎨 Refactor TiledbsomaExperimentCurator related code [PR](https://github.com/laminlabs/lamindb/pull/2816) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix call_with_fallback in case fallback is needed [PR](https://github.com/laminlabs/lamindb-setup/pull/1049) [@Koncopd](https://github.com/Koncopd)
 - ✅ Expand tests for sheets [PR](https://github.com/laminlabs/lamindb/pull/2820) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ BaseSQLRecord.save should return self type [PR](https://github.com/laminlabs/lamindb/pull/2823) [@ap--](https://github.com/ap--)
