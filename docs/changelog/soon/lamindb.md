@@ -1,3 +1,4 @@
+- 🚸 Leverage panderas lazy validation [PR](https://github.com/laminlabs/lamindb/pull/2826) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose `overwrite_versions` [PR](https://github.com/laminlabs/lamindb/pull/2830) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Hide artifacts with kind `__lamindb_run__` [PR](https://github.com/laminlabs/lamindb/pull/2829) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Allow passing `run_id` to `Artifact` constructor [PR](https://github.com/laminlabs/lamindb/pull/2827) [@falexwolf](https://github.com/falexwolf)
