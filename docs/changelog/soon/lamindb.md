@@ -1,3 +1,4 @@
+- 🚸 Add keep with default "first" to Lookup [PR](https://github.com/laminlabs/lamindb/pull/2836) [@sunnyosun](https://github.com/sunnyosun)
 - 🔊 Log side-effects [PR](https://github.com/laminlabs/lamindb-setup/pull/1054) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Batch save [PR](https://github.com/laminlabs/lamindb/pull/2834) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `settings.is_connected` to check if the current instance is properly connected for use [PR](https://github.com/laminlabs/lamindb-setup/pull/1053) [@Koncopd](https://github.com/Koncopd)
