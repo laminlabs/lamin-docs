@@ -1,3 +1,4 @@
+- ♻️ Explicitly set `_write_settings=True` in `lamin connect` [PR](https://github.com/laminlabs/lamin-cli/pull/135) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Have transfer comply with `settings.annotation.n_max_records` and fix a bug related to repeated schema transfer [PR](https://github.com/laminlabs/lamindb/pull/2835) [@falexwolf](https://github.com/falexwolf)
 - Improve lookup docstring [PR](https://github.com/laminlabs/lamindb/pull/2837) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Add keep with default "first" to Lookup [PR](https://github.com/laminlabs/lamindb/pull/2836) [@sunnyosun](https://github.com/sunnyosun)
