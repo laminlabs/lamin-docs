@@ -1,3 +1,4 @@
+- 🐛 Fix transfer from instance with superset of module to instance with subset of modules in presence of schema-annotation in the additional modules [PR](https://github.com/laminlabs/lamindb/pull/2833) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better message for `ModuleWasntConfigured` [PR](https://github.com/laminlabs/lamindb-setup/pull/1052) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Define all exceptions in `lamindb_setup.errors` [PR](https://github.com/laminlabs/lamindb-setup/pull/1051) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Leverage panderas lazy validation [PR](https://github.com/laminlabs/lamindb/pull/2826) [@falexwolf](https://github.com/falexwolf)
