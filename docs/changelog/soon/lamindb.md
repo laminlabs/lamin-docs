@@ -1,3 +1,4 @@
+- 🔊 Log side-effects [PR](https://github.com/laminlabs/lamindb-setup/pull/1054) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Batch save [PR](https://github.com/laminlabs/lamindb/pull/2834) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add `settings.is_connected` to check if the current instance is properly connected for use [PR](https://github.com/laminlabs/lamindb-setup/pull/1053) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix transfer from instance with superset of module to instance with subset of modules in presence of schema-annotation in the additional modules [PR](https://github.com/laminlabs/lamindb/pull/2833) [@falexwolf](https://github.com/falexwolf)
