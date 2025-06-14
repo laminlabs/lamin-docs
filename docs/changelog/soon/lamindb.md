@@ -1,3 +1,4 @@
+- 👷 Clean up test instance in hub after failed re-initialization run [PR](https://github.com/laminlabs/lamindb/pull/2840) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor storage deletion [PR](https://github.com/laminlabs/lamindb/pull/2839) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor storage deletion [PR](https://github.com/laminlabs/lamindb-setup/pull/1057) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `FeatureManager` [PR](https://github.com/laminlabs/lamindb/pull/2838) [@falexwolf](https://github.com/falexwolf)
