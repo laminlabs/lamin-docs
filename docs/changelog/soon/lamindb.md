@@ -1,3 +1,4 @@
+- ♻️ Refactor storage deletion [PR](https://github.com/laminlabs/lamindb/pull/2839) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor storage deletion [PR](https://github.com/laminlabs/lamindb-setup/pull/1057) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `FeatureManager` [PR](https://github.com/laminlabs/lamindb/pull/2838) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove long-deprecated `ln.setup.load()` and to-lamindb-v1 migration logic [PR](https://github.com/laminlabs/lamindb-setup/pull/1055) [@falexwolf](https://github.com/falexwolf)
