@@ -1,3 +1,4 @@
+- 📝 Improve storage docs [PR](https://github.com/laminlabs/lamindb/pull/2842) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable users to more conveniently create storage locations, make storage management more transparent [PR](https://github.com/laminlabs/lamindb/pull/2841) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Simplify storage marking & storage-from-hub retrieval [PR](https://github.com/laminlabs/lamindb-setup/pull/1059) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor storage registration [PR](https://github.com/laminlabs/lamindb-setup/pull/1058) [@falexwolf](https://github.com/falexwolf)
