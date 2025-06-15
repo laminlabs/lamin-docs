@@ -1,3 +1,4 @@
+- ♻️ Simplify storage marking & storage-from-hub retrieval [PR](https://github.com/laminlabs/lamindb-setup/pull/1059) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor storage registration [PR](https://github.com/laminlabs/lamindb-setup/pull/1058) [@falexwolf](https://github.com/falexwolf)
 - 👷 Clean up test instance in hub after failed re-initialization run [PR](https://github.com/laminlabs/lamindb/pull/2840) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor storage deletion [PR](https://github.com/laminlabs/lamindb/pull/2839) [@falexwolf](https://github.com/falexwolf)
