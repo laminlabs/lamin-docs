@@ -246,8 +246,6 @@ Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permi
 - **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface. (This will soon be replaced by endpoints proxying S3).
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
 
-LaminHub's permission system makes it easy to minimize attack surfaces by implementing the principle of least privilege.
-
 ## Low-level access management
 
 While not necessary, you can still manage access on the AWS, GCP, or database level yourself, provided you have sufficient permissions for the corresponding systems in your cloud infrastructure.
