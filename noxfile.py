@@ -31,8 +31,8 @@ FAQ_MATCH = """\
 ```
 """
 
+# currently moot, because no additional FAQ content is here
 FAQ_APPEND = """\
-faq/storage
 ```
 """
 
@@ -199,6 +199,7 @@ def pull_artifacts(session):
     replace_content("docs/lamindb.md", {"# `lamindb`": "# `Python` / `lamindb`"})
 
     # lamindb faq
+    Path("docs/faq/").mkdir(exist_ok=True, parents=True)
     for path in Path("lamindb/faq").glob("*"):
         sync_path(path, Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
