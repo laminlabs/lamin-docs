@@ -247,3 +247,32 @@ Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permi
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
 
 LaminHub's permission system makes it easy to minimize attack surfaces by implementing the principle of least privilege.
+
+## How to configure an S3 bucket for public reads?
+
+For a public read-only instance the bucket should have certain policies configured.
+You can read about s3 bucket policies [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html). For a public read-only instance the bucket should have `s3:GetObject` and `s3:ListBucket` permissions. The example policy is given below:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AddPerm",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    },
+    {
+      "Sid": "AllowList",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::your-bucket-name"
+    }
+  ]
+}
+```
+
+Change `your-bucket-name` above to the name of your s3 bucket.
