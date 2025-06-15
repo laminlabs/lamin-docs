@@ -207,21 +207,21 @@ Users can be collaborators either directly as individual users or through team m
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/61iaMcMV4NtDxFnb0000.png" style="width: 70%;"/>
 </div>
 
-## Role definitions
+### Roles
 
-### Organization roles
+#### Organization roles
 
 - **Admins:** Have complete access and control over all resources within the organization, including managing teams, instances, spaces, and organization settings.
 - **Managers:** Can manage teams, instances, and spaces but may have limitations on modifying organization-level settings.
 - **Members:** Can be granted access to specific resources (teams, instances, spaces) based on assignments. Default access might be limited.
 - **Guests:** Intended for external collaborators with limited access, typically restricted to specific instances or spaces they are explicitly invited to.
 
-### Team roles
+#### Team roles
 
 - **Admins:** Can add/remove team members, define member roles within the team context, and manage team resources or settings. Can typically perform any action a member can.
 - **Members:** Can access resources granted to the team (e.g., specific instances or spaces).
 
-### Instance roles
+#### Instance roles
 
 - **Admins:** Can add/remove collaborators from the instance, define collaborator roles within the instance, and manage instance settings. For data access, automatically receive write access to the default "All" space only.
 - **Read collaborators:** Automatically receive read access to the default "All" space only.
@@ -229,7 +229,7 @@ Users can be collaborators either directly as individual users or through team m
 
 **Note:** Permissions for spaces other than the default "All" space must be managed separately and independently of the instance collaborator role.
 
-### Space roles
+#### Space roles
 
 - **Admins:** Have full control over the specific space, including managing permissions and content within that space.
 - **Read collaborators:** Can read data and view resources within that specific space across accessible instances.
@@ -248,7 +248,11 @@ Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permi
 
 LaminHub's permission system makes it easy to minimize attack surfaces by implementing the principle of least privilege.
 
-## How to configure an S3 bucket for public reads?
+## Low-level access management
+
+While not necessary, you can still manage access on the AWS, GCP, or database level yourself, provided you have sufficient permissions for the corresponding systems in your cloud infrastructure.
+
+### How to configure an AWS S3 bucket for public read access?
 
 For a public read-only instance the bucket should have certain policies configured.
 You can read about s3 bucket policies [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html). For a public read-only instance the bucket should have `s3:GetObject` and `s3:ListBucket` permissions. The example policy is given below:
