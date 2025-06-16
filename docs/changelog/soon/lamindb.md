@@ -1,3 +1,4 @@
+- 🔊 Correct treatment of carriage returns in logs [PR](https://github.com/laminlabs/lamindb/pull/2824) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Clean delete of storage locations, transparent referencing of storage locations [PR](https://github.com/laminlabs/lamindb/pull/2843) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Take into account that a storage location might be managed by an instance that's not on the hub [PR](https://github.com/laminlabs/lamindb-setup/pull/1060) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve storage docs [PR](https://github.com/laminlabs/lamindb/pull/2842) [@falexwolf](https://github.com/falexwolf)
