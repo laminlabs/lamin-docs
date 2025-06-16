@@ -1,3 +1,4 @@
+- 🎨 Allow passing _skip_validation to Feature [PR](https://github.com/laminlabs/lamindb/pull/2846) [@sunnyosun](https://github.com/sunnyosun)
 - 🩹 Avoid `init_storage` call in `check_path_in_existing_storage` [PR](https://github.com/laminlabs/lamindb/pull/2845) [@Koncopd](https://github.com/Koncopd)
 - 💚 Proper cleanup for test-init-no-writes [PR](https://github.com/laminlabs/lamindb-setup/pull/1062) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Correct treatment of carriage returns in logs [PR](https://github.com/laminlabs/lamindb/pull/2824) [@Koncopd](https://github.com/Koncopd)
