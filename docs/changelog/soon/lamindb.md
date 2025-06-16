@@ -1,3 +1,4 @@
+- ♻️ Do not write instance settings on connect by default [PR](https://github.com/laminlabs/lamin-cli/pull/136) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Do not write instance settings on connect by default [PR](https://github.com/laminlabs/lamindb-setup/pull/1056) [@Koncopd](https://github.com/Koncopd)
 - ✅ Fix testing user table in test_permissions [PR](https://github.com/laminlabs/lamindb/pull/2847) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Allow passing _skip_validation to Feature [PR](https://github.com/laminlabs/lamindb/pull/2846) [@sunnyosun](https://github.com/sunnyosun)
