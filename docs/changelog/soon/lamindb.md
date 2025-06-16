@@ -1,3 +1,4 @@
+- ✨ Allow to re-connect in the same process [PR](https://github.com/laminlabs/lamindb-setup/pull/1046) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Do not write instance settings on connect by default [PR](https://github.com/laminlabs/lamindb/pull/2848) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Do not write instance settings on connect by default [PR](https://github.com/laminlabs/lamin-cli/pull/136) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Do not write instance settings on connect by default [PR](https://github.com/laminlabs/lamindb-setup/pull/1056) [@Koncopd](https://github.com/Koncopd)
