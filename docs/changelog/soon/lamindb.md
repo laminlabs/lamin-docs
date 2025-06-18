@@ -1,3 +1,4 @@
+- 🐛 Fix parallel artifact registration with hub storage [PR](https://github.com/laminlabs/lamindb/pull/2854) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Support nested cat dtypes [PR](https://github.com/laminlabs/lamindb/pull/2852) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Allow to re-connect in the same process [PR](https://github.com/laminlabs/lamindb-setup/pull/1046) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Do not write instance settings on connect by default [PR](https://github.com/laminlabs/lamindb/pull/2848) [@Koncopd](https://github.com/Koncopd)
