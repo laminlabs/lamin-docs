@@ -1,3 +1,4 @@
+- ✅ Testing for cache spaces for RLS [PR](https://github.com/laminlabs/lamindb/pull/2853) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix parallel artifact registration with hub storage [PR](https://github.com/laminlabs/lamindb/pull/2854) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Support nested cat dtypes [PR](https://github.com/laminlabs/lamindb/pull/2852) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Allow to re-connect in the same process [PR](https://github.com/laminlabs/lamindb-setup/pull/1046) [@Koncopd](https://github.com/Koncopd)
