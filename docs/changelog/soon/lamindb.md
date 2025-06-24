@@ -1,3 +1,4 @@
+- ✅ Test fine-grained access for single records [PR](https://github.com/laminlabs/lamindb/pull/2855) [@Koncopd](https://github.com/Koncopd)
 - ✅ Adapt local-hub tests to caching RLS [PR](https://github.com/laminlabs/lamindb-setup/pull/1065) [@Koncopd](https://github.com/Koncopd)
 - ✅ Testing for cache spaces for RLS [PR](https://github.com/laminlabs/lamindb/pull/2853) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix parallel artifact registration with hub storage [PR](https://github.com/laminlabs/lamindb/pull/2854) [@Koncopd](https://github.com/Koncopd)
