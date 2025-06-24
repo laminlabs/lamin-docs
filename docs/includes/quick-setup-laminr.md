@@ -1,4 +1,4 @@
-For setup, install the `laminr` and `lamindb` packages and connect to a LaminDB instance.
+For setup, install the `laminr` package and connect to a LaminDB instance.
 
 ```R
 install.packages("laminr", dependencies = TRUE)  # install the laminr package from CRAN
