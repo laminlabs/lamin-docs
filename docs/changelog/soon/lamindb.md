@@ -1,3 +1,4 @@
+- ♻️ Refactor how to deal with parallel storage creation [PR](https://github.com/laminlabs/lamindb/pull/2859) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test simplify link tables RLS [PR](https://github.com/laminlabs/lamindb/pull/2858) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve similar names found message [PR](https://github.com/laminlabs/lamindb/pull/2857) [@Zethson](https://github.com/Zethson)
 - ✅ Test fine-grained access for single records [PR](https://github.com/laminlabs/lamindb/pull/2855) [@Koncopd](https://github.com/Koncopd)
