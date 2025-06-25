@@ -1,3 +1,4 @@
+- 🎨 Fix typo [PR](https://github.com/laminlabs/bionty/pull/274) [@Zethson](https://github.com/Zethson)
 - 🚸 Ignore Pronto Warnings on import [PR](https://github.com/laminlabs/bionty/pull/269) [@Zethson](https://github.com/Zethson)
 - ✨ Add new ontology versions & 🐛 fix registration bugs  [PR](https://github.com/laminlabs/bionty/pull/259) [@Zethson](https://github.com/Zethson)
 - 🎨 Ignore test warnings [PR](https://github.com/laminlabs/bionty/pull/268) [@Zethson](https://github.com/Zethson)
