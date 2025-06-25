@@ -1,3 +1,4 @@
+- 🚸 Mark failed upload of artifacts via `artifact._is_saved_to_storage_location` [PR](https://github.com/laminlabs/lamindb/pull/2862) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor how to deal with parallel storage creation [PR](https://github.com/laminlabs/lamindb/pull/2859) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test simplify link tables RLS [PR](https://github.com/laminlabs/lamindb/pull/2858) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve similar names found message [PR](https://github.com/laminlabs/lamindb/pull/2857) [@Zethson](https://github.com/Zethson)
