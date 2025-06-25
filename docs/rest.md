@@ -1,4 +1,4 @@
-# `REST`
+# REST
 
 See the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
 

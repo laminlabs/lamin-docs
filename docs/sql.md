@@ -1,4 +1,4 @@
-# `SQL`
+# SQL
 
 You can directly use SQL within your LaminDB instances.
 

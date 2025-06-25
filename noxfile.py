@@ -196,7 +196,8 @@ def pull_artifacts(session):
         else:
             sync_path(path, Path("docs") / path.name)
 
-    replace_content("docs/lamindb.md", {"# `lamindb`": "# `Python` / `lamindb`"})
+    replace_content("docs/cli.md", {"# `CLI`": "# CLI"})
+    replace_content("docs/lamindb.md", {"# `lamindb`": "# Python [`lamindb`]"})
 
     # lamindb faq
     Path("docs/faq/").mkdir(exist_ok=True, parents=True)
