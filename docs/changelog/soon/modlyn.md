@@ -1,1 +1,2 @@
+- 🚧 Analyses v1 [PR](https://github.com/laminlabs/modlyn/pull/8) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `arrayloaders` code [PR](https://github.com/laminlabs/modlyn/pull/9) [@falexwolf](https://github.com/falexwolf)
