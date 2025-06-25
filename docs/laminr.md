@@ -1,4 +1,4 @@
-# `R` / `laminr`
+# R: `laminr`
 
 R client for LaminDB [[source](https://github.com/laminlabs/laminr)].
 
