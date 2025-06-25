@@ -1,0 +1,1 @@
+- ✨ Pure zarr v3 dataset [PR](https://github.com/laminlabs/modlyn/pull/7) [@Koncopd](https://github.com/Koncopd)
