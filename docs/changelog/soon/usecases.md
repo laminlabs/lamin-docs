@@ -1,4 +1,3 @@
-- ⏪️ Add Python post-run-script CI including tests and docs back [PR](https://github.com/laminlabs/nf-lamin/pull/65) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix source [PR](https://github.com/laminlabs/lamin-usecases/pull/197) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ No backward relationship on branch and space [PR](https://github.com/laminlabs/wetlab/pull/115) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Run all on dispatch & fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/196) [@Zethson](https://github.com/Zethson)
@@ -7,7 +6,6 @@
 - ♻️ Rename `Record` to `DBRecord` [PR](https://github.com/laminlabs/clinicore/pull/20) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor spatialdata guide [PR](https://github.com/laminlabs/lamin-usecases/pull/193) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `scrna` use case to leverage `schema`-based curator and prepare lamindb release 1.5.0 [PR](https://github.com/laminlabs/lamin-usecases/pull/191) [@falexwolf](https://github.com/falexwolf)
-- 👷 Only issue slack notif upon repository dispatch [PR](https://github.com/laminlabs/nf-lamin/pull/61) [@falexwolf](https://github.com/falexwolf)
 - ✨ Added a Vitessce screenshot to the spatial guide [PR](https://github.com/laminlabs/lamin-usecases/pull/192) [@namsaraeva](https://github.com/namsaraeva)
 - ⬆️ Update single-cell example notebooks to be compatible with most recent scportrait release [PR](https://github.com/laminlabs/lamin-usecases/pull/190) [@sophiamaedler](https://github.com/sophiamaedler)
 - 💚 Fix for lamindb 1.4 [PR](https://github.com/laminlabs/lamin-usecases/pull/189) [@falexwolf](https://github.com/falexwolf)
