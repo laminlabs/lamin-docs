@@ -1,0 +1,5 @@
+- ✨ Track Nextflow runs by creating Transforms and Runs [PR](https://github.com/laminlabs/nf-lamin/pull/63) [@rcannood](https://github.com/rcannood)
+- 📝 Update readme after release of 0.0.1 [PR](https://github.com/laminlabs/nf-lamin/pull/62) [@rcannood](https://github.com/rcannood)
+- ✨ `nf-lamin` plugin v0.0.1 [PR](https://github.com/laminlabs/nf-lamin/pull/50) [@rcannood](https://github.com/rcannood)
+- ⏪️ Add Python post-run-script CI including tests and docs back [PR](https://github.com/laminlabs/nf-lamin/pull/65) [@falexwolf](https://github.com/falexwolf)
+- 👷 Only issue slack notif upon repository dispatch [PR](https://github.com/laminlabs/nf-lamin/pull/61) [@falexwolf](https://github.com/falexwolf)
