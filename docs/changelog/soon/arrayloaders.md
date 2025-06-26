@@ -1,1 +1,2 @@
+- ✨ Add a data loader for sparse arrays [PR](https://github.com/laminlabs/arrayloaders/pull/6) [@ilan-gold](https://github.com/ilan-gold)
 - ✨ Pure zarr v3 dataset [PR](https://github.com/laminlabs/modlyn/pull/7) [@Koncopd](https://github.com/Koncopd)
