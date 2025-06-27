@@ -1,3 +1,4 @@
+- ♻️ Non-clashing convention for marking transfers [PR](https://github.com/laminlabs/lamindb/pull/2866) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Respect `anon=True` in `_tiledb_config_s3` [PR](https://github.com/laminlabs/lamindb/pull/2868) [@Koncopd](https://github.com/Koncopd)
 - 🔐 More aggressive checks for `anon_public` [PR](https://github.com/laminlabs/lamindb-setup/pull/1068) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Mark failed upload of artifacts via `artifact._is_saved_to_storage_location` [PR](https://github.com/laminlabs/lamindb/pull/2862) [@Koncopd](https://github.com/Koncopd)
