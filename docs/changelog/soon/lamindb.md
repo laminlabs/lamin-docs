@@ -1,3 +1,4 @@
+- ✨ Add `dtype` `path` [PR](https://github.com/laminlabs/lamindb/pull/2828) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix a bug preventing backwards compatibility of instance settings files [PR](https://github.com/laminlabs/lamindb-setup/pull/1069) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Non-clashing convention for marking transfers [PR](https://github.com/laminlabs/lamindb/pull/2866) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Respect `anon=True` in `_tiledb_config_s3` [PR](https://github.com/laminlabs/lamindb/pull/2868) [@Koncopd](https://github.com/Koncopd)
