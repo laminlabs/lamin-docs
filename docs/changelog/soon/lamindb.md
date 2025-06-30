@@ -1,3 +1,4 @@
+- 🩹 Use `instance_uid` conversion helper [PR](https://github.com/laminlabs/lamindb-setup/pull/1067) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2870) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Various fixes for `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1070) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `dtype` `path` [PR](https://github.com/laminlabs/lamindb/pull/2828) [@sunnyosun](https://github.com/sunnyosun)
