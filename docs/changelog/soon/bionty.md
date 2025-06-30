@@ -1,3 +1,4 @@
+- 🎨 Do not upload dataframe if instance is bionty-assets [PR](https://github.com/laminlabs/bionty/pull/279) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Allow using public reference without prefix filters [PR](https://github.com/laminlabs/bionty/pull/276) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Fix typo [PR](https://github.com/laminlabs/bionty/pull/274) [@Zethson](https://github.com/Zethson)
 - 🚸 Ignore Pronto Warnings on import [PR](https://github.com/laminlabs/bionty/pull/269) [@Zethson](https://github.com/Zethson)
