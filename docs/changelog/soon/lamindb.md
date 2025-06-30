@@ -1,3 +1,4 @@
+- ♻️ Refactor `Record` so that `Sheet` is built in [PR](https://github.com/laminlabs/lamindb/pull/2872) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix saving an artifact with `using` [PR](https://github.com/laminlabs/lamindb/pull/2871) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Use `instance_uid` conversion helper [PR](https://github.com/laminlabs/lamindb-setup/pull/1067) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2870) [@Koncopd](https://github.com/Koncopd)
