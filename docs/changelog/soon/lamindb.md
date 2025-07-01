@@ -1,3 +1,4 @@
+- ✨ Correctly treat renamed instances in `.using` [PR](https://github.com/laminlabs/lamindb/pull/2877) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test load with a renamed instance [PR](https://github.com/laminlabs/lamin-cli/pull/137) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Warn on reaching a renamed instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1073) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support `cat_filters`  to enable specifying Source versions [PR](https://github.com/laminlabs/lamindb/pull/2867) [@Zethson](https://github.com/Zethson)
