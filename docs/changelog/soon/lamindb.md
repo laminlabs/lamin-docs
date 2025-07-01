@@ -1,3 +1,4 @@
+- 🔊 Warn on reaching a renamed instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1073) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support `cat_filters`  to enable specifying Source versions [PR](https://github.com/laminlabs/lamindb/pull/2867) [@Zethson](https://github.com/Zethson)
 - ✨ Check previous names on connection to an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1071) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2876) [@Koncopd](https://github.com/Koncopd)
