@@ -1,3 +1,4 @@
+- ✨ Check previous names on connection to an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1071) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2876) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to specify a db token via the env variable `LAMIN_TEST_DB_TOKEN` [PR](https://github.com/laminlabs/lamindb-setup/pull/1072) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Deal with malformed S3 paths out of Groovy/nextflow [PR](https://github.com/laminlabs/lamindb/pull/2875) [@falexwolf](https://github.com/falexwolf)
