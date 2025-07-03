@@ -1,3 +1,4 @@
+- (fix): ensure correct indexing + fix worker handle [PR](https://github.com/laminlabs/arrayloaders/pull/13) [@ilan-gold](https://github.com/ilan-gold)
 - ♻️ Unify dense and sparse loaders + apply `MultiBasicIndexer` to dense [PR](https://github.com/laminlabs/arrayloaders/pull/12) [@ilan-gold](https://github.com/ilan-gold)
 - ✅ Add tests + checks to loader arguments [PR](https://github.com/laminlabs/arrayloaders/pull/10) [@ilan-gold](https://github.com/ilan-gold)
 - ✨ Add a data loader for sparse arrays [PR](https://github.com/laminlabs/arrayloaders/pull/6) [@ilan-gold](https://github.com/ilan-gold)
