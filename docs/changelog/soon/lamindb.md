@@ -1,3 +1,4 @@
+- 🚸 Make it easy to infer all features of a sheet [PR](https://github.com/laminlabs/lamindb/pull/2883) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Safer `cleanup` and `excepthook` in `LogStreamTracker` [PR](https://github.com/laminlabs/lamindb/pull/2884) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable converting records to dataframes [PR](https://github.com/laminlabs/lamindb/pull/2882) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2881) [@Koncopd](https://github.com/Koncopd)
