@@ -1,3 +1,4 @@
+- ♻️ Make treatment of `Record` link tables consistent with lamindb [PR](https://github.com/laminlabs/bionty/pull/280) [@falexwolf](https://github.com/falexwolf)
 - 🚑 Downgrade sources versions in sources.yaml [PR](https://github.com/laminlabs/bionty/pull/278) [@namsaraeva](https://github.com/namsaraeva)
 - 🎨 Do not upload dataframe if instance is bionty-assets [PR](https://github.com/laminlabs/bionty/pull/279) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Allow using public reference without prefix filters [PR](https://github.com/laminlabs/bionty/pull/276) [@sunnyosun](https://github.com/sunnyosun)
