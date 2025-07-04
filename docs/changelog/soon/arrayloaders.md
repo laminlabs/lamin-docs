@@ -1,3 +1,4 @@
+- (fix): raw datasets + no `__init__` cache to sidestep deadlocking [PR](https://github.com/laminlabs/arrayloaders/pull/17) [@ilan-gold](https://github.com/ilan-gold)
 - Added tests for multiprocess loading [PR](https://github.com/laminlabs/arrayloaders/pull/14) [@felix0097](https://github.com/felix0097)
 - (feat): variable batch size for dataset iteration [PR](https://github.com/laminlabs/arrayloaders/pull/15) [@ilan-gold](https://github.com/ilan-gold)
 - (fix): ensure correct indexing + fix worker handle [PR](https://github.com/laminlabs/arrayloaders/pull/13) [@ilan-gold](https://github.com/ilan-gold)
