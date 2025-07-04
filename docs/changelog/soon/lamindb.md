@@ -1,3 +1,4 @@
+- 🚸 Improve error message for unsaved Schema [PR](https://github.com/laminlabs/lamindb/pull/2873) [@Zethson](https://github.com/Zethson)
 - ♻️ Create a sheets fixture [PR](https://github.com/laminlabs/lamindb/pull/2885) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make it easy to infer all features of a sheet [PR](https://github.com/laminlabs/lamindb/pull/2883) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Safer `cleanup` and `excepthook` in `LogStreamTracker` [PR](https://github.com/laminlabs/lamindb/pull/2884) [@Koncopd](https://github.com/Koncopd)
