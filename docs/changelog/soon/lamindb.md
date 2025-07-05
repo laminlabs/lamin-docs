@@ -1,3 +1,4 @@
+- ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2893) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade bionty to make link tables consistent [PR](https://github.com/laminlabs/lamindb/pull/2891) [@falexwolf](https://github.com/falexwolf)
 - ✨ Respect column ordering & categorical dtypes in records export, respect nested sub types in curation, enable annotating artifacts by records, enable tracking lineage of records [PR](https://github.com/laminlabs/lamindb/pull/2888) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add Settings `__repr__` [PR](https://github.com/laminlabs/lamindb/pull/2874) [@Zethson](https://github.com/Zethson)
