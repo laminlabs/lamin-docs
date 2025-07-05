@@ -1,3 +1,4 @@
+- 🐛 Idempotent re-exporting of sheets [PR](https://github.com/laminlabs/lamindb/pull/2895) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Introduce two-column layout in `Artifact.describe()` and add information like `space`, `branch`, and `kind` [PR](https://github.com/laminlabs/lamindb/pull/2894) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Prettify sheets export & consistency improvements in `CatVector` curator [PR](https://github.com/laminlabs/lamindb/pull/2892) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2893) [@falexwolf](https://github.com/falexwolf)
