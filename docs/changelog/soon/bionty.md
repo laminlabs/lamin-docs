@@ -1,3 +1,4 @@
+- 🐛 Fix typo in backward field name [PR](https://github.com/laminlabs/bionty/pull/282) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make treatment of Record link tables consistent with lamindb [PR](https://github.com/laminlabs/bionty/pull/281) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make treatment of `Record` link tables consistent with lamindb [PR](https://github.com/laminlabs/bionty/pull/280) [@falexwolf](https://github.com/falexwolf)
 - 🚑 Downgrade sources versions in sources.yaml [PR](https://github.com/laminlabs/bionty/pull/278) [@namsaraeva](https://github.com/namsaraeva)
