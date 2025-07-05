@@ -1,3 +1,4 @@
+- ♻️ Prettify sheets export & consistency improvements in `CatVector` curator [PR](https://github.com/laminlabs/lamindb/pull/2892) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/2893) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade bionty to make link tables consistent [PR](https://github.com/laminlabs/lamindb/pull/2891) [@falexwolf](https://github.com/falexwolf)
 - ✨ Respect column ordering & categorical dtypes in records export, respect nested sub types in curation, enable annotating artifacts by records, enable tracking lineage of records [PR](https://github.com/laminlabs/lamindb/pull/2888) [@falexwolf](https://github.com/falexwolf)
