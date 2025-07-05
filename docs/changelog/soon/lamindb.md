@@ -1,3 +1,4 @@
+- 🚸 Case-insensitive uniqueness and lower-case pre-defined branch and space names [PR](https://github.com/laminlabs/lamindb/pull/2898) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Export transform should be of type function, like transfer [PR](https://github.com/laminlabs/lamindb/pull/2896) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Idempotent re-exporting of sheets [PR](https://github.com/laminlabs/lamindb/pull/2895) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Introduce two-column layout in `Artifact.describe()` and add information like `space`, `branch`, and `kind` [PR](https://github.com/laminlabs/lamindb/pull/2894) [@falexwolf](https://github.com/falexwolf)
