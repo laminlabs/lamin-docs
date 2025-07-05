@@ -1,3 +1,4 @@
+- 📝 Change run `status_code` convention due to convention used in `nf-lamin` [PR](https://github.com/laminlabs/lamindb/pull/2899) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add `description` to `describe()`, drop quotes, and start displaying annotations with records [PR](https://github.com/laminlabs/lamindb/pull/2897) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Case-insensitive uniqueness and lower-case pre-defined branch and space names [PR](https://github.com/laminlabs/lamindb/pull/2898) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Export transform should be of type function, like transfer [PR](https://github.com/laminlabs/lamindb/pull/2896) [@falexwolf](https://github.com/falexwolf)
