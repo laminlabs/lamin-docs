@@ -1,3 +1,4 @@
+- 💚 Fix [PR](https://github.com/laminlabs/lamin-cli/pull/139) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Do not truncate errors in `Artifact.save()` [PR](https://github.com/laminlabs/lamindb/pull/2890) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Lower-case branch and space default names [PR](https://github.com/laminlabs/lamindb-setup/pull/1076) [@falexwolf](https://github.com/falexwolf)
 - 📝 Change run `status_code` convention due to convention used in `nf-lamin` [PR](https://github.com/laminlabs/lamindb/pull/2899) [@falexwolf](https://github.com/falexwolf)
