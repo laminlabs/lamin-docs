@@ -1,3 +1,4 @@
+- ⬆️ Release lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/2903) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix inplace update of column names in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2902) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Introduce run status codes, save source code & run environment of scripts upon `ln.track()` instead of `ln.finish()` [PR](https://github.com/laminlabs/lamindb/pull/2900) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix [PR](https://github.com/laminlabs/lamin-cli/pull/139) [@falexwolf](https://github.com/falexwolf)
