@@ -1,3 +1,4 @@
+- 🐛 Fix updates of re-loaded `Schema._aux` [PR](https://github.com/laminlabs/lamindb/pull/2889) [@Zethson](https://github.com/Zethson)
 - ✨ Upload the R environment tracked in LaminR [PR](https://github.com/laminlabs/lamindb/pull/2901) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Release lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/2903) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix inplace update of column names in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/2902) [@sunnyosun](https://github.com/sunnyosun)
