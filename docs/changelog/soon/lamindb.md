@@ -1,3 +1,4 @@
+- 💄 Prettify settings display [PR](https://github.com/laminlabs/lamindb-setup/pull/1080) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add a branch and a space setting [PR](https://github.com/laminlabs/lamindb-setup/pull/1079) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Back to not re-connecting in the same process [PR](https://github.com/laminlabs/lamindb/pull/2906) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Warn when no values are validated [PR](https://github.com/laminlabs/lamindb/pull/2904) [@sunnyosun](https://github.com/sunnyosun)
