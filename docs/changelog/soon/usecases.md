@@ -1,3 +1,4 @@
+- 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/199) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix source [PR](https://github.com/laminlabs/lamin-usecases/pull/197) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ No backward relationship on branch and space [PR](https://github.com/laminlabs/wetlab/pull/115) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Run all on dispatch & fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/196) [@Zethson](https://github.com/Zethson)
