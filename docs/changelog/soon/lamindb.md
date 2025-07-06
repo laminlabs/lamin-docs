@@ -1,3 +1,4 @@
+- 🚸 Introduce run status codes, save source code & run environment of scripts upon `ln.track()` instead of `ln.finish()` [PR](https://github.com/laminlabs/lamindb/pull/2900) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix [PR](https://github.com/laminlabs/lamin-cli/pull/139) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Do not truncate errors in `Artifact.save()` [PR](https://github.com/laminlabs/lamindb/pull/2890) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Lower-case branch and space default names [PR](https://github.com/laminlabs/lamindb-setup/pull/1076) [@falexwolf](https://github.com/falexwolf)
