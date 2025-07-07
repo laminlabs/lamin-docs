@@ -24,6 +24,4 @@ rest
 :hidden:
 
 bionty
-wetlab
-clinicore
 ```
