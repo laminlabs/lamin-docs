@@ -1,2 +1,3 @@
+- ⚡️ Avoid importing `lamindb` in `settings.__repr__` [PR](https://github.com/laminlabs/lamindb-setup/pull/1082) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/2911) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix delete [PR](https://github.com/laminlabs/lamin-cli/pull/142) [@Koncopd](https://github.com/Koncopd)
