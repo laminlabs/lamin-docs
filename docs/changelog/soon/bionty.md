@@ -1,0 +1,2 @@
+- 🔈 Added loggings to `Ontology.to_df()` [PR](https://github.com/laminlabs/bionty/pull/288) [@namsaraeva](https://github.com/namsaraeva)
+- ♻️ Remove pronto warning filters from **init**.py [PR](https://github.com/laminlabs/bionty/pull/284) [@namsaraeva](https://github.com/namsaraeva)
