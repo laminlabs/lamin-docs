@@ -1,3 +1,4 @@
+- 🐛 Auto-version scripts in absence of `ln.track()` [PR](https://github.com/laminlabs/lamin-cli/pull/141) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable switching branches and spaces [PR](https://github.com/laminlabs/lamindb/pull/2909) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable creating branches and switching branches and spaces [PR](https://github.com/laminlabs/lamin-cli/pull/140) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Longer uids for branch and space [PR](https://github.com/laminlabs/lamindb-setup/pull/1081) [@falexwolf](https://github.com/falexwolf)
