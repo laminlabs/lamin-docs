@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2913) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Cache `uid` and `name` of `branch` and `space` in setup settings [PR](https://github.com/laminlabs/lamindb-setup/pull/1083) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2912) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Avoid importing `lamindb` in `settings.__repr__` [PR](https://github.com/laminlabs/lamindb-setup/pull/1082) [@Koncopd](https://github.com/Koncopd)
