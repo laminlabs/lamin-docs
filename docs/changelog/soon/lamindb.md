@@ -1,0 +1,1 @@
+- 🐛 Fix delete [PR](https://github.com/laminlabs/lamin-cli/pull/142) [@Koncopd](https://github.com/Koncopd)
