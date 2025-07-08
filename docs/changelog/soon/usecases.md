@@ -1,3 +1,4 @@
+- 📝 Update sc-imaging guide [PR](https://github.com/laminlabs/lamin-usecases/pull/198) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/199) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix source [PR](https://github.com/laminlabs/lamin-usecases/pull/197) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ No backward relationship on branch and space [PR](https://github.com/laminlabs/wetlab/pull/115) [@falexwolf](https://github.com/falexwolf)
