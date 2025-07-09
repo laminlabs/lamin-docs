@@ -1,1 +1,2 @@
+- 💚 Fix hub-local tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1086) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix `hub-local` tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1085) [@Koncopd](https://github.com/Koncopd)
