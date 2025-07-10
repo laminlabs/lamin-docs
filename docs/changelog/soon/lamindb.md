@@ -1,3 +1,4 @@
+- 🐛 Fix Settings sphinx __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2921) [@Zethson](https://github.com/Zethson)
 - 🚸 Improve error message when attempting to curate unsaved Schema [PR](https://github.com/laminlabs/lamindb/pull/2925) [@Zethson](https://github.com/Zethson)
 - 🚸 Improve UX for labeling unsaved records from other instances [PR](https://github.com/laminlabs/lamindb/pull/2924) [@Zethson](https://github.com/Zethson)
 - ⚡️ Use native `polars` Object Store by default [PR](https://github.com/laminlabs/lamindb/pull/2922) [@Koncopd](https://github.com/Koncopd)
