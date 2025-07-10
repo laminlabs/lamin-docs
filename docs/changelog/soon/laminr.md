@@ -1,3 +1,4 @@
+- ⬆️ Add minimal scipy requirement [PR](https://github.com/laminlabs/laminr/pull/209) [@lazappi](https://github.com/lazappi)
 - ⬆️ Bump reticulate dependency to >=1.41.0 [PR](https://github.com/laminlabs/laminr/pull/208) [@lazappi](https://github.com/lazappi)
 - 🚸 Add env vars to contol the lamindb requirements [PR](https://github.com/laminlabs/laminr/pull/194) [@lazappi](https://github.com/lazappi)
 - 🐛 Handle list columns in `.parquet` files [PR](https://github.com/laminlabs/laminr/pull/203) [@lazappi](https://github.com/lazappi)
