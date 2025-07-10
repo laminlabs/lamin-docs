@@ -1,3 +1,4 @@
+- 🎨 Move bulk to Schema [PR](https://github.com/laminlabs/lamin-usecases/pull/200) [@Zethson](https://github.com/Zethson)
 - 📝 Update sc-imaging guide [PR](https://github.com/laminlabs/lamin-usecases/pull/198) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/199) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix source [PR](https://github.com/laminlabs/lamin-usecases/pull/197) [@sunnyosun](https://github.com/sunnyosun)
