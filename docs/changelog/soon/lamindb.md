@@ -1,3 +1,4 @@
+- 🐛 Properly ignore `ln.track()` and tracking warnings on read-only connections [PR](https://github.com/laminlabs/lamindb/pull/2934) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve the experience of working in `keep-artifacts-local` mode [PR](https://github.com/laminlabs/lamindb/pull/2917) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Fix logging for local storage locations [PR](https://github.com/laminlabs/lamin-cli/pull/143) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Require `host` for hub registration of local storage locations [PR](https://github.com/laminlabs/lamindb-setup/pull/1087) [@falexwolf](https://github.com/falexwolf)
