@@ -1,3 +1,4 @@
+- 🚸 Improve data type issue errors [PR](https://github.com/laminlabs/lamindb/pull/2926) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix Settings sphinx __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2921) [@Zethson](https://github.com/Zethson)
 - 🚸 Improve error message when attempting to curate unsaved Schema [PR](https://github.com/laminlabs/lamindb/pull/2925) [@Zethson](https://github.com/Zethson)
 - 🚸 Improve UX for labeling unsaved records from other instances [PR](https://github.com/laminlabs/lamindb/pull/2924) [@Zethson](https://github.com/Zethson)
