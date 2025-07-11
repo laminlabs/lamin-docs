@@ -1,3 +1,4 @@
+- 🚸 Require `host` for hub registration of local storage locations [PR](https://github.com/laminlabs/lamindb-setup/pull/1087) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve data type issue errors [PR](https://github.com/laminlabs/lamindb/pull/2926) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix Settings sphinx __repr__ [PR](https://github.com/laminlabs/lamindb/pull/2921) [@Zethson](https://github.com/Zethson)
 - 🚸 Improve error message when attempting to curate unsaved Schema [PR](https://github.com/laminlabs/lamindb/pull/2925) [@Zethson](https://github.com/Zethson)
