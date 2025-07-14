@@ -300,7 +300,6 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
-    pass
     os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa: S605
     exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa: S605
     assert exit_status == 0  # noqa: S101
