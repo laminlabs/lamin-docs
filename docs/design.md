@@ -67,24 +67,19 @@ For learning more about how to create & host LaminDB instances, see {doc}`setup`
 
 ## Database schema & API
 
-LaminDB provides a SQL schema for common metadata entities: {class}`~lamindb.Artifact`, {class}`~lamindb.Collection`, {class}`~lamindb.Transform`, {class}`~lamindb.Feature`, {class}`~lamindb.ULabel` etc. - see the [API reference](/api) or the [source code](https://github.com/laminlabs/lnschema-core/blob/main/lnschema_core/models.py).
+LaminDB provides a SQL schema for common metadata entities: {class}`~lamindb.Artifact`, {class}`~lamindb.Collection`, {class}`~lamindb.Transform`, {class}`~lamindb.Feature`, {class}`~lamindb.ULabel` etc. - see the [API reference](/api) or the [source code](https://github.com/laminlabs/lamindb/tree/main/lamindb/models).
 
-The core metadata schema is extendable through modules (see green vs. red entities in **graphic**), e.g., with basic biological ({class}`~bionty.Gene`, {class}`~bionty.Protein`, {class}`~bionty.CellLine`, etc.) & operational entities (`Biosample`, `Techsample`, `Treatment`, etc.).
-
-```{dropdown} What is the metadata schema language?
+The core metadata schema is extendable through modules, e.g., with basic biological ({class}`~bionty.Gene`, {class}`~bionty.Protein`, {class}`~bionty.CellLine`, etc.) & operational entities (`Biosample`, `Techsample`, `Treatment`, etc.).
 
 Data models are defined in Python using the Django ORM. Django translates them to SQL tables.
 [Django](https://github.com/django/django) is one of the most-used & highly-starred projects on GitHub (~1M dependents, ~73k stars) and has been robustly maintained for 15 years.
+While the SQLAlchemy ORM has some advantages, Django is the most popular choice for building metadata management systems in the life sciences.
 
-```
+On top of the metadata schema, LaminDB is a Python API that models datasets as artifacts, abstracts storage & database access, data transformations, and ontologies.
 
-On top of the metadata schema, LaminDB is a Python API that models datasets as artifacts, abstracts over storage & database access, data transformations, and (biological) ontologies.
+## Modules
 
-Note that the schemas of datasets (e.g., `.parquet` files, `.h5ad` arrays, etc.) are modeled through the `Feature` registry and do not require migrations to be updated.
-
-## Schema modules
-
-LaminDB can be extended with schema modules building on the [Django](https://github.com/django/django) ecosystem. Examples are:
+LaminDB can be extended with modules building on the [Django](https://github.com/django/django) ecosystem. Examples are:
 
 - [bionty](./bionty): Registries for basic biological entities, coupled to public ontologies.
 - [wetlab](https://github.com/laminlabs/wetlab): Registries for samples, treatments, etc.
@@ -105,7 +100,7 @@ LaminDB and its plugins consist in open-source Python libraries & publicly hoste
 - [wetlab](https://github.com/laminlabs/wetlab): Registries for samples, treatments, etc.
 - [usecases](https://github.com/laminlabs/lamin-usecases): Use cases as visible on the docs.
 
-All immediate dependencies are available as git submodules [here](https://github.com/laminlabs/lamindb/tree/main/sub), for instance,
+All immediate dependencies and modules are available as git submodules [here](https://github.com/laminlabs/lamindb/tree/main/sub), for instance,
 
 - [lamindb-setup](https://github.com/laminlabs/lamindb-setup): Setup & configure LaminDB.
 - [lamin-cli](https://github.com/laminlabs/lamin-cli): CLI for `lamindb` and `lamindb-setup`.

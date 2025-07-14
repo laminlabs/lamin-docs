@@ -31,8 +31,8 @@ FAQ_MATCH = """\
 ```
 """
 
+# currently moot, because no additional FAQ content is here
 FAQ_APPEND = """\
-faq/storage
 ```
 """
 
@@ -196,7 +196,11 @@ def pull_artifacts(session):
         else:
             sync_path(path, Path("docs") / path.name)
 
+    replace_content("docs/cli.md", {"# `CLI`": "# CLI"})
+    replace_content("docs/lamindb.md", {"# `lamindb`": "# Python: `lamindb`"})
+
     # lamindb faq
+    Path("docs/faq/").mkdir(exist_ok=True, parents=True)
     for path in Path("lamindb/faq").glob("*"):
         sync_path(path, Path("docs/faq") / path.name)
     replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
@@ -276,7 +280,7 @@ def pull_artifacts(session):
 
 @nox.session
 def install(session):
-    branch = "pypi" if IS_PR else "pypi"
+    branch = "main" if IS_PR else "main"
     if branch == "pypi":
         run(
             session,
@@ -333,4 +337,4 @@ def docs(session):
         import lamindb as ln
 
         ln.connect("laminlabs/lamin-site-assets")
-        ln.Artifact("_build/lamin-docs.txt", key="docs-as-txt/lamin-docs.txt").save()
+        ln.Artifact("_build/lamin-docs.txt", key="docs-as-txt/llms.txt").save()

@@ -6,7 +6,7 @@ artifact
     Stores a dataset or model as a file or folder.
 
 curator
-    - Object class designed to ensure your dataset conforms to a desired schema. 
+    - Object class designed to ensure your dataset conforms to a desired schema.
     - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
 
 FAIR
@@ -37,7 +37,7 @@ observation
 record
     A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.Record` and represents a row in a in a reqistry (a table in the SQL database).
+    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.SQLRecord` and represents a row in a in a reqistry (a table in the SQL database).
 
     It automatically sets up important behaviors and methods (like filtering, querying, and converting records to DataFrames) needed to interact with the metadata database.
 
