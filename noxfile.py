@@ -358,7 +358,7 @@ def docs(session):
     Path("docs/facs3.ipynb").unlink()
     Path("docs/facs4.ipynb").unlink()
     Path("docs/celltypist.ipynb").unlink()
-    Path("docs/data-flow.ipynb").unlink()
+    Path("docs/data-flow.md").unlink()
     Path("docs/enrichr.ipynb").unlink()
     Path("docs/perturbation.ipynb").unlink(missing_ok=True)
     Path("docs/rdf-sparql.ipynb").unlink()
