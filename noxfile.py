@@ -343,23 +343,10 @@ def docs(session):
     # now strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
     strip_notebook_outputs("docs")
-    for path in Path("docs").iterdir():
-        if path.is_file() and "wetlab." in path.stem:
-            path.unlink()
-        if path.is_file() and "lamindb.base.fields" in path.stem:
-            path.unlink()
-        if path.is_file() and "lamindb.base.uids" in path.stem:
-            path.unlink()
-        if path.is_file() and "lamindb.core.datasets" in path.stem:
-            path.unlink()
-        if path.is_file() and "lamindb.core.datasets" in path.stem:
-            path.unlink()
-        if path.is_file() and "lamindb.curators.core" in path.stem:
-            path.unlink()
 
-    Path("docs/2022.md").unlink()
-    Path("docs/2023.md").unlink()
-    Path("docs/2024.md").unlink()
+    Path("docs/changelog/2022.md").unlink()
+    Path("docs/changelog/2023.md").unlink()
+    Path("docs/changelog/2024.md").unlink()
 
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
