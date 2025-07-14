@@ -6,7 +6,7 @@ from pathlib import Path
 import nox
 from dirsync import sync
 from laminci import run_notebooks
-from laminci.nox import install_lamindb, login_testuser1, run, run_pre_commit
+from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") != "push"
 
@@ -320,7 +320,7 @@ def init(session):
 
 @nox.session
 def docs(session):
-    login_testuser1(session)
+    login_testuser2(session)
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --error-on-index --export-text",  # --strict back
         shell=True,
