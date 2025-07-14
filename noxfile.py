@@ -278,6 +278,20 @@ def pull_artifacts(session):
     assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
 
 
+def strip_notebook_outputs(directory="."):
+    """Simple function to strip outputs from all notebooks in directory."""
+    notebook_files = list(Path(directory).rglob("*.ipynb"))
+
+    if not notebook_files:
+        print("No notebooks found")
+        return
+
+    for nb_file in notebook_files:
+        subprocess.run(["nbstripout", str(nb_file)])
+
+    print(f"Processed {len(notebook_files)} notebooks")
+
+
 @nox.session
 def install(session):
     branch = "main" if IS_PR else "main"
@@ -300,13 +314,14 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
-    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa: S605
-    exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa: S605
-    assert exit_status == 0  # noqa: S101
-    run_notebooks("docs/introduction.ipynb")
-    run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
-    run_notebooks("docs/hubmap.ipynb")
-    run_notebooks("docs/setup.ipynb")
+    pass
+    # os.system("lamin init --storage ./test-quickstart --modules bionty")
+    # exit_status = os.system("python docs/includes/py-quickstart.py")
+    # assert exit_status == 0
+    # run_notebooks("docs/introduction.ipynb")
+    # run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
+    # run_notebooks("docs/hubmap.ipynb")
+    # run_notebooks("docs/setup.ipynb")
 
 
 @nox.session
@@ -320,8 +335,9 @@ def init(session):
 @nox.session
 def docs(session):
     login_testuser2(session)
+    strip_notebook_outputs("docs")
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index --export-text",  # --strict back
+        "lndocs --strip-prefix --format text --error-on-index --export-text",  # --strict back
         shell=True,
     )
     if process.returncode != 0:

@@ -37,7 +37,7 @@ jobs:
       - run: |
           pip install "laminci[run-notebooks]@git+https://@github.com/laminlabs/laminci"
           pip install "lndocs@git+https://x-access-token:${{ secrets.LAMIN_BUILD_DOCS }}@github.com/laminlabs/lndocs"
-          pip install -U dirsync pytest requests
+          pip install -U dirsync pytest requests nbstripout
           sudo apt-get -y install graphviz
       - uses: aws-actions/configure-aws-credentials@v4
         with:
