@@ -347,6 +347,7 @@ def docs(session):
     Path("docs/changelog/2022.md").unlink()
     Path("docs/changelog/2023.md").unlink()
     Path("docs/changelog/2024.md").unlink()
+    Path("docs/changelog/soon.md").unlink()
     Path("docs/sc-imaging.ipynb").unlink()
     Path("docs/sc-imaging2.ipynb").unlink()
     Path("docs/sc-imaging3.ipynb").unlink()
@@ -365,6 +366,10 @@ def docs(session):
     Path("docs/project-flow.ipynb").unlink()
     Path("docs/analysis-flow.ipynb").unlink()
     Path("docs/analysis-registries.ipynb").unlink()
+    Path("docs/influences.md").unlink()
+    Path("docs/glossary.md").unlink()
+    Path("docs/mnist.ipynb").unlink()
+    Path("docs/cellxgene-curate.ipynb").unlink()
 
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
