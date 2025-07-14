@@ -370,6 +370,20 @@ def docs(session):
     Path("docs/glossary.md").unlink()
     Path("docs/mnist.ipynb").unlink()
     Path("docs/cellxgene-curate.ipynb").unlink()
+    Path("docs/cellxgene-curate.ipynb").unlink()
+    Path("docs/organism.ipynb").unlink()
+    Path("docs/cell_line.ipynb").unlink()
+    Path("docs/cell_type.ipynb").unlink()
+    Path("docs/cell_marker.ipynb").unlink()
+    Path("docs/tissue.ipynb").unlink()
+    Path("docs/phenotype.ipynb").unlink()
+    Path("docs/pathway.ipynb").unlink()
+    Path("docs/experimental_factor.ipynb").unlink()
+    Path("docs/developmental_stage.ipynb").unlink()
+    Path("docs/ethnicity.ipynb").unlink()
+    Path("docs/faq/search.ipynb").unlink()
+    Path("docs/faq/curate-any.ipynb").unlink()
+
 
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
