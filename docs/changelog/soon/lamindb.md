@@ -1,1 +1,2 @@
+- ⚡️ Implement performant synchronization for directories [PR](https://github.com/laminlabs/lamindb/pull/2933) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Implement performant synchronization for directories [PR](https://github.com/laminlabs/lamindb-setup/pull/1089) [@Koncopd](https://github.com/Koncopd)
