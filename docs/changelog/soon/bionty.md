@@ -1,3 +1,4 @@
+- 📝 Add missing docstrings [PR](https://github.com/laminlabs/bionty/pull/294) [@Zethson](https://github.com/Zethson)
 - ♻️ Adapt to renaming of `UPath.synchronize()` to `UPath.synchronize_to()` [PR](https://github.com/laminlabs/bionty/pull/291) [@Koncopd](https://github.com/Koncopd)
 - 🔈 Added loggings to `Ontology.to_df()` [PR](https://github.com/laminlabs/bionty/pull/288) [@namsaraeva](https://github.com/namsaraeva)
 - ♻️ Remove pronto warning filters from **init**.py [PR](https://github.com/laminlabs/bionty/pull/284) [@namsaraeva](https://github.com/namsaraeva)
