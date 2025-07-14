@@ -370,7 +370,6 @@ def docs(session):
     Path("docs/glossary.md").unlink()
     Path("docs/mnist.ipynb").unlink()
     Path("docs/cellxgene-curate.ipynb").unlink()
-    Path("docs/cellxgene-curate.ipynb").unlink()
     Path("docs/organism.ipynb").unlink()
     Path("docs/cell_line.ipynb").unlink()
     Path("docs/cell_type.ipynb").unlink()
