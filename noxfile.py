@@ -337,4 +337,4 @@ def docs(session):
         import lamindb as ln
 
         ln.connect("laminlabs/lamin-site-assets")
-        ln.Artifact("_build/lamin-docs.txt", key="docs-as-txt/llms.txt").save()
+        ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
