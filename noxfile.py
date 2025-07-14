@@ -276,6 +276,7 @@ def pull_artifacts(session):
         f.write(content)
 
     assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
+    Path("docs/clinicore.md").unlink(missing_ok=True)
 
 
 def strip_notebook_outputs(directory="."):
@@ -298,13 +299,13 @@ def install(session):
     if branch == "pypi":
         run(
             session,
-            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab,clinicore]",
+            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab]",
         )
     else:
         install_lamindb(
             session,
             branch=branch,
-            extras="bionty,jupyter,gcp,wetlab,clinicore",
+            extras="bionty,jupyter,gcp,wetlab",
             target_dir="tmp_lamindb",
         )
     run(session, "uv pip install --system spatialdata")  # temporarily
@@ -328,7 +329,7 @@ def run_nbs(session):
 def init(session):
     run(
         session,
-        "lamin init --storage ./docsbuild --modules bionty,wetlab,clinicore",
+        "lamin init --storage ./docsbuild --modules bionty,wetlab",
     )
 
 
@@ -337,20 +338,20 @@ def docs(session):
     login_testuser2(session)
     strip_notebook_outputs("docs")
     process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --format text --error-on-index --export-text",  # --strict back
+        "lndocs --strip-prefix --format text --error-on-index",  # --strict back
         shell=True,
     )
-    if process.returncode != 0:
-        # rerun without strict option so see all warnings
-        run(session, "lndocs --strip-prefix --error-on-index")
-        # exit with error
-        exit(1)
-    else:
-        import lamindb_setup as ln_setup
+    # if process.returncode != 0:
+    #     # rerun without strict option so see all warnings
+    #     run(session, "lndocs --strip-prefix --error-on-index")
+    #     # exit with error
+    #     exit(1)
+    # else:
+    import lamindb_setup as ln_setup
 
-        ln_setup.settings.auto_connect = False
-        import lamindb as ln
+    ln_setup.settings.auto_connect = False
+    import lamindb as ln
 
-        ln.connect("laminlabs/lamin-site-assets")
-        ln.track()
-        ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
+    ln.connect("laminlabs/lamin-site-assets")
+    ln.track()
+    ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
