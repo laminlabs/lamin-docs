@@ -336,7 +336,31 @@ def init(session):
 @nox.session
 def docs(session):
     login_testuser2(session)
+    # process = subprocess.run(
+    #     "lndocs --strip-prefix --error-on-index",  # --strict back
+    #     shell=True,
+    # )
+    # now strip outputs for llms.txt
+    os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
     strip_notebook_outputs("docs")
+    for path in Path("docs").iterdir():
+        if path.is_file() and "wetlab." in path.stem:
+            path.unlink(missing_ok=True)
+        if path.is_file() and "lamindb.base.fields" in path.stem:
+            path.unlink(missing_ok=True)
+        if path.is_file() and "lamindb.base.uids" in path.stem:
+            path.unlink(missing_ok=True)
+        if path.is_file() and "lamindb.core.datasets" in path.stem:
+            path.unlink(missing_ok=True)
+        if path.is_file() and "lamindb.core.datasets" in path.stem:
+            path.unlink(missing_ok=True)
+        if path.is_file() and "lamindb.curators.core" in path.stem:
+            path.unlink(missing_ok=True)
+
+    Path("docs/2022.md").unlink(missing_ok=True)
+    Path("docs/2023.md").unlink(missing_ok=True)
+    Path("docs/2024.md").unlink(missing_ok=True)
+
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
         shell=True,
@@ -346,12 +370,13 @@ def docs(session):
     #     run(session, "lndocs --strip-prefix --error-on-index")
     #     # exit with error
     #     exit(1)
-    # else:
-    import lamindb_setup as ln_setup
 
-    ln_setup.settings.auto_connect = False
-    import lamindb as ln
+    if not IS_PR:
+        import lamindb_setup as ln_setup
 
-    ln.connect("laminlabs/lamin-site-assets")
-    ln.track()
-    ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
+        ln_setup.settings.auto_connect = False
+        import lamindb as ln
+
+        ln.connect("laminlabs/lamin-site-assets")
+        ln.track()
+        ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
