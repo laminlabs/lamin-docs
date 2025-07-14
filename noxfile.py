@@ -347,6 +347,24 @@ def docs(session):
     Path("docs/changelog/2022.md").unlink()
     Path("docs/changelog/2023.md").unlink()
     Path("docs/changelog/2024.md").unlink()
+    Path("docs/sc-imaging.ipynb").unlink()
+    Path("docs/sc-imaging2.ipynb").unlink()
+    Path("docs/sc-imaging3.ipynb").unlink()
+    Path("docs/sc-imaging4.ipynb").unlink()
+    Path("integrated-analysis.ipynb").unlink()
+    Path("hit-identification.ipynb").unlink()
+    Path("facs.ipynb").unlink()
+    Path("facs2.ipynb").unlink()
+    Path("facs3.ipynb").unlink()
+    Path("facs4.ipynb").unlink()
+    Path("celltypist.ipynb").unlink()
+    Path("data-flow.ipynb").unlink()
+    Path("enrichr.ipynb").unlink()
+    Path("perturbation.ipynb").unlink(missing_ok=True)
+    Path("rdf-sparql.ipynb").unlink()
+    Path("project-flow.ipynb").unlink()
+    Path("analysis-flow.ipynb").unlink()
+    Path("analysis-registries.ipynb").unlink()
 
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
@@ -358,12 +376,11 @@ def docs(session):
     #     # exit with error
     #     exit(1)
 
-    if not IS_PR:
-        import lamindb_setup as ln_setup
+    import lamindb_setup as ln_setup
 
-        ln_setup.settings.auto_connect = False
-        import lamindb as ln
+    ln_setup.settings.auto_connect = False
+    import lamindb as ln
 
-        ln.connect("laminlabs/lamin-site-assets")
-        ln.track()
-        ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
+    ln.connect("laminlabs/lamin-site-assets")
+    ln.track()
+    ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
