@@ -1,3 +1,4 @@
+- 📝 More readable docstring [PR](https://github.com/laminlabs/lamindb-setup/pull/1091) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix creation of a `Schema` with `is_type=True` [PR](https://github.com/laminlabs/lamindb/pull/2937) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix `index` hash calculation for `Schema` [PR](https://github.com/laminlabs/lamindb/pull/2932) [@sunnyosun](https://github.com/sunnyosun)
 - ⚡️ Implement performant synchronization for directories [PR](https://github.com/laminlabs/lamindb/pull/2933) [@Koncopd](https://github.com/Koncopd)
