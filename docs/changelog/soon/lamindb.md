@@ -1,3 +1,4 @@
+- 🚸 If hub storage creation fails do not log success message [PR](https://github.com/laminlabs/lamindb-setup/pull/1090) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve storage docs [PR](https://github.com/laminlabs/lamindb/pull/2935) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Properly ignore `ln.track()` and tracking warnings on read-only connections [PR](https://github.com/laminlabs/lamindb/pull/2934) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve the experience of working in `keep-artifacts-local` mode [PR](https://github.com/laminlabs/lamindb/pull/2917) [@falexwolf](https://github.com/falexwolf)
