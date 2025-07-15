@@ -1,4 +1,4 @@
-<-- first two sentences sync from README -->
+<!-- first two sentences sync from README -->
 
 LaminDB is an open-source data framework to enable learning at scale in computational biology.
 It lets you track data transformations, validate & annotate datasets, and query a built-in database for biological metadata & data structures.
@@ -94,7 +94,7 @@ artifact.view_lineage()
 ```
 
 <div style="height: 0.5em;"></div>
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EkQATsQL5wqC95Wj0001.png" width="300">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EkQATsQL5wqC95Wj0001.png" width="220">
 :::
 :::{tab-item} Hub
 
