@@ -1,3 +1,5 @@
+<-- first two sentences sync from README -->
+
 LaminDB is an open-source data framework to enable learning at scale in computational biology.
 It lets you track data transformations, curate datasets, manage metadata, and query a built-in database for biological entities & data structures.
 
@@ -35,6 +37,8 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 ```
 
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain Lamin.
+
 :::
 
 ## Quickstart
@@ -47,7 +51,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 ```
 
-In a Python session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
+Here's how to create an artifact while tracking source code, run environment, run logs, and inputs and outputs of a script or notebook.
 
 ```{eval-rst}
 .. literalinclude:: includes/py-quickstart.py
@@ -88,11 +92,11 @@ artifact.view_lineage()
 ```
 
 <div style="height: 0.5em;"></div>
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/A0W45AGQfmsxFhyq0000.png" width="300">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EkQATsQL5wqC95Wj0001.png" width="300">
 :::
 :::{tab-item} Hub
 
-Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/qQ6DCPnSKWMvA5GC0000).
+Explore data lineage for a more complicated example interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/qQ6DCPnSKWMvA5GC0000).
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/mfFvKdqpvlbOyQ1d0000.png" width="800">
 :::
