@@ -6,7 +6,7 @@ from pathlib import Path
 import nox
 from dirsync import sync
 from laminci import run_notebooks
-from laminci.nox import install_lamindb, run, run_pre_commit
+from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") != "push"
 
@@ -276,6 +276,21 @@ def pull_artifacts(session):
         f.write(content)
 
     assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
+    Path("docs/clinicore.md").unlink(missing_ok=True)
+
+
+def strip_notebook_outputs(directory="."):
+    """Simple function to strip outputs from all notebooks in directory."""
+    notebook_files = list(Path(directory).rglob("*.ipynb"))
+
+    if not notebook_files:
+        print("No notebooks found")
+        return
+
+    for nb_file in notebook_files:
+        subprocess.run(["nbstripout", str(nb_file)])
+
+    print(f"Processed {len(notebook_files)} notebooks")
 
 
 @nox.session
@@ -284,13 +299,13 @@ def install(session):
     if branch == "pypi":
         run(
             session,
-            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab,clinicore]",
+            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab]",
         )
     else:
         install_lamindb(
             session,
             branch=branch,
-            extras="bionty,jupyter,gcp,wetlab,clinicore",
+            extras="bionty,jupyter,gcp,wetlab",
             target_dir="tmp_lamindb",
         )
     run(session, "uv pip install --system spatialdata")  # temporarily
@@ -300,9 +315,9 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
-    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa: S605
-    exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa: S605
-    assert exit_status == 0  # noqa: S101
+    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
+    exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa S605
+    assert exit_status == 0  # noqa S101
     run_notebooks("docs/introduction.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
     run_notebooks("docs/hubmap.ipynb")
@@ -313,12 +328,13 @@ def run_nbs(session):
 def init(session):
     run(
         session,
-        "lamin init --storage ./docsbuild --modules bionty,wetlab,clinicore",
+        "lamin init --storage ./docsbuild --modules bionty,wetlab",
     )
 
 
 @nox.session
 def docs(session):
+    login_testuser2(session)
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --error-on-index",  # --strict back
         shell=True,
@@ -328,3 +344,82 @@ def docs(session):
     #     run(session, "lndocs --strip-prefix --error-on-index")
     #     # exit with error
     #     exit(1)
+
+    # now strip outputs for llms.txt
+    os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
+    strip_notebook_outputs("docs")
+
+    Path("docs/changelog/2022.md").unlink()
+    Path("docs/changelog/2023.md").unlink()
+    Path("docs/changelog/2024.md").unlink()
+    Path("docs/changelog/2025.md").unlink()
+    Path("docs/changelog/soon.md").unlink()
+
+    # Use cases
+    Path("docs/sc-imaging.ipynb").unlink()
+    Path("docs/sc-imaging2.ipynb").unlink()
+    Path("docs/sc-imaging3.ipynb").unlink()
+    Path("docs/sc-imaging4.ipynb").unlink()
+    Path("docs/project-flow-scripts/integrated-analysis.ipynb").unlink()
+    Path("docs/project-flow-scripts/hit-identification.ipynb").unlink()
+    Path("docs/facs.ipynb").unlink()
+    Path("docs/facs2.ipynb").unlink()
+    Path("docs/facs3.ipynb").unlink()
+    Path("docs/facs4.ipynb").unlink()
+    Path("docs/celltypist.ipynb").unlink()
+    Path("docs/data-flow.md").unlink()
+    Path("docs/enrichr.ipynb").unlink()
+    Path("docs/perturbation.ipynb").unlink(missing_ok=True)
+    Path("docs/rdf-sparql.ipynb").unlink()
+    Path("docs/project-flow.ipynb").unlink()
+    Path("docs/analysis-flow.ipynb").unlink()
+    Path("docs/analysis-registries.ipynb").unlink()
+    Path("docs/mnist.ipynb").unlink()
+    Path("docs/cellxgene-curate.ipynb").unlink()
+    Path("docs/organism.ipynb").unlink()
+    Path("docs/rxrx.ipynb").unlink()
+    Path("docs/protein.ipynb").unlink()
+    Path("docs/cell_line.ipynb").unlink()
+    Path("docs/cell_type.ipynb").unlink()
+    Path("docs/cell_marker.ipynb").unlink()
+    Path("docs/tissue.ipynb").unlink()
+    Path("docs/phenotype.ipynb").unlink()
+    Path("docs/pathway.ipynb").unlink()
+    Path("docs/experimental_factor.ipynb").unlink()
+    Path("docs/developmental_stage.ipynb").unlink()
+    Path("docs/ethnicity.ipynb").unlink()
+    Path("docs/snakemake.ipynb").unlink()
+
+    # Aux information
+    Path("docs/influences.md").unlink()
+    Path("docs/glossary.md").unlink()
+
+    # FAQ
+    Path("docs/faq/idempotency.ipynb").unlink()
+    Path("docs/faq/reference-field.ipynb").unlink()
+    Path("docs/faq/track-run-inputs.ipynb").unlink()
+    Path("docs/faq/acid.ipynb").unlink()
+    Path("docs/faq/validate-fields.ipynb").unlink()
+    Path("docs/faq/symbol-mapping.ipynb").unlink()
+    Path("docs/faq/search.ipynb").unlink()
+    Path("docs/faq/curate-any.ipynb").unlink()
+
+    # API & CLI
+    Path("docs/lamindb.md").unlink()
+    Path("docs/bionty.md").unlink()
+    Path("docs/cli.md").unlink()
+
+    if not IS_PR:
+        process = subprocess.run(  # noqa S602
+            "lndocs --strip-prefix --format text --error-on-index",  # --strict back
+            shell=True,
+        )
+
+        import lamindb_setup as ln_setup
+
+        ln_setup.settings.auto_connect = False
+        import lamindb as ln
+
+        ln.connect("laminlabs/lamin-site-assets")
+        ln.track()
+        ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
