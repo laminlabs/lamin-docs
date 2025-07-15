@@ -1,3 +1,4 @@
+- ⬆️ Upgrade `lamindb-setup` and `bionty` [PR](https://github.com/laminlabs/lamindb/pull/2947) [@Koncopd](https://github.com/Koncopd)
 - 📝 Polish README and `artifact.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2946) [@falexwolf](https://github.com/falexwolf)
 - 🗑️ Deprecate `UPath.synchronize` [PR](https://github.com/laminlabs/lamindb-setup/pull/1094) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup to fix `UPath.to_url` [PR](https://github.com/laminlabs/lamindb/pull/2945) [@Koncopd](https://github.com/Koncopd)
