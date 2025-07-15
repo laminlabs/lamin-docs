@@ -374,8 +374,6 @@ def docs(session):
     Path("docs/project-flow.ipynb").unlink()
     Path("docs/analysis-flow.ipynb").unlink()
     Path("docs/analysis-registries.ipynb").unlink()
-    Path("docs/influences.md").unlink()
-    Path("docs/glossary.md").unlink()
     Path("docs/mnist.ipynb").unlink()
     Path("docs/cellxgene-curate.ipynb").unlink()
     Path("docs/organism.ipynb").unlink()
@@ -392,6 +390,10 @@ def docs(session):
     Path("docs/ethnicity.ipynb").unlink()
     Path("docs/snakemake.ipynb").unlink()
 
+    # Aux information
+    Path("docs/influences.md").unlink()
+    Path("docs/glossary.md").unlink()
+
     # FAQ
     Path("docs/faq/idempotency.ipynb").unlink()
     Path("docs/faq/reference-field.ipynb").unlink()
@@ -407,16 +409,17 @@ def docs(session):
     Path("docs/bionty.md").unlink()
     Path("docs/cli.md").unlink()
 
-    process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --format text --error-on-index",  # --strict back
-        shell=True,
-    )
+    if not IS_PR:
+        process = subprocess.run(  # noqa S602
+            "lndocs --strip-prefix --format text --error-on-index",  # --strict back
+            shell=True,
+        )
 
-    import lamindb_setup as ln_setup
+        import lamindb_setup as ln_setup
 
-    ln_setup.settings.auto_connect = False
-    import lamindb as ln
+        ln_setup.settings.auto_connect = False
+        import lamindb as ln
 
-    ln.connect("laminlabs/lamin-site-assets")
-    ln.track()
-    ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
+        ln.connect("laminlabs/lamin-site-assets")
+        ln.track()
+        ln.Artifact("_build/html/llms.txt", key="docs-as-txt/llms.txt").save()
