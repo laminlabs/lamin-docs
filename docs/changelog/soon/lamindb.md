@@ -1,3 +1,4 @@
+- 📝 Polish README and `artifact.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2946) [@falexwolf](https://github.com/falexwolf)
 - 🗑️ Deprecate `UPath.synchronize` [PR](https://github.com/laminlabs/lamindb-setup/pull/1094) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup to fix `UPath.to_url` [PR](https://github.com/laminlabs/lamindb/pull/2945) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Rework `get_storage_region()` to make it reliable and use it in `upath.to_url()`  [PR](https://github.com/laminlabs/lamindb-setup/pull/1093) [@Koncopd](https://github.com/Koncopd)
