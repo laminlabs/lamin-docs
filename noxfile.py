@@ -348,6 +348,8 @@ def docs(session):
     Path("docs/changelog/2023.md").unlink()
     Path("docs/changelog/2024.md").unlink()
     Path("docs/changelog/soon.md").unlink()
+
+    # Use cases
     Path("docs/sc-imaging.ipynb").unlink()
     Path("docs/sc-imaging2.ipynb").unlink()
     Path("docs/sc-imaging3.ipynb").unlink()
@@ -371,6 +373,8 @@ def docs(session):
     Path("docs/mnist.ipynb").unlink()
     Path("docs/cellxgene-curate.ipynb").unlink()
     Path("docs/organism.ipynb").unlink()
+    Path("docs/rxrx.ipynb").unlink()
+    Path("docs/protein.ipynb").unlink()
     Path("docs/cell_line.ipynb").unlink()
     Path("docs/cell_type.ipynb").unlink()
     Path("docs/cell_marker.ipynb").unlink()
@@ -380,9 +384,14 @@ def docs(session):
     Path("docs/experimental_factor.ipynb").unlink()
     Path("docs/developmental_stage.ipynb").unlink()
     Path("docs/ethnicity.ipynb").unlink()
+    Path("docs/snakemake.ipynb").unlink()
+
+    # FAQ
+    Path("docs/faq/acid.ipynb").unlink()
+    Path("docs/faq/validate-fields.ipynb").unlink()
+    Path("docs/faq/symbol-mapping.ipynb").unlink()
     Path("docs/faq/search.ipynb").unlink()
     Path("docs/faq/curate-any.ipynb").unlink()
-
 
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
