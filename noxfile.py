@@ -315,14 +315,13 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
-    pass
-    # os.system("lamin init --storage ./test-quickstart --modules bionty")
-    # exit_status = os.system("python docs/includes/py-quickstart.py")
-    # assert exit_status == 0
-    # run_notebooks("docs/introduction.ipynb")
-    # run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
-    # run_notebooks("docs/hubmap.ipynb")
-    # run_notebooks("docs/setup.ipynb")
+    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
+    exit_status = os.system("python docs/includes/py-quickstart.py")  # noqa S605
+    assert exit_status == 0  # noqa S101
+    run_notebooks("docs/introduction.ipynb")
+    run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
+    run_notebooks("docs/hubmap.ipynb")
+    run_notebooks("docs/setup.ipynb")
 
 
 @nox.session
@@ -336,10 +335,16 @@ def init(session):
 @nox.session
 def docs(session):
     login_testuser2(session)
-    # process = subprocess.run(
-    #     "lndocs --strip-prefix --error-on-index",  # --strict back
-    #     shell=True,
-    # )
+    process = subprocess.run(  # noqa S602
+        "lndocs --strip-prefix --error-on-index",  # --strict back
+        shell=True,
+    )
+    # if process.returncode != 0:
+    #     # rerun without strict option so see all warnings
+    #     run(session, "lndocs --strip-prefix --error-on-index")
+    #     # exit with error
+    #     exit(1)
+
     # now strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
     strip_notebook_outputs("docs")
@@ -406,11 +411,6 @@ def docs(session):
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
         shell=True,
     )
-    # if process.returncode != 0:
-    #     # rerun without strict option so see all warnings
-    #     run(session, "lndocs --strip-prefix --error-on-index")
-    #     # exit with error
-    #     exit(1)
 
     import lamindb_setup as ln_setup
 
