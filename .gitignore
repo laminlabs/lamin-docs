@@ -25,6 +25,7 @@ lamin_usecases_docs*
 nextflow_lamin_usecases*
 quickstart-data/
 sample.fastq
+sample.fasta
 
 # macOS
 .DS_Store

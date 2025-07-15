@@ -90,7 +90,7 @@ artifact.view_lineage()
 ```
 
 <div style="height: 0.5em;"></div>
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EkQATsQL5wqC95Wj0000.png" width="300">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EkQATsQL5wqC95Wj0001.png" width="300">
 :::
 :::{tab-item} Hub
 
