@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup to fix `UPath.to_url` [PR](https://github.com/laminlabs/lamindb/pull/2945) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Rework `get_storage_region()` to make it reliable and use it in `upath.to_url()`  [PR](https://github.com/laminlabs/lamindb-setup/pull/1093) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add an actual README [PR](https://github.com/laminlabs/lamindb/pull/2943) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade wetlab [PR](https://github.com/laminlabs/lamindb/pull/2940) [@Zethson](https://github.com/Zethson)
