@@ -1,3 +1,4 @@
+- 🎨 Make sure ensembl organism has a `synonyms` column [PR](https://github.com/laminlabs/bionty/pull/296) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Add missing docstrings [PR](https://github.com/laminlabs/bionty/pull/294) [@Zethson](https://github.com/Zethson)
 - ♻️ Adapt to renaming of `UPath.synchronize()` to `UPath.synchronize_to()` [PR](https://github.com/laminlabs/bionty/pull/291) [@Koncopd](https://github.com/Koncopd)
 - 🔈 Added loggings to `Ontology.to_df()` [PR](https://github.com/laminlabs/bionty/pull/288) [@namsaraeva](https://github.com/namsaraeva)
