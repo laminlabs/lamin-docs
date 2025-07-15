@@ -259,11 +259,11 @@ def pull_artifacts(session):
     replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
 
     # wetlab (must be after use-cases)
-    pull_from_s3_and_unpack("wetlab.zip")
-    sync_path(
-        Path("wetlab/guide/pert-curator.ipynb"),
-        Path("docs/perturbation.ipynb"),
-    )
+    # pull_from_s3_and_unpack("wetlab.zip")
+    # sync_path(
+    #     Path("wetlab/guide/pert-curator.ipynb"),
+    #     Path("docs/perturbation.ipynb"),
+    # )
 
     # amend toctree
     with open("docs/guide.md") as f:
@@ -371,7 +371,7 @@ def docs(session):
     Path("docs/celltypist.ipynb").unlink()
     Path("docs/data-flow.md").unlink()
     Path("docs/enrichr.ipynb").unlink()
-    Path("docs/perturbation.ipynb").unlink(missing_ok=True)
+    # Path("docs/perturbation.ipynb").unlink()
     Path("docs/rdf-sparql.ipynb").unlink()
     Path("docs/project-flow.ipynb").unlink()
     Path("docs/analysis-flow.ipynb").unlink()
