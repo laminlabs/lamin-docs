@@ -276,7 +276,6 @@ def pull_artifacts(session):
         f.write(content)
 
     assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
-    Path("docs/clinicore.md").unlink(missing_ok=True)
 
 
 def strip_notebook_outputs(directory="."):
@@ -334,6 +333,8 @@ def init(session):
 
 @nox.session
 def docs(session):
+    # this testuser2 is only needed for writing to lamin-site-assets
+    # testuser1 cannot have access to lamin-site-assets
     login_testuser2(session)
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --error-on-index",  # --strict back
@@ -391,6 +392,7 @@ def docs(session):
     Path("docs/snakemake.ipynb").unlink()
 
     # Aux information
+    Path("docs/clinicore.md").unlink(missing_ok=True)
     Path("docs/influences.md").unlink()
     Path("docs/glossary.md").unlink()
 
