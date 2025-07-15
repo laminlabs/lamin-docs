@@ -1,3 +1,4 @@
+- ⚡️ Enable retries for supabase requests [PR](https://github.com/laminlabs/lamindb-setup/pull/1084) [@Koncopd](https://github.com/Koncopd)
 - ♻️ More efficient tests cleanup [PR](https://github.com/laminlabs/lamindb/pull/2938) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Get CELLxGENE Schema & ✨ enable curation of Feature typed indices [PR](https://github.com/laminlabs/lamindb/pull/2878) [@Zethson](https://github.com/Zethson)
 - 📝 More readable docstring [PR](https://github.com/laminlabs/lamindb-setup/pull/1091) [@Zethson](https://github.com/Zethson)
