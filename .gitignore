@@ -23,6 +23,8 @@ pytorch_lamin_mnist_docs.zip
 redun_lamin_fasta_docs.zip
 lamin_usecases_docs*
 nextflow_lamin_usecases*
+quickstart-data/
+sample.fastq
 
 # macOS
 .DS_Store

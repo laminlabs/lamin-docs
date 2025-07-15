@@ -49,7 +49,7 @@ You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM cha
 
 ```
 
-In a Python session, transfer an scRNA-seq dataset from the `laminlabs/cellxgene` instance, compute marker genes with Scanpy, and save results.
+Here's how to create an artifact while tracking source code, run environment, run logs, and inputs and outputs of a script or notebook.
 
 ```{eval-rst}
 .. literalinclude:: includes/py-quickstart.py
@@ -90,11 +90,11 @@ artifact.view_lineage()
 ```
 
 <div style="height: 0.5em;"></div>
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/A0W45AGQfmsxFhyq0000.png" width="300">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EkQATsQL5wqC95Wj0000.png" width="300">
 :::
 :::{tab-item} Hub
 
-Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/qQ6DCPnSKWMvA5GC0000).
+Explore data lineage for a more complicated example interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/qQ6DCPnSKWMvA5GC0000).
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/mfFvKdqpvlbOyQ1d0000.png" width="800">
 :::
