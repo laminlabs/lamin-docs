@@ -54,7 +54,7 @@ You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM cha
 Here's how to create an artifact while tracking source code, run environment, run logs, and inputs and outputs of a script or notebook.
 
 ```{eval-rst}
-.. literalinclude:: includes/py-quickstart.py
+.. literalinclude:: includes/create-fasta.py
    :language: python
 ```
 

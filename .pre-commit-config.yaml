@@ -31,7 +31,7 @@ repos:
       - id: ruff-format
         exclude: |
           (?x)(
-            docs/includes/py-quickstart.py
+            docs/includes/create-fasta.py
           )
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0
