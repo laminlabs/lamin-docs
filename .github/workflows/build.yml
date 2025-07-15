@@ -51,7 +51,7 @@ jobs:
       - run: nox -s init
       - run: nox -s docs
       - run: rm -r ./_build/html/.doctrees # do not want to deploy with cloudflare
-      - run: rm ./_build/html/llms.txt # do not want to deploy with cloudflare right now
+      # - run: rm ./_build/html/llms.txt # do not want to deploy with cloudflare right now
       - uses: cloudflare/wrangler-action@v3
         id: cloudflare
         with:
