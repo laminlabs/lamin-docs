@@ -1,7 +1,7 @@
 <-- first two sentences sync from README -->
 
 LaminDB is an open-source data framework to enable learning at scale in computational biology.
-It lets you track data transformations, curate datasets, manage metadata, and query a built-in database for biological entities & data structures.
+It lets you track data transformations, validate & annotate datasets, and query a built-in database for biological metadata & data structures.
 
 :::{dropdown} Why?
 
@@ -51,10 +51,12 @@ You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM cha
 
 ```
 
-Here's how to create an artifact while tracking source code, run environment, run logs, and inputs and outputs of a script or notebook.
+<!-- keep in sync with README -->
+
+Track a script or notebook run with source code, inputs, outputs, logs, and environment.
 
 ```{eval-rst}
-.. literalinclude:: includes/py-quickstart.py
+.. literalinclude:: includes/create-fasta.py
    :language: python
 ```
 
