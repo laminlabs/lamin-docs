@@ -347,6 +347,7 @@ def docs(session):
     Path("docs/changelog/2022.md").unlink()
     Path("docs/changelog/2023.md").unlink()
     Path("docs/changelog/2024.md").unlink()
+    Path("docs/changelog/2025.md").unlink()
     Path("docs/changelog/soon.md").unlink()
 
     # Use cases
@@ -387,11 +388,19 @@ def docs(session):
     Path("docs/snakemake.ipynb").unlink()
 
     # FAQ
+    Path("docs/faq/idempotency.ipynb").unlink()
+    Path("docs/faq/reference-field.ipynb").unlink()
+    Path("docs/faq/track-run-inputs.ipynb").unlink()
     Path("docs/faq/acid.ipynb").unlink()
     Path("docs/faq/validate-fields.ipynb").unlink()
     Path("docs/faq/symbol-mapping.ipynb").unlink()
     Path("docs/faq/search.ipynb").unlink()
     Path("docs/faq/curate-any.ipynb").unlink()
+
+    # API & CLI
+    Path("docs/lamindb.md").unlink()
+    Path("docs/bionty.md").unlink()
+    Path("docs/cli.md").unlink()
 
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back

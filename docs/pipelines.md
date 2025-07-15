@@ -12,7 +12,7 @@ The following use cases demonstrate how to integrate LaminDB with workflow manag
 ```{toctree}
 :maxdepth: 1
 
-../redun
-../nextflow
-../snakemake
+redun
+nextflow
+snakemake
 ```
