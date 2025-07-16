@@ -1,3 +1,5 @@
+<!-- this is roughly in sync with what's on the README -->
+
 Install the `lamindb` Python package:
 
 ```shell
