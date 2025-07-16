@@ -1,3 +1,4 @@
+- ⚡️ Speed up `lamin connect` [PR](https://github.com/laminlabs/lamin-cli/pull/144) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade `lamindb-setup` and `bionty` [PR](https://github.com/laminlabs/lamindb/pull/2947) [@Koncopd](https://github.com/Koncopd)
 - 📝 Polish README and `artifact.describe()` [PR](https://github.com/laminlabs/lamindb/pull/2946) [@falexwolf](https://github.com/falexwolf)
 - 🗑️ Deprecate `UPath.synchronize` [PR](https://github.com/laminlabs/lamindb-setup/pull/1094) [@Koncopd](https://github.com/Koncopd)
