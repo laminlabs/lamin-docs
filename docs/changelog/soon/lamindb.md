@@ -1,3 +1,4 @@
+- ♻️ Refactor connect [PR](https://github.com/laminlabs/lamin-cli/pull/145) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor connect [PR](https://github.com/laminlabs/lamindb-setup/pull/1095) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `lamin connect` [PR](https://github.com/laminlabs/lamindb/pull/2948) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `lamin connect` [PR](https://github.com/laminlabs/lamin-cli/pull/144) [@falexwolf](https://github.com/falexwolf)
