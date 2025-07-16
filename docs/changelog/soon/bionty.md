@@ -1,3 +1,4 @@
+- ♻️ Remove Disease constructor overloads [PR](https://github.com/laminlabs/bionty/pull/292) [@namsaraeva](https://github.com/namsaraeva)
 - 🎨 Update visibility of `source.dataframe_artifact` [PR](https://github.com/laminlabs/bionty/pull/299) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Add overloads to entities and improve `import_source` testing [PR](https://github.com/laminlabs/bionty/pull/273) [@namsaraeva](https://github.com/namsaraeva)
 - 🩹 Add a fallback to `UPath.synchronize` if `UPath.synchronize_to` is not available [PR](https://github.com/laminlabs/bionty/pull/297) [@Koncopd](https://github.com/Koncopd)
