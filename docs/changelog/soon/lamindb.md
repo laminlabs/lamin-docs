@@ -1,3 +1,4 @@
+- 🐛 Cast timestamps to `int` for synchronization [PR](https://github.com/laminlabs/lamindb-setup/pull/1099) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2955) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix sync for timestamps with a fractional part [PR](https://github.com/laminlabs/lamindb-setup/pull/1098) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Order storages by root length when searching on `artifact.save()` [PR](https://github.com/laminlabs/lamindb/pull/2954) [@Koncopd](https://github.com/Koncopd)
