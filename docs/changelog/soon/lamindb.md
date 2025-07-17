@@ -1,3 +1,4 @@
+- 🐛 Fix sync for timestamps with a fractional part [PR](https://github.com/laminlabs/lamindb-setup/pull/1098) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Order storages by root length when searching on `artifact.save()` [PR](https://github.com/laminlabs/lamindb/pull/2954) [@Koncopd](https://github.com/Koncopd)
 - ✅ Cover `_connect_cli` [PR](https://github.com/laminlabs/lamindb-setup/pull/1097) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `lamin annotate`, enable string-based annotation with non-ulabels, overhaul CLI docs [PR](https://github.com/laminlabs/lamindb/pull/2952) [@falexwolf](https://github.com/falexwolf)
