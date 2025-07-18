@@ -1,3 +1,4 @@
+- ♻️ Fix FutureWarning in CanCurate [PR](https://github.com/laminlabs/lamindb/pull/2950) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2959) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Debug log in `request_with_auth` [PR](https://github.com/laminlabs/lamindb-setup/pull/1102) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Speed up `describe()` by 6x [PR](https://github.com/laminlabs/lamindb/pull/2953) [@falexwolf](https://github.com/falexwolf)
