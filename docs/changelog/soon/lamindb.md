@@ -1,3 +1,4 @@
+- 🐛 Fix `search_local_root` for roots without access [PR](https://github.com/laminlabs/lamindb-setup/pull/1101) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2956) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Use default timeout for `supabase` http clients and http requests [PR](https://github.com/laminlabs/lamindb-setup/pull/1100) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Cast timestamps to `int` for synchronization [PR](https://github.com/laminlabs/lamindb-setup/pull/1099) [@Koncopd](https://github.com/Koncopd)
