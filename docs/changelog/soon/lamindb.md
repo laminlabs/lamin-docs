@@ -1,3 +1,4 @@
+- 🚸 Improve UX of keep-artifacts-local mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1104) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose `storage`, `branch`, and `space` in the `Artifact` constructor [PR](https://github.com/laminlabs/lamindb/pull/2960) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Proper response code handling [PR](https://github.com/laminlabs/lamindb-setup/pull/1103) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Fix FutureWarning in CanCurate [PR](https://github.com/laminlabs/lamindb/pull/2950) [@Zethson](https://github.com/Zethson)
