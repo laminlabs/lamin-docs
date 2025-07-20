@@ -1,3 +1,4 @@
+- 🚸 Enable `ln.track()` and `ln.finish()` for notebooks running on remote servers [PR](https://github.com/laminlabs/lamindb/pull/2962) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve UX of working in keep-artifacts-local mode [PR](https://github.com/laminlabs/lamindb/pull/2961) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve UX of keep-artifacts-local mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1104) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose `storage`, `branch`, and `space` in the `Artifact` constructor [PR](https://github.com/laminlabs/lamindb/pull/2960) [@falexwolf](https://github.com/falexwolf)
