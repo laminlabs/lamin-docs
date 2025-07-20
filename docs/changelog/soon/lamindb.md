@@ -1,3 +1,4 @@
+- 📝 Fix SpatialDataCurator docstring [PR](https://github.com/laminlabs/lamindb/pull/2963) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Enable `ln.track()` and `ln.finish()` for notebooks running on remote servers [PR](https://github.com/laminlabs/lamindb/pull/2962) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve UX of working in keep-artifacts-local mode [PR](https://github.com/laminlabs/lamindb/pull/2961) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve UX of keep-artifacts-local mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1104) [@falexwolf](https://github.com/falexwolf)
