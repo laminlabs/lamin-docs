@@ -1,2 +1,3 @@
+- 🐛 Create records under subtype via `Curator.add_new_from` [PR](https://github.com/laminlabs/lamindb/pull/2966) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade anndata to 0.12.0 [PR](https://github.com/laminlabs/lamindb/pull/2965) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Polish curate guide [PR](https://github.com/laminlabs/lamindb/pull/2964) [@Zethson](https://github.com/Zethson)
