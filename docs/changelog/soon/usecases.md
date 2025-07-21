@@ -1,3 +1,4 @@
+- ✨ Schema based CELLxGENE curation guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/126) [@Zethson](https://github.com/Zethson)
 - 🎨 Remove Pertcurator [PR](https://github.com/laminlabs/wetlab/pull/116) [@Zethson](https://github.com/Zethson)
 - 🎨 Move bulk to Schema [PR](https://github.com/laminlabs/lamin-usecases/pull/200) [@Zethson](https://github.com/Zethson)
 - 📝 Update sc-imaging guide [PR](https://github.com/laminlabs/lamin-usecases/pull/198) [@namsaraeva](https://github.com/namsaraeva)
