@@ -1,1 +1,2 @@
+- ⬆️ Upgrade anndata to 0.12.0 [PR](https://github.com/laminlabs/lamindb/pull/2965) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Polish curate guide [PR](https://github.com/laminlabs/lamindb/pull/2964) [@Zethson](https://github.com/Zethson)
