@@ -1,0 +1,1 @@
+- 🎨 Polish curate guide [PR](https://github.com/laminlabs/lamindb/pull/2964) [@Zethson](https://github.com/Zethson)
