@@ -1,3 +1,4 @@
+- ♻️ Add `print_outputs = True` to facilitate debugging [PR](https://github.com/laminlabs/lamin-usecases/pull/201) [@falexwolf](https://github.com/falexwolf)
 - ✨ Schema based CELLxGENE curation guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/126) [@Zethson](https://github.com/Zethson)
 - 🎨 Remove Pertcurator [PR](https://github.com/laminlabs/wetlab/pull/116) [@Zethson](https://github.com/Zethson)
 - 🎨 Move bulk to Schema [PR](https://github.com/laminlabs/lamin-usecases/pull/200) [@Zethson](https://github.com/Zethson)
