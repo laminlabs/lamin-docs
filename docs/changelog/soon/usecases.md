@@ -1,3 +1,4 @@
+- 🎨 Adapt facs2 to anndata 0.12 [PR](https://github.com/laminlabs/lamin-usecases/pull/202) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Add `print_outputs = True` to facilitate debugging [PR](https://github.com/laminlabs/lamin-usecases/pull/201) [@falexwolf](https://github.com/falexwolf)
 - ✨ Schema based CELLxGENE curation guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/126) [@Zethson](https://github.com/Zethson)
 - 🎨 Remove Pertcurator [PR](https://github.com/laminlabs/wetlab/pull/116) [@Zethson](https://github.com/Zethson)
