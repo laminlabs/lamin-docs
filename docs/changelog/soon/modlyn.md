@@ -1,3 +1,4 @@
+- 📝 Add a quickstart that runs on CI [PR](https://github.com/laminlabs/modlyn/pull/15) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Consolidate all logic within `SimpleLogReg` [PR](https://github.com/laminlabs/modlyn/pull/14) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add batch-size logging and loss plotting [PR](https://github.com/laminlabs/modlyn/pull/13) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor `SimpleLogReg` [PR](https://github.com/laminlabs/modlyn/pull/12) [@falexwolf](https://github.com/falexwolf)
