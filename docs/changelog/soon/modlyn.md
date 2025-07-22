@@ -1,3 +1,4 @@
+- ♻️ Refactor `SimpleLogReg` [PR](https://github.com/laminlabs/modlyn/pull/12) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Deduplicate `io` module with `arrayloaders` [PR](https://github.com/laminlabs/modlyn/pull/11) [@falexwolf](https://github.com/falexwolf)
 - 🚧 Analyses v1 [PR](https://github.com/laminlabs/modlyn/pull/8) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `arrayloaders` code [PR](https://github.com/laminlabs/modlyn/pull/9) [@falexwolf](https://github.com/falexwolf)
