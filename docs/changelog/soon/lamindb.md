@@ -1,3 +1,4 @@
+- 🚸 On `transform` delete, delete `TransformProject` links because they might be protected through a run of the same transform [PR](https://github.com/laminlabs/lamindb/pull/2969) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2967) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `LAMIN_TEST_DB_TOKEN` to `LAMIN_DB_TOKEN` [PR](https://github.com/laminlabs/lamindb-setup/pull/1105) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Create records under subtype via `Curator.add_new_from` [PR](https://github.com/laminlabs/lamindb/pull/2966) [@sunnyosun](https://github.com/sunnyosun)
