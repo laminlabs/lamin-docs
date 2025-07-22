@@ -1,3 +1,4 @@
+- ✨ Added function to extend an existing store with new h5ad files [PR](https://github.com/laminlabs/arrayloaders/pull/19) [@felix0097](https://github.com/felix0097)
 - chore: test zarrs [PR](https://github.com/laminlabs/arrayloaders/pull/18) [@ilan-gold](https://github.com/ilan-gold)
 - Feature: Added utility function to shuffle+shard h5ad files + made shuffling optional during store creation [PR](https://github.com/laminlabs/arrayloaders/pull/11) [@felix0097](https://github.com/felix0097)
 - (fix): raw datasets + no `__init__` cache to sidestep deadlocking [PR](https://github.com/laminlabs/arrayloaders/pull/17) [@ilan-gold](https://github.com/ilan-gold)
