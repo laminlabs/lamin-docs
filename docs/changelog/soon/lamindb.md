@@ -1,0 +1,1 @@
+- 🐛 Fix auto-search for corrupted local storage location [PR](https://github.com/laminlabs/lamindb-setup/pull/1109) [@falexwolf](https://github.com/falexwolf)
