@@ -1,3 +1,4 @@
+- 🐛 Fix keep-artifacts-local mode when no local storage location is found [PR](https://github.com/laminlabs/lamindb/pull/2971) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix keep-artifacts-local mode when no storage location is found [PR](https://github.com/laminlabs/lamindb-setup/pull/1107) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow `access_aws` with anonymous users [PR](https://github.com/laminlabs/lamindb-setup/pull/1106) [@Koncopd](https://github.com/Koncopd)
 - 🚸 On `transform` delete, delete `TransformProject` links because they might be protected through a run of the same transform [PR](https://github.com/laminlabs/lamindb/pull/2969) [@falexwolf](https://github.com/falexwolf)
