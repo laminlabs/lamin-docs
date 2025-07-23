@@ -1,1 +1,2 @@
+- 🔊 Warn on failing to update access token [PR](https://github.com/laminlabs/lamindb-setup/pull/1110) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix auto-search for corrupted local storage location [PR](https://github.com/laminlabs/lamindb-setup/pull/1109) [@falexwolf](https://github.com/falexwolf)
