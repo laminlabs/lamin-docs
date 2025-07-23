@@ -1,3 +1,4 @@
+- ♻️ Match sklearn on a small dataset [PR](https://github.com/laminlabs/modlyn/pull/18) [@falexwolf](https://github.com/falexwolf)
 - 👷 No need for auth [PR](https://github.com/laminlabs/modlyn/pull/17) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify quickstart [PR](https://github.com/laminlabs/modlyn/pull/16) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add a quickstart that runs on CI [PR](https://github.com/laminlabs/modlyn/pull/15) [@falexwolf](https://github.com/falexwolf)
