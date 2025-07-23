@@ -1,3 +1,4 @@
+- ✨ An eval module [PR](https://github.com/laminlabs/modlyn/pull/19) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Match sklearn on a small dataset [PR](https://github.com/laminlabs/modlyn/pull/18) [@falexwolf](https://github.com/falexwolf)
 - 👷 No need for auth [PR](https://github.com/laminlabs/modlyn/pull/17) [@falexwolf](https://github.com/falexwolf)
 - 💄 Prettify quickstart [PR](https://github.com/laminlabs/modlyn/pull/16) [@falexwolf](https://github.com/falexwolf)
