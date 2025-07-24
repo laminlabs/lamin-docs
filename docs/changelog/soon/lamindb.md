@@ -1,3 +1,4 @@
+- ✨ Allow getting settings via the CLI [PR](https://github.com/laminlabs/lamin-cli/pull/147) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Cache branch and space settings [PR](https://github.com/laminlabs/lamindb-setup/pull/1111) [@falexwolf](https://github.com/falexwolf)
 - 📝 Expand `SpatialData` section in arrays [PR](https://github.com/laminlabs/lamindb/pull/2978) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add Collection.describe() [PR](https://github.com/laminlabs/lamindb/pull/2975) [@Zethson](https://github.com/Zethson)
