@@ -1,3 +1,4 @@
+- ♻️ Move package source back to root level to get release tooling to work again [PR](https://github.com/laminlabs/arrayloaders/pull/21) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Deduplicate `models` module with modlyn [PR](https://github.com/laminlabs/arrayloaders/pull/20) [@falexwolf](https://github.com/falexwolf)
 - ✨ Added function to extend an existing store with new h5ad files [PR](https://github.com/laminlabs/arrayloaders/pull/19) [@felix0097](https://github.com/felix0097)
 - chore: test zarrs [PR](https://github.com/laminlabs/arrayloaders/pull/18) [@ilan-gold](https://github.com/ilan-gold)
