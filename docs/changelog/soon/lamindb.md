@@ -1,3 +1,4 @@
+- ✨ Add Collection.describe() [PR](https://github.com/laminlabs/lamindb/pull/2975) [@Zethson](https://github.com/Zethson)
 - ✅ Test complex features & schemas with index [PR](https://github.com/laminlabs/lamindb/pull/2970) [@Zethson](https://github.com/Zethson)
 - ✨ Implement backed access to `tables` of `SpatialData`  [PR](https://github.com/laminlabs/lamindb/pull/2968) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Warn on failing to update access token [PR](https://github.com/laminlabs/lamindb-setup/pull/1110) [@Koncopd](https://github.com/Koncopd)
