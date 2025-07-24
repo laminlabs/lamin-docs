@@ -1,3 +1,4 @@
+- 📝 Expand `SpatialData` section in arrays [PR](https://github.com/laminlabs/lamindb/pull/2978) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add Collection.describe() [PR](https://github.com/laminlabs/lamindb/pull/2975) [@Zethson](https://github.com/Zethson)
 - ✅ Test complex features & schemas with index [PR](https://github.com/laminlabs/lamindb/pull/2970) [@Zethson](https://github.com/Zethson)
 - ✨ Implement backed access to `tables` of `SpatialData`  [PR](https://github.com/laminlabs/lamindb/pull/2968) [@Koncopd](https://github.com/Koncopd)
