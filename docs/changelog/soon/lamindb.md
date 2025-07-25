@@ -1,3 +1,4 @@
+- ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2986) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Adapt huggingface sync to the changes in the API [PR](https://github.com/laminlabs/lamindb-setup/pull/1113) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to receive and add extra parameters for managed buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1112) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Hide `VitessceConfig` artifacts [PR](https://github.com/laminlabs/lamindb/pull/2982) [@falexwolf](https://github.com/falexwolf)
