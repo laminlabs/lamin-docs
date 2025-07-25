@@ -1,3 +1,4 @@
+- ✨ Allow to receive and add extra parameters for managed buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1112) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Hide `VitessceConfig` artifacts [PR](https://github.com/laminlabs/lamindb/pull/2982) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow getting settings via the CLI [PR](https://github.com/laminlabs/lamin-cli/pull/147) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Cache branch and space settings [PR](https://github.com/laminlabs/lamindb-setup/pull/1111) [@falexwolf](https://github.com/falexwolf)
