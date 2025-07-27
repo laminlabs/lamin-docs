@@ -1,3 +1,4 @@
+- ♻️ Add `django.contrib.postgres` to django apps [PR](https://github.com/laminlabs/lamindb-setup/pull/1114) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Stricter hash uniqueness on artifact and more indexes [PR](https://github.com/laminlabs/lamindb/pull/2983) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/2986) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Adapt huggingface sync to the changes in the API [PR](https://github.com/laminlabs/lamindb-setup/pull/1113) [@Koncopd](https://github.com/Koncopd)
