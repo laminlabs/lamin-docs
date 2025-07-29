@@ -1,3 +1,4 @@
+- ♻️ No more subprocesses in schema examples [PR](https://github.com/laminlabs/lamindb/pull/2991) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `curate_from_croissant()` to curate from MLCommons `Croissant` files [PR](https://github.com/laminlabs/lamindb/pull/2989) [@falexwolf](https://github.com/falexwolf)
 - ✅ Clean up core tests properly [PR](https://github.com/laminlabs/lamindb/pull/2984) [@Zethson](https://github.com/Zethson)
 - ⚡️ Generate GIN indexes [PR](https://github.com/laminlabs/lamindb/pull/2987) [@falexwolf](https://github.com/falexwolf)
