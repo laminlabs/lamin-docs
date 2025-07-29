@@ -1,0 +1,1 @@
+- 🐛 Fix assignment of key & description in save_vitessce_config() for c… [PR](https://github.com/laminlabs/lamindb/pull/2996) [@falexwolf](https://github.com/falexwolf)
