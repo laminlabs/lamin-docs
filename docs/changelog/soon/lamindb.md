@@ -1,3 +1,4 @@
+- ✨ Enable reverting database migrations [PR](https://github.com/laminlabs/lamindb-setup/pull/1116) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable reverting database migrations [PR](https://github.com/laminlabs/lamin-cli/pull/148) [@falexwolf](https://github.com/falexwolf)
 - 💚 Adapt permissions test setup [PR](https://github.com/laminlabs/lamindb/pull/2994) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Move & rename `examples.ingest_mini_immuno_datasets` to `examples.datasets.save_mini_immuno_datasets` [PR](https://github.com/laminlabs/lamindb/pull/2993) [@falexwolf](https://github.com/falexwolf)
