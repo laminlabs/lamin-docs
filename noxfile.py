@@ -8,7 +8,7 @@ from dirsync import sync
 from laminci import run_notebooks
 from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
 
-IS_PR = os.getenv("GITHUB_EVENT_NAME") != "pull_request"
+IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
 
 
 @nox.session
