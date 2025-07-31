@@ -1,1 +1,2 @@
+- ✅ Test yet another RLS optimization [PR](https://github.com/laminlabs/lamindb/pull/2990) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix assignment of key & description in save_vitessce_config() for c… [PR](https://github.com/laminlabs/lamindb/pull/2996) [@falexwolf](https://github.com/falexwolf)
