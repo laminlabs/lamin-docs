@@ -1,3 +1,4 @@
+- 📝 Improve arrays tutorial  [PR](https://github.com/laminlabs/lamindb/pull/3006) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix delete for cloud sqlite instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1120) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3004) [@Koncopd](https://github.com/Koncopd)
 - 👔 Rework `update_db_using_local` to always use hub db connection if available [PR](https://github.com/laminlabs/lamindb-setup/pull/1119) [@Koncopd](https://github.com/Koncopd)
