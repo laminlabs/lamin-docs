@@ -1,3 +1,4 @@
+- 👔 Rework `update_db_using_local` to always use hub db connection if available [PR](https://github.com/laminlabs/lamindb-setup/pull/1119) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow to overwrite local postgres db connection [PR](https://github.com/laminlabs/lamindb-setup/pull/1118) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test yet another RLS optimization [PR](https://github.com/laminlabs/lamindb/pull/2990) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix assignment of key & description in save_vitessce_config() for c… [PR](https://github.com/laminlabs/lamindb/pull/2996) [@falexwolf](https://github.com/falexwolf)
