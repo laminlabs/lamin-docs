@@ -1,3 +1,4 @@
+- 🐛 Fix selection with a bool mask in `AnnDataAccessor` with `zarr` [PR](https://github.com/laminlabs/lamindb/pull/3008) [@Koncopd](https://github.com/Koncopd)
 - 📝 Improve arrays tutorial  [PR](https://github.com/laminlabs/lamindb/pull/3006) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix delete for cloud sqlite instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1120) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3004) [@Koncopd](https://github.com/Koncopd)
