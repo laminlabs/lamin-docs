@@ -1,3 +1,4 @@
+- ✨ New Tissue version: Uberon-2025-05-28 [PR](https://github.com/laminlabs/bionty/pull/310) [@Zethson](https://github.com/Zethson)
 - ⚡️ Generate GIN indexes [PR](https://github.com/laminlabs/bionty/pull/307) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add indexes [PR](https://github.com/laminlabs/bionty/pull/306) [@falexwolf](https://github.com/falexwolf)
 - :pencil: Fix typo in README [PR](https://github.com/laminlabs/bionty/pull/305) [@falexwolf](https://github.com/falexwolf)
