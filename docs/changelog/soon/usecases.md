@@ -1,3 +1,4 @@
+- CELLxGENE LTS 2025-01-30 registration [PR](https://github.com/laminlabs/cellxgene-lamin/pull/127) [@Zethson](https://github.com/Zethson)
 - ♻️ Add indexes [PR](https://github.com/laminlabs/wetlab/pull/117) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Adapt sc-imaging2 to anndata 0.12 [PR](https://github.com/laminlabs/lamin-usecases/pull/203) [@namsaraeva](https://github.com/namsaraeva)
 - 🎨 Adapt facs2 to anndata 0.12 [PR](https://github.com/laminlabs/lamin-usecases/pull/202) [@sunnyosun](https://github.com/sunnyosun)
