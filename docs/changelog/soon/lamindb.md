@@ -1,3 +1,4 @@
+- 🔒️ Require ssl for remote postgres [PR](https://github.com/laminlabs/lamindb-setup/pull/1117) [@Koncopd](https://github.com/Koncopd)
 - 📝Add nested dictionary case for Pydantic/Pandera/LaminDB comparison [PR](https://github.com/laminlabs/lamindb/pull/3005) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix selection with a bool mask in `AnnDataAccessor` with `zarr` [PR](https://github.com/laminlabs/lamindb/pull/3008) [@Koncopd](https://github.com/Koncopd)
 - 📝 Improve arrays tutorial  [PR](https://github.com/laminlabs/lamindb/pull/3006) [@Koncopd](https://github.com/Koncopd)
