@@ -1,3 +1,4 @@
+- ✨New CellType version: cl-2025-04-10 [PR](https://github.com/laminlabs/bionty/pull/311) [@Zethson](https://github.com/Zethson)
 - ✨ New Tissue version: Uberon-2025-05-28 [PR](https://github.com/laminlabs/bionty/pull/310) [@Zethson](https://github.com/Zethson)
 - ⚡️ Generate GIN indexes [PR](https://github.com/laminlabs/bionty/pull/307) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add indexes [PR](https://github.com/laminlabs/bionty/pull/306) [@falexwolf](https://github.com/falexwolf)
