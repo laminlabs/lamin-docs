@@ -1,3 +1,4 @@
+- Fix summary note formatting [PR](https://github.com/laminlabs/cellxgene-lamin/pull/130) [@Zethson](https://github.com/Zethson)
 - 🎨 Curation guide improvements [PR](https://github.com/laminlabs/cellxgene-lamin/pull/129) [@Zethson](https://github.com/Zethson)
 - CELLxGENE LTS 2025-01-30 registration [PR](https://github.com/laminlabs/cellxgene-lamin/pull/127) [@Zethson](https://github.com/Zethson)
 - ♻️ Add indexes [PR](https://github.com/laminlabs/wetlab/pull/117) [@falexwolf](https://github.com/falexwolf)
