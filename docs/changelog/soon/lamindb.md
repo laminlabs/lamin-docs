@@ -1,3 +1,4 @@
+- 🐛 Fix `AnnDataAccessor` for `AnnData` objects with indices stored as integers [PR](https://github.com/laminlabs/lamindb/pull/3016) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `ProjectRecord` for annotating sheets with projects [PR](https://github.com/laminlabs/lamindb/pull/3014) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Annotate Artifacts passed to Curator with Schema [PR](https://github.com/laminlabs/lamindb/pull/3007) [@Zethson](https://github.com/Zethson)
 - 🚸 Ask for additional confirmation when creating storage locations through switching storage settings [PR](https://github.com/laminlabs/lamindb/pull/3003) [@falexwolf](https://github.com/falexwolf)
