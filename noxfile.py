@@ -115,6 +115,7 @@ OTHER_TOPICS = """
 design
 access
 security
+sheets
 faq
 influences
 glossary
