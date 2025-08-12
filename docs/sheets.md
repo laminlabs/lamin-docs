@@ -25,13 +25,13 @@ With our team/enterprise plan, you can access this functionality at https://lami
    In the example shown, the `time_unit` column points to the TimeUnit sheet, which defines the permissible values for this field. This relationship ensures that only valid time units can be selected.
 
    <div align="center">
-   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/aVUC7UyIkJIxwSXv0000.png" style="width: 80%;"/>
+   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/aVUC7UyIkJIxwSXv0000.png" style="width: 90%;"/>
    </div>
 
    Column relationships include registry links to predefined registries like TimeUnit or Treatment, ontology references that connect to biological ontologies (bionty.Organism, bionty.Tissue), cross-sheet references that link to records in other custom sheets, and enum constraints that restrict values to predefined lists.
 
    <div align="center">
-   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/uE0ax5NAXqjTfgGC0000.png" style="width: 80%;"/>
+   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/uE0ax5NAXqjTfgGC0000.png" style="width: 90%;"/>
    </div>
 
 ## Enforcing schemas on sheets
@@ -41,7 +41,11 @@ When you register a sheet with a schema, you create a standardized template that
 Schema-enfored sheets display field definitions in the headers, showing both field names and their corresponding data types. This provides immediate visibility into the expected data structure.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DQLooUQbCCRxHRlx0000.png" style="width: 50%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DQLooUQbCCRxHRlx0000.png" style="width: 60%;"/>
+</div>
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KeRnttLkyhHYXVag0000.png" style="width: 90%;"/>
 </div>
 
 ## Export sheets
