@@ -113,8 +113,8 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 design
-access
 security
+hub
 faq
 influences
 glossary
