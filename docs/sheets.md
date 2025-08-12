@@ -4,7 +4,7 @@ LaminHub offers a spreadsheet-like experience for managing metadata based on Lam
 
 In contrast to the pre-defined SQL-based registries like {class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~bionty.Gene`, etc., sheets allow adding columns flexibly.
 
-With our team/enterprise plan, you can access this functionality at https://lamin.ai/instance-slug/records (see https://lamin.ai/laminlabs/lamindata/records for examples).
+With our team/enterprise plan, you can access this functionality at https://lamin.ai/instance-slug/records (see [lamindata](https://lamin.ai/laminlabs/lamindata/records) for examples).
 
 ## Create a sheet
 
