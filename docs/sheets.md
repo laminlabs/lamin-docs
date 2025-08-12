@@ -4,11 +4,9 @@ LaminHub offers a spreadsheet-like experience for managing metadata based on Lam
 
 In contrast to the pre-defined SQL-based registries like {class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~bionty.Gene`, etc., sheets allow adding columns flexibly.
 
-With our team/enterprise plan, you can access this functionality at https://lamin.ai/instance-slug/records (see [lamindata](https://lamin.ai/laminlabs/lamindata/records) for examples).
-
 ## Create a sheet
 
-1. Create or select a sheet type on the left navbar
+1. Create or select a sheet type on the left navbar. [Example](https://lamin.ai/laminlabs/lamindata/records)
 
    Organize your sheets using types, similar to creating folders that contain different groups of related sheets. This hierarchical structure is visualized in the left navigation panel—click the `+` button to create new sheet types and build your organizational taxonomy.
 
@@ -16,11 +14,11 @@ With our team/enterprise plan, you can access this functionality at https://lami
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/e4ueQpX1chfYETo70001.png" style="width: 40%;"/>
    </div>
 
-2. Select the sheet type you want to create sheet under
-3. Click on "Edit" to add edit rows in the sheet
-4. Each value in the sheet becomes a selectable option in dropdown menus
+2. Select the sheet type you want to create sheet under.
+3. Click on "Edit" to add edit rows in the sheet.
+4. Each value in the sheet becomes a selectable option in dropdown menus.
 
-   Link columns in one sheet to another sheet or registry by specifying the appropriate data type. This creates relational connections that maintain data integrity and enable powerful cross-referencing.
+   You can link columns in one sheet to another sheet or registry by specifying the appropriate data type. This creates relational connections that maintain data integrity and enable powerful cross-referencing.
 
    In the example shown, the `time_unit` column points to the TimeUnit sheet, which defines the permissible values for this field. This relationship ensures that only valid time units can be selected.
 
