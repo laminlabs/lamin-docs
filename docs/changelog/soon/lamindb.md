@@ -1,2 +1,3 @@
+- 🚸 Define `__all__` [PR](https://github.com/laminlabs/lamindb/pull/3019) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Always import the entire public API & enable switching instances in the same Python session [PR](https://github.com/laminlabs/lamindb/pull/2851) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Set up Django on every import of lamindb via a "mock instance" [PR](https://github.com/laminlabs/lamindb-setup/pull/1063) [@falexwolf](https://github.com/falexwolf)
