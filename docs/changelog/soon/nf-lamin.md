@@ -1,3 +1,4 @@
+- 🔊 Throw more understandable error when an instance can't be found [PR](https://github.com/laminlabs/nf-lamin/pull/70) [@rcannood](https://github.com/rcannood)
 - 📝 Render docs with ipynb [PR](https://github.com/laminlabs/nf-lamin/pull/69) [@rcannood](https://github.com/rcannood)
 - ✨ Track Nextflow runs by creating Transforms and Runs [PR](https://github.com/laminlabs/nf-lamin/pull/63) [@rcannood](https://github.com/rcannood)
 - 📝 Update readme after release of 0.0.1 [PR](https://github.com/laminlabs/nf-lamin/pull/62) [@rcannood](https://github.com/rcannood)
