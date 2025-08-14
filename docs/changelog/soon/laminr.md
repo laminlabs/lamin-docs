@@ -1,3 +1,4 @@
+- 🚸 Return an object from `laminr_status()` [PR](https://github.com/laminlabs/laminr/pull/215) [@lazappi](https://github.com/lazappi)
 - 🚸 Simplify R environment file [PR](https://github.com/laminlabs/laminr/pull/213) [@lazappi](https://github.com/lazappi)
 - ♻️ Avoid using CLI to get lamin settings [PR](https://github.com/laminlabs/laminr/pull/210) [@lazappi](https://github.com/lazappi)
 - ⬆️ Add minimal scipy requirement [PR](https://github.com/laminlabs/laminr/pull/209) [@lazappi](https://github.com/lazappi)
