@@ -1,3 +1,4 @@
+- 🐛 Fix issues with loading migrations and unavailable instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1121) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Adapt to new convention for tracking R environments [PR](https://github.com/laminlabs/lamindb/pull/3020) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Define `__all__` [PR](https://github.com/laminlabs/lamindb/pull/3019) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Always import the entire public API & enable switching instances in the same Python session [PR](https://github.com/laminlabs/lamindb/pull/2851) [@falexwolf](https://github.com/falexwolf)
