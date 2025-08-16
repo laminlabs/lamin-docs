@@ -1,3 +1,4 @@
+- ♻️ Simplify `init_storage()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1123) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix fine-grained-access test [PR](https://github.com/laminlabs/lamindb-setup/pull/1122) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Soft delete everywhere [PR](https://github.com/laminlabs/lamindb/pull/3022) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix duplicated migration, loading issues, and unavailable instances, all introduced in the "always-connect PR" [PR](https://github.com/laminlabs/lamindb/pull/3021) [@falexwolf](https://github.com/falexwolf)
