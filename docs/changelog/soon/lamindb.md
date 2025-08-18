@@ -1,3 +1,4 @@
+- 🚸 Better `lamin delete` and getting versioned entities from trash [PR](https://github.com/laminlabs/lamindb/pull/3025) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Refactor delete and load [PR](https://github.com/laminlabs/lamin-cli/pull/149) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix missing ProjectRecord model in schema json [PR](https://github.com/laminlabs/lamindb/pull/3024) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Simplify `init_storage()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1123) [@falexwolf](https://github.com/falexwolf)
