@@ -1,3 +1,4 @@
+- ⬆️ Install development dependencies from submodules [PR](https://github.com/laminlabs/laminr/pull/218) [@lazappi](https://github.com/lazappi)
 - 🚸 Less confusion about the lamindb API vs. the laminr API [PR](https://github.com/laminlabs/laminr/pull/204) [@falexwolf](https://github.com/falexwolf)
 - Bump actions/checkout from 4 to 5 [PR](https://github.com/laminlabs/laminr/pull/214) [@dependabot[bot]](https://github.com/apps/dependabot)
 - 🚸 Return an object from `laminr_status()` [PR](https://github.com/laminlabs/laminr/pull/215) [@lazappi](https://github.com/lazappi)
