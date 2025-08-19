@@ -1,3 +1,4 @@
+- ✨ Support AnnDataAccessor for AnnDataCurator [PR](https://github.com/laminlabs/lamindb/pull/2980) [@Zethson](https://github.com/Zethson)
 - ✨ Support more organisms in CELLxGENE [PR](https://github.com/laminlabs/lamindb/pull/3026) [@Zethson](https://github.com/Zethson)
 - 💚  Fix curator tests [PR](https://github.com/laminlabs/lamindb/pull/3028) [@Zethson](https://github.com/Zethson)
 - 🚸 Better `lamin delete` and getting versioned entities from trash [PR](https://github.com/laminlabs/lamindb/pull/3025) [@falexwolf](https://github.com/falexwolf)
