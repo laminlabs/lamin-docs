@@ -1,3 +1,4 @@
+- 🚸 Disable Python ANSI codes in R Markdown [PR](https://github.com/laminlabs/laminr/pull/217) [@lazappi](https://github.com/lazappi)
 - 🐛 Handle NULL `doc_context$id` in `detect_path()` [PR](https://github.com/laminlabs/laminr/pull/220) [@lazappi](https://github.com/lazappi)
 - ➖ Move Seurat dependency to website only [PR](https://github.com/laminlabs/laminr/pull/219) [@lazappi](https://github.com/lazappi)
 - ⬆️ Install development dependencies from submodules [PR](https://github.com/laminlabs/laminr/pull/218) [@lazappi](https://github.com/lazappi)
