@@ -1,3 +1,4 @@
+- ♻️ Enable selecting storage from hub [PR](https://github.com/laminlabs/lamindb-setup/pull/1125) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `space_uuid` argument to `init_storage()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1124) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support AnnDataAccessor for AnnDataCurator [PR](https://github.com/laminlabs/lamindb/pull/2980) [@Zethson](https://github.com/Zethson)
 - ✨ Support more organisms in CELLxGENE [PR](https://github.com/laminlabs/lamindb/pull/3026) [@Zethson](https://github.com/Zethson)
