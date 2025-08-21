@@ -20,10 +20,12 @@ Use `requests` and pass the token as in the example below:
 import lamindb as ln
 import requests
 
-requests.get(
+response = requests.get(
     f"https://aws.us-east-1.lamin.ai/api/account",
     headers={"Authorization": f"Bearer {ln.setup.settings.user.access_token}"}
 )
+response.json()
+# {...}
 ```
 
 ## Deployments
@@ -36,4 +38,3 @@ Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 - `https://aws.eu-west-2.api.lamin.ai`
 
 On-prem deployments have their own APIs.
-
