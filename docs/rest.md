@@ -1,6 +1,32 @@
 # REST
 
-See the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
+## Swagger UI
+
+The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
+
+## Example
+
+To use the API from within Python, you can directly pass the token that LaminDB uses internally.
+
+Authenticate via the CLI and pass your API key:
+
+```bash
+$ lamin login
+```
+
+Use `requests` and pass the token as in the example below:
+
+```python
+import lamindb as ln
+import requests
+
+requests.get(
+    f"https://aws.us-east-1.lamin.ai/api/account",
+    headers={"Authorization": f"Bearer {ln.setup.settings.user.access_token}"}
+)
+```
+
+## Deployments
 
 Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 
@@ -9,18 +35,5 @@ Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 - `https://aws.eu-central-1.api.lamin.ai`
 - `https://aws.eu-west-2.api.lamin.ai`
 
-For example, this is how you would call the endpoint to retrieve your own account metadata:
+On-prem deployments have their own APIs.
 
-```
-# If you're not already logged in:
-# from lamindb_setup import login
-# login(...)
-
-from lamindb_setup import settings
-import requests
-
-requests.get(
-    f"https://aws.us-east-1.lamin.ai/api/account",
-    headers={"Authorization": f"Bearer {settings.user.access_token}"}
-)
-```
