@@ -9,7 +9,7 @@ Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 - `https://aws.eu-central-1.api.lamin.ai`
 - `https://aws.eu-west-2.api.lamin.ai`
 
-For example, this is how you would called the endpoint to retrieve your own account metadata:
+For example, this is how you would call the endpoint to retrieve your own account metadata:
 
 ```
 # If you're not already logged in:
