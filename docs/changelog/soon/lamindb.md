@@ -1,3 +1,4 @@
+- ✨ Unstructured slot validation of scverse datastructures [PR](https://github.com/laminlabs/lamindb/pull/3029) [@Zethson](https://github.com/Zethson)
 - ✨ Fine-grained storage access management [PR](https://github.com/laminlabs/lamindb/pull/3023) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable selecting storage from hub [PR](https://github.com/laminlabs/lamindb-setup/pull/1125) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `space_uuid` argument to `init_storage()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1124) [@falexwolf](https://github.com/falexwolf)
