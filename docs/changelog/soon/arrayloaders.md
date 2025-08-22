@@ -1,3 +1,4 @@
+- fix: leftover data fix [PR](https://github.com/laminlabs/arrayloaders/pull/24) [@ilan-gold](https://github.com/ilan-gold)
 - feat: allow for `cupy` usage [PR](https://github.com/laminlabs/arrayloaders/pull/23) [@ilan-gold](https://github.com/ilan-gold)
 - fix: remove shape hotpath [PR](https://github.com/laminlabs/arrayloaders/pull/22) [@ilan-gold](https://github.com/ilan-gold)
 - ♻️ Move package source back to root level to get release tooling to work again [PR](https://github.com/laminlabs/arrayloaders/pull/21) [@falexwolf](https://github.com/falexwolf)
