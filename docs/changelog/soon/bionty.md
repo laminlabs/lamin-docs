@@ -1,3 +1,4 @@
+- ⬆️ Adapt to soft delete of source [PR](https://github.com/laminlabs/bionty/pull/314) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Organism version: ncbitaxon-2025-03-13 [PR](https://github.com/laminlabs/bionty/pull/312) [@Zethson](https://github.com/Zethson)
 - ✨New CellType version: cl-2025-04-10 [PR](https://github.com/laminlabs/bionty/pull/311) [@Zethson](https://github.com/Zethson)
 - ✨ New Tissue version: Uberon-2025-05-28 [PR](https://github.com/laminlabs/bionty/pull/310) [@Zethson](https://github.com/Zethson)
