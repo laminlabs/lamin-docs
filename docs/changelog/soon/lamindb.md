@@ -1,3 +1,4 @@
+- ✨ Allow getting artifacts by path via `Artifact.get(path="...")` [PR](https://github.com/laminlabs/lamindb/pull/3034) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `Feature.from_dict()`  [PR](https://github.com/laminlabs/lamindb/pull/3030) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix adding a column to a cloud `AnnData` object with consolidated metadata [PR](https://github.com/laminlabs/lamindb/pull/3033) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Amend storage access tests [PR](https://github.com/laminlabs/lamindb/pull/3032) [@falexwolf](https://github.com/falexwolf)
