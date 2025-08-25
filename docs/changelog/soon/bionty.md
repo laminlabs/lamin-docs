@@ -1,3 +1,4 @@
+- 📝 Fix 'category must be a class' docs warning [PR](https://github.com/laminlabs/bionty/pull/313) [@Zethson](https://github.com/Zethson)
 - ✨ Add a script to register new standard ontology in `bionty-assets` [PR](https://github.com/laminlabs/bionty/pull/275) [@namsaraeva](https://github.com/namsaraeva)
 - ⬆️ Adapt to soft delete of source [PR](https://github.com/laminlabs/bionty/pull/314) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Organism version: ncbitaxon-2025-03-13 [PR](https://github.com/laminlabs/bionty/pull/312) [@Zethson](https://github.com/Zethson)
