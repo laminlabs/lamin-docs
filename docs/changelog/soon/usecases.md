@@ -1,3 +1,4 @@
+- ✨Improve MLFlow guide [PR](https://github.com/laminlabs/lamin-mlops/pull/25) [@Zethson](https://github.com/Zethson)
 - ✨  Add `smiles` and `inchkey` fields to `Compound` including SMILES normalization [PR](https://github.com/laminlabs/wetlab/pull/118) [@azkalot1](https://github.com/azkalot1)
 - Fix summary note formatting [PR](https://github.com/laminlabs/cellxgene-lamin/pull/130) [@Zethson](https://github.com/Zethson)
 - 🎨 Curation guide improvements [PR](https://github.com/laminlabs/cellxgene-lamin/pull/129) [@Zethson](https://github.com/Zethson)
