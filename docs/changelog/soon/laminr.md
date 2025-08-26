@@ -1,3 +1,4 @@
+- ✨ Add wrapping for Registry$from_dataframe() [PR](https://github.com/laminlabs/laminr/pull/221) [@lazappi](https://github.com/lazappi)
 - 🚸 Disable Python ANSI codes in R Markdown [PR](https://github.com/laminlabs/laminr/pull/217) [@lazappi](https://github.com/lazappi)
 - 🐛 Handle NULL `doc_context$id` in `detect_path()` [PR](https://github.com/laminlabs/laminr/pull/220) [@lazappi](https://github.com/lazappi)
 - ➖ Move Seurat dependency to website only [PR](https://github.com/laminlabs/laminr/pull/219) [@lazappi](https://github.com/lazappi)
