@@ -1,3 +1,4 @@
+- ♻️ Use `.to_list()` and `.from_dataframe()` [PR](https://github.com/laminlabs/bionty/pull/317) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `.df()` to `.to_dataframe()` [PR](https://github.com/laminlabs/bionty/pull/316) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix typos of `include_id_prefixes` [PR](https://github.com/laminlabs/bionty/pull/315) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix 'category must be a class' docs warning [PR](https://github.com/laminlabs/bionty/pull/313) [@Zethson](https://github.com/Zethson)
