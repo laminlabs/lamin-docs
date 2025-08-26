@@ -1,3 +1,4 @@
+- 🚸 Pass arguments to `require_module()` [PR](https://github.com/laminlabs/laminr/pull/224) [@lazappi](https://github.com/lazappi)
 - 🚸 Disable Python ANSI codes in CLI functions [PR](https://github.com/laminlabs/laminr/pull/223) [@lazappi](https://github.com/lazappi)
 - ✨ Add wrapping for Registry$from_dataframe() [PR](https://github.com/laminlabs/laminr/pull/221) [@lazappi](https://github.com/lazappi)
 - 🚸 Disable Python ANSI codes in R Markdown [PR](https://github.com/laminlabs/laminr/pull/217) [@lazappi](https://github.com/lazappi)
