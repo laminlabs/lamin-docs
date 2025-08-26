@@ -1,3 +1,4 @@
+- ♻️ Rename `.list()` to `.to_list()`, `.from_df()` to `.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3038) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `.df()` to `.to_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3035) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow getting artifacts by path via `Artifact.get(path="...")` [PR](https://github.com/laminlabs/lamindb/pull/3034) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `Feature.from_dict()`  [PR](https://github.com/laminlabs/lamindb/pull/3030) [@Zethson](https://github.com/Zethson)
