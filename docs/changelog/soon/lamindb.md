@@ -1,3 +1,4 @@
+- ✨ Parse and populate title in r notebooks on `lamin save` [PR](https://github.com/laminlabs/lamindb/pull/3043) [@Koncopd](https://github.com/Koncopd)
 - ✨ Parse and populate title in r notebooks on `lamin save` [PR](https://github.com/laminlabs/lamin-cli/pull/150) [@Koncopd](https://github.com/Koncopd)
 - 💚 Adapt permissions tests setup [PR](https://github.com/laminlabs/lamindb/pull/3042) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support py:percent notebooks [PR](https://github.com/laminlabs/lamindb/pull/3041) [@Koncopd](https://github.com/Koncopd)
