@@ -1,3 +1,4 @@
+- 💚 Adapt permissions tests setup [PR](https://github.com/laminlabs/lamindb/pull/3042) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support py:percent notebooks [PR](https://github.com/laminlabs/lamindb/pull/3041) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `.list()` to `.to_list()`, `.from_df()` to `.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3038) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `.df()` to `.to_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3035) [@Koncopd](https://github.com/Koncopd)
