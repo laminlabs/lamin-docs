@@ -1,3 +1,4 @@
+- 🩹 Make `find_closest_aws_region` more reliable [PR](https://github.com/laminlabs/lamindb-setup/pull/1127) [@Koncopd](https://github.com/Koncopd)
 - 💚 Proper storage cleanup in test_permissions 2 [PR](https://github.com/laminlabs/lamindb/pull/3045) [@Koncopd](https://github.com/Koncopd)
 - 💚 Proper storage cleanup in test_permissions [PR](https://github.com/laminlabs/lamindb/pull/3044) [@Koncopd](https://github.com/Koncopd)
 - ✨ Parse and populate title in r notebooks on `lamin save` [PR](https://github.com/laminlabs/lamindb/pull/3043) [@Koncopd](https://github.com/Koncopd)
