@@ -1,3 +1,4 @@
+- ⬆️ Upgrade `fsspec` to 2025.7.0 [PR](https://github.com/laminlabs/lamindb/pull/3047) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade fsspec [PR](https://github.com/laminlabs/lamindb-setup/pull/1128) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Make `find_closest_aws_region` more reliable [PR](https://github.com/laminlabs/lamindb-setup/pull/1127) [@Koncopd](https://github.com/Koncopd)
 - 💚 Proper storage cleanup in test_permissions 2 [PR](https://github.com/laminlabs/lamindb/pull/3045) [@Koncopd](https://github.com/Koncopd)
