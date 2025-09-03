@@ -1,3 +1,4 @@
+- ✨ Implement lazy artifact saving for streaming data [PR](https://github.com/laminlabs/lamindb/pull/3051) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add support for CELLxGENE Schema 6.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3000) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix `queryset.to_dataframe(include=...)` with `using` and annotations [PR](https://github.com/laminlabs/lamindb/pull/3053) [@Koncopd](https://github.com/Koncopd)
 - 💚 Adapt `hub-local` [PR](https://github.com/laminlabs/lamindb-setup/pull/1130) [@Koncopd](https://github.com/Koncopd)
