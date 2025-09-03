@@ -6,5 +6,5 @@
 wandb
 mlflow
 mnist
-croissantml
+croissant
 ```
