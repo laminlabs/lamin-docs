@@ -1,3 +1,4 @@
+- 💚 Adapt `hub-local` [PR](https://github.com/laminlabs/lamindb-setup/pull/1130) [@Koncopd](https://github.com/Koncopd)
 - 🔧 Set `connect_timeout` for postgres [PR](https://github.com/laminlabs/lamindb-setup/pull/1129) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support validating linked features: adding a `schema` argument to `.features.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3039) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade `fsspec` to 2025.7.0 [PR](https://github.com/laminlabs/lamindb/pull/3047) [@Koncopd](https://github.com/Koncopd)
