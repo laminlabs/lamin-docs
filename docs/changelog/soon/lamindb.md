@@ -1,3 +1,4 @@
+- ♻️ Make storage space test more robust [PR](https://github.com/laminlabs/lamindb/pull/3054) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve documentation for "slots" [PR](https://github.com/laminlabs/lamindb/pull/3048) [@Zethson](https://github.com/Zethson)
 - ✨ Implement lazy artifact saving for streaming data [PR](https://github.com/laminlabs/lamindb/pull/3051) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add support for CELLxGENE Schema 6.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3000) [@Zethson](https://github.com/Zethson)
