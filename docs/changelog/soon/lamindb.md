@@ -1,3 +1,4 @@
+- ✨ Allow to update reports of notebooks on `lamin save` [PR](https://github.com/laminlabs/lamindb/pull/3050) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow updating reports of transforms on `lamin save` [PR](https://github.com/laminlabs/lamin-cli/pull/151) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add validating linked features guide & examples [PR](https://github.com/laminlabs/lamindb/pull/3052) [@Zethson](https://github.com/Zethson)
 - ♻️ Make storage space test more robust [PR](https://github.com/laminlabs/lamindb/pull/3054) [@falexwolf](https://github.com/falexwolf)
