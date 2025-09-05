@@ -1,3 +1,4 @@
+- 🚸 Print warning when creating spaces on SQLite or local instances [PR](https://github.com/laminlabs/lamindb/pull/3027) [@falexwolf](https://github.com/falexwolf)
 - :card_file_box: Add `type` record constraint [PR](https://github.com/laminlabs/lamindb/pull/3015) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Transfer feature based on uid instead of name [PR](https://github.com/laminlabs/lamindb/pull/2998) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Add croissant example to TOC [PR](https://github.com/laminlabs/lamindb/pull/3046) [@Zethson](https://github.com/Zethson)
