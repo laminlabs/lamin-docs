@@ -1,3 +1,4 @@
+- ♻️ Refactor and prettify login function [PR](https://github.com/laminlabs/lamindb-setup/pull/1131) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `RecordUser` link model [PR](https://github.com/laminlabs/lamindb/pull/3057) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Print warning when creating spaces on SQLite or local instances [PR](https://github.com/laminlabs/lamindb/pull/3027) [@falexwolf](https://github.com/falexwolf)
 - :card_file_box: Add `type` record constraint [PR](https://github.com/laminlabs/lamindb/pull/3015) [@chaichontat](https://github.com/chaichontat)
