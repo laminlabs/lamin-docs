@@ -1,3 +1,4 @@
+- :bricks: Update run status based on lamindb changes [PR](https://github.com/laminlabs/nf-lamin/pull/73) [@rcannood](https://github.com/rcannood)
 - :white_check_mark: Extend tests [PR](https://github.com/laminlabs/nf-lamin/pull/72) [@rcannood](https://github.com/rcannood)
 - Add dev instructions [PR](https://github.com/laminlabs/nf-lamin/pull/71) [@Zethson](https://github.com/Zethson)
 - 🔊 Throw more understandable error when an instance can't be found [PR](https://github.com/laminlabs/nf-lamin/pull/70) [@rcannood](https://github.com/rcannood)
