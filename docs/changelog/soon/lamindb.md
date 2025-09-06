@@ -1,3 +1,4 @@
+- 🐛 Fix ambiguity in `is_valid_record_type` [PR](https://github.com/laminlabs/lamindb/pull/3059) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor and prettify `login()` and `lamin login` [PR](https://github.com/laminlabs/lamindb/pull/3058) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor and prettify login via CLI & CLI docs overall [PR](https://github.com/laminlabs/lamin-cli/pull/152) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor and prettify login function [PR](https://github.com/laminlabs/lamindb-setup/pull/1131) [@falexwolf](https://github.com/falexwolf)
