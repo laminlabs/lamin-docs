@@ -1,3 +1,4 @@
+- 🚸 More specific hint & comments about re-connecting lamindb instances in presence of function-scoped imports [PR](https://github.com/laminlabs/lamindb-setup/pull/1133) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Record `created_by_id` when creating an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1132) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix ambiguity in `is_valid_record_type` [PR](https://github.com/laminlabs/lamindb/pull/3059) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor and prettify `login()` and `lamin login` [PR](https://github.com/laminlabs/lamindb/pull/3058) [@falexwolf](https://github.com/falexwolf)
