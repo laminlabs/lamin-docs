@@ -3,12 +3,15 @@ import shutil
 import subprocess
 from pathlib import Path
 
+import lamindb as ln
 import nox
 from dirsync import sync
 from laminci import run_notebooks
 from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
+
+nox.options.default_venv_backend = "none"
 
 
 @nox.session
@@ -416,12 +419,6 @@ def docs(session):
             "lndocs --strip-prefix --format text --error-on-index",  # --strict back
             shell=True,
         )
-
-        import lamindb_setup as ln_setup
-
-        ln_setup.settings.auto_connect = False
-        import lamindb as ln
-
         ln.connect("laminlabs/lamin-site-assets")
         ln.track()
         ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
