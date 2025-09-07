@@ -39,6 +39,7 @@ jobs:
           uv pip install --system "laminci[run-notebooks]@git+https://@github.com/laminlabs/laminci"
           uv pip install --system "lndocs@git+https://x-access-token:${{ secrets.LAMIN_BUILD_DOCS }}@github.com/laminlabs/lndocs"
           uv pip install --system -U dirsync pytest requests nbstripout
+          uv pip install --system lamindb
           sudo apt-get -y install graphviz
       - uses: aws-actions/configure-aws-credentials@v4
         with:
