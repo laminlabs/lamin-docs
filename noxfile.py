@@ -339,10 +339,10 @@ def docs(session):
     # this testuser2 is only needed for writing to lamin-site-assets
     # testuser1 cannot have access to lamin-site-assets
     login_testuser2(session)
-    # process = subprocess.run(
-    #     "lndocs --strip-prefix --error-on-index",  # --strict back
-    #     shell=True,
-    # )
+    process = subprocess.run(  # noqa S602
+        "lndocs --strip-prefix --error-on-index",  # --strict back
+        shell=True,
+    )
     # if process.returncode != 0:
     #     # rerun without strict option so see all warnings
     #     run(session, "lndocs --strip-prefix --error-on-index")
@@ -414,11 +414,11 @@ def docs(session):
     Path("docs/bionty.md").unlink()
     Path("docs/cli.md").unlink()
 
-    if IS_PR:
+    if not IS_PR:
         process = subprocess.run(  # noqa S602
             "lndocs --strip-prefix --format text --error-on-index",  # --strict back
             shell=True,
         )
         ln.connect("laminlabs/lamin-site-assets")
         ln.track()
-        ln.Artifact("test_file.txt", key="test_file.txt").save()
+        ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
