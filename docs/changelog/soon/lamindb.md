@@ -1,1 +1,2 @@
+- ♻️ Improve fixture & examples design [PR](https://github.com/laminlabs/lamindb/pull/3049) [@Zethson](https://github.com/Zethson)
 - ✅ Test setting `search_path` in RLS functions [PR](https://github.com/laminlabs/lamindb/pull/3067) [@Koncopd](https://github.com/Koncopd)
