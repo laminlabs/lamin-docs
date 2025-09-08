@@ -1,3 +1,4 @@
+- 🏗️ Pause maintenance of `clinicore` [PR](https://github.com/laminlabs/lamindb/pull/3065) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Include a project feature in a sheet and test it [PR](https://github.com/laminlabs/lamindb/pull/3064) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Include wetlab & bionty in lamindb, upgrade to latest versions [PR](https://github.com/laminlabs/lamindb/pull/3063) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix cellxgene deprecated save call [PR](https://github.com/laminlabs/lamindb/pull/3062) [@Zethson](https://github.com/Zethson)
