@@ -1,3 +1,4 @@
+- 🚸 Always import the entire public API [PR](https://github.com/laminlabs/bionty/pull/319) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix tests [PR](https://github.com/laminlabs/bionty/pull/318) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Use `.to_list()` and `.from_dataframe()` [PR](https://github.com/laminlabs/bionty/pull/317) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Rename `.df()` to `.to_dataframe()` [PR](https://github.com/laminlabs/bionty/pull/316) [@Koncopd](https://github.com/Koncopd)
