@@ -1,3 +1,4 @@
+- 🐛 Fix curate notebook [PR](https://github.com/laminlabs/cellxgene-lamin/pull/131) [@Zethson](https://github.com/Zethson)
 - ✨ Add Croissant guide [PR](https://github.com/laminlabs/lamin-mlops/pull/26) [@Zethson](https://github.com/Zethson)
 - 📝 Update the Vitessce screenshot [PR](https://github.com/laminlabs/lamin-usecases/pull/204) [@namsaraeva](https://github.com/namsaraeva)
 - ✨Improve MLFlow guide [PR](https://github.com/laminlabs/lamin-mlops/pull/25) [@Zethson](https://github.com/Zethson)
