@@ -1,3 +1,4 @@
+- ♻️ Link `RecordUser` to `ManyToManyField` [PR](https://github.com/laminlabs/lamindb/pull/3071) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Ensure all write_text() calls use UTF8 [PR](https://github.com/laminlabs/lamindb/pull/3069) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Update `is_latest` also upon soft delete [PR](https://github.com/laminlabs/lamindb/pull/3068) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Improve fixture & examples design [PR](https://github.com/laminlabs/lamindb/pull/3049) [@Zethson](https://github.com/Zethson)
