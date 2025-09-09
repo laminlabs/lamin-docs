@@ -1,0 +1,1 @@
+- ⏪  Remove anndata forward slash fix [PR](https://github.com/laminlabs/lamin-usecases/pull/206) [@namsaraeva](https://github.com/namsaraeva)
