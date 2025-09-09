@@ -1,3 +1,4 @@
+- ✨ Query by feature across instances [PR](https://github.com/laminlabs/lamindb/pull/3061) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix version family mapping when registering existing files and add more extensive tests for Croissant file parameterization [PR](https://github.com/laminlabs/lamindb/pull/3070) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt tests to always connect logic [PR](https://github.com/laminlabs/lamindb-setup/pull/1134) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Link `RecordUser` to `ManyToManyField` [PR](https://github.com/laminlabs/lamindb/pull/3071) [@falexwolf](https://github.com/falexwolf)
