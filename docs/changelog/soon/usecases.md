@@ -1,1 +1,2 @@
+- 📝 Update link for tracked function in sc-imaging2 and add hide-output tags [PR](https://github.com/laminlabs/lamin-usecases/pull/207) [@namsaraeva](https://github.com/namsaraeva)
 - ⏪  Remove anndata forward slash fix [PR](https://github.com/laminlabs/lamin-usecases/pull/206) [@namsaraeva](https://github.com/namsaraeva)
