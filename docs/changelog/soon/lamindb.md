@@ -1,3 +1,4 @@
+- 🐛 Better warnings during queryset soft delete [PR](https://github.com/laminlabs/lamindb/pull/3077) [@falexwolf](https://github.com/falexwolf)
 - ⬇️ Downgrade `pytest-cov` to <7.0.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/1137) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Expose api url [PR](https://github.com/laminlabs/lamindb-setup/pull/1135) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Integrate the 3 small Jupyter-related dependencies [PR](https://github.com/laminlabs/lamindb/pull/3076) [@falexwolf](https://github.com/falexwolf)
