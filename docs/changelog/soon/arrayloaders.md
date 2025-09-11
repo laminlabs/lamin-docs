@@ -1,3 +1,4 @@
+- feat: bring back anndata for datasets [PR](https://github.com/laminlabs/arrayloaders/pull/28) [@ilan-gold](https://github.com/ilan-gold)
 - fix: leftover data fix [PR](https://github.com/laminlabs/arrayloaders/pull/24) [@ilan-gold](https://github.com/ilan-gold)
 - feat: allow for `cupy` usage [PR](https://github.com/laminlabs/arrayloaders/pull/23) [@ilan-gold](https://github.com/ilan-gold)
 - fix: remove shape hotpath [PR](https://github.com/laminlabs/arrayloaders/pull/22) [@ilan-gold](https://github.com/ilan-gold)
