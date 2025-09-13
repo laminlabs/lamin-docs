@@ -1,3 +1,4 @@
+- ✨ Migrate in presence of fine-grained access [PR](https://github.com/laminlabs/lamindb-setup/pull/1041) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose available spaces for a user on fine-grained access instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1138) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Better warnings during queryset soft delete [PR](https://github.com/laminlabs/lamindb/pull/3077) [@falexwolf](https://github.com/falexwolf)
 - ⬇️ Downgrade `pytest-cov` to <7.0.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/1137) [@Koncopd](https://github.com/Koncopd)
