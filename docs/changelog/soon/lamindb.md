@@ -1,3 +1,4 @@
+- ♻️ Do no longer set `auto_connect` during `connect_cli()`, update `auto_connect` docs and `settings.__repr__` [PR](https://github.com/laminlabs/lamindb-setup/pull/1140) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Start creating an API interface for CLI logic [PR](https://github.com/laminlabs/lamin-cli/pull/153) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor towards global imports in `_schema_metadata` [PR](https://github.com/laminlabs/lamindb-setup/pull/1139) [@falexwolf](https://github.com/falexwolf)
 - ✨ Migrate in presence of fine-grained access [PR](https://github.com/laminlabs/lamindb-setup/pull/1041) [@falexwolf](https://github.com/falexwolf)
