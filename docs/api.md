@@ -25,5 +25,4 @@ rest
 
 bionty
 wetlab
-clinicore
 ```
