@@ -1,0 +1,1 @@
+- 🚸 Clear error message on RLS error trigger for tracking artifacts and collections [PR](https://github.com/laminlabs/lamindb/pull/3080) [@Koncopd](https://github.com/Koncopd)
