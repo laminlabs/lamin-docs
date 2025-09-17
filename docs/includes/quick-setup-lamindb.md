@@ -3,7 +3,7 @@
 Install the `lamindb` Python package:
 
 ```shell
-pip install 'lamindb[jupyter,bionty]'  # support notebooks & biological ontologies
+pip install lamindb
 ```
 
 Either connect to a LaminDB instance for which you have write access:
