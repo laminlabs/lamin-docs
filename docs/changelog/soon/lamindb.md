@@ -1,2 +1,3 @@
+- 🐛 Enable version lookup in `keep_artifacts_local` mode [PR](https://github.com/laminlabs/lamindb/pull/3083) [@falexwolf](https://github.com/falexwolf)
 - 🚸  Better detection of untitled notebooks in `track()` [PR](https://github.com/laminlabs/lamindb/pull/3082) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Clear error message on RLS error trigger for tracking artifacts and collections [PR](https://github.com/laminlabs/lamindb/pull/3080) [@Koncopd](https://github.com/Koncopd)
