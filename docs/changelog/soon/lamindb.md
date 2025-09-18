@@ -1,0 +1,1 @@
+- ✅ Fix test_streaming for release [PR](https://github.com/laminlabs/lamindb/pull/3084) [@Koncopd](https://github.com/Koncopd)
