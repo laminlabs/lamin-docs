@@ -1,2 +1,3 @@
+- 📝 Edits and corrections in documentation [PR](https://github.com/laminlabs/lamindb/pull/3090) [@Koncopd](https://github.com/Koncopd)
 - ✅ Add additional test for versioning based on revises and existing S3… [PR](https://github.com/laminlabs/lamindb/pull/3086) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix test_streaming for release [PR](https://github.com/laminlabs/lamindb/pull/3084) [@Koncopd](https://github.com/Koncopd)
