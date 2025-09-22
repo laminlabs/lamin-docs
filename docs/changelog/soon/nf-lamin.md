@@ -1,3 +1,4 @@
+- :arrow_up: Upgrade to new nextflow plugin setup [PR](https://github.com/laminlabs/nf-lamin/pull/74) [@rcannood](https://github.com/rcannood)
 - :bricks: Update run status based on lamindb changes [PR](https://github.com/laminlabs/nf-lamin/pull/73) [@rcannood](https://github.com/rcannood)
 - :white_check_mark: Extend tests [PR](https://github.com/laminlabs/nf-lamin/pull/72) [@rcannood](https://github.com/rcannood)
 - Add dev instructions [PR](https://github.com/laminlabs/nf-lamin/pull/71) [@Zethson](https://github.com/Zethson)
