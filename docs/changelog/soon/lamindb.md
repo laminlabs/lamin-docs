@@ -1,8 +1,0 @@
-- 🐛 Fix inconsistency between `.get()` and `.filter()` due to `branch_id` [PR](https://github.com/laminlabs/lamindb/pull/3094) [@Koncopd](https://github.com/Koncopd)
-- 🐛 Fix inconsistency between `.get()` and `.filter()` due to `branch_id` [PR](https://github.com/laminlabs/lamin-cli/pull/154) [@Koncopd](https://github.com/Koncopd)
-- 🐛 Add `copy()` to iteration over `sys.modules` [PR](https://github.com/laminlabs/lamindb-setup/pull/1142) [@falexwolf](https://github.com/falexwolf)
-- 📝 Improve the README [PR](https://github.com/laminlabs/lamindb/pull/3085) [@Koncopd](https://github.com/Koncopd)
-- 🩹 Fix the cache warning on `ln.track()` in scripts on Windows [PR](https://github.com/laminlabs/lamindb/pull/3091) [@Koncopd](https://github.com/Koncopd)
-- 📝 Edits and corrections in documentation [PR](https://github.com/laminlabs/lamindb/pull/3090) [@Koncopd](https://github.com/Koncopd)
-- ✅ Add additional test for versioning based on revises and existing S3… [PR](https://github.com/laminlabs/lamindb/pull/3086) [@falexwolf](https://github.com/falexwolf)
-- ✅ Fix test_streaming for release [PR](https://github.com/laminlabs/lamindb/pull/3084) [@Koncopd](https://github.com/Koncopd)
