@@ -1,1 +1,2 @@
+- 🐛 Throw a clearer error when creating a schema without features & components and `is_type=True` [PR](https://github.com/laminlabs/lamindb/pull/3092) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test read-only db access for read-only db tokens [PR](https://github.com/laminlabs/lamindb/pull/3055) [@Koncopd](https://github.com/Koncopd)
