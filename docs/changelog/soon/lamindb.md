@@ -1,0 +1,1 @@
+- ✅ Test read-only db access for read-only db tokens [PR](https://github.com/laminlabs/lamindb/pull/3055) [@Koncopd](https://github.com/Koncopd)
