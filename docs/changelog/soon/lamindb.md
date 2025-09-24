@@ -1,2 +1,3 @@
+- ♻️ Remove `auto-connect` switches [PR](https://github.com/laminlabs/lamin-cli/pull/138) [@falexwolf](https://github.com/falexwolf)
 - 🛂 Use `account.id` when logging in with api key [PR](https://github.com/laminlabs/lamindb-setup/pull/1144) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Do not assume `account.id` is always equal to `account.user_id` referencing `auth.user.id` [PR](https://github.com/laminlabs/lamindb-setup/pull/1143) [@Koncopd](https://github.com/Koncopd)
