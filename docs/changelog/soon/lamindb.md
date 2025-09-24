@@ -1,3 +1,4 @@
+- ✅ Adapt testing adding managed storage for new hub API [PR](https://github.com/laminlabs/lamindb-setup/pull/1145) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expose main commands as functions on root API [PR](https://github.com/laminlabs/lamin-cli/pull/155) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove `auto-connect` switches [PR](https://github.com/laminlabs/lamin-cli/pull/138) [@falexwolf](https://github.com/falexwolf)
 - 🛂 Use `account.id` when logging in with api key [PR](https://github.com/laminlabs/lamindb-setup/pull/1144) [@Koncopd](https://github.com/Koncopd)
