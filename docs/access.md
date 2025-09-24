@@ -243,7 +243,7 @@ However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you 
 
 Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive:
 
-- **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface. (This will soon be replaced by endpoints proxying S3).
+- **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
 
 ## Low-level access management
