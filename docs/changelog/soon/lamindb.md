@@ -1,3 +1,4 @@
+- ⬆️ Remove upper bound on `scipy` and bump `anndata` [PR](https://github.com/laminlabs/lamindb/pull/3100) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add the current branch by default for filtering [PR](https://github.com/laminlabs/lamindb/pull/3095) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expose main CLI commands as functions on the `lamin_cli` root API [PR](https://github.com/laminlabs/lamindb/pull/3098) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt testing adding managed storage for new hub API [PR](https://github.com/laminlabs/lamindb-setup/pull/1145) [@Koncopd](https://github.com/Koncopd)
