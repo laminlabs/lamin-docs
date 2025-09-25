@@ -1,3 +1,4 @@
+- ✨ Add dask-based arrayloader [PR](https://github.com/laminlabs/modlyn/pull/23) [@falexwolf](https://github.com/falexwolf)
 - DevOps updates [PR](https://github.com/laminlabs/modlyn/pull/25) [@Zethson](https://github.com/Zethson)
 - 💄 Prettify readme and docs [PR](https://github.com/laminlabs/modlyn/pull/22) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Overhaul quickstart [PR](https://github.com/laminlabs/modlyn/pull/21) [@falexwolf](https://github.com/falexwolf)
