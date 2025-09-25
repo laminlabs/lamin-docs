@@ -1,4 +1,4 @@
-- 🚸 Show org tabs to managers and members [PR](https://github.com/laminlabs/laminhub/pull/3367) [@awgaan](https://github.com/awgaan)
+- 🚸 Show org tabs to managers and members [Docs](https://docs.lamin.ai/access#roles) [@awgaan](https://github.com/awgaan)
 - 📝 Add documentation to register a db server [PR](https://github.com/laminlabs/laminhub-public/pull/50) [@fredericenard](https://github.com/fredericenard)
 - 📝 Improve on-prem data infrastructure setup documentation [PR](https://github.com/laminlabs/laminhub-public/pull/49) [@fredericenard](https://github.com/fredericenard)
 - 💄 Update main landing page image [PR](https://github.com/laminlabs/laminhub-public/pull/44) [@sunnyosun](https://github.com/sunnyosun)
