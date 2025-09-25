@@ -1,17 +1,30 @@
-- 🚸 Show org tabs to managers and members [Docs](https://docs.lamin.ai/access#roles) [@awgaan](https://github.com/awgaan)
-- 📝 Add documentation to register a db server [PR](https://github.com/laminlabs/laminhub-public/pull/50) [@fredericenard](https://github.com/fredericenard)
-- 📝 Improve on-prem data infrastructure setup documentation [PR](https://github.com/laminlabs/laminhub-public/pull/49) [@fredericenard](https://github.com/fredericenard)
-- 💄 Update main landing page image [PR](https://github.com/laminlabs/laminhub-public/pull/44) [@sunnyosun](https://github.com/sunnyosun)
-- ✨ Add `lamin.ai/explore` [PR](https://github.com/laminlabs/laminhub-public/pull/43) [@falexwolf](https://github.com/falexwolf)
-- ✨ Show projects for artifacts and transforms [PR](https://github.com/laminlabs/laminhub-public/pull/41) [@sunnyosun](https://github.com/sunnyosun)
-- 🚸 Indicate re-created artifacts for all runs [PR](https://github.com/laminlabs/laminhub-public/pull/40) [@falexwolf](https://github.com/falexwolf)
-- 💄 Clean up Overview page [PR](https://github.com/laminlabs/laminhub-public/pull/39) [@falexwolf](https://github.com/falexwolf)
-- 🚸 De-duplicate versions in the card boxes of the `Overview` page [PR](https://github.com/laminlabs/laminhub-public/pull/38) [@falexwolf](https://github.com/falexwolf)
-- ✨ Group ulabels by type [PR](https://github.com/laminlabs/laminhub-public/pull/37) [@awgaan](https://github.com/awgaan)
-- 🐛 Fix display of dropdown behind `Schema` filter button on `Artifacts` page [PR](https://github.com/laminlabs/laminhub-public/pull/36) [@falexwolf](https://github.com/falexwolf)
-- 💄 Display transform keys [PR](https://github.com/laminlabs/laminhub-public/pull/34) [@sunnyosun](https://github.com/sunnyosun)
-- 💄 Create a more intuitive artifact page [PR](https://github.com/laminlabs/laminhub-public/pull/31) [@chaichontat](https://github.com/chaichontat)
-- Allow editing of transform name and attaching/detaching labels [PR](https://github.com/laminlabs/laminhub-public/pull/30) [@awgaan](https://github.com/awgaan)
-- ✨ Dynamic code copy for R and Python [PR](https://github.com/laminlabs/laminhub-public/pull/27) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Improve speed and relevance of search [PR](https://github.com/laminlabs/laminhub-public/pull/26) [@falexwolf](https://github.com/falexwolf)
-- v0.31.0 [PR](https://github.com/laminlabs/laminhub-public/pull/25) [@chaichontat](https://github.com/chaichontat)
+New Features                                                                                                                             
+ - Sheets:
+     - Use your own preprogrammed transform function templates to generate records and import into the current Sheet via a guided form to streamline data loading.
+     - Sheets can now be selected as an input for Lamin Workflows
+     - Record imports now auto‑create missing related entities
+ - Buckets/Storage: Add a managed S3 bucket using a temporary session token (backend + UI).                                                                                                              
+ - Access & Roles: New “Organization Guest” role for view‑only collaborators.
+                                                                  
+ Changes
+ - Backend upgraded to lamindb 1.11 with unified soft‑delete semantics for safer deletion.
+ - Default filters no longer bloat the URL.
+ - Workflows
+     - The run_name field is more prominent to reduce confusion.
+     - Clearer error message if fetching a workflow schema fails.                                                     
+ - Access Management UI: Cleaner layout and alphabetical sorting for easier scanning.
+ - Consistent sidebar and a unified name dropdown across registries.
+ - RLS functions set search_path explicitly for more reliable permission enforcement.
+ - Internal trigger keeps access_instance data in sync, improving access lists.
+ - Stability: Central client logic refactored; legacy collaborator routers and obsolete auth‑context removed.                                               
+                                                                                                                                                            
+ Bug fixes                                                                    
+ - fix: Small tables show exact, stable counts in Instance statistics
+ - fix: List‑typed fields parse, render, and filter correctly in tables and forms.                                                                          
+ - fix: Transform sidebar behaves correctly on direct vs. external navigation; no unexpected sidebar on reload/back.                                        
+ - fix: Bulk row edits save reliably; batch updates no longer fail due to unsupported SQL RETURNING.                                                        
+ - fix: Linked features display even when a dataset has none of its own; no empty/blank panel.
+ - fix: Show workflow table controls when collapsed.                         
+ - fix: tTransform pages load without a sidebar flicker.
+ - fix: API key creation and usage enforce the correct length; valid keys work consistently.                                                                
+ - fix: Deleting links between records works more reliably and reflects immediately in the UI.
