@@ -1,3 +1,4 @@
+- 🚸 Add the current branch by default for filtering [PR](https://github.com/laminlabs/lamindb/pull/3095) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expose main CLI commands as functions on the `lamin_cli` root API [PR](https://github.com/laminlabs/lamindb/pull/3098) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt testing adding managed storage for new hub API [PR](https://github.com/laminlabs/lamindb-setup/pull/1145) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expose main commands as functions on root API [PR](https://github.com/laminlabs/lamin-cli/pull/155) [@falexwolf](https://github.com/falexwolf)
