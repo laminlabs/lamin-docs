@@ -215,12 +215,12 @@ Users can be collaborators either directly as individual users or through team m
 | People | Manager | Can make changes to members | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RykE92ZCpUxK9ob90000" /> |
 | People | Manager | Can not make changes to admin members | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/7GxCFwj01NIZmuDE0000" /> |
 | People | Admin | Can make changes to all members | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JualyGFron6rhmiC0000" /> |
-| --- | --- | --- | --- |
+| | | | |
 | Teams | Member | Can see teams, but not edit | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/u9TDpgRzi6ZODHq30000" /> |
 | Teams | Member | Can make changes to teams they are admins of | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/vp2e9akFCKg5zoci0000" /> |
 | Teams | Manager | Can make changes all teams | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VCr4GnnQ6fDS6QoB0000" /> |
 | Teams | Admin | Can make changes to all teams | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VCr4GnnQ6fDS6QoB0000" /> |
-| --- | --- | --- | --- |
+| | | | |
 | Spaces | Member | Can see spaces, but not edit |<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/k1QvNzJqIFOuncpc0000" /> |
 | Spaces | Member | Can make changes to spaces they are admins of | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1Wf1SaxyLT1qnpGP0000" /> |
 | Spaces | Manager | Can make changes all spaces | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JbWgMqRjRgBXVnjX0000" /> |
