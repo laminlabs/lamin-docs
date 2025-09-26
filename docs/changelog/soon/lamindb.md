@@ -1,3 +1,4 @@
+- ✨ Create project from CLI [PR](https://github.com/laminlabs/lamin-cli/pull/156) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Remove upper bound on `scipy` and bump `anndata` [PR](https://github.com/laminlabs/lamindb/pull/3100) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add the current branch by default for filtering [PR](https://github.com/laminlabs/lamindb/pull/3095) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expose main CLI commands as functions on the `lamin_cli` root API [PR](https://github.com/laminlabs/lamindb/pull/3098) [@falexwolf](https://github.com/falexwolf)
