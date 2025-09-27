@@ -139,17 +139,22 @@ README0_ORIG = """<details>
 
 README0_REPLACE = """```{dropdown} Why?"""
 
-README1_ORIG = """</details>"""
+README1_ORIG = """</details>
 
-README1_REPLACE = """```"""
+**Highlights.**"""
 
-README2_ORIG = """LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai)
+README1_REPLACE = """```{dropdown} LaminDB Highlights"""
+
+README2_ORIG = """
+LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai)
 
 ## Docs
 
 Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
 
-README2_REPLACE = """LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+README2_REPLACE = """```
+
+LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
 :::{dropdown} Explore LaminHub
 
