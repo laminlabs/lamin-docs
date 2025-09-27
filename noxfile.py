@@ -140,7 +140,7 @@ Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI 
 
 README_REPLACE = """LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
-:::{dropdown} LaminHub specs
+:::{dropdown} Explore LaminHub
 
 ```{include} includes/specs-laminhub.md
 
