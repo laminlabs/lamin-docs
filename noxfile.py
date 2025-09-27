@@ -129,7 +129,6 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 design
-hub
 faq
 influences
 glossary
@@ -434,7 +433,7 @@ def pull_artifacts(session):
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
         content = content.replace(README3_ORIG, README3_REPLACE)
-        # content = convert_markdown_python_to_tabbed(content)
+        content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
 
@@ -579,3 +578,8 @@ def docs(session):
         ln.connect("laminlabs/lamin-site-assets")
         ln.track()
         ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+
+
+if __name__ == "__main__":
+    content = Path("docs/includes/README.md").read_text()
+    print(convert_markdown_python_to_tabbed(content))
