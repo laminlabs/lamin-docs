@@ -83,6 +83,17 @@ pipelines
 mlops
 visualization
 ```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Hub
+
+access
+sheets
+security
+```
+
 """
 
 BY_DATATYPE_ORIG = """
