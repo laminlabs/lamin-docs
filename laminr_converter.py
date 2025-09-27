@@ -144,17 +144,13 @@ ln <- import_module("lamindb")
         for line in lines:
             converted_line = self.convert_line(line)
 
-            # Add header after the first lamindb import or at the beginning if no import found
+            # Add header after the first lamindb import
             if (
                 has_lamindb_import
                 and "lamindb" in converted_line
                 and "import_module" in converted_line
                 and not header_added
             ):
-                converted_lines.append(converted_line)
-                header_added = True
-            elif not has_lamindb_import and not header_added:
-                converted_lines.append(self.add_r_header().rstrip())
                 converted_lines.append(converted_line)
                 header_added = True
             else:
