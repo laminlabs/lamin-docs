@@ -51,7 +51,7 @@ ORIG_HOW_TO = """\
 query-search
 track
 curate
-bio-registries
+ontologies
 transfer
 ```
 """
