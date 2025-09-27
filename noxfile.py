@@ -64,7 +64,7 @@ setup
 query-search
 track
 curate
-bio-registries
+ontologies
 transfer
 ```
 """
@@ -287,7 +287,6 @@ def pull_artifacts(session):
         content = content.replace("# Guide", "# Guide" + INTRODUCTION)
         content = content.replace(ORIG_HOW_TO, REPLACE_HOW_TO)
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
-        content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
 
     assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
