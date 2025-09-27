@@ -1,6 +1,7 @@
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 import lamindb as ln
@@ -50,7 +51,7 @@ ORIG_HOW_TO = """\
 query-search
 track
 curate
-bio-registries
+ontologies
 transfer
 ```
 """
@@ -128,10 +129,82 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 design
-hub
 faq
 influences
 glossary
+"""
+
+README0_ORIG = """<details>
+<summary>Why?</summary>"""
+
+README0_REPLACE = """```{dropdown} Why?"""
+
+README1_ORIG = """</details>
+
+**Highlights.**"""
+
+README1_REPLACE = """```
+
+```{dropdown} Highlights"""
+
+README2_ORIG = """
+LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
+
+## Docs
+
+Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
+
+README2_REPLACE = """```
+
+LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+
+:::{dropdown} Explore
+
+```{include} includes/specs-laminhub.md
+
+```
+
+:::
+
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain."""
+
+
+README3_ORIG = """
+Install the `lamindb` Python package:
+
+```shell
+pip install lamindb
+```
+
+Create a LaminDB instance:
+
+```shell
+lamin init --storage ./quickstart-data  # or s3://my-bucket, gs://my-bucket
+```
+
+Or if you have write access to an instance, connect to it:
+
+```shell
+lamin connect account/name
+```
+"""
+
+README3_REPLACE = """
+::::{tab-set}
+:::{tab-item} Py
+:sync: python
+
+```{include} includes/quick-setup-lamindb.md
+```
+
+:::
+:::{tab-item} R
+:sync: r
+
+```{include} includes/quick-setup-laminr.md
+```
+:::
+::::
 """
 
 
@@ -171,6 +244,66 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
     return "\n".join(lines)
 
 
+import re
+
+
+def convert_markdown_python_to_tabbed(content: str) -> str:
+    """Convert markdown content with Python code blocks to tabbed sections.
+
+    Args:
+        content (str): Markdown content with ```python code blocks
+        converter_function: Function that converts Python code to R code
+
+    Returns:
+        str: Modified markdown with tabbed Python/R sections
+    """
+    current_dir = Path(__file__).parent.resolve()
+    if str(current_dir) not in sys.path:
+        sys.path.insert(0, str(current_dir))
+
+    from laminr_converter import convert_lamindb_to_laminr
+
+    def replace_code_block(match):
+        """Replace a single Python code block with a tabbed section."""
+        python_code = match.group(1)
+
+        # Convert Python code to R using the provided converter
+        r_code = convert_lamindb_to_laminr(python_code)
+
+        # Create the tabbed section
+        tabbed_section = f"""::::{{tab-set}}
+:::{{tab-item}} Py
+:sync: python
+
+```python
+{python_code}
+```
+
+:::
+:::{{tab-item}} R
+:sync: r
+
+```r
+{r_code}
+```
+
+:::
+::::"""
+
+        return tabbed_section
+
+    # Pattern to match ```python ... ``` code blocks
+    # This pattern captures the code content between the markers
+    python_code_pattern = r"```python\s*\n(.*?)\n```"
+
+    # Replace all Python code blocks with tabbed sections
+    content_with_r_code = re.sub(
+        python_code_pattern, replace_code_block, content, flags=re.DOTALL
+    )
+
+    return content_with_r_code
+
+
 def pull_from_s3_and_unpack(zip_filename) -> None:
     subprocess.run(  # noqa S602
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
@@ -192,7 +325,7 @@ def sync_path(path, target_path):
 def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
-    Path("lamindb/README.md").rename("README.md")
+    Path("lamindb/README.md").rename("docs/includes/README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
     Path("lamindb/api.md").unlink()
@@ -280,7 +413,7 @@ def pull_artifacts(session):
     #     Path("docs/perturbation.ipynb"),
     # )
 
-    # amend toctree
+    # amend toctree & README
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
@@ -289,7 +422,19 @@ def pull_artifacts(session):
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
-    assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
+    with open("docs/includes/README.md") as f:
+        content = f.read()
+    with open("docs/includes/README.md", "w") as f:
+        assert README0_ORIG in content  # noqa: S101
+        assert README1_ORIG in content  # noqa: S101
+        assert README2_ORIG in content  # noqa: S101
+        assert README3_ORIG in content  # noqa: S101
+        content = content.replace(README0_ORIG, README0_REPLACE)
+        content = content.replace(README1_ORIG, README1_REPLACE)
+        content = content.replace(README2_ORIG, README2_REPLACE)
+        content = content.replace(README3_ORIG, README3_REPLACE)
+        content = convert_markdown_python_to_tabbed(content)
+        f.write(content)
 
 
 def strip_notebook_outputs(directory="."):
@@ -433,3 +578,8 @@ def docs(session):
         ln.connect("laminlabs/lamin-site-assets")
         ln.track()
         ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+
+
+if __name__ == "__main__":
+    content = Path("docs/includes/README.md").read_text()
+    print(convert_markdown_python_to_tabbed(content))
