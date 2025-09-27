@@ -128,7 +128,6 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 design
-security
 hub
 faq
 influences
