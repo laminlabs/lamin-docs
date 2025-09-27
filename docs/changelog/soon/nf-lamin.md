@@ -1,3 +1,4 @@
+- 📝 Overhaul setup & documentation [PR](https://github.com/laminlabs/nf-lamin/pull/77) [@Zethson](https://github.com/Zethson)
 - 🐛 Remove dangling files from previous plugin mechanism [PR](https://github.com/laminlabs/nf-lamin/pull/82) [@rcannood](https://github.com/rcannood)
 - :arrow_up: Upgrade to new nextflow plugin setup [PR](https://github.com/laminlabs/nf-lamin/pull/74) [@rcannood](https://github.com/rcannood)
 - :bricks: Update run status based on lamindb changes [PR](https://github.com/laminlabs/nf-lamin/pull/73) [@rcannood](https://github.com/rcannood)
