@@ -10,7 +10,8 @@
 /faq/storage /lamindb.storage 301
 /modules /setup 301
 /query-search /registries 301
-/ontologies /bio-registries 301
+/ontologies /manage-ontologies 301
+/bio-registries /manage-ontologies 301
 /scrna6 /scrna-tiledbsoma 301
 /scrna5 /scrna-mappedcollection 301
 / /introduction 301
