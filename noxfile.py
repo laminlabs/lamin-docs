@@ -134,13 +134,22 @@ influences
 glossary
 """
 
-README_ORIG = """LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai)
+README0_ORIG = """<details>
+<summary>Why?</summary>"""
+
+README0_REPLACE = """```{dropdown} Why?"""
+
+README1_ORIG = """</details>"""
+
+README1_REPLACE = """```"""
+
+README2_ORIG = """LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai)
 
 ## Docs
 
 Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
 
-README_REPLACE = """LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+README2_REPLACE = """LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
 :::{dropdown} Explore LaminHub
 
@@ -309,8 +318,12 @@ def pull_artifacts(session):
     with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
-        assert README_ORIG in content  # noqa: S101
-        content = content.replace(README_ORIG, README_REPLACE)
+        assert README0_ORIG in content  # noqa: S101
+        assert README1_ORIG in content  # noqa: S101
+        assert README2_ORIG in content  # noqa: S101
+        content = content.replace(README0_ORIG, README0_REPLACE)
+        content = content.replace(README1_ORIG, README1_REPLACE)
+        content = content.replace(README2_ORIG, README2_REPLACE)
         f.write(content)
 
 
