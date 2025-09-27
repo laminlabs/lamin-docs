@@ -134,14 +134,11 @@ influences
 glossary
 """
 
-README_ORIG = """
-## Docs
+README_ORIG = """## Docs
 
-Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai).
-"""
+Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
 
-README_REPLACE = """
-LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+README_REPLACE = """LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
 :::{dropdown} LaminHub specs
 
@@ -151,8 +148,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 :::
 
-You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain Lamin.
-"""
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain Lamin."""
 
 # below is needed if we have TOCs in notebooks
 
