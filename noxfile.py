@@ -192,7 +192,7 @@ def sync_path(path, target_path):
 def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
-    Path("lamindb/README.md").rename("README.md")
+    Path("lamindb/README.md").rename("docs/includes/README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
     Path("lamindb/api.md").unlink()
