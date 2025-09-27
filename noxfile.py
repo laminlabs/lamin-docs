@@ -27,6 +27,7 @@ INTRODUCTION = """
 :caption: Overview
 
 introduction
+tutorial
 ```
 """
 
@@ -321,7 +322,7 @@ def run_nbs(session):
     os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
     exit_status = os.system("python docs/includes/create-fasta.py")  # noqa S605
     assert exit_status == 0  # noqa S101
-    run_notebooks("docs/introduction.ipynb")
+    run_notebooks("docs/tutorial.ipynb")
     run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
     run_notebooks("docs/hubmap.ipynb")
     run_notebooks("docs/setup.ipynb")
