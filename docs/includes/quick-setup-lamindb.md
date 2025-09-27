@@ -1,4 +1,4 @@
-<!-- this is in sync with what's on the README -->
+<!-- this is roughly in sync with what's on the README -->
 
 Install the `lamindb` Python package:
 
@@ -12,8 +12,9 @@ Create a LaminDB instance:
 lamin init --storage ./quickstart-data  # or s3://my-bucket, gs://my-bucket
 ```
 
-Or if you have write access to an instance, connect to it:
+Or if you have write access to an instance, login and connect to it:
 
 ```shell
-lamin connect account/name
+lamin login
+lamin connect account/instance
 ```
