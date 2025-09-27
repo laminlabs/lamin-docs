@@ -304,11 +304,9 @@ def pull_artifacts(session):
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
-    with open("docs/introduction.md") as f:
+    with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
-        print(README_ORIG)
-        print(content)
         assert README_ORIG in content  # noqa: S101
         content = content.replace(README_ORIG, README_REPLACE)
         f.write(content)
