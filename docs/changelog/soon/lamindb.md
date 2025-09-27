@@ -1,3 +1,4 @@
+- :children_crossing: Better docs & single data lineage in `Collection.cache()` [PR](https://github.com/laminlabs/lamindb/pull/3099) [@falexwolf](https://github.com/falexwolf)
 - ✨ Create project from CLI [PR](https://github.com/laminlabs/lamin-cli/pull/156) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Remove upper bound on `scipy` and bump `anndata` [PR](https://github.com/laminlabs/lamindb/pull/3100) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add the current branch by default for filtering [PR](https://github.com/laminlabs/lamindb/pull/3095) [@Koncopd](https://github.com/Koncopd)
