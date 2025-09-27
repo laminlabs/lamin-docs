@@ -434,7 +434,7 @@ def pull_artifacts(session):
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
         content = content.replace(README3_ORIG, README3_REPLACE)
-        content = convert_markdown_python_to_tabbed(content)
+        # content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
 
