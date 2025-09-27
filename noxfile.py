@@ -166,7 +166,47 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 :::
 
-You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain Lamin."""
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain."""
+
+
+README3_ORIG = """
+Install the `lamindb` Python package:
+
+```shell
+pip install lamindb
+```
+
+Create a LaminDB instance:
+
+```shell
+lamin init --storage ./quickstart-data  # or s3://my-bucket, gs://my-bucket
+```
+
+Or if you have write access to an instance, connect to it:
+
+```shell
+lamin connect account/name
+```
+"""
+
+README3_REPLACE = """
+::::{tab-set}
+:::{tab-item} Py
+:sync: python
+
+```{include} includes/quick-setup-lamindb.md
+```
+
+:::
+:::{tab-item} R
+:sync: r
+
+```{include} includes/quick-setup-laminr.md
+```
+:::
+::::
+"""
+
 
 # below is needed if we have TOCs in notebooks
 
@@ -328,9 +368,11 @@ def pull_artifacts(session):
         assert README0_ORIG in content  # noqa: S101
         assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
+        assert README3_ORIG in content  # noqa: S101
         content = content.replace(README0_ORIG, README0_REPLACE)
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
+        content = content.replace(README3_ORIG, README3_REPLACE)
         f.write(content)
 
 
