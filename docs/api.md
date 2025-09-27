@@ -15,7 +15,6 @@ cli
 lamindb
 laminr
 sql
-rest
 ```
 
 ```{toctree}
