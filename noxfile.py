@@ -1,6 +1,7 @@
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 import lamindb as ln
@@ -257,6 +258,10 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
     Returns:
         str: Modified markdown with tabbed Python/R sections
     """
+    current_dir = Path(__file__).parent.resolve()
+    if str(current_dir) not in sys.path:
+        sys.path.insert(0, str(current_dir))
+
     from laminr_converter import convert_lamindb_to_laminr
 
     def replace_code_block(match):
