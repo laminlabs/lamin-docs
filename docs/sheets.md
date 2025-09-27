@@ -1,8 +1,6 @@
-# Manage metadata on sheets
+# Work with sheets
 
-LaminHub offers a spreadsheet-like experience for managing metadata based on LaminDB's {class}`~lamindb.Record` registry.
-
-In contrast to the pre-defined SQL-based registries like {class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~bionty.Gene`, etc., sheets allow adding columns flexibly.
+The hub offers a spreadsheet-like experience for managing metadata based on LaminDB's {class}`~lamindb.Record` registry.
 
 ## Create a sheet
 

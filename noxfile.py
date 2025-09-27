@@ -87,7 +87,7 @@ visualization
 ```{toctree}
 :maxdepth: 1
 :hidden:
-:caption: Hub
+:caption: The Hub
 
 access
 sheets
