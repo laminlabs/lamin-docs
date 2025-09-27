@@ -143,7 +143,9 @@ README1_ORIG = """</details>
 
 **Highlights.**"""
 
-README1_REPLACE = """```{dropdown} LaminDB Highlights"""
+README1_REPLACE = """```
+
+```{dropdown} LaminDB Highlights"""
 
 README2_ORIG = """
 LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai)
