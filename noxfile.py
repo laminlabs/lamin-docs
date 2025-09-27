@@ -84,6 +84,17 @@ pipelines
 mlops
 visualization
 ```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: The Hub
+
+access
+sheets
+security
+```
+
 """
 
 BY_DATATYPE_ORIG = """
@@ -117,7 +128,6 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 design
-security
 hub
 faq
 influences
