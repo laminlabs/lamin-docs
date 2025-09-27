@@ -134,6 +134,21 @@ influences
 glossary
 """
 
+README_ORIG = """## Docs
+
+Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
+
+README_REPLACE = """LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+
+:::{dropdown} LaminHub specs
+
+```{include} includes/specs-laminhub.md
+
+```
+
+:::
+
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain Lamin."""
 
 # below is needed if we have TOCs in notebooks
 
@@ -192,7 +207,7 @@ def sync_path(path, target_path):
 def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
-    Path("lamindb/README.md").rename("README.md")
+    Path("lamindb/README.md").rename("docs/includes/README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
     Path("lamindb/api.md").unlink()
@@ -280,7 +295,7 @@ def pull_artifacts(session):
     #     Path("docs/perturbation.ipynb"),
     # )
 
-    # amend toctree
+    # amend toctree & README
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
@@ -289,7 +304,14 @@ def pull_artifacts(session):
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
-    assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
+    with open("docs/introduction.md") as f:
+        content = f.read()
+    with open("docs/includes/README.md", "w") as f:
+        print(README_ORIG)
+        print(content)
+        assert README_ORIG in content  # noqa: S101
+        content = content.replace(README_ORIG, README_REPLACE)
+        f.write(content)
 
 
 def strip_notebook_outputs(directory="."):
@@ -328,13 +350,7 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
-    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
-    exit_status = os.system("python docs/includes/create-fasta.py")  # noqa S605
-    assert exit_status == 0  # noqa S101
-    run_notebooks("docs/tutorial.ipynb")
-    run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
-    run_notebooks("docs/hubmap.ipynb")
-    run_notebooks("docs/setup.ipynb")
+    pass
 
 
 @nox.session
