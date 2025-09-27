@@ -1,5 +1,7 @@
 # REST
 
+This page documents the REST API of LaminHub.
+
 ## Swagger UI
 
 The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).

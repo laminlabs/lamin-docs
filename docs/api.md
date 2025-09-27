@@ -20,7 +20,15 @@ rest
 
 ```{toctree}
 :maxdepth: 1
-:caption: Registry modules
+:caption: Hub
+:hidden:
+
+rest
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Modules
 :hidden:
 
 bionty
