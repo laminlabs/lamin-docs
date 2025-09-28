@@ -1,0 +1,1 @@
+- 🚸 Turn default organism warning into a debugging logging [PR](https://github.com/laminlabs/bionty/pull/320) [@falexwolf](https://github.com/falexwolf)
