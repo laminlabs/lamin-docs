@@ -53,21 +53,38 @@ class LaminDBToLaminRConverter:
         return f"# {line}  # TODO: Convert this import manually"
 
     def convert_dot_notation(self, line: str) -> str:
-        """Convert Python dot notation to R dollar notation for LaminDB objects."""
-        # Pattern to match ln.something or object.method() calls
-        # This handles chained calls like ln.Artifact("file").save()
+        """Convert Python dot notation to R dollar notation for LaminDB objects, preserving dots in strings."""
+        # First, we need to protect dots inside string literals
+        # Find all string literals (both single and double quoted)
+        string_pattern = r'(["\'])((?:\\.|(?!\1)[^\\])*)\1'
+        strings = []
 
-        # First, handle the ln. prefix specifically
-        line = re.sub(r"\bln\.", "ln$", line)
+        def replace_strings(match):
+            strings.append(match.group(0))
+            return f"__STRING_{len(strings) - 1}__"
+
+        # Replace strings with placeholders
+        line_with_placeholders = re.sub(string_pattern, replace_strings, line)
+
+        # Now apply dot to dollar conversion on the line without string literals
+        # Handle the ln. prefix specifically
+        line_with_placeholders = re.sub(r"\bln\.", "ln$", line_with_placeholders)
 
         # Then handle method chaining with parentheses
         # Convert .method() to $method()
-        line = re.sub(r"\.(\w+)\(", r"$\1(", line)
+        line_with_placeholders = re.sub(r"\.(\w+)\(", r"$\1(", line_with_placeholders)
 
         # Handle simple attribute access (no parentheses)
-        line = re.sub(r"\.(\w+)(?!\()", r"$\1", line)
+        line_with_placeholders = re.sub(
+            r"\.(\w+)(?!\()", r"$\1", line_with_placeholders
+        )
 
-        return line
+        # Restore the original strings
+        result = line_with_placeholders
+        for i, string_literal in enumerate(strings):
+            result = result.replace(f"__STRING_{i}__", string_literal)
+
+        return result
 
     def convert_file_operations(self, line: str) -> str:
         """Convert Python file operations to R equivalents."""
@@ -186,6 +203,17 @@ ln.finish()  # finish the run"""
     print(test_code)
     print("\nConverted R code:")
     print(convert_lamindb_to_laminr(test_code))
+
+    # Test with the problematic example
+    problem_test = """artifact = ln.Artifact.get(key="sample.fasta")  # query artifact by key
+artifact.view_lineage()"""
+
+    print("\n" + "=" * 50)
+    print("Problem example test:")
+    print("Original Python code:")
+    print(problem_test)
+    print("\nConverted R code:")
+    print(convert_lamindb_to_laminr(problem_test))
 
     # Test with more complex example
     complex_test = """import lamindb as ln
