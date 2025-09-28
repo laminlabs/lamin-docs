@@ -1,3 +1,4 @@
+- ♻️ Do no longer allow `upload` as a transform type [PR](https://github.com/laminlabs/lamindb/pull/3104) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish bio-registries / manage-ontologies guide [PR](https://github.com/laminlabs/lamindb/pull/3103) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Better docs & single data lineage in `Collection.cache()` [PR](https://github.com/laminlabs/lamindb/pull/3099) [@falexwolf](https://github.com/falexwolf)
 - ✨ Create project from CLI [PR](https://github.com/laminlabs/lamin-cli/pull/156) [@falexwolf](https://github.com/falexwolf)
