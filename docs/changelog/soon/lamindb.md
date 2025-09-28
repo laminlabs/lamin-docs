@@ -1,3 +1,4 @@
+- ✨ Introduce a `work_dir` setting and use it to auto-create a notebook or script `key` during `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/3105) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce a `work_dir` setting [PR](https://github.com/laminlabs/lamindb-setup/pull/1148) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce a `work_dir` setting [PR](https://github.com/laminlabs/lamin-cli/pull/157) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Change logging for django module variable reset to debug [PR](https://github.com/laminlabs/lamindb-setup/pull/1147) [@falexwolf](https://github.com/falexwolf)
