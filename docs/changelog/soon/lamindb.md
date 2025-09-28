@@ -1,3 +1,4 @@
+- 🗃️ Make `description` fields unlimited length for all registries and increase the max length for `Artifact.key` and `Transform.key` to 1024 chars [PR](https://github.com/laminlabs/lamindb/pull/3109) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add a `description` field to `Project`, replace `Person` registry with `Record` registry [PR](https://github.com/laminlabs/lamindb/pull/3108) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Replace organism warning with targeted message during validation error [PR](https://github.com/laminlabs/lamindb/pull/3107) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce a `work_dir` setting and use it to auto-create a notebook or script `key` during `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/3105) [@falexwolf](https://github.com/falexwolf)
