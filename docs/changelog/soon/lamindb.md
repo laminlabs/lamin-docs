@@ -1,3 +1,4 @@
+- ✨ Introduce a `work_dir` setting [PR](https://github.com/laminlabs/lamin-cli/pull/157) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Change logging for django module variable reset to debug [PR](https://github.com/laminlabs/lamindb-setup/pull/1147) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve logging when violating versioning constraints [PR](https://github.com/laminlabs/lamindb/pull/3093) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `coerce_dtype` hint [PR](https://github.com/laminlabs/lamindb/pull/3096) [@Zethson](https://github.com/Zethson)
