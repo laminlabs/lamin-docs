@@ -1,3 +1,4 @@
+- 🚸 Improve logging when violating versioning constraints [PR](https://github.com/laminlabs/lamindb/pull/3093) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `coerce_dtype` hint [PR](https://github.com/laminlabs/lamindb/pull/3096) [@Zethson](https://github.com/Zethson)
 - ♻️ Do no longer allow `upload` as a transform type [PR](https://github.com/laminlabs/lamindb/pull/3104) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish bio-registries / manage-ontologies guide [PR](https://github.com/laminlabs/lamindb/pull/3103) [@falexwolf](https://github.com/falexwolf)
