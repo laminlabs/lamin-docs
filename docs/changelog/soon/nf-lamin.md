@@ -1,3 +1,4 @@
+- :bug: Fix missing nextflow config [PR](https://github.com/laminlabs/nf-lamin/pull/86) [@rcannood](https://github.com/rcannood)
 - 🔈 Make logging consistent with other Lamin packages [PR](https://github.com/laminlabs/nf-lamin/pull/84) [@falexwolf](https://github.com/falexwolf)
 - 📝 Overhaul setup & documentation [PR](https://github.com/laminlabs/nf-lamin/pull/77) [@Zethson](https://github.com/Zethson)
 - 🐛 Remove dangling files from previous plugin mechanism [PR](https://github.com/laminlabs/nf-lamin/pull/82) [@rcannood](https://github.com/rcannood)
