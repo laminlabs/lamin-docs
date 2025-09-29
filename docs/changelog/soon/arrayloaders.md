@@ -1,3 +1,4 @@
+- fix: docs [PR](https://github.com/laminlabs/arrayloaders/pull/42) [@ilan-gold](https://github.com/ilan-gold)
 - fix: error message [PR](https://github.com/laminlabs/arrayloaders/pull/41) [@ilan-gold](https://github.com/ilan-gold)
 - feat: add `to_torch` and `drop_last` options + remove `torch` dep [PR](https://github.com/laminlabs/arrayloaders/pull/32) [@ilan-gold](https://github.com/ilan-gold)
 - feat: clean up baseline documentation [PR](https://github.com/laminlabs/arrayloaders/pull/30) [@ilan-gold](https://github.com/ilan-gold)
