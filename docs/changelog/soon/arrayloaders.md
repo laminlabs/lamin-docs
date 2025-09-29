@@ -1,3 +1,4 @@
+- feat: clean up baseline documentation [PR](https://github.com/laminlabs/arrayloaders/pull/30) [@ilan-gold](https://github.com/ilan-gold)
 - Create detailed README [PR](https://github.com/laminlabs/arrayloaders/pull/34) [@felix0097](https://github.com/felix0097)
 - fix: anndata check [PR](https://github.com/laminlabs/arrayloaders/pull/31) [@ilan-gold](https://github.com/ilan-gold)
 - fix: add check for h5 file [PR](https://github.com/laminlabs/arrayloaders/pull/29) [@ilan-gold](https://github.com/ilan-gold)
