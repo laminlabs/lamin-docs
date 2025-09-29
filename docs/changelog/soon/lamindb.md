@@ -1,3 +1,4 @@
+- 🗃️ Add `db_default` to `is_locked` [PR](https://github.com/laminlabs/lamindb/pull/3111) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add a `page` and an `is_locked` field to `SQLRecord`, add a `Page` registry  [PR](https://github.com/laminlabs/lamindb/pull/3110) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Make `description` fields unlimited length for all registries and increase the max length for `Artifact.key` and `Transform.key` to 1024 chars [PR](https://github.com/laminlabs/lamindb/pull/3109) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add a `description` field to `Project`, replace `Person` registry with `Record` registry [PR](https://github.com/laminlabs/lamindb/pull/3108) [@falexwolf](https://github.com/falexwolf)
