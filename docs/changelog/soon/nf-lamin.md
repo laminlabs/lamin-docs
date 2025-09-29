@@ -1,3 +1,4 @@
+- :building_construction: Allow an advanced user to specify the transform and/or run UID in the config [PR](https://github.com/laminlabs/nf-lamin/pull/83) [@rcannood](https://github.com/rcannood)
 - :bug: Fix missing nextflow config [PR](https://github.com/laminlabs/nf-lamin/pull/86) [@rcannood](https://github.com/rcannood)
 - 🔈 Make logging consistent with other Lamin packages [PR](https://github.com/laminlabs/nf-lamin/pull/84) [@falexwolf](https://github.com/falexwolf)
 - 📝 Overhaul setup & documentation [PR](https://github.com/laminlabs/nf-lamin/pull/77) [@Zethson](https://github.com/Zethson)
