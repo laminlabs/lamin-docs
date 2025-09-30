@@ -1,3 +1,4 @@
+- 🐛 Set run status code to completion upon `ln.tracked()` [PR](https://github.com/laminlabs/lamindb/pull/3114) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Add proper data migration from Person to Record [PR](https://github.com/laminlabs/lamindb/pull/3112) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `db_default` to `is_locked` [PR](https://github.com/laminlabs/lamindb/pull/3111) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add a `page` and an `is_locked` field to `SQLRecord`, add a `Page` registry  [PR](https://github.com/laminlabs/lamindb/pull/3110) [@falexwolf](https://github.com/falexwolf)
