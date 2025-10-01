@@ -1,3 +1,4 @@
+- 🚸 Replace CLI functions with `lamin_cli` [PR](https://github.com/laminlabs/laminr/pull/229) [@lazappi](https://github.com/lazappi)
 - 👷 Aggregate Slack notifications [PR](https://github.com/laminlabs/laminr/pull/228) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Pass arguments to `require_module()` [PR](https://github.com/laminlabs/laminr/pull/224) [@lazappi](https://github.com/lazappi)
 - 🚸 Disable Python ANSI codes in CLI functions [PR](https://github.com/laminlabs/laminr/pull/223) [@lazappi](https://github.com/lazappi)
