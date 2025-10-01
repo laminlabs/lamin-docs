@@ -1,3 +1,4 @@
+- 🔊 Raise an error in `AnnDataCurator` when `schema.otype != 'AnnData'`, no exceptions for `otype is None` [PR](https://github.com/laminlabs/lamindb/pull/3117) [@sunnyosun](https://github.com/sunnyosun)
 - 🗃️ Disable `gssencmode` for postgres [PR](https://github.com/laminlabs/lamindb-setup/pull/1150) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add defaults to save arguments [PR](https://github.com/laminlabs/lamin-cli/pull/158) [@lazappi](https://github.com/lazappi)
 - ✨ Allow virtual keys with custom real storage keys [PR](https://github.com/laminlabs/lamindb/pull/3102) [@Koncopd](https://github.com/Koncopd)
