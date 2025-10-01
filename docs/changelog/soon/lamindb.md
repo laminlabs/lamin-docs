@@ -1,3 +1,4 @@
+- 🗃️ Make feature `dtype` non-nullable on the database level if `is_type=False` [PR](https://github.com/laminlabs/lamindb/pull/3118) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set run status code to completion upon `ln.tracked()` [PR](https://github.com/laminlabs/lamindb/pull/3114) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Add proper data migration from Person to Record [PR](https://github.com/laminlabs/lamindb/pull/3112) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `db_default` to `is_locked` [PR](https://github.com/laminlabs/lamindb/pull/3111) [@falexwolf](https://github.com/falexwolf)
