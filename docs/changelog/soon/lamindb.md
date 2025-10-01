@@ -1,3 +1,4 @@
+- 🚸 Add defaults to save arguments [PR](https://github.com/laminlabs/lamin-cli/pull/158) [@lazappi](https://github.com/lazappi)
 - ✨ Allow virtual keys with custom real storage keys [PR](https://github.com/laminlabs/lamindb/pull/3102) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Make feature `dtype` non-nullable on the database level if `is_type=False` [PR](https://github.com/laminlabs/lamindb/pull/3118) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set run status code to completion upon `ln.tracked()` [PR](https://github.com/laminlabs/lamindb/pull/3114) [@falexwolf](https://github.com/falexwolf)
