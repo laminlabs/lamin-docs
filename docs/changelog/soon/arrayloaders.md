@@ -1,3 +1,4 @@
+- fix: make docs work with torch + zarrs explanation in readme [PR](https://github.com/laminlabs/arrayloaders/pull/47) [@ilan-gold](https://github.com/ilan-gold)
 - Naming conventions on README [PR](https://github.com/laminlabs/arrayloaders/pull/50) [@falexwolf](https://github.com/falexwolf)
 - fix: output dataset name + default `denseify` [PR](https://github.com/laminlabs/arrayloaders/pull/46) [@ilan-gold](https://github.com/ilan-gold)
 - No longer suggest installing packages with `uv` [PR](https://github.com/laminlabs/arrayloaders/pull/45) [@Zethson](https://github.com/Zethson)
