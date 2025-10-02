@@ -1,3 +1,4 @@
+- ♻️ Page design v2 [PR](https://github.com/laminlabs/bionty/pull/323) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI [PR](https://github.com/laminlabs/bionty/pull/324) [@sunnyosun](https://github.com/sunnyosun)
 - 🗃️ Add `page` and `is_locked` to every record [PR](https://github.com/laminlabs/bionty/pull/322) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Turn default organism warning into a debugging logging [PR](https://github.com/laminlabs/bionty/pull/320) [@falexwolf](https://github.com/falexwolf)
