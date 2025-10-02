@@ -1,3 +1,4 @@
+- 🚸 Consistent delete `permanent` argument across `QuerySet`, `BaseSQLRecord` and `SQLRecord` [PR](https://github.com/laminlabs/lamindb/pull/3122) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Re-design page schema to block schema [PR](https://github.com/laminlabs/lamindb/pull/3120) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Raise an error in `AnnDataCurator` when `schema.otype != 'AnnData'`, no exceptions for `otype is None` [PR](https://github.com/laminlabs/lamindb/pull/3117) [@sunnyosun](https://github.com/sunnyosun)
 - 🗃️ Disable `gssencmode` for postgres [PR](https://github.com/laminlabs/lamindb-setup/pull/1150) [@Koncopd](https://github.com/Koncopd)
