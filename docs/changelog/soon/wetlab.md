@@ -1,2 +1,3 @@
+- ♻️ Page design v2 [PR](https://github.com/laminlabs/wetlab/pull/123) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `page` and `is_locked` to every record [PR](https://github.com/laminlabs/wetlab/pull/121) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Better error, warning, and logging handling [PR](https://github.com/laminlabs/wetlab/pull/120) [@falexwolf](https://github.com/falexwolf)
