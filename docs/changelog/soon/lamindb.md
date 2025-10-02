@@ -1,3 +1,4 @@
+- ♻️ Do also include models that are not re-exported at the root of the… [PR](https://github.com/laminlabs/lamindb-setup/pull/1152) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1151) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Consistent delete `permanent` argument across `QuerySet`, `BaseSQLRecord` and `SQLRecord` [PR](https://github.com/laminlabs/lamindb/pull/3122) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Re-design page schema to block schema [PR](https://github.com/laminlabs/lamindb/pull/3120) [@falexwolf](https://github.com/falexwolf)
