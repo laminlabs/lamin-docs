@@ -1,3 +1,4 @@
+- 🐛 Extend `query_relatives()` to respect branches [PR](https://github.com/laminlabs/lamindb/pull/3129) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix small chunksize for very large files when uploading to s3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1154) [@Koncopd](https://github.com/Koncopd)
 - 📝 Make `MappedCollection.torch_worker_init_fn` a `classmethod` to show in docs [PR](https://github.com/laminlabs/lamindb/pull/3128) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expand `Record` so that it can act as an ontology [PR](https://github.com/laminlabs/lamindb/pull/3127) [@falexwolf](https://github.com/falexwolf)
