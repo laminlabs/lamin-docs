@@ -1,3 +1,4 @@
+- ✨ Enable `dtype=User` [PR](https://github.com/laminlabs/lamindb/pull/3130) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Invalidate instance cache after migration [PR](https://github.com/laminlabs/lamindb-setup/pull/1153) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix re-creation of soft-deleted records [PR](https://github.com/laminlabs/lamindb/pull/3124) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Extend `query_relatives()` to respect branches [PR](https://github.com/laminlabs/lamindb/pull/3129) [@falexwolf](https://github.com/falexwolf)
