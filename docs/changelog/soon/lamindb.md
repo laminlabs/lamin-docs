@@ -1,3 +1,4 @@
+- 📝 Make `MappedCollection.torch_worker_init_fn` a `classmethod` to show in docs [PR](https://github.com/laminlabs/lamindb/pull/3128) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expand `Record` so that it can act as an ontology [PR](https://github.com/laminlabs/lamindb/pull/3127) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add a unique constraint for record name and polish `manytomany` docs [PR](https://github.com/laminlabs/lamindb/pull/3126) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do also include models that are not re-exported at the root of the… [PR](https://github.com/laminlabs/lamindb-setup/pull/1152) [@falexwolf](https://github.com/falexwolf)
