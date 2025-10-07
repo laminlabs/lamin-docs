@@ -1,3 +1,4 @@
+- ♻️ Polish "Data lineage" section and rename to "Trace data & code" [PR](https://github.com/laminlabs/lamin-usecases/pull/208) [@falexwolf](https://github.com/falexwolf)
 - ✨ Use pytorch lightning callback for MLflow & W&B use cases [PR](https://github.com/laminlabs/lamin-mlops/pull/30) [@Zethson](https://github.com/Zethson)
 - ♻️ Polish [PR](https://github.com/laminlabs/lamin-mlops/pull/29) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Fix formatting [PR](https://github.com/laminlabs/lamin-mlops/pull/28) [@Zethson](https://github.com/Zethson)
