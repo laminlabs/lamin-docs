@@ -1,1 +1,2 @@
+- 🐛  Use `httpx_retries` to retry on all timeouts and connection errors for http requests [PR](https://github.com/laminlabs/lamindb-setup/pull/1156) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Use the new endpoint for access_db [PR](https://github.com/laminlabs/lamindb-setup/pull/1155) [@Koncopd](https://github.com/Koncopd)
