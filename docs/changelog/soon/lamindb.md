@@ -1,2 +1,3 @@
+- 🎨 Deprecate `str_as_cat` in `Feature.from_dict()` [PR](https://github.com/laminlabs/lamindb/pull/3134) [@Zethson](https://github.com/Zethson)
 - 🎨 Remove deprecated TileDBSomaCurator tests [PR](https://github.com/laminlabs/lamindb/pull/3135) [@Zethson](https://github.com/Zethson)
 - 👽️ Use the new endpoint for access_db [PR](https://github.com/laminlabs/lamindb-setup/pull/1155) [@Koncopd](https://github.com/Koncopd)
