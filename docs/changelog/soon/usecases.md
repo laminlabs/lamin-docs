@@ -1,7 +1,0 @@
-- ♻️ Polish "Data lineage" section and rename to "Trace data & code" [PR](https://github.com/laminlabs/lamin-usecases/pull/208) [@falexwolf](https://github.com/falexwolf)
-- ✨ Use pytorch lightning callback for MLflow & W&B use cases [PR](https://github.com/laminlabs/lamin-mlops/pull/30) [@Zethson](https://github.com/Zethson)
-- ♻️ Polish [PR](https://github.com/laminlabs/lamin-mlops/pull/29) [@falexwolf](https://github.com/falexwolf)
-- 🎨 Fix formatting [PR](https://github.com/laminlabs/lamin-mlops/pull/28) [@Zethson](https://github.com/Zethson)
-- 🎨 Show mlflow checkpoint lineage [PR](https://github.com/laminlabs/lamin-mlops/pull/27) [@Zethson](https://github.com/Zethson)
-- 📝 Update link for tracked function in sc-imaging2 and add hide-output tags [PR](https://github.com/laminlabs/lamin-usecases/pull/207) [@namsaraeva](https://github.com/namsaraeva)
-- ⏪  Remove anndata forward slash fix [PR](https://github.com/laminlabs/lamin-usecases/pull/206) [@namsaraeva](https://github.com/namsaraeva)
