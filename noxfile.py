@@ -78,9 +78,9 @@ USECASES = """
 :caption: Use cases
 
 atlases
-../by-datatype
-../by-registry
-../data-flow
+by-datatype
+by-registry
+trace-data-code
 pipelines
 mlops
 visualization
