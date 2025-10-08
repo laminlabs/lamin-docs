@@ -6,6 +6,7 @@
 /changelog /changelog/2025 301
 /curate-df /curate 301
 /ehrcuration /ehr 301
+/data-flow /trace-data-code 301
 /curate-any /faq/curate-any 301
 /faq/storage /lamindb.storage 301
 /modules /setup 301
