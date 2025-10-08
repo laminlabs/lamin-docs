@@ -1,1 +1,0 @@
-- ✨ Add Mondo 2025-06-03 [PR](https://github.com/laminlabs/bionty/pull/257) [@Zethson](https://github.com/Zethson)

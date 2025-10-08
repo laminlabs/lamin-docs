@@ -207,21 +207,38 @@ Users can be collaborators either directly as individual users or through team m
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/61iaMcMV4NtDxFnb0000.png" style="width: 70%;"/>
 </div>
 
-## Role definitions
+### Roles
 
-### Organization roles
+| Page | Role | Description | Preview |
+| --- | --- | --- | --- |
+| People | Member | Can see members, but not edit | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/qiXyV8e1yRldsLoP0000" /> |
+| People | Manager | Can make changes to members | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RykE92ZCpUxK9ob90000" /> |
+| People | Manager | Can not make changes to admin members | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/7GxCFwj01NIZmuDE0000" /> |
+| People | Admin | Can make changes to all members | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JualyGFron6rhmiC0000" /> |
+| | | | |
+| Teams | Member | Can see teams, but not edit | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/u9TDpgRzi6ZODHq30000" /> |
+| Teams | Member | Can make changes to teams they are admins of | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/vp2e9akFCKg5zoci0000" /> |
+| Teams | Manager | Can make changes all teams | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VCr4GnnQ6fDS6QoB0000" /> |
+| Teams | Admin | Can make changes to all teams | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VCr4GnnQ6fDS6QoB0000" /> |
+| | | | |
+| Spaces | Member | Can see spaces, but not edit |<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/k1QvNzJqIFOuncpc0000" /> |
+| Spaces | Member | Can make changes to spaces they are admins of | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1Wf1SaxyLT1qnpGP0000" /> |
+| Spaces | Manager | Can make changes all spaces | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JbWgMqRjRgBXVnjX0000" /> |
+| Spaces | Admin | Can make changes to all spaces | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JbWgMqRjRgBXVnjX0000" /> |
+
+#### Organization roles
 
 - **Admins:** Have complete access and control over all resources within the organization, including managing teams, instances, spaces, and organization settings.
-- **Managers:** Can manage teams, instances, and spaces but may have limitations on modifying organization-level settings.
-- **Members:** Can be granted access to specific resources (teams, instances, spaces) based on assignments. Default access might be limited.
+- **Managers:** Can manage teams, instances, and spaces but have limitations on modifying organization-level settings.
+- **Members:** Can be granted access to specific resources (teams, instances, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited.
 - **Guests:** Intended for external collaborators with limited access, typically restricted to specific instances or spaces they are explicitly invited to.
 
-### Team roles
+#### Team roles
 
 - **Admins:** Can add/remove team members, define member roles within the team context, and manage team resources or settings. Can typically perform any action a member can.
 - **Members:** Can access resources granted to the team (e.g., specific instances or spaces).
 
-### Instance roles
+#### Instance roles
 
 - **Admins:** Can add/remove collaborators from the instance, define collaborator roles within the instance, and manage instance settings. For data access, automatically receive write access to the default "All" space only.
 - **Read collaborators:** Automatically receive read access to the default "All" space only.
@@ -229,7 +246,7 @@ Users can be collaborators either directly as individual users or through team m
 
 **Note:** Permissions for spaces other than the default "All" space must be managed separately and independently of the instance collaborator role.
 
-### Space roles
+#### Space roles
 
 - **Admins:** Have full control over the specific space, including managing permissions and content within that space.
 - **Read collaborators:** Can read data and view resources within that specific space across accessible instances.
@@ -243,7 +260,38 @@ However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you 
 
 Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive:
 
-- **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface. (This will soon be replaced by endpoints proxying S3).
+- **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
 
-LaminHub's permission system makes it easy to minimize attack surfaces by implementing the principle of least privilege.
+## Low-level access management
+
+While not necessary, you can still manage access on the AWS, GCP, or database level yourself, provided you have sufficient permissions for the corresponding systems in your cloud infrastructure.
+
+### How to configure an AWS S3 bucket for public read access?
+
+For a public read-only instance the bucket should have certain policies configured.
+You can read about s3 bucket policies [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html). For a public read-only instance the bucket should have `s3:GetObject` and `s3:ListBucket` permissions. The example policy is given below:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AddPerm",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*"
+    },
+    {
+      "Sid": "AllowList",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::your-bucket-name"
+    }
+  ]
+}
+```
+
+Change `your-bucket-name` above to the name of your s3 bucket.
