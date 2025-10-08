@@ -1,3 +1,4 @@
+- 🔥 Remove all references to access_v2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1141) [@fredericenard](https://github.com/fredericenard)
 - 📝 Fix docstrings of block models [PR](https://github.com/laminlabs/lamindb/pull/3138) [@Koncopd](https://github.com/Koncopd)
 - 🐛  Use `httpx_retries` to retry on all timeouts and connection errors for http requests [PR](https://github.com/laminlabs/lamindb-setup/pull/1156) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Use the new endpoint for access_db [PR](https://github.com/laminlabs/lamindb-setup/pull/1155) [@Koncopd](https://github.com/Koncopd)
