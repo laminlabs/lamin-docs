@@ -43,9 +43,23 @@ This is done using the **{reticulate}** [package requirement](https://rstudio.gi
 If you encounter problems importing **lamindb** or connecting to a LaminDB instance this is often caused by failing to find a valid Python environment.
 You can check which environment is being used with `reticulate::py_config()`.
 
+### Setting the **lamindb** version
+
+By default, the automatic Python environment will install the latest release version of **lamindb** from [PyPI](https://pypi.org/project/lamindb/).
+The version that is installed can be controlled using the `LAMINR_LAMINDB_VERSION` environment variable.
+Setting it to `"release"`, `"latest"`, or `""` will install the latest release version and setting it to `"devel"` or `"github"` will install the current development version from GitHub (**NOTE:** Only do this if you are an experienced user or if requested by developers).
+You can also set it to the specific version of **lamindb** that you want to install (e.g. `>=1.5.0`).
+A complementary `LAMINR_LAMINDB_OPTIONS` environment variable controls the optional dependencies of **lamindb** that are installed and can be a comma-separated list.
+For example, setting `Sys.setenv(LAMINR_LAMINDB_VERSION = "1.6.0", LAMINR_LAMINDB_OPTIONS = "gcp,zarr")` would be equivalent to `pip install lamindb[gcp,zarr]==1.6.0`.
+
+In interactive sessions, requirements can also be set using `require_module()` ***before*** `import_module()`.
+For example, `require_module("lamindb", version = "1.6.0", options = c("gcp", "zarr"))` would be equivalent to the environment variable settings above.
+
+In general, both the environment variables and `require_module("lamindb", ...)` should not be used at the same time to avoid conflicting requirements.
+
 ### Forcing the automatic environment
 
-If **{reticulate}** has detected another environment and you want to force it use the automatically created one, run `Sys.setenv("RETICULATE_USE_MANAGED_VENV" = "yes")` **_before_** loading **{laminr}** or any other package that uses **{reticulate}**.
+If **{reticulate}** has detected another environment and you want to force it use the automatically created one, run `Sys.setenv("RETICULATE_USE_MANAGED_VENV" = "yes")` ***before*** loading **{laminr}** or any other package that uses **{reticulate}**.
 
 ### Using another environment
 
@@ -74,7 +88,8 @@ To do this you will need a user API key which you can get by logging in to [Lami
 You can then login with:
 
 ```r
-laminr::lamin_login(api_key = "your_api_key")
+lc <- laminr::import_module("lamin_cli")
+lc$login()
 ```
 
 ### Switching users
@@ -82,7 +97,7 @@ laminr::lamin_login(api_key = "your_api_key")
 If you have already given an API key for a user you can log in as them by giving the user name:
 
 ```r
-laminr::lamin_login(user = "user_handle")
+lc$login(user = "user_handle")
 ```
 
 ## Setting a default instance
@@ -91,7 +106,7 @@ Using `import_module("lamindb")` will connect to the current default LaminDB ins
 The default instance can be set using:
 
 ```
-laminr::lamin_connect("<owner>/<name>")
+lc$connect("<owner>/<name>")
 ```
 
-Note that this must be called before attempting to connect to a default instance and cannot be changed once the default instance is connected without first calling `lamin_disconnect()`.
+Note that this must be called ***before*** attempting to connect to a default instance and cannot be changed once the default instance is connected.
