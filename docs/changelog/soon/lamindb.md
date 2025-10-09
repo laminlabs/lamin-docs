@@ -1,3 +1,4 @@
+- 🩹 Polish logging during `ln.track()` and small refactor in input tracking [PR](https://github.com/laminlabs/lamindb/pull/3145) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `Curator.add_new_from()` [PR](https://github.com/laminlabs/lamindb/pull/3144) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Ignore cycles arising between input artifacts and re-created artifacts [PR](https://github.com/laminlabs/lamindb/pull/3143) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Improve formatting and update CI & pre-commit versions [PR](https://github.com/laminlabs/lamindb-setup/pull/1159) [@Zethson](https://github.com/Zethson)
