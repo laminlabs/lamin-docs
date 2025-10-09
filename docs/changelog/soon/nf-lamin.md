@@ -1,3 +1,4 @@
+- ✅ Integration test the LaminObserver by letting it create runs and artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/87) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix command detail [PR](https://github.com/laminlabs/nf-lamin/pull/89) [@Zethson](https://github.com/Zethson)
 - 🐛 Push plugin results to writable bucket [PR](https://github.com/laminlabs/nf-lamin/pull/88) [@Zethson](https://github.com/Zethson)
 - :building_construction: Allow an advanced user to specify the transform and/or run UID in the config [PR](https://github.com/laminlabs/nf-lamin/pull/83) [@rcannood](https://github.com/rcannood)
