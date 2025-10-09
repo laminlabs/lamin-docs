@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3142) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Retry POST requests for supabase functions [PR](https://github.com/laminlabs/lamindb-setup/pull/1158) [@Koncopd](https://github.com/Koncopd)
 - ✨ Introduce a `skip_hash_lookup` argument for `Artifact` [PR](https://github.com/laminlabs/lamindb/pull/3140) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add an environment variable to set `instance.api_url` [PR](https://github.com/laminlabs/lamindb-setup/pull/1157) [@Koncopd](https://github.com/Koncopd)
