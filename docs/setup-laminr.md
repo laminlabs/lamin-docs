@@ -88,7 +88,8 @@ To do this you will need a user API key which you can get by logging in to [Lami
 You can then login with:
 
 ```r
-laminr::lamin_login(api_key = "your_api_key")
+lc <- laminr::import_module("lamin_cli")
+lc$login()
 ```
 
 ### Switching users
@@ -96,7 +97,7 @@ laminr::lamin_login(api_key = "your_api_key")
 If you have already given an API key for a user you can log in as them by giving the user name:
 
 ```r
-laminr::lamin_login(user = "user_handle")
+lc$login(user = "user_handle")
 ```
 
 ## Setting a default instance
@@ -105,7 +106,7 @@ Using `import_module("lamindb")` will connect to the current default LaminDB ins
 The default instance can be set using:
 
 ```
-laminr::lamin_connect("<owner>/<name>")
+lc$connect("<owner>/<name>")
 ```
 
-Note that this must be called before attempting to connect to a default instance and cannot be changed once the default instance is connected without first calling `lamin_disconnect()`.
+Note that this must be called ***before*** attempting to connect to a default instance and cannot be changed once the default instance is connected.
