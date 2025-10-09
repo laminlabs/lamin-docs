@@ -1,3 +1,4 @@
+- 🚸 Ignore cycles arising between input artifacts and re-created artifacts [PR](https://github.com/laminlabs/lamindb/pull/3143) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Improve formatting and update CI & pre-commit versions [PR](https://github.com/laminlabs/lamindb-setup/pull/1159) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3142) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Retry POST requests for supabase functions [PR](https://github.com/laminlabs/lamindb-setup/pull/1158) [@Koncopd](https://github.com/Koncopd)
