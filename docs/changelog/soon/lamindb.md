@@ -1,3 +1,4 @@
+- 🐛 Do not retrieve records from trash based on hash lookup [PR](https://github.com/laminlabs/lamindb/pull/3146) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Properly pass branch and space to `Artifact()` [PR](https://github.com/laminlabs/lamin-cli/pull/160) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Polish logging during `ln.track()` and small refactor in input tracking [PR](https://github.com/laminlabs/lamindb/pull/3145) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `Curator.add_new_from()` [PR](https://github.com/laminlabs/lamindb/pull/3144) [@sunnyosun](https://github.com/sunnyosun)
