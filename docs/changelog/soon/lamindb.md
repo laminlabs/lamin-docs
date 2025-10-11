@@ -1,3 +1,4 @@
+- 🚸 Better UX for `lamin annotate` CLI command [PR](https://github.com/laminlabs/lamindb/pull/3150) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Improve annotate interface [PR](https://github.com/laminlabs/lamin-cli/pull/161) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Various fixes for filtering [PR](https://github.com/laminlabs/lamindb/pull/3147) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Do not retrieve records from trash based on hash lookup [PR](https://github.com/laminlabs/lamindb/pull/3146) [@falexwolf](https://github.com/falexwolf)
