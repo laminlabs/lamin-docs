@@ -1,3 +1,4 @@
+- ✨ Allow to use proxy db on `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1162) [@Koncopd](https://github.com/Koncopd)
 - ♻️ All references to `ln.examples.datasets` and `mini_immuno` instead of their legacy counterparts [PR](https://github.com/laminlabs/lamindb/pull/3154) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Sanitize dataframe proxy for `dict` validation to enable schema-based validation of categoricals in dicts [PR](https://github.com/laminlabs/lamindb/pull/3153) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix annotation with features of `dtype = list[str]` [PR](https://github.com/laminlabs/lamindb/pull/3152) [@falexwolf](https://github.com/falexwolf)
