@@ -1,3 +1,4 @@
+- 🐛 Fix schema mutation when removing features [PR](https://github.com/laminlabs/lamindb/pull/3148) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better UX for `lamin annotate` CLI command [PR](https://github.com/laminlabs/lamindb/pull/3150) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Improve annotate interface [PR](https://github.com/laminlabs/lamin-cli/pull/161) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Various fixes for filtering [PR](https://github.com/laminlabs/lamindb/pull/3147) [@Koncopd](https://github.com/Koncopd)
