@@ -1,3 +1,4 @@
+- 🚸 Limit name search upon record creation to records of same type [PR](https://github.com/laminlabs/lamindb/pull/3156) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix hash calculation for hybrid composite schemas, refactor external feature annotation in `Artifact.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3155) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow to use proxy db on `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1162) [@Koncopd](https://github.com/Koncopd)
 - ♻️ All references to `ln.examples.datasets` and `mini_immuno` instead of their legacy counterparts [PR](https://github.com/laminlabs/lamindb/pull/3154) [@falexwolf](https://github.com/falexwolf)
