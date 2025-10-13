@@ -141,14 +141,16 @@ README0_REPLACE = """```{dropdown} Why?"""
 
 README1_ORIG = """</details>
 
-**Highlights.**"""
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+
+Highlights:"""
 
 README1_REPLACE = """```
 
 ```{dropdown} Highlights"""
 
 README2_ORIG = """
-LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
+If you want a GUI, you can connect your LaminDB instance to LaminHub and close the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
 
 ## Docs
 
