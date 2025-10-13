@@ -1,3 +1,4 @@
+- 🚸 Allow `init()` after another instance was connected [PR](https://github.com/laminlabs/lamindb-setup/pull/1163) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve README [PR](https://github.com/laminlabs/lamindb/pull/3157) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Limit name search upon record creation to records of same type [PR](https://github.com/laminlabs/lamindb/pull/3156) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix hash calculation for hybrid composite schemas, refactor external feature annotation in `Artifact.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3155) [@falexwolf](https://github.com/falexwolf)
