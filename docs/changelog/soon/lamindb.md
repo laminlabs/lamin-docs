@@ -1,3 +1,4 @@
+- ✨ Enable tracking run parameters without validation [PR](https://github.com/laminlabs/lamindb/pull/3151) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make connection validation consistent across `init()` and `connect()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1164) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow `init()` after another instance was connected [PR](https://github.com/laminlabs/lamindb-setup/pull/1163) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve README [PR](https://github.com/laminlabs/lamindb/pull/3157) [@falexwolf](https://github.com/falexwolf)
