@@ -1,0 +1,1 @@
+- :construction_worker: De-duplicate changelog [PR](https://github.com/laminlabs/laminr/pull/233) [@falexwolf](https://github.com/falexwolf)
