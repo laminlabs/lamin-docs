@@ -1,1 +1,2 @@
+- ⬇️ Upper bount ipykernel to lower than 7.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3163) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not request db token when `use_root_db_user` is True on `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1165) [@Koncopd](https://github.com/Koncopd)
