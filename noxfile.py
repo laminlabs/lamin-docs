@@ -134,6 +134,17 @@ influences
 glossary
 """
 
+READMETITLE_ORIG = """# LaminDB - A data framework for biology
+
+Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse, lineage, feature store, ontologies, LIMS, ELN.
+"""
+
+READMETITLE_REPLACE = """# LaminDB - A data framework for biology
+
+LaminDB is a data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
+"""
+
+
 README0_ORIG = """<details>
 <summary>Why?</summary>"""
 
@@ -141,14 +152,18 @@ README0_REPLACE = """```{dropdown} Why?"""
 
 README1_ORIG = """</details>
 
-**Highlights.**"""
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+
+Highlights:"""
 
 README1_REPLACE = """```
+
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
 
 ```{dropdown} Highlights"""
 
 README2_ORIG = """
-LaminDB can be connected to LaminHub to serve as a [LIMS](https://en.wikipedia.org/wiki/Laboratory_information_management_system) for wetlab scientists, closing the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
+If you want a GUI, you can connect your LaminDB instance to LaminHub and close the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
 
 ## Docs
 
@@ -425,10 +440,12 @@ def pull_artifacts(session):
     with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
+        assert READMETITLE_ORIG in content  # noqa: S101
         assert README0_ORIG in content  # noqa: S101
         assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
         assert README3_ORIG in content  # noqa: S101
+        content = content.replace(READMETITLE_ORIG, READMETITLE_REPLACE)
         content = content.replace(README0_ORIG, README0_REPLACE)
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
