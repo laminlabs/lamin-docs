@@ -158,6 +158,8 @@ Highlights:"""
 
 README1_REPLACE = """```
 
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+
 ```{dropdown} Highlights"""
 
 README2_ORIG = """
