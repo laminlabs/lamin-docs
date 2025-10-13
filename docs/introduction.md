@@ -7,6 +7,6 @@
 # Introduction
 
 ```{include} includes/README.md
-:start-after: '# LaminDB - A data lakehouse for biology'
+:start-after: '# LaminDB - A data framework for biology'
 
 ```
