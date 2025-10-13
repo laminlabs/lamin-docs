@@ -1,3 +1,4 @@
+- ♻️ Make connection validation consistent across `init()` and `connect()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1164) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow `init()` after another instance was connected [PR](https://github.com/laminlabs/lamindb-setup/pull/1163) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve README [PR](https://github.com/laminlabs/lamindb/pull/3157) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Limit name search upon record creation to records of same type [PR](https://github.com/laminlabs/lamindb/pull/3156) [@falexwolf](https://github.com/falexwolf)
