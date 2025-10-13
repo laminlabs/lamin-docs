@@ -134,6 +134,17 @@ influences
 glossary
 """
 
+READMETITLE_ORIG = """# LaminDB - A data framework for biology
+
+Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse, lineage, feature store, ontologies, LIMS, ELN.
+"""
+
+READMETITLE_REPLACE = """# LaminDB - A data framework for biology
+
+LaminDB is a data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
+"""
+
+
 README0_ORIG = """<details>
 <summary>Why?</summary>"""
 
