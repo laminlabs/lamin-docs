@@ -438,10 +438,12 @@ def pull_artifacts(session):
     with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
+        assert READMETITLE_ORIG in content  # noqa: S101
         assert README0_ORIG in content  # noqa: S101
         assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
         assert README3_ORIG in content  # noqa: S101
+        content = content.replace(READMETITLE_ORIG, READMETITLE_REPLACE)
         content = content.replace(README0_ORIG, README0_REPLACE)
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
