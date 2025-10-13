@@ -1,3 +1,4 @@
+- ♻️ Canonicalize code organization in lightning integration [PR](https://github.com/laminlabs/lamindb/pull/3166) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor local-to-cloud transfer notebooks [PR](https://github.com/laminlabs/lamindb/pull/3164) [@falexwolf](https://github.com/falexwolf)
 - ⬇️ Upper bount ipykernel to lower than 7.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3163) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not request db token when `use_root_db_user` is True on `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1165) [@Koncopd](https://github.com/Koncopd)
