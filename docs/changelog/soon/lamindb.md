@@ -1,2 +1,3 @@
+- 🩹 Prettify logging related to automated lookups based on `name` and `hash` [PR](https://github.com/laminlabs/lamindb/pull/3167) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `use_proxy_db` on connect in CLI [PR](https://github.com/laminlabs/lamin-cli/pull/162) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not request db token when `use_root_db_user` is True on `connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1165) [@Koncopd](https://github.com/Koncopd)
