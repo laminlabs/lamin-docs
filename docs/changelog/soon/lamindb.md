@@ -1,3 +1,4 @@
+- ✅ Add tests for `lightning` integration module [PR](https://github.com/laminlabs/lamindb/pull/3159) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix feature transfer [PR](https://github.com/laminlabs/lamindb/pull/3168) [@sunnyosun](https://github.com/sunnyosun)
 - 🩹 Prettify logging related to automated lookups based on `name` and `hash` [PR](https://github.com/laminlabs/lamindb/pull/3167) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `use_proxy_db` on connect in CLI [PR](https://github.com/laminlabs/lamin-cli/pull/162) [@Koncopd](https://github.com/Koncopd)
