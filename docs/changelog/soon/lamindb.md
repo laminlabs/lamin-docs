@@ -1,3 +1,4 @@
+- 🐛 Fix bug in serializing dtypes from objects in deeply nested type hierarchies, expand tests [PR](https://github.com/laminlabs/lamindb/pull/3169) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add tests for `lightning` integration module [PR](https://github.com/laminlabs/lamindb/pull/3159) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix feature transfer [PR](https://github.com/laminlabs/lamindb/pull/3168) [@sunnyosun](https://github.com/sunnyosun)
 - 🩹 Prettify logging related to automated lookups based on `name` and `hash` [PR](https://github.com/laminlabs/lamindb/pull/3167) [@falexwolf](https://github.com/falexwolf)
