@@ -13,7 +13,7 @@ lc$init(storage = "./mydata", modules = "bionty")
 
 Or if you have write access to an instance, login and connect to it:
 
-```
+```R
 lc$login()
 lc$connect("<account>/<instance>")
 ```
