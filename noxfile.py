@@ -398,13 +398,12 @@ def install(session):
     if branch == "pypi":
         run(
             session,
-            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab]",
+            "uv pip install --system lamindb",
         )
     else:
         install_lamindb(
             session,
             branch=branch,
-            extras="bionty,jupyter,gcp,wetlab",
             target_dir="tmp_lamindb",
         )
     run(session, "uv pip install --system spatialdata")  # temporarily
