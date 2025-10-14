@@ -29,11 +29,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: "pip"
           cache-dependency-path: ".github/workflows/build.yml"
-      - name: cache pre-commit
-        uses: actions/cache@v3
-        with:
-          path: ~/.cache/pre-commit
-          key: pre-commit-${{ runner.os }}-${{ hashFiles('.pre-commit-config.yaml') }}
       - run: |
           pip install uv
           uv pip install --system "laminci[run-notebooks]@git+https://@github.com/laminlabs/laminci"
@@ -46,7 +41,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      # - run: nox -s lint
       - run: nox -s pull_artifacts
       - run: nox -s install
       - run: nox -s run_nbs

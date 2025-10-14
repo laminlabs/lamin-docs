@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -223,22 +224,6 @@ README3_REPLACE = """
 """
 
 
-# below is needed if we have TOCs in notebooks
-
-# def jsonify(text: str):
-#     new_lines = []
-#     # skip last line
-#     for line in text.split("\n")[:-1]:
-#         line = rf'    "{line}\n",'
-#         new_lines.append(line)
-#     return "\n".join(new_lines)
-
-
-# USECASES = jsonify(USECASES_TEXT)
-# OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
-# OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
-
-
 def replace_content(filename: Path, mapped_content: dict[str, str]) -> None:
     with open(filename) as f:
         content = f.read()
@@ -257,9 +242,6 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
             break
 
     return "\n".join(lines)
-
-
-import re
 
 
 def convert_markdown_python_to_tabbed(content: str) -> str:
@@ -520,6 +502,10 @@ def docs(session):
     #     # exit with error
     #     exit(1)
 
+    if IS_PR:
+        print("Skipping summary.md")
+        return
+
     # now strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
     strip_notebook_outputs("docs")
@@ -584,14 +570,13 @@ def docs(session):
     Path("docs/bionty.md").unlink()
     Path("docs/cli.md").unlink()
 
-    if not IS_PR:
-        process = subprocess.run(  # noqa S602
-            "lndocs --strip-prefix --format text --error-on-index",  # --strict back
-            shell=True,
-        )
-        ln.connect("laminlabs/lamin-site-assets")
-        ln.track()
-        ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+    process = subprocess.run(  # noqa S602
+        "lndocs --strip-prefix --format text --error-on-index",  # --strict back
+        shell=True,
+    )
+    ln.connect("laminlabs/lamin-site-assets")
+    ln.track()
+    ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
 
 
 if __name__ == "__main__":
