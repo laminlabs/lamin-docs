@@ -148,7 +148,7 @@ Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse
 
 READMETITLE_REPLACE = """# LaminDB - A data framework for biology
 
-LaminDB is a data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
+LaminDB is an open-source data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
 """
 
 
