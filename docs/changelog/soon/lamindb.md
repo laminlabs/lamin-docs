@@ -1,3 +1,4 @@
+- 🚸 Format on-prem UI URLs [PR](https://github.com/laminlabs/lamindb/pull/3173) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Add `InstanceSettings.ui_url` [PR](https://github.com/laminlabs/lamindb-setup/pull/1170) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Introduce `skip_hash_lookup` for `Collection` [PR](https://github.com/laminlabs/lamindb/pull/3170) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in jupyter for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb/pull/3165) [@Koncopd](https://github.com/Koncopd)
