@@ -1,1 +1,2 @@
+- ♻️ Move `arc-virtual-cell-atlas` and `hubmap` notebook here [PR](https://github.com/laminlabs/lamin-usecases/pull/209) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Canonicalize import patterns [PR](https://github.com/laminlabs/lamin-mlops/pull/31) [@falexwolf](https://github.com/falexwolf)
