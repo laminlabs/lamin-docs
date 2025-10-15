@@ -1,3 +1,4 @@
+- 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in jupyter for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1166) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Ignore supabase deprecation warnings for now [PR](https://github.com/laminlabs/lamindb-setup/pull/1168) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix bug in serializing dtypes from objects in deeply nested type hierarchies, expand tests [PR](https://github.com/laminlabs/lamindb/pull/3169) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add tests for `lightning` integration module [PR](https://github.com/laminlabs/lamindb/pull/3159) [@Zethson](https://github.com/Zethson)
