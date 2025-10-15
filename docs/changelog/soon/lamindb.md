@@ -1,3 +1,4 @@
+- 🔧 Introduce `skip_hash_lookup` for `Collection` [PR](https://github.com/laminlabs/lamindb/pull/3170) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in jupyter for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb/pull/3165) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in jupyter for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1166) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Ignore supabase deprecation warnings for now [PR](https://github.com/laminlabs/lamindb-setup/pull/1168) [@Koncopd](https://github.com/Koncopd)
