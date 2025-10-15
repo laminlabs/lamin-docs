@@ -1,4 +1,5 @@
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -9,6 +10,12 @@ import nox
 from dirsync import sync
 from laminci import run_notebooks
 from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
+
+current_dir = Path(__file__).parent.resolve()
+if str(current_dir) not in sys.path:
+    sys.path.insert(0, str(current_dir))
+
+from laminr_converter import convert_markdown_python_to_tabbed
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
 
@@ -223,22 +230,6 @@ README3_REPLACE = """
 """
 
 
-# below is needed if we have TOCs in notebooks
-
-# def jsonify(text: str):
-#     new_lines = []
-#     # skip last line
-#     for line in text.split("\n")[:-1]:
-#         line = rf'    "{line}\n",'
-#         new_lines.append(line)
-#     return "\n".join(new_lines)
-
-
-# USECASES = jsonify(USECASES_TEXT)
-# OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
-# OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
-
-
 def replace_content(filename: Path, mapped_content: dict[str, str]) -> None:
     with open(filename) as f:
         content = f.read()
@@ -257,66 +248,6 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
             break
 
     return "\n".join(lines)
-
-
-import re
-
-
-def convert_markdown_python_to_tabbed(content: str) -> str:
-    """Convert markdown content with Python code blocks to tabbed sections.
-
-    Args:
-        content (str): Markdown content with ```python code blocks
-        converter_function: Function that converts Python code to R code
-
-    Returns:
-        str: Modified markdown with tabbed Python/R sections
-    """
-    current_dir = Path(__file__).parent.resolve()
-    if str(current_dir) not in sys.path:
-        sys.path.insert(0, str(current_dir))
-
-    from laminr_converter import convert_lamindb_to_laminr
-
-    def replace_code_block(match):
-        """Replace a single Python code block with a tabbed section."""
-        python_code = match.group(1)
-
-        # Convert Python code to R using the provided converter
-        r_code = convert_lamindb_to_laminr(python_code)
-
-        # Create the tabbed section
-        tabbed_section = f"""::::{{tab-set}}
-:::{{tab-item}} Py
-:sync: python
-
-```python
-{python_code}
-```
-
-:::
-:::{{tab-item}} R
-:sync: r
-
-```r
-{r_code}
-```
-
-:::
-::::"""
-
-        return tabbed_section
-
-    # Pattern to match ```python ... ``` code blocks
-    # This pattern captures the code content between the markers
-    python_code_pattern = r"```python\s*\n(.*?)\n```"
-
-    # Replace all Python code blocks with tabbed sections
-    content_with_r_code = re.sub(
-        python_code_pattern, replace_code_block, content, flags=re.DOTALL
-    )
-
-    return content_with_r_code
 
 
 def pull_from_s3_and_unpack(zip_filename) -> None:
@@ -421,13 +352,6 @@ def pull_artifacts(session):
 
     replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
 
-    # wetlab (must be after use-cases)
-    # pull_from_s3_and_unpack("wetlab.zip")
-    # sync_path(
-    #     Path("wetlab/guide/pert-curator.ipynb"),
-    #     Path("docs/perturbation.ipynb"),
-    # )
-
     # amend toctree & README
     with open("docs/guide.md") as f:
         content = f.read()
@@ -474,13 +398,12 @@ def install(session):
     if branch == "pypi":
         run(
             session,
-            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab]",
+            "uv pip install --system lamindb",
         )
     else:
         install_lamindb(
             session,
             branch=branch,
-            extras="bionty,jupyter,gcp,wetlab",
             target_dir="tmp_lamindb",
         )
     run(session, "uv pip install --system spatialdata")  # temporarily
@@ -494,8 +417,6 @@ def run_nbs(session):
     exit_status = os.system("python docs/includes/create-fasta.py")  # noqa S605
     assert exit_status == 0  # noqa S101
     run_notebooks("docs/tutorial.ipynb")
-    run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
-    run_notebooks("docs/hubmap.ipynb")
     run_notebooks("docs/setup.ipynb")
 
 
@@ -521,6 +442,10 @@ def docs(session):
     #     run(session, "lndocs --strip-prefix --error-on-index")
     #     # exit with error
     #     exit(1)
+
+    if IS_PR:
+        print("Skipping summary.md")
+        return
 
     # now strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
@@ -586,14 +511,13 @@ def docs(session):
     Path("docs/bionty.md").unlink()
     Path("docs/cli.md").unlink()
 
-    if not IS_PR:
-        process = subprocess.run(  # noqa S602
-            "lndocs --strip-prefix --format text --error-on-index",  # --strict back
-            shell=True,
-        )
-        ln.connect("laminlabs/lamin-site-assets")
-        ln.track()
-        ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+    process = subprocess.run(  # noqa S602
+        "lndocs --strip-prefix --format text --error-on-index",  # --strict back
+        shell=True,
+    )
+    ln.connect("laminlabs/lamin-site-assets")
+    ln.track()
+    ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
 
 
 if __name__ == "__main__":

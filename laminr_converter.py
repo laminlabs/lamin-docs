@@ -3,6 +3,58 @@ import re
 from typing import Any
 
 
+def convert_markdown_python_to_tabbed(content: str) -> str:
+    """Convert markdown content with Python code blocks to tabbed sections.
+
+    Args:
+        content (str): Markdown content with ```python code blocks
+        converter_function: Function that converts Python code to R code
+
+    Returns:
+        str: Modified markdown with tabbed Python/R sections
+    """
+
+    def replace_code_block(match):
+        """Replace a single Python code block with a tabbed section."""
+        python_code = match.group(1)
+
+        # Convert Python code to R using the provided converter
+        r_code = convert_lamindb_to_laminr(python_code)
+
+        # Create the tabbed section
+        tabbed_section = f"""::::{{tab-set}}
+:::{{tab-item}} Py
+:sync: python
+
+```python
+{python_code}
+```
+
+:::
+:::{{tab-item}} R
+:sync: r
+
+```r
+{r_code}
+```
+
+:::
+::::"""
+
+        return tabbed_section
+
+    # Pattern to match ```python ... ``` code blocks
+    # This pattern captures the code content between the markers
+    python_code_pattern = r"```python\s*\n(.*?)\n```"
+
+    # Replace all Python code blocks with tabbed sections
+    content_with_r_code = re.sub(
+        python_code_pattern, replace_code_block, content, flags=re.DOTALL
+    )
+
+    return content_with_r_code
+
+
 class LaminDBToLaminRConverter:
     """Converts LaminDB Python code to LaminR (R) code.
 
