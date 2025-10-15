@@ -1,3 +1,4 @@
+- 🚸 Add restore to all registries with soft-delete [PR](https://github.com/laminlabs/lamindb/pull/3175) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Format on-prem UI URLs [PR](https://github.com/laminlabs/lamindb/pull/3173) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Add `InstanceSettings.ui_url` [PR](https://github.com/laminlabs/lamindb-setup/pull/1170) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Introduce `skip_hash_lookup` for `Collection` [PR](https://github.com/laminlabs/lamindb/pull/3170) [@falexwolf](https://github.com/falexwolf)
