@@ -1,3 +1,4 @@
+- ✨ Enable curating features with nested subtypes [PR](https://github.com/laminlabs/lamindb/pull/3174) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Never return existing transform with same `key` from trash [PR](https://github.com/laminlabs/lamindb/pull/3176) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add restore to all registries with soft-delete [PR](https://github.com/laminlabs/lamindb/pull/3175) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Format on-prem UI URLs [PR](https://github.com/laminlabs/lamindb/pull/3173) [@falexwolf](https://github.com/falexwolf)
