@@ -85,9 +85,9 @@ To move an entity into a restricted space, set the `.space` field of its record.
 
 ```python
 space = ln.Space.get(name="Our space")  # select a space
-ulabel = ln.Record.get(name="existing label")
-ulabel.space = space
-ulabel.save()  # saved in space "Our space"
+record = ln.Record.get(name="existing label")
+record.space = space
+record.save()  # saved in space "Our space"
 ```
 
 If a record isn't yet saved, setting the `.space` field determines the space in which you save the record.
