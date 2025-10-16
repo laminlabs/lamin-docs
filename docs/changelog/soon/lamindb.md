@@ -1,2 +1,3 @@
+- 🎨 Raise error in curators when dtype is list but values are not [PR](https://github.com/laminlabs/lamindb/pull/3183) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve bioregistry guide [PR](https://github.com/laminlabs/lamindb/pull/3182) [@sunnyosun](https://github.com/sunnyosun)
 - ✏️ Fix coherce_dtype in schema.describe [PR](https://github.com/laminlabs/lamindb/pull/3181) [@sunnyosun](https://github.com/sunnyosun)
