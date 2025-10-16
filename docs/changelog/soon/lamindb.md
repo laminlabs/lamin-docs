@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3178) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Bump the lower bound on `aiobotocore` to 2.12.4 to allow `urllib` 2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1171) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable curating features with nested subtypes [PR](https://github.com/laminlabs/lamindb/pull/3174) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Never return existing transform with same `key` from trash [PR](https://github.com/laminlabs/lamindb/pull/3176) [@falexwolf](https://github.com/falexwolf)
