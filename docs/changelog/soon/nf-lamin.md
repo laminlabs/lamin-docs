@@ -1,3 +1,5 @@
+- ✨ Add dry_run setting [PR](https://github.com/laminlabs/nf-lamin/pull/92) [@rcannood](https://github.com/rcannood)
+- ✨ Add `getTransformUid()` and `getRunUid()` functions [PR](https://github.com/laminlabs/nf-lamin/pull/90) [@rcannood](https://github.com/rcannood)
 - ✅ Integration test the LaminObserver by letting it create runs and artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/87) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix command detail [PR](https://github.com/laminlabs/nf-lamin/pull/89) [@Zethson](https://github.com/Zethson)
 - 🐛 Push plugin results to writable bucket [PR](https://github.com/laminlabs/nf-lamin/pull/88) [@Zethson](https://github.com/Zethson)
