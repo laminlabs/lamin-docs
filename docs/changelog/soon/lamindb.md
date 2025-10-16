@@ -1,3 +1,4 @@
+- 🥅 Better error message for trying to write on a public connection. [PR](https://github.com/laminlabs/lamindb/pull/3179) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `Transform.from_git()` [PR](https://github.com/laminlabs/lamindb/pull/3177) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3178) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Bump the lower bound on `aiobotocore` to 2.12.4 to allow `urllib` 2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1171) [@Koncopd](https://github.com/Koncopd)
