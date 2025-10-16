@@ -1,0 +1,1 @@
+- ✏️ Fix coherce_dtype in schema.describe [PR](https://github.com/laminlabs/lamindb/pull/3181) [@sunnyosun](https://github.com/sunnyosun)
