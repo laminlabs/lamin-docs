@@ -23,7 +23,7 @@ Type "help" for help.
  public | lamindb_artifactproject           | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_artifactreference         | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_artifactschema            | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_artifactulabel            | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_artifactrecord            | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_branch                    | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_collection                | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_collection__actions       | table | 71edfba136f54985adeb8be09fb3418d_root
@@ -32,7 +32,7 @@ Type "help" for help.
  public | lamindb_collectionartifact        | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_collectionproject         | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_collectionreference       | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_collectionulabel          | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_collectionrecord          | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_feature                   | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_featureproject            | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_featurevalue              | table | 71edfba136f54985adeb8be09fb3418d_root
@@ -48,13 +48,13 @@ Type "help" for help.
  public | lamindb_recordproject             | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_recordrecord              | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_recordrun                 | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_recordulabel              | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_recordrecord              | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_reference                 | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_reference_authors         | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_run                       | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_runfeaturevalue           | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_runproject                | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_runulabel                 | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_runrecord                 | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_schema                    | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_schemacomponent           | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_schemafeature             | table | 71edfba136f54985adeb8be09fb3418d_root
@@ -67,10 +67,10 @@ Type "help" for help.
  public | lamindb_transform_predecessors    | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_transformproject          | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_transformreference        | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_transformulabel           | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_ulabel                    | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_ulabel_parents            | table | 71edfba136f54985adeb8be09fb3418d_root
- public | lamindb_ulabelproject             | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_transformrecord           | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_record                    | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_record_parents            | table | 71edfba136f54985adeb8be09fb3418d_root
+ public | lamindb_recordproject             | table | 71edfba136f54985adeb8be09fb3418d_root
  public | lamindb_user                      | table | 71edfba136f54985adeb8be09fb3418d_root
 (59 rows)
 
