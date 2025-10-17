@@ -1,3 +1,4 @@
+- 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in `jupyter` for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1169) [@falexwolf](https://github.com/falexwolf)
 - ✨ Implement on-prem create-s3 for existing instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1167) [@Koncopd](https://github.com/Koncopd)
 - 💄 Better way of displaying the schema slot identifier type in `.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3186) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Improve dealing with ad hoc annotations of lists of categorical features [PR](https://github.com/laminlabs/lamindb/pull/3184) [@falexwolf](https://github.com/falexwolf)
