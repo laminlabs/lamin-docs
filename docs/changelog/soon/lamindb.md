@@ -1,3 +1,4 @@
+- 💄 Strip `cat` from feature `dtype` display [PR](https://github.com/laminlabs/lamindb/pull/3185) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `init_local_sqlite` to create empty copies of existing Postgres instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1149) [@Zethson](https://github.com/Zethson)
 - 🎨 Raise error in curators when dtype is list but values are not [PR](https://github.com/laminlabs/lamindb/pull/3183) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Improve bioregistry guide [PR](https://github.com/laminlabs/lamindb/pull/3182) [@sunnyosun](https://github.com/sunnyosun)
