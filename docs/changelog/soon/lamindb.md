@@ -1,3 +1,4 @@
+- ♻️ Adapt curator tests to new `describe()` format [PR](https://github.com/laminlabs/lamindb/pull/3190) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in jupyter for ipykernel>=7.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3172) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in `jupyter` for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1169) [@falexwolf](https://github.com/falexwolf)
 - ✨ Implement on-prem create-s3 for existing instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1167) [@Koncopd](https://github.com/Koncopd)
