@@ -1,3 +1,4 @@
+- ♻️ Add a `RecordRun` link model [PR](https://github.com/laminlabs/lamindb/pull/3195) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fix type annotation and double-loading of dataframe in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/3194) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Refactor clone code [PR](https://github.com/laminlabs/lamindb-setup/pull/1173) [@Zethson](https://github.com/Zethson)
 - 🚸 Populate `reference` and `reference_type` for sliding transforms [PR](https://github.com/laminlabs/lamindb/pull/3193) [@sunnyosun](https://github.com/sunnyosun)
