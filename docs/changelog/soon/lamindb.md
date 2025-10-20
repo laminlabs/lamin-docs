@@ -1,3 +1,4 @@
+- 🐛 Fix a bug that prevented re-curating existing artifacts in some cases [PR](https://github.com/laminlabs/lamindb/pull/3187) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Adapt curator tests to new `describe()` format [PR](https://github.com/laminlabs/lamindb/pull/3190) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in jupyter for ipykernel>=7.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3172) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Set db tokens for connections in all contexts (threads, tasks), disable task-specific database wrappers in `jupyter` for `ipykernel>=7.0.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1169) [@falexwolf](https://github.com/falexwolf)
