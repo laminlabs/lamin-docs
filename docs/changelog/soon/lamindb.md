@@ -1,3 +1,4 @@
+- ♻️ Enable bulk-re-creating records that would violate a unique constraint [PR](https://github.com/laminlabs/lamindb/pull/3189) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Support `fsspec 2025.9.0` [PR](https://github.com/laminlabs/lamindb/pull/3192) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Support fsspec 2025.9.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/1172) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix a bug that prevented re-curating existing artifacts in some cases [PR](https://github.com/laminlabs/lamindb/pull/3187) [@falexwolf](https://github.com/falexwolf)
