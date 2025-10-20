@@ -1,3 +1,4 @@
+- ♻️ Fix type annotation and double-loading of dataframe in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/3194) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Refactor clone code [PR](https://github.com/laminlabs/lamindb-setup/pull/1173) [@Zethson](https://github.com/Zethson)
 - 🚸 Populate `reference` and `reference_type` for sliding transforms [PR](https://github.com/laminlabs/lamindb/pull/3193) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Exclude records in trash from unique constraint on `name` under a `type` and add `is_valid_type` constraints to all typed entities  [PR](https://github.com/laminlabs/lamindb/pull/3191) [@falexwolf](https://github.com/falexwolf)
