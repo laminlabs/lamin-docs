@@ -1,3 +1,4 @@
+- 🐛 Exclude records in trash from unique constraint on `name` under a `type` and add `is_valid_type` constraints to all typed entities  [PR](https://github.com/laminlabs/lamindb/pull/3191) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable bulk-re-creating records that would violate a unique constraint [PR](https://github.com/laminlabs/lamindb/pull/3189) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Support `fsspec 2025.9.0` [PR](https://github.com/laminlabs/lamindb/pull/3192) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Support fsspec 2025.9.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/1172) [@Koncopd](https://github.com/Koncopd)
