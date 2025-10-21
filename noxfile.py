@@ -310,10 +310,8 @@ def pull_artifacts(session):
     Path("nextflow-lamin/register_scrnaseq_run.py").rename(
         "docs/register_scrnaseq_run.py"
     )
-    pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
-    Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
-        "docs/snakemake.ipynb"
-    )
+    pull_from_s3_and_unpack("snakemake-lamin.zip")
+    Path("snakemake-lamin/bulk_rna_seq.ipynb").rename("docs/snakemake.ipynb")
 
     # mlops
     pull_from_s3_and_unpack("lamin-mlops.zip")
