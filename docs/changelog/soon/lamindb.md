@@ -1,3 +1,4 @@
+- 🚸 Return a `SQLRecordList` in `Artifact.from_dir()` [PR](https://github.com/laminlabs/lamindb/pull/3198) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable `run.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3197) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/1174) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Capture outputs of root logger in `LogStreamTracker` [PR](https://github.com/laminlabs/lamindb/pull/3196) [@falexwolf](https://github.com/falexwolf)
