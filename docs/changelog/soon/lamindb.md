@@ -1,3 +1,4 @@
+- 🚸 Enable passing sync_git_repo via env variable [PR](https://github.com/laminlabs/lamindb/pull/3199) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Return a `SQLRecordList` in `Artifact.from_dir()` [PR](https://github.com/laminlabs/lamindb/pull/3198) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable `run.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3197) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/1174) [@Koncopd](https://github.com/Koncopd)
