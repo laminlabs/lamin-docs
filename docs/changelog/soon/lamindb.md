@@ -1,3 +1,4 @@
+- 🔧 Set `max_pool_connections=64` by default for `s3fs` filesystem [PR](https://github.com/laminlabs/lamindb-setup/pull/1146) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Prettier instance settings [PR](https://github.com/laminlabs/lamindb-setup/pull/1175) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable passing sync_git_repo via env variable [PR](https://github.com/laminlabs/lamindb/pull/3199) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Return a `SQLRecordList` in `Artifact.from_dir()` [PR](https://github.com/laminlabs/lamindb/pull/3198) [@falexwolf](https://github.com/falexwolf)
