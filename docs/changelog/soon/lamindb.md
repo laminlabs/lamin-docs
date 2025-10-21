@@ -1,3 +1,4 @@
+- 🐛 Capture outputs of root logger in `LogStreamTracker` [PR](https://github.com/laminlabs/lamindb/pull/3196) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add a `RecordRun` link model [PR](https://github.com/laminlabs/lamindb/pull/3195) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fix type annotation and double-loading of dataframe in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/3194) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Refactor clone code [PR](https://github.com/laminlabs/lamindb-setup/pull/1173) [@Zethson](https://github.com/Zethson)
