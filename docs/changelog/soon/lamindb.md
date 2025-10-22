@@ -1,3 +1,4 @@
+- 🚸 Add fallback behavior if artifact was moved in storage [PR](https://github.com/laminlabs/lamindb/pull/3204) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Also include `key` & `storage` location in error handling upon `skip_hash_lookup = True` [PR](https://github.com/laminlabs/lamindb/pull/3203) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor removing features [PR](https://github.com/laminlabs/lamindb/pull/3202) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Clearer error and logging messages for `sync_git_repo` and `ln.finish()` [PR](https://github.com/laminlabs/lamindb/pull/3200) [@falexwolf](https://github.com/falexwolf)
