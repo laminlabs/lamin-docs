@@ -1,3 +1,4 @@
+- 🚸 Better message upon start of a script in `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/3206) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better dialogue for user delete within existing storage location [PR](https://github.com/laminlabs/lamindb/pull/3205) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add fallback behavior if artifact was moved in storage [PR](https://github.com/laminlabs/lamindb/pull/3204) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Also include `key` & `storage` location in error handling upon `skip_hash_lookup = True` [PR](https://github.com/laminlabs/lamindb/pull/3203) [@falexwolf](https://github.com/falexwolf)
