@@ -1,4 +1,50 @@
 
+## 2025-10-22
+
+New Features
+
+- Workflows & Launch
+  - Launch forms can reveal hidden parameters when needed, a simplified launch view is available, and Nextflow schema JSON is respected end‑to‑end. Run metadata originating from Sheets is captured for better traceability.
+- Transforms & Pipelines
+  - Pipeline repository information is automatically derived from transform source code to improve provenance and linking.
+  - Branch parameter is supported when resolving repository details for transforms.
+- Analytics & Group‑By
+  - Group‑by charts support sorting for clearer comparisons.
+- Access & Security
+  - Record‑level locking via RLS for individual records and Block models.
+- Storage
+  - Default bucket lookup by instance ID is available; deletion of storage resources is supported; and Lambda now returns IDs for newly created artifacts and storages.
+
+Changes
+
+- Runs & Reports
+  - Run logs render ANSI colors for readability; version tags no longer auto‑prepend “v”; run counters increment per transform (not per version) for clearer numbering.
+- Navigation & UI
+  - Registries nav reordered; sub‑navigation expanded for Artifacts and Features; Sheets show feature descriptions on hover; hide internal “n” in schema tables; assorted copy/title refinements.
+  - Team page copy/typos corrected; vocabulary renamed “linked features” → “external features”.
+- Workflows & Pipelines
+  - Only main‑branch schemas appear in pipeline configuration; configuration files are hidden by default; `input`/`outdir` receive no special treatment so the Nextflow schema is the single source of truth.
+  - Parameters show a loading state during launch configuration.
+- Performance & Stability
+  - Instance caching optimized with a robust fallback.
+- Platform & Observability
+  - LaminDB upgraded to 1.12 with follow‑up bumps; database resource metadata expanded (host/port/proxy) and schema SQL functions marked STABLE.
+- Permissions & Governance
+  - Expanded permissions for org admins/managers; more consistent JWT/DB user mapping for org members.
+
+Bug fixes
+
+- Sheets
+  - Normalize floats on submission; restore Save after manual import; hide non‑schema self‑referential features; correct feature‑card dtype display and field‑search scope; fix sheet creation button in schema.
+- Pipelines & Transforms
+  - Resolve transform load errors; pipeline configuration shows only main‑branch schemas; use the correct `name_field`; full‑screen run report no longer flashes.
+- Storage & Artifacts
+  - Include file extension when uploading artifacts; improve reliability of instance DB transfer.
+- Navigation & Tables
+  - Fix nav flicker and active‑page highlight; correct org‑page navbar links; table selector uses fuzzy search; access table command bars use the correct accessor keys; remove description column from ULabel tables; fix artifacts page reactivity issues.
+- Database & Query
+  - Fix collaborator‑access RLS and JWT DB‑user retrieval for org members.
+
 ## 2025-09-29
 
 New Features
