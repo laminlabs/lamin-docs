@@ -1,3 +1,4 @@
+- ♻️ Move `define_valid_features.py` and similar scripts into the package [PR](https://github.com/laminlabs/lamindb/pull/3211) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate `dtype='cat'` in favor of `dtype=ln.Record` [PR](https://github.com/laminlabs/lamindb/pull/3208) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Set `max_pool_connections=64` by default for `s3fs` filesystem [PR](https://github.com/laminlabs/lamindb/pull/3210) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Ask for extra storage-level delete confirmation in case `_real_key` is not `None` [PR](https://github.com/laminlabs/lamindb/pull/3207) [@falexwolf](https://github.com/falexwolf)
