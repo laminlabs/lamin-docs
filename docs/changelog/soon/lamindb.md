@@ -1,3 +1,4 @@
+- 🐛 Also include `key` & `storage` location in error handling upon `skip_hash_lookup = True` [PR](https://github.com/laminlabs/lamindb/pull/3203) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor removing features [PR](https://github.com/laminlabs/lamindb/pull/3202) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Clearer error and logging messages for `sync_git_repo` and `ln.finish()` [PR](https://github.com/laminlabs/lamindb/pull/3200) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Set `max_pool_connections=64` by default for `s3fs` filesystem [PR](https://github.com/laminlabs/lamindb-setup/pull/1146) [@Koncopd](https://github.com/Koncopd)
