@@ -1,3 +1,4 @@
+- 🚸 Improve `Schema.describe()`, harmonize with `describe()` of `Artifact`, `Collection`, and `Run` [PR](https://github.com/laminlabs/lamindb/pull/3213) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Run instance migration through the API [PR](https://github.com/laminlabs/lamindb-setup/pull/1161) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Move `define_valid_features.py` and similar scripts into the package [PR](https://github.com/laminlabs/lamindb/pull/3211) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate `dtype='cat'` in favor of `dtype=ln.Record` [PR](https://github.com/laminlabs/lamindb/pull/3208) [@falexwolf](https://github.com/falexwolf)
