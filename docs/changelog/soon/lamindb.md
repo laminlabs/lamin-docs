@@ -1,3 +1,4 @@
+- ✅  More tests and comments regarding recovering items from trash based on hash [PR](https://github.com/laminlabs/lamindb/pull/3219) [@falexwolf](https://github.com/falexwolf)
 - 💄 Simplify lineage & ontology graph displays [PR](https://github.com/laminlabs/lamindb/pull/3215) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve `Schema.describe()`, harmonize with `describe()` of `Artifact`, `Collection`, and `Run` [PR](https://github.com/laminlabs/lamindb/pull/3213) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Run instance migration through the API [PR](https://github.com/laminlabs/lamindb-setup/pull/1161) [@fredericenard](https://github.com/fredericenard)
