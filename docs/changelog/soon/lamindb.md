@@ -1,3 +1,4 @@
+- 🔊 Log writing in-memory objects into cache on artifact creation [PR](https://github.com/laminlabs/lamindb/pull/3220) [@Koncopd](https://github.com/Koncopd)
 - ✅  More tests and comments regarding recovering items from trash based on hash [PR](https://github.com/laminlabs/lamindb/pull/3219) [@falexwolf](https://github.com/falexwolf)
 - 💄 Simplify lineage & ontology graph displays [PR](https://github.com/laminlabs/lamindb/pull/3215) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve `Schema.describe()`, harmonize with `describe()` of `Artifact`, `Collection`, and `Run` [PR](https://github.com/laminlabs/lamindb/pull/3213) [@falexwolf](https://github.com/falexwolf)
