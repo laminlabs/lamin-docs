@@ -1,3 +1,4 @@
+- 🐛 Restore dynamic imports from `django` in `_schema_metadata` [PR](https://github.com/laminlabs/lamindb-setup/pull/1177) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Correctly handle empty lists in curation [PR](https://github.com/laminlabs/lamindb/pull/3224) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛  Fix migration of PR3221 [PR](https://github.com/laminlabs/lamindb/pull/3225) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix s3 upload and download problems arising from local aws configs [PR](https://github.com/laminlabs/lamindb/pull/3222) [@Koncopd](https://github.com/Koncopd)
