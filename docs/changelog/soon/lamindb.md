@@ -1,3 +1,4 @@
+- 🐛 Fix problems arising from local aws configs [PR](https://github.com/laminlabs/lamindb-setup/pull/1176) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix exporting sheets with User feature [PR](https://github.com/laminlabs/lamindb/pull/3221) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Re-design `.describe()` and refactor the related code base [PR](https://github.com/laminlabs/lamindb/pull/3218) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow features to have reserved Django field names [PR](https://github.com/laminlabs/lamindb/pull/3209) [@sunnyosun](https://github.com/sunnyosun)
