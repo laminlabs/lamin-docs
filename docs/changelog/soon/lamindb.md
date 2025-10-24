@@ -1,3 +1,4 @@
+- 🐛  Fix migration of PR3221 [PR](https://github.com/laminlabs/lamindb/pull/3225) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix s3 upload and download problems arising from local aws configs [PR](https://github.com/laminlabs/lamindb/pull/3222) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix problems arising from local aws configs [PR](https://github.com/laminlabs/lamindb-setup/pull/1176) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix exporting sheets with User feature [PR](https://github.com/laminlabs/lamindb/pull/3221) [@sunnyosun](https://github.com/sunnyosun)
