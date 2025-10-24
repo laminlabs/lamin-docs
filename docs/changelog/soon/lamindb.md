@@ -1,3 +1,4 @@
+- 🚸 Re-design `.describe()` and refactor the related code base [PR](https://github.com/laminlabs/lamindb/pull/3218) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow features to have reserved Django field names [PR](https://github.com/laminlabs/lamindb/pull/3209) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/3214) [@fredericenard](https://github.com/fredericenard)
 - 🔊 Log writing in-memory objects into cache on artifact creation [PR](https://github.com/laminlabs/lamindb/pull/3220) [@Koncopd](https://github.com/Koncopd)
