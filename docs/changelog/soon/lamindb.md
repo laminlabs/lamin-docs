@@ -1,3 +1,4 @@
+- 🚸 Clearer and more consistent `.to_dataframe()` - indicate including features via `include="features"` [PR](https://github.com/laminlabs/lamindb/pull/3230) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `transform.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3226) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3227) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Restore dynamic imports from `django` in `_schema_metadata` [PR](https://github.com/laminlabs/lamindb-setup/pull/1177) [@Koncopd](https://github.com/Koncopd)
