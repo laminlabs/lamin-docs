@@ -1,3 +1,4 @@
+- :memo: README v4 [PR](https://github.com/laminlabs/lamindb/pull/3216) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable users to annotate & validate without having to learn about the `Schema` concept [PR](https://github.com/laminlabs/lamindb/pull/3231) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Clearer and more consistent `.to_dataframe()` - indicate including features via `include="features"` [PR](https://github.com/laminlabs/lamindb/pull/3230) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `transform.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3226) [@falexwolf](https://github.com/falexwolf)
