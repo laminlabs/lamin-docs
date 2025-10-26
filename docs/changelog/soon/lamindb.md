@@ -1,3 +1,4 @@
+- 🐛 Do not time out on slow answers from migrate endpoint [PR](https://github.com/laminlabs/lamindb-setup/pull/1178) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Serialize `Iterable` of `SQLRecord` in params tracking [PR](https://github.com/laminlabs/lamindb/pull/3233) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Minor fixes in backward compat calls and README [PR](https://github.com/laminlabs/lamindb/pull/3232) [@falexwolf](https://github.com/falexwolf)
 - :memo: README v4 [PR](https://github.com/laminlabs/lamindb/pull/3216) [@falexwolf](https://github.com/falexwolf)
