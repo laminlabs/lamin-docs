@@ -1,3 +1,4 @@
+- ♻️ Serialize `Iterable` of `SQLRecord` in params tracking [PR](https://github.com/laminlabs/lamindb/pull/3233) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Minor fixes in backward compat calls and README [PR](https://github.com/laminlabs/lamindb/pull/3232) [@falexwolf](https://github.com/falexwolf)
 - :memo: README v4 [PR](https://github.com/laminlabs/lamindb/pull/3216) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable users to annotate & validate without having to learn about the `Schema` concept [PR](https://github.com/laminlabs/lamindb/pull/3231) [@falexwolf](https://github.com/falexwolf)
