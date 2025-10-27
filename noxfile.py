@@ -171,10 +171,7 @@ README1_REPLACE = """```
 
 README2_ORIG = """
 If you want a GUI, you can connect your LaminDB instance to LaminHub and close the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
-
-## Docs
-
-Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
+"""
 
 README2_REPLACE = """```
 
@@ -192,6 +189,15 @@ You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM cha
 
 
 README3_ORIG = """
+## Docs
+
+Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai).
+"""
+
+README3_REPLACE = ""
+
+
+README4_ORIG = """
 Install the `lamindb` Python package:
 
 ```shell
@@ -211,7 +217,7 @@ lamin connect account/name
 ```
 """
 
-README3_REPLACE = """
+README4_REPLACE = """
 ::::{tab-set}
 :::{tab-item} Py
 :sync: python
@@ -367,11 +373,13 @@ def pull_artifacts(session):
         assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
         assert README3_ORIG in content  # noqa: S101
+        assert README3_ORIG in content  # noqa: S101
         content = content.replace(READMETITLE_ORIG, READMETITLE_REPLACE)
         content = content.replace(README0_ORIG, README0_REPLACE)
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
         content = content.replace(README3_ORIG, README3_REPLACE)
+        content = content.replace(README4_ORIG, README4_REPLACE)
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
