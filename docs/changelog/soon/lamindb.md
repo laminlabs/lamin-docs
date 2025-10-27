@@ -1,0 +1,1 @@
+- ⚡️ More optimal recursive childrens query [PR](https://github.com/laminlabs/lamindb/pull/3238) [@falexwolf](https://github.com/falexwolf)
