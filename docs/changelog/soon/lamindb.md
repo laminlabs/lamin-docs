@@ -1,1 +1,0 @@
-- 🐛 Respect `feature.dtype` in `FeatureManager.get_values()` [PR](https://github.com/laminlabs/lamindb/pull/3229) [@sunnyosun](https://github.com/sunnyosun)
