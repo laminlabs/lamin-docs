@@ -1,3 +1,4 @@
+- 🚸 Enable passing `parquet_kwargs` to `Artifact.from_dataframe()` for configuring `pyarrow.ParquetWriter` [PR](https://github.com/laminlabs/lamindb/pull/3239) [@falexwolf](https://github.com/falexwolf)
 - ✨ Implement database access debugging function [PR](https://github.com/laminlabs/lamindb-setup/pull/1181) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Remove supabase project id from db user when connecting with `use_proxy_db` [PR](https://github.com/laminlabs/lamindb-setup/pull/1180) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ More optimal recursive childrens query [PR](https://github.com/laminlabs/lamindb/pull/3238) [@falexwolf](https://github.com/falexwolf)
