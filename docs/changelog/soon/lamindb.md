@@ -1,3 +1,4 @@
+- ⬆️  Upgrade Django to 5.2 [PR](https://github.com/laminlabs/lamindb/pull/3234) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade django [PR](https://github.com/laminlabs/lamindb-setup/pull/1179) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Attach schema when validating with external features [PR](https://github.com/laminlabs/lamindb/pull/3236) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Allow collections with duplicated artifacts [PR](https://github.com/laminlabs/lamindb/pull/3235) [@falexwolf](https://github.com/falexwolf)
