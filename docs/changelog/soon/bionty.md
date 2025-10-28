@@ -1,0 +1,1 @@
+- 📝 Simplify API reference [PR](https://github.com/laminlabs/bionty/pull/329) [@falexwolf](https://github.com/falexwolf)
