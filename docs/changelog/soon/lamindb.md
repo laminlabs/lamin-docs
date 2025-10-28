@@ -1,3 +1,4 @@
+- 📝 Simplify API reference [PR](https://github.com/laminlabs/lamindb/pull/3241) [@falexwolf](https://github.com/falexwolf)
 - 📝 Simplify API reference [PR](https://github.com/laminlabs/lamindb-setup/pull/1182) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Also support external features in `DataFrameCurator` [PR](https://github.com/laminlabs/lamindb/pull/3240) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable passing `parquet_kwargs` to `Artifact.from_dataframe()` for configuring `pyarrow.ParquetWriter` [PR](https://github.com/laminlabs/lamindb/pull/3239) [@falexwolf](https://github.com/falexwolf)
