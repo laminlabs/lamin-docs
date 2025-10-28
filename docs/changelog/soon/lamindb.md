@@ -1,3 +1,4 @@
+- 🐛 Allow `features.remove_values()` to work with features of `dtype=list[cat]` [PR](https://github.com/laminlabs/lamindb/pull/3237) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Also introduce `csv_kwargs` for `Artifact.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3242) [@falexwolf](https://github.com/falexwolf)
 - 📝 Simplify API reference [PR](https://github.com/laminlabs/lamindb/pull/3241) [@falexwolf](https://github.com/falexwolf)
 - 📝 Simplify API reference [PR](https://github.com/laminlabs/lamindb-setup/pull/1182) [@falexwolf](https://github.com/falexwolf)
