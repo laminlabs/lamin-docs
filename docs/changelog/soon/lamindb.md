@@ -1,3 +1,4 @@
+- 🐛 Handle `run=None` correctly when populating subsequent creating runs of collections [PR](https://github.com/laminlabs/lamindb/pull/3247) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `Record.features` to conveniently populate features of records [PR](https://github.com/laminlabs/lamindb/pull/3246) [@falexwolf](https://github.com/falexwolf)
 - 📝 Refactor `Record` docs [PR](https://github.com/laminlabs/lamindb/pull/3245) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Simplify `features.add_values()` and improve logging messages [PR](https://github.com/laminlabs/lamindb/pull/3243) [@falexwolf](https://github.com/falexwolf)
