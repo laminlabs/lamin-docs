@@ -1,3 +1,4 @@
+- ✨ Add `Record.features` to conveniently populate features of records [PR](https://github.com/laminlabs/lamindb/pull/3246) [@falexwolf](https://github.com/falexwolf)
 - 📝 Refactor `Record` docs [PR](https://github.com/laminlabs/lamindb/pull/3245) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Simplify `features.add_values()` and improve logging messages [PR](https://github.com/laminlabs/lamindb/pull/3243) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Allow `features.remove_values()` to work with features of `dtype=list[cat]` [PR](https://github.com/laminlabs/lamindb/pull/3237) [@sunnyosun](https://github.com/sunnyosun)
