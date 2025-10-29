@@ -1,3 +1,4 @@
+- ⚡ Speed up `add_values()` and add tests for more feature `dtype`s [PR](https://github.com/laminlabs/lamindb/pull/3251) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Remove `db_index` on `Reference.text` field [PR](https://github.com/laminlabs/lamindb/pull/3250) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `to_dataframe()` with features [PR](https://github.com/laminlabs/lamindb/pull/3249) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable constraining features by `schema` in `record.features.add_values()` and `record.features.remove_values()` [PR](https://github.com/laminlabs/lamindb/pull/3248) [@falexwolf](https://github.com/falexwolf)
