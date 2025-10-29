@@ -1,3 +1,4 @@
+- ✨ Enable constraining features by `schema` in `record.features.add_values()` and `record.features.remove_values()` [PR](https://github.com/laminlabs/lamindb/pull/3248) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Handle `run=None` correctly when populating subsequent creating runs of collections [PR](https://github.com/laminlabs/lamindb/pull/3247) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `Record.features` to conveniently populate features of records [PR](https://github.com/laminlabs/lamindb/pull/3246) [@falexwolf](https://github.com/falexwolf)
 - 📝 Refactor `Record` docs [PR](https://github.com/laminlabs/lamindb/pull/3245) [@falexwolf](https://github.com/falexwolf)
