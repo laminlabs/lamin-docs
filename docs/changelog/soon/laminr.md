@@ -1,2 +1,3 @@
+- 📝 More recent syntax [PR](https://github.com/laminlabs/laminr/pull/236) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Fix expected version check [PR](https://github.com/laminlabs/laminr/pull/234) [@lazappi](https://github.com/lazappi)
 - :construction_worker: De-duplicate changelog [PR](https://github.com/laminlabs/laminr/pull/233) [@falexwolf](https://github.com/falexwolf)
