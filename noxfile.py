@@ -27,97 +27,6 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-# for Introduction & FAQ
-
-INTRODUCTION = """
-```{toctree}
-:hidden:
-:caption: Overview
-
-introduction
-tutorial
-```
-"""
-
-FAQ_MATCH = """\
-```
-"""
-
-# currently moot, because no additional FAQ content is here
-FAQ_APPEND = """\
-```
-"""
-
-# for Guide
-
-ORIG_HOW_TO = """\
-```{toctree}
-:hidden:
-:caption: "How to"
-
-query-search
-track
-curate
-ontologies
-transfer
-```
-"""
-
-REPLACE_HOW_TO = """\
-```{toctree}
-:hidden:
-:caption: "How to"
-
-setup
-query-search
-track
-curate
-ontologies
-transfer
-```
-"""
-
-
-USECASES = """
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Use cases
-
-atlases
-by-datatype
-by-registry
-trace-data-code
-pipelines
-mlops
-visualization
-```
-
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: The Hub
-
-access
-sheets
-security
-```
-
-"""
-
-BY_DATATYPE_ORIG = """
-multimodal
-ehr
-```
-"""
-
-BY_DATATYPE = """
-multimodal
-perturbation
-ehr
-```
-"""
-
 READMETITLE_ORIG = """# LaminDB - A data framework for biology
 
 Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse, lineage, feature store, ontologies, LIMS, ELN.
@@ -127,7 +36,6 @@ READMETITLE_REPLACE = """# LaminDB - A data framework for biology
 
 LaminDB is an open-source data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
 """
-
 
 README0_ORIG = """<details>
 <summary>Why?</summary>"""
@@ -285,7 +193,6 @@ def pull_artifacts(session):
     Path("docs/faq/").mkdir(exist_ok=True, parents=True)
     for path in Path("lamindb/faq").glob("*"):
         sync_path(path, Path("docs/faq") / path.name)
-    replace_content("docs/faq.md", {FAQ_MATCH: FAQ_APPEND})
 
     # laminr
     pull_from_s3_and_unpack("laminr.zip")
@@ -344,16 +251,7 @@ def pull_artifacts(session):
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
 
-    replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
-
-    # amend toctree & README
-    with open("docs/guide.md") as f:
-        content = f.read()
-    with open("docs/guide.md", "w") as f:
-        content = content.replace("# Guide", "# Guide" + INTRODUCTION)
-        content = content.replace(ORIG_HOW_TO, REPLACE_HOW_TO)
-        f.write(content)
-
+    # amend README
     with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
