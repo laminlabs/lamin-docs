@@ -355,6 +355,7 @@ def pull_artifacts(session):
             or path.name == "usecases.md"
             or path.name == "changelog.md"
             or path.name == "conf.py"
+            or path.name == "trace-data-code.md"
         ):
             continue
         print("syncing", path)
