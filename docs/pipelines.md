@@ -1,4 +1,4 @@
-# Integrate workflow managers
+# Manage computational workflows
 
 Workflow managers (Nextflow, Snakemake, redun, etc.) schedule, execute, and track pipeline runs with a great level of control & metadata.
 

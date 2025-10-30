@@ -1,4 +1,4 @@
-# MLOps
+# Manage MLOps
 
 ```{toctree}
 :maxdepth: 1

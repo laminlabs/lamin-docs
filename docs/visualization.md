@@ -1,4 +1,4 @@
-# Visualization
+# Manage visualization dashboards
 
 ```{toctree}
 :maxdepth: 1
