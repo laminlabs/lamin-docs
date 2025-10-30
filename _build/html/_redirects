@@ -2,11 +2,10 @@
 /nbproject/* https://nbproject.lamin.ai/:splat 301
 /readfcs/* https://readfcs.lamin.ai/:splat 301
 /guide /introduction 301
-/features /introduction 301
 /changelog /changelog/2025 301
 /curate-df /curate 301
 /ehrcuration /ehr 301
-/data-flow /trace-data-code 301
+/data-flow /schmidt22 301
 /curate-any /faq/curate-any 301
 /faq/storage /lamindb.storage 301
 /modules /setup 301
@@ -15,4 +14,12 @@
 /bio-registries /manage-ontologies 301
 /scrna6 /scrna-tiledbsoma 301
 /scrna5 /scrna-mappedcollection 301
+/atlases /cellxgene 301
+/by-datatype /scrna 301
+/registries /enrichr 301
+/trace-data-code /schmidt22 301
+/pipelines /nextflow 301
+/workflows /nextflow 301
+/mlops /wandb 301
+/visualization /vitessce 301
 / /introduction 301

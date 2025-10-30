@@ -363,7 +363,6 @@ def docs(session):
     Path("docs/trace-data-code.md").unlink()
     Path("docs/enrichr.ipynb").unlink()
     Path("docs/rdf-sparql.ipynb").unlink()
-    Path("docs/analysis-flow.ipynb").unlink()
     Path("docs/analysis-registries.ipynb").unlink()
     Path("docs/mnist.ipynb").unlink()
     Path("docs/cellxgene-curate.ipynb").unlink()
@@ -382,7 +381,6 @@ def docs(session):
     Path("docs/snakemake.ipynb").unlink()
 
     # Aux information
-    Path("docs/clinicore.md").unlink(missing_ok=True)
     Path("docs/influences.md").unlink()
     Path("docs/glossary.md").unlink()
 
