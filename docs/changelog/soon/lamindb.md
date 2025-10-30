@@ -1,3 +1,4 @@
+- 🚸 Improve the UX for the local development directory [PR](https://github.com/laminlabs/lamindb/pull/3252) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename work-dir to dev-dir [PR](https://github.com/laminlabs/lamin-cli/pull/165) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `work-dir` to `dev-dir` [PR](https://github.com/laminlabs/lamindb-setup/pull/1184) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Speed up `add_values()` and add tests for more feature `dtype`s [PR](https://github.com/laminlabs/lamindb/pull/3251) [@falexwolf](https://github.com/falexwolf)
