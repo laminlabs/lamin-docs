@@ -1,4 +1,4 @@
-# Atlases
+# Use and build atlases
 
 Atlases provide centralized access to data with standardized metadata.
 

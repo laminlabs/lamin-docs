@@ -14,9 +14,12 @@ transfer
 ```
 
 ```{toctree}
+:maxdepth: 1
 :hidden:
 :caption: Other topics
 
+design
 faq
-storage
+influences
+glossary
 ```

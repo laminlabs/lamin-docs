@@ -118,29 +118,6 @@ ehr
 ```
 """
 
-# for other topics
-
-OTHER_TOPICS_ORIG = """
-```{toctree}
-:hidden:
-:caption: Other topics
-
-faq
-storage
-"""
-
-OTHER_TOPICS = """
-```{toctree}
-:maxdepth: 1
-:hidden:
-:caption: Other topics
-
-design
-faq
-influences
-glossary
-"""
-
 READMETITLE_ORIG = """# LaminDB - A data framework for biology
 
 Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse, lineage, feature store, ontologies, LIMS, ELN.
@@ -375,7 +352,6 @@ def pull_artifacts(session):
     with open("docs/guide.md", "w") as f:
         content = content.replace("# Guide", "# Guide" + INTRODUCTION)
         content = content.replace(ORIG_HOW_TO, REPLACE_HOW_TO)
-        content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
         f.write(content)
 
     with open("docs/includes/README.md") as f:
