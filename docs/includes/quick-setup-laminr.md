@@ -1,19 +1,19 @@
-For setup, install the `laminr` package and connect to a LaminDB instance.
+Install the `laminr` package.
 
 ```R
-install.packages("laminr", dependencies = TRUE)  # install the laminr package from CRAN
-laminr::lamin_login()  # <-- you can skip this for local & self-hosted instances
-laminr::lamin_connect("<account>/<instance>")  # <-- replace with your instance
+install.packages("laminr", dependencies = TRUE)
 ```
 
-<div style="height: 0.5em;"></div>
-
-:::{dropdown} I don't have write access to an instance.
-
-Here's how to create a local instance.
+Create a LaminDB instance:
 
 ```R
-laminr::lamin_init(storage = "./mydata", modules = c("bionty"))
+lc <- import_module("lamin_cli")
+lc$init(storage = "./mydata", modules = "bionty")
 ```
 
-:::
+Or if you have write access to an instance, login and connect to it:
+
+```R
+lc$login()
+lc$connect("<account>/<instance>")
+```

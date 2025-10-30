@@ -1,6 +1,8 @@
 import os
+import re
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 
 import lamindb as ln
@@ -8,6 +10,12 @@ import nox
 from dirsync import sync
 from laminci import run_notebooks
 from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
+
+current_dir = Path(__file__).parent.resolve()
+if str(current_dir) not in sys.path:
+    sys.path.insert(0, str(current_dir))
+
+from laminr_converter import convert_markdown_python_to_tabbed
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
 
@@ -27,6 +35,7 @@ INTRODUCTION = """
 :caption: Overview
 
 introduction
+tutorial
 ```
 """
 
@@ -49,7 +58,7 @@ ORIG_HOW_TO = """\
 query-search
 track
 curate
-bio-registries
+ontologies
 transfer
 ```
 """
@@ -63,7 +72,7 @@ setup
 query-search
 track
 curate
-bio-registries
+ontologies
 transfer
 ```
 """
@@ -76,13 +85,24 @@ USECASES = """
 :caption: Use cases
 
 atlases
-../by-datatype
-../by-registry
-../data-flow
+by-datatype
+by-registry
+trace-data-code
 pipelines
 mlops
 visualization
 ```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: The Hub
+
+access
+sheets
+security
+```
+
 """
 
 BY_DATATYPE_ORIG = """
@@ -116,28 +136,104 @@ OTHER_TOPICS = """
 :caption: Other topics
 
 design
-security
-hub
 faq
 influences
 glossary
 """
 
+READMETITLE_ORIG = """# LaminDB - A data framework for biology
 
-# below is needed if we have TOCs in notebooks
+Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse, lineage, feature store, ontologies, LIMS, ELN.
+"""
 
-# def jsonify(text: str):
-#     new_lines = []
-#     # skip last line
-#     for line in text.split("\n")[:-1]:
-#         line = rf'    "{line}\n",'
-#         new_lines.append(line)
-#     return "\n".join(new_lines)
+READMETITLE_REPLACE = """# LaminDB - A data framework for biology
+
+LaminDB is an open-source data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
+"""
 
 
-# USECASES = jsonify(USECASES_TEXT)
-# OTHER_TOPICS_ORIG = jsonify(OTHER_TOPICS_ORIG_TEXT)
-# OTHER_TOPICS = jsonify(OTHER_TOPICS_TEXT)
+README0_ORIG = """<details>
+<summary>Why?</summary>"""
+
+README0_REPLACE = """```{dropdown} Why?"""
+
+README1_ORIG = """</details>
+
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+
+Highlights:"""
+
+README1_REPLACE = """```
+
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+
+```{dropdown} Highlights"""
+
+README2_ORIG = """
+If you want a GUI, you can connect your LaminDB instance to LaminHub and close the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
+"""
+
+README2_REPLACE = """```
+
+LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+
+:::{dropdown} Explore
+
+```{include} includes/specs-laminhub.md
+
+```
+
+:::
+
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain."""
+
+
+README3_ORIG = """
+## Docs
+
+Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai).
+"""
+
+README3_REPLACE = ""
+
+
+README4_ORIG = """
+Install the `lamindb` Python package:
+
+```shell
+pip install lamindb
+```
+
+Create a LaminDB instance:
+
+```shell
+lamin init --storage ./quickstart-data  # or s3://my-bucket, gs://my-bucket
+```
+
+Or if you have write access to an instance, connect to it:
+
+```shell
+lamin connect account/name
+```
+"""
+
+README4_REPLACE = """
+::::{tab-set}
+:::{tab-item} Py
+:sync: python
+
+```{include} includes/quick-setup-lamindb.md
+```
+
+:::
+:::{tab-item} R
+:sync: r
+
+```{include} includes/quick-setup-laminr.md
+```
+:::
+::::
+"""
 
 
 def replace_content(filename: Path, mapped_content: dict[str, str]) -> None:
@@ -181,7 +277,7 @@ def sync_path(path, target_path):
 def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
-    Path("lamindb/README.md").rename("README.md")
+    Path("lamindb/README.md").rename("docs/includes/README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
     Path("lamindb/api.md").unlink()
@@ -216,12 +312,10 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("redun-lamin.zip")
     Path("redun-lamin/redun.ipynb").rename("docs/redun.ipynb")
     pull_from_s3_and_unpack("nextflow-lamin.zip")
-    Path("nextflow-lamin/plugin.ipynb").rename("docs/plugin.ipynb")
+    Path("nextflow-lamin/plugin.ipynb").rename("docs/nextflow.ipynb")
     Path("nextflow-lamin/postrun.py").rename("docs/postrun.py")
-    pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
-    Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
-        "docs/snakemake.ipynb"
-    )
+    pull_from_s3_and_unpack("snakemake-lamin.zip")
+    Path("snakemake-lamin/bulk_rna_seq.ipynb").rename("docs/snakemake.ipynb")
 
     # mlops
     pull_from_s3_and_unpack("lamin-mlops.zip")
@@ -260,24 +354,32 @@ def pull_artifacts(session):
 
     replace_content("docs/by-datatype.md", {BY_DATATYPE_ORIG: BY_DATATYPE})
 
-    # wetlab (must be after use-cases)
-    # pull_from_s3_and_unpack("wetlab.zip")
-    # sync_path(
-    #     Path("wetlab/guide/pert-curator.ipynb"),
-    #     Path("docs/perturbation.ipynb"),
-    # )
-
-    # amend toctree
+    # amend toctree & README
     with open("docs/guide.md") as f:
         content = f.read()
     with open("docs/guide.md", "w") as f:
         content = content.replace("# Guide", "# Guide" + INTRODUCTION)
         content = content.replace(ORIG_HOW_TO, REPLACE_HOW_TO)
         content = content.replace(OTHER_TOPICS_ORIG, USECASES + OTHER_TOPICS)
-        content = add_line_after(content, "curate", "public-ontologies")
         f.write(content)
 
-    assert Path("docs/includes/specs-lamindb.md").exists()  # noqa S101
+    with open("docs/includes/README.md") as f:
+        content = f.read()
+    with open("docs/includes/README.md", "w") as f:
+        assert READMETITLE_ORIG in content  # noqa: S101
+        assert README0_ORIG in content  # noqa: S101
+        assert README1_ORIG in content  # noqa: S101
+        assert README2_ORIG in content  # noqa: S101
+        assert README3_ORIG in content  # noqa: S101
+        assert README3_ORIG in content  # noqa: S101
+        content = content.replace(READMETITLE_ORIG, READMETITLE_REPLACE)
+        content = content.replace(README0_ORIG, README0_REPLACE)
+        content = content.replace(README1_ORIG, README1_REPLACE)
+        content = content.replace(README2_ORIG, README2_REPLACE)
+        content = content.replace(README3_ORIG, README3_REPLACE)
+        content = content.replace(README4_ORIG, README4_REPLACE)
+        content = convert_markdown_python_to_tabbed(content)
+        f.write(content)
 
 
 def strip_notebook_outputs(directory="."):
@@ -300,13 +402,12 @@ def install(session):
     if branch == "pypi":
         run(
             session,
-            "uv pip install --system lamindb[bionty,jupyter,gcp,wetlab]",
+            "uv pip install --system lamindb",
         )
     else:
         install_lamindb(
             session,
             branch=branch,
-            extras="bionty,jupyter,gcp,wetlab",
             target_dir="tmp_lamindb",
         )
     run(session, "uv pip install --system spatialdata")  # temporarily
@@ -319,9 +420,7 @@ def run_nbs(session):
     os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
     exit_status = os.system("python docs/includes/create-fasta.py")  # noqa S605
     assert exit_status == 0  # noqa S101
-    run_notebooks("docs/introduction.ipynb")
-    run_notebooks("docs/arc-virtual-cell-atlas.ipynb")
-    run_notebooks("docs/hubmap.ipynb")
+    run_notebooks("docs/tutorial.ipynb")
     run_notebooks("docs/setup.ipynb")
 
 
@@ -348,6 +447,10 @@ def docs(session):
     #     # exit with error
     #     exit(1)
 
+    if IS_PR:
+        print("Skipping summary.md")
+        return
+
     # now strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
     strip_notebook_outputs("docs")
@@ -363,18 +466,14 @@ def docs(session):
     Path("docs/sc-imaging2.ipynb").unlink()
     Path("docs/sc-imaging3.ipynb").unlink()
     Path("docs/sc-imaging4.ipynb").unlink()
-    Path("docs/project-flow-scripts/integrated-analysis.ipynb").unlink()
-    Path("docs/project-flow-scripts/hit-identification.ipynb").unlink()
     Path("docs/facs.ipynb").unlink()
     Path("docs/facs2.ipynb").unlink()
     Path("docs/facs3.ipynb").unlink()
     Path("docs/facs4.ipynb").unlink()
     Path("docs/celltypist.ipynb").unlink()
-    Path("docs/data-flow.md").unlink()
+    Path("docs/trace-data-code.md").unlink()
     Path("docs/enrichr.ipynb").unlink()
-    # Path("docs/perturbation.ipynb").unlink()
     Path("docs/rdf-sparql.ipynb").unlink()
-    Path("docs/project-flow.ipynb").unlink()
     Path("docs/analysis-flow.ipynb").unlink()
     Path("docs/analysis-registries.ipynb").unlink()
     Path("docs/mnist.ipynb").unlink()
@@ -413,11 +512,15 @@ def docs(session):
     Path("docs/bionty.md").unlink()
     Path("docs/cli.md").unlink()
 
-    if not IS_PR:
-        process = subprocess.run(  # noqa S602
-            "lndocs --strip-prefix --format text --error-on-index",  # --strict back
-            shell=True,
-        )
-        ln.connect("laminlabs/lamin-site-assets")
-        ln.track()
-        ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+    process = subprocess.run(  # noqa S602
+        "lndocs --strip-prefix --format text --error-on-index",  # --strict back
+        shell=True,
+    )
+    ln.connect("laminlabs/lamin-site-assets")
+    ln.track()
+    ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+
+
+if __name__ == "__main__":
+    content = Path("docs/includes/README.md").read_text()
+    print(convert_markdown_python_to_tabbed(content))

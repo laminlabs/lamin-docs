@@ -1,0 +1,4 @@
+- 🚚 Rename `df()` to `to_dataframe()` [PR](https://github.com/laminlabs/lamin-usecases/pull/212) [@falexwolf](https://github.com/falexwolf)
+- 🚚 Rename `.df()` to `.to_dataframe()` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/132) [@falexwolf](https://github.com/falexwolf)
+- ♻️ Move `arc-virtual-cell-atlas` and `hubmap` notebook here [PR](https://github.com/laminlabs/lamin-usecases/pull/209) [@falexwolf](https://github.com/falexwolf)
+- ♻️ Canonicalize import patterns [PR](https://github.com/laminlabs/lamin-mlops/pull/31) [@falexwolf](https://github.com/falexwolf)

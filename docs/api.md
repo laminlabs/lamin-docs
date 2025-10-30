@@ -15,15 +15,21 @@ cli
 lamindb
 laminr
 sql
+```
+
+```{toctree}
+:maxdepth: 1
+:caption: Hub
+:hidden:
+
 rest
 ```
 
 ```{toctree}
 :maxdepth: 1
-:caption: Registry modules
+:caption: Modules
 :hidden:
 
 bionty
 wetlab
-clinicore
 ```

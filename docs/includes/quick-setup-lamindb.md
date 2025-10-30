@@ -3,17 +3,18 @@
 Install the `lamindb` Python package:
 
 ```shell
-pip install 'lamindb[jupyter,bionty]'  # support notebooks & biological ontologies
+pip install lamindb
 ```
 
-Either connect to a LaminDB instance for which you have write access:
+Create a LaminDB instance:
 
 ```shell
-lamin connect account/name
+lamin init --storage ./quickstart-data  # or s3://my-bucket, gs://my-bucket
 ```
 
-Or create a local instance:
+Or if you have write access to an instance, login and connect to it:
 
 ```shell
-lamin init --storage ./quickstart-data
+lamin login
+lamin connect account/instance
 ```

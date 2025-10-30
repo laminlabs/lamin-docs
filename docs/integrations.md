@@ -30,6 +30,7 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 - [Weights & Biases](wandb)
 - [MLflow](mlflow)
 - Hugging Face paths are supported: `ln.Artifact("hf://datasets/laminlabs/repo/sharded_parquet")`
+- [Croissant files](croissant)
 - [scVI](https://docs.scvi-tools.org/en/latest/tutorials/notebooks/use_cases/custom_dl/lamin.html)
 
 ## Workflow managers

@@ -1,5 +1,7 @@
 # REST
 
+This page documents the REST API of LaminHub.
+
 ## Swagger UI
 
 The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
@@ -32,9 +34,9 @@ response.json()
 
 Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 
-- `https://aws.us-east-1.api.lamin.ai`
-- `https://aws.us-west-2.api.lamin.ai`
-- `https://aws.eu-central-1.api.lamin.ai`
-- `https://aws.eu-west-2.api.lamin.ai`
+- `https://aws.us-east-1.lamin.ai`
+- `https://aws.us-west-2.lamin.ai`
+- `https://aws.eu-central-1.lamin.ai`
+- `https://aws.eu-west-2.lamin.ai`
 
 On-prem deployments have their own APIs.

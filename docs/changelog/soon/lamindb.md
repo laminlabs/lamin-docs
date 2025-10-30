@@ -1,6 +1,1 @@
-- ✅ Adapt tests to always connect logic [PR](https://github.com/laminlabs/lamindb-setup/pull/1134) [@Koncopd](https://github.com/Koncopd)
-- ♻️ Link `RecordUser` to `ManyToManyField` [PR](https://github.com/laminlabs/lamindb/pull/3071) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Ensure all write_text() calls use UTF8 [PR](https://github.com/laminlabs/lamindb/pull/3069) [@falexwolf](https://github.com/falexwolf)
-- 🐛 Update `is_latest` also upon soft delete [PR](https://github.com/laminlabs/lamindb/pull/3068) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Improve fixture & examples design [PR](https://github.com/laminlabs/lamindb/pull/3049) [@Zethson](https://github.com/Zethson)
-- ✅ Test setting `search_path` in RLS functions [PR](https://github.com/laminlabs/lamindb/pull/3067) [@Koncopd](https://github.com/Koncopd)
+- ✅ Fix hub-local schema test [PR](https://github.com/laminlabs/lamindb-setup/pull/1185) [@Koncopd](https://github.com/Koncopd)
