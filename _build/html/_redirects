@@ -17,7 +17,7 @@
 /scrna5 /scrna-mappedcollection 301
 /atlases /cellxgene 301
 /by-datatype /scrna 301
-/registries /enrichr 301
+/by-registry /enrichr 301
 /trace-data-code /schmidt22 301
 /pipelines /nextflow 301
 /workflows /nextflow 301
