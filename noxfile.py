@@ -216,10 +216,8 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("redun-lamin.zip")
     Path("redun-lamin/redun.ipynb").rename("docs/redun.ipynb")
     pull_from_s3_and_unpack("nextflow-lamin.zip")
-    Path("nextflow-lamin/nf_core_scrnaseq.ipynb").rename("docs/nextflow.ipynb")
-    Path("nextflow-lamin/register_scrnaseq_run.py").rename(
-        "docs/register_scrnaseq_run.py"
-    )
+    Path("nextflow-lamin/plugin.ipynb").rename("docs/plugin.ipynb")
+    Path("nextflow-lamin/postrun.py").rename("docs/postrun.py")
     pull_from_s3_and_unpack("snakemake_lamin_usecases_docs.zip")
     Path("snakemake_lamin_usecases_docs/bulk_rna_seq.ipynb").rename(
         "docs/snakemake.ipynb"
