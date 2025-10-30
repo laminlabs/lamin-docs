@@ -1,0 +1,1 @@
+- ✅ Fix hub-local schema test [PR](https://github.com/laminlabs/lamindb-setup/pull/1185) [@Koncopd](https://github.com/Koncopd)
