@@ -27,8 +27,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-          cache: "pip"
-          cache-dependency-path: ".github/workflows/build.yml"
       - run: |
           pip install uv
           uv pip install --system "laminci[run-notebooks]@git+https://@github.com/laminlabs/laminci"
