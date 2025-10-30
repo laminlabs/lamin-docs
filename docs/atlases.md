@@ -1,8 +1,4 @@
-# Atlases
-
-Atlases provide centralized access to data with standardized metadata.
-
-The following use cases demonstrate how to use LaminDB to query popular atlases.
+# Query & build atlases
 
 ```{toctree}
 :maxdepth: 1

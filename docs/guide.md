@@ -4,8 +4,17 @@
 
 ```{toctree}
 :hidden:
+:caption: Overview
+
+introduction
+tutorial
+```
+
+```{toctree}
+:hidden:
 :caption: "How to"
 
+setup
 query-search
 track
 curate
@@ -14,9 +23,36 @@ transfer
 ```
 
 ```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: Use cases
+
+atlases
+by-datatype
+by-registry
+trace-data-code
+pipelines
+mlops
+visualization
+```
+
+```{toctree}
+:maxdepth: 1
+:hidden:
+:caption: The Hub
+
+access
+sheets
+security
+```
+
+```{toctree}
+:maxdepth: 1
 :hidden:
 :caption: Other topics
 
+design
 faq
-storage
+influences
+glossary
 ```
