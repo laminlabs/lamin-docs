@@ -1,1 +1,2 @@
+- 🐛 Do not restrict modules during `django_reset()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1187) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix hub-local schema test [PR](https://github.com/laminlabs/lamindb-setup/pull/1185) [@Koncopd](https://github.com/Koncopd)
