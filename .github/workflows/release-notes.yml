@@ -198,7 +198,7 @@ jobs:
       - name: Build user message
         run: |
           cat > user.txt <<EOF
-          Repository: ${REPO}
+          Repository: ${SOURCE_REPO}
           PR number: ${PR_NUMBER}
           Release date (for heading): ${DATE_STR}
           Release tag: ${RELEASE_TAG}
