@@ -124,6 +124,7 @@ jobs:
           - Merge related tweaks into a single outcome-oriented bullet; omit helper plumbing and internal acronyms (e.g., RLS/JWT SQL, submodule bumps, policy code) unless essential for user understanding.
           - Remove internal infrastructure or tenant-specific details (environment names, customer names, SSL/cert setup, Sentry/monitoring wiring, CI/CD or runner config, dependency/submodule bumps, migration/SQL/RLS internals) unless they directly change visible behavior for users/admins.
           - Never mention customer or tenant names; if context is unavoidable to explain a user-visible change, generalize (e.g., "enterprise environments").
+          - Customers are not aware of internal variable, flag, or configuration names; do not expose them. Rewrite any such mentions into user-facing product language.
           - Keep the same section order and category style as the primary workflow.
           - If feedback asks for removals or emphasis changes, incorporate that explicitly.
           - Do not introduce new sections or marketing language.
@@ -133,6 +134,7 @@ jobs:
           - One sentence per bullet on a single line.
           - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
           - Do not include internal infrastructure or customer/tenant references; omit or generalize them unless the behavior is visible to users.
+          - Do not include internal variable/flag/config/env names or code identifiers; describe the observable behavior instead.
           - Before finalizing, confirm there are no merge-conflict markers or unrelated content; if unsure, reinspect the diff until confident.
 
           Output policy:
