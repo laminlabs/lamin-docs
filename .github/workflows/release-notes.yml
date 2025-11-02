@@ -67,7 +67,7 @@ jobs:
           test -n "$PR_NUMBER" || { echo "PR number not provided"; exit 1; }
 
           PR_JSON=$(gh pr view "$PR_NUMBER" --repo "$SOURCE_REPO" \
-            --json number,mergedAt,baseRefName,headRefName,mergeCommit,url)
+            --json number,title,mergedAt,baseRefName,headRefName,mergeCommit,url)
           echo "$PR_JSON" | jq .
 
           BASE=$(echo "$PR_JSON" | jq -r '.baseRefName')
@@ -85,14 +85,17 @@ jobs:
 
           RELEASE_DATE=$(date -u -d "$MERGED_AT" +%F)
 
+          TITLE=$(echo "$PR_JSON" | jq -r '.title // ""')
+
           {
             printf 'PR_NUMBER=%s\n' "$PR_NUMBER"
             printf 'MERGE_SHA=%s\n' "$MERGE_SHA"
             printf 'MERGED_AT=%s\n' "$MERGED_AT"
             printf 'DATE_STR=%s\n' "$RELEASE_DATE"
+            printf 'TITLE=%s\n' "$TITLE"
           } >> "$GITHUB_ENV"
 
-      - name: Resolve release tag
+      - name: Resolve release tag (prefer PR title, fallback to tags)
         run: |
           set -euo pipefail
 
@@ -104,8 +107,14 @@ jobs:
             exit 1;
           }
 
-          # Choose the earliest tag that contains the merge commit (first release that picked it up)
-          RELEASE_TAG=$(git -C source tag --contains "$MERGE_SHA" | sort -V | head -n 1)
+          # 1) Try extracting a semantic version from the PR title (e.g., "Release 0.40.0" or "v0.40.0")
+          TITLE_VER=$(printf '%s\n' "${TITLE:-}" | grep -oE 'v?[0-9]+\.[0-9]+\.[0-9]+' | head -n 1 || true)
+          if [ -n "${TITLE_VER:-}" ]; then
+            RELEASE_TAG=${TITLE_VER#v}
+          else
+            # 2) Fallback: choose the earliest tag that contains the merge commit (first release that picked it up)
+            RELEASE_TAG=$(git -C source tag --contains "$MERGE_SHA" | sort -V | head -n 1)
+          fi
           test -n "$RELEASE_TAG" || { echo "No release tag found containing $MERGE_SHA"; exit 1; }
 
           echo "RELEASE_TAG=$RELEASE_TAG" >> $GITHUB_ENV
