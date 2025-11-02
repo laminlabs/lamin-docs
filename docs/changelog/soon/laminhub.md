@@ -1,3 +1,32 @@
+## 2025-10-31 (0.41.0)
+
+New Features
+
+- Features & Schemas
+  - Feature and feature-set views now parse and respect registry types and explicit fields in dtypes/itypes (e.g., bionty.Gene.ensembl_gene_id), so badges, labels, filters, and “Show more” links point to the correct registry pages; Composite feature-sets can expand inline to show all features.
+- Access & Governance
+  - A unified searchable selector is used across access management (adding instances, spaces, teams) with consistent sorting and robust filtering to prevent duplicates and invalid entries; flows are covered by new tests to ensure reliability.
+
+Changes
+
+- Database & RLS
+  - RLS reset installs authentication SQL utilities before generating policies; link-table SELECT policies now delegate to underlying table RLS via subqueries, while non-SELECT operations continue to use checks with appropriate lock handling; default-space public policies for link tables were simplified to trigger RLS on referenced tables.
+- Authentication & Sessions
+  - Logout also posts to the server to clear the backend session, improving sign-out consistency across client and server.
+- Observability
+  - Pfizer deployments initialize Sentry with the corporate certificate retrieved at runtime.
+- Dependencies
+  - UI dependency updates, including zod 3.25.76 and assorted lockfile bumps.
+
+Bug fixes
+
+- Access & Search
+  - Picker menus no longer surface malformed or duplicate items, respect fine_grained_access, and exclude the default team; selection/search is stable and predictable.
+- Features & Navigation
+  - Registry links and “Show more” targets are derived from parsed itype/dtype (falling back to the features index when unparsable); non-string feature values render correctly; labels use the appropriate registry field; dataset feature headings only link when a valid target exists; Composite feature-sets no longer force navigation to view more.
+- Landing & Redirects
+  - The explore page redirects logged-in users reliably based on user presence.
+
 
 ## 2025-10-22
 
