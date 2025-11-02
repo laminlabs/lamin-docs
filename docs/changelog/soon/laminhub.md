@@ -1,3 +1,25 @@
+## 2025-10-29 (0.37.0)
+
+New Features
+
+- Storage & Buckets
+  - S3 bucket permission setup and instance creation now associate buckets with your organization, record the creator, and accept optional bucket settings when creating or linking a bucket.
+- Debug & Ops
+  - A new debug endpoint is available to inspect the active database engine cache for troubleshooting.
+
+Changes
+
+- Access & Error Handling
+  - API errors are standardized with consistent HTTP status codes and clearer messages across resources, including 400 for invalid queries, 403 for permission denials, 404 for missing or inaccessible records, and 409 for uniqueness conflicts.
+  - Unauthorized responses return a generic message in production while remaining descriptive in non-production to avoid leaking details.
+- Tables & UI
+  - Artifact table feature chips use schema-defined display fields for linked registries, improving label text and link targets.
+
+Bug fixes
+
+- Tables & UI
+  - The artifact feature panel now shows a clear inline error when it fails, preventing broken cells in the table.
+
 ## 2025-10-28 (0.36.0)
 
 Changes
