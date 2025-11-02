@@ -130,7 +130,6 @@ jobs:
           - Keep the existing heading date and tag; do not change them.
           - One sentence per bullet on a single line.
           - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
-          - Keep at most two bullets per category; include only user-visible outcomes and consolidate related changes into one.
           - Before finalizing, confirm there are no merge-conflict markers or unrelated content; if unsure, reinspect the diff until confident.
 
           Output policy:

@@ -153,7 +153,6 @@ jobs:
           - Highlight outcomes users notice; skip file/function names, internal acronyms, and helper plumbing (e.g., RLS/JWT SQL, submodule bumps, policy code).
           - One sentence per bullet on a single line.
           - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
-          - Keep at most two bullets per category; include only user-visible outcomes and consolidate related changes into one.
           - Merge related tweaks into one concise bullet; mention implementation mechanics only if essential for clarity.
           - Short category labels (e.g., “Workflows & Launch”, “Storage & Artifacts”).
           - Use plain, user-facing language; no marketing language.
