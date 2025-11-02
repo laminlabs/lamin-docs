@@ -1,3 +1,45 @@
+## 2025-10-26 (0.34.0)
+
+New Features
+
+- Instances & Admin
+  - Admins can trigger an instance migration to apply the latest database updates for both the hub and user-facing modules.
+- Search & Query
+  - Free‑text search can target related fields via a new “search in” option on records, values, and linked‑feature queries.
+- Launch & Workflows
+  - Launch forms honor hidden parameters from Nextflow schemas and offer a toggle to reveal them when needed.
+- UI & Release Info
+  - The footer shows the Hub version and deployment date for easier troubleshooting, and error reporting is tagged with the same release identifier.
+
+Changes
+
+- Search & Query
+  - When a search term is provided, ordering is disabled for consistency and the API returns a clear error if both are combined.
+  - Joins are applied more safely across queries and are blocked for updates and deletes to prevent unintended data changes.
+- Access & Collaboration
+  - Transferring an instance to an individual automatically adds that person as an admin collaborator.
+- Feature Types & Labels
+  - Feature type parsing accepts hyphenated names and common special characters and labels render the expected subtype names without extra brackets.
+- Sheets
+  - Numeric strings entered in sheets are converted to numbers instead of forcing a “.0” suffix.
+- UI & Details
+  - Feature values that are JSON render as formatted JSON on detail pages for easier reading.
+  - Transform lists default to newest first for a clearer overview.
+
+Bug fixes
+
+- Search & Query
+  - Relation-based searches deduplicate results, support multiple relations to the same table, and handle many‑to‑many traversals correctly.
+  - Client requests no longer send an ordering when searching to avoid conflicts and server errors.
+- Launch & Workflows
+  - Hidden fields are treated as optional until revealed, and sections with only hidden fields can be shown when toggled.
+- Artifacts & Upload
+  - Uploading directories is more reliable by reducing per‑file concurrency during server‑side processing.
+- Tables & Navigation
+  - URL‑synced filters are more robust across navigation and do not reset unexpectedly.
+- UI & Labels
+  - Hyphenated registry and record subtypes display correctly in feature labels.
+
 
 ## 2025-10-22
 
