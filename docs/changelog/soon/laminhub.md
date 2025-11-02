@@ -1,3 +1,23 @@
+## 2025-10-28 (0.36.0)
+
+Changes
+
+- Access & Security
+  - Organization admins can manage domains, and platform superadmins can manage all domains.
+  - Instance administrators can view selected system data that was previously hidden.
+- Navigation & UI
+  - The lineage label on detail pages is shortened from “Data lineage” to “Lineage”.
+  - In run lists, the “Parameters” column is renamed to “Features”.
+
+Bug fixes
+
+- Teams & Collaborators
+  - Team member and space collaborator lists filter out accounts or teams that are no longer part of the organization to avoid empty rows and sorting errors.
+- Sheets
+  - The “No type” view shows existing records when available instead of rendering an empty table.
+- Query & Filters
+  - Filters based on the number of related items handle zero correctly and apply greater/less-than comparisons consistently.
+
 ## 2025-10-27 (0.35.0)
 
 New Features
