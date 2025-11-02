@@ -230,5 +230,5 @@ jobs:
             --repo "$REPO" \
             --base main \
             --head "$BRANCH" \
-            --title "Changelog: ${RELEASE_TAG} – PR #${PR_NUMBER} (${DATE_STR})" \
+            --title "Changelog: ${RELEASE_TAG} (${DATE_STR})" \
             --body  "Prepends release notes generated from merged PR #${PR_NUMBER} (${RELEASE_TAG}) to docs/changelog/soon/laminhub.md."
