@@ -1,3 +1,28 @@
+## 2025-10-31 (0.40.0)
+
+New Features
+- Features & Feature Sets
+  - Feature set rows now derive destination links from itype (including dotted fields like bionty.Gene.ensembl_gene_id), Composite feature sets expand inline via “Show more,” and label hovers respect the specified field when showing titles.
+
+Changes
+- Access & Security
+  - Search-and-select menus for adding spaces, teams, and instances are unified with consistent filtering and sorting, showing only valid, non-duplicate options and preferring instances that support fine‑grained access.
+- Authentication & Sessions
+  - Logout now also calls the server to clear the session cookie for a more reliable sign-out.
+- Features & Feature Sets
+  - “Show more” links on feature sets navigate to the correct registry or features page based on itype with safe fallbacks when the type is unparsable.
+- Navigation & UI
+  - Authenticated users visiting Explore are redirected based on user presence rather than a session lookup.
+
+Bug fixes
+- Access & Security
+  - Reading from link tables enforces the correct access checks and default-space policies to close gaps in read-time permissions.
+  - Add-member pickers no longer list the default team and hide items with empty or malformed names for cleaner selection.
+- Features & Display
+  - Feature values render non-string content safely and registry-linked labels display the correct field value (for example, showing bionty gene IDs when specified).
+- Platform & Observability
+  - Pfizer environments initialize Sentry with the appropriate SSL certificate to restore error reporting.
+
 
 ## 2025-10-22
 
