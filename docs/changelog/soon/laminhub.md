@@ -1,3 +1,46 @@
+## 2025-10-31 (0.41.0)
+
+New Features
+
+- Access & Governance
+  - A unified command-style selector is used across instance/space/team access dialogs, enabling fast, consistent search-and-add workflows.
+
+- Features & Registries
+  - Feature cells respect explicit fields in categorical dtypes (e.g., bionty.Gene.ensembl_gene_id), “Show more” on Composite feature sets expands inline, and links to registries are derived automatically from itype.
+
+Changes
+
+- Access & Governance
+  - People, teams, spaces, and instances are consistently sorted by name; the default team is excluded from add dialogs by design.
+
+- Features & Tables
+  - Links for feature sets and registry entities are computed from itype with safe fallbacks to the features index; features pages display a small note when an itype cannot be parsed.
+  - Non-string feature values display clearly instead of rendering ambiguous objects.
+
+- Authentication & Sessions
+  - Logout also triggers a server-side session clear before redirect.
+
+- Access & Security
+  - Record-level security for link tables was refactored: SELECT policies now use FK subqueries that trigger RLS on related tables; write policies evaluate only admin/write roles and honor lock status; default-space visibility for link tables no longer relies on helper functions. JWT auth SQL is installed during RLS reset.
+
+- Platform & Observability
+  - Pfizer environments initialize Sentry with the proper site certificate.
+  - UI dependencies were updated (e.g., zod); lamindb submodule was bumped.
+
+Bug fixes
+
+- Access & Governance
+  - Search pickers for adding instances, spaces, and teams hide entries with empty/invalid names, filter out already-linked items, and respect fine_grained_access; the default team no longer shows up as a choice.
+
+- Features & Registries
+  - Label hover titles use the correct display field; registry links are robust for dotted itypes; Composite “Show more” no longer navigates away but expands inline; non-string feature values render as readable text.
+
+- Authentication & Sessions
+  - Logging out reliably ends the server session to prevent lingering authentication.
+
+- Access & Security
+  - Link-table RLS checks consistently enforce access via related records and respect lock status; default-space selection for link tables is evaluated correctly.
+
 
 ## 2025-10-22
 
