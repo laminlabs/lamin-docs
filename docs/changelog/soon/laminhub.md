@@ -1,3 +1,10 @@
+## 2025-10-29 (0.39.0)
+
+Changes
+
+- Database & Migrations
+  - Database migrations are more robust by ensuring required admin permissions for constraint visibility and automatically cleaning up legacy tables that could otherwise interfere with installing security policies.
+
 ## 2025-10-29 (0.38.0)
 
 Changes
