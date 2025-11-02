@@ -22,8 +22,9 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
-      GH_TOKEN: ${{ github.token }}
+      GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
       REPO: ${{ github.repository }}
+      SOURCE_REPO: laminlabs/laminhub
       PR_NUMBER: ${{ github.event.issue.number }}
 
     steps:
@@ -40,7 +41,7 @@ jobs:
           ${{ github.event.comment.body }}
           EOC
 
-          PR_JSON=$(gh pr view "$PR_NUMBER" --repo "$REPO" --json headRefName,baseRefName,title)
+          PR_JSON=$(gh pr view "$PR_NUMBER" --repo "$SOURCE_REPO" --json headRefName,baseRefName,title)
           echo "$PR_JSON" | jq .
 
           BRANCH=$(echo "$PR_JSON" | jq -r '.headRefName')
@@ -109,7 +110,7 @@ jobs:
         run: |
           set -euo pipefail
           git fetch --quiet origin "$BASE"
-          git diff --unified=5 "origin/$BASE...HEAD" -- CHANGELOG.md > changelog.diff || true
+          git diff --unified=5 "origin/$BASE...HEAD" -- docs/changelog/soon/laminhub.md > changelog.diff || true
 
           if [ ! -s changelog.diff ]; then
             echo "No CHANGELOG diff to refine."

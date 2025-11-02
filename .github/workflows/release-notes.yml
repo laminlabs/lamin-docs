@@ -28,7 +28,7 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
       GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
-      SOURCE_REPO: ${{ github.event.client_payload.source_repo || github.repository }}
+      SOURCE_REPO: "laminlabs/laminhub"
       REPO: ${{ github.repository }}
       PR_NUMBER_DISPATCH: ${{ github.event.client_payload.pr_number }}
       PR_NUMBER_INPUT: ${{ inputs.pr_number }}
