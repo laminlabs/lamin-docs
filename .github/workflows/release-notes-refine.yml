@@ -274,11 +274,11 @@ jobs:
           fi
 
           if grep -E '<<<<<<<|=======|>>>>>>>' docs/changelog/soon/laminhub.md; then
-            echo "Conflict markers detected in CHANGELOG.md."
+            echo "Conflict markers detected in docs/changelog/soon/laminhub.md."
             exit 1
           fi
 
-          unexpected=$(git status --short --untracked-files=no | sed '/^ M CHANGELOG\.md$/d')
+          unexpected=$(git status --short --untracked-files=no | sed '/^ M docs\/changelog\/soon\/laminhub\.md$/d')
           if [ -n "$unexpected" ]; then
             echo "Unexpected tracked changes detected:"
             printf '%s\n' "$unexpected"
