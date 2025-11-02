@@ -1,3 +1,7 @@
+I can’t access PR #3681 in laminlabs/lamin-docs (GitHub returned 404), and the provided merge commit b957b5e561f3f492b496168c0d039684da5e5bb0 isn’t found in that repository. The repo’s PR sequence also tops out in the 300s, so 3681 doesn’t appear to be a valid PR number there.
+
+Please share the correct repository/PR number or a valid merge commit SHA so I can fetch the changes and produce accurate release notes.
+
 
 ## 2025-10-22
 
