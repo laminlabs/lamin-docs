@@ -1,0 +1,298 @@
+# yamllint disable rule:line-length
+# yamllint disable rule:truthy
+---
+name: Refine release notes
+
+on:
+  issue_comment:
+    types: [created, edited]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refine:
+    if: >-
+      github.event.issue.pull_request != null &&
+      contains(github.event.comment.body, '/refine') &&
+      !contains(github.event.comment.body, '/refine-release-notes') &&
+      github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      PR_NUMBER: ${{ github.event.issue.number }}
+
+    steps:
+      - name: Capture comment context
+        id: gather
+        run: |
+          set -euo pipefail
+          echo "continue=false" >> "$GITHUB_OUTPUT"
+
+          test -n "$OPENAI_API_KEY"  || { echo "Missing OPENAI_API_KEY"; exit 1; }
+          test -n "$GITHUB_MCP_PAT" || { echo "Missing GITHUB_MCP_PAT"; exit 1; }
+
+          cat <<'EOC' > comment_raw.txt
+          ${{ github.event.comment.body }}
+          EOC
+
+          PR_JSON=$(gh pr view "$PR_NUMBER" --repo "$REPO" --json headRefName,baseRefName,title)
+          echo "$PR_JSON" | jq .
+
+          BRANCH=$(echo "$PR_JSON" | jq -r '.headRefName')
+          BASE=$(echo "$PR_JSON" | jq -r '.baseRefName')
+
+          if [[ -z "$BRANCH" || -z "$BASE" ]]; then
+            echo "Missing branch information."
+            exit 0
+          fi
+
+          if [[ "$BRANCH" != chore/changelog/pr-* ]]; then
+            echo "PR branch $BRANCH does not match release-notes pattern. Skipping."
+            exit 0
+          fi
+
+          export INSTRUCTIONS_PATH="$RUNNER_TEMP/refine-instructions-$PR_NUMBER.txt"
+
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          import sys
+
+          command = "/refine"
+          instructions_path = Path(os.environ["INSTRUCTIONS_PATH"])
+          body = Path("comment_raw.txt").read_text()
+
+          if command not in body:
+              print("Refine command not present; skipping.")
+              sys.exit(0)
+
+          before, _, after = body.partition(command)
+          remainder = (before + after).strip()
+          if not remainder:
+              raise SystemExit("No reviewer guidance provided with /refine; aborting.")
+
+          instructions_path.write_text(remainder)
+          print("Reviewer guidance captured:")
+          print(remainder)
+          PY
+
+          if [ ! -s "$INSTRUCTIONS_PATH" ]; then
+            echo "No reviewer guidance captured; skipping refinement."
+            exit 0
+          fi
+
+          {
+            printf 'branch=%s\n' "$BRANCH"
+            printf 'base=%s\n' "$BASE"
+            printf 'instructions_path=%s\n' "$INSTRUCTIONS_PATH"
+            echo "continue=true"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Checkout release-notes branch
+        if: steps.gather.outputs.continue == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.gather.outputs.branch }}
+          fetch-depth: 0
+
+      - name: Build prompts from diff
+        if: steps.gather.outputs.continue == 'true'
+        env:
+          BRANCH: ${{ steps.gather.outputs.branch }}
+          BASE: ${{ steps.gather.outputs.base }}
+          INSTRUCTIONS_PATH: ${{ steps.gather.outputs.instructions_path }}
+        run: |
+          set -euo pipefail
+          git fetch --quiet origin "$BASE"
+          git diff --unified=5 "origin/$BASE...HEAD" -- CHANGELOG.md > changelog.diff || true
+
+          if [ ! -s changelog.diff ]; then
+            echo "No CHANGELOG diff to refine."
+            exit 0
+          fi
+
+          cat > system_refine.txt <<'SYS'
+          You are a release engineer refining an existing release-notes entry after reviewer feedback.
+
+          Directives (inherit from the original release-notes prompt):
+          - Summarize ONLY user- and admin-facing outcomes that are supported by the changelog diff or reviewer guidance.
+          - Merge related tweaks into single, outcome-oriented bullets; omit helper plumbing unless it changes behavior.
+          - Preserve the exact section structure from the primary release-notes workflow.
+          - If feedback asks for removals or emphasis changes, incorporate that explicitly.
+          - Do not introduce new sections or marketing language; keep terminology consistent with the product (e.g., RLS, JWT, LaminDB).
+          - Before finalizing, confirm there are no merge-conflict markers or unrelated content; if unsure, reinspect the diff until confident.
+
+          Output policy:
+          - Return GitHub-flavored Markdown starting with the date heading (`## YYYY-MM-DD`) followed by the canonical sections: New Features, Changes, Bug fixes.
+          - Omit empty sections entirely.
+          - Within each section, group bullets by short category names (e.g., “Workflows & Launch”) and provide concise sub-bullets describing the observable impact.
+
+          Bullet rules:
+          - Highlight outcomes users or admins will notice; avoid file/function names unless essential.
+          - Keep each bullet to a single, clear sentence; mention implementation mechanics only when needed for clarity.
+          - For bug fixes, describe the resolved issue in user-facing terms and group similar fixes together.
+
+          Goal:
+          - Produce a complete replacement for the current top release-notes section that reflects reviewer guidance while staying faithful to the original prompt’s standards and confirms no unintended changes remain.
+          SYS
+
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          from textwrap import dedent
+
+          repo = os.environ['REPO']
+          pr = os.environ['PR_NUMBER']
+          branch = os.environ['BRANCH']
+          base = os.environ['BASE']
+          instructions_path = Path(os.environ['INSTRUCTIONS_PATH'])
+          instructions = instructions_path.read_text().strip()
+          if not instructions:
+              raise SystemExit("No reviewer guidance content available.")
+          diff_text = Path('changelog.diff').read_text()
+
+          template = dedent(
+              f"""Repository: {repo}
+          PR number: {pr}
+          Base branch: {base}
+          Head branch: {branch}
+
+          Reviewer feedback:
+          ---
+          {instructions}
+          ---
+
+          CHANGELOG diff (origin/{base}...{branch}):
+          ---
+          {diff_text}
+          ---
+
+          Task:
+          - Using only the diff and reviewer feedback, rewrite the release notes so they emphasize what users/admins notice.
+          - Match the structure mandated by the primary release-notes prompt (date heading + sections with category groupings and bullets).
+          - Confirm the result introduces no merge-conflict markers or unintended changes beyond the top release-notes section.
+          - Output the full updated top release-notes section (starting with ## <date>) ready to prepend to CHANGELOG.md.
+          """
+          )
+
+          Path('user_refine.txt').write_text(template)
+          PY
+
+      - name: Call OpenAI Responses API
+        if: steps.gather.outputs.continue == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
+          BRANCH: ${{ steps.gather.outputs.branch }}
+          BASE: ${{ steps.gather.outputs.base }}
+        run: |
+          jq -n \
+            --arg model "gpt-5" \
+            --arg sys "$(cat system_refine.txt)" \
+            --arg usr "$(cat user_refine.txt)" \
+            '{
+              model: $model,
+              input: [
+                { "role": "system", "content": [ { "type":"input_text", "text": $sys } ] },
+                { "role": "user",   "content": [ { "type":"input_text", "text": $usr } ] }
+              ],
+              max_output_tokens: 4000
+            }' > payload_refine.json
+
+          http=$(curl -sS -w "%{http_code}" -o response_refine.json \
+            https://api.openai.com/v1/responses \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer ${OPENAI_API_KEY}" \
+            --data-binary @payload_refine.json)
+          echo "OpenAI HTTP: $http"
+          [ "$http" -ge 200 ] && [ "$http" -lt 300 ] || { echo "OpenAI error:"; cat response_refine.json; exit 1; }
+
+          STATUS=$(jq -r '.status // "unknown"' response_refine.json)
+          if [ "$STATUS" != "completed" ]; then
+            REASON=$(jq -r '.incomplete_details.reason // "unspecified"' response_refine.json)
+            echo "Model status=$STATUS (reason: $REASON)"
+            cat response_refine.json
+            exit 1
+          fi
+
+          SUMMARY=$( \
+            jq -r '
+              .output_text //
+              (.output[]? | select(.type=="message") | .content[]? | select(.type=="output_text" or .type=="text") | .text) //
+              .choices[0].message.content // ""' response_refine.json
+          )
+          [ -n "$SUMMARY" ] && [ "$SUMMARY" != "null" ] || { echo "Empty model output"; cat response_refine.json; exit 1; }
+          printf "%s\n" "$SUMMARY" > summary_refined.md
+
+      - name: Replace top release-notes section
+        if: steps.gather.outputs.continue == 'true'
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          summary = Path('summary_refined.md').read_text().strip()
+          path = Path('CHANGELOG.md')
+          text = path.read_text()
+          matches = list(re.finditer(r'^## .+', text, flags=re.MULTILINE))
+          if matches:
+              start = matches[0].start()
+              end = matches[1].start() if len(matches) > 1 else len(text)
+              before = text[:start].rstrip('\n')
+              after = text[end:].lstrip('\n')
+
+              parts = []
+              if before:
+                  parts.append(before)
+              parts.append(summary)
+              if after:
+                  parts.append(after)
+
+              new_text = '\n\n'.join(parts)
+          else:
+              new_text = summary
+
+          if not new_text.endswith('\n'):
+              new_text += '\n'
+          path.write_text(new_text)
+          PY
+
+      - name: Validate refined changelog state
+        if: steps.gather.outputs.continue == 'true'
+        run: |
+          set -euo pipefail
+
+          if grep -E '<<<<<<<|=======|>>>>>>>' summary_refined.md; then
+            echo "Conflict markers detected in model output."
+            exit 1
+          fi
+
+          if grep -E '<<<<<<<|=======|>>>>>>>' CHANGELOG.md; then
+            echo "Conflict markers detected in CHANGELOG.md."
+            exit 1
+          fi
+
+          unexpected=$(git status --short --untracked-files=no | sed '/^ M CHANGELOG\.md$/d')
+          if [ -n "$unexpected" ]; then
+            echo "Unexpected tracked changes detected:"
+            printf '%s\n' "$unexpected"
+            exit 1
+          fi
+
+      - name: Commit refined notes
+        if: steps.gather.outputs.continue == 'true'
+        run: |
+          if git diff --quiet -- CHANGELOG.md; then
+            echo "No changes after refinement."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CHANGELOG.md
+          git commit -m "chore(changelog): refine release notes for PR #${PR_NUMBER}"
+          git push origin "${{ steps.gather.outputs.branch }}"
