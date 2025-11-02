@@ -1,3 +1,23 @@
+## 2025-10-31 (0.40.0)
+
+New Features
+- Features & Datasets
+  - Feature cells and “Show more” links now understand registry types with explicit fields (e.g., bionty.Gene.ensembl_gene_id), route to the correct module/table pages, and Composite feature sets expand inline instead of navigating away.
+
+Changes
+- Access & Governance
+  - “Add” pickers for spaces, teams, and instances are unified with consistent sorting, exclude default teams, and only show items you can actually add for a cleaner selection experience.
+- Authentication & Sessions
+  - Logout now clears the server-side session in addition to Supabase auth to avoid lingering logins.
+- Access & Security
+  - Row-level access policies were refined so link-table visibility follows access to related records and write locks affect only modifications, reducing surprising permission denials.
+- Platform & Observability
+  - Pfizer-hosted hubs initialize Sentry with the proper TLS certificate.
+
+Bug fixes
+- Features & Datasets
+  - Labels and links in feature cells and hovers use the correct field for categorical types, non-string values render reliably, and dtype/itype-derived links fall back safely when unparsable.
+
 
 ## 2025-10-22
 
