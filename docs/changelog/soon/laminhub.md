@@ -1,3 +1,41 @@
+## 2025-10-26 (0.34.0)
+
+New Features
+- Workflows & Launch
+  - Launch forms respect “hidden” schema parameters and provide a toggle to reveal them, and sections with only hidden fields are still listed so defaults can be managed.
+- Records & Search
+  - You can search across related fields using a new search_in option (e.g., runs by transform.key or labels), with deduplicated value results for many-to-many relations.
+- Instances & Admin
+  - Admins can migrate an instance (user-facing modules and hub module) via a new endpoint, with the instance cache reset after migration; transferring ownership to a user adds them as an admin collaborator.
+- Versioning & Footer
+  - The footer now shows the Hub version tag and deploy date, and error reporting uses a clearer release identifier for tracing.
+
+Changes
+- Records & Search
+  - Ordering is disabled when a free-text search is active, and combining both returns a 400 so results remain predictable.
+- Features & Schemas
+  - Feature dtype parsing and labels preserve hyphenated subtype names and allow common characters in filters, and list displays are cleaner in stacked labels.
+- Sheets
+  - Numeric strings in float/num fields are converted to numbers instead of being coerced into “10.0” strings for more consistent submissions.
+- Transforms & Lists
+  - Transform tables default to newest first and seed default filters even when URL sync is disabled.
+- Access & Teams
+  - Team and space rows display collaborator/member counts with clearer pluralization and visibility based on role.
+- Observability
+  - Build metadata (tag, date, sha) is injected into the UI and Sentry for better deploy traceability.
+
+Bug fixes
+- Query & API
+  - Join application occurs after filters to avoid missing joins, delete/update requests reject unsupported joins with clear errors, and relation searches deduplicate correctly.
+- API Errors
+  - Input validation errors now return HTTP 400 responses.
+- Records & Details
+  - JSON feature values render as formatted JSON in overview cards instead of opaque object placeholders.
+- Artifacts
+  - Creating artifacts from directories uses reduced concurrency to improve reliability in constrained environments.
+- Caching & Stability
+  - Deleting from the instance cache no longer raises errors when the key is absent.
+
 
 ## 2025-10-22
 
