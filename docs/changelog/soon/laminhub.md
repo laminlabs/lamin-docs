@@ -1,3 +1,33 @@
+## 2025-10-31 (0.40.0)
+
+New Features
+
+- Features & Registries
+  - Field-specific categorical dtypes are honored in feature labels and links, enabling display and linking by explicit registry fields (e.g., bionty.Gene.ensembl_gene_id).
+  - For Composite feature sets, “Show more” now expands inline instead of navigating away.
+
+Changes
+
+- Features & Registries
+  - Feature-set links are derived from the itype using a robust parser with safe fallbacks: correct registry module/table links are generated when unambiguous, and invalid types fall back to the Features index.
+  - Dataset and collection views use the parsed itype to build external links and show clearer errors if a feature block fails to render.
+- Access Management
+  - Instance/space/team pickers are unified with a command-style selector: lists are consistently sorted, existing memberships are excluded, default teams are hidden, and entries with invalid/empty names are filtered out for more reliable search and selection.
+- Navigation & UI
+  - Logging out now also triggers a server-side logout endpoint to clear cookies in addition to client sign-out.
+  - Label hovers can use a specific field when resolving titles for registry-backed labels.
+- Access & Security
+  - RLS generation for link tables was overhauled: SELECT policies defer to the related table’s RLS, and default-space policies were simplified to trigger underlying RLS; authentication (JWT) helper functions are installed during RLS reset for consistency.
+- Platform & Observability
+  - Pfizer Sentry initialization now uses the organization’s SSL certificate during setup.
+
+Bug fixes
+
+- Features & Registries
+  - Non-string feature values render correctly (JSON stringified) instead of as “[object Object]”; links for feature sets with dotted itype resolve properly and fall back safely when unparsable; registry counts and navigation are consistent across views; feature labels respect explicit dtype fields.
+- Access Management
+  - Picker menus no longer include null/empty or duplicate items and exclude the default team from add flows, preventing search and selection glitches.
+
 
 ## 2025-10-22
 
