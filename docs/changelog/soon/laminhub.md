@@ -1,3 +1,24 @@
+## 2025-10-27 (0.35.0)
+
+New Features
+
+- Workflows & Launch
+  - You can now add or edit a sheet row directly within the “Select or add row” dialog when choosing run metadata, without leaving the launch flow.
+
+Changes
+
+- Workflows & Launch
+  - Numeric parameters in Nextflow launch forms are automatically treated as numbers in the JSON view for more accurate parameter typing.
+- Sheets Editor
+  - Row selection tables hide internal ID columns by default for a cleaner, more focused view.
+- Performance & Stability
+  - Caching reachability checks are memoized to reduce overhead and improve stability.
+
+Bug fixes
+
+- Sheets Editor
+  - Prevent an error when rendering row selectors if a row lacks record metadata.
+
 ## 2025-10-26 (0.34.0)
 
 New Features
