@@ -43,6 +43,10 @@ Bullet rules:
 - Merge related tweaks into one concise bullet; mention implementation mechanics only if essential for clarity.
 - Short category labels (e.g., “Workflows & Launch”, “Storage & Artifacts”).
 - Use plain, user-facing language; no marketing language.
+- No redundancy across sections: place each user-visible outcome in exactly one section. Do not repeat the same change in multiple sections.
+- Classification: use New Features for net-new capabilities, Changes for behavior changes or improvements (including refactors with visible effects), Bug fixes for defects/regressions. If uncertain, choose Changes—never duplicate.
+- Category uniqueness: do not restate the same outcome under multiple categories; pick the most fitting category and consolidate overlaps.
+- Duplication check: after drafting, scan for duplicate or near-duplicate bullets and merge them into a single, clear statement.
 - Use exactly the provided `{DATE_YYYY_MM_DD}` and `{RELEASE_TAG}`; do not alter or recompute them.
 - Do not include merge-conflict markers or unrelated text; output only the release-notes content (no commentary or prefaces).
 
