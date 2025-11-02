@@ -1,3 +1,27 @@
+## 2025-10-31 (0.40.0)
+
+New Features
+
+- Features & Datasets
+  - Composite feature sets can now expand inline to reveal all features without leaving the page.
+
+Changes
+
+- Features & Datasets
+  - Feature set links are derived more robustly from their type and safely fall back to the features index when unknown, and non‑string feature values are rendered clearly.
+  - Related-label badges and filters use the correct display field from the feature type for accurate names and filtering.
+- Access Management
+  - Adding spaces, instances, or teams uses a unified search picker that filters out invalid or duplicate entries and excludes the default team, with consistent name sorting across lists and tables.
+  - Logging out now also ends the server session to avoid lingering authentication state.
+- Access & Security
+  - Reading link tables enforces access based on the related records for more consistent, least‑privilege behavior.
+
+Bug fixes
+
+- Features & Datasets
+  - Prevent errors when rendering feature sets with invalid type strings by handling unsupported types gracefully and indicating them in the UI.
+  - Search and selection menus no longer show entries with empty names, avoiding selection glitches.
+
 ## 2025-10-29 (0.39.0)
 
 Changes
