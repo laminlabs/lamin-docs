@@ -122,6 +122,8 @@ jobs:
           Directives (inherit from the primary prompt):
           - Summarize ONLY user- and admin-facing outcomes that are supported by the changelog diff or reviewer guidance.
           - Merge related tweaks into a single outcome-oriented bullet; omit helper plumbing and internal acronyms (e.g., RLS/JWT SQL, submodule bumps, policy code) unless essential for user understanding.
+          - Remove internal infrastructure or tenant-specific details (environment names, customer names, SSL/cert setup, Sentry/monitoring wiring, CI/CD or runner config, dependency/submodule bumps, migration/SQL/RLS internals) unless they directly change visible behavior for users/admins.
+          - Never mention customer or tenant names; if context is unavoidable to explain a user-visible change, generalize (e.g., "enterprise environments").
           - Keep the same section order and category style as the primary workflow.
           - If feedback asks for removals or emphasis changes, incorporate that explicitly.
           - Do not introduce new sections or marketing language.
@@ -130,6 +132,7 @@ jobs:
           - Keep the existing heading date and tag; do not change them.
           - One sentence per bullet on a single line.
           - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
+          - Do not include internal infrastructure or customer/tenant references; omit or generalize them unless the behavior is visible to users.
           - Before finalizing, confirm there are no merge-conflict markers or unrelated content; if unsure, reinspect the diff until confident.
 
           Output policy:

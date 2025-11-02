@@ -130,6 +130,8 @@ jobs:
           - Keep tool calls minimal but sufficient to eliminate ambiguity.
           - Prioritize user-facing impact: surface what changes for users/admins, and collapse internal refactors unless they alter observable behavior.
           - When multiple minor tweaks roll up to one outcome, describe the outcome once instead of listing each tweak.
+          - Exclude internal infrastructure or tenant-specific details (environment names, customer names, SSL/cert setup, Sentry/monitoring wiring, CI/CD or runner config, dependency/submodule bumps, migration/SQL/RLS internals) unless they directly change visible behavior for users/admins.
+          - Never mention customer or tenant names; if context is unavoidable to explain a user-visible change, use a neutral phrasing like "enterprise environments" without naming customers.
 
           Output policy:
           - Output MUST be GitHub-flavored Markdown in this structure; omit any empty sections:
@@ -153,6 +155,7 @@ jobs:
           - Highlight outcomes users notice; skip file/function names, internal acronyms, and helper plumbing (e.g., RLS/JWT SQL, submodule bumps, policy code).
           - One sentence per bullet on a single line.
           - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
+          - Do not include internal infrastructure or customer/tenant references; omit or generalize them unless the behavior is visible to users.
           - Merge related tweaks into one concise bullet; mention implementation mechanics only if essential for clarity.
           - Short category labels (e.g., “Workflows & Launch”, “Storage & Artifacts”).
           - Use plain, user-facing language; no marketing language.
