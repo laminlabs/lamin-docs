@@ -15,8 +15,8 @@ on:
       - release-notes.requested
 
 permissions:
-  contents: write  # needed to push branch with CHANGELOG edits
-  pull-requests: write  # needed to open a PR
+  contents: write # needed to push branch with CHANGELOG edits
+  pull-requests: write # needed to open a PR
 
 jobs:
   summarize:
@@ -122,8 +122,6 @@ jobs:
       - name: Load system prompt
         run: |
           cp .github/release-prompt.md system.txt
-
-      
 
       - name: Build user message
         run: |
