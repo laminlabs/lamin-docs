@@ -211,6 +211,10 @@ jobs:
             - Fix collaborator-access RLS and JWT DB-user retrieval for org members.
           SYS
 
+      - name: Override system prompt from file
+        run: |
+          cp .github/release-prompt.md system.txt
+
       - name: Build user message
         run: |
           cat > user.txt <<EOF
