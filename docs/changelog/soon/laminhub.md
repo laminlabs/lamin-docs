@@ -1,3 +1,30 @@
+## 2025-10-31 (0.40.0)
+
+New Features
+- Artifacts & Features
+  - Feature sets are registry-aware: “Show more” deep-links to the correct module/table (e.g., bionty/Gene), and Composite feature sets can expand inline to reveal all features without leaving the page.
+
+Changes
+- Access & Permissions
+  - Add-member pickers (instances, spaces, teams) use a unified selector with consistent alphabetical sorting, hide the default team, exclude duplicates/invalid entries, and respect fine_grained_access for clearer, safer selection.
+  - Logout also clears the server session before redirecting for a more reliable sign-out.
+- Artifacts & Features
+  - itype/dtype parsing is applied across feature and feature-set UIs to build correct titles and links; non-string feature values render clearly; and graceful error boundaries prevent a single failure from breaking the page.
+- Database & RLS
+  - RLS reset now installs authentication helper functions and refines link-table policies: SELECT relies on underlying table RLS while write operations check admin/write roles and locking semantics for more consistent enforcement.
+- Platform & Dependencies
+  - UI dependencies updated (e.g., zod), and the LaminDB submodule was bumped.
+
+Bug fixes
+- Access & Permissions
+  - Fix search/attach menus that showed blank or duplicate options; adding to spaces/teams/instances now filters correctly and suggests only valid choices, with the default team no longer offered.
+- Artifacts & Features
+  - Categorical registry fields display and filter on the correct attribute (e.g., bionty.Gene.ensembl_gene_id), and “Show more” links work for dotted itype values; Composite feature sets no longer force navigation to see all entries.
+- Authentication & Routing
+  - Authenticated users visiting Explore are reliably redirected to the dashboard.
+- Platform & Observability
+  - Sentry initialization in Pfizer environments works again by loading the required SSL certificate.
+
 
 ## 2025-10-22
 
