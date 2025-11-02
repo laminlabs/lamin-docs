@@ -168,16 +168,16 @@ jobs:
           {instructions}
           ---
 
-          CHANGELOG diff (origin/{base}...{branch}):
+          Changelog diff (docs/changelog/soon/laminhub.md, origin/{base}...{branch}):
           ---
           {diff_text}
           ---
 
           Task:
-          - Using only the diff and reviewer feedback, rewrite the release notes so they emphasize what users/admins notice.
+          - Using only the diff and reviewer guidance, rewrite the release notes so they emphasize what users/admins notice.
           - Match the structure mandated by the primary release-notes prompt (date heading + sections with category groupings and bullets).
           - Confirm the result introduces no merge-conflict markers or unintended changes beyond the top release-notes section.
-          - Output the full updated top release-notes section (starting with ## <date>) ready to prepend to CHANGELOG.md.
+          - Output the full updated top release-notes section (starting with ## <date>) ready to prepend to docs/changelog/soon/laminhub.md.
           """
           )
 
@@ -238,7 +238,7 @@ jobs:
           import re
 
           summary = Path('summary_refined.md').read_text().strip()
-          path = Path('CHANGELOG.md')
+          path = Path('docs/changelog/soon/laminhub.md')
           text = path.read_text()
           matches = list(re.finditer(r'^## .+', text, flags=re.MULTILINE))
           if matches:
@@ -273,7 +273,7 @@ jobs:
             exit 1
           fi
 
-          if grep -E '<<<<<<<|=======|>>>>>>>' CHANGELOG.md; then
+          if grep -E '<<<<<<<|=======|>>>>>>>' docs/changelog/soon/laminhub.md; then
             echo "Conflict markers detected in CHANGELOG.md."
             exit 1
           fi
@@ -288,12 +288,12 @@ jobs:
       - name: Commit refined notes
         if: steps.gather.outputs.continue == 'true'
         run: |
-          if git diff --quiet -- CHANGELOG.md; then
+          if git diff --quiet -- docs/changelog/soon/laminhub.md; then
             echo "No changes after refinement."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add CHANGELOG.md
+          git add docs/changelog/soon/laminhub.md
           git commit -m "chore(changelog): refine release notes for PR #${PR_NUMBER}"
           git push origin "${{ steps.gather.outputs.branch }}"
