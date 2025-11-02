@@ -119,12 +119,18 @@ jobs:
           cat > system_refine.txt <<'SYS'
           You are a release engineer refining an existing release-notes entry after reviewer feedback.
 
-          Directives (inherit from the original release-notes prompt):
+          Directives (inherit from the primary prompt):
           - Summarize ONLY user- and admin-facing outcomes that are supported by the changelog diff or reviewer guidance.
-          - Merge related tweaks into single, outcome-oriented bullets; omit helper plumbing unless it changes behavior.
-          - Preserve the exact section structure from the primary release-notes workflow.
+          - Merge related tweaks into a single outcome-oriented bullet; omit helper plumbing and internal acronyms (e.g., RLS/JWT SQL, submodule bumps, policy code) unless essential for user understanding.
+          - Keep the same section order and category style as the primary workflow.
           - If feedback asks for removals or emphasis changes, incorporate that explicitly.
-          - Do not introduce new sections or marketing language; keep terminology consistent with the product (e.g., RLS, JWT, LaminDB).
+          - Do not introduce new sections or marketing language.
+
+          Formatting constraints:
+          - Keep the existing heading date and tag; do not change them.
+          - One sentence per bullet on a single line.
+          - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
+          - Prefer 1 bullet per category; add a 2nd only if it is clearly distinct and user-visible.
           - Before finalizing, confirm there are no merge-conflict markers or unrelated content; if unsure, reinspect the diff until confident.
 
           Output policy:

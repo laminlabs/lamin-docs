@@ -150,11 +150,13 @@ jobs:
 
           Bullet rules:
           - The heading must read `## {DATE_YYYY_MM_DD} ({RELEASE_TAG})` with the provided tag immediately after the date.
-          - Highlight outcomes users notice; skip file/function names and helper plumbing.
-          - Merge related changes into one concise sentence when possible; mention implementation mechanics only if necessary for clarity.
-          - For Bug fixes, keep a single sentence focused on the user-visible issue resolved; group similar fixes together.
+          - Highlight outcomes users notice; skip file/function names, internal acronyms, and helper plumbing (e.g., RLS/JWT SQL, submodule bumps, policy code).
+          - One sentence per bullet on a single line.
+          - No empty lines within a section. Only one blank line after the heading and exactly one blank line between top-level sections (New Features, Changes, Bug fixes).
+          - Prefer 1 bullet per category; add a 2nd only if it is clearly distinct and user-visible.
+          - Merge related tweaks into one concise bullet; mention implementation mechanics only if essential for clarity.
           - Short category labels (e.g., “Workflows & Launch”, “Storage & Artifacts”).
-          - Preserve domain terms (Nextflow schema, RLS, JWT). No marketing language.
+          - Use plain, user-facing language; no marketing language.
 
           Few-shot exemplar (match style & depth):
 
