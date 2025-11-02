@@ -104,7 +104,8 @@ jobs:
             exit 1;
           }
 
-          RELEASE_TAG=$(git -C source tag --contains "$MERGE_SHA" | sort -V | tail -n 1)
+          # Choose the earliest tag that contains the merge commit (first release that picked it up)
+          RELEASE_TAG=$(git -C source tag --contains "$MERGE_SHA" | sort -V | head -n 1)
           test -n "$RELEASE_TAG" || { echo "No release tag found containing $MERGE_SHA"; exit 1; }
 
           echo "RELEASE_TAG=$RELEASE_TAG" >> $GITHUB_ENV
