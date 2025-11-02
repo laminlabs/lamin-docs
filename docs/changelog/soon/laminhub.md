@@ -1,3 +1,37 @@
+## 2025-10-31 (0.41.0)
+
+New Features
+
+- Features & Registries
+  - Feature and featureset cells now parse dtype/itype to derive correct registry links; explicit field-qualified dtypes (e.g., cat[bionty.Gene.ensembl_gene_id]) are respected, and Composite feature sets can expand inline via “Show more” without leaving the page.
+- Access & Security
+  - A shared command-style selector is used across access management (instances, spaces, teams), adding robust search with consistent sorting and only valid, addable items shown.
+
+Changes
+
+- Permissions & Governance
+  - RLS generation refactored so link-table SELECT policies defer to non-link-table RLS (more consistent access checks through links); default-space link policies simplified, and authentication SQL functions are installed prior to policy generation.
+- Features & UI
+  - Featureset header links are built from parsed itype (with safe fallbacks to the features index when unparsable or non-registry), and record types avoid incorrect module links.
+  - Feature-value rendering shows non-string values appropriately and label hover resolves titles using the explicit registry field when available.
+- Access Management
+  - Pickers (instances/spaces/teams) use shared filters: exclude already-linked items, honor fine_grained_access, hide the default team in add dialogs, and apply consistent name-based sorting.
+- Navigation & Auth
+  - Logout triggers a server-side logout request before redirecting to ensure session cookies are cleared reliably.
+- Platform & Observability
+  - Sentry initialization in Pfizer environments loads the corporate SSL certificate for outbound telemetry.
+- Dependencies
+  - UI package version bumped and dependencies updated (e.g., zod); LaminDB submodule updated.
+
+Bug fixes
+
+- Access pickers
+  - Search menus no longer surface items with empty/null names, correctly exclude already-linked entries, hide the default team from the chooser, and only show instances with fine-grained access enabled.
+- Features & Tables
+  - Feature cells render non-string values correctly, use explicit registry fields for titles when provided, and Composite featuresets “Show more” expands inline; links to registry pages are generated reliably from itype with safe fallbacks.
+- Navigation
+  - Explore landing page redirects authenticated users to the dashboard consistently.
+
 
 ## 2025-10-22
 
