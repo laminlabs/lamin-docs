@@ -1,3 +1,40 @@
+## 2025-10-26 (0.34.0)
+
+New Features
+
+- Records & Search
+  - You can search across related fields (e.g., transform or label attributes) in tables and value pickers, with results ordered by relevance.
+- Workflows & Launch
+  - Launch forms respect hidden parameters defined in Nextflow schemas and provide a toggle to reveal hidden sections when needed.
+- Administration
+  - Administrators can trigger instance migrations via the API to apply database and hub updates.
+
+Changes
+
+- Navigation & UI
+  - The footer now shows the Hub version and deployment date derived from the latest tag for clearer release identification.
+- Feature Labels & DTypes
+  - Dtype parsing supports hyphenated registry subtype names and labels render more consistently (including list types) with refined spacing and clearer messages.
+- Records & Search
+  - When a search query is used, sorting is suppressed so results are shown by relevance.
+- Transforms
+  - The transform list defaults to newest-first and seeds sensible defaults even when URL syncing is disabled.
+- Detail Views
+  - Structured feature values render as formatted JSON on detail pages for readability.
+- Access & Teams
+  - Space and Team rows display member counts when available, with visibility aligned to admin and manager roles.
+
+Bug fixes
+
+- Records & Search
+  - Relation searches apply the correct joins for many-to-many paths and deduplicate matches, and filtering by relation counts works as expected.
+- Storage & Artifacts
+  - Large directory uploads are more reliable in serverless environments by reducing concurrency to avoid out-of-memory errors.
+- Access & Governance
+  - Transferring instance ownership now also grants the new individual owner admin access to the instance.
+- Sheets
+  - Numeric entries for float/number features are preserved as numbers instead of being coerced to strings.
+
 
 ## 2025-10-22
 
