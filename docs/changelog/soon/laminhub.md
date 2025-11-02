@@ -1,3 +1,27 @@
+## 2025-10-31 (0.41.0)
+
+New Features
+- Artifacts & Features
+  - Feature lists and feature-set cells derive destinations from itype: registry types link to the correct module/table pages, “Composite” expands inline (“Show more”) instead of navigating, and unparsable itypes fall back safely to the Features index.
+  - Labels for registry-linked items respect the specified display field (e.g., bionty.Gene.ensembl_gene_id), improving badge/hover titles and filters.
+- Access & Governance
+  - Instance/space/team selectors use a unified command-style chooser with search, consistent sorting, and stronger filtering (hide invalid or duplicate entries and exclude the default team), making access management faster and less error-prone.
+
+Changes
+- Permissions & RLS
+  - RLS reset installs authentication SQL functions; link-table SELECT policies now rely on foreign-key RLS of the related table, while write checks use dedicated functions with sensible “locked” handling—resulting in more predictable record visibility and stricter writes.
+- Platform & Observability
+  - Sentry initialization for Pfizer hubs now uses the enterprise certificate via pfizer_ssl to improve reliability.
+- Navigation & UI
+  - Logout also triggers a server-side session invalidation for more consistent sign-out behavior.
+
+Bug fixes
+- Artifacts & Features
+  - “Show more” for feature sets behaves correctly: Composite expands inline; registry itypes link to the right catalog pages; invalid itypes no longer break navigation.
+  - Feature and value cells handle non-string values gracefully and show them reliably; feature rendering paths are wrapped in error boundaries to prevent crashes and display a clear error if loading fails.
+- Access & Tables
+  - Access pickers no longer surface empty/malformed items, hide the default team from choices, and consistently sort entries for easier selection.
+
 
 ## 2025-10-22
 
