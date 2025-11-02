@@ -22,7 +22,7 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
-      GH_TOKEN: ${{ github.token }}
+      GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
       REPO: ${{ github.repository }}
       PR_NUMBER: ${{ github.event.issue.number }}
 
@@ -109,37 +109,24 @@ jobs:
         run: |
           set -euo pipefail
           git fetch --quiet origin "$BASE"
-          git diff --unified=5 "origin/$BASE...HEAD" -- CHANGELOG.md > changelog.diff || true
+          git diff --unified=5 "origin/$BASE...HEAD" -- docs/changelog/soon/laminhub.md > changelog.diff || true
 
           if [ ! -s changelog.diff ]; then
             echo "No CHANGELOG diff to refine."
             exit 0
           fi
 
-          cat > system_refine.txt <<'SYS'
-          You are a release engineer refining an existing release-notes entry after reviewer feedback.
+          # Load primary system prompt, then append refine-specific guidance
+          cp .github/release-prompt.md system_refine.txt
+          cat >> system_refine.txt <<'APPEND'
 
-          Directives (inherit from the original release-notes prompt):
-          - Summarize ONLY user- and admin-facing outcomes that are supported by the changelog diff or reviewer guidance.
-          - Merge related tweaks into single, outcome-oriented bullets; omit helper plumbing unless it changes behavior.
-          - Preserve the exact section structure from the primary release-notes workflow.
-          - If feedback asks for removals or emphasis changes, incorporate that explicitly.
-          - Do not introduce new sections or marketing language; keep terminology consistent with the product (e.g., RLS, JWT, LaminDB).
-          - Before finalizing, confirm there are no merge-conflict markers or unrelated content; if unsure, reinspect the diff until confident.
-
-          Output policy:
-          - Return GitHub-flavored Markdown starting with the date heading (`## YYYY-MM-DD`) followed by the canonical sections: New Features, Changes, Bug fixes.
-          - Omit empty sections entirely.
-          - Within each section, group bullets by short category names (e.g., “Workflows & Launch”) and provide concise sub-bullets describing the observable impact.
-
-          Bullet rules:
-          - Highlight outcomes users or admins will notice; avoid file/function names unless essential.
-          - Keep each bullet to a single, clear sentence; mention implementation mechanics only when needed for clarity.
-          - For bug fixes, describe the resolved issue in user-facing terms and group similar fixes together.
-
-          Goal:
-          - Produce a complete replacement for the current top release-notes section that reflects reviewer guidance while staying faithful to the original prompt’s standards and confirms no unintended changes remain.
-          SYS
+          ---
+          Refinement Addendum:
+          - Use ONLY the changelog diff and the reviewer guidance provided below to guide changes.
+          - Do NOT change the date or release tag in the heading.
+          - Output a complete replacement for the top section starting with `## YYYY-MM-DD` and the required sections; omit empty ones.
+          ---
+          APPEND
 
           python - <<'PY'
           from pathlib import Path
@@ -167,16 +154,16 @@ jobs:
           {instructions}
           ---
 
-          CHANGELOG diff (origin/{base}...{branch}):
+          Changelog diff (docs/changelog/soon/laminhub.md, origin/{base}...{branch}):
           ---
           {diff_text}
           ---
 
           Task:
-          - Using only the diff and reviewer feedback, rewrite the release notes so they emphasize what users/admins notice.
+          - Using only the diff and reviewer guidance, rewrite the release notes so they emphasize what users/admins notice.
           - Match the structure mandated by the primary release-notes prompt (date heading + sections with category groupings and bullets).
           - Confirm the result introduces no merge-conflict markers or unintended changes beyond the top release-notes section.
-          - Output the full updated top release-notes section (starting with ## <date>) ready to prepend to CHANGELOG.md.
+          - Output the full updated top release-notes section (starting with ## <date>) ready to prepend to docs/changelog/soon/laminhub.md.
           """
           )
 
@@ -237,7 +224,7 @@ jobs:
           import re
 
           summary = Path('summary_refined.md').read_text().strip()
-          path = Path('CHANGELOG.md')
+          path = Path('docs/changelog/soon/laminhub.md')
           text = path.read_text()
           matches = list(re.finditer(r'^## .+', text, flags=re.MULTILINE))
           if matches:
@@ -272,12 +259,12 @@ jobs:
             exit 1
           fi
 
-          if grep -E '<<<<<<<|=======|>>>>>>>' CHANGELOG.md; then
-            echo "Conflict markers detected in CHANGELOG.md."
+          if grep -E '<<<<<<<|=======|>>>>>>>' docs/changelog/soon/laminhub.md; then
+            echo "Conflict markers detected in docs/changelog/soon/laminhub.md."
             exit 1
           fi
 
-          unexpected=$(git status --short --untracked-files=no | sed '/^ M CHANGELOG\.md$/d')
+          unexpected=$(git status --short --untracked-files=no | sed '/^ M docs\/changelog\/soon\/laminhub\.md$/d')
           if [ -n "$unexpected" ]; then
             echo "Unexpected tracked changes detected:"
             printf '%s\n' "$unexpected"
@@ -287,12 +274,12 @@ jobs:
       - name: Commit refined notes
         if: steps.gather.outputs.continue == 'true'
         run: |
-          if git diff --quiet -- CHANGELOG.md; then
+          if git diff --quiet -- docs/changelog/soon/laminhub.md; then
             echo "No changes after refinement."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add CHANGELOG.md
+          git add docs/changelog/soon/laminhub.md
           git commit -m "chore(changelog): refine release notes for PR #${PR_NUMBER}"
           git push origin "${{ steps.gather.outputs.branch }}"

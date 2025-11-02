@@ -28,8 +28,10 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
       GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
-      SOURCE_REPO: laminlabs/laminhub
+      SOURCE_REPO: "laminlabs/laminhub"
       REPO: ${{ github.repository }}
+      PR_NUMBER_DISPATCH: ${{ github.event.client_payload.pr_number }}
+      PR_NUMBER_INPUT: ${{ inputs.pr_number }}
 
     steps:
       - name: Validate secrets & install deps
@@ -54,32 +56,19 @@ jobs:
         id: basics
         env:
           EVENT_NAME: ${{ github.event_name }}
-          EVENT_PATH: ${{ github.event_path }}
         run: |
           set -euo pipefail
 
-          case "$EVENT_NAME" in
-            workflow_dispatch)
-              PR_NUMBER=$(jq -r '.inputs.pr_number // ""' "$EVENT_PATH")
-              ;;
-            repository_dispatch)
-              PR_NUMBER=$(jq -r '.client_payload.pr_number // ""' "$EVENT_PATH")
-              ;;
-            *)
-              echo "Unsupported event: $EVENT_NAME"
-              exit 1
-          esac
+          PR_NUMBER="${PR_NUMBER_DISPATCH:-}"
+          if [ -z "$PR_NUMBER" ]; then
+            PR_NUMBER="${PR_NUMBER_INPUT:-}"
+          fi
 
           test -n "$PR_NUMBER" || { echo "PR number not provided"; exit 1; }
 
           PR_JSON=$(gh pr view "$PR_NUMBER" --repo "$SOURCE_REPO" \
-            --json number,merged,mergedAt,baseRefName,headRefName,mergeCommit,url)
+            --json number,title,mergedAt,baseRefName,headRefName,mergeCommit,url)
           echo "$PR_JSON" | jq .
-
-          if [ "$(echo "$PR_JSON" | jq -r '.merged')" != "true" ]; then
-            echo "PR #$PR_NUMBER is not merged."
-            exit 1
-          fi
 
           BASE=$(echo "$PR_JSON" | jq -r '.baseRefName')
           HEAD=$(echo "$PR_JSON" | jq -r '.headRefName')
@@ -96,17 +85,17 @@ jobs:
 
           RELEASE_DATE=$(date -u -d "$MERGED_AT" +%F)
 
+          TITLE=$(echo "$PR_JSON" | jq -r '.title // ""')
+
           {
             printf 'PR_NUMBER=%s\n' "$PR_NUMBER"
             printf 'MERGE_SHA=%s\n' "$MERGE_SHA"
             printf 'MERGED_AT=%s\n' "$MERGED_AT"
             printf 'DATE_STR=%s\n' "$RELEASE_DATE"
+            printf 'TITLE=%s\n' "$TITLE"
           } >> "$GITHUB_ENV"
 
-      - name: Resolve release tag
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          EVENT_PATH: ${{ github.event_path }}
+      - name: Resolve release tag (prefer PR title, fallback to tags)
         run: |
           set -euo pipefail
 
@@ -118,101 +107,26 @@ jobs:
             exit 1;
           }
 
-          RELEASE_TAG=$(git -C source tag --contains "$MERGE_SHA" | sort -V | tail -n 1)
+          # 1) Try extracting a semantic version from the PR title (e.g., "Release 0.40.0" or "v0.40.0")
+          TITLE_VER=$(printf '%s\n' "${TITLE:-}" | grep -oE 'v?[0-9]+\.[0-9]+\.[0-9]+' | head -n 1 || true)
+          if [ -n "${TITLE_VER:-}" ]; then
+            RELEASE_TAG=${TITLE_VER#v}
+          else
+            # 2) Fallback: choose the earliest tag that contains the merge commit (first release that picked it up)
+            RELEASE_TAG=$(git -C source tag --contains "$MERGE_SHA" | sort -V | head -n 1)
+          fi
           test -n "$RELEASE_TAG" || { echo "No release tag found containing $MERGE_SHA"; exit 1; }
 
           echo "RELEASE_TAG=$RELEASE_TAG" >> $GITHUB_ENV
 
-      - name: Build system prompt (Release Notes + embedded example + MCP guidance)
+      - name: Load system prompt
         run: |
-          cat > system.txt <<'SYS'
-          You are a release engineer producing release notes.
-
-          Directives:
-          - Summarize the specified merged PR using ONLY evidence from GitHub.
-          - If uncertain, USE the GitHub MCP tools to fetch PR metadata, commits, changed files, targeted diffs, and—if needed—open files at the merge commit to inspect code context.
-          - Keep tool calls minimal but sufficient to eliminate ambiguity.
-          - Prioritize user-facing impact: surface what changes for users/admins, and collapse internal refactors unless they alter observable behavior.
-          - When multiple minor tweaks roll up to one outcome, describe the outcome once instead of listing each tweak.
-
-          Output policy:
-          - Output MUST be GitHub-flavored Markdown in this structure; omit any empty sections:
-
-          ## {DATE_YYYY_MM_DD} ({RELEASE_TAG})
-
-          New Features
-          - <Category>
-            - <bullets>
-
-          Changes
-          - <Category>
-            - <bullets>
-
-          Bug fixes
-          - <Category>
-            - <bullets>
-
-          Bullet rules:
-          - The heading must read `## {DATE_YYYY_MM_DD} ({RELEASE_TAG})` with the provided tag immediately after the date.
-          - Highlight outcomes users notice; skip file/function names and helper plumbing.
-          - Merge related changes into one concise sentence when possible; mention implementation mechanics only if necessary for clarity.
-          - For Bug fixes, keep a single sentence focused on the user-visible issue resolved; group similar fixes together.
-          - Short category labels (e.g., “Workflows & Launch”, “Storage & Artifacts”).
-          - Preserve domain terms (Nextflow schema, RLS, JWT). No marketing language.
-
-          Few-shot exemplar (match style & depth):
-
-          ## 2025-10-22
-
-          New Features
-
-          - Workflows & Launch
-            - Launch forms can reveal hidden parameters when needed, a simplified launch view is available, and Nextflow schema JSON is respected end-to-end. Run metadata originating from Sheets is captured for better traceability.
-          - Transforms & Pipelines
-            - Pipeline repository information is automatically derived from transform source code to improve provenance and linking.
-            - Branch parameter is supported when resolving repository details for transforms.
-          - Analytics & Group-By
-            - Group-by charts support sorting for clearer comparisons.
-          - Access & Security
-            - Record-level locking via RLS for individual records and Block models.
-          - Storage
-            - Default bucket lookup by instance ID is available; deletion of storage resources is supported; and Lambda now returns IDs for newly created artifacts and storages.
-
-          Changes
-
-          - Runs & Reports
-            - Run logs render ANSI colors for readability; version tags no longer auto-prepend “v”; run counters increment per transform (not per version) for clearer numbering.
-          - Navigation & UI
-            - Registries nav reordered; sub-navigation expanded for Artifacts and Features; Sheets show feature descriptions on hover; hide internal “n” in schema tables; assorted copy/title refinements.
-            - Team page copy/typos corrected; vocabulary renamed “linked features” → “external features”.
-          - Workflows & Pipelines
-            - Only main-branch schemas appear in pipeline configuration; configuration files are hidden by default; `input`/`outdir` receive no special treatment so the Nextflow schema is the single source of truth.
-            - Parameters show a loading state during launch configuration.
-          - Performance & Stability
-            - Instance caching optimized with a robust fallback.
-          - Platform & Observability
-            - LaminDB upgraded to 1.12 with follow-up bumps; database resource metadata expanded (host/port/proxy) and schema SQL functions marked STABLE.
-          - Permissions & Governance
-            - Expanded permissions for org admins/managers; more consistent JWT/DB user mapping for org members.
-
-          Bug fixes
-
-          - Sheets
-            - Normalize floats on submission; restore Save after manual import; hide non-schema self-referential features; correct feature-card dtype display and field-search scope; fix sheet creation button in schema.
-          - Pipelines & Transforms
-            - Resolve transform load errors; pipeline configuration shows only main-branch schemas; use the correct `name_field`; full-screen run report no longer flashes.
-          - Storage & Artifacts
-            - Include file extension when uploading artifacts; improve reliability of instance DB transfer.
-          - Navigation & Tables
-            - Fix nav flicker and active-page highlight; correct org-page navbar links; table selector uses fuzzy search; access table command bars use the correct accessor keys; remove description column from ULabel tables; fix artifacts page reactivity issues.
-          - Database & Query
-            - Fix collaborator-access RLS and JWT DB-user retrieval for org members.
-          SYS
+          cp .github/release-prompt.md system.txt
 
       - name: Build user message
         run: |
           cat > user.txt <<EOF
-          Repository: ${REPO}
+          Repository: ${SOURCE_REPO}
           PR number: ${PR_NUMBER}
           Release date (for heading): ${DATE_STR}
           Release tag: ${RELEASE_TAG}
@@ -314,5 +228,5 @@ jobs:
             --repo "$REPO" \
             --base main \
             --head "$BRANCH" \
-            --title "Changelog: ${RELEASE_TAG} – PR #${PR_NUMBER} (${DATE_STR})" \
+            --title "Changelog: ${RELEASE_TAG} (${DATE_STR})" \
             --body  "Prepends release notes generated from merged PR #${PR_NUMBER} (${RELEASE_TAG}) to docs/changelog/soon/laminhub.md."
