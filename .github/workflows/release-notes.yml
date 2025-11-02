@@ -28,8 +28,10 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       GITHUB_MCP_PAT: ${{ secrets.CROSS_REPO_TOKEN }}
       GH_TOKEN: ${{ secrets.CROSS_REPO_TOKEN }}
-      SOURCE_REPO: laminlabs/laminhub
+      SOURCE_REPO: ${{ github.event.client_payload.source_repo || github.repository }}
       REPO: ${{ github.repository }}
+      PR_NUMBER_DISPATCH: ${{ github.event.client_payload.pr_number }}
+      PR_NUMBER_INPUT: ${{ inputs.pr_number }}
 
     steps:
       - name: Validate secrets & install deps
@@ -54,32 +56,19 @@ jobs:
         id: basics
         env:
           EVENT_NAME: ${{ github.event_name }}
-          EVENT_PATH: ${{ github.event_path }}
         run: |
           set -euo pipefail
 
-          case "$EVENT_NAME" in
-            workflow_dispatch)
-              PR_NUMBER=$(jq -r '.inputs.pr_number // ""' "$EVENT_PATH")
-              ;;
-            repository_dispatch)
-              PR_NUMBER=$(jq -r '.client_payload.pr_number // ""' "$EVENT_PATH")
-              ;;
-            *)
-              echo "Unsupported event: $EVENT_NAME"
-              exit 1
-          esac
+          PR_NUMBER="${PR_NUMBER_DISPATCH:-}"
+          if [ -z "$PR_NUMBER" ]; then
+            PR_NUMBER="${PR_NUMBER_INPUT:-}"
+          fi
 
           test -n "$PR_NUMBER" || { echo "PR number not provided"; exit 1; }
 
           PR_JSON=$(gh pr view "$PR_NUMBER" --repo "$SOURCE_REPO" \
-            --json number,merged,mergedAt,baseRefName,headRefName,mergeCommit,url)
+            --json number,mergedAt,baseRefName,headRefName,mergeCommit,url)
           echo "$PR_JSON" | jq .
-
-          if [ "$(echo "$PR_JSON" | jq -r '.merged')" != "true" ]; then
-            echo "PR #$PR_NUMBER is not merged."
-            exit 1
-          fi
 
           BASE=$(echo "$PR_JSON" | jq -r '.baseRefName')
           HEAD=$(echo "$PR_JSON" | jq -r '.headRefName')
@@ -104,9 +93,6 @@ jobs:
           } >> "$GITHUB_ENV"
 
       - name: Resolve release tag
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          EVENT_PATH: ${{ github.event_path }}
         run: |
           set -euo pipefail
 
