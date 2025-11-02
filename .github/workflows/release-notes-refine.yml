@@ -121,24 +121,10 @@ jobs:
           cat >> system_refine.txt <<'APPEND'
 
           ---
-          Refinement Addendum (append to primary prompt):
-
-          Context:
-          - You are refining an existing release-notes entry after reviewer feedback.
+          Refinement Addendum:
           - Use ONLY the changelog diff and the reviewer guidance provided below to guide changes.
-
-          Task:
-          - Rewrite the top release-notes section to incorporate reviewer guidance while staying consistent with the primary prompt's standards.
           - Do NOT change the date or release tag in the heading.
-          - Output a complete replacement for the top section starting with `## YYYY-MM-DD` and the required sections (omit empty ones).
-
-          Guardrails:
-          - Keep one sentence per bullet on a single line.
-          - No empty lines within a section; exactly one blank line between top-level sections.
-          - Do not include internal infrastructure details or customer/tenant references; generalize only if a user-visible behavior depends on it.
-          - Do not expose internal variable/flag/config/env names or code identifiers; describe the observable behavior instead.
-          - Group bullets under short category names; prefer concise, user-facing phrasing.
-          - Before finalizing, ensure there are no conflict markers or unrelated content.
+          - Output a complete replacement for the top section starting with `## YYYY-MM-DD` and the required sections; omit empty ones.
           ---
           APPEND
 

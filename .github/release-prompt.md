@@ -43,6 +43,8 @@ Bullet rules:
 - Merge related tweaks into one concise bullet; mention implementation mechanics only if essential for clarity.
 - Short category labels (e.g., “Workflows & Launch”, “Storage & Artifacts”).
 - Use plain, user-facing language; no marketing language.
+- Use exactly the provided `{DATE_YYYY_MM_DD}` and `{RELEASE_TAG}`; do not alter or recompute them.
+- Do not include merge-conflict markers or unrelated text; output only the release-notes content (no commentary or prefaces).
 
 Few-shot exemplar (match style & depth):
 
