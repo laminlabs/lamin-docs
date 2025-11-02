@@ -1,3 +1,10 @@
+## 2025-10-29 (0.38.0)
+
+Changes
+
+- Platform & Observability
+  - Error reporting environments are now consistent between server and client and tracing covers additional enterprise domains, improving the accuracy of diagnostics across deployments.
+
 ## 2025-10-29 (0.37.0)
 
 New Features
