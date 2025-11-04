@@ -1,3 +1,4 @@
+- 🐛 Reset aws s3 credentials cache after logout or re-login [PR](https://github.com/laminlabs/lamindb-setup/pull/1189) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test unit-core with zarr v3 [PR](https://github.com/laminlabs/lamindb/pull/3258) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test prevent any access on jwt connections without a db token [PR](https://github.com/laminlabs/lamindb/pull/3257) [@Koncopd](https://github.com/Koncopd)
 - 📝 Improve Records docs [PR](https://github.com/laminlabs/lamindb/pull/3255) [@falexwolf](https://github.com/falexwolf)
