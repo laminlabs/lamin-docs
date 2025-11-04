@@ -1,3 +1,42 @@
+## 2025-11-04 (0.41.0)
+
+New Features
+
+- Spaces & Storage
+  - Attaching a space to an instance now automatically provisions a storage for that space, with the operation applied atomically for reliability.
+- Access & Secrets
+  - Admins can create secret managers and manage database connection secrets within the Hub, backed by secure storage.
+- Tables & Filtering
+  - Artifact and collection tables include a responsive filter sidebar with a mobile drawer and compact grouped filters for faster narrowing.
+- Debug & Support
+  - A debug endpoint is available to verify S3 bucket access, and new tooling enables collecting API/UI logs from CloudWatch to aid investigations.
+
+Changes
+
+- Access & Governance
+  - Detaching a space from an instance is prevented while storages still exist for that space in the instance to avoid orphaned data.
+- Records & Links
+  - Record links navigate to the record page and type labels show full hierarchy in bracket notation for clarity (for example, cat[Record[Parent[Child]]]).
+- Filters & Facets
+  - Faceted filters now show intuitive icons and active counts, with primary filters inline and additional filters organized into compact popovers.
+- Sheets & Editing
+  - Editing controls respect edit permissions across the sheets editor, and CSV import handles numeric fields and empty values more robustly.
+- UI & Navigation
+  - ULabel hover cards display the creating transform, the header logo sizing is refined, and the bucket browser root is labeled “All” for a clearer overview.
+- Cloud Access
+  - Requests for temporary cloud access return clearer error details when failures occur.
+- Database & Reliability
+  - Instance user lookups consistently use the correct database token and update operations finalize after returning updated rows for predictable behavior.
+
+Bug fixes
+
+- Filters & Tables
+  - Toggling label badges in collection views updates the correct filter state so filters apply as expected.
+- Popovers & Tooltips
+  - Filter popovers and tooltips render via a portal to prevent clipping within tables and dialogs.
+- Visualization
+  - The Vitessce viewer shows a helpful error message when initialization fails.
+
 ## 2025-10-31 (0.40.0)
 
 New Features
