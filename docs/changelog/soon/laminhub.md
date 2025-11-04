@@ -3,37 +3,38 @@
 New Features
 
 - Spaces & Storage
-  - Attaching a space to an instance now automatically provisions a storage for that space, with the operation applied atomically for reliability.
+  - Attaching a space to an instance automatically creates its storage so you can start using it immediately.
 - Access & Secrets
-  - Admins can create secret managers and manage database connection secrets within the Hub, backed by secure storage.
+  - Admins can set up and manage database connection secrets directly in the Hub.
 - Tables & Filtering
-  - Artifact and collection tables include a responsive filter sidebar with a mobile drawer and compact grouped filters for faster narrowing.
+  - Artifact and collection tables get a new filter sidebar (with a mobile drawer) and compact grouped filters for faster narrowing.
 - Debug & Support
-  - A debug endpoint is available to verify S3 bucket access, and new tooling enables collecting API/UI logs from CloudWatch to aid investigations.
+  - A built-in check verifies S3 bucket access and admins can export diagnostic logs to speed up support.
 
 Changes
 
 - Access & Governance
-  - Detaching a space from an instance is prevented while storages still exist for that space in the instance to avoid orphaned data.
+  - You can’t detach a space from an instance while storages for that space still exist to prevent orphaned data.
 - Records & Links
-  - Record links navigate to the record page and type labels show full hierarchy in bracket notation for clarity (for example, cat[Record[Parent[Child]]]).
+  - Clicking a linked record opens its record page and type labels show the full hierarchy for clarity (for example, cat[Record[Parent[Child]]]).
+  - Project and reference cells have a refreshed design for clearer information and easier navigation.
 - Filters & Facets
-  - Faceted filters now show intuitive icons and active counts, with primary filters inline and additional filters organized into compact popovers.
+  - Faceted filters show intuitive icons and active counts, with primary filters inline and the rest organized into compact popovers.
 - Sheets & Editing
-  - Editing controls respect edit permissions across the sheets editor, and CSV import handles numeric fields and empty values more robustly.
+  - Editing controls now consistently respect edit permissions and CSV import handles numbers and blanks more robustly.
 - UI & Navigation
-  - ULabel hover cards display the creating transform, the header logo sizing is refined, and the bucket browser root is labeled “All” for a clearer overview.
+  - Hovering a label shows what created it, the header logo sizing is refined, and the bucket browser root is labeled “All” for a clearer overview.
 - Cloud Access
-  - Requests for temporary cloud access return clearer error details when failures occur.
-- Database & Reliability
-  - Instance user lookups consistently use the correct database token and update operations finalize after returning updated rows for predictable behavior.
+  - Temporary cloud access requests return clearer error details when something goes wrong.
+- Performance & Reliability
+  - User lookups and updates in instances are more reliable to reduce edge-case failures.
 
 Bug fixes
 
 - Filters & Tables
   - Toggling label badges in collection views updates the correct filter state so filters apply as expected.
 - Popovers & Tooltips
-  - Filter popovers and tooltips render via a portal to prevent clipping within tables and dialogs.
+  - Filter popovers and tooltips no longer get clipped inside tables and dialogs.
 - Visualization
   - The Vitessce viewer shows a helpful error message when initialization fails.
 
