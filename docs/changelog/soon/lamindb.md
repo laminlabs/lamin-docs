@@ -1,3 +1,4 @@
+- 🐛 Correctly deal with `None`, `date`, and `datetime` in `.features.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3261) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix storage tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1190) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add database export to & from parquet [PR](https://github.com/laminlabs/lamindb-setup/pull/1188) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3260) [@Koncopd](https://github.com/Koncopd)
