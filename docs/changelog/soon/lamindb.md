@@ -1,3 +1,4 @@
+- ✨ Add database export to & from parquet [PR](https://github.com/laminlabs/lamindb-setup/pull/1188) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3260) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Reset aws s3 credentials cache after logout or re-login [PR](https://github.com/laminlabs/lamindb-setup/pull/1189) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test unit-core with zarr v3 [PR](https://github.com/laminlabs/lamindb/pull/3258) [@Koncopd](https://github.com/Koncopd)
