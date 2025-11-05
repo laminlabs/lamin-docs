@@ -1,3 +1,4 @@
+- 🐛 Cast `int` and `float` when loading from database where appropriate [PR](https://github.com/laminlabs/lamindb/pull/3263) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3262) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Correctly deal with `None`, `date`, and `datetime` in `.features.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3261) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix storage tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1190) [@Koncopd](https://github.com/Koncopd)
