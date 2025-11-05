@@ -1,3 +1,4 @@
+- ✅ Fix storage tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1190) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add database export to & from parquet [PR](https://github.com/laminlabs/lamindb-setup/pull/1188) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3260) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Reset aws s3 credentials cache after logout or re-login [PR](https://github.com/laminlabs/lamindb-setup/pull/1189) [@Koncopd](https://github.com/Koncopd)
