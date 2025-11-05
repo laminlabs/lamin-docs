@@ -1,3 +1,26 @@
+## 2025-11-05 (0.43.0)
+
+Changes
+
+- Tables & Filtering
+  - Tables apply sensible defaults by showing only the main branch and latest versions out of the box while keeping the URL clean.
+  - Advanced filtering starts with no defaults and now preserves advanced/edit flags when syncing filter changes to the URL.
+  - Faceted sidebar shows badges for the active default filters and its Reset button compares against the actual defaults for a consistent experience.
+  - Filter groups and icons in the sidebar are reordered and standardized (projects, schema, created by, labels, references) for quicker recognition.
+- Transforms
+  - Transform lists include branch and latest-version filters by default to help you narrow results faster.
+- Sheets
+  - After saving a sheet, group-by views default to a stable summary (count by creator on the main branch) for consistent results.
+- Navigation & UI
+  - Landing page cards were refreshed with clearer copy, new visuals, and a data lineage video for a more informative overview.
+
+Bug fixes
+
+- Tables & Filtering
+  - Advanced filtering no longer errors when filter groups are initially empty and reliably updates as you change operators and values.
+  - Sidebar faceted filters render correctly even when some active groups lack a selected field, avoiding intermittent crashes.
+  - “Show all” no longer gets written to the URL on initial load, and non-filter flags are preserved when filters sync in advanced mode.
+
 ## 2025-10-31 (0.40.0)
 
 New Features
