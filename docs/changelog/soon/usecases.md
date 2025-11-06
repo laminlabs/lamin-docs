@@ -1,3 +1,4 @@
+- 💚 Fix test environments [PR](https://github.com/laminlabs/lamin-usecases/pull/214) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove `analysis-flow` use case [PR](https://github.com/laminlabs/lamin-usecases/pull/213) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `df()` to `to_dataframe()` [PR](https://github.com/laminlabs/lamin-usecases/pull/212) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `.df()` to `.to_dataframe()` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/132) [@falexwolf](https://github.com/falexwolf)
