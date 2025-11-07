@@ -1,2 +1,3 @@
+- 🐛 Rework _query_relatives [PR](https://github.com/laminlabs/lamindb/pull/3265) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Support anndata up to 0.12.5 [PR](https://github.com/laminlabs/lamindb/pull/3264) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add database export to & from parquet [PR](https://github.com/laminlabs/lamindb-setup/pull/1188) [@Zethson](https://github.com/Zethson)
