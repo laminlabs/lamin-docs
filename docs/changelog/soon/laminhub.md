@@ -2,8 +2,11 @@
 
 New Features
 
+- Sheets & Records
+  - Keyboard navigation in sheets enables faster cell-to-cell editing without leaving the keyboard.
+  - Auto-fill allows quickly replicating values or patterns across cells during data entry.
 - Diagnostics & Observability
-  - A superadmin-only diagnostic assembles recent API and (when available) UI logs and returns an automated analysis to accelerate troubleshooting.
+  - A superadmin-only diagnostic assembles recent API and available UI logs and returns an automated analysis to accelerate troubleshooting.
 
 Changes
 
@@ -13,11 +16,11 @@ Changes
   - The top-level “Registries” navigation entry is renamed to “Modules” for clearer terminology.
   - Menus, popovers, dialogs, hovercards, and tooltips render above page content to avoid clipping.
 - Access & Security
-  - Debug and infrastructure checks now require superadmin privileges with clear errors when access is denied.
+  - Debug and infrastructure checks require superadmin privileges with clear errors when access is denied.
 - Spaces & Storage
-  - Attaching and detaching spaces to instances is transactional with rollback and error logging for greater reliability, and default storage creation on attach is handled as part of the flow.
+  - Attaching and detaching spaces to instances is more reliable, and default storage is created automatically during attach.
 - API & Errors
-  - API errors surface clearer messages and preserve upstream headers when appropriate for more actionable responses.
+  - API errors show clearer messages and preserve upstream headers when appropriate for more actionable responses.
 
 ## 2025-10-31 (0.40.0)
 
