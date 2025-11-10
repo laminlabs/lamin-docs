@@ -1,3 +1,18 @@
+## 2025-11-06 (0.44.0)
+
+New Features
+
+- Storage & Artifacts
+  - The artifact picker now includes a filter sidebar to combine filters and narrow results more precisely.
+- Workflows & Launch
+  - Parameters that expect a folder path are rendered with a folder selector in function launch forms.
+
+Changes
+
+- Storage & Artifacts
+  - In folder selection mode, the external storage browser shows files as disabled instead of hiding them to make folder contents clearer.
+  - Object search in the external storage browser now matches folder names even when they end with a slash and continues to match labels or the last path segment.
+
 ## 2025-11-05 (0.43.0)
 
 Changes
