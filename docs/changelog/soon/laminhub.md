@@ -7,19 +7,17 @@ New Features
 
 Changes
 
+- Sheets & Records
+  - Data-entry pickers are more stable with clearer item details and a visible loading state, and the cursor indicates copy mode during sheet fill for clearer affordances.
+- Navigation & UI
+  - The top-level “Registries” navigation entry is renamed to “Modules” for clearer terminology.
+  - Menus, popovers, dialogs, hovercards, and tooltips render above page content to avoid clipping.
 - Access & Security
-  - Debug and infrastructure checks now require superadmin privileges, with clear errors when access is denied.
+  - Debug and infrastructure checks now require superadmin privileges with clear errors when access is denied.
 - Spaces & Storage
   - Attaching and detaching spaces to instances is transactional with rollback and error logging for greater reliability, and default storage creation on attach is handled as part of the flow.
 - API & Errors
   - API errors surface clearer messages and preserve upstream headers when appropriate for more actionable responses.
-- Navigation & UI
-  - The top-level “Registries” navigation entry is renamed to “Modules” for clearer terminology.
-  - Menus, popovers, dialogs, hovercards, and tooltips render via a body-level portal to avoid clipping and ensure overlays appear above page content.
-- Selectors & Forms
-  - Single-select pickers improve filtering stability, emit a loading state for better feedback, and display item details more clearly.
-- Styling & Polish
-  - Landing page cards and various components receive visual refinements, and the cursor indicates copy mode during sheet fill interactions for clearer affordances.
 
 ## 2025-10-31 (0.40.0)
 
