@@ -1,3 +1,21 @@
+## 2025-11-05 (0.43.0)
+
+Changes
+
+- Tables & Filtering
+  - Filter groups and icons in the sidebar are reordered and standardized (projects, schema, created by, labels, references).
+- Sheets
+  - After saving a sheet, group-by views default to a stable summary (count by creator on the main branch) for consistent results.
+- Navigation & UI
+  - Landing page cards were refreshed with clearer copy, new visuals, and a data lineage video for a more informative overview.
+
+Bug fixes
+
+- Tables & Filtering
+  - Advanced filtering no longer errors when filter groups are initially empty and reliably updates as you change operators and values.
+  - Sidebar faceted filters render correctly even when some active groups lack a selected field, avoiding intermittent crashes.
+  - “Show all” no longer gets written to the URL on initial load, and non-filter flags are preserved when filters sync in advanced mode.
+
 ## 2025-11-04 (0.41.0)
 
 New Features
