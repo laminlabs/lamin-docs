@@ -13,6 +13,64 @@ Changes
   - In folder selection mode, the external storage browser shows files as disabled instead of hiding them to make folder contents clearer.
   - Object search in the external storage browser now matches folder names even when they end with a slash and continues to match labels or the last path segment.
 
+## 2025-11-05 (0.43.0)
+
+Changes
+
+- Tables & Filtering
+  - Filter groups and icons in the sidebar are reordered and standardized (projects, schema, created by, labels, references).
+- Sheets
+  - After saving a sheet, group-by views default to a stable summary (count by creator on the main branch) for consistent results.
+- Navigation & UI
+  - Landing page cards were refreshed with clearer copy, new visuals, and a data lineage video for a more informative overview.
+
+Bug fixes
+
+- Tables & Filtering
+  - Advanced filtering no longer errors when filter groups are initially empty and reliably updates as you change operators and values.
+  - Sidebar faceted filters render correctly even when some active groups lack a selected field, avoiding intermittent crashes.
+  - “Show all” no longer gets written to the URL on initial load, and non-filter flags are preserved when filters sync in advanced mode.
+
+## 2025-11-04 (0.41.0)
+
+New Features
+
+- Spaces & Storage
+  - Attaching a space to an instance automatically creates its storage so you can start using it immediately.
+- Access & Secrets
+  - Admins can set up and manage database connection secrets directly in the Hub.
+- Tables & Filtering
+  - Artifact and collection tables get a new filter sidebar (with a mobile drawer) and compact grouped filters for faster narrowing.
+- Debug & Support
+  - A built-in check verifies S3 bucket access and admins can export diagnostic logs to speed up support.
+
+Changes
+
+- Access & Governance
+  - You can’t detach a space from an instance while storages for that space still exist to prevent orphaned data.
+- Records & Links
+  - Clicking a linked record opens its record page and type labels show the full hierarchy for clarity (for example, cat[Record[Parent[Child]]]).
+  - Project and reference cells have a refreshed design for clearer information and easier navigation.
+- Filters & Facets
+  - Faceted filters show intuitive icons and active counts, with primary filters inline and the rest organized into compact popovers.
+- Sheets & Editing
+  - Editing controls now consistently respect edit permissions and CSV import handles numbers and blanks more robustly.
+- UI & Navigation
+  - Hovering a label shows what created it, the header logo sizing is refined, and the bucket browser root is labeled “All” for a clearer overview.
+- Cloud Access
+  - Temporary cloud access requests return clearer error details when something goes wrong.
+- Performance & Reliability
+  - User lookups and updates in instances are more reliable to reduce edge-case failures.
+
+Bug fixes
+
+- Filters & Tables
+  - Toggling label badges in collection views updates the correct filter state so filters apply as expected.
+- Popovers & Tooltips
+  - Filter popovers and tooltips no longer get clipped inside tables and dialogs.
+- Visualization
+  - The Vitessce viewer shows a helpful error message when initialization fails.
+
 ## 2025-10-31 (0.40.0)
 
 New Features
