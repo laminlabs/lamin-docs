@@ -3,10 +3,8 @@
 New Features
 
 - Sheets & Records
-  - Keyboard navigation in sheets enables faster cell-to-cell editing without leaving the keyboard.
+  - Keyboard navigation in sheets enables faster cell-to-cell editing.
   - Auto-fill allows quickly replicating values or patterns across cells during data entry.
-- Diagnostics & Observability
-  - A superadmin-only diagnostic assembles recent API and available UI logs and returns an automated analysis to accelerate troubleshooting.
 
 Changes
 
@@ -14,13 +12,116 @@ Changes
   - Data-entry pickers are more stable with clearer item details and a visible loading state, and the cursor indicates copy mode during sheet fill for clearer affordances.
 - Navigation & UI
   - The top-level “Registries” navigation entry is renamed to “Modules” for clearer terminology.
-  - Menus, popovers, dialogs, hovercards, and tooltips render above page content to avoid clipping.
 - Access & Security
   - Debug and infrastructure checks require superadmin privileges with clear errors when access is denied.
 - Spaces & Storage
   - Attaching and detaching spaces to instances is more reliable, and default storage is created automatically during attach.
 - API & Errors
   - API errors show clearer messages and preserve upstream headers when appropriate for more actionable responses.
+
+Bug fixes
+
+- Menus, popovers, dialogs, hovercards, and tooltips render above page content to avoid clipping.
+
+## 2025-11-07 (0.45.0)
+
+New Features
+
+- Storage & Artifacts
+  - Upload files directly from the artifact picker in the bucket browser, with allowed file-type hints, the uploaded artifact auto-selected, and the picker closing on success.
+
+Changes
+
+- Sheets
+  - Markdown editing is disabled by default in embedded contexts and remains available in full-page edit mode, and the sheet editor dialog now scrolls for large content and includes accessibility improvements.
+- Search & Filters
+  - Single-select fields use consistent free-text search instead of field-specific filtering for more predictable results.
+- Features & Navigation
+  - Links generated from feature types route correctly to Features, ULabels, or namespaced registries and tolerate extra whitespace in type names.
+- Errors & Routing
+  - Record detail pages return clearer 404 errors and preserve backend statuses, with specific messaging when short-name slugs do not resolve.
+
+Bug fixes
+
+- DTypes & Parsing
+  - Registry union expressions parse correctly even when there is whitespace around the pipe character.
+- Detail Views
+  - ULabel pages avoid requesting irrelevant content so the view loads reliably.
+- Schemas
+  - The coerce-dtype attribute displays correctly on the schema view.
+
+## 2025-11-06 (0.44.0)
+
+New Features
+
+- Storage & Artifacts
+  - The artifact picker now includes a filter sidebar to combine filters and narrow results more precisely.
+- Workflows & Launch
+  - Parameters that expect a folder path are rendered with a folder selector in function launch forms.
+
+Changes
+
+- Storage & Artifacts
+  - In folder selection mode, the external storage browser shows files as disabled instead of hiding them to make folder contents clearer.
+  - Object search in the external storage browser now matches folder names even when they end with a slash and continues to match labels or the last path segment.
+
+## 2025-11-05 (0.43.0)
+
+Changes
+
+- Tables & Filtering
+  - Filter groups and icons in the sidebar are reordered and standardized (projects, schema, created by, labels, references).
+- Sheets
+  - After saving a sheet, group-by views default to a stable summary (count by creator on the main branch) for consistent results.
+- Navigation & UI
+  - Landing page cards were refreshed with clearer copy, new visuals, and a data lineage video for a more informative overview.
+
+Bug fixes
+
+- Tables & Filtering
+  - Advanced filtering no longer errors when filter groups are initially empty and reliably updates as you change operators and values.
+  - Sidebar faceted filters render correctly even when some active groups lack a selected field, avoiding intermittent crashes.
+  - “Show all” no longer gets written to the URL on initial load, and non-filter flags are preserved when filters sync in advanced mode.
+
+## 2025-11-04 (0.41.0)
+
+New Features
+
+- Spaces & Storage
+  - Attaching a space to an instance automatically creates its storage so you can start using it immediately.
+- Access & Secrets
+  - Admins can set up and manage database connection secrets directly in the Hub.
+- Tables & Filtering
+  - Artifact and collection tables get a new filter sidebar (with a mobile drawer) and compact grouped filters for faster narrowing.
+- Debug & Support
+  - A built-in check verifies S3 bucket access and admins can export diagnostic logs to speed up support.
+
+Changes
+
+- Access & Governance
+  - You can’t detach a space from an instance while storages for that space still exist to prevent orphaned data.
+- Records & Links
+  - Clicking a linked record opens its record page and type labels show the full hierarchy for clarity (for example, cat[Record[Parent[Child]]]).
+  - Project and reference cells have a refreshed design for clearer information and easier navigation.
+- Filters & Facets
+  - Faceted filters show intuitive icons and active counts, with primary filters inline and the rest organized into compact popovers.
+- Sheets & Editing
+  - Editing controls now consistently respect edit permissions and CSV import handles numbers and blanks more robustly.
+- UI & Navigation
+  - Hovering a label shows what created it, the header logo sizing is refined, and the bucket browser root is labeled “All” for a clearer overview.
+- Cloud Access
+  - Temporary cloud access requests return clearer error details when something goes wrong.
+- Performance & Reliability
+  - User lookups and updates in instances are more reliable to reduce edge-case failures.
+
+Bug fixes
+
+- Filters & Tables
+  - Toggling label badges in collection views updates the correct filter state so filters apply as expected.
+- Popovers & Tooltips
+  - Filter popovers and tooltips no longer get clipped inside tables and dialogs.
+- Visualization
+  - The Vitessce viewer shows a helpful error message when initialization fails.
 
 ## 2025-10-31 (0.40.0)
 
