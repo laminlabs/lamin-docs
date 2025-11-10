@@ -1,3 +1,30 @@
+## 2025-11-07 (0.45.0)
+
+New Features
+
+- Storage & Artifacts
+  - Upload files directly from the artifact picker in the bucket browser, with allowed file-type hints, the uploaded artifact auto-selected, and the picker closing on success.
+
+Changes
+
+- Sheets
+  - Markdown editing is disabled by default in embedded contexts and remains available in full-page edit mode, and the sheet editor dialog now scrolls for large content and includes accessibility improvements.
+- Search & Filters
+  - Single-select fields use consistent free-text search instead of field-specific filtering for more predictable results.
+- Features & Navigation
+  - Links generated from feature types route correctly to Features, ULabels, or namespaced registries and tolerate extra whitespace in type names.
+- Errors & Routing
+  - Record detail pages return clearer 404 errors and preserve backend statuses, with specific messaging when short-name slugs do not resolve.
+
+Bug fixes
+
+- DTypes & Parsing
+  - Registry union expressions parse correctly even when there is whitespace around the pipe character.
+- Detail Views
+  - ULabel pages avoid requesting irrelevant content so the view loads reliably.
+- Schemas
+  - The coerce-dtype attribute displays correctly on the schema view.
+
 ## 2025-11-06 (0.44.0)
 
 New Features
