@@ -3,12 +3,7 @@
 Changes
 
 - Tables & Filtering
-  - Tables apply sensible defaults by showing only the main branch and latest versions out of the box while keeping the URL clean.
-  - Advanced filtering starts with no defaults and now preserves advanced/edit flags when syncing filter changes to the URL.
-  - Faceted sidebar shows badges for the active default filters and its Reset button compares against the actual defaults for a consistent experience.
-  - Filter groups and icons in the sidebar are reordered and standardized (projects, schema, created by, labels, references) for quicker recognition.
-- Transforms
-  - Transform lists include branch and latest-version filters by default to help you narrow results faster.
+  - Filter groups and icons in the sidebar are reordered and standardized (projects, schema, created by, labels, references).
 - Sheets
   - After saving a sheet, group-by views default to a stable summary (count by creator on the main branch) for consistent results.
 - Navigation & UI
