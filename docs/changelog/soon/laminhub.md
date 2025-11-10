@@ -1,3 +1,28 @@
+## 2025-11-10 (0.46.0)
+
+New Features
+
+- Sheets & Records
+  - Keyboard navigation in sheets enables faster cell-to-cell editing.
+  - Auto-fill allows quickly replicating values or patterns across cells during data entry.
+
+Changes
+
+- Sheets & Records
+  - Data-entry pickers are more stable with clearer item details and a visible loading state, and the cursor indicates copy mode during sheet fill for clearer affordances.
+- Navigation & UI
+  - The top-level “Registries” navigation entry is renamed to “Modules” for clearer terminology.
+- Access & Security
+  - Debug and infrastructure checks require superadmin privileges with clear errors when access is denied.
+- Spaces & Storage
+  - Attaching and detaching spaces to instances is more reliable, and default storage is created automatically during attach.
+- API & Errors
+  - API errors show clearer messages and preserve upstream headers when appropriate for more actionable responses.
+
+Bug fixes
+
+- Menus, popovers, dialogs, hovercards, and tooltips render above page content to avoid clipping.
+
 ## 2025-11-07 (0.45.0)
 
 New Features
