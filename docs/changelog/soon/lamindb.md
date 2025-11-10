@@ -1,3 +1,4 @@
+- ♻️ Re-organize `.features.add_values()` and `.features.remove_values()` tests and make consistent across `Artifact` & `Record` [PR](https://github.com/laminlabs/lamindb/pull/3269) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Properly deprecate `itype='Composite'` [PR](https://github.com/laminlabs/lamindb/pull/3268) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable passing a list of records to `record.features.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3266) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Rework _query_relatives [PR](https://github.com/laminlabs/lamindb/pull/3265) [@Koncopd](https://github.com/Koncopd)
