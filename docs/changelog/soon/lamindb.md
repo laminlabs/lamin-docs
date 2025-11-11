@@ -1,3 +1,4 @@
+- ♻️ Refactor artifact test suite [PR](https://github.com/laminlabs/lamindb/pull/3274) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Log when loading staging env [PR](https://github.com/laminlabs/lamindb-setup/pull/1193) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ No longer upper-bound pyarrow by `22.0` [PR](https://github.com/laminlabs/lamindb/pull/3272) [@Zethson](https://github.com/Zethson)
 - ♻️ Refactor and simplify `FeatureManager.remove_values()` [PR](https://github.com/laminlabs/lamindb/pull/3271) [@falexwolf](https://github.com/falexwolf)
