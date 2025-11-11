@@ -1,1 +1,2 @@
+- ♻️ Passing kwargs to from_source no longer recognize synonyms [PR](https://github.com/laminlabs/bionty/pull/331) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Simplify API reference [PR](https://github.com/laminlabs/bionty/pull/329) [@falexwolf](https://github.com/falexwolf)
