@@ -1,3 +1,4 @@
+- ♻️ Passing kwargs to from_source no longer recognize synonyms [PR](https://github.com/laminlabs/lamindb/pull/3273) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor artifact test suite [PR](https://github.com/laminlabs/lamindb/pull/3274) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Log when loading staging env [PR](https://github.com/laminlabs/lamindb-setup/pull/1193) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ No longer upper-bound pyarrow by `22.0` [PR](https://github.com/laminlabs/lamindb/pull/3272) [@Zethson](https://github.com/Zethson)
