@@ -1,3 +1,4 @@
+- ✨ Introduce `artifact.features.set_values()` [PR](https://github.com/laminlabs/lamindb/pull/3276) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Speedup IO of DB import/export [PR](https://github.com/laminlabs/lamindb-setup/pull/1192) [@Zethson](https://github.com/Zethson)
 - ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/3275) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Passing kwargs to from_source no longer recognize synonyms [PR](https://github.com/laminlabs/lamindb/pull/3273) [@sunnyosun](https://github.com/sunnyosun)
