@@ -1,3 +1,32 @@
+## 2025-11-11 (0.47.0)
+
+New Features
+
+- Tables & Sorting
+  - Artifact lists now include a Sort menu with sensible defaults and options derived from the schema.
+- Records & Sheets
+  - A new “Create child” menu in the sidebar lets you create either a Sheet (with a required schema and feature preview) or a Record type (without a schema).
+
+Changes
+
+- Error Handling & Resilience
+  - A consistent in-app error boundary is used across artifact detail pages, feature lists, projects, references, run lists, custom tables, and launch forms to show clearer, friendlier error messages.
+- Tables & Query
+  - Tables delay querying until default filters are initialized to avoid premature loads, ensuring the latest filter is applied before the first query.
+- Launch & Metadata
+  - Run-metadata selection is more predictable: choosing an existing row is not overridden by inline edits, switching sheets resets inline metadata state, and saving updates clear the selection if the row no longer exists.
+- Navigation & UI
+  - The sidebar’s “Create child” action uses a dropdown for Sheet vs. Type, keeps the trigger visible while open, and maintains highlight styling; registry and page descriptions were clarified for brevity.
+- Storage & Artifacts
+  - Managed storage listing now requires an active session and loads from the instance API for more accurate results.
+
+Bug fixes
+
+- Storage & Artifacts
+  - Fixed storage path concatenation to prevent broken or redirected links when browsing buckets.
+- Sheets
+  - Prevented intermittent errors when editing categorical cells without complete metadata.
+
 ## 2025-11-10 (0.46.0)
 
 New Features
