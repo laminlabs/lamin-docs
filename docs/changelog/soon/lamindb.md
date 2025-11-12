@@ -1,3 +1,4 @@
+- ✨ Make it easy to re-run scripts by tracking `cli_args` [PR](https://github.com/laminlabs/lamindb/pull/3278) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish `transform` and `run` examples in the readme [PR](https://github.com/laminlabs/lamindb/pull/3279) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate the `data` argument of `Artifact` in favor of `path` and polish class docstrings [PR](https://github.com/laminlabs/lamindb/pull/3277) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `artifact.features.set_values()` [PR](https://github.com/laminlabs/lamindb/pull/3276) [@falexwolf](https://github.com/falexwolf)
