@@ -55,7 +55,7 @@ README1_REPLACE = """```
 ```{dropdown} Highlights"""
 
 README2_ORIG = """
-If you want a GUI, you can connect your LaminDB instance to LaminHub and close the drylab-wetlab feedback loop: [lamin.ai](https://lamin.ai).
+If you want a GUI: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 """
 
 README2_REPLACE = """```
