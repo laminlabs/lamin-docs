@@ -1,3 +1,4 @@
+- 🔧 Fix ignoring proxy settings from env variables [PR](https://github.com/laminlabs/lamindb-setup/pull/1197) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add clone utilities [PR](https://github.com/laminlabs/lamindb-setup/pull/1183) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix no mimetype for url in `get_stat_file_cloud` [PR](https://github.com/laminlabs/lamindb-setup/pull/1196) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix SQLite PK and index constraints for append mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1195) [@Zethson](https://github.com/Zethson)
