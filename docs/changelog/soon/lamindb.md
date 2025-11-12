@@ -1,2 +1,3 @@
+- 🐛 Fix SQLite PK and index constraints for append mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1195) [@Zethson](https://github.com/Zethson)
 - ⚡ Speedup IO of DB import/export [PR](https://github.com/laminlabs/lamindb-setup/pull/1192) [@Zethson](https://github.com/Zethson)
 - ✨ Add database export to & from parquet [PR](https://github.com/laminlabs/lamindb-setup/pull/1188) [@Zethson](https://github.com/Zethson)
