@@ -1,3 +1,4 @@
+- ⬇️ Pin pyarrow [PR](https://github.com/laminlabs/lamin-usecases/pull/217) [@Zethson](https://github.com/Zethson)
 - ⬇️ Pin pyarrow for spatial imaging  [PR](https://github.com/laminlabs/lamin-usecases/pull/216) [@Zethson](https://github.com/Zethson)
 - 💚 Fix test environments 2 [PR](https://github.com/laminlabs/lamin-usecases/pull/215) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix test environments [PR](https://github.com/laminlabs/lamin-usecases/pull/214) [@Koncopd](https://github.com/Koncopd)
