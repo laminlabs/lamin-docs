@@ -1,0 +1,1 @@
+- 🗃️ Create a composite index for `artifact`, `geneticperturbation` fileds in `ArtifactGeneticPerturbation` [PR](https://github.com/laminlabs/wetlab/pull/125) [@Koncopd](https://github.com/Koncopd)
