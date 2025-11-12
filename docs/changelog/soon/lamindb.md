@@ -1,3 +1,4 @@
+- 🐛 Fix no mimetype for url in `get_stat_file_cloud` [PR](https://github.com/laminlabs/lamindb-setup/pull/1196) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix SQLite PK and index constraints for append mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1195) [@Zethson](https://github.com/Zethson)
 - ⚡ Speedup IO of DB import/export [PR](https://github.com/laminlabs/lamindb-setup/pull/1192) [@Zethson](https://github.com/Zethson)
 - ✨ Add database export to & from parquet [PR](https://github.com/laminlabs/lamindb-setup/pull/1188) [@Zethson](https://github.com/Zethson)
