@@ -1,3 +1,4 @@
+- ✨ Get it to work [PR](https://github.com/laminlabs/laminhub-public/pull/70) [@falexwolf](https://github.com/falexwolf)
 - 💄 Show `n_observations` and `hash` [PR](https://github.com/laminlabs/laminhub-public/pull/42) [@sunnyosun](https://github.com/sunnyosun)
 
 ## 2025-11-11 (0.47.0)
