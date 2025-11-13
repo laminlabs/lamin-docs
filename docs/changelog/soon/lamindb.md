@@ -1,3 +1,4 @@
+- 🐛 Fix `Artifact` from `http` URL if leveraging virtual keys [PR](https://github.com/laminlabs/lamindb/pull/3287) [@Koncopd](https://github.com/Koncopd)
 - 📝 Clarify logging and language around writing/managing instance [PR](https://github.com/laminlabs/lamindb/pull/3286) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Log if switching to read-only storage location of another instance also when using `ln.settings.storage` [PR](https://github.com/laminlabs/lamindb/pull/3284) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Factor out `convert_root_path_to_str()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1198) [@falexwolf](https://github.com/falexwolf)
