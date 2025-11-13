@@ -1,3 +1,4 @@
+- ✅ Minimal test for proxy settings via env variables [PR](https://github.com/laminlabs/lamindb-setup/pull/1199) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Do not log CLI args in notebooks [PR](https://github.com/laminlabs/lamindb/pull/3283) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Fix ignoring proxy settings from env variables [PR](https://github.com/laminlabs/lamindb-setup/pull/1197) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add clone utilities [PR](https://github.com/laminlabs/lamindb-setup/pull/1183) [@Zethson](https://github.com/Zethson)
