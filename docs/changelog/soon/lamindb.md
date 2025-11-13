@@ -1,3 +1,4 @@
+- 🚸 Allow permanent deletion from CLI [PR](https://github.com/laminlabs/lamin-cli/pull/166) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add clone utilities [PR](https://github.com/laminlabs/lamindb-setup/pull/1183) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix SQLite PK and index constraints for append mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1195) [@Zethson](https://github.com/Zethson)
 - ⚡ Speedup IO of DB import/export [PR](https://github.com/laminlabs/lamindb-setup/pull/1192) [@Zethson](https://github.com/Zethson)
