@@ -1,3 +1,4 @@
+- 🚸 Log if switching to read-only storage location of another instance also when using `ln.settings.storage` [PR](https://github.com/laminlabs/lamindb/pull/3284) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Factor out `convert_root_path_to_str()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1198) [@falexwolf](https://github.com/falexwolf)
 - ✅ Minimal test for proxy settings via env variables [PR](https://github.com/laminlabs/lamindb-setup/pull/1199) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Do not log CLI args in notebooks [PR](https://github.com/laminlabs/lamindb/pull/3283) [@falexwolf](https://github.com/falexwolf)
