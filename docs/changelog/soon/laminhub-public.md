@@ -1,3 +1,4 @@
+- 💄 Add display of `date` and `datetime` values in sheets [PR](https://github.com/laminlabs/laminhub-public/pull/83) [@falexwolf](https://github.com/falexwolf)
 - 🐛 In lineage viewer, fix missing display of downstream lineage for collections [PR](https://github.com/laminlabs/laminhub-public/pull/81) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix record labels not showing on artifact detail page [PR](https://github.com/laminlabs/laminhub-public/pull/80) [@falexwolf](https://github.com/falexwolf)
 - 💄 Show Records at the top of the filtering sidebar for Artifact [PR](https://github.com/laminlabs/laminhub-public/pull/78) [@falexwolf](https://github.com/falexwolf)
