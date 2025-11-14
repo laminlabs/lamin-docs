@@ -1,3 +1,4 @@
+- 🐛 Fix re-validating an existing artifact with an external schema and external features [PR](https://github.com/laminlabs/lamindb/pull/3288) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow permanent deletion from CLI [PR](https://github.com/laminlabs/lamin-cli/pull/166) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add clone utilities [PR](https://github.com/laminlabs/lamindb-setup/pull/1183) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix SQLite PK and index constraints for append mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1195) [@Zethson](https://github.com/Zethson)
