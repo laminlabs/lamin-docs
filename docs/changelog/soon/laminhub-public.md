@@ -1,1 +1,2 @@
+- 🐛 Fix record labels not showing on artifact detail page [PR](https://github.com/laminlabs/laminhub-public/pull/80) [@falexwolf](https://github.com/falexwolf)
 - 💄 Show Records at the top of the filtering sidebar for Artifact [PR](https://github.com/laminlabs/laminhub-public/pull/78) [@falexwolf](https://github.com/falexwolf)
