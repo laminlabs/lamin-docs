@@ -1,3 +1,4 @@
+- 💄 Make it easy to create a single record [PR](https://github.com/laminlabs/laminhub-public/pull/86) [@falexwolf](https://github.com/falexwolf)
 - 💄 Consistently display records under root vs. sub types & exclude types from sheets [PR](https://github.com/laminlabs/laminhub-public/pull/84) [@falexwolf](https://github.com/falexwolf)
 - 💄 Add display of `date` and `datetime` values in sheets [PR](https://github.com/laminlabs/laminhub-public/pull/83) [@falexwolf](https://github.com/falexwolf)
 - 🐛 In lineage viewer, fix missing display of downstream lineage for collections [PR](https://github.com/laminlabs/laminhub-public/pull/81) [@falexwolf](https://github.com/falexwolf)
