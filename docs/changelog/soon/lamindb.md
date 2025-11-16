@@ -1,3 +1,4 @@
+- 🗃️ Add multiple fields to `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3294) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `ArtifactArtifact` and `ArtifactRun` to enable `dtype=Artifact` and `dtype=Run` in artifact relationships [PR](https://github.com/laminlabs/lamindb/pull/3292) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Suggest using `.from_dataframe()` when passing a `DataFrame`-like path to `Artifact()` [PR](https://github.com/laminlabs/lamindb/pull/3290) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow permanent deletion from CLI [PR](https://github.com/laminlabs/lamin-cli/pull/166) [@falexwolf](https://github.com/falexwolf)
