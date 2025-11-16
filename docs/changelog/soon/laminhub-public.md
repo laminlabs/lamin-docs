@@ -1,3 +1,4 @@
+- 💄 Enhance color for `Record` icon [PR](https://github.com/laminlabs/laminhub-public/pull/89) [@falexwolf](https://github.com/falexwolf)
 - ✨ Auto-select unique transforms for SheetExecute [PR](https://github.com/laminlabs/laminhub-public/pull/88) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Create a tooltip to help orient the user in the "Create record" dialogue [PR](https://github.com/laminlabs/laminhub-public/pull/87) [@falexwolf](https://github.com/falexwolf)
 - 💄 Make it easy to create a single record [PR](https://github.com/laminlabs/laminhub-public/pull/86) [@falexwolf](https://github.com/falexwolf)
