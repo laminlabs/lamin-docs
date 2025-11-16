@@ -1,3 +1,4 @@
+- :sparkles: Inline form for run metadata [PR](https://github.com/laminlabs/laminhub-public/pull/104) [@chaichontat](https://github.com/chaichontat)
 - :bug: Ensure a new run is visible right after launching it [PR](https://github.com/laminlabs/laminhub-public/pull/103) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix faceted branch filtering [PR](https://github.com/laminlabs/laminhub-public/pull/102) [@chaichontat](https://github.com/chaichontat)
 - :bug: Prevent a selector from creating new entities through <Enter> [PR](https://github.com/laminlabs/laminhub-public/pull/101) [@chaichontat](https://github.com/chaichontat)
