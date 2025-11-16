@@ -1,3 +1,4 @@
+- 🚸 Auto-append run `uid` to Nextflow launch output dir [PR](https://github.com/laminlabs/laminhub-public/pull/99) [@chaichontat](https://github.com/chaichontat)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/98) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/97) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/96) [@sunnyosun](https://github.com/sunnyosun)
