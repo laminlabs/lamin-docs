@@ -1,3 +1,40 @@
+## 2025-11-16 (0.48.0)
+
+New Features
+
+- Sheets & Editor
+  - Date and datetime fields can be edited directly in Sheets using appropriate inputs, with values normalized correctly on save.
+- Governance & Access
+  - Organizations can restrict membership by email domain and optionally require SSO when domain rules are enabled.
+- Operations & Health
+  - Automated instance diagnostics check database connectivity and table ownership across instances to surface issues proactively.
+
+Changes
+
+- Filters & Query
+  - Queries against branch-aware tables now default to the main branch unless a different branch is explicitly filtered.
+- API & Settings
+  - Instance settings responses include the public visibility flag to reflect whether an instance is publicly accessible.
+- Admin & Infrastructure
+  - Registering a database server is now scoped to an organization for clearer ownership and permission control.
+- Performance & Stability
+  - Backend caching for instances, database tokens, and collaborator or member lookups was redesigned to reduce duplicate work and improve response times.
+- Workflows & Launch
+  - The transform view auto-collapses when navigating to Launch and the launch form clarifies default token usage with a badge and refined labels.
+- UI & UX
+  - Filter UI uses clearer labels (for example, “Object type”), updated icons, and subtle tooltip styling for improved readability.
+
+Bug fixes
+
+- Group-by & Analytics
+  - Group-by back-links prefer one-to-many relations when multiple matches exist to produce correct counts.
+- Access & Security
+  - Cloud log investigation uses the deployment region rather than a fixed default to fetch the correct logs.
+- Navigation & Query
+  - Query parameter decoding handles boolean, null, and undefined values reliably to avoid mis-parsing.
+- Stability
+  - Client-side Sentry initialization avoids undefined cookie values and uses safer error typing.
+
 - ✨ Get it to work [PR](https://github.com/laminlabs/laminhub-public/pull/70) [@falexwolf](https://github.com/falexwolf)
 - 💄 Show `n_observations` and `hash` [PR](https://github.com/laminlabs/laminhub-public/pull/42) [@sunnyosun](https://github.com/sunnyosun)
 
