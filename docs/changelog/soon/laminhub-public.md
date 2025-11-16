@@ -1,3 +1,4 @@
+- ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/93) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/92) [@falexwolf](https://github.com/falexwolf)
 - 💄 Enhance color for `Record` icon [PR](https://github.com/laminlabs/laminhub-public/pull/89) [@falexwolf](https://github.com/falexwolf)
 - ✨ Auto-select unique transforms for SheetExecute [PR](https://github.com/laminlabs/laminhub-public/pull/88) [@falexwolf](https://github.com/falexwolf)
