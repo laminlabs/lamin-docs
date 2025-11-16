@@ -1,3 +1,4 @@
+- :bug: Prevent a selector from creating new entities through <Enter> [PR](https://github.com/laminlabs/laminhub-public/pull/101) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix direct links to individual ulabels [PR](https://github.com/laminlabs/laminhub-public/pull/100) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Auto-append run `uid` to Nextflow launch output dir [PR](https://github.com/laminlabs/laminhub-public/pull/99) [@chaichontat](https://github.com/chaichontat)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/98) [@sunnyosun](https://github.com/sunnyosun)
