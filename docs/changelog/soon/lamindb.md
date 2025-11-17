@@ -1,3 +1,4 @@
+- 🐛 Fix ArrowTypeError on export with NULL values in object columns [PR](https://github.com/laminlabs/lamindb-setup/pull/1203) [@Zethson](https://github.com/Zethson)
 - 🦺 Use one more suffix for `.tar.gz` if exists [PR](https://github.com/laminlabs/lamindb-setup/pull/1202) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix exporting and importing FeatureValue and link tables [PR](https://github.com/laminlabs/lamindb-setup/pull/1200) [@Zethson](https://github.com/Zethson)
 - ✅ Fix schema check [PR](https://github.com/laminlabs/lamindb-setup/pull/1201) [@Koncopd](https://github.com/Koncopd)
