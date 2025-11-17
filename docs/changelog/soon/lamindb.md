@@ -1,3 +1,4 @@
+- 🔊 Give a hint on re-login while connected to an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1194) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Add multiple fields to `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3294) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `ArtifactArtifact` and `ArtifactRun` to enable `dtype=Artifact` and `dtype=Run` in artifact relationships [PR](https://github.com/laminlabs/lamindb/pull/3292) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Suggest using `.from_dataframe()` when passing a `DataFrame`-like path to `Artifact()` [PR](https://github.com/laminlabs/lamindb/pull/3290) [@falexwolf](https://github.com/falexwolf)
