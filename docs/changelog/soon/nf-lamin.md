@@ -1,3 +1,4 @@
+- Implement call for fetching storage credentials [PR](https://github.com/laminlabs/nf-lamin/pull/106) [@rcannood](https://github.com/rcannood)
 - :bug: Fix provider in build config [PR](https://github.com/laminlabs/nf-lamin/pull/98) [@rcannood](https://github.com/rcannood)
 - :bug: Fix CI tests after Nextflow and Python releases [PR](https://github.com/laminlabs/nf-lamin/pull/97) [@rcannood](https://github.com/rcannood)
 - ✨ Link Nextflow report to run [PR](https://github.com/laminlabs/nf-lamin/pull/93) [@rcannood](https://github.com/rcannood)
