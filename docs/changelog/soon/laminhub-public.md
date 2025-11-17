@@ -1,3 +1,4 @@
+- 🚸 Consolidate create new/select existing sheet logic [PR](https://github.com/laminlabs/laminhub-public/pull/106) [@chaichontat](https://github.com/chaichontat)
 - :bug: Add autoscroll to fill handler [PR](https://github.com/laminlabs/laminhub-public/pull/105) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Inline form for run metadata [PR](https://github.com/laminlabs/laminhub-public/pull/104) [@chaichontat](https://github.com/chaichontat)
 - :bug: Ensure a new run is visible right after launching it [PR](https://github.com/laminlabs/laminhub-public/pull/103) [@chaichontat](https://github.com/chaichontat)
