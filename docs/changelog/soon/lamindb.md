@@ -1,3 +1,4 @@
+- 🐛 Fix exporting and importing FeatureValue and link tables [PR](https://github.com/laminlabs/lamindb-setup/pull/1200) [@Zethson](https://github.com/Zethson)
 - ✅ Fix schema check [PR](https://github.com/laminlabs/lamindb-setup/pull/1201) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Give a hint on re-login while connected to an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1194) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Add multiple fields to `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3294) [@falexwolf](https://github.com/falexwolf)
