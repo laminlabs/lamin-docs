@@ -1,3 +1,4 @@
+- 🐛 Fix boolean and empty string conversion for clones [PR](https://github.com/laminlabs/lamindb-setup/pull/1204) [@Zethson](https://github.com/Zethson)
 - ✨ Support .tar.gz [PR](https://github.com/laminlabs/lamindb/pull/3289) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix ArrowTypeError on export with NULL values in object columns [PR](https://github.com/laminlabs/lamindb-setup/pull/1203) [@Zethson](https://github.com/Zethson)
 - 🦺 Use one more suffix for `.tar.gz` if exists [PR](https://github.com/laminlabs/lamindb-setup/pull/1202) [@Koncopd](https://github.com/Koncopd)
