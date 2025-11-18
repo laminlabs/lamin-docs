@@ -1,3 +1,4 @@
+- ♻️ Be more strict about constraining types in `HasType` [PR](https://github.com/laminlabs/lamindb/pull/3295) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Polish test mocks [PR](https://github.com/laminlabs/lamindb-setup/pull/1207) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix handling of postgres numerics when importing [PR](https://github.com/laminlabs/lamindb-setup/pull/1205) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix boolean and empty string conversion for clones [PR](https://github.com/laminlabs/lamindb-setup/pull/1204) [@Zethson](https://github.com/Zethson)
