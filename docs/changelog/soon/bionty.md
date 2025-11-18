@@ -1,0 +1,1 @@
+- 🎨 Fix deprecationwarning [PR](https://github.com/laminlabs/bionty/pull/334) [@Zethson](https://github.com/Zethson)
