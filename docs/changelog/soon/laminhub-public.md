@@ -1,3 +1,4 @@
+- :bug: Fix editing context in quick mode on Launch page [PR](https://github.com/laminlabs/laminhub-public/pull/110) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Implement collapsible sections for launch page [PR](https://github.com/laminlabs/laminhub-public/pull/109) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Select artifacts in transform execute [PR](https://github.com/laminlabs/laminhub-public/pull/108) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Better annotation definition in the schema page [PR](https://github.com/laminlabs/laminhub-public/pull/107) [@chaichontat](https://github.com/chaichontat)
