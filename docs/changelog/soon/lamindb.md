@@ -1,3 +1,4 @@
+- 💚 Update transfer tests [PR](https://github.com/laminlabs/lamindb/pull/3299) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix postgres timeouts for large tables & mixed values [PR](https://github.com/laminlabs/lamindb-setup/pull/1208) [@Zethson](https://github.com/Zethson)
 - ♻️ Be more strict about constraining types in `HasType` [PR](https://github.com/laminlabs/lamindb/pull/3295) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Polish test mocks [PR](https://github.com/laminlabs/lamindb-setup/pull/1207) [@Zethson](https://github.com/Zethson)
