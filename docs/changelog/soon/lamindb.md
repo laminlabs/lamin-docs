@@ -1,3 +1,4 @@
+- ♻️ Honor `dev-dir` in `lamin save`, refactor module inference in `ln.track()` [PR](https://github.com/laminlabs/lamindb/pull/3300) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Honor `dev-dir` in `lamin save` [PR](https://github.com/laminlabs/lamin-cli/pull/167) [@falexwolf](https://github.com/falexwolf)
 - 🚸 When deleting a record type, delete its descendants, too [PR](https://github.com/laminlabs/lamindb/pull/3297) [@falexwolf](https://github.com/falexwolf)
 - 💚 Update transfer tests [PR](https://github.com/laminlabs/lamindb/pull/3299) [@sunnyosun](https://github.com/sunnyosun)
