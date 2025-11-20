@@ -1,3 +1,4 @@
+- 🚸 Update type requirement to use an artifact type for execution [PR](https://github.com/laminlabs/laminhub-public/pull/111) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix editing context in quick mode on Launch page [PR](https://github.com/laminlabs/laminhub-public/pull/110) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Implement collapsible sections for launch page [PR](https://github.com/laminlabs/laminhub-public/pull/109) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Select artifacts in transform execute [PR](https://github.com/laminlabs/laminhub-public/pull/108) [@chaichontat](https://github.com/chaichontat)
