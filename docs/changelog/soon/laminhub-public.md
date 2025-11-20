@@ -1,3 +1,4 @@
+- 🚸 Hide entrypoint selection if there is only a single one, rename "function" to "entrypoint" in transform launch [PR](https://github.com/laminlabs/laminhub-public/pull/116) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Exclude deleted record types when determining dtypes [PR](https://github.com/laminlabs/laminhub-public/pull/115) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/114) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/113) [@sunnyosun](https://github.com/sunnyosun)
