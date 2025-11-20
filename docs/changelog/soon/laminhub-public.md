@@ -1,3 +1,4 @@
+- ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/113) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test change [PR](https://github.com/laminlabs/laminhub-public/pull/112) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Update type requirement to use an artifact type for execution [PR](https://github.com/laminlabs/laminhub-public/pull/111) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix editing context in quick mode on Launch page [PR](https://github.com/laminlabs/laminhub-public/pull/110) [@chaichontat](https://github.com/chaichontat)
