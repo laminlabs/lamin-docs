@@ -1,3 +1,4 @@
+- 🗃️ Add `RecordCollection` and `CollectionRecord` [PR](https://github.com/laminlabs/lamindb/pull/3305) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable `skip_hash_lookup` in transform [PR](https://github.com/laminlabs/lamindb/pull/3307) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix feature describe for wetlab.Compound [PR](https://github.com/laminlabs/lamindb/pull/3306) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Read-only queries of public instances through shadow SQLite clones [PR](https://github.com/laminlabs/lamindb/pull/3282) [@Zethson](https://github.com/Zethson)
