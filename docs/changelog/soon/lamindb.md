@@ -1,3 +1,4 @@
+- 🐛 Fix feature describe for wetlab.Compound [PR](https://github.com/laminlabs/lamindb/pull/3306) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Read-only queries of public instances through shadow SQLite clones [PR](https://github.com/laminlabs/lamindb/pull/3282) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix describe features for ArtifactArtifact [PR](https://github.com/laminlabs/lamindb/pull/3301) [@sunnyosun](https://github.com/sunnyosun)
 - ✨Allow skipping to mark the storage root when registering a storage [PR](https://github.com/laminlabs/lamindb/pull/3303) [@Koncopd](https://github.com/Koncopd)
