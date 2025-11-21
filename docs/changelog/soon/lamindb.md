@@ -1,3 +1,4 @@
+- ✨ Read-only queries of public instances through shadow SQLite clones [PR](https://github.com/laminlabs/lamindb/pull/3282) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix describe features for ArtifactArtifact [PR](https://github.com/laminlabs/lamindb/pull/3301) [@sunnyosun](https://github.com/sunnyosun)
 - ✨Allow skipping to mark the storage root when registering a storage [PR](https://github.com/laminlabs/lamindb/pull/3303) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Add `query_ulabels()`, `query_features()`, `query_schemas()`, etc. to all `HasType` registries [PR](https://github.com/laminlabs/lamindb/pull/3302) [@falexwolf](https://github.com/falexwolf)
