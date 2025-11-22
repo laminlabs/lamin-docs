@@ -1,3 +1,4 @@
+- 🚸 Make adding optional features convenient through `schema.add_optional_features()` [PR](https://github.com/laminlabs/lamindb/pull/3308) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `RecordCollection` and `CollectionRecord` [PR](https://github.com/laminlabs/lamindb/pull/3305) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable `skip_hash_lookup` in transform [PR](https://github.com/laminlabs/lamindb/pull/3307) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix feature describe for wetlab.Compound [PR](https://github.com/laminlabs/lamindb/pull/3306) [@sunnyosun](https://github.com/sunnyosun)
