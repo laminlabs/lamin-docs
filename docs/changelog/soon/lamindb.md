@@ -1,3 +1,4 @@
+- 💚 Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1213) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade `lamindb-setup` to prepare release [PR](https://github.com/laminlabs/lamindb/pull/3311) [@falexwolf](https://github.com/falexwolf)
 - ➕ Add `pgtrigger` [PR](https://github.com/laminlabs/lamindb-setup/pull/1212) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Include implicit link tables in schema [PR](https://github.com/laminlabs/lamindb-setup/pull/1191) [@fredericenard](https://github.com/fredericenard)
