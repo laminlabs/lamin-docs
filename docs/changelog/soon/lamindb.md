@@ -1,3 +1,4 @@
+- ♻️ Include implicit link tables in schema [PR](https://github.com/laminlabs/lamindb-setup/pull/1191) [@fredericenard](https://github.com/fredericenard)
 - 🚸 Propagate re-organization of record types to dtypes [PR](https://github.com/laminlabs/lamindb/pull/3309) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make adding optional features convenient through `schema.add_optional_features()` [PR](https://github.com/laminlabs/lamindb/pull/3308) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `RecordCollection` and `CollectionRecord` [PR](https://github.com/laminlabs/lamindb/pull/3305) [@falexwolf](https://github.com/falexwolf)
