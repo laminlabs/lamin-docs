@@ -1,3 +1,4 @@
+- 💄 Do not include `cat[` and `cat[Record[` in `dtype` display [PR](https://github.com/laminlabs/laminhub-public/pull/119) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make simple records clickable and add markdown page to record detailed view [PR](https://github.com/laminlabs/laminhub-public/pull/118) [@falexwolf](https://github.com/falexwolf)
 - 💄 Fix help message text color and alignment [PR](https://github.com/laminlabs/laminhub-public/pull/117) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Hide entrypoint selection if there is only a single one, rename "function" to "entrypoint" in transform launch [PR](https://github.com/laminlabs/laminhub-public/pull/116) [@falexwolf](https://github.com/falexwolf)
