@@ -70,7 +70,11 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 :::
 
-You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain."""
+:::{tip}
+
+You can copy this [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain.
+
+:::"""
 
 
 README3_ORIG = """
