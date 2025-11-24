@@ -1,3 +1,4 @@
+- ♻️ Migrate `scrna2` to schema-based curator and simplify heavily [PR](https://github.com/laminlabs/lamin-usecases/pull/222) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `.using()` to `.connect()` [PR](https://github.com/laminlabs/lamin-usecases/pull/221) [@falexwolf](https://github.com/falexwolf)
 - Fix pyarrow pin [PR](https://github.com/laminlabs/lamin-usecases/pull/220) [@Zethson](https://github.com/Zethson)
 - 📌Pin pyarrow to 0.21.0 [PR](https://github.com/laminlabs/lamin-usecases/pull/219) [@Zethson](https://github.com/Zethson)
