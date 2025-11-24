@@ -1,3 +1,4 @@
+- ✅ Test proxies and certificates with `mitmproxy` [PR](https://github.com/laminlabs/lamindb-setup/pull/1211) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add note on flushing [PR](https://github.com/laminlabs/lamindb-setup/pull/1210) [@Zethson](https://github.com/Zethson)
 - 👷 Also run core unit tests against an SQLite database [PR](https://github.com/laminlabs/lamindb/pull/3310) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1213) [@falexwolf](https://github.com/falexwolf)
