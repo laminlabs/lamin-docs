@@ -1,3 +1,4 @@
+- 🐛 Fix a bug where a changed set of valid features led to violating the per-`slot` unique constraint in `ArtifactSchema` rather than updating the existing inferred schema link [PR](https://github.com/laminlabs/lamindb/pull/3312) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test proxies and certificates with `mitmproxy` [PR](https://github.com/laminlabs/lamindb-setup/pull/1211) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add note on flushing [PR](https://github.com/laminlabs/lamindb-setup/pull/1210) [@Zethson](https://github.com/Zethson)
 - 👷 Also run core unit tests against an SQLite database [PR](https://github.com/laminlabs/lamindb/pull/3310) [@falexwolf](https://github.com/falexwolf)
