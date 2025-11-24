@@ -1,3 +1,4 @@
+- 📝 Add note on flushing [PR](https://github.com/laminlabs/lamindb-setup/pull/1210) [@Zethson](https://github.com/Zethson)
 - 👷 Also run core unit tests against an SQLite database [PR](https://github.com/laminlabs/lamindb/pull/3310) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1213) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade `lamindb-setup` to prepare release [PR](https://github.com/laminlabs/lamindb/pull/3311) [@falexwolf](https://github.com/falexwolf)
