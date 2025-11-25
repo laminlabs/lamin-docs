@@ -1,3 +1,4 @@
+- 🐛 `Artifact()` incorrectly returned latest version instead of the matching one when `hash` was found in version history and `key` matched both versions [PR](https://github.com/laminlabs/lamindb/pull/3317) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add `Sharing` section to README [PR](https://github.com/laminlabs/lamindb/pull/3316) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb/pull/3315) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/1215) [@Koncopd](https://github.com/Koncopd)
