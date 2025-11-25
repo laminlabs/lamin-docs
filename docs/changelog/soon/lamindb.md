@@ -1,3 +1,4 @@
+- ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb/pull/3315) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/1215) [@Koncopd](https://github.com/Koncopd)
 - 💄 Harmonize lineage graph display [PR](https://github.com/laminlabs/lamindb/pull/3313) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix a bug where a changed set of valid features led to violating the per-`slot` unique constraint in `ArtifactSchema` rather than updating the existing inferred schema link [PR](https://github.com/laminlabs/lamindb/pull/3312) [@falexwolf](https://github.com/falexwolf)
