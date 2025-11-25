@@ -1,0 +1,1 @@
+- 🚸 Improve distinction between optional and required features for a schema  [PR](https://github.com/laminlabs/laminhub-public/pull/120) [@chaichontat](https://github.com/chaichontat)
