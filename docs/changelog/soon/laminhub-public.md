@@ -1,1 +1,2 @@
+- :sparkles: Auto filename generation for uploads [PR](https://github.com/laminlabs/laminhub-public/pull/121) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Improve distinction between optional and required features for a schema  [PR](https://github.com/laminlabs/laminhub-public/pull/120) [@chaichontat](https://github.com/chaichontat)
