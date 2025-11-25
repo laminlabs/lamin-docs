@@ -1,3 +1,4 @@
+- 📝 Add `Sharing` section to README [PR](https://github.com/laminlabs/lamindb/pull/3316) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb/pull/3315) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/1215) [@Koncopd](https://github.com/Koncopd)
 - 💄 Harmonize lineage graph display [PR](https://github.com/laminlabs/lamindb/pull/3313) [@falexwolf](https://github.com/falexwolf)
