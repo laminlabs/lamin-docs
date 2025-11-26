@@ -1,3 +1,4 @@
+- ✨ Add `ln.QueryDB` to conveniently query all entities in any instance [PR](https://github.com/laminlabs/lamindb/pull/3314) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix `view_parents()` and `query_relatives()` for non-default instances [PR](https://github.com/laminlabs/lamindb/pull/3319) [@Zethson](https://github.com/Zethson)
 - 🔇 Ignore warnings for timeout parameter in supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/1216) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Add a `params` JSON field to `Record` and `Artifact` [PR](https://github.com/laminlabs/lamindb/pull/3318) [@falexwolf](https://github.com/falexwolf)
