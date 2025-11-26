@@ -1,3 +1,4 @@
+- 🐛 Fix `view_parents()` and `query_relatives()` for non-default instances [PR](https://github.com/laminlabs/lamindb/pull/3319) [@Zethson](https://github.com/Zethson)
 - 🔇 Ignore warnings for timeout parameter in supabase [PR](https://github.com/laminlabs/lamindb-setup/pull/1216) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Add a `params` JSON field to `Record` and `Artifact` [PR](https://github.com/laminlabs/lamindb/pull/3318) [@falexwolf](https://github.com/falexwolf)
 - 🐛 `Artifact()` incorrectly returned latest version instead of the matching one when `hash` was found in version history and `key` matched both versions [PR](https://github.com/laminlabs/lamindb/pull/3317) [@falexwolf](https://github.com/falexwolf)
