@@ -1,7 +1,0 @@
-- :sparkles: Directly load artifacts and files into sheets [PR](https://github.com/laminlabs/laminhub-public/pull/126) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: Add executable transform UIDs support [PR](https://github.com/laminlabs/laminhub-public/pull/125) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: Recognize __lamindb_record_name__ to indicate record names for sheet imports [PR](https://github.com/laminlabs/laminhub-public/pull/124) [@chaichontat](https://github.com/chaichontat)
-- 💄 Render images in markdown [PR](https://github.com/laminlabs/laminhub-public/pull/123) [@sunnyosun](https://github.com/sunnyosun)
-- 💄 Render markdown bullets [PR](https://github.com/laminlabs/laminhub-public/pull/122) [@sunnyosun](https://github.com/sunnyosun)
-- :sparkles: Auto filename generation for uploads [PR](https://github.com/laminlabs/laminhub-public/pull/121) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Improve distinction between optional and required features for a schema  [PR](https://github.com/laminlabs/laminhub-public/pull/120) [@chaichontat](https://github.com/chaichontat)
