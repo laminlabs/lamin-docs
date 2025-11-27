@@ -1,0 +1,1 @@
+- :bug: Preserve `__lamindb_record_name__` in csv upload [PR](https://github.com/laminlabs/laminhub-public/pull/127) [@chaichontat](https://github.com/chaichontat)
