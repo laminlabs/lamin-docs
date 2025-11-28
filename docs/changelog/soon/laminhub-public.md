@@ -1,1 +1,2 @@
+- :sparkles: Set initial artifact filter to schema name when sheetSchema is set [PR](https://github.com/laminlabs/laminhub-public/pull/129) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Support list dtype features in Records [PR](https://github.com/laminlabs/laminhub-public/pull/128) [@chaichontat](https://github.com/chaichontat)
