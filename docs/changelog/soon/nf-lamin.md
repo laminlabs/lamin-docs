@@ -1,3 +1,4 @@
+- 🐛 Fill in `null`s in generated Transform metadata [PR](https://github.com/laminlabs/nf-lamin/pull/111) [@rcannood](https://github.com/rcannood)
 - :sparkles: Add getInstanceSlug function [PR](https://github.com/laminlabs/nf-lamin/pull/112) [@rcannood](https://github.com/rcannood)
 - :sparkles: Allow fetching artifact paths from UID with `getArtifactFromUid` [PR](https://github.com/laminlabs/nf-lamin/pull/96) [@hcannoodt](https://github.com/hcannoodt)
 - :bug: Fix for failed runs being marked as successful [PR](https://github.com/laminlabs/nf-lamin/pull/110) [@rcannood](https://github.com/rcannood)
