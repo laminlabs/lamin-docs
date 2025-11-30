@@ -1,3 +1,4 @@
+- 🐛 Honor dev-dir in `lamin load` [PR](https://github.com/laminlabs/lamin-cli/pull/170) [@falexwolf](https://github.com/falexwolf)
 - 🐛 In `record.type_to_dataframe()`, do not limit to just 100 records [PR](https://github.com/laminlabs/lamindb/pull/3323) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add same integrity measures to `ULabel` as on `Record`, move `ULabel` under `Record` in the docs [PR](https://github.com/laminlabs/lamindb/pull/3322) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Corrections and clarifications for `_get_parents` [PR](https://github.com/laminlabs/lamindb/pull/3320) [@Koncopd](https://github.com/Koncopd)
