@@ -1,3 +1,4 @@
+- 🐛 In `record.type_to_dataframe()`, do not limit to just 100 records [PR](https://github.com/laminlabs/lamindb/pull/3323) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Add same integrity measures to `ULabel` as on `Record`, move `ULabel` under `Record` in the docs [PR](https://github.com/laminlabs/lamindb/pull/3322) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Corrections and clarifications for `_get_parents` [PR](https://github.com/laminlabs/lamindb/pull/3320) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `ln.QueryDB` to conveniently query all entities in any instance [PR](https://github.com/laminlabs/lamindb/pull/3314) [@Zethson](https://github.com/Zethson)
