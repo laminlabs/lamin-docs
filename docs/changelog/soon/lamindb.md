@@ -1,3 +1,4 @@
+- ✨ Add `lamin io` to manage snapshots, exports & imports [PR](https://github.com/laminlabs/lamin-cli/pull/169) [@Zethson](https://github.com/Zethson)
 - 🐛 Honor dev-dir in `lamin load` [PR](https://github.com/laminlabs/lamindb/pull/3324) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Honor dev-dir in `lamin load` [PR](https://github.com/laminlabs/lamin-cli/pull/170) [@falexwolf](https://github.com/falexwolf)
 - 🐛 In `record.type_to_dataframe()`, do not limit to just 100 records [PR](https://github.com/laminlabs/lamindb/pull/3323) [@falexwolf](https://github.com/falexwolf)
