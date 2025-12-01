@@ -1,3 +1,4 @@
+- 💄 Consolidate buttons and allow dialogs to fill page [PR](https://github.com/laminlabs/laminhub-public/pull/132) [@chaichontat](https://github.com/chaichontat)
 - 🐛 In lineage viewer, show deeper lineage for collections [PR](https://github.com/laminlabs/laminhub-public/pull/131) [@falexwolf](https://github.com/falexwolf)
 - 🚸 On `Launch` page, rename `Import to Sheet` to `Edit in browser` and add `Select` button [PR](https://github.com/laminlabs/laminhub-public/pull/130) [@sunnyosun](https://github.com/sunnyosun)
 - :sparkles: Set initial artifact filter to schema name when sheetSchema is set [PR](https://github.com/laminlabs/laminhub-public/pull/129) [@chaichontat](https://github.com/chaichontat)
