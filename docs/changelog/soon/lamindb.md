@@ -1,3 +1,4 @@
+- 🗃️ Rename `record.params` to `record.extra_data` [PR](https://github.com/laminlabs/lamindb/pull/3327) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `lamin io` to manage snapshots, exports & imports [PR](https://github.com/laminlabs/lamindb/pull/3321) [@Zethson](https://github.com/Zethson)
 - 🔥 Remove logic that checks admin permissions client side before migrate step [PR](https://github.com/laminlabs/lamindb-setup/pull/1218) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `lamin io` to manage snapshots, exports & imports [PR](https://github.com/laminlabs/lamin-cli/pull/169) [@Zethson](https://github.com/Zethson)
