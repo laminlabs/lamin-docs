@@ -1,1 +1,2 @@
+- ✨ In `Launch` view: add `list` and `dict` `dtype` support for run metadata [PR](https://github.com/laminlabs/laminhub-public/pull/136) [@chaichontat](https://github.com/chaichontat)
 - 🚸 In `Launch` view: better design for `select` and `create` buttons and behaviors [PR](https://github.com/laminlabs/laminhub-public/pull/135) [@chaichontat](https://github.com/chaichontat)
