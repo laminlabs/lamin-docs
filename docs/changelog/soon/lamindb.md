@@ -1,3 +1,4 @@
+- 🚸 Polish `QueryDB` [PR](https://github.com/laminlabs/lamindb/pull/3325) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix a bug where when a list dtype categorical feature was present in a sheet without the corresponding non-list one, it'd be exlcuded from the sheet export [PR](https://github.com/laminlabs/lamindb/pull/3329) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test audit [PR](https://github.com/laminlabs/lamindb/pull/3326) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Rename `record.params` to `record.extra_data` [PR](https://github.com/laminlabs/lamindb/pull/3327) [@falexwolf](https://github.com/falexwolf)
