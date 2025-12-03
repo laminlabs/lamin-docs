@@ -1,2 +1,0 @@
-- :bug: Fix list data propagation [PR](https://github.com/laminlabs/laminhub-public/pull/134) [@chaichontat](https://github.com/chaichontat)
-- ✨ In `Sheet` editor and `csv` import, support storing extra data e.g. from non-validated columns [PR](https://github.com/laminlabs/laminhub-public/pull/133) [@chaichontat](https://github.com/chaichontat)
