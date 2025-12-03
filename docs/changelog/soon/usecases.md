@@ -1,3 +1,4 @@
+- ♻️ Migrate to new QueryDB syntax [PR](https://github.com/laminlabs/cellxgene-lamin/pull/134) [@Zethson](https://github.com/Zethson)
 - ✨ Adopt QueryDB [PR](https://github.com/laminlabs/cellxgene-lamin/pull/133) [@Zethson](https://github.com/Zethson)
 - ✨ Adopt `QueryDB` for Arc & HubMAP [PR](https://github.com/laminlabs/lamin-usecases/pull/224) [@Zethson](https://github.com/Zethson)
 - Update notebook link and dataset description in spatial4 [PR](https://github.com/laminlabs/lamin-usecases/pull/223) [@namsaraeva](https://github.com/namsaraeva)
