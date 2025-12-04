@@ -1,3 +1,4 @@
+- ✨ Add `LAMIN_S3_ANON` env variable to force `anon` mode for all non-managed s3 buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1221) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Honor `list` `dtype` over the default `set` in sheet export [PR](https://github.com/laminlabs/lamindb/pull/3334) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Rename `record.type_to_dataframe()` to `record.to_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3333) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3332) [@fredericenard](https://github.com/fredericenard)
