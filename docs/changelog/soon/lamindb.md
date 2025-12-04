@@ -1,3 +1,4 @@
+- 🚸 Honor `list` `dtype` over the default `set` in sheet export [PR](https://github.com/laminlabs/lamindb/pull/3334) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Rename `record.type_to_dataframe()` to `record.to_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3333) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3332) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix sheet export of features with list dtype and additional field qualifiers [PR](https://github.com/laminlabs/lamindb/pull/3331) [@falexwolf](https://github.com/falexwolf)
