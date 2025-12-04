@@ -1,3 +1,4 @@
+- 🐛 Fix sheet export of features with list dtype and additional field qualifiers [PR](https://github.com/laminlabs/lamindb/pull/3331) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable providing account id when initializing an instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1220) [@fredericenard](https://github.com/fredericenard)
 - ✅ More tests for `dbwritelog` [PR](https://github.com/laminlabs/lamindb/pull/3328) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Polish `QueryDB` [PR](https://github.com/laminlabs/lamindb/pull/3325) [@Zethson](https://github.com/Zethson)
