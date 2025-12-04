@@ -1,3 +1,4 @@
+- 🐛 Fix sheet export of columns that contain only nulls and add a broad test suite [PR](https://github.com/laminlabs/lamindb/pull/3336) [@falexwolf](https://github.com/falexwolf)
 - 📌 Upper bound for pandas 3 [PR](https://github.com/laminlabs/lamindb/pull/3335) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3337) [@Koncopd](https://github.com/Koncopd)
 - ⚡️Reuse `fsspec` `fs` for `LAMIN_S3_ANON=true` [PR](https://github.com/laminlabs/lamindb-setup/pull/1222) [@Koncopd](https://github.com/Koncopd)
