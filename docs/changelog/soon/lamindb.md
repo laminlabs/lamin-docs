@@ -1,3 +1,4 @@
+- ✨ Verify created snapshots before uploading [PR](https://github.com/laminlabs/lamin-cli/pull/171) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix models not being exported [PR](https://github.com/laminlabs/lamindb-setup/pull/1223) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix sheet export of columns that contain only nulls and add a broad test suite [PR](https://github.com/laminlabs/lamindb/pull/3336) [@falexwolf](https://github.com/falexwolf)
 - 📌 Upper bound for pandas 3 [PR](https://github.com/laminlabs/lamindb/pull/3335) [@Zethson](https://github.com/Zethson)
