@@ -1,3 +1,0 @@
-- 🐛 Fix a breadth of edge cases for sheet export [PR](https://github.com/laminlabs/laminhub-public/pull/141) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Integrate lists to CSVEditor [PR](https://github.com/laminlabs/laminhub-public/pull/140) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix sheet export for list dtypes by upgrading lamindb [PR](https://github.com/laminlabs/laminhub-public/pull/139) [@fredericenard](https://github.com/fredericenard)
