@@ -1,0 +1,1 @@
+- 🐛 Fix sheet export for list dtypes by upgrading lamindb [PR](https://github.com/laminlabs/laminhub-public/pull/139) [@fredericenard](https://github.com/fredericenard)
