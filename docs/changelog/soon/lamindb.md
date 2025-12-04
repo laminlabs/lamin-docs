@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3337) [@Koncopd](https://github.com/Koncopd)
 - ⚡️Reuse `fsspec` `fs` for `LAMIN_S3_ANON=true` [PR](https://github.com/laminlabs/lamindb-setup/pull/1222) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `LAMIN_S3_ANON` env variable to force `anon` mode for all non-managed s3 buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1221) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Honor `list` `dtype` over the default `set` in sheet export [PR](https://github.com/laminlabs/lamindb/pull/3334) [@falexwolf](https://github.com/falexwolf)
