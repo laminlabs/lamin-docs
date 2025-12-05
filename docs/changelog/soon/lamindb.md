@@ -1,3 +1,4 @@
+- 🩹 Temporary fix for `polars+huggingface` in `arrays` [PR](https://github.com/laminlabs/lamindb/pull/3341) [@Koncopd](https://github.com/Koncopd)
 - ⚡ Faster init from compressed SQLite file [PR](https://github.com/laminlabs/lamindb/pull/3340) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Faster init from compressed SQLite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1225) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Faster init from compressed SQLite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1224) [@falexwolf](https://github.com/falexwolf)
