@@ -1,0 +1,1 @@
+- 🐛 Bar chart renders as horizontal stacked bar with long category labels [PR](https://github.com/laminlabs/laminhub-public/pull/142) [@sunnyosun](https://github.com/sunnyosun)
