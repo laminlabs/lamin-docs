@@ -1,3 +1,4 @@
+- ⚡ Faster init from compressed SQLite file [PR](https://github.com/laminlabs/lamindb/pull/3340) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Faster init from compressed SQLite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1225) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Faster init from compressed SQLite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1224) [@falexwolf](https://github.com/falexwolf)
 - ✨ Verify created snapshots before uploading [PR](https://github.com/laminlabs/lamin-cli/pull/171) [@Zethson](https://github.com/Zethson)
