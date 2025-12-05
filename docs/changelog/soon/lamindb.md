@@ -1,3 +1,4 @@
+- 🐛 Respect soft delete in sheet export [PR](https://github.com/laminlabs/lamindb/pull/3345) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix sheet export with mixed single- and multi-item lists [PR](https://github.com/laminlabs/lamindb/pull/3344) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix sheet export when multiple features with the same name in an instance [PR](https://github.com/laminlabs/lamindb/pull/3343) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Temporary fix for `polars+huggingface` in `arrays` [PR](https://github.com/laminlabs/lamindb/pull/3341) [@Koncopd](https://github.com/Koncopd)
