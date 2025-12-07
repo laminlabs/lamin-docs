@@ -1,3 +1,4 @@
+- ✨ Add a `Create instance` button to the UI [PR](https://github.com/laminlabs/laminhub-public/pull/145) [@fredericenard](https://github.com/fredericenard)
 - ✨ Add per-account instance quota enforcement [PR](https://github.com/laminlabs/laminhub-public/pull/144) [@fredericenard](https://github.com/fredericenard)
 - 💄 Fix pagination display in team members management dialog [PR](https://github.com/laminlabs/laminhub-public/pull/143) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Bar chart renders as horizontal stacked bar with long category labels [PR](https://github.com/laminlabs/laminhub-public/pull/142) [@sunnyosun](https://github.com/sunnyosun)
