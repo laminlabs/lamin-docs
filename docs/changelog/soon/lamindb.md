@@ -1,3 +1,4 @@
+- 🚸 Better error message if notebook filename is `Untitled.ipynb` [PR](https://github.com/laminlabs/lamindb/pull/3348) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix example syntax [PR](https://github.com/laminlabs/lamindb/pull/3330) [@Zethson](https://github.com/Zethson)
 - 🚸 Maintain a history of feature renaming events in the feature record, simplify handling label rename events [PR](https://github.com/laminlabs/lamindb/pull/3347) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Respect soft delete in sheet export [PR](https://github.com/laminlabs/lamindb/pull/3345) [@falexwolf](https://github.com/falexwolf)
