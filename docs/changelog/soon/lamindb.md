@@ -1,3 +1,4 @@
+- 🚸 Clarify vendor vs. dialect [PR](https://github.com/laminlabs/lamindb-setup/pull/1226) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better error message if notebook filename is `Untitled.ipynb` [PR](https://github.com/laminlabs/lamindb/pull/3348) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix example syntax [PR](https://github.com/laminlabs/lamindb/pull/3330) [@Zethson](https://github.com/Zethson)
 - 🚸 Maintain a history of feature renaming events in the feature record, simplify handling label rename events [PR](https://github.com/laminlabs/lamindb/pull/3347) [@falexwolf](https://github.com/falexwolf)
