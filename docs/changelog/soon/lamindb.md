@@ -1,3 +1,4 @@
+- 🚸 Allow validation of genes to pass without indicating organism [PR](https://github.com/laminlabs/lamindb/pull/3350) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Add `to_dataframe()` docstring to `Record` and fix several docs warnings [PR](https://github.com/laminlabs/lamindb/pull/3349) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Clarify vendor vs. dialect [PR](https://github.com/laminlabs/lamindb-setup/pull/1226) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better error message if notebook filename is `Untitled.ipynb` [PR](https://github.com/laminlabs/lamindb/pull/3348) [@falexwolf](https://github.com/falexwolf)
