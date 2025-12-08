@@ -1,3 +1,4 @@
+- ♻️ Remove unnecessary lamindb import [PR](https://github.com/laminlabs/lamin-cli/pull/173) [@Zethson](https://github.com/Zethson)
 - 🚸 Simplified login experience [PR](https://github.com/laminlabs/lamindb-setup/pull/1229) [@falexwolf](https://github.com/falexwolf)
 - ♻️ No unnecessary import of `lamindb` in `lamin-cli` [PR](https://github.com/laminlabs/lamindb/pull/3355) [@falexwolf](https://github.com/falexwolf)
 - ♻️ No unnecessary import of `lamindb` [PR](https://github.com/laminlabs/lamin-cli/pull/172) [@falexwolf](https://github.com/falexwolf)
