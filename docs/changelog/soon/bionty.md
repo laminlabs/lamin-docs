@@ -1,2 +1,3 @@
+- 💚 Fix docs build [PR](https://github.com/laminlabs/bionty/pull/337) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove unncessary call to `check_instance_setup()` [PR](https://github.com/laminlabs/bionty/pull/336) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Fix deprecationwarning [PR](https://github.com/laminlabs/bionty/pull/334) [@Zethson](https://github.com/Zethson)
