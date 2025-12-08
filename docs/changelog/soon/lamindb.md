@@ -1,3 +1,4 @@
+- ♻️ No unnecessary import of `lamindb` [PR](https://github.com/laminlabs/lamin-cli/pull/172) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Centralize curator unit tests in the `core` worker [PR](https://github.com/laminlabs/lamindb/pull/3353) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Eliminate reference to `test-instance-private-postgres` [PR](https://github.com/laminlabs/lamindb-setup/pull/1228) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Adapt code to rate limiting initialization of instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1227) [@Koncopd](https://github.com/Koncopd)
