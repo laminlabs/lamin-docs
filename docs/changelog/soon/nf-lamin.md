@@ -1,2 +1,3 @@
+- 🚸 Update formatting of source_code when a new Transform is created [PR](https://github.com/laminlabs/nf-lamin/pull/107) [@rcannood](https://github.com/rcannood)
 - :memo: Add version compatibility table [PR](https://github.com/laminlabs/nf-lamin/pull/114) [@rcannood](https://github.com/rcannood)
 - :technologist: Add AGENTS.md file [PR](https://github.com/laminlabs/nf-lamin/pull/113) [@rcannood](https://github.com/rcannood)
