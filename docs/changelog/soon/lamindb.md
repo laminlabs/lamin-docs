@@ -1,3 +1,4 @@
+- ♻️ Centralize curator unit tests in the `core` worker [PR](https://github.com/laminlabs/lamindb/pull/3353) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Eliminate reference to `test-instance-private-postgres` [PR](https://github.com/laminlabs/lamindb-setup/pull/1228) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Adapt code to rate limiting initialization of instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1227) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Allow validation of genes to pass without indicating organism [PR](https://github.com/laminlabs/lamindb/pull/3350) [@sunnyosun](https://github.com/sunnyosun)
