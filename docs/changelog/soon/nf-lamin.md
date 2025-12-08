@@ -1,1 +1,2 @@
+- :memo: Add version compatibility table [PR](https://github.com/laminlabs/nf-lamin/pull/114) [@rcannood](https://github.com/rcannood)
 - :technologist: Add AGENTS.md file [PR](https://github.com/laminlabs/nf-lamin/pull/113) [@rcannood](https://github.com/rcannood)
