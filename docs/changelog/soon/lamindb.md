@@ -1,3 +1,4 @@
+- 🎨 If matching the same term multiple times at different levels of a type hierarchy during validation, annotate with top-level match [PR](https://github.com/laminlabs/lamindb/pull/3358) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate testusers to new API key [PR](https://github.com/laminlabs/lamindb-setup/pull/1232) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Remove unnecessary lamindb import [PR](https://github.com/laminlabs/lamin-cli/pull/173) [@Zethson](https://github.com/Zethson)
 - 🚸 Simplified login experience [PR](https://github.com/laminlabs/lamindb-setup/pull/1229) [@falexwolf](https://github.com/falexwolf)
