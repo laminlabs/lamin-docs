@@ -1,3 +1,4 @@
+- ✨ QueryDB accessor & documentation improvements [PR](https://github.com/laminlabs/lamindb/pull/3354) [@Zethson](https://github.com/Zethson)
 - 🎨 Leverage schema feature association when annotating artifacts through curators [PR](https://github.com/laminlabs/lamindb/pull/3360) [@falexwolf](https://github.com/falexwolf)
 - 🎨 If matching the same term multiple times at different levels of a type hierarchy during validation, annotate with top-level match [PR](https://github.com/laminlabs/lamindb/pull/3358) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Migrate testusers to new API key [PR](https://github.com/laminlabs/lamindb-setup/pull/1232) [@falexwolf](https://github.com/falexwolf)
