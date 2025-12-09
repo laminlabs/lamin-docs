@@ -1,3 +1,4 @@
+- ♻️ New QueryDB syntax [PR](https://github.com/laminlabs/lamin-usecases/pull/226) [@Zethson](https://github.com/Zethson)
 - ♻️ Migrate to new QueryDB syntax [PR](https://github.com/laminlabs/lamin-usecases/pull/225) [@Zethson](https://github.com/Zethson)
 - ♻️ Migrate to new QueryDB syntax [PR](https://github.com/laminlabs/cellxgene-lamin/pull/134) [@Zethson](https://github.com/Zethson)
 - ✨ Adopt QueryDB [PR](https://github.com/laminlabs/cellxgene-lamin/pull/133) [@Zethson](https://github.com/Zethson)
