@@ -1,3 +1,4 @@
+- 🏗️ Enable queries to other instances in case no instance is configured [PR](https://github.com/laminlabs/lamindb/pull/3359) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Enable queries to other instances in case no instance is configured [PR](https://github.com/laminlabs/lamindb-setup/pull/1230) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3361) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Show objects when storage is non-empty on deletion [PR](https://github.com/laminlabs/lamindb-setup/pull/1233) [@Koncopd](https://github.com/Koncopd)
