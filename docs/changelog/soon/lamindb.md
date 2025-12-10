@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3361) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Show objects when storage is non-empty on deletion [PR](https://github.com/laminlabs/lamindb-setup/pull/1233) [@Koncopd](https://github.com/Koncopd)
 - ✨ QueryDB accessor & documentation improvements [PR](https://github.com/laminlabs/lamindb/pull/3354) [@Zethson](https://github.com/Zethson)
 - 🎨 Leverage schema feature association when annotating artifacts through curators [PR](https://github.com/laminlabs/lamindb/pull/3360) [@falexwolf](https://github.com/falexwolf)
