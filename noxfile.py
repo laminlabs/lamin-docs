@@ -407,6 +407,7 @@ def docs(session):
     ln.connect("laminlabs/lamin-site-assets")
     ln.track()
     ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
+    ln.finish()
 
 
 if __name__ == "__main__":
