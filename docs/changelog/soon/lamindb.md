@@ -1,3 +1,4 @@
+- 🐛 Fix modules for connection to `none/none` instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1234) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve error behavior if a `type` isn't found during validation: raise an `IntegrityError` instead of `InvalidArgument` [PR](https://github.com/laminlabs/lamindb/pull/3364) [@falexwolf](https://github.com/falexwolf)
 - 📝 More extensive documentation for `Artifact.otype` [PR](https://github.com/laminlabs/lamindb/pull/3362) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Enable queries to other instances in case no instance is configured [PR](https://github.com/laminlabs/lamindb/pull/3359) [@Koncopd](https://github.com/Koncopd)
