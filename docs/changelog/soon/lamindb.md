@@ -1,3 +1,4 @@
+- 🎨 Allow `__lamindb_...` type columns in sheet export also if `schema.maximal_set = True` [PR](https://github.com/laminlabs/lamindb/pull/3367) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Gracefully handle corrupted `date` and `datetime` values in sheets [PR](https://github.com/laminlabs/lamindb/pull/3366) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3365) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix modules for connection to `none/none` instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1234) [@Koncopd](https://github.com/Koncopd)
