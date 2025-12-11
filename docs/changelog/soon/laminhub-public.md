@@ -1,3 +1,4 @@
+- 🎨 Disallow mutating dtypes [PR](https://github.com/laminlabs/laminhub-public/pull/149) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve robustness of sheet-to-artifact export [PR](https://github.com/laminlabs/laminhub-public/pull/148) [@fredericenard](https://github.com/fredericenard)
 - ✨ Support date filling [PR](https://github.com/laminlabs/laminhub-public/pull/147) [@chaichontat](https://github.com/chaichontat)
 - :bug: Skip existing transform name validation [PR](https://github.com/laminlabs/laminhub-public/pull/146) [@chaichontat](https://github.com/chaichontat)
