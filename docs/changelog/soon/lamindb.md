@@ -1,3 +1,4 @@
+- 🐛 Resolve feature name clashes during usage of `artifact.features.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3370) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `logger.mute()` before importing lamindb and refactor `RootLogger` [PR](https://github.com/laminlabs/lamindb/pull/3369) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix type casting to pandas in sheet exports with `dtype="num"` [PR](https://github.com/laminlabs/lamindb/pull/3368) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Allow `__lamindb_...` type columns in sheet export also if `schema.maximal_set = True` [PR](https://github.com/laminlabs/lamindb/pull/3367) [@falexwolf](https://github.com/falexwolf)
