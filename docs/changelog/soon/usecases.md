@@ -1,3 +1,4 @@
+- 📝 Rename `QueryDB` to `DB` and `cxg_db` to `db` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/138) [@falexwolf](https://github.com/falexwolf)
 - 📝 Simplify CELLxGENE guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/137) [@Zethson](https://github.com/Zethson)
 - ♻️ New QueryDB syntax [PR](https://github.com/laminlabs/cellxgene-lamin/pull/135) [@Zethson](https://github.com/Zethson)
 - ♻️ New QueryDB syntax [PR](https://github.com/laminlabs/lamin-usecases/pull/226) [@Zethson](https://github.com/Zethson)
