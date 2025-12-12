@@ -1,3 +1,4 @@
+- 💚 Update tests with the organism refactor [PR](https://github.com/laminlabs/lamindb-setup/pull/1237) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 No more warning about not being connected [PR](https://github.com/laminlabs/lamindb-setup/pull/1235) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Disallow mutating `feature.dtype` on the database level [PR](https://github.com/laminlabs/lamindb/pull/3371) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor organism requirement [PR](https://github.com/laminlabs/lamindb/pull/3356) [@sunnyosun](https://github.com/sunnyosun)
