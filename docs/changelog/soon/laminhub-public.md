@@ -1,3 +1,4 @@
+- 🚸 Improve the design of the account storage & infrastructure pages [PR](https://github.com/laminlabs/laminhub-public/pull/151) [@fredericenard](https://github.com/fredericenard)
 - :bug: Fix edge cases in the S3 storage metadata endpoint  [PR](https://github.com/laminlabs/laminhub-public/pull/150) [@chaichontat](https://github.com/chaichontat)
 - 🎨 Disallow mutating dtypes [PR](https://github.com/laminlabs/laminhub-public/pull/149) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Improve robustness of sheet-to-artifact export [PR](https://github.com/laminlabs/laminhub-public/pull/148) [@fredericenard](https://github.com/fredericenard)
