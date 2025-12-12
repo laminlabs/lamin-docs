@@ -1,3 +1,4 @@
+- 📝 Refactor README and polish docs [PR](https://github.com/laminlabs/lamindb/pull/3372) [@falexwolf](https://github.com/falexwolf)
 - 📝 Clarify ln.connect() docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1236) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3376) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Silence `httpcore` logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1238) [@Koncopd](https://github.com/Koncopd)
