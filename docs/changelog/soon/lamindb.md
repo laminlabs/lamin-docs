@@ -1,3 +1,4 @@
+- 🚸 No more warning about not being connected [PR](https://github.com/laminlabs/lamindb-setup/pull/1235) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Disallow mutating `feature.dtype` on the database level [PR](https://github.com/laminlabs/lamindb/pull/3371) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor organism requirement [PR](https://github.com/laminlabs/lamindb/pull/3356) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Resolve feature name clashes during usage of `artifact.features.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3370) [@falexwolf](https://github.com/falexwolf)
