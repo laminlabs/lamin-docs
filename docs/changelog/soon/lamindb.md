@@ -1,3 +1,4 @@
+- 🔇 Silence `httpcore` logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1238) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add `describe()` to `QuerySet` [PR](https://github.com/laminlabs/lamindb/pull/3374) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow calling `.describe()` on all `BaseSQLRecord` objects and classes [PR](https://github.com/laminlabs/lamindb/pull/3373) [@falexwolf](https://github.com/falexwolf)
 - 💚 Update tests with the organism refactor [PR](https://github.com/laminlabs/lamindb-setup/pull/1237) [@sunnyosun](https://github.com/sunnyosun)
