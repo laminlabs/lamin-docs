@@ -1,3 +1,4 @@
+- ✨ Introduce guests in an organization [PR](https://github.com/laminlabs/laminhub-public/pull/157) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Enforce absolute `type` hierarchy within relational `dtypes` [PR](https://github.com/laminlabs/laminhub-public/pull/156) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Default for `Feature.nullable` should be `True` [PR](https://github.com/laminlabs/laminhub-public/pull/155) [@sunnyosun](https://github.com/sunnyosun)
 - :bug: Reject empty non-nullable features with dtype `list[...]` [PR](https://github.com/laminlabs/laminhub-public/pull/154) [@chaichontat](https://github.com/chaichontat)
