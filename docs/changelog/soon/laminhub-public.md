@@ -1,3 +1,4 @@
+- 🐛 Default for `Feature.nullable` should be `True` [PR](https://github.com/laminlabs/laminhub-public/pull/155) [@sunnyosun](https://github.com/sunnyosun)
 - :bug: Reject empty non-nullable features with dtype `list[...]` [PR](https://github.com/laminlabs/laminhub-public/pull/154) [@chaichontat](https://github.com/chaichontat)
 - 🔒 Propagate org membership loss to team members and instance & space collaborators [PR](https://github.com/laminlabs/laminhub-public/pull/153) [@fredericenard](https://github.com/fredericenard)
 - 🚸 A specialized dict cell in sheets [PR](https://github.com/laminlabs/laminhub-public/pull/152) [@chaichontat](https://github.com/chaichontat)
