@@ -1,3 +1,4 @@
+- 🔇 Silence hpack debug logs [PR](https://github.com/laminlabs/lamindb-setup/pull/1239) [@Koncopd](https://github.com/Koncopd)
 - ⏪️ No hard disallowing of feature dtype mutations [PR](https://github.com/laminlabs/lamindb/pull/3381) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Consistent filtering behavior for `kind__startswith='__lamindb_'` artifacts across `to_dataframe()` in different contexts [PR](https://github.com/laminlabs/lamindb/pull/3379) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt test_permissions [PR](https://github.com/laminlabs/lamindb/pull/3380) [@Koncopd](https://github.com/Koncopd)
