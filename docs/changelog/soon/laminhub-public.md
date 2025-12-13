@@ -1,3 +1,4 @@
+- :bug: Reject empty non-nullable features with dtype `list[...]` [PR](https://github.com/laminlabs/laminhub-public/pull/154) [@chaichontat](https://github.com/chaichontat)
 - 🔒 Propagate org membership loss to team members and instance & space collaborators [PR](https://github.com/laminlabs/laminhub-public/pull/153) [@fredericenard](https://github.com/fredericenard)
 - 🚸 A specialized dict cell in sheets [PR](https://github.com/laminlabs/laminhub-public/pull/152) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Improve the design of the account storage & infrastructure pages [PR](https://github.com/laminlabs/laminhub-public/pull/151) [@fredericenard](https://github.com/fredericenard)
