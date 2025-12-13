@@ -1,3 +1,4 @@
+- ⏪️ No hard disallowing of feature dtype mutations [PR](https://github.com/laminlabs/lamindb/pull/3381) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Consistent filtering behavior for `kind__startswith='__lamindb_'` artifacts across `to_dataframe()` in different contexts [PR](https://github.com/laminlabs/lamindb/pull/3379) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt test_permissions [PR](https://github.com/laminlabs/lamindb/pull/3380) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Warn if a user passes a string to the `dtype` argument of `Feature` and add validation for existence of record types [PR](https://github.com/laminlabs/lamindb/pull/3378) [@falexwolf](https://github.com/falexwolf)
