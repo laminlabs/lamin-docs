@@ -1,2 +1,3 @@
+- :bug: Enforce branch code filter when showAll=true [PR](https://github.com/laminlabs/laminhub-public/pull/161) [@chaichontat](https://github.com/chaichontat)
 - :bug: Access tables now show a loading state [PR](https://github.com/laminlabs/laminhub-public/pull/160) [@chaichontat](https://github.com/chaichontat)
 - :zap: Batch query instance collaborators [PR](https://github.com/laminlabs/laminhub-public/pull/159) [@chaichontat](https://github.com/chaichontat)
