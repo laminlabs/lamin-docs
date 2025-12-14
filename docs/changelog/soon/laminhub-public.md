@@ -1,0 +1,1 @@
+- :zap: Batch query instance collaborators [PR](https://github.com/laminlabs/laminhub-public/pull/159) [@chaichontat](https://github.com/chaichontat)
