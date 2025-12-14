@@ -1,3 +1,4 @@
+- ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/3384) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Allow omitting `entity` in `lamin load` [PR](https://github.com/laminlabs/lamin-cli/pull/175) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3382) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Silence hpack debug logs [PR](https://github.com/laminlabs/lamindb-setup/pull/1239) [@Koncopd](https://github.com/Koncopd)
