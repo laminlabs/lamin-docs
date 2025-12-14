@@ -1,6 +1,0 @@
-- 🎨 Do not try to create organism record if not required [PR](https://github.com/laminlabs/bionty/pull/339) [@sunnyosun](https://github.com/sunnyosun)
-- 💚 More tests for ensembl gene [PR](https://github.com/laminlabs/bionty/pull/338) [@sunnyosun](https://github.com/sunnyosun)
-- 🔧 Default organism should be `None`, not `"human"` [PR](https://github.com/laminlabs/bionty/pull/335) [@falexwolf](https://github.com/falexwolf)
-- 💚 Fix docs build [PR](https://github.com/laminlabs/bionty/pull/337) [@falexwolf](https://github.com/falexwolf)
-- ♻️ Remove unncessary call to `check_instance_setup()` [PR](https://github.com/laminlabs/bionty/pull/336) [@falexwolf](https://github.com/falexwolf)
-- 🎨 Fix deprecationwarning [PR](https://github.com/laminlabs/bionty/pull/334) [@Zethson](https://github.com/Zethson)
