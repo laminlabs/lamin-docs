@@ -1,0 +1,1 @@
+- Bump actions/checkout from 5 to 6 [PR](https://github.com/laminlabs/laminr/pull/238) [@dependabot[bot]](https://github.com/apps/dependabot)
