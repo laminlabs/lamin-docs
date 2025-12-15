@@ -1,2 +1,3 @@
+- 📝 Refine README and artifact docstring for `.features` attribute [PR](https://github.com/laminlabs/lamindb/pull/3387) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `feature.dtype_as_object` [PR](https://github.com/laminlabs/lamindb/pull/3386) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Fix docs [PR](https://github.com/laminlabs/lamindb/pull/3385) [@falexwolf](https://github.com/falexwolf)
