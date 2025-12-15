@@ -1,3 +1,4 @@
+- Bump actions/upload-artifact from 4 to 6 [PR](https://github.com/laminlabs/laminr/pull/239) [@dependabot[bot]](https://github.com/apps/dependabot)
 - 🐛 Adapt to change of `SQLRecord.describe()` method in `lamindb` 1.17.0 [PR](https://github.com/laminlabs/laminr/pull/240) [@lazappi](https://github.com/lazappi)
 - 📝 Refactor artifact tracking and saving in R script to `connect()` syntax [PR](https://github.com/laminlabs/laminr/pull/237) [@falexwolf](https://github.com/falexwolf)
 - 📝 More recent syntax [PR](https://github.com/laminlabs/laminr/pull/236) [@falexwolf](https://github.com/falexwolf)
