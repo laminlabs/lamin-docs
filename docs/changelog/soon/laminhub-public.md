@@ -1,0 +1,1 @@
+- 🚸 Always show delete confirmation prompt in sheets [PR](https://github.com/laminlabs/laminhub-public/pull/162) [@chaichontat](https://github.com/chaichontat)
