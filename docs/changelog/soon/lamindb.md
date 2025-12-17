@@ -1,3 +1,4 @@
+- ✅ Test db token expiartion [PR](https://github.com/laminlabs/lamindb/pull/3391) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Expose `MultipleObjectsReturned` [PR](https://github.com/laminlabs/lamindb-setup/pull/1241) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test connecting without a default instance [PR](https://github.com/laminlabs/lamindb/pull/3388) [@Koncopd](https://github.com/Koncopd)
 - 📝 Refine README and artifact docstring for `.features` attribute [PR](https://github.com/laminlabs/lamindb/pull/3387) [@falexwolf](https://github.com/falexwolf)
