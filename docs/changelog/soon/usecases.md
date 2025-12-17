@@ -1,3 +1,4 @@
+- 📝 Overhaul the `spatialdata` guide [PR](https://github.com/laminlabs/lamin-usecases/pull/227) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/229) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Rename QueryDB to DB and arc_db to db [PR](https://github.com/laminlabs/lamin-usecases/pull/228) [@falexwolf](https://github.com/falexwolf)
 - 📝 Rename `QueryDB` to `DB` and `cxg_db` to `db` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/138) [@falexwolf](https://github.com/falexwolf)
