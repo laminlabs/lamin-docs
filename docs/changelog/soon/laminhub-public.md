@@ -1,2 +1,3 @@
+- ✨ Creating sheets from scratch + creating schemas & features + updating features of a sheet [PR](https://github.com/laminlabs/laminhub-public/pull/166) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix error on instance `Settings` page if no schema modules are defined [PR](https://github.com/laminlabs/laminhub-public/pull/165) [@chaichontat](https://github.com/chaichontat)
 - 💄 Update style for `New instance` button [PR](https://github.com/laminlabs/laminhub-public/pull/164) [@chaichontat](https://github.com/chaichontat)
