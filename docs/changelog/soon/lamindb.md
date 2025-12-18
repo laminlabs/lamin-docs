@@ -1,3 +1,4 @@
+- ♻️ Return file size in `hash_file()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1243) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Rename `zarr` extra to `zarr_v2` [PR](https://github.com/laminlabs/lamindb/pull/3390) [@Koncopd](https://github.com/Koncopd)
 - 🔧 Add `.vitessce.json` to loaders [PR](https://github.com/laminlabs/lamindb/pull/3393) [@namsaraeva](https://github.com/namsaraeva)
 - 🎨 Also accept array when evaluating list values [PR](https://github.com/laminlabs/lamindb/pull/3392) [@sunnyosun](https://github.com/sunnyosun)
