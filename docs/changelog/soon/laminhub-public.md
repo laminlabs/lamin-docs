@@ -1,0 +1,1 @@
+- 💄 Update style for `New instance` button [PR](https://github.com/laminlabs/laminhub-public/pull/164) [@chaichontat](https://github.com/chaichontat)
