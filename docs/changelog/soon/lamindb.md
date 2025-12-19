@@ -1,3 +1,4 @@
+- ✅ Test `DbWriteLog` rework [PR](https://github.com/laminlabs/lamindb/pull/3399) [@Koncopd](https://github.com/Koncopd)
 - 📝 Polish FAQ doc on trashing and archiving [PR](https://github.com/laminlabs/lamindb/pull/3400) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve the `Artifact.replace()` docs [PR](https://github.com/laminlabs/lamindb/pull/3398) [@falexwolf](https://github.com/falexwolf)
 - 💄 Sort features in `describe()` [PR](https://github.com/laminlabs/lamindb/pull/3397) [@falexwolf](https://github.com/falexwolf)
