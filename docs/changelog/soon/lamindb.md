@@ -1,3 +1,4 @@
+- ♻️ Better re-use Django's `ObjectDoesNotExist` and `MultipleObjectsReturned` [PR](https://github.com/laminlabs/lamindb/pull/3389) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Account for size 0 environments [PR](https://github.com/laminlabs/lamindb/pull/3394) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Return file size in `hash_file()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1243) [@falexwolf](https://github.com/falexwolf)
 - 🔧 Rename `zarr` extra to `zarr_v2` [PR](https://github.com/laminlabs/lamindb/pull/3390) [@Koncopd](https://github.com/Koncopd)
