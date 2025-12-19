@@ -1,3 +1,4 @@
+- 📝 Improve the `Artifact.replace()` docs [PR](https://github.com/laminlabs/lamindb/pull/3398) [@falexwolf](https://github.com/falexwolf)
 - 💄 Sort features in `describe()` [PR](https://github.com/laminlabs/lamindb/pull/3397) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Better re-use Django's `ObjectDoesNotExist` and `MultipleObjectsReturned` [PR](https://github.com/laminlabs/lamindb/pull/3396) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Better re-use Django's `ObjectDoesNotExist` and `MultipleObjectsReturned` [PR](https://github.com/laminlabs/lamindb/pull/3389) [@falexwolf](https://github.com/falexwolf)
