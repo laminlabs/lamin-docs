@@ -1,3 +1,4 @@
+- ♻️ Call `lamin migrate deploy` even if initializing from pre-built sqlite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1245) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Deprecate `@ln.tracked()` in favor of `@ln.step()` [PR](https://github.com/laminlabs/lamindb/pull/3401) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Introduce `InstanceSettings.is_managed_by_hub` [PR](https://github.com/laminlabs/lamindb-setup/pull/1244) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test `DbWriteLog` rework [PR](https://github.com/laminlabs/lamindb/pull/3399) [@Koncopd](https://github.com/Koncopd)
