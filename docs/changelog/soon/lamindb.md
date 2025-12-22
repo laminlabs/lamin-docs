@@ -1,3 +1,4 @@
+- ✅ Test use `hstore` in `DbWrite` triggers to compute diffs on update [PR](https://github.com/laminlabs/lamindb/pull/3404) [@Koncopd](https://github.com/Koncopd)
 - ✨ Track shell scripts [PR](https://github.com/laminlabs/lamindb/pull/3403) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track shell scripts [PR](https://github.com/laminlabs/lamin-cli/pull/176) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable managing workflows via  `@ln.flow()` and `@ln.step()` [PR](https://github.com/laminlabs/lamindb/pull/3402) [@falexwolf](https://github.com/falexwolf)
