@@ -1,3 +1,4 @@
+- ✨ Track shell scripts [PR](https://github.com/laminlabs/lamindb/pull/3403) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track shell scripts [PR](https://github.com/laminlabs/lamin-cli/pull/176) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable managing workflows via  `@ln.flow()` and `@ln.step()` [PR](https://github.com/laminlabs/lamindb/pull/3402) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Call `lamin migrate deploy` even if initializing from pre-built sqlite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1245) [@falexwolf](https://github.com/falexwolf)
