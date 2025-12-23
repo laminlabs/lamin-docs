@@ -1,3 +1,4 @@
+- 🐛 Fix migrations for local and cloud sqlite [PR](https://github.com/laminlabs/lamindb-setup/pull/1246) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test use `hstore` in `DbWrite` triggers to compute diffs on update [PR](https://github.com/laminlabs/lamindb/pull/3404) [@Koncopd](https://github.com/Koncopd)
 - ✨ Track shell scripts [PR](https://github.com/laminlabs/lamindb/pull/3403) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track shell scripts [PR](https://github.com/laminlabs/lamin-cli/pull/176) [@falexwolf](https://github.com/falexwolf)
