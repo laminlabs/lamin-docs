@@ -1,3 +1,4 @@
+- ✅ Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1249) [@Koncopd](https://github.com/Koncopd)
 - ✅ Fix `hub-local` [PR](https://github.com/laminlabs/lamindb-setup/pull/1248) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix migrations for local and cloud sqlite [PR](https://github.com/laminlabs/lamindb-setup/pull/1246) [@Koncopd](https://github.com/Koncopd)
 - ✅ Test use `hstore` in `DbWrite` triggers to compute diffs on update [PR](https://github.com/laminlabs/lamindb/pull/3404) [@Koncopd](https://github.com/Koncopd)
