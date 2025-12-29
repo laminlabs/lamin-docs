@@ -1,3 +1,4 @@
+- ⬆️ Set the correct lower bound for `websockets` [PR](https://github.com/laminlabs/lamindb-setup/pull/1250) [@Koncopd](https://github.com/Koncopd)
 - ✅ Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1249) [@Koncopd](https://github.com/Koncopd)
 - ✅ Fix `hub-local` [PR](https://github.com/laminlabs/lamindb-setup/pull/1248) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix migrations for local and cloud sqlite [PR](https://github.com/laminlabs/lamindb-setup/pull/1246) [@Koncopd](https://github.com/Koncopd)
