@@ -70,27 +70,27 @@ Note that you can also manage spaces from the **Spaces** tab of your **Organizat
 
 ### Use a restricted space
 
-To upload an artifact to a restricted space, pass `--space` to `lamin save`:
+To upload an artifact to a restricted {class}`~lamindb.Space`, pass a space name to `--space` in `lamin save`:
 
 ```python
 lamin save ./myfile.txt --key myfile.txt --space "Our space"
 ```
 
-You can pass `space` when creating objects, e.g.:
+You can pass the `space` argument when creating objects:
 
 ```python
 space = ln.Space.get(name="Our space")  # get a space
 ln.Artifact("./test.txt", key="test.txt", space=space).save()  # save artifact in space
 ```
 
-You can also pass a space or space name to `ln.track()`: this will automatically save all artifacts, collections, transforms, runs and other subsequently created objects in that space:
+You can pass a space or space name to {func}`~lamindb.track`, which automatically saves all artifacts, collections, transforms, runs and other subsequently created objects in that space:
 
 ```python
 ln.track(space="Our space")
 ln.Artifact("./myfile.txt", key="myfile.txt").save()  # saved into space "Our space"
 ```
 
-To move an entity into a restricted space, set the `.space` field of its record.
+To move an entity into a restricted space, set the `.space` field of its record:
 
 ```python
 space = ln.Space.get(name="Our space")  # get a space
