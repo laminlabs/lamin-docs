@@ -66,6 +66,8 @@ To add a collaborator to your space:
 
 Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple instances, if desired.
 
+(use-a-restricted-space)=
+
 ### Use a restricted space
 
 To upload an artifact to a restricted space, pass `--space` to `lamin save`:
@@ -74,7 +76,14 @@ To upload an artifact to a restricted space, pass `--space` to `lamin save`:
 lamin save ./myfile.txt --key myfile.txt --space "Our space"
 ```
 
-By passing `space` to `ln.track()`, you determine where you save artifacts, collections, transforms, and runs in the remaining compute session.
+You can pass `space` when creating objects, e.g.:
+
+```python
+space = ln.Space.get(name="Our space")  # get a space
+ln.Artifact("./test.txt", key="test.txt", space=space).save()  # save artifact in space
+```
+
+You can also pass a space or space name to `ln.track()`: this will automatically save all artifacts, collections, transforms, runs and other subsequently created objects in that space:
 
 ```python
 ln.track(space="Our space")
@@ -84,13 +93,11 @@ ln.Artifact("./myfile.txt", key="myfile.txt").save()  # saved into space "Our sp
 To move an entity into a restricted space, set the `.space` field of its record.
 
 ```python
-space = ln.Space.get(name="Our space")  # select a space
+space = ln.Space.get(name="Our space")  # get a space
 record = ln.Record.get(name="existing label")
 record.space = space
 record.save()  # saved in space "Our space"
 ```
-
-If a record isn't yet saved, setting the `.space` field determines the space in which you save the record.
 
 ### Manage teams
 
