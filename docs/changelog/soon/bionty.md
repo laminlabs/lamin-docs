@@ -1,0 +1,1 @@
+- ♻️ Call class methods on the class [PR](https://github.com/laminlabs/bionty/pull/340) [@falexwolf](https://github.com/falexwolf)
