@@ -1,3 +1,4 @@
+- 📝 Improve the `Space` document [PR](https://github.com/laminlabs/lamindb/pull/3412) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Raise a clear error if calling `CanCurate` and similar registry class methods on objects [PR](https://github.com/laminlabs/lamindb/pull/3411) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Bump `anndata` upper bound [PR](https://github.com/laminlabs/lamindb/pull/3409) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3407) [@Koncopd](https://github.com/Koncopd)
