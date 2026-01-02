@@ -1,3 +1,4 @@
+- 🚚 Rename `rest-hub` to `backend` [PR](https://github.com/laminlabs/lamindb-setup/pull/1251) [@fredericenard](https://github.com/fredericenard)
 - 📝 Render return type annotations of `Artifact.open()` in docs [PR](https://github.com/laminlabs/lamindb/pull/3414) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Bump `fsspec` packages upper bound [PR](https://github.com/laminlabs/lamindb/pull/3413) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Bump `fsspec` packages upper bound [PR](https://github.com/laminlabs/lamindb-setup/pull/1252) [@Koncopd](https://github.com/Koncopd)
