@@ -1,3 +1,4 @@
+- 🏗️ Introduce `Feature._dtype_str` to hold a serialization that links object types (`Record` + `ULabel`) based on their `uid` instead of their `name` and type hierarchy [PR](https://github.com/laminlabs/lamindb/pull/3416) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove tracking from `collection.artifacts.all()` [PR](https://github.com/laminlabs/lamindb/pull/3405) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Rename `rest-hub` to `backend` [PR](https://github.com/laminlabs/lamindb/pull/3410) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Rename `rest-hub` to `backend` [PR](https://github.com/laminlabs/lamindb-setup/pull/1251) [@fredericenard](https://github.com/fredericenard)
