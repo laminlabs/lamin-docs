@@ -1,3 +1,4 @@
+- 🔥 Remove tracking from `collection.artifacts.all()` [PR](https://github.com/laminlabs/lamindb/pull/3405) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Rename `rest-hub` to `backend` [PR](https://github.com/laminlabs/lamindb/pull/3410) [@fredericenard](https://github.com/fredericenard)
 - 🚚 Rename `rest-hub` to `backend` [PR](https://github.com/laminlabs/lamindb-setup/pull/1251) [@fredericenard](https://github.com/fredericenard)
 - 📝 Render return type annotations of `Artifact.open()` in docs [PR](https://github.com/laminlabs/lamindb/pull/3414) [@falexwolf](https://github.com/falexwolf)
