@@ -1,1 +1,2 @@
+- 🔥 Remove deprecated `display_available_sources` [PR](https://github.com/laminlabs/bionty/pull/341) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Call class methods on the class [PR](https://github.com/laminlabs/bionty/pull/340) [@falexwolf](https://github.com/falexwolf)
