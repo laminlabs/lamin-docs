@@ -1,3 +1,4 @@
+- 💚 Use zarr_v2 extra [PR](https://github.com/laminlabs/lamin-usecases/pull/230) [@Koncopd](https://github.com/Koncopd)
 - 📝 Fix errors and outdated code in cellxgene guide [PR](https://github.com/laminlabs/cellxgene-lamin/pull/139) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Overhaul the `spatialdata` guide [PR](https://github.com/laminlabs/lamin-usecases/pull/227) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/229) [@sunnyosun](https://github.com/sunnyosun)
