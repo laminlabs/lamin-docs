@@ -1,3 +1,4 @@
+- 🚚 Better names for the `ManyToMany` fields for the annotating runs and artifacts of an `Artifact` [PR](https://github.com/laminlabs/lamindb/pull/3420) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove the API components that were deprecated upon transitioning from LaminDB v0 to v1 [PR](https://github.com/laminlabs/lamindb/pull/3419) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove long-deprecated API [PR](https://github.com/laminlabs/lamindb-setup/pull/1253) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Use the new `feature._dtype_str` instead of `feature.dtype` [PR](https://github.com/laminlabs/lamindb/pull/3418) [@falexwolf](https://github.com/falexwolf)
