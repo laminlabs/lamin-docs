@@ -1,3 +1,4 @@
+- 🔥 Remove long-deprecated API [PR](https://github.com/laminlabs/lamindb-setup/pull/1253) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Use the new `feature._dtype_str` instead of `feature.dtype` [PR](https://github.com/laminlabs/lamindb/pull/3418) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Introduce `Feature._dtype_str` to hold a serialization that links object types (`Record` + `ULabel`) based on their `uid` instead of their `name` and type hierarchy [PR](https://github.com/laminlabs/lamindb/pull/3416) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove tracking from `collection.artifacts.all()` [PR](https://github.com/laminlabs/lamindb/pull/3405) [@Koncopd](https://github.com/Koncopd)
