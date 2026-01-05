@@ -1,3 +1,4 @@
+- Shorten `lamin io snapshot` docstring [PR](https://github.com/laminlabs/lamin-cli/pull/179) [@Zethson](https://github.com/Zethson)
 - 🚸 Raise error for init or import issues in `io snapshot` [PR](https://github.com/laminlabs/lamin-cli/pull/177) [@Zethson](https://github.com/Zethson)
 - 🚚 Rename `Artifact.feature_sets` to `Artifact.schemas` [PR](https://github.com/laminlabs/lamindb/pull/3423) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Migrate the `Feature` and `Schema` database tables to LaminDB v2 [PR](https://github.com/laminlabs/lamindb/pull/3422) [@falexwolf](https://github.com/falexwolf)
