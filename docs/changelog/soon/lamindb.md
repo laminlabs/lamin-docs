@@ -1,3 +1,4 @@
+- 🗃️ Rename `SQLRecord._branch_code` to `SQLRecord.branch_id` and remove `feature_ref_is_name` and `label_ref_is_name` fields from link models [PR](https://github.com/laminlabs/lamindb/pull/3424) [@falexwolf](https://github.com/falexwolf)
 - Shorten `lamin io snapshot` docstring [PR](https://github.com/laminlabs/lamin-cli/pull/179) [@Zethson](https://github.com/Zethson)
 - 🚸 Raise error for init or import issues in `io snapshot` [PR](https://github.com/laminlabs/lamin-cli/pull/177) [@Zethson](https://github.com/Zethson)
 - 🚚 Rename `Artifact.feature_sets` to `Artifact.schemas` [PR](https://github.com/laminlabs/lamindb/pull/3423) [@falexwolf](https://github.com/falexwolf)
