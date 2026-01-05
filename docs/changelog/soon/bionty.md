@@ -1,2 +1,3 @@
+- 🗃️ Migrations for LaminDB v2 [PR](https://github.com/laminlabs/bionty/pull/342) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove deprecated `display_available_sources` [PR](https://github.com/laminlabs/bionty/pull/341) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Call class methods on the class [PR](https://github.com/laminlabs/bionty/pull/340) [@falexwolf](https://github.com/falexwolf)
