@@ -1,3 +1,4 @@
+- ♻️ Remove unused clone code [PR](https://github.com/laminlabs/lamindb-setup/pull/1255) [@Zethson](https://github.com/Zethson)
 - 💚 Fix test setup [PR](https://github.com/laminlabs/lamindb-setup/pull/1256) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Remove `feature_ref_is_name` and `label_ref_is_name` [PR](https://github.com/laminlabs/lamindb-setup/pull/1257) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Rename `SQLRecord._branch_code` to `SQLRecord.branch_id` and remove `feature_ref_is_name` and `label_ref_is_name` fields from link models [PR](https://github.com/laminlabs/lamindb/pull/3424) [@falexwolf](https://github.com/falexwolf)
