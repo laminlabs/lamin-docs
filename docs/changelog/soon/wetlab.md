@@ -1,3 +1,4 @@
+- 🗃️ Migrations for LaminDB v2 [PR](https://github.com/laminlabs/wetlab/pull/128) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Create a composite index for `artifact`, `perturbationtarget` fileds in `ArtifactPerturbationTarget` [PR](https://github.com/laminlabs/wetlab/pull/127) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Do not depend on squashed migrations [PR](https://github.com/laminlabs/wetlab/pull/126) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Create a composite index for `artifact`, `geneticperturbation` fileds in `ArtifactGeneticPerturbation` [PR](https://github.com/laminlabs/wetlab/pull/125) [@Koncopd](https://github.com/Koncopd)
