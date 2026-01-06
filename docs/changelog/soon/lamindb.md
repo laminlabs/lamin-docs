@@ -1,3 +1,4 @@
+- ♻️ Refactor require_organism [PR](https://github.com/laminlabs/lamindb/pull/3429) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix broken imports from `hubmodule` [PR](https://github.com/laminlabs/lamindb/pull/3428) [@fredericenard](https://github.com/fredericenard)
 - 💚 Fix hub-local setup [PR](https://github.com/laminlabs/lamindb-setup/pull/1258) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix tests setup [PR](https://github.com/laminlabs/lamindb/pull/3426) [@Koncopd](https://github.com/Koncopd)
