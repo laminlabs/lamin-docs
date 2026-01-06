@@ -1,3 +1,4 @@
+- 💚 Fix hub-local setup [PR](https://github.com/laminlabs/lamindb-setup/pull/1258) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix tests setup [PR](https://github.com/laminlabs/lamindb/pull/3426) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Remove unused clone code [PR](https://github.com/laminlabs/lamindb-setup/pull/1255) [@Zethson](https://github.com/Zethson)
 - 💚 Fix test setup [PR](https://github.com/laminlabs/lamindb-setup/pull/1256) [@Koncopd](https://github.com/Koncopd)
