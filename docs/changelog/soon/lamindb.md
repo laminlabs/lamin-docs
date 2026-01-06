@@ -1,3 +1,4 @@
+- 🗃️ Rename `Artifact._subsequent_runs` to `Artifact.recreating_runs` and `Run._recreated_artifacts` to `Run.recreated_artifacts` [PR](https://github.com/laminlabs/lamindb/pull/3432) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Raise `SystemExit` upon `InstanceNotFound` only from CLI [PR](https://github.com/laminlabs/lamindb-setup/pull/1240) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor data migration from `dtype` to `_dtype_str` [PR](https://github.com/laminlabs/lamindb/pull/3431) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor require_organism [PR](https://github.com/laminlabs/lamindb/pull/3429) [@sunnyosun](https://github.com/sunnyosun)
