@@ -1,0 +1,1 @@
+- :bug: Fix feature hover card not functioning correctly [PR](https://github.com/laminlabs/laminhub-public/pull/170) [@chaichontat](https://github.com/chaichontat)
