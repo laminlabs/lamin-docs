@@ -1,3 +1,4 @@
+- ✨ Allow passing `_key_is_virtual` on `Artifact` creation [PR](https://github.com/laminlabs/lamindb/pull/3438) [@Koncopd](https://github.com/Koncopd)
 - ✅ Restore `check_lamin_dev`, add defensive `artifact` cleanup [PR](https://github.com/laminlabs/lamindb/pull/3434) [@Koncopd](https://github.com/Koncopd)
 - 👷 Ensure `wetlab` version `2.0a1` is installed [PR](https://github.com/laminlabs/lamindb/pull/3433) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Rename `Artifact._subsequent_runs` to `Artifact.recreating_runs` and `Run._recreated_artifacts` to `Run.recreated_artifacts` [PR](https://github.com/laminlabs/lamindb/pull/3432) [@falexwolf](https://github.com/falexwolf)
