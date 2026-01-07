@@ -1,1 +1,2 @@
+- :bug: Fix filtering state leakage across different pages [PR](https://github.com/laminlabs/laminhub-public/pull/171) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix feature hover card not functioning correctly [PR](https://github.com/laminlabs/laminhub-public/pull/170) [@chaichontat](https://github.com/chaichontat)
