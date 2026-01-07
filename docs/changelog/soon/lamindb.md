@@ -1,3 +1,4 @@
+- 🗃️ Rename `IsVersioned.version` to `IsVersioned.version_tag`, `Transform.type` to `Transform.kind`, `FeatureValue` to `JsonValue`, `BaseBlock.type` to `BaseBlock.kind`, delete `Transform._template` and `Run._logfile` [PR](https://github.com/laminlabs/lamindb/pull/3435) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow passing `_key_is_virtual` on `Artifact` creation [PR](https://github.com/laminlabs/lamindb/pull/3438) [@Koncopd](https://github.com/Koncopd)
 - ✅ Restore `check_lamin_dev`, add defensive `artifact` cleanup [PR](https://github.com/laminlabs/lamindb/pull/3434) [@Koncopd](https://github.com/Koncopd)
 - 👷 Ensure `wetlab` version `2.0a1` is installed [PR](https://github.com/laminlabs/lamindb/pull/3433) [@falexwolf](https://github.com/falexwolf)
