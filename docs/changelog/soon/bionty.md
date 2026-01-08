@@ -1,3 +1,4 @@
+- 🗃️ Migrations for Bionty v2 [PR](https://github.com/laminlabs/bionty/pull/344) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor require_organism [PR](https://github.com/laminlabs/bionty/pull/343) [@sunnyosun](https://github.com/sunnyosun)
 - 🗃️ Migrations for LaminDB v2 [PR](https://github.com/laminlabs/bionty/pull/342) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove deprecated `display_available_sources` [PR](https://github.com/laminlabs/bionty/pull/341) [@falexwolf](https://github.com/falexwolf)
