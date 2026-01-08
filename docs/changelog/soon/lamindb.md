@@ -1,3 +1,4 @@
+- 👷 Reflect permission utils refactoring in noxfile [PR](https://github.com/laminlabs/lamindb/pull/3441) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix tests related to wetlab [PR](https://github.com/laminlabs/lamindb-setup/pull/1261) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test `user` updates [PR](https://github.com/laminlabs/lamindb/pull/3437) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Bionty v2 migrations [PR](https://github.com/laminlabs/lamindb/pull/3430) [@sunnyosun](https://github.com/sunnyosun)
