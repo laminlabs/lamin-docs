@@ -1,3 +1,4 @@
+- 💚 Fix tests related to wetlab [PR](https://github.com/laminlabs/lamindb-setup/pull/1261) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Test `user` updates [PR](https://github.com/laminlabs/lamindb/pull/3437) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Bionty v2 migrations [PR](https://github.com/laminlabs/lamindb/pull/3430) [@sunnyosun](https://github.com/sunnyosun)
 - ➕ Add new backend packages in noxfile [PR](https://github.com/laminlabs/lamindb-setup/pull/1260) [@fredericenard](https://github.com/fredericenard)
