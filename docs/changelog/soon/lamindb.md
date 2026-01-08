@@ -1,3 +1,4 @@
+- 🗃️ Bionty v2 migrations [PR](https://github.com/laminlabs/lamindb/pull/3430) [@sunnyosun](https://github.com/sunnyosun)
 - ➕ Add new backend packages in noxfile [PR](https://github.com/laminlabs/lamindb-setup/pull/1260) [@fredericenard](https://github.com/fredericenard)
 - 🚚 `FeatureValue` to `JsonValue` [PR](https://github.com/laminlabs/lamindb-setup/pull/1259) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Rename `IsVersioned.version` to `IsVersioned.version_tag`, `Transform.type` to `Transform.kind`, `FeatureValue` to `JsonValue`, `BaseBlock.type` to `BaseBlock.kind`, delete `Transform._template` and `Run._logfile` [PR](https://github.com/laminlabs/lamindb/pull/3435) [@falexwolf](https://github.com/falexwolf)
