@@ -1,3 +1,4 @@
+- ♻️ Edits for `noxfile` [PR](https://github.com/laminlabs/lamindb/pull/3444) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Migrate most auxiliary fields to SQL columns [PR](https://github.com/laminlabs/lamindb/pull/3443) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Simplify `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3442) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add `description` argument to `Transform.from_git()` [PR](https://github.com/laminlabs/lamindb/pull/3440) [@falexwolf](https://github.com/falexwolf)
