@@ -1,3 +1,4 @@
+- ⚡️ Squash migration [PR](https://github.com/laminlabs/bionty/pull/350) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Migrations for Bionty v2 [PR](https://github.com/laminlabs/bionty/pull/344) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor require_organism [PR](https://github.com/laminlabs/bionty/pull/343) [@sunnyosun](https://github.com/sunnyosun)
 - 🗃️ Migrations for LaminDB v2 [PR](https://github.com/laminlabs/bionty/pull/342) [@falexwolf](https://github.com/falexwolf)
