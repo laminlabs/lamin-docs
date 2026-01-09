@@ -1,3 +1,4 @@
+- 🗃️ Migrate most auxiliary fields to SQL columns [PR](https://github.com/laminlabs/lamindb/pull/3443) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Simplify `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3442) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add `description` argument to `Transform.from_git()` [PR](https://github.com/laminlabs/lamindb/pull/3440) [@falexwolf](https://github.com/falexwolf)
 - 👷 Reflect permission utils refactoring in noxfile [PR](https://github.com/laminlabs/lamindb/pull/3441) [@falexwolf](https://github.com/falexwolf)
