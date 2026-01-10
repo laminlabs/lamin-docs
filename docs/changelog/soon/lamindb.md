@@ -1,3 +1,4 @@
+- ⚡️ Squash migrations and re-build SQLite init database [PR](https://github.com/laminlabs/lamindb/pull/3453) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Re-build SQLite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1263) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Rename `RootBlock` to `Block` with a column `key` akin to `Artifact` and `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3452) [@falexwolf](https://github.com/falexwolf)
 - Fix create from source [PR](https://github.com/laminlabs/lamindb/pull/3451) [@sunnyosun](https://github.com/sunnyosun)
