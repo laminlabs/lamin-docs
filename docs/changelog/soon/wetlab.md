@@ -1,8 +1,0 @@
-- ⚡️ Squash migrations [PR](https://github.com/laminlabs/wetlab/pull/132) [@falexwolf](https://github.com/falexwolf)
-- 🎨 Default BioRecord uid to 14 chars [PR](https://github.com/laminlabs/wetlab/pull/130) [@sunnyosun](https://github.com/sunnyosun)
-- ⚡ Squash migration [PR](https://github.com/laminlabs/wetlab/pull/131) [@falexwolf](https://github.com/falexwolf)
-- 🗃️ Migrations for wetlab v2 [PR](https://github.com/laminlabs/wetlab/pull/129) [@sunnyosun](https://github.com/sunnyosun)
-- 🗃️ Migrations for LaminDB v2 [PR](https://github.com/laminlabs/wetlab/pull/128) [@falexwolf](https://github.com/falexwolf)
-- 🗃️ Create a composite index for `artifact`, `perturbationtarget` fileds in `ArtifactPerturbationTarget` [PR](https://github.com/laminlabs/wetlab/pull/127) [@Koncopd](https://github.com/Koncopd)
-- ♻️ Do not depend on squashed migrations [PR](https://github.com/laminlabs/wetlab/pull/126) [@falexwolf](https://github.com/falexwolf)
-- 🗃️ Create a composite index for `artifact`, `geneticperturbation` fileds in `ArtifactGeneticPerturbation` [PR](https://github.com/laminlabs/wetlab/pull/125) [@Koncopd](https://github.com/Koncopd)
