@@ -1,3 +1,4 @@
+- ⚡️ Squash migrations [PR](https://github.com/laminlabs/bionty/pull/351) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Default BioRecord uid to 14 chars [PR](https://github.com/laminlabs/bionty/pull/349) [@sunnyosun](https://github.com/sunnyosun)
 - ⚡️ Squash migration [PR](https://github.com/laminlabs/bionty/pull/350) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Migrations for Bionty v2 [PR](https://github.com/laminlabs/bionty/pull/344) [@sunnyosun](https://github.com/sunnyosun)
