@@ -1,3 +1,4 @@
+- ⚡️ Re-build SQLite file [PR](https://github.com/laminlabs/lamindb-setup/pull/1263) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Rename `RootBlock` to `Block` with a column `key` akin to `Artifact` and `Transform` [PR](https://github.com/laminlabs/lamindb/pull/3452) [@falexwolf](https://github.com/falexwolf)
 - Fix create from source [PR](https://github.com/laminlabs/lamindb/pull/3451) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor `dtype` data migration to raw SQL to avoid inexistent `branch_id` [PR](https://github.com/laminlabs/lamindb/pull/3449) [@falexwolf](https://github.com/falexwolf)
