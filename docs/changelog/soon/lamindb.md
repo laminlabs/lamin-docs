@@ -1,3 +1,4 @@
+- Fix create from source [PR](https://github.com/laminlabs/lamindb/pull/3451) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Refactor `dtype` data migration to raw SQL to avoid inexistent `branch_id` [PR](https://github.com/laminlabs/lamindb/pull/3449) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Re-encode biorecord uid to 14 chars [PR](https://github.com/laminlabs/lamindb/pull/3450) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 More release preparations: backward compat for artifact queries by `feature_sets`, defensive migration [PR](https://github.com/laminlabs/lamindb/pull/3448) [@falexwolf](https://github.com/falexwolf)
