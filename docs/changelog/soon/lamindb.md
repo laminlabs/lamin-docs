@@ -1,3 +1,4 @@
+- 🚸 More release preparations: backward compat for artifact queries by `feature_sets`, defensive migration [PR](https://github.com/laminlabs/lamindb/pull/3448) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Refactor `_storage_completed` mechanism and remove unique constraints on type names [PR](https://github.com/laminlabs/lamindb/pull/3445) [@falexwolf](https://github.com/falexwolf)
 - ♻️ More verbose migration integrity check [PR](https://github.com/laminlabs/lamindb-setup/pull/1262) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Edits for `noxfile` [PR](https://github.com/laminlabs/lamindb/pull/3444) [@Koncopd](https://github.com/Koncopd)
