@@ -1,0 +1,1 @@
+- 🚸 Backward compatibility for querying features by `dtype` [PR](https://github.com/laminlabs/lamindb/pull/3454) [@falexwolf](https://github.com/falexwolf)
