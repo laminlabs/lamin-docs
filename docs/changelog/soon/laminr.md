@@ -1,2 +1,3 @@
+- 🔖 Release v1.2.1 [PR](https://github.com/laminlabs/laminr/pull/242) [@lazappi](https://github.com/lazappi)
 - ⬆️ Bump minimal lamindb version to 2.0a2 [PR](https://github.com/laminlabs/laminr/pull/244) [@falexwolf](https://github.com/falexwolf)
 - Bump actions/checkout from 5 to 6 [PR](https://github.com/laminlabs/laminr/pull/238) [@dependabot[bot]](https://github.com/apps/dependabot)
