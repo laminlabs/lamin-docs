@@ -1,0 +1,1 @@
+- ✨ Transform search bar also understands run names and UIDs [PR](https://github.com/laminlabs/laminhub-public/pull/173) [@chaichontat](https://github.com/chaichontat)
