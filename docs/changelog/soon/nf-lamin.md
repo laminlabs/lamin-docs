@@ -1,3 +1,4 @@
+- :sparkles: Implement FileSystem for lamin:// URIs [PR](https://github.com/laminlabs/nf-lamin/pull/116) [@rcannood](https://github.com/rcannood)
 - 🚚 Rename `Transform.type` to `Transform.kind` and `Transform.version` to `Transform.version_tag` for LaminDB v2 [PR](https://github.com/laminlabs/nf-lamin/pull/118) [@falexwolf](https://github.com/falexwolf)
 - :bug: Fix LaminObserver integration test [PR](https://github.com/laminlabs/nf-lamin/pull/120) [@rcannood](https://github.com/rcannood)
 - 💚 Split CI to avoid confusion about what is failing [PR](https://github.com/laminlabs/nf-lamin/pull/119) [@rcannood](https://github.com/rcannood)
