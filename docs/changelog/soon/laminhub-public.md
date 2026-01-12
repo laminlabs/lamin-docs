@@ -1,1 +1,2 @@
+- 🚸 Default to not listing inferred schemas without names [PR](https://github.com/laminlabs/laminhub-public/pull/174) [@chaichontat](https://github.com/chaichontat)
 - ✨ Transform search bar also understands run names and UIDs [PR](https://github.com/laminlabs/laminhub-public/pull/173) [@chaichontat](https://github.com/chaichontat)
