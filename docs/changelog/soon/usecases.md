@@ -1,3 +1,4 @@
+- 💚 Fix extras [PR](https://github.com/laminlabs/cellxgene-lamin/pull/142) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/231) [@sunnyosun](https://github.com/sunnyosun)
 - 🏗️ Use `_dtype_str` rather than `dtype` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/140) [@falexwolf](https://github.com/falexwolf)
 - 💚 Use zarr_v2 extra [PR](https://github.com/laminlabs/lamin-usecases/pull/230) [@Koncopd](https://github.com/Koncopd)
