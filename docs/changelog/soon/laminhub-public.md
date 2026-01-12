@@ -1,3 +1,4 @@
+- 🐛 Fix schema relation to use `_dtype_str` instead of `dtype` [PR](https://github.com/laminlabs/laminhub-public/pull/177) [@chaichontat](https://github.com/chaichontat)
 - 🚚 Rename `transform.type` to `transform.kind` [PR](https://github.com/laminlabs/laminhub-public/pull/176) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Default to not listing inferred schemas without names [PR](https://github.com/laminlabs/laminhub-public/pull/174) [@chaichontat](https://github.com/chaichontat)
 - ✨ Transform search bar also understands run names and UIDs [PR](https://github.com/laminlabs/laminhub-public/pull/173) [@chaichontat](https://github.com/chaichontat)
