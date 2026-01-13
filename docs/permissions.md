@@ -153,57 +153,44 @@ To add a team to your instance:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
 </div>
 
-## Example
+## An example
 
-One way of using spaces to restrict access within an instance is this.
-
-1.  **Default space: `"All"`**
-
-    - Purpose: Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance.
-    - Access: _Every_ instance collaborator has read or higher levels of access.
-
-2.  **Restricted space 1: `"Curation"`**
-
-    - Purpose: Stores sensitive curated data requiring stricter access control.
-    - Access example:
-      - A `"Curation Team"` has write access.
-      - A `"ML Team"` has read access.
-      - No access granted to other teams by default.
-
-3.  **Restricted space 2: `"ML"`**
-    - Purpose: Contains machine learning models, development resources, and potentially experimental data.
-    - Access example:
-      - Only `"ML Team"` has access (read/write as needed).
-      - Completely isolated from other teams & individuals unless explicitly granted.
-
-## Definitions
-
-Lamin's access management is built on:
-
-1.  **Organizations:** An organizational account can group users, instances, and other entities belonging to the same organization.
-2.  **Teams:** Groups of users within an organization. Roles and permissions can be assigned collectively to teams.
-3.  **Instances:** LaminDB instances are the central databases at the heart of the data platform similar to how git repositories are central to GitHub.
-4.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
-5.  **Storage locations:** Access to storage locations in the cloud are implied by a user's access to instances & spaces.
-
-### Spaces
-
-Spaces are areas within instances that allow specific permissions to be set on subsets of data for organization resources by department, project, or sensitivity level:
-
-- Each space has its own set of collaborators with their roles and permissions, independent of instance-level roles.
-- Users must be both instance collaborators AND space collaborators to access resources in a space within an instance.
-- Spaces must be attached to an instance before records from that instance can be assigned to the space (you need both instance and space admin permissions to create this attachment).
-- Spaces are applied at the database record level, and a record can only belong to one space.
+An `ML` and a `Curation` team collaborate across spaces to server the wider organization:
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/rbMZRx714tQe4kZQ0000.png" style="width: 90%;"/>
 </div>
 
-The default space of an instance:
+| Space                       | Description                                                                                                               | Access                                                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Default `all` space         | Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance. | _Every_ instance collaborator has read or higher levels of access.                                                                |
+| Restricted `Curation` space | Stores sensitive curated data requiring stricter access permissions.                                                      | A `"Curation Team"` has write access. A `"ML Team"` has read access. No access granted to other teams by default.                 |
+| Restricted `ML` space       | Contains machine learning models, development resources, and potentially experimental data.                               | Only `"ML Team"` has access (read/write as needed). Completely isolated from other teams & individuals unless explicitly granted. |
 
-- **Default space:** Every instance includes a default space with the name `"All"` upon creation. This space holds common resources that are meant to be accessible to all instance collaborators.
-- **Read collaborators:** All collaborators added to an instance automatically receive read access to the default `"All"` space.
-- **Write collaborators:** Collaborators granted write or admin permissions at the instance level automatically receive write access to the default `"All"` space.
+## Definitions
+
+Lamin's access management is built on:
+
+1.  **Users:** _User accounts_ belong to human users and own resources like databases.
+2.  **Organizations:** _Organizational accounts_ can be accessed by the organization's members and own resources like user accounts.
+3.  **Teams:** Groups of users. Roles and permissions can be assigned to teams like for users.
+4.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
+5.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
+6.  **Storage locations:** Access to storage locations in the cloud are implied by a user's access to instances & spaces.
+
+### Spaces
+
+Spaces allow to restrict permissions for any object in a LaminDB instance:
+
+- Each space has its own set of collaborators with their roles and permissions, independent of instance-level roles.
+- Users must be both instance collaborators AND space collaborators to access resources in a space within an instance.
+- Spaces must be attached to an instance before records from that instance can be moved into the space (you need both instance and space admin permissions to attach the space to an instance).
+- Spaces are applied at the database record level and any database record can only belong to a single space.
+
+The default space of an instance: Every instance includes a default `all` space analogous to the default `main` branch. This space holds common resources that are meant to be accessible to all instance collaborators.
+
+- **Read collaborators:** All collaborators added to an instance automatically receive read access to the default `all` space.
+- **Write collaborators:** Collaborators granted write or admin permissions to the instance automatically receive write access to the default `all` space.
 
 ### Teams
 
@@ -214,50 +201,41 @@ Users can be collaborators either directly as individual users or through team m
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/61iaMcMV4NtDxFnb0000.png" style="width: 70%;"/>
 </div>
 
-### Roles
+## Roles
 
-| Page   | Role    | Description                                   | Preview                                                                                |
-| ------ | ------- | --------------------------------------------- | -------------------------------------------------------------------------------------- |
-| People | Member  | Can see members, but not edit                 | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/qiXyV8e1yRldsLoP0000" /> |
-| People | Manager | Can make changes to members                   | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RykE92ZCpUxK9ob90000" /> |
-| People | Manager | Can not make changes to admin members         | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/7GxCFwj01NIZmuDE0000" /> |
-| People | Admin   | Can make changes to all members               | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JualyGFron6rhmiC0000" /> |
-|        |         |                                               |                                                                                        |
-| Teams  | Member  | Can see teams, but not edit                   | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/u9TDpgRzi6ZODHq30000" /> |
-| Teams  | Member  | Can make changes to teams they are admins of  | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/vp2e9akFCKg5zoci0000" /> |
-| Teams  | Manager | Can make changes all teams                    | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VCr4GnnQ6fDS6QoB0000" /> |
-| Teams  | Admin   | Can make changes to all teams                 | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VCr4GnnQ6fDS6QoB0000" /> |
-|        |         |                                               |                                                                                        |
-| Spaces | Member  | Can see spaces, but not edit                  | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/k1QvNzJqIFOuncpc0000" /> |
-| Spaces | Member  | Can make changes to spaces they are admins of | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1Wf1SaxyLT1qnpGP0000" /> |
-| Spaces | Manager | Can make changes all spaces                   | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JbWgMqRjRgBXVnjX0000" /> |
-| Spaces | Admin   | Can make changes to all spaces                | <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/JbWgMqRjRgBXVnjX0000" /> |
+### Organization roles
 
-#### Organization roles
+| Role         | Description                                                                                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Admins**   | Have complete access and control over all resources within the organization, including managing teams, instances, spaces, and organization settings.                    |
+| **Managers** | Can manage teams, instances, and spaces but have limitations on modifying organization-level settings.                                                                  |
+| **Members**  | Can be granted access to specific resources (teams, instances, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited. |
+| **Guests**   | Intended for external collaborators with limited access, typically restricted to specific instances or spaces they are explicitly invited to.                           |
 
-- **Admins:** Have complete access and control over all resources within the organization, including managing teams, instances, spaces, and organization settings.
-- **Managers:** Can manage teams, instances, and spaces but have limitations on modifying organization-level settings.
-- **Members:** Can be granted access to specific resources (teams, instances, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited.
-- **Guests:** Intended for external collaborators with limited access, typically restricted to specific instances or spaces they are explicitly invited to.
+### Team roles
 
-#### Team roles
+| Role        | Description                                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Admins**  | Can add/remove team members, define member roles within the team context, and manage team resources or settings. Can typically perform any action a member can. |
+| **Members** | Can access resources granted to the team (e.g., specific instances or spaces).                                                                                  |
 
-- **Admins:** Can add/remove team members, define member roles within the team context, and manage team resources or settings. Can typically perform any action a member can.
-- **Members:** Can access resources granted to the team (e.g., specific instances or spaces).
+### Instance roles
 
-#### Instance roles
-
-- **Admins:** Can add/remove collaborators from the instance, define collaborator roles within the instance, and manage instance settings. For data access, automatically receive write access to the default "All" space only.
-- **Read collaborators:** Automatically receive read access to the default "All" space only.
-- **Write collaborators:** Automatically receive write access to the default "All" space only.
+| Role                    | Description                                                                                                                                                                                                       |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Admins**              | Can add/remove collaborators from the instance, define collaborator roles within the instance, and manage instance settings. For data access, automatically receive write access to the default "All" space only. |
+| **Read collaborators**  | Automatically receive read access to the default "All" space only.                                                                                                                                                |
+| **Write collaborators** | Automatically receive write access to the default "All" space only.                                                                                                                                               |
 
 **Note:** Permissions for spaces other than the default "All" space must be managed separately and independently of the instance collaborator role.
 
-#### Space roles
+### Space roles
 
-- **Admins:** Have full control over the specific space, including managing permissions and content within that space.
-- **Read collaborators:** Can read data and view resources within that specific space across accessible instances.
-- **Write collaborators:** Can read, add, and modify data or resources within that specific space across accessible instances.
+| Role                    | Description                                                                                              |
+| ----------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Admins**              | Have full control over the specific space, including managing permissions and content within that space. |
+| **Read collaborators**  | Can read data and view resources within that specific space across accessible instances.                 |
+| **Write collaborators** | Can read, add, and modify data or resources within that specific space across accessible instances.      |
 
 ## How does it work?
 

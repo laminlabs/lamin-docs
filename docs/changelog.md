@@ -3,6 +3,7 @@
 ```{toctree}
 
 /changelog/soon
+/changelog/2026
 /changelog/2025
 /changelog/2024
 /changelog/2023
