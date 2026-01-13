@@ -188,6 +188,14 @@ class LaminDBToLaminRConverter:
         pattern = r'(\b\w+)\s*=\s*(?=[^=])'
         return re.sub(pattern, r'\1 = ', line)
 
+    def convert_dtype_arguments(self, line: str) -> str:
+        """Quote dtype argument values.
+
+        Converts `dtype = float` to `dtype = "float"`, etc.
+        """
+        pattern = r'(dtype\s*=\s*)([a-zA-Z_]\w*)(?!["\'])'
+        return re.sub(pattern, r'\1"\2"', line)
+
     def convert_collections(self, line: str) -> str:
         """Convert Python collections to R lists.
 
@@ -248,6 +256,7 @@ ln <- import_module("lamindb")
         line = self.convert_boolean_values(line)
         line = self.convert_assignment_operator(line)
         line = self.convert_function_arguments(line)
+        line = self.convert_dtype_arguments(line)
         line = self.convert_collections(line)
         line = self.convert_comments(line)
 
