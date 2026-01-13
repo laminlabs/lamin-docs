@@ -172,6 +172,23 @@ class LaminDBToLaminRConverter:
         line = re.sub(r"\bNone\b", "NULL", line)
         return line
 
+    def convert_assignment_operator(self, line: str) -> str:
+        """Convert Python assignment operator = to R's <- for variable assignments.
+        
+        Matches 'var = ' pattern at the start of the line (after leading whitespace).
+        """
+        # Match pattern: optional whitespace, variable name, spaces, =, space
+        pattern = r'^(\s*)([a-zA-Z_]\w*)\s*=\s+'
+        # Replace pattern: optional whitespace, variable name, ' <- '
+        replacement = r'\1\2 <- '
+        return re.sub(pattern, replacement, line)
+
+    def convert_function_arguments(self, line: str) -> str:
+        """Add spaces around = in function arguments."""
+        # Match argument=value where the = is not part of ==
+        pattern = r'(\b\w+)\s*=\s*(?=[^=])'
+        return re.sub(pattern, r'\1 = ', line)
+
     def add_r_header(self) -> str:
         """Add necessary R library imports at the top."""
         return """library(laminr)
@@ -196,6 +213,8 @@ ln <- import_module("lamindb")
         line = self.convert_dot_notation(line)
         line = self.convert_string_formatting(line)
         line = self.convert_boolean_values(line)
+        line = self.convert_assignment_operator(line)
+        line = self.convert_function_arguments(line)
         line = self.convert_comments(line)
 
         return line
