@@ -1,2 +1,3 @@
+- ✨ New Gene version: ensembl-114 [PR](https://github.com/laminlabs/bionty/pull/346) [@Zethson](https://github.com/Zethson)
 - Update deprecated code [PR](https://github.com/laminlabs/bionty/pull/353) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 More robust `add_source` [PR](https://github.com/laminlabs/bionty/pull/352) [@sunnyosun](https://github.com/sunnyosun)
