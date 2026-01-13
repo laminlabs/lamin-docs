@@ -41,7 +41,7 @@ visualization
 :hidden:
 :caption: The Hub
 
-access
+permissions
 sheets
 security
 ```
