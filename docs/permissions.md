@@ -1,4 +1,4 @@
-# Manage access
+# Manage access permissions
 
 Lamin allows you and your users to manage access similar to how you'd do it on GitHub, Google Drive, Microsoft Sharepoint, or Notion. Your infrastructure team stays in full control over storage & database permissions directly on AWS or GCP.
 
