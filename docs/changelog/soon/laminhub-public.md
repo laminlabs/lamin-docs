@@ -1,1 +1,2 @@
+- 🐛 More strictly enforce schema during UI-based record creation [PR](https://github.com/laminlabs/laminhub-public/pull/179) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix too restrictive RLS for `resource_db_server_visibility` [PR](https://github.com/laminlabs/laminhub-public/pull/178) [@fredericenard](https://github.com/fredericenard)
