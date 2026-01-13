@@ -161,17 +161,11 @@ An `ML` and a `Curation` team collaborate across spaces to server the wider orga
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/rbMZRx714tQe4kZQ0000.png" style="width: 90%;"/>
 </div>
 
-1. The default `all` space: Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance. _Every_ instance collaborator has read or higher levels of access.
-2. The restricted `Curation` space: Stores sensitive curated data requiring stricter access permissions:
-
-- A `"Curation Team"` has write access.
-- A `"ML Team"` has read access.
-- No access granted to other teams by default.
-
-3. The restricted `ML` space: Contains machine learning models, development resources, and potentially experimental data.
-
-- Only `"ML Team"` has access (read/write as needed).
-- Completely isolated from other teams & individuals unless explicitly granted.
+| Space                       | Description                                                                                                               | Access                                                                                                                            |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Default `all` space         | Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance. | _Every_ instance collaborator has read or higher levels of access.                                                                |
+| Restricted `Curation` space | Stores sensitive curated data requiring stricter access permissions.                                                      | A `"Curation Team"` has write access. A `"ML Team"` has read access. No access granted to other teams by default.                 |
+| Restricted `ML` space       | Contains machine learning models, development resources, and potentially experimental data.                               | Only `"ML Team"` has access (read/write as needed). Completely isolated from other teams & individuals unless explicitly granted. |
 
 ## Definitions
 
