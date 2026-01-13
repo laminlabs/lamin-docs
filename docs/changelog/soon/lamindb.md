@@ -1,0 +1,1 @@
+- 🐛 Fix `Artifact.from_dataframe` to support path input [PR](https://github.com/laminlabs/lamindb/pull/3455) [@Zethson](https://github.com/Zethson)
