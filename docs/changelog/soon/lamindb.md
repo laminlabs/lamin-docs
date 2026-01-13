@@ -1,2 +1,3 @@
+- ⬆️ Update standard ontology [PR](https://github.com/laminlabs/lamindb/pull/3461) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix str behavior of `Artifact.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3457) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix `Artifact.from_dataframe` to support path input [PR](https://github.com/laminlabs/lamindb/pull/3455) [@Zethson](https://github.com/Zethson)
