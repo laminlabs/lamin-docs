@@ -1,4 +1,3 @@
-import ast
 import re
 from typing import Any
 
@@ -189,6 +188,40 @@ class LaminDBToLaminRConverter:
         pattern = r'(\b\w+)\s*=\s*(?=[^=])'
         return re.sub(pattern, r'\1 = ', line)
 
+    def convert_collections(self, line: str) -> str:
+        """Convert Python collections to R lists.
+
+        - Dict: `{key1: value1, key2: value2}` → `list(key = value, key2 = value2)`
+        - List: `[a, b, c]` → `list(a, b, c)`
+        """
+
+        list_pattern = re.compile(r"\[([^\[\]{}()]*)\]")
+        prev = None
+        while prev != line:
+            prev = line
+            line = list_pattern.sub(lambda m: f"list({m.group(1)})", line)
+
+        def replace_dict_items(m: re.Match) -> str:
+            content = m.group(1)
+            # Replace key: value → key = value (keys can be identifiers or quoted strings)
+            def unquote_keys(match: re.Match) -> str:
+                key = match.group(1)
+                # Strip surrounding quotes from keys if present
+                if (key.startswith('"') and key.endswith('"')) or (key.startswith("'") and key.endswith("'")):
+                    key = key[1:-1]
+                return f"{key} = "
+
+            content = re.sub(r"((?:\w+|\"[^\"]*\"|'[^']*'))\s*:\s*", unquote_keys, content)
+            return f"list({content})"
+
+        dict_pattern = re.compile(r"\{([^{}]+)\}")
+        prev = None
+        while prev != line:
+            prev = line
+            line = dict_pattern.sub(replace_dict_items, line)
+
+        return line
+
     def add_r_header(self) -> str:
         """Add necessary R library imports at the top."""
         return """library(laminr)
@@ -215,6 +248,7 @@ ln <- import_module("lamindb")
         line = self.convert_boolean_values(line)
         line = self.convert_assignment_operator(line)
         line = self.convert_function_arguments(line)
+        line = self.convert_collections(line)
         line = self.convert_comments(line)
 
         return line
