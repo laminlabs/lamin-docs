@@ -100,6 +100,8 @@ class LaminDBToLaminRConverter:
             return '# library(reticulate)\n# pd <- import("pandas")  # or use native R data.frame'
         elif "import numpy as np" in line:
             return '# library(reticulate)\n# np <- import("numpy")  # or use native R arrays'
+        elif "from datetime import" in line:
+            return '# library(reticulate)\n# datetime <- import("datetime")'
 
         return f"# {line}  # TODO: Convert this import manually"
 
@@ -203,6 +205,17 @@ class LaminDBToLaminRConverter:
         """
         pattern = r'(dtype\s*=\s*)([a-zA-Z_]\w*)(?!["\'])'
         return re.sub(pattern, r'\1"\2"', line)
+    
+    def convert_date_function(self, line: str) -> str:
+        """Convert date( calls to datetime$date( for R and add L suffix to integer arguments."""
+        def add_integer_suffix(match):
+            content = match.group(1)
+            # Replace numeric literals with integer literals (add L suffix)
+            content = re.sub(r'\b(\d+)(?![\.\dL])', r'\1L', content)
+            return f'datetime$date({content})'
+        
+        # Match date( followed by its arguments until the closing )
+        return re.sub(r'\bdate\(([^)]+)\)', add_integer_suffix, line)
 
     def convert_collections(self, code: str) -> str:
         """Convert Python lists and dicts to R lists"""
@@ -327,6 +340,7 @@ ln <- import_module("lamindb")
         line = self.convert_assignment_operator(line)
         line = self.convert_function_arguments(line)
         line = self.convert_dtype_arguments(line)
+        line = self.convert_date_function(line)
         line = self.convert_comments(line)
 
         return line
