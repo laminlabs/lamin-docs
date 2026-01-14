@@ -94,18 +94,36 @@ class LaminDBToLaminRConverter:
             # Extract imported items
             imports = line.split("import")[1].strip()
             return f'library(laminr)\nln <- import_module("lamindb")  # Access {imports} via ln${imports.replace(", ", ", ln$")}'
+        
+        # Handle general imports: import package [as alias]
+        elif line.startswith("import "):
+            # Match: import package as alias
+            match = re.match(r'import\s+(\w+)\s+as\s+(\w+)', line)
+            if match:
+                package = match.group(1)
+                alias = match.group(2)
+                return f'{alias} <- import_module("{package}")'
+            
+            # Match: import package
+            match = re.match(r'import\s+(\w+)', line)
+            if match:
+                package = match.group(1)
+                return f'{package} <- import_module("{package}")'
+        
+        # Handle general from imports: from package import function
+        elif line.startswith("from "):
+            # Match: from package import function1, function2, ...
+            match = re.match(r'from\s+(\w+)\s+import\s+(.+)', line)
+            if match:
+                package = match.group(1)
+                imports = match.group(2).strip()
+                # Split by comma for multiple imports
+                functions = [f.strip() for f in imports.split(',')]
+                
+                result = f'{package} <- import_module("{package}")\n'
+                result += '\n'.join([f'{func} <- {package}${func}' for func in functions])
+                return result
 
-        # Handle other common imports
-        elif "import pandas as pd" in line:
-            return '# library(reticulate)\n# pd <- import("pandas")  # or use native R data.frame'
-        elif "import numpy as np" in line:
-            return '# library(reticulate)\n# np <- import("numpy")  # or use native R arrays'
-        elif "from datetime import" in line:
-            return '# library(reticulate)\n# datetime <- import("datetime")'
-        elif "import anndata" in line:
-            return "library(anndata)"
-
-        return f"# {line}  # TODO: Convert this import manually"
 
     def convert_dot_notation(self, line: str) -> str:
         """Convert Python dot notation to R dollar notation, preserving dots in strings and numbers."""
@@ -209,12 +227,12 @@ class LaminDBToLaminRConverter:
         return re.sub(pattern, r'\1"\2"', line)
     
     def convert_date_function(self, line: str) -> str:
-        """Convert date( calls to datetime$date( for R and add L suffix to integer arguments."""
+        """Convert date( calls for R and by adding L suffix to integer arguments."""
         def add_integer_suffix(match):
             content = match.group(1)
             # Replace numeric literals with integer literals (add L suffix)
             content = re.sub(r'\b(\d+)(?![\.\dL])', r'\1L', content)
-            return f'datetime$date({content})'
+            return f'date({content})'
         
         # Match date( followed by its arguments until the closing )
         return re.sub(r'\bdate\(([^)]+)\)', add_integer_suffix, line)
