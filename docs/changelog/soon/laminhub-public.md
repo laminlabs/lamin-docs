@@ -1,0 +1,1 @@
+- ✨ Add GET artifact endpoint [PR](https://github.com/laminlabs/laminhub-public/pull/183) [@fredericenard](https://github.com/fredericenard)
