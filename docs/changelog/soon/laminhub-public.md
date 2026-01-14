@@ -1,2 +1,3 @@
+- 💄 Improve landing page - metadata and lakehouse sections [PR](https://github.com/laminlabs/laminhub-public/pull/184) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Write run annotations on the Launch page into the `RunRecord` registry  [PR](https://github.com/laminlabs/laminhub-public/pull/182) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add GET artifact endpoint [PR](https://github.com/laminlabs/laminhub-public/pull/183) [@fredericenard](https://github.com/fredericenard)
