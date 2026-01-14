@@ -102,6 +102,8 @@ class LaminDBToLaminRConverter:
             return '# library(reticulate)\n# np <- import("numpy")  # or use native R arrays'
         elif "from datetime import" in line:
             return '# library(reticulate)\n# datetime <- import("datetime")'
+        elif "import anndata" in line:
+            return "library(anndata)"
 
         return f"# {line}  # TODO: Convert this import manually"
 
@@ -216,6 +218,10 @@ class LaminDBToLaminRConverter:
         
         # Match date( followed by its arguments until the closing )
         return re.sub(r'\bdate\(([^)]+)\)', add_integer_suffix, line)
+    
+    def convert_anndata_calls(self, line: str) -> str:
+        """Convert anndata calls."""
+        return re.sub(r'\bad\.', 'anndata$', line)
 
     def convert_collections(self, code: str) -> str:
         """Convert Python lists and dicts to R lists"""
@@ -335,6 +341,7 @@ ln <- import_module("lamindb")
 
         line = self.convert_file_operations(line)
         line = self.convert_boolean_values(line)
+        line = self.convert_anndata_calls(line)
         line = self.convert_dot_notation(line)
         line = self.convert_string_formatting(line)
         line = self.convert_assignment_operator(line)
