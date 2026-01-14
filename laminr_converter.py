@@ -206,35 +206,98 @@ class LaminDBToLaminRConverter:
 
     def convert_collections(self, code: str) -> str:
         """Convert Python lists and dicts to R lists"""
+        
+        def find_matching_close(text: str, start: int, open_char: str, close_char: str) -> int:
+            """Find the index of the matching closing bracket/brace.
+            
+            Args:
+                text: The string to search
+                start: Index of the opening bracket
+                open_char: Opening bracket character (e.g., '[', '{', '(')
+                close_char: Closing bracket character (e.g., ']', '}', ')')
+            
+            Returns:
+                Index of matching close bracket, or -1 if not found
+            """
+            depth = 1
+            i = start + 1
+            in_string = None
+            escaped = False
+            
+            while i < len(text) and depth > 0:
+                if in_string:
+                    # Handle escape sequences and string termination
+                    if escaped:
+                        escaped = False
+                    elif text[i] == '\\':
+                        escaped = True
+                    elif text[i] == in_string:
+                        in_string = None
+                elif text[i] in ('"', "'"):
+                    # Track string literals to ignore brackets inside them
+                    in_string = text[i]
+                elif text[i] == open_char:
+                    depth += 1
+                elif text[i] == close_char:
+                    depth -= 1
+                i += 1
+            return i - 1 if depth == 0 else -1
+        
         # Convert lists: [a, b, c] → list(a, b, c)
-        list_pattern = re.compile(r"\[([^\[\]{}()]*)\]", re.DOTALL)
         prev = None
         while prev != code:
             prev = code
-            code = list_pattern.sub(lambda m: f"list({m.group(1)})", code)
+            i = 0
+            while i < len(code):
+                if code[i] == '[':
+                    close = find_matching_close(code, i, '[', ']')
+                    if close != -1:
+                        content = code[i+1:close]
+                        code = code[:i] + f"list({content})" + code[close+1:]
+                        i += len(f"list({content})")
+                        continue
+                i += 1
         
         # Convert dicts: {key: value} → list(key = value)
-        def dict_to_list(m: re.Match) -> str:
-            content = m.group(1)
-            # Replace key: value → key = value and unquote keys
+        def dict_to_list(content: str) -> str:
             def convert_key(match: re.Match) -> str:
                 key = match.group(1)
                 if (key.startswith('"') and key.endswith('"')) or (key.startswith("'") and key.endswith("'")):
                     key = key[1:-1]
                 return f"{key} = "
-            content = re.sub(r"((?:\w+|\"[^\"]*\"|'[^']*'))\s*:\s*", convert_key, content)
-            return f"list({content})"
+            return re.sub(r"((?:\w+|\"[^\"]*\"|'[^']*'))\s*:\s*", convert_key, content)
         
-        dict_pattern = re.compile(r"\{([^{}]+)\}", re.DOTALL)
         prev = None
         while prev != code:
             prev = code
-            code = dict_pattern.sub(dict_to_list, code)
+            i = 0
+            while i < len(code):
+                if code[i] == '{':
+                    close = find_matching_close(code, i, '{', '}')
+                    if close != -1:
+                        content = code[i+1:close]
+                        converted = dict_to_list(content)
+                        code = code[:i] + f"list({converted})" + code[close+1:]
+                        i += len(f"list({converted})")
+                        continue
+                i += 1
         
-        # Remove trailing commas in the final list item
-        pattern = r'(list\([^)]*),(\s*\))'
-        while re.search(pattern, code):
-            code = re.sub(pattern, r'\1\2', code)
+        # Remove trailing commas in list() calls
+        i = 0
+        while i < len(code):
+            if code[i:i+5] == 'list(':
+                close = find_matching_close(code, i+4, '(', ')')
+                if close != -1:
+                    # Check if there's a comma before the closing paren
+                    content = code[i+5:close]
+                    stripped = content.rstrip()
+                    if stripped.endswith(','):
+                        # Remove the trailing comma
+                        new_content = stripped[:-1] + content[len(stripped):]
+                        code = code[:i+5] + new_content + code[close:]
+                i += 1
+            else:
+                i += 1
         
         return code
 
