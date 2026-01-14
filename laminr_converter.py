@@ -221,7 +221,37 @@ class LaminDBToLaminRConverter:
     
     def convert_anndata_calls(self, line: str) -> str:
         """Convert anndata calls."""
-        return re.sub(r'\bad\.', 'anndata$', line)
+        return re.sub(r'\bad\.', 'anndata::', line)
+    
+    def convert_matrix_creation(self, line: str) -> str:
+        """Convert pd.DataFrame([[value]*ncol]*nrow).values to matrix(value, ncol = ncol, nrow = nrow)."""
+        pattern = r'pd\.DataFrame\(\[\[([^\]]+)\]\*(\d+)\]\*(\d+)\)\.values'
+        replacement = r'matrix(\1, ncol = \2, nrow = \3)'
+        return re.sub(pattern, replacement, line)
+    
+    def convert_list_multiplication(self, code: str) -> str:
+        """Convert list(...) * n to rep(list(...), n)."""
+        def replace_list_mult(match):
+            list_content = match.group(1)
+            multiplier = match.group(2)
+            return f'rep(list({list_content}), {multiplier})'
+        
+        # Pattern matches: list( ... ) * digits
+        pattern = r'list\(([^)=]+(?:\([^)]*\)[^)=]*)*)\)\s*\*\s*(\d+)'
+        return re.sub(pattern, replace_list_mult, code)
+    
+    def convert_gene_name_comprehension(self, code: str) -> str:
+        """Convert [f'prefix{i:0Nd}' for i in range(n)] to sprintf('prefix%0Nd', 1:n)."""
+        # Match: [f'text{i:0Nd}' for i in range(n)]
+        pattern = r"\[f'([^{]+)\{i:(\d+)d\}' for i in range\((\d+)\)\]"
+        
+        def replace_comprehension(match):
+            prefix = match.group(1)
+            width = int(match.group(2)) - 1  # Convert :011d to %010d
+            range_end = match.group(3)
+            return f'sprintf("{prefix}%0{width}d", 1:{range_end})'
+        
+        return re.sub(pattern, replace_comprehension, code)
 
     def convert_collections(self, code: str) -> str:
         """Convert Python lists and dicts to R lists"""
@@ -354,7 +384,10 @@ ln <- import_module("lamindb")
 
     def convert_code(self, python_code: str) -> str:
         """Convert complete Python code to R code."""
+        python_code = self.convert_matrix_creation(python_code)
+        python_code = self.convert_gene_name_comprehension(python_code)
         python_code = self.convert_collections(python_code)
+        python_code = self.convert_list_multiplication(python_code)
         
         lines = python_code.split("\n")
         converted_lines = []
