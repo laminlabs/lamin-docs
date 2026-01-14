@@ -104,38 +104,35 @@ class LaminDBToLaminRConverter:
         return f"# {line}  # TODO: Convert this import manually"
 
     def convert_dot_notation(self, line: str) -> str:
-        """Convert Python dot notation to R dollar notation for LaminDB objects, preserving dots in strings."""
-        # First, we need to protect dots inside string literals
-        # Find all string literals (both single and double quoted)
-        string_pattern = r'(["\'])((?:\\.|(?!\1)[^\\])*)\1'
-        strings = []
-
-        def replace_strings(match):
-            strings.append(match.group(0))
-            return f"__STRING_{len(strings) - 1}__"
-
-        # Replace strings with placeholders
-        line_with_placeholders = re.sub(string_pattern, replace_strings, line)
-
-        # Now apply dot to dollar conversion on the line without string literals
-        # Handle the ln. prefix specifically
-        line_with_placeholders = re.sub(r"\bln\.", "ln$", line_with_placeholders)
-
-        # Then handle method chaining with parentheses
-        # Convert .method() to $method()
-        line_with_placeholders = re.sub(r"\.(\w+)\(", r"$\1(", line_with_placeholders)
-
-        # Handle simple attribute access (no parentheses)
-        line_with_placeholders = re.sub(
-            r"\.(\w+)(?!\()", r"$\1", line_with_placeholders
-        )
-
-        # Restore the original strings
-        result = line_with_placeholders
-        for i, string_literal in enumerate(strings):
-            result = result.replace(f"__STRING_{i}__", string_literal)
-
-        return result
+        """Convert Python dot notation to R dollar notation, preserving dots in strings and numbers."""
+        # Protect string and numeric literals before converting dots
+        protected = {}
+        placeholder_id = 0
+        
+        # Protect strings
+        for match in re.finditer(r'(["\'])((?:\\.|(?!\1)[^\\])*)\1', line):
+            placeholder = f"__PROTECT_{placeholder_id}__"
+            protected[placeholder] = match.group(0)
+            line = line.replace(match.group(0), placeholder, 1)
+            placeholder_id += 1
+        
+        # Protect numbers (e.g., 0.55, 1.23e-4)
+        for match in re.finditer(r'\b\d+\.\d+(?:[eE][+-]?\d+)?\b', line):
+            placeholder = f"__PROTECT_{placeholder_id}__"
+            protected[placeholder] = match.group(0)
+            line = line.replace(match.group(0), placeholder, 1)
+            placeholder_id += 1
+        
+        # Convert dots to dollars
+        line = re.sub(r"\bln\.", "ln$", line)
+        line = re.sub(r"\.(\w+)\(", r"$\1(", line)
+        line = re.sub(r"\.(\w+)(?!\()", r"$\1", line)
+        
+        # Restore protected literals
+        for placeholder, original in protected.items():
+            line = line.replace(placeholder, original)
+        
+        return line
 
     def convert_file_operations(self, line: str) -> str:
         """Convert Python file operations to R equivalents."""
@@ -175,10 +172,20 @@ class LaminDBToLaminRConverter:
         """Convert Python assignment operator = to R's <- for variable assignments.
         
         Matches 'var = ' pattern at the start of the line (after leading whitespace).
+        Skips conversion if `=` is inside a function call, list definition, or indented context.
         """
-        # Match pattern: optional whitespace, variable name, spaces, =, space
+        # Get leading whitespace
+        match = re.match(r'^(\s*)', line)
+        indent = match.group(1) if match else ''
+        
+        # Skip conversion for indented lines (likely inside function args or data structures)
+        # Only convert if at top level (no indentation)
+        if len(indent) > 0:
+            return line
+        
+        # Match: optional whitespace, variable name, spaces, =, space
         pattern = r'^(\s*)([a-zA-Z_]\w*)\s*=\s+'
-        # Replace pattern: optional whitespace, variable name, ' <- '
+        # Replace: optional whitespace, variable name, ' <- '
         replacement = r'\1\2 <- '
         return re.sub(pattern, replacement, line)
 
@@ -192,43 +199,44 @@ class LaminDBToLaminRConverter:
         """Quote dtype argument values.
 
         Converts `dtype = float` to `dtype = "float"`, etc.
+        This works and is easier than getting the Python type object
         """
         pattern = r'(dtype\s*=\s*)([a-zA-Z_]\w*)(?!["\'])'
         return re.sub(pattern, r'\1"\2"', line)
 
-    def convert_collections(self, line: str) -> str:
-        """Convert Python collections to R lists.
-
-        - Dict: `{key1: value1, key2: value2}` → `list(key = value, key2 = value2)`
-        - List: `[a, b, c]` → `list(a, b, c)`
-        """
-
-        list_pattern = re.compile(r"\[([^\[\]{}()]*)\]")
+    def convert_collections(self, code: str) -> str:
+        """Convert Python lists and dicts to R lists"""
+        # Convert lists: [a, b, c] → list(a, b, c)
+        list_pattern = re.compile(r"\[([^\[\]{}()]*)\]", re.DOTALL)
         prev = None
-        while prev != line:
-            prev = line
-            line = list_pattern.sub(lambda m: f"list({m.group(1)})", line)
-
-        def replace_dict_items(m: re.Match) -> str:
+        while prev != code:
+            prev = code
+            code = list_pattern.sub(lambda m: f"list({m.group(1)})", code)
+        
+        # Convert dicts: {key: value} → list(key = value)
+        def dict_to_list(m: re.Match) -> str:
             content = m.group(1)
-            # Replace key: value → key = value (keys can be identifiers or quoted strings)
-            def unquote_keys(match: re.Match) -> str:
+            # Replace key: value → key = value and unquote keys
+            def convert_key(match: re.Match) -> str:
                 key = match.group(1)
-                # Strip surrounding quotes from keys if present
                 if (key.startswith('"') and key.endswith('"')) or (key.startswith("'") and key.endswith("'")):
                     key = key[1:-1]
                 return f"{key} = "
-
-            content = re.sub(r"((?:\w+|\"[^\"]*\"|'[^']*'))\s*:\s*", unquote_keys, content)
+            content = re.sub(r"((?:\w+|\"[^\"]*\"|'[^']*'))\s*:\s*", convert_key, content)
             return f"list({content})"
-
-        dict_pattern = re.compile(r"\{([^{}]+)\}")
+        
+        dict_pattern = re.compile(r"\{([^{}]+)\}", re.DOTALL)
         prev = None
-        while prev != line:
-            prev = line
-            line = dict_pattern.sub(replace_dict_items, line)
-
-        return line
+        while prev != code:
+            prev = code
+            code = dict_pattern.sub(dict_to_list, code)
+        
+        # Remove trailing commas in the final list item
+        pattern = r'(list\([^)]*),(\s*\))'
+        while re.search(pattern, code):
+            code = re.sub(pattern, r'\1\2', code)
+        
+        return code
 
     def add_r_header(self) -> str:
         """Add necessary R library imports at the top."""
@@ -249,21 +257,21 @@ ln <- import_module("lamindb")
         if "import" in line and line.strip().startswith(("import", "from")):
             return self.convert_import_statement(line)
 
-        # Apply conversions in order
         line = self.convert_file_operations(line)
+        line = self.convert_boolean_values(line)
         line = self.convert_dot_notation(line)
         line = self.convert_string_formatting(line)
-        line = self.convert_boolean_values(line)
         line = self.convert_assignment_operator(line)
         line = self.convert_function_arguments(line)
         line = self.convert_dtype_arguments(line)
-        line = self.convert_collections(line)
         line = self.convert_comments(line)
 
         return line
 
     def convert_code(self, python_code: str) -> str:
         """Convert complete Python code to R code."""
+        python_code = self.convert_collections(python_code)
+        
         lines = python_code.split("\n")
         converted_lines = []
 
