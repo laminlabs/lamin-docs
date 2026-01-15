@@ -1,0 +1,1 @@
+- :sparkles: Handle suggestions when adding users [PR](https://github.com/laminlabs/laminhub-public/pull/185) [@chaichontat](https://github.com/chaichontat)
