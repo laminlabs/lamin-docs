@@ -1,3 +1,4 @@
+- ⬆️ New Gene Organism sources [PR](https://github.com/laminlabs/lamindb/pull/3467) [@sunnyosun](https://github.com/sunnyosun)
 - 🔒️ Introduce safe-guards in updating the space of artifacts [PR](https://github.com/laminlabs/lamindb/pull/3458) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Fix broken import and setup due to `laminhub` refactoring [PR](https://github.com/laminlabs/lamindb-setup/pull/1264) [@fredericenard](https://github.com/fredericenard)
 - 📝 Fix `Artifact.from_anndata` example [PR](https://github.com/laminlabs/lamindb/pull/3463) [@Zethson](https://github.com/Zethson)
