@@ -1,3 +1,4 @@
+- 🍱 New ontology: Gene, release-113 [PR](https://github.com/laminlabs/bionty/pull/357) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New ontology: Organism [PR](https://github.com/laminlabs/bionty/pull/356) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 Update standard ontologies [PR](https://github.com/laminlabs/bionty/pull/354) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ New Gene version: ensembl-114 [PR](https://github.com/laminlabs/bionty/pull/346) [@Zethson](https://github.com/Zethson)
