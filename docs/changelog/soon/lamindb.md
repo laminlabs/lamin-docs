@@ -1,3 +1,4 @@
+- 👽️ Fix broken import and setup due to `laminhub` refactoring [PR](https://github.com/laminlabs/lamindb-setup/pull/1264) [@fredericenard](https://github.com/fredericenard)
 - 📝 Fix `Artifact.from_anndata` example [PR](https://github.com/laminlabs/lamindb/pull/3463) [@Zethson](https://github.com/Zethson)
 - 👽️ Fix broken setup due to `laminhub` refactoring [PR](https://github.com/laminlabs/lamindb/pull/3464) [@fredericenard](https://github.com/fredericenard)
 - ⬆️ Update standard ontology [PR](https://github.com/laminlabs/lamindb/pull/3461) [@sunnyosun](https://github.com/sunnyosun)
