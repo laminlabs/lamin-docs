@@ -1,3 +1,4 @@
+- 🍱 Default CellLine source to cellosaurus [PR](https://github.com/laminlabs/bionty/pull/359) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New ontology: Gene, release-114 [PR](https://github.com/laminlabs/bionty/pull/358) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New ontology: Gene, release-113 [PR](https://github.com/laminlabs/bionty/pull/357) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New ontology: Organism [PR](https://github.com/laminlabs/bionty/pull/356) [@sunnyosun](https://github.com/sunnyosun)
