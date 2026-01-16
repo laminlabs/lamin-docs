@@ -1,3 +1,4 @@
+- 🚸 Return information about deleted objects rather than `None` upon hard delete [PR](https://github.com/laminlabs/lamindb/pull/3469) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Unify validating features with and without the presence of a schema, fix parsing ISO-format strings as datetime if mapped on a feature with `dtype=str` [PR](https://github.com/laminlabs/lamindb/pull/3456) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ New Gene Organism sources [PR](https://github.com/laminlabs/lamindb/pull/3467) [@sunnyosun](https://github.com/sunnyosun)
 - 🔒️ Introduce safe-guards in updating the space of artifacts [PR](https://github.com/laminlabs/lamindb/pull/3458) [@Koncopd](https://github.com/Koncopd)
