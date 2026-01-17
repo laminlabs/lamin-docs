@@ -1,3 +1,4 @@
+- 📝 Consistently mention backward relationships and type-annotate `ManyToMany` fields with `QueryManager[T]` [PR](https://github.com/laminlabs/lamindb/pull/3474) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Efficiently encode uploading information [PR](https://github.com/laminlabs/lamindb/pull/3473) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `wetlab` to `pertdb` in backward-compatible way [PR](https://github.com/laminlabs/lamindb-setup/pull/1265) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `wetlab` to `pertdb` in a backward-compatible way [PR](https://github.com/laminlabs/lamindb/pull/3472) [@falexwolf](https://github.com/falexwolf)
