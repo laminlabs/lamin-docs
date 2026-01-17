@@ -1,3 +1,4 @@
+- 🚚 Rename `wetlab` to `pertdb` in a backward-compatible way [PR](https://github.com/laminlabs/lamindb/pull/3472) [@falexwolf](https://github.com/falexwolf)
 - 🔧  Switch on SQL logging if `ln.settings.verbosity` is `"debug"` [PR](https://github.com/laminlabs/lamindb-setup/pull/759) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Raise canonical `InstanceNotFoundError` in `Registry.connect()` [PR](https://github.com/laminlabs/lamindb/pull/3470) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Update CellLine default source [PR](https://github.com/laminlabs/lamindb/pull/3471) [@sunnyosun](https://github.com/sunnyosun)
