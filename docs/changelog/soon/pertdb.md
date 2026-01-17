@@ -1,0 +1,1 @@
+- 🚚 Rename `wetlab` to `pertdb` in backward-compatible way [PR](https://github.com/laminlabs/pertdb/pull/133) [@falexwolf](https://github.com/falexwolf)
