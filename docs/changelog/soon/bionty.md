@@ -1,3 +1,4 @@
+- 🚚 Rename `wetlab` to `pertdb` [PR](https://github.com/laminlabs/bionty/pull/361) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow users to set `bionty` root dir via `BIONTY_ROOT_DIR` env variable [PR](https://github.com/laminlabs/bionty/pull/360) [@Koncopd](https://github.com/Koncopd)
 - 🍱 Default CellLine source to cellosaurus [PR](https://github.com/laminlabs/bionty/pull/359) [@sunnyosun](https://github.com/sunnyosun)
 - 🍱 New ontology: Gene, release-114 [PR](https://github.com/laminlabs/bionty/pull/358) [@sunnyosun](https://github.com/sunnyosun)
