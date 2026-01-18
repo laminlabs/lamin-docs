@@ -1,3 +1,4 @@
+- ⚡ Start monitoring performance profiling [PR](https://github.com/laminlabs/lamindb/pull/3477) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Rather flag `_storage_ongoing` than `_storage_completed` [PR](https://github.com/laminlabs/lamindb/pull/3475) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable convenient re-upload of local file after upload failure [PR](https://github.com/laminlabs/lamindb/pull/3079) [@falexwolf](https://github.com/falexwolf)
 - 📝 Consistently mention backward relationships and type-annotate `ManyToMany` fields with `QueryManager[T]` [PR](https://github.com/laminlabs/lamindb/pull/3474) [@falexwolf](https://github.com/falexwolf)
