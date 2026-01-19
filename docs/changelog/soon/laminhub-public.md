@@ -1,3 +1,4 @@
+- 💄 Show records on the overview page [PR](https://github.com/laminlabs/laminhub-public/pull/188) [@falexwolf](https://github.com/falexwolf)
 - ✨ Beta: A Logs page with `DbWrite` events [PR](https://github.com/laminlabs/laminhub-public/pull/187) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Support children type in record registration [PR](https://github.com/laminlabs/laminhub-public/pull/186) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Handle suggestions when adding users [PR](https://github.com/laminlabs/laminhub-public/pull/185) [@chaichontat](https://github.com/chaichontat)
