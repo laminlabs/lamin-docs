@@ -1,3 +1,4 @@
+- 👷 Fix Modal CI [PR](https://github.com/laminlabs/lamin-cli/pull/180) [@falexwolf](https://github.com/falexwolf)
 - 📝 Better return typing of `feature.__getitem__` [PR](https://github.com/laminlabs/lamindb/pull/3481) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Released bionty 2.1.0 [PR](https://github.com/laminlabs/lamindb/pull/3482) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Update lamin-utils [PR](https://github.com/laminlabs/lamindb/pull/3479) [@sunnyosun](https://github.com/sunnyosun)
