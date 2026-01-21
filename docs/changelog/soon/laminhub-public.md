@@ -1,0 +1,1 @@
+- :bug: Prevent empty results when searching Artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/190) [@chaichontat](https://github.com/chaichontat)
