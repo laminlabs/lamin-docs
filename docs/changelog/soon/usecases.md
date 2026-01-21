@@ -1,3 +1,4 @@
+- 📝 Polish 3 "Leverage ontologies" guides and the `gene` guide [PR](https://github.com/laminlabs/lamin-usecases/pull/232) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix extras [PR](https://github.com/laminlabs/cellxgene-lamin/pull/142) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/231) [@sunnyosun](https://github.com/sunnyosun)
 - 🏗️ Use `_dtype_str` rather than `dtype` [PR](https://github.com/laminlabs/cellxgene-lamin/pull/140) [@falexwolf](https://github.com/falexwolf)
