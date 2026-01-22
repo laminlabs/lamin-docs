@@ -36,7 +36,7 @@ READMETITLE_REPLACE = """# LaminDB - A data framework for biology
 
 LaminDB is an open-source data framework for biology.
 It allows you to query, trace, and validate datasets and models at scale.
-With one API, you automate context for agents and humans and get: lakehouse, lineage, feature store, ontologies, bio-registries & formats.
+One API integrates lakehouse, lineage, feature store, ontologies, bio-registries, and formats — automating context for agents and humans.
 """
 
 README0_ORIG = """<details>
@@ -54,7 +54,7 @@ README1_REPLACE = """```
 
 <img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0006.png">
 
-```{dropdown} Highlights DB"""
+```{dropdown} DB highlights"""
 
 README2_ORIG = """
 If you want a GUI: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
@@ -64,7 +64,7 @@ README2_REPLACE = """```
 
 LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
-:::{dropdown} Highlights Hub
+:::{dropdown} Hub highlights
 
 ```{include} includes/specs-laminhub.md
 
