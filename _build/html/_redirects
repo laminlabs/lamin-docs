@@ -4,6 +4,7 @@
 /api /cli 301
 /changelog /changelog/2026 301
 /access /permissions 301
+/wetlab /pertdb 301
 /data-flow /schmidt22 301
 /curate-any /faq/curate-any 301
 /faq/storage /lamindb.storage 301
