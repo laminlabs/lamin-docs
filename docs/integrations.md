@@ -16,10 +16,8 @@ Read only:
 
 ## Schema modules
 
-- [bionty](/bionty): Basic biological entities, with easy import from >20 public ontologies
-- [pertdb](/pertdb): Basic pertdb entities
-- [clinicore](/clinicore): Basic clinical entities
-- [omop](https://omop.lamin.ai): OMOP Common Data Model
+- [bionty](/bionty): Basic biological ontologies, with easy import from >20 public ontologies
+- [pertdb](/pertdb): Registries for perturbations (compounds, biologics, genetic interventions, etc.)
 
 ## Git
 
