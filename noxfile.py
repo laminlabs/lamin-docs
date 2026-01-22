@@ -29,12 +29,14 @@ def lint(session: nox.Session) -> None:
 
 READMETITLE_ORIG = """# LaminDB - A data framework for biology
 
-Makes your data queryable, traceable, reproducible, and FAIR. One API: lakehouse, lineage, feature store, ontologies, LIMS, ELN.
+Query, trace, and validate datasets and models at scale. Automate context for agents and humans. One API: lakehouse, lineage, feature store, ontologies, bio-registries & formats.
 """
 
 READMETITLE_REPLACE = """# LaminDB - A data framework for biology
 
-LaminDB is an open-source data framework for biology. It makes your data queryable, traceable, reproducible, and FAIR. With one API, you get: lakehouse, lineage, feature store, ontologies, LIMS, and ELN.
+LaminDB is an open-source data framework for biology.
+It allows you to query, trace, and validate datasets and models at scale.
+With one API, you automate context for agents and humans and get: lakehouse, lineage, feature store, ontologies, bio-registries & formats.
 """
 
 README0_ORIG = """<details>
@@ -44,15 +46,15 @@ README0_REPLACE = """```{dropdown} Why?"""
 
 README1_ORIG = """</details>
 
-<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0006.png">
 
 Highlights:"""
 
 README1_REPLACE = """```
 
-<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0005.png">
+<img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M0006.png">
 
-```{dropdown} Highlights"""
+```{dropdown} Highlights DB"""
 
 README2_ORIG = """
 If you want a GUI: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
@@ -62,7 +64,7 @@ README2_REPLACE = """```
 
 LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
-:::{dropdown} Explore
+:::{dropdown} Highlights Hub
 
 ```{include} includes/specs-laminhub.md
 
