@@ -66,7 +66,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 :::{dropdown} Hub highlights
 
-- a GUI
+- a GUI unifying lakehouse, workflows, versioning, sheets, note-taking & ELN/LIMS systems
 - permission management
 - organization & team management
 - hosting
