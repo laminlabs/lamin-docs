@@ -82,11 +82,11 @@ On top of the metadata schema, LaminDB is a Python API that models datasets as a
 LaminDB can be extended with modules building on the [Django](https://github.com/django/django) ecosystem. Examples are:
 
 - [bionty](./bionty): Registries for basic biological entities, coupled to public ontologies.
-- [wetlab](https://github.com/laminlabs/wetlab): Registries for samples, treatments, etc.
+- [pertdb](https://github.com/laminlabs/pertdb): Registries for samples, treatments, etc.
 
 If you'd like to create your own module:
 
-1. Create a git repository with registries similar to [wetlab](https://github.com/laminlabs/wetlab)
+1. Create a git repository with registries similar to [pertdb](https://github.com/laminlabs/pertdb)
 2. Create & deploy migrations via `lamin migrate create` and `lamin migrate deploy`
 
 For more information, see {doc}`setup`.
@@ -97,7 +97,7 @@ LaminDB and its plugins consist in open-source Python libraries & publicly hoste
 
 - [lamindb](https://github.com/laminlabs/lamindb): Core package.
 - [bionty](https://github.com/laminlabs/bionty): Registries for basic biological entities, coupled to public ontologies.
-- [wetlab](https://github.com/laminlabs/wetlab): Registries for samples, treatments, etc.
+- [pertdb](https://github.com/laminlabs/pertdb): Registries for samples, treatments, etc.
 - [usecases](https://github.com/laminlabs/lamin-usecases): Use cases as visible on the docs.
 
 All immediate dependencies and modules are available as git submodules [here](https://github.com/laminlabs/lamindb/tree/main/sub), for instance,
