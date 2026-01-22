@@ -36,7 +36,7 @@ READMETITLE_REPLACE = """# LaminDB - A data framework for biology
 
 LaminDB is an open-source data framework for biology.
 It allows you to query, trace, and validate datasets and models at scale.
-One API integrates lakehouse, lineage, feature store, ontologies, bio-registries, and formats — automating context for agents and humans.
+With one API, you get: lakehouse, lineage, feature store, ontologies, bio-registries & formats.
 """
 
 README0_ORIG = """<details>
