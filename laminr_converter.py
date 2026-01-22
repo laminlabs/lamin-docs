@@ -1,4 +1,3 @@
-import ast
 import re
 from typing import Any
 
@@ -95,48 +94,67 @@ class LaminDBToLaminRConverter:
             # Extract imported items
             imports = line.split("import")[1].strip()
             return f'library(laminr)\nln <- import_module("lamindb")  # Access {imports} via ln${imports.replace(", ", ", ln$")}'
+        
+        # Handle general imports: import package [as alias]
+        elif line.startswith("import "):
+            # Match: import package as alias
+            match = re.match(r'import\s+(\w+)\s+as\s+(\w+)', line)
+            if match:
+                package = match.group(1)
+                alias = match.group(2)
+                return f'{alias} <- import_module("{package}")'
+            
+            # Match: import package
+            match = re.match(r'import\s+(\w+)', line)
+            if match:
+                package = match.group(1)
+                return f'{package} <- import_module("{package}")'
+        
+        # Handle general from imports: from package import function
+        elif line.startswith("from "):
+            # Match: from package import function1, function2, ...
+            match = re.match(r'from\s+(\w+)\s+import\s+(.+)', line)
+            if match:
+                package = match.group(1)
+                imports = match.group(2).strip()
+                # Split by comma for multiple imports
+                functions = [f.strip() for f in imports.split(',')]
+                
+                result = f'{package} <- import_module("{package}")\n'
+                result += '\n'.join([f'{func} <- {package}${func}' for func in functions])
+                return result
 
-        # Handle other common imports
-        elif "import pandas as pd" in line:
-            return '# library(reticulate)\n# pd <- import("pandas")  # or use native R data.frame'
-        elif "import numpy as np" in line:
-            return '# library(reticulate)\n# np <- import("numpy")  # or use native R arrays'
-
-        return f"# {line}  # TODO: Convert this import manually"
 
     def convert_dot_notation(self, line: str) -> str:
-        """Convert Python dot notation to R dollar notation for LaminDB objects, preserving dots in strings."""
-        # First, we need to protect dots inside string literals
-        # Find all string literals (both single and double quoted)
-        string_pattern = r'(["\'])((?:\\.|(?!\1)[^\\])*)\1'
-        strings = []
-
-        def replace_strings(match):
-            strings.append(match.group(0))
-            return f"__STRING_{len(strings) - 1}__"
-
-        # Replace strings with placeholders
-        line_with_placeholders = re.sub(string_pattern, replace_strings, line)
-
-        # Now apply dot to dollar conversion on the line without string literals
-        # Handle the ln. prefix specifically
-        line_with_placeholders = re.sub(r"\bln\.", "ln$", line_with_placeholders)
-
-        # Then handle method chaining with parentheses
-        # Convert .method() to $method()
-        line_with_placeholders = re.sub(r"\.(\w+)\(", r"$\1(", line_with_placeholders)
-
-        # Handle simple attribute access (no parentheses)
-        line_with_placeholders = re.sub(
-            r"\.(\w+)(?!\()", r"$\1", line_with_placeholders
-        )
-
-        # Restore the original strings
-        result = line_with_placeholders
-        for i, string_literal in enumerate(strings):
-            result = result.replace(f"__STRING_{i}__", string_literal)
-
-        return result
+        """Convert Python dot notation to R dollar notation, preserving dots in strings and numbers."""
+        # Protect string and numeric literals before converting dots
+        protected = {}
+        placeholder_id = 0
+        
+        # Protect strings
+        for match in re.finditer(r'(["\'])((?:\\.|(?!\1)[^\\])*)\1', line):
+            placeholder = f"__PROTECT_{placeholder_id}__"
+            protected[placeholder] = match.group(0)
+            line = line.replace(match.group(0), placeholder, 1)
+            placeholder_id += 1
+        
+        # Protect numbers (e.g., 0.55, 1.23e-4)
+        for match in re.finditer(r'\b\d+\.\d+(?:[eE][+-]?\d+)?\b', line):
+            placeholder = f"__PROTECT_{placeholder_id}__"
+            protected[placeholder] = match.group(0)
+            line = line.replace(match.group(0), placeholder, 1)
+            placeholder_id += 1
+        
+        # Convert dots to dollars
+        line = re.sub(r"\bln\.", "ln$", line)
+        line = re.sub(r"\.(\w+)\(", r"$\1(", line)
+        line = re.sub(r"\.(\w+)(?!\()", r"$\1", line)
+        
+        # Restore protected literals
+        for placeholder, original in protected.items():
+            line = line.replace(placeholder, original)
+        
+        return line
 
     def convert_file_operations(self, line: str) -> str:
         """Convert Python file operations to R equivalents."""
@@ -172,6 +190,184 @@ class LaminDBToLaminRConverter:
         line = re.sub(r"\bNone\b", "NULL", line)
         return line
 
+    def convert_assignment_operator(self, line: str) -> str:
+        """Convert Python assignment operator = to R's <- for variable assignments.
+        
+        Matches 'var = ' pattern at the start of the line (after leading whitespace).
+        Skips conversion if `=` is inside a function call, list definition, or indented context.
+        """
+        # Get leading whitespace
+        match = re.match(r'^(\s*)', line)
+        indent = match.group(1) if match else ''
+        
+        # Skip conversion for indented lines (likely inside function args or data structures)
+        # Only convert if at top level (no indentation)
+        if len(indent) > 0:
+            return line
+        
+        # Match: optional whitespace, variable name, spaces, =, space
+        pattern = r'^(\s*)([a-zA-Z_]\w*)\s*=\s+'
+        # Replace: optional whitespace, variable name, ' <- '
+        replacement = r'\1\2 <- '
+        return re.sub(pattern, replacement, line)
+
+    def convert_function_arguments(self, line: str) -> str:
+        """Add spaces around = in function arguments."""
+        # Match argument=value where the = is not part of ==
+        pattern = r'(\b\w+)\s*=\s*(?=[^=])'
+        return re.sub(pattern, r'\1 = ', line)
+
+    def convert_dtype_arguments(self, line: str) -> str:
+        """Quote dtype argument values.
+
+        Converts `dtype = float` to `dtype = "float"`, etc.
+        This works and is easier than getting the Python type object
+        """
+        pattern = r'(dtype\s*=\s*)([a-zA-Z_]\w*)(?!["\'])'
+        return re.sub(pattern, r'\1"\2"', line)
+    
+    def convert_date_function(self, line: str) -> str:
+        """Convert date( calls for R and by adding L suffix to integer arguments."""
+        def add_integer_suffix(match):
+            content = match.group(1)
+            # Replace numeric literals with integer literals (add L suffix)
+            content = re.sub(r'\b(\d+)(?![\.\dL])', r'\1L', content)
+            return f'date({content})'
+        
+        # Match date( followed by its arguments until the closing )
+        return re.sub(r'\bdate\(([^)]+)\)', add_integer_suffix, line)
+    
+    def convert_anndata_calls(self, line: str) -> str:
+        """Convert anndata calls."""
+        return re.sub(r'\bad\.', 'anndata::', line)
+    
+    def convert_matrix_creation(self, line: str) -> str:
+        """Convert pd.DataFrame([[value]*ncol]*nrow).values to matrix(value, ncol = ncol, nrow = nrow)."""
+        pattern = r'pd\.DataFrame\(\[\[([^\]]+)\]\*(\d+)\]\*(\d+)\)\.values'
+        replacement = r'matrix(\1, ncol = \2, nrow = \3)'
+        return re.sub(pattern, replacement, line)
+    
+    def convert_list_multiplication(self, code: str) -> str:
+        """Convert list(...) * n to rep(list(...), n)."""
+        def replace_list_mult(match):
+            list_content = match.group(1)
+            multiplier = match.group(2)
+            return f'rep(list({list_content}), {multiplier})'
+        
+        # Pattern matches: list( ... ) * digits
+        pattern = r'list\(([^)=]+(?:\([^)]*\)[^)=]*)*)\)\s*\*\s*(\d+)'
+        return re.sub(pattern, replace_list_mult, code)
+    
+    def convert_gene_name_comprehension(self, code: str) -> str:
+        """Convert [f'prefix{i:0Nd}' for i in range(n)] to sprintf('prefix%0Nd', 1:n)."""
+        # Match: [f'text{i:0Nd}' for i in range(n)]
+        pattern = r"\[f'([^{]+)\{i:(\d+)d\}' for i in range\((\d+)\)\]"
+        
+        def replace_comprehension(match):
+            prefix = match.group(1)
+            width = int(match.group(2)) - 1  # Convert :011d to %010d
+            range_end = match.group(3)
+            return f'sprintf("{prefix}%0{width}d", 1:{range_end})'
+        
+        return re.sub(pattern, replace_comprehension, code)
+
+    def convert_collections(self, code: str) -> str:
+        """Convert Python lists and dicts to R lists"""
+        
+        def find_matching_close(text: str, start: int, open_char: str, close_char: str) -> int:
+            """Find the index of the matching closing bracket/brace.
+            
+            Args:
+                text: The string to search
+                start: Index of the opening bracket
+                open_char: Opening bracket character (e.g., '[', '{', '(')
+                close_char: Closing bracket character (e.g., ']', '}', ')')
+            
+            Returns:
+                Index of matching close bracket, or -1 if not found
+            """
+            depth = 1
+            i = start + 1
+            in_string = None
+            escaped = False
+            
+            while i < len(text) and depth > 0:
+                if in_string:
+                    # Handle escape sequences and string termination
+                    if escaped:
+                        escaped = False
+                    elif text[i] == '\\':
+                        escaped = True
+                    elif text[i] == in_string:
+                        in_string = None
+                elif text[i] in ('"', "'"):
+                    # Track string literals to ignore brackets inside them
+                    in_string = text[i]
+                elif text[i] == open_char:
+                    depth += 1
+                elif text[i] == close_char:
+                    depth -= 1
+                i += 1
+            return i - 1 if depth == 0 else -1
+        
+        # Convert lists: [a, b, c] → list(a, b, c)
+        prev = None
+        while prev != code:
+            prev = code
+            i = 0
+            while i < len(code):
+                if code[i] == '[':
+                    close = find_matching_close(code, i, '[', ']')
+                    if close != -1:
+                        content = code[i+1:close]
+                        code = code[:i] + f"list({content})" + code[close+1:]
+                        i += len(f"list({content})")
+                        continue
+                i += 1
+        
+        # Convert dicts: {key: value} → list(key = value)
+        def dict_to_list(content: str) -> str:
+            def convert_key(match: re.Match) -> str:
+                key = match.group(1)
+                if (key.startswith('"') and key.endswith('"')) or (key.startswith("'") and key.endswith("'")):
+                    key = key[1:-1]
+                return f"{key} = "
+            return re.sub(r"((?:\w+|\"[^\"]*\"|'[^']*'))\s*:\s*", convert_key, content)
+        
+        prev = None
+        while prev != code:
+            prev = code
+            i = 0
+            while i < len(code):
+                if code[i] == '{':
+                    close = find_matching_close(code, i, '{', '}')
+                    if close != -1:
+                        content = code[i+1:close]
+                        converted = dict_to_list(content)
+                        code = code[:i] + f"list({converted})" + code[close+1:]
+                        i += len(f"list({converted})")
+                        continue
+                i += 1
+        
+        # Remove trailing commas in list() calls
+        i = 0
+        while i < len(code):
+            if code[i:i+5] == 'list(':
+                close = find_matching_close(code, i+4, '(', ')')
+                if close != -1:
+                    # Check if there's a comma before the closing paren
+                    content = code[i+5:close]
+                    stripped = content.rstrip()
+                    if stripped.endswith(','):
+                        # Remove the trailing comma
+                        new_content = stripped[:-1] + content[len(stripped):]
+                        code = code[:i+5] + new_content + code[close:]
+                i += 1
+            else:
+                i += 1
+        
+        return code
+
     def add_r_header(self) -> str:
         """Add necessary R library imports at the top."""
         return """library(laminr)
@@ -191,17 +387,26 @@ ln <- import_module("lamindb")
         if "import" in line and line.strip().startswith(("import", "from")):
             return self.convert_import_statement(line)
 
-        # Apply conversions in order
         line = self.convert_file_operations(line)
+        line = self.convert_boolean_values(line)
+        line = self.convert_anndata_calls(line)
         line = self.convert_dot_notation(line)
         line = self.convert_string_formatting(line)
-        line = self.convert_boolean_values(line)
+        line = self.convert_assignment_operator(line)
+        line = self.convert_function_arguments(line)
+        line = self.convert_dtype_arguments(line)
+        line = self.convert_date_function(line)
         line = self.convert_comments(line)
 
         return line
 
     def convert_code(self, python_code: str) -> str:
         """Convert complete Python code to R code."""
+        python_code = self.convert_matrix_creation(python_code)
+        python_code = self.convert_gene_name_comprehension(python_code)
+        python_code = self.convert_collections(python_code)
+        python_code = self.convert_list_multiplication(python_code)
+        
         lines = python_code.split("\n")
         converted_lines = []
 
