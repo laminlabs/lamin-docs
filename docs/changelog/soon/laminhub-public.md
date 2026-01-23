@@ -1,1 +1,2 @@
+- 🚸 Simplify REST API usage for end users [PR](https://github.com/laminlabs/laminhub-public/pull/191) [@fredericenard](https://github.com/fredericenard)
 - :bug: Prevent empty results when searching Artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/190) [@chaichontat](https://github.com/chaichontat)
