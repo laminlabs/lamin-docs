@@ -1,1 +1,0 @@
-- :sparkles: Track input artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/100) [@rcannood](https://github.com/rcannood)
