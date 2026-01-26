@@ -27,17 +27,6 @@ def lint(session: nox.Session) -> None:
     run_pre_commit(session)
 
 
-READMETITLE_ORIG = """# LaminDB - A data framework for biology
-
-Query, trace, and validate datasets and models at scale. Automate context for agents and humans. One API: lakehouse, lineage, feature store, ontologies, bio-registries & formats.
-"""
-
-READMETITLE_REPLACE = """# LaminDB - A data framework for biology
-
-LaminDB is an open-source data framework for biology to query, trace, and validate datasets and models at scale.
-With one API, you get: lakehouse, lineage, feature store, ontologies, bio-registries & formats.
-"""
-
 README0_ORIG = """<details>
 <summary>Why?</summary>"""
 
@@ -266,13 +255,11 @@ def pull_artifacts(session):
     with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
-        assert READMETITLE_ORIG in content  # noqa: S101
         assert README0_ORIG in content  # noqa: S101
         assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
         assert README3_ORIG in content  # noqa: S101
         assert README3_ORIG in content  # noqa: S101
-        content = content.replace(READMETITLE_ORIG, READMETITLE_REPLACE)
         content = content.replace(README0_ORIG, README0_REPLACE)
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
