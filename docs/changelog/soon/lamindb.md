@@ -1,0 +1,1 @@
+- 📝 README v5.2 [PR](https://github.com/laminlabs/lamindb/pull/3486) [@falexwolf](https://github.com/falexwolf)
