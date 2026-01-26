@@ -1,5 +1,0 @@
-- ✨ Configurable default Seqera workspace and compute environment [PR](https://github.com/laminlabs/laminhub-public/pull/194) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix attaching a space to an instance in case an org admin isn't a collaborator of that space [PR](https://github.com/laminlabs/laminhub-public/pull/193) [@fredericenard](https://github.com/fredericenard)
-- 💄 Landing page: re-format taglines and update schematic [PR](https://github.com/laminlabs/laminhub-public/pull/192) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Simplify REST API usage for end users [PR](https://github.com/laminlabs/laminhub-public/pull/191) [@fredericenard](https://github.com/fredericenard)
-- :bug: Prevent empty results when searching Artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/190) [@chaichontat](https://github.com/chaichontat)
