@@ -1,1 +1,2 @@
+- 💚 Fix white-space formatting in tests for new Rich behavior [PR](https://github.com/laminlabs/lamindb/pull/3489) [@Zethson](https://github.com/Zethson)
 - 📝 README v5.2 [PR](https://github.com/laminlabs/lamindb/pull/3486) [@falexwolf](https://github.com/falexwolf)
