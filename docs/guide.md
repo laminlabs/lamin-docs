@@ -31,7 +31,7 @@ atlases
 by-datatype
 by-registry
 trace-data-code
-workflows
+pipelines
 mlops
 visualization
 ```

@@ -1,4 +1,4 @@
-# Manage computational workflows
+# Manage computational pipelines
 
 ```{toctree}
 :maxdepth: 1
