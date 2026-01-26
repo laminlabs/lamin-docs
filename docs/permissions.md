@@ -208,7 +208,7 @@ Users can be collaborators either directly as individual users or through team m
 | Role         | Description                                                                                                                                                             |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Admins**   | Have complete access and control over all resources within the organization, including managing teams, instances, spaces, and organization settings.                    |
-| **Managers** | Can do everything admins can, except grant/revoke the organization admin role or manage organization domains and SSO requirements.                                      |
+| **Managers** | Can do everything admins can, except grant/revoke the organization admin role or manage organization domains/SSO requirements.                                          |
 | **Members**  | Can be granted access to specific resources (teams, instances, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited. |
 | **Guests**   | Intended for external collaborators with limited access, typically restricted to specific instances or spaces they are explicitly invited to.                           |
 
