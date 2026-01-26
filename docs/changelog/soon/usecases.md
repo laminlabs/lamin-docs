@@ -1,3 +1,4 @@
+- 🚚 Rename wetlab to pertdb [PR](https://github.com/laminlabs/lamin-usecases/pull/233) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Polish 3 "Leverage ontologies" guides and the `gene` guide [PR](https://github.com/laminlabs/lamin-usecases/pull/232) [@sunnyosun](https://github.com/sunnyosun)
 - 💚 Fix extras [PR](https://github.com/laminlabs/cellxgene-lamin/pull/142) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/231) [@sunnyosun](https://github.com/sunnyosun)
