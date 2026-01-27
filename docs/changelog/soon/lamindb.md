@@ -1,3 +1,4 @@
+- 🚚 Move `lamin cache` CLI command to be `lamin settings cache-dir` and adopt the same pattern for other settings [PR](https://github.com/laminlabs/lamin-cli/pull/182) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Refactor & fix feature-based queries for records and expand tests [PR](https://github.com/laminlabs/lamindb/pull/3494) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable memorizing the global run context of a flow [PR](https://github.com/laminlabs/lamindb/pull/3493) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Default to creating a global run context in `ln.flow()` [PR](https://github.com/laminlabs/lamindb/pull/3492) [@falexwolf](https://github.com/falexwolf)
