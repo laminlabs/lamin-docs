@@ -2,7 +2,7 @@
 
 ## hub
 
-```{include} soon/laminhub.md
+```{include} soon/laminhub-public.md
 
 ```
 
