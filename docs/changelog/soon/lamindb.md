@@ -1,3 +1,4 @@
+- 📝 More consistent docstrings for CLI commands [PR](https://github.com/laminlabs/lamin-cli/pull/183) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move `lamin cache` CLI command to be `lamin settings cache-dir` and adopt the same pattern for other settings [PR](https://github.com/laminlabs/lamin-cli/pull/182) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Refactor & fix feature-based queries for records and expand tests [PR](https://github.com/laminlabs/lamindb/pull/3494) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable memorizing the global run context of a flow [PR](https://github.com/laminlabs/lamindb/pull/3493) [@falexwolf](https://github.com/falexwolf)
