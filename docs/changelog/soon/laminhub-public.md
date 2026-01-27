@@ -1,1 +1,0 @@
-- 🐛 Fix an issue in the Seqera Launch connector [PR](https://github.com/laminlabs/laminhub-public/pull/195) [@chaichontat](https://github.com/chaichontat)
