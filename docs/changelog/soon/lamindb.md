@@ -1,3 +1,4 @@
+- ♻️ Enable memorizing the global run context of a flow [PR](https://github.com/laminlabs/lamindb/pull/3493) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Default to creating a global run context in `ln.flow()` [PR](https://github.com/laminlabs/lamindb/pull/3492) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve the `Artifact.open()` docs [PR](https://github.com/laminlabs/lamindb/pull/3415) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Check local path existence on `artifact.save()` [PR](https://github.com/laminlabs/lamindb/pull/3487) [@Koncopd](https://github.com/Koncopd)
