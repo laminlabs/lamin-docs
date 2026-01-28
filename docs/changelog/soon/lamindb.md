@@ -1,3 +1,4 @@
+- ♻️ Catch `StorageNotEmpty` and turn into `ClickException` [PR](https://github.com/laminlabs/lamin-cli/pull/191) [@falexwolf](https://github.com/falexwolf)
 - 👷 Profile & improve import time [PR](https://github.com/laminlabs/lamindb-setup/pull/1269) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document `RelatedManager[T]` and fix `ManyToMany` type annotations [PR](https://github.com/laminlabs/lamindb/pull/3496) [@falexwolf](https://github.com/falexwolf)
 - 📝 Consistent reference to Python/R alternative for all CLI commands, expand `lamin annotate` [PR](https://github.com/laminlabs/lamin-cli/pull/190) [@falexwolf](https://github.com/falexwolf)
