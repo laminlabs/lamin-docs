@@ -1,3 +1,4 @@
+- ⚡️ Import `django.db.migrations` and `httpx` dynamically to save 100 ms import time [PR](https://github.com/laminlabs/lamindb-setup/pull/1272) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Dynamic hub imports to avoid `supabase` import [PR](https://github.com/laminlabs/lamindb-setup/pull/1271) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove `click` from package [PR](https://github.com/laminlabs/lamindb-setup/pull/1270) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Catch `StorageNotEmpty` and turn into `ClickException` [PR](https://github.com/laminlabs/lamin-cli/pull/191) [@falexwolf](https://github.com/falexwolf)
