@@ -1,3 +1,4 @@
+- 🚚 Move `lamin cache` CLI command to be `lamin settings cache-dir` [PR](https://github.com/laminlabs/lamindb/pull/3495) [@falexwolf](https://github.com/falexwolf)
 - ♻️ More consistent switch and create commands [PR](https://github.com/laminlabs/lamin-cli/pull/187) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make `lamin delete` parallel to `lamin save` and `lamin load` in that it also allows `key`-based deletion [PR](https://github.com/laminlabs/lamin-cli/pull/186) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clearer delineation of entity vs. registry [PR](https://github.com/laminlabs/lamin-cli/pull/185) [@falexwolf](https://github.com/falexwolf)
