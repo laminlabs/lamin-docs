@@ -1,3 +1,4 @@
+- 📝 Consistent reference to Python/R alternative for all CLI commands, expand `lamin annotate` [PR](https://github.com/laminlabs/lamin-cli/pull/190) [@falexwolf](https://github.com/falexwolf)
 - 👽️ Use publishable keys for `staging`, `staging-test`, `prod-test` envs [PR](https://github.com/laminlabs/lamindb-setup/pull/1268) [@Koncopd](https://github.com/Koncopd)
 - 📝 Better descriptions for settings commands [PR](https://github.com/laminlabs/lamin-cli/pull/189) [@Koncopd](https://github.com/Koncopd)
 - ✅ Update cache CLI commands in tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1267) [@Koncopd](https://github.com/Koncopd)
