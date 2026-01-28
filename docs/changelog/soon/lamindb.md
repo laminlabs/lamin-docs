@@ -1,3 +1,4 @@
+- 🔥 Remove `use_proxy_db` from `_connect_cli` [PR](https://github.com/laminlabs/lamindb-setup/pull/1266) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove `use_proxy_db` option [PR](https://github.com/laminlabs/lamin-cli/pull/188) [@Koncopd](https://github.com/Koncopd)
 - 🚚 Move `lamin cache` CLI command to be `lamin settings cache-dir` [PR](https://github.com/laminlabs/lamindb/pull/3495) [@falexwolf](https://github.com/falexwolf)
 - ♻️ More consistent switch and create commands [PR](https://github.com/laminlabs/lamin-cli/pull/187) [@falexwolf](https://github.com/falexwolf)
