@@ -236,6 +236,8 @@ def pull_artifacts(session):
             sync_path(path, Path("docs") / path.name)
         elif path.name == "vitessce.ipynb":
             sync_path(path, Path("docs") / path.name)
+        elif path.name == "vitessce2.ipynb":
+            sync_path(path, Path("docs") / path.name)
 
     # use-cases
     pull_from_s3_and_unpack("lamin-usecases.zip")
