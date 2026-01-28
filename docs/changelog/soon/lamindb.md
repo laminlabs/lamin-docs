@@ -1,3 +1,4 @@
+- 📝 Better descriptions for settings commands [PR](https://github.com/laminlabs/lamin-cli/pull/189) [@Koncopd](https://github.com/Koncopd)
 - ✅ Update cache CLI commands in tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1267) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove `use_proxy_db` from `_connect_cli` [PR](https://github.com/laminlabs/lamindb-setup/pull/1266) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove `use_proxy_db` option [PR](https://github.com/laminlabs/lamin-cli/pull/188) [@Koncopd](https://github.com/Koncopd)
