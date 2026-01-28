@@ -1,3 +1,4 @@
+- ♻️ More consistent switch and create commands [PR](https://github.com/laminlabs/lamin-cli/pull/187) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Make `lamin delete` parallel to `lamin save` and `lamin load` in that it also allows `key`-based deletion [PR](https://github.com/laminlabs/lamin-cli/pull/186) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clearer delineation of entity vs. registry [PR](https://github.com/laminlabs/lamin-cli/pull/185) [@falexwolf](https://github.com/falexwolf)
 - 📝 More consistent docstrings for CLI commands [PR](https://github.com/laminlabs/lamin-cli/pull/183) [@falexwolf](https://github.com/falexwolf)
