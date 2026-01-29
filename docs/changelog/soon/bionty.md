@@ -1,0 +1,1 @@
+- Update README [PR](https://github.com/laminlabs/bionty/pull/363) [@falexwolf](https://github.com/falexwolf)
