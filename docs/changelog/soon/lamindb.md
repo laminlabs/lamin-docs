@@ -1,3 +1,4 @@
+- 📝 Convert guides to markdown format [PR](https://github.com/laminlabs/lamindb/pull/3501) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix PyYAML serialization of NotebookNode [PR](https://github.com/laminlabs/lamindb/pull/3488) [@Zethson](https://github.com/Zethson)
 - ✨Allow users to pass ids of foreign keys in `Artifact()` constructor [PR](https://github.com/laminlabs/lamindb/pull/3498) [@Koncopd](https://github.com/Koncopd)
 - 📝 Move lazy upload out of arrays guide and into `from_lazy()` docstring + unit tests [PR](https://github.com/laminlabs/lamindb/pull/3499) [@falexwolf](https://github.com/falexwolf)
