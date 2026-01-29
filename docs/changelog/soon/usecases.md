@@ -1,3 +1,4 @@
+- 📝 Update guides to reflect the overhauled `lightning` integration [PR](https://github.com/laminlabs/lamin-mlops/pull/32) [@Zethson](https://github.com/Zethson)
 - 📝 Re-polish ontology guides [PR](https://github.com/laminlabs/lamin-usecases/pull/236) [@Zethson](https://github.com/Zethson)
 - ♻️ Simplify and clarify usage of `@ln.flow()` [PR](https://github.com/laminlabs/redun-lamin/pull/29) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `_set_default_colors_for_categorical_obs` for the spatial guide [PR](https://github.com/laminlabs/lamin-usecases/pull/234) [@namsaraeva](https://github.com/namsaraeva)
