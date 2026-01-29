@@ -1,3 +1,4 @@
+- ✨Allow users to pass ids of foreign keys in `Artifact()` constructor [PR](https://github.com/laminlabs/lamindb/pull/3498) [@Koncopd](https://github.com/Koncopd)
 - 📝 Move lazy upload out of arrays guide and into `from_lazy()` docstring + unit tests [PR](https://github.com/laminlabs/lamindb/pull/3499) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add more tests for settings management and rename the `storage` test group to `core` [PR](https://github.com/laminlabs/lamindb-setup/pull/1275) [@falexwolf](https://github.com/falexwolf)
 - 👷 Refactor performance profiling [PR](https://github.com/laminlabs/lamindb/pull/3497) [@falexwolf](https://github.com/falexwolf)
