@@ -1,3 +1,4 @@
+- 👷 Refactor performance profiling [PR](https://github.com/laminlabs/lamindb/pull/3497) [@falexwolf](https://github.com/falexwolf)
 - 👷 Refactor performance profiling [PR](https://github.com/laminlabs/lamindb-setup/pull/1274) [@falexwolf](https://github.com/falexwolf)
 - ✨ Delete records [PR](https://github.com/laminlabs/lamin-cli/pull/192) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Refactor to eliminate pydantic settings and gain 80 ms in import time [PR](https://github.com/laminlabs/lamindb-setup/pull/1273) [@falexwolf](https://github.com/falexwolf)
