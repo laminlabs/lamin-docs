@@ -1,3 +1,4 @@
+- ♻️ Convert ipynb to md [PR](https://github.com/laminlabs/lamin-mlops/pull/33) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Convert ipynb to md [PR](https://github.com/laminlabs/redun-lamin/pull/30) [@falexwolf](https://github.com/falexwolf)
 - 📝 Update guides to reflect the overhauled `lightning` integration [PR](https://github.com/laminlabs/lamin-mlops/pull/32) [@Zethson](https://github.com/Zethson)
 - 📝 Re-polish ontology guides [PR](https://github.com/laminlabs/lamin-usecases/pull/236) [@Zethson](https://github.com/Zethson)
