@@ -1,3 +1,4 @@
+- 🚸 Overhaul the pytorch `lightning` integration [PR](https://github.com/laminlabs/lamindb/pull/3425) [@Zethson](https://github.com/Zethson)
 - 👷 Simplify test/docs CI setup [PR](https://github.com/laminlabs/lamindb/pull/3502) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix standardize ignoring passed source [PR](https://github.com/laminlabs/lamindb/pull/3500) [@Zethson](https://github.com/Zethson)
 - 📝 Convert guides to markdown format [PR](https://github.com/laminlabs/lamindb/pull/3501) [@falexwolf](https://github.com/falexwolf)
