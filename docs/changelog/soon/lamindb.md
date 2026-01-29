@@ -1,3 +1,4 @@
+- ✨ Delete records [PR](https://github.com/laminlabs/lamin-cli/pull/192) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Refactor to eliminate pydantic settings and gain 80 ms in import time [PR](https://github.com/laminlabs/lamindb-setup/pull/1273) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Import `django.db.migrations` and `httpx` dynamically to save 100 ms import time [PR](https://github.com/laminlabs/lamindb-setup/pull/1272) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Dynamic hub imports to avoid `supabase` import [PR](https://github.com/laminlabs/lamindb-setup/pull/1271) [@falexwolf](https://github.com/falexwolf)
