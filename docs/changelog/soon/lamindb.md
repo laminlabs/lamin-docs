@@ -1,3 +1,4 @@
+- ✅ Add more tests for settings management and rename the `storage` test group to `core` [PR](https://github.com/laminlabs/lamindb-setup/pull/1275) [@falexwolf](https://github.com/falexwolf)
 - 👷 Refactor performance profiling [PR](https://github.com/laminlabs/lamindb/pull/3497) [@falexwolf](https://github.com/falexwolf)
 - 👷 Refactor performance profiling [PR](https://github.com/laminlabs/lamindb-setup/pull/1274) [@falexwolf](https://github.com/falexwolf)
 - ✨ Delete records [PR](https://github.com/laminlabs/lamin-cli/pull/192) [@falexwolf](https://github.com/falexwolf)
