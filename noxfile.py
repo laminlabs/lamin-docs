@@ -338,77 +338,18 @@ def docs(session):
     #     # exit with error
     #     exit(1)
 
-    if IS_PR:
-        print("Skipping summary.md")
-        return
+    # if IS_PR:
+    #     print("Skipping llms.txt")
+    #     return
 
     # now strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
     strip_notebook_outputs("docs")
 
-    Path("docs/changelog/2022.md").unlink()
-    Path("docs/changelog/2023.md").unlink()
-    Path("docs/changelog/2024.md").unlink()
-    Path("docs/changelog/2025.md").unlink()
-    Path("docs/changelog/soon.md").unlink()
-
-    # Use cases
-    Path("docs/sc-imaging.ipynb").unlink()
-    Path("docs/sc-imaging2.ipynb").unlink()
-    Path("docs/sc-imaging3.ipynb").unlink()
-    Path("docs/sc-imaging4.ipynb").unlink()
-    Path("docs/facs.ipynb").unlink()
-    Path("docs/facs2.ipynb").unlink()
-    Path("docs/facs3.ipynb").unlink()
-    Path("docs/facs4.ipynb").unlink()
-    Path("docs/celltypist.ipynb").unlink()
-    Path("docs/trace-data-code.md").unlink()
-    Path("docs/enrichr.ipynb").unlink()
-    Path("docs/rdf-sparql.ipynb").unlink()
-    Path("docs/analysis-registries.ipynb").unlink()
-    Path("docs/mnist.ipynb").unlink()
-    Path("docs/cellxgene-curate.ipynb").unlink()
-    Path("docs/organism.ipynb").unlink()
-    Path("docs/rxrx.ipynb").unlink()
-    Path("docs/protein.ipynb").unlink()
-    Path("docs/cell_line.ipynb").unlink()
-    Path("docs/cell_type.ipynb").unlink()
-    Path("docs/cell_marker.ipynb").unlink()
-    Path("docs/tissue.ipynb").unlink()
-    Path("docs/phenotype.ipynb").unlink()
-    Path("docs/pathway.ipynb").unlink()
-    Path("docs/experimental_factor.ipynb").unlink()
-    Path("docs/developmental_stage.ipynb").unlink()
-    Path("docs/ethnicity.ipynb").unlink()
-    Path("docs/snakemake.ipynb").unlink()
-
-    # Aux information
-    Path("docs/influences.md").unlink()
-    Path("docs/glossary.md").unlink()
-
-    # FAQ
-    Path("docs/faq/idempotency.ipynb").unlink()
-    Path("docs/faq/reference-field.ipynb").unlink()
-    Path("docs/faq/track-run-inputs.ipynb").unlink()
-    Path("docs/faq/acid.ipynb").unlink()
-    Path("docs/faq/validate-fields.ipynb").unlink()
-    Path("docs/faq/symbol-mapping.ipynb").unlink()
-    Path("docs/faq/search.ipynb").unlink()
-    Path("docs/faq/curate-any.ipynb").unlink()
-
-    # API & CLI
-    Path("docs/lamindb.md").unlink()
-    Path("docs/bionty.md").unlink()
-    Path("docs/cli.md").unlink()
-
     process = subprocess.run(  # noqa S602
         "lndocs --strip-prefix --format text --error-on-index",  # --strict back
         shell=True,
     )
-    ln.connect("laminlabs/lamin-site-assets")
-    ln.track()
-    ln.Artifact("_build/html/summary.md", key="docs-as-txt/summary.md").save()
-    ln.finish()
 
 
 if __name__ == "__main__":
