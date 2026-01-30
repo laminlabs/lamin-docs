@@ -95,21 +95,29 @@ For more information, see {doc}`setup`.
 
 LaminDB and its plugins consist in open-source Python libraries & publicly hosted metadata assets:
 
-- [lamindb](https://github.com/laminlabs/lamindb): Core package.
+- [lamindb](https://github.com/laminlabs/lamindb): Core library.
 - [bionty](https://github.com/laminlabs/bionty): Basic biological ontologies, with easy import from >20 public ontologies
 - [pertdb](https://github.com/laminlabs/pertdb): Registries for perturbations (compounds, biologics, genetic interventions, etc.)
-- [usecases](https://github.com/laminlabs/lamin-usecases): Use cases as visible on the docs.
 
-All immediate dependencies and modules are available as git submodules [here](https://github.com/laminlabs/lamindb/tree/main/sub), for instance,
+Tightly integrated dependencies are available as git submodules [here](https://github.com/laminlabs/lamindb/tree/main/sub), for instance,
 
 - [lamindb-setup](https://github.com/laminlabs/lamindb-setup): Setup & configure LaminDB.
 - [lamin-cli](https://github.com/laminlabs/lamin-cli): CLI for `lamindb` and `lamindb-setup`.
 
-For a comprehensive list of open-sourced software, browse our [GitHub account](https://github.com/laminlabs).
+Use cases / domain-specific repos:
 
-- [lamin-utils](https://github.com/laminlabs/lamin-utils): Generic utilities, e.g., a logger.
+- [lamin-usecases](https://github.com/laminlabs/lamin-usecases): Use cases as visible on the docs.
+- [redun-lamin](https://github.com/laminlabs/redun-lamin): Track redun workflow runs with LaminDB.
+- [lamin-mlops](https://github.com/laminlabs/lamin-mlops): MLOps use cases (MNIST, W&B, MLflow, Croissant).
+- [cellxgene-lamin](https://github.com/laminlabs/cellxgene-lamin): CELLxGENE data and curation.
+- [lamin-spatial](https://github.com/laminlabs/lamin-spatial): Spatial data (RxRx, Vitessce).
+- [snakemake-lamin](https://github.com/laminlabs/snakemake-lamin): Track Snakemake runs with LaminDB.
+- [nf-lamin](https://github.com/laminlabs/nf-lamin): Nextflow integration with LaminDB.
+
+For a comprehensive list of open-sourced software, browse our [GitHub account](https://github.com/laminlabs), for instance,
+
 - [readfcs](https://github.com/laminlabs/readfcs): FCS artifact reader.
-- [nbproject](https://github.com/laminlabs/readfcs): Light-weight Jupyter notebook tracker.
-- [bionty-assets](https://github.com/laminlabs/bionty-assets): Assets for public biological ontologies.
 
-LaminHub is not open-sourced.
+There is a public repository for LaminHub:
+
+- [laminhub-public](https://github.com/laminlabs/laminhub-public): Make issues and follow releases of LaminHub, no source code.
