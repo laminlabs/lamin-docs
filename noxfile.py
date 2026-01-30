@@ -8,7 +8,7 @@ from pathlib import Path
 import lamindb as ln
 import nox
 from dirsync import sync
-from laminci import run_notebooks
+from laminci import convert_executable_md_files, run_notebooks
 from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
 
 current_dir = Path(__file__).parent.resolve()
@@ -307,6 +307,7 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
+    convert_executable_md_files("docs")
     os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
     exit_status = os.system("python docs/includes/create-fasta.py")  # noqa S605
     assert exit_status == 0  # noqa S101
