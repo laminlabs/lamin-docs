@@ -1,3 +1,4 @@
+- ⬆️ Better error of lamin save [PR](https://github.com/laminlabs/lamindb/pull/3503) [@sunnyosun](https://github.com/sunnyosun)
 - Better error for `lamin save` when transform is on a different branch [PR](https://github.com/laminlabs/lamin-cli/pull/181) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Overhaul the pytorch `lightning` integration [PR](https://github.com/laminlabs/lamindb/pull/3425) [@Zethson](https://github.com/Zethson)
 - 👷 Simplify test/docs CI setup [PR](https://github.com/laminlabs/lamindb/pull/3502) [@falexwolf](https://github.com/falexwolf)
