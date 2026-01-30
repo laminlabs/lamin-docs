@@ -1,0 +1,1 @@
+- 🔥 Remove outdated guide [PR](https://github.com/laminlabs/laminhub-public/pull/198) [@falexwolf](https://github.com/falexwolf)
