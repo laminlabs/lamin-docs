@@ -28,3 +28,6 @@
 [submodule "sub/nf-lamin"]
 	path = sub/nf-lamin
 	url = https://github.com/laminlabs/nf-lamin.git
+[submodule "sub/laminhub-public"]
+	path = sub/laminhub-public
+	url = https://github.com/laminlabs/laminhub-public.git
