@@ -22,4 +22,5 @@
 /workflows /nextflow 301
 /mlops /wandb 301
 /visualization /vitessce 301
+/summary.md /introduction.md 301
 / /introduction 301
