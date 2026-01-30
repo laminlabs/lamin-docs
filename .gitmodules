@@ -1,0 +1,30 @@
+[submodule "sub/redun-lamin"]
+	path = sub/redun-lamin
+	url = https://github.com/laminlabs/redun-lamin.git
+[submodule "sub/lamin-mlops"]
+	path = sub/lamin-mlops
+	url = https://github.com/laminlabs/lamin-mlops.git
+[submodule "sub/cellxgene-lamin"]
+	path = sub/cellxgene-lamin
+	url = https://github.com/laminlabs/cellxgene-lamin.git
+[submodule "sub/lamin-spatial"]
+	path = sub/lamin-spatial
+	url = https://github.com/laminlabs/lamin-spatial.git
+[submodule "sub/lamin-usecases"]
+	path = sub/lamin-usecases
+	url = https://github.com/laminlabs/lamin-usecases.git
+[submodule "sub/lamindb"]
+	path = sub/lamindb
+	url = https://github.com/laminlabs/lamindb.git
+[submodule "sub/snakemake-lamin"]
+	path = sub/snakemake-lamin
+	url = https://github.com/laminlabs/snakemake-lamin.git
+[submodule "sub/bionty"]
+	path = sub/bionty
+	url = https://github.com/laminlabs/bionty.git
+[submodule "sub/pertdb"]
+	path = sub/pertdb
+	url = https://github.com/laminlabs/pertdb.git
+[submodule "sub/nf-lamin"]
+	path = sub/nf-lamin
+	url = https://github.com/laminlabs/nf-lamin.git
