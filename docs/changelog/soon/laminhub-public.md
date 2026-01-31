@@ -1,2 +1,0 @@
-- 💄 Display output and input records on run detail page [PR](https://github.com/laminlabs/laminhub-public/pull/201) [@falexwolf](https://github.com/falexwolf)
-- ⚡ Update JWT signing from HS256 to ES256 for better performance [PR](https://github.com/laminlabs/laminhub/pull/4260) [@fredericenard](https://github.com/fredericenard)
