@@ -1,3 +1,4 @@
+- 👽️ Use publishable key for `prod` env [PR](https://github.com/laminlabs/lamindb-setup/pull/1277) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Serialize `Path`, `UPath`, and handle `None` params [PR](https://github.com/laminlabs/lamindb/pull/3507) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fully leverage `Context` to manage the run context of function executions [PR](https://github.com/laminlabs/lamindb/pull/3506) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Proper key for lamin io snapshot [PR](https://github.com/laminlabs/lamin-cli/pull/193) [@falexwolf](https://github.com/falexwolf)
