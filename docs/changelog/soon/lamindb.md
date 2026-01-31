@@ -1,3 +1,4 @@
+- 🚸 Serialize `Path`, `UPath`, and handle `None` params [PR](https://github.com/laminlabs/lamindb/pull/3507) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fully leverage `Context` to manage the run context of function executions [PR](https://github.com/laminlabs/lamindb/pull/3506) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Proper key for lamin io snapshot [PR](https://github.com/laminlabs/lamin-cli/pull/193) [@falexwolf](https://github.com/falexwolf)
 - 📝 README v5.3 [PR](https://github.com/laminlabs/lamindb/pull/3504) [@falexwolf](https://github.com/falexwolf)
