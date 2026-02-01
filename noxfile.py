@@ -46,7 +46,9 @@ README1_REPLACE = """```
 
 README2_ORIG = """
 If you want a GUI: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
-"""
+
+<details>
+<summary>Who uses it?</summary>"""
 
 README2_REPLACE = """```
 
@@ -69,16 +71,19 @@ LaminHub is a SaaS product. For private data & commercial usage, see: [lamin.ai/
 
 :::
 
-💡 **Tip:** Copy this [summary.md](https://docs.lamin.ai/summary.md) into an **LLM chat and let AI explain**."""
-
-
-README3_ORIG = """
-## Docs
-
-Copy [summary.md](https://docs.lamin.ai/summary.md) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai).
+```{dropdown} Who uses it?
 """
 
-README3_REPLACE = ""
+
+README3_ORIG = """</details>
+
+## Docs
+
+Copy [llms.txt](https://docs.lamin.ai/llms.txt) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
+
+README3_REPLACE = """```
+
+**Tip:** Copy [llms.txt](https://docs.lamin.ai/llms.txt) into an LLM chat and let AI explain."""
 
 
 README4_ORIG = """
