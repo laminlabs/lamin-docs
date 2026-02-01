@@ -71,8 +71,7 @@ LaminHub is a SaaS product. For private data & commercial usage, see: [lamin.ai/
 
 :::
 
-```{dropdown} Who uses it?
-"""
+```{dropdown} Who uses it?"""
 
 
 README3_ORIG = """</details>
