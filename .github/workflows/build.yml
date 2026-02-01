@@ -1,5 +1,3 @@
-name: build
-
 on:
   push:
     branches: [main]
@@ -18,8 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ["3.12"]
-    timeout-minutes: 23
-
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
         with:
@@ -32,7 +29,7 @@ jobs:
       - run: |
           pip install uv
           uv pip install --system "laminci[run-notebooks]@git+https://@github.com/laminlabs/laminci"
-          uv pip install --system "lndocs@git+https://github.com/laminlabs/lndocs"
+          uv pip install --system git+https://github.com/laminlabs/lndocs
           uv pip install --system -U dirsync pytest requests nbstripout
           uv pip install --system lamindb
       - run: sudo apt-get -y install graphviz
@@ -44,7 +41,6 @@ jobs:
       - run: nox -s pull_artifacts
       - run: nox -s install
       - run: nox -s run_nbs
-      - run: nox -s init
       - run: nox -s docs
       - run: rm -r ./_build/html/.doctrees # do not want to deploy with cloudflare
       - uses: cloudflare/wrangler-action@v3
