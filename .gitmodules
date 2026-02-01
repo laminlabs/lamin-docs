@@ -31,3 +31,6 @@
 [submodule "sub/laminhub-public"]
 	path = sub/laminhub-public
 	url = https://github.com/laminlabs/laminhub-public.git
+[submodule "sub/laminr"]
+	path = sub/laminr
+	url = https://github.com/laminlabs/laminr
