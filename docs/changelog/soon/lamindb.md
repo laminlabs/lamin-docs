@@ -1,3 +1,4 @@
+- 📝 README v5.3: properly document workflows [PR](https://github.com/laminlabs/lamindb/pull/3510) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Much faster permanent run & transform deletion [PR](https://github.com/laminlabs/lamindb/pull/3509) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Consolidate python package detection across `@flow()` and `track()` [PR](https://github.com/laminlabs/lamindb/pull/3508) [@falexwolf](https://github.com/falexwolf)
 - 👽️ Use publishable key for `prod` env [PR](https://github.com/laminlabs/lamindb-setup/pull/1277) [@Koncopd](https://github.com/Koncopd)
