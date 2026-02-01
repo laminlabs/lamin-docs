@@ -5,17 +5,15 @@ import sys
 import urllib.request
 from pathlib import Path
 
-import lamindb as ln
 import nox
 from dirsync import sync
 from laminci import convert_executable_md_files, run_notebooks
-from laminci.nox import install_lamindb, login_testuser2, run, run_pre_commit
+from laminci.nox import install_lamindb, run, run_pre_commit
+from laminr_converter import convert_markdown_python_to_tabbed
 
 current_dir = Path(__file__).parent.resolve()
 if str(current_dir) not in sys.path:
     sys.path.insert(0, str(current_dir))
-
-from laminr_converter import convert_markdown_python_to_tabbed
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
 
@@ -145,7 +143,7 @@ def add_line_after(content: str, after: str, new_line: str) -> str:
 
 
 def pull_from_s3_and_unpack(zip_filename) -> None:
-    subprocess.run(  # noqa S602
+    subprocess.run(
         f"aws s3 cp s3://lamin-site-assets/docs/{zip_filename} {zip_filename}",
         shell=True,
     )
@@ -258,7 +256,7 @@ def pull_artifacts(session):
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
 
-    # amend README
+    # amend README to serve as introduction.md
     with open("docs/includes/README.md") as f:
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
@@ -312,50 +310,29 @@ def install(session):
 @nox.session
 def run_nbs(session):
     convert_executable_md_files("docs")
-    os.system("lamin init --storage ./test-quickstart --modules bionty")  # noqa S605
-    exit_status = os.system("python docs/includes/create-fasta.py")  # noqa S605
+    os.system("lamin init --storage ./test-quickstart --modules bionty")
+    exit_status = os.system("python docs/includes/create-fasta.py")
     assert exit_status == 0  # noqa S101
     run_notebooks("docs/tutorial.ipynb")
     run_notebooks("docs/setup.ipynb")
 
 
 @nox.session
-def init(session):
-    run(
-        session,
-        "lamin init --storage ./docsbuild --modules bionty,pertdb",
-    )
-
-
-@nox.session
 def docs(session):
-    # this testuser2 is only needed for writing to lamin-site-assets
-    # testuser1 cannot have access to lamin-site-assets
-    login_testuser2(session)
-    process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --error-on-index",  # --strict back
+    subprocess.run(
+        "lndocs --error-on-index",
         shell=True,
     )
     # if process.returncode != 0:
     #     # rerun without strict option so see all warnings
-    #     run(session, "lndocs --strip-prefix --error-on-index")
+    #     run(session, "lndocs --error-on-index")
     #     # exit with error
     #     exit(1)
 
-    # if IS_PR:
-    #     print("Skipping llms.txt")
-    #     return
-
-    # now strip outputs for llms.txt
-    os.system("rm -rf _docs_tmp")  # noqa S605 clean build directory
+    # strip outputs for llms.txt
+    os.system("rm -rf _docs_tmp")
     strip_notebook_outputs("docs")
-
-    process = subprocess.run(  # noqa S602
-        "lndocs --strip-prefix --format text --error-on-index",  # --strict back
+    subprocess.run(
+        "lndocs --format text --error-on-index",
         shell=True,
     )
-
-
-if __name__ == "__main__":
-    content = Path("docs/includes/README.md").read_text()
-    print(convert_markdown_python_to_tabbed(content))
