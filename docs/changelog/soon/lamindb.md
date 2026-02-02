@@ -1,3 +1,4 @@
+- 📝 Legible API reference for `lamindb.models` [PR](https://github.com/laminlabs/lamindb/pull/3511) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1278) [@falexwolf](https://github.com/falexwolf)
 - 📝 README v5.3: properly document workflows [PR](https://github.com/laminlabs/lamindb/pull/3510) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Much faster permanent run & transform deletion [PR](https://github.com/laminlabs/lamindb/pull/3509) [@falexwolf](https://github.com/falexwolf)
