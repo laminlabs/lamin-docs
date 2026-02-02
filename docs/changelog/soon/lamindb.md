@@ -1,1 +1,2 @@
+- 🐛 Fix `reset_django_module_variables` [PR](https://github.com/laminlabs/lamindb-setup/pull/1280) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `S3QueryPath.is_bucket_versioned()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1279) [@Koncopd](https://github.com/Koncopd)
