@@ -1,3 +1,4 @@
+- :children_crossing: Save CLI tool in transform description [PR](https://github.com/laminlabs/lamindb/pull/3512) [@falexwolf](https://github.com/falexwolf)
 - 📝 Legible API reference for `lamindb.models` [PR](https://github.com/laminlabs/lamindb/pull/3511) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1278) [@falexwolf](https://github.com/falexwolf)
 - 📝 README v5.3: properly document workflows [PR](https://github.com/laminlabs/lamindb/pull/3510) [@falexwolf](https://github.com/falexwolf)
