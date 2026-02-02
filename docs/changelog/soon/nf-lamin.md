@@ -1,2 +1,3 @@
+- :sparkles: Revamp Lamin Config: Configure artifact tracking, link to metadata, restructure [PR](https://github.com/laminlabs/nf-lamin/pull/121) [@rcannood](https://github.com/rcannood)
 - ♻️ Convert ipynb to md [PR](https://github.com/laminlabs/nf-lamin/pull/124) [@falexwolf](https://github.com/falexwolf)
 - :bug: Fix input tracking [PR](https://github.com/laminlabs/nf-lamin/pull/123) [@rcannood](https://github.com/rcannood)
