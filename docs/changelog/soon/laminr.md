@@ -1,3 +1,4 @@
+- 👷 Bump aws-actions/configure-aws-credentials from 4 to 6 [PR](https://github.com/laminlabs/laminr/pull/232) [@dependabot[bot]](https://github.com/apps/dependabot)
 - 📝 Update introduction vignette [PR](https://github.com/laminlabs/laminr/pull/249) [@lazappi](https://github.com/lazappi)
 - ♻️ Replace `wetlab` references with `pertdb` [PR](https://github.com/laminlabs/laminr/pull/255) [@lazappi](https://github.com/lazappi)
 - 🚸 Add `as.list()` coercion method for `BasicQuerySet` [PR](https://github.com/laminlabs/laminr/pull/254) [@lazappi](https://github.com/lazappi)
