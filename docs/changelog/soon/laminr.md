@@ -1,3 +1,4 @@
+- 📝 Update introduction vignette [PR](https://github.com/laminlabs/laminr/pull/249) [@lazappi](https://github.com/lazappi)
 - ♻️ Replace `wetlab` references with `pertdb` [PR](https://github.com/laminlabs/laminr/pull/255) [@lazappi](https://github.com/lazappi)
 - 🚸 Add `as.list()` coercion method for `BasicQuerySet` [PR](https://github.com/laminlabs/laminr/pull/254) [@lazappi](https://github.com/lazappi)
 - 🚸 Use absolute files paths for tracking [PR](https://github.com/laminlabs/laminr/pull/252) [@ap--](https://github.com/ap--)
