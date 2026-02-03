@@ -1,1 +1,2 @@
+- 🚸 Use absolute files paths for tracking [PR](https://github.com/laminlabs/laminr/pull/252) [@ap--](https://github.com/ap--)
 - 🚸 Warn Python messages will be lost on Jupyter [PR](https://github.com/laminlabs/laminr/pull/248) [@lazappi](https://github.com/lazappi)
