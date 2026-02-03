@@ -1,7 +1,0 @@
-- ✅ Fix cleanup of `permissions` test [PR](https://github.com/laminlabs/lamindb/pull/3518) [@Koncopd](https://github.com/Koncopd)
-- ✨ Add `lamin settings cache-dir reset` commad to CLI [PR](https://github.com/laminlabs/lamindb/pull/3517) [@Koncopd](https://github.com/Koncopd)
-- ✨ Add `lamin settings cache-dir reset` commad to reset [PR](https://github.com/laminlabs/lamin-cli/pull/195) [@Koncopd](https://github.com/Koncopd)
-- 🚸 Better detection of read-only connections for write errors and tracking [PR](https://github.com/laminlabs/lamindb/pull/3515) [@Koncopd](https://github.com/Koncopd)
-- ✨ Store decoded db token type and expose tokens through `settings` [PR](https://github.com/laminlabs/lamindb-setup/pull/1281) [@Koncopd](https://github.com/Koncopd)
-- 🐛 Fix `reset_django_module_variables` [PR](https://github.com/laminlabs/lamindb-setup/pull/1280) [@Koncopd](https://github.com/Koncopd)
-- ✨ Add `S3QueryPath.is_bucket_versioned()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1279) [@Koncopd](https://github.com/Koncopd)
