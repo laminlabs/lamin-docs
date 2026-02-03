@@ -1,0 +1,1 @@
+- 🚸 Warn Python messages will be lost on Jupyter [PR](https://github.com/laminlabs/laminr/pull/248) [@lazappi](https://github.com/lazappi)
