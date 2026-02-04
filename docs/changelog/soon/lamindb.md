@@ -1,2 +1,3 @@
+- ⚡️ Download large single files from s3 with `boto3` by default in `artifact.cache()` [PR](https://github.com/laminlabs/lamindb/pull/3519) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Download large single files from s3 with `boto3` [PR](https://github.com/laminlabs/lamindb-setup/pull/1276) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable curation against Features with Union dtypes [PR](https://github.com/laminlabs/lamindb/pull/3516) [@Zethson](https://github.com/Zethson)
