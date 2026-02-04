@@ -1,0 +1,1 @@
+- ✨ Enable curation against Features with Union dtypes [PR](https://github.com/laminlabs/lamindb/pull/3516) [@Zethson](https://github.com/Zethson)
