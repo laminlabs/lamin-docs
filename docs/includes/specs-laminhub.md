@@ -5,11 +5,13 @@ One GUI:
 - notebooks, workflows, runs
 - versioning
 - ontologies
-- sheets, note-taking aka ELN/LIMS
+- records, sheets, note-taking aka ELN/LIMS
+- features, schemas, labels
+- simple dashboarding
 
-Enterprise-grade features:
+Enterprise-grade add ons:
 
-- role-based permission management
+- role-based, fine-grained permission management
 - organization, team & infrastructure management
 - audit logs
 - SSO
