@@ -36,7 +36,7 @@ README1_ORIG = """</details>
 
 <img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000C.svg">
 
-Highlights:"""
+How?"""
 
 README1_REPLACE = """```
 
@@ -45,10 +45,10 @@ README1_REPLACE = """```
 ```{dropdown} DB highlights"""
 
 README2_ORIG = """
-If you want a GUI: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+GUI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git.
 
 <details>
-<summary>Who uses it?</summary>"""
+<summary>Who?</summary>"""
 
 README2_REPLACE = """```
 
@@ -162,7 +162,9 @@ def pull_artifacts(session):
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")
     Path("lamindb/README.ipynb").unlink()
-    Path("lamindb/README.md").rename("docs/includes/README.md")
+    Path("lamindb/README.md").unlink()
+    # pull README.md from tmp_lamindb, i.e., the main branch of lamindb
+    shutil.copy(Path("tmp_lamindb/README.md"), "docs/includes/README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
     Path("lamindb/api.md").unlink()
@@ -282,18 +284,11 @@ def strip_notebook_outputs(directory="."):
 
 @nox.session
 def install(session):
-    branch = "main" if IS_PR else "main"
-    if branch == "pypi":
-        run(
-            session,
-            "uv pip install --system lamindb",
-        )
-    else:
-        install_lamindb(
-            session,
-            branch=branch,
-            target_dir="tmp_lamindb",
-        )
+    install_lamindb(
+        session,
+        branch="main",
+        target_dir="tmp_lamindb",
+    )
     run(session, "uv pip install --system spatialdata")  # temporarily
     run(session, "uv pip install --system scanpy")
     run(session, "lamin settings set private-django-api true")
