@@ -1,3 +1,4 @@
+- 📝 README v5.5: re-write the why? section [PR](https://github.com/laminlabs/lamindb/pull/3520) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3521) [@Koncopd](https://github.com/Koncopd)
 - 🔊 More debugging information on instance deletion [PR](https://github.com/laminlabs/lamindb-setup/pull/1282) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Download large single files from s3 with `boto3` by default in `artifact.cache()` [PR](https://github.com/laminlabs/lamindb/pull/3519) [@Koncopd](https://github.com/Koncopd)
