@@ -163,6 +163,7 @@ def pull_artifacts(session):
     pull_from_s3_and_unpack("lamindb.zip")
     Path("lamindb/README.ipynb").unlink()
     Path("lamindb/README.md").unlink()
+    # pull README.md from tmp_lamindb, i.e., the main branch of lamindb
     shutil.copy(Path("tmp_lamindb/README.md"), "docs/includes/README.md")
     Path("lamindb/conf.py").unlink()
     Path("lamindb/changelog.md").unlink()
