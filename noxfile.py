@@ -45,10 +45,10 @@ README1_REPLACE = """```
 ```{dropdown} DB highlights"""
 
 README2_ORIG = """
-If you want a GUI: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
+GUI, permissions, audit logs: [LaminHub](https://lamin.ai) is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
 <details>
-<summary>Who uses it?</summary>"""
+<summary>Who?</summary>"""
 
 README2_REPLACE = """```
 
