@@ -7,17 +7,17 @@ One GUI:
 - ontologies
 - sheets, note-taking aka ELN/LIMS
 
-Quality of life:
-
-- hosting
-- auth through GitHub/Google/Microsoft
-
 Enterprise-grade features:
 
 - role-based permission management
 - organization, team & infrastructure management
 - audit logs
 - SSO
+
+Quality of life:
+
+- hosting
+- auth through GitHub/Google/Microsoft
 
 Through the open-source LaminDB, developers retain full access to their data with zero lock-in danger. Instead of depending on rate-limited REST APIs, developers build directly with Postgres & diverse open storage formats on object stores.
 
