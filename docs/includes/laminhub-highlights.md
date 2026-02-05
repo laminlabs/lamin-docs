@@ -12,7 +12,7 @@ Enterprise essentials:
 
 - **RBAC** → role-based, fine-grained permission management for users & teams
 - **audit logs** → full traceability for compliance
-- **SSO** → SAML & OIDC via Okta, Ping, and other providers
+- **SSO** → connect Okta, Ping, and other providers
 - **infrastructure** → manage many distributed storage locations & databases
 - **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel LaminHub
 
