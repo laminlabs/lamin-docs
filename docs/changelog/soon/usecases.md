@@ -1,3 +1,4 @@
+- 💚 Remove scanpy pinning [PR](https://github.com/laminlabs/lamin-usecases/pull/235) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Standardize against pinned Sources [PR](https://github.com/laminlabs/cellxgene-lamin/pull/145) [@Zethson](https://github.com/Zethson)
 - 👷 Clean up repo [PR](https://github.com/laminlabs/cellxgene-lamin/pull/144) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Convert ipynb to md [PR](https://github.com/laminlabs/snakemake-lamin/pull/10) [@falexwolf](https://github.com/falexwolf)
