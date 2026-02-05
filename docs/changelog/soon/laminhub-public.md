@@ -1,3 +1,4 @@
+- 🐛 Fix stale Markdown state on Save [PR](https://github.com/laminlabs/laminhub-public/pull/206) [@chaichontat](https://github.com/chaichontat)
 - :bug: More robust error handling for account handle suggestions [PR](https://github.com/laminlabs/laminhub-public/pull/205) [@chaichontat](https://github.com/chaichontat)
 - :bug: Properly show a 404 response for artifacts when non-existent [PR](https://github.com/laminlabs/laminhub-public/pull/204) [@chaichontat](https://github.com/chaichontat)
 - 💄 Display run params [PR](https://github.com/laminlabs/laminhub-public/pull/202) [@falexwolf](https://github.com/falexwolf)
