@@ -5,23 +5,22 @@ One GUI:
 - notebooks, workflows, runs
 - versioning
 - ontologies
-- records, sheets, note-taking aka ELN/LIMS
+- records, sheets, note-taking aka LIMS/ELN
 - features, schemas, labels
 - simple dashboarding
 
-Enterprise-grade add ons:
+Enterprise essentials:
 
 - role-based, fine-grained permission management
 - organization, team & infrastructure management
 - audit logs
 - SSO
+- zero lock-in due to open-source core
 
 Quality of life:
 
 - hosting
 - auth through GitHub/Google/Microsoft
-
-Through the open-source LaminDB, developers retain full access to their data with zero lock-in danger. Instead of depending on rate-limited REST APIs, developers build directly with Postgres & diverse open storage formats on object stores.
 
 Give it a try by exploring public omics datasets at [lamin.ai/explore](https://lamin.ai/explore). It's free and no account is required.
 
