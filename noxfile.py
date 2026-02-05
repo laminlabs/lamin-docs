@@ -36,7 +36,7 @@ README1_ORIG = """</details>
 
 <img width="800px" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000C.svg">
 
-Highlights:"""
+How?"""
 
 README1_REPLACE = """```
 
