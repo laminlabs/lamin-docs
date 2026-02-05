@@ -56,7 +56,7 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 
 :::{dropdown} Hub highlights
 
-```{include} includes/specs-laminhub.md
+```{include} includes/laminhub-highlights.md
 ```
 
 :::
