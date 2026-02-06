@@ -1,3 +1,4 @@
+- 🐛 Fix initializing an instance with db passed [PR](https://github.com/laminlabs/lamindb/pull/3524) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix initializing an instance with db passed [PR](https://github.com/laminlabs/lamindb-setup/pull/1285) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3523) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Log s3 credentials in `mark_storage_root` [PR](https://github.com/laminlabs/lamindb-setup/pull/1284) [@Koncopd](https://github.com/Koncopd)
