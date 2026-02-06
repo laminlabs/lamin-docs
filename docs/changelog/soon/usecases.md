@@ -1,3 +1,4 @@
+- 🎨 Fix formatting in the spatial guide [PR](https://github.com/laminlabs/lamin-usecases/pull/238) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Remove scanpy pinning [PR](https://github.com/laminlabs/lamin-usecases/pull/235) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Standardize against pinned Sources [PR](https://github.com/laminlabs/cellxgene-lamin/pull/145) [@Zethson](https://github.com/Zethson)
 - 👷 Clean up repo [PR](https://github.com/laminlabs/cellxgene-lamin/pull/144) [@falexwolf](https://github.com/falexwolf)
