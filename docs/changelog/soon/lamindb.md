@@ -1,3 +1,4 @@
+- 🔊 Log s3 credentials in `mark_storage_root` [PR](https://github.com/laminlabs/lamindb-setup/pull/1284) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Give more info on failing to insert an instance record into central [PR](https://github.com/laminlabs/lamindb-setup/pull/1283) [@Koncopd](https://github.com/Koncopd)
 - 📝 README v5.5: re-write the why? section [PR](https://github.com/laminlabs/lamindb/pull/3520) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3521) [@Koncopd](https://github.com/Koncopd)
