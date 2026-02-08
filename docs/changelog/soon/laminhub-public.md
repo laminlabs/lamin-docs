@@ -1,3 +1,4 @@
+- :bug: Fix text overflow for sheet names in Launch [PR](https://github.com/laminlabs/laminhub-public/pull/208) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix the count & filtering for recreated artifacts in the run input/output panes [PR](https://github.com/laminlabs/laminhub-public/pull/207) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix stale Markdown state on Save [PR](https://github.com/laminlabs/laminhub-public/pull/206) [@chaichontat](https://github.com/chaichontat)
 - :bug: More robust error handling for account handle suggestions [PR](https://github.com/laminlabs/laminhub-public/pull/205) [@chaichontat](https://github.com/chaichontat)
