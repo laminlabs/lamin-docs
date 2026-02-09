@@ -1,2 +1,3 @@
+- 💄 Move `ULabels` under `Records` tab [PR](https://github.com/laminlabs/laminhub-public/pull/213) [@sunnyosun](https://github.com/sunnyosun)
 - :lipstick: Move `Records` tab to the left of `Features` [PR](https://github.com/laminlabs/laminhub-public/pull/212) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix scrolling behavior on info pages [PR](https://github.com/laminlabs/laminhub-public/pull/211) [@falexwolf](https://github.com/falexwolf)
