@@ -1,1 +1,2 @@
+- 🚸 Make it easier to query for all output artifacts including recreated ones [PR](https://github.com/laminlabs/lamindb/pull/3526) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Speed-up lamindb import by lazily importing pandas, anndata & pyarrow [PR](https://github.com/laminlabs/lamindb/pull/3525) [@falexwolf](https://github.com/falexwolf)
