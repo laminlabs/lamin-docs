@@ -16,6 +16,11 @@ Enterprise essentials:
 - **infrastructure** → manage many distributed storage locations & databases
 - **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel LaminHub
 
+Enterprise highlights:
+
+- permissions are enforced on the Postgres & storage layer → **no** need for an intermediate web service or query language
+- permissions can easily be combined with Postgres & AWS permissions → any customization need is met
+
 Quality of life:
 
 - optional hosting
