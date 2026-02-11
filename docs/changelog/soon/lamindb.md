@@ -1,3 +1,4 @@
+- 🐛 Scope feature query by schema member types in curator [PR](https://github.com/laminlabs/lamindb/pull/3528) [@Zethson](https://github.com/Zethson)
 - 🔧 Allow passing resource_db_server_id on instance init [PR](https://github.com/laminlabs/lamindb-setup/pull/1287) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix DB snapshot sync [PR](https://github.com/laminlabs/lamindb/pull/3530) [@Zethson](https://github.com/Zethson)
 - 🚸 Track `record_type.to_dataframe()` as an input for the current run [PR](https://github.com/laminlabs/lamindb/pull/3527) [@falexwolf](https://github.com/falexwolf)
