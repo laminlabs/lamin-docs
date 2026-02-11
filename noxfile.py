@@ -68,11 +68,11 @@ README3_ORIG = """</details>
 
 ## Docs
 
-Copy [llms.txt](https://docs.lamin.ai/llms.txt) into an LLM chat and let AI explain or read the [docs](https://docs.lamin.ai)."""
+Point an agent to [llms.txt](https://docs.lamin.ai/llms.txt) and let them do the work or read the [docs](https://docs.lamin.ai)."""
 
 README3_REPLACE = """```
 
-**Tip:** Copy [llms.txt](https://docs.lamin.ai/llms.txt) into an LLM chat and let AI explain."""
+**Tip:** Point an agent to [llms.txt](https://docs.lamin.ai/llms.txt) and let them do the work."""
 
 
 README4_ORIG = """
