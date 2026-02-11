@@ -1,3 +1,4 @@
+- 🐛 Fix DB snapshot sync [PR](https://github.com/laminlabs/lamindb/pull/3530) [@Zethson](https://github.com/Zethson)
 - 🚸 Track `record_type.to_dataframe()` as an input for the current run [PR](https://github.com/laminlabs/lamindb/pull/3527) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make it easier to query for all output artifacts including recreated ones [PR](https://github.com/laminlabs/lamindb/pull/3526) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Speed-up lamindb import by lazily importing pandas, anndata & pyarrow [PR](https://github.com/laminlabs/lamindb/pull/3525) [@falexwolf](https://github.com/falexwolf)
