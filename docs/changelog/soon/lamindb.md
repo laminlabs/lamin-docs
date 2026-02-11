@@ -1,3 +1,4 @@
+- 📝 Add videos to docs, polish typos and wording [PR](https://github.com/laminlabs/lamindb/pull/3529) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix bracket handling of describe [PR](https://github.com/laminlabs/lamindb/pull/3531) [@Zethson](https://github.com/Zethson)
 - 🐛 Scope feature query by schema member types in curator [PR](https://github.com/laminlabs/lamindb/pull/3528) [@Zethson](https://github.com/Zethson)
 - 🔧 Allow passing resource_db_server_id on instance init [PR](https://github.com/laminlabs/lamindb-setup/pull/1287) [@Koncopd](https://github.com/Koncopd)
