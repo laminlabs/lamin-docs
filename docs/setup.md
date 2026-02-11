@@ -42,11 +42,13 @@ If you'd like to install from GitHub, see [here](https://github.com/laminlabs/la
 
 An account is free & [signing up](https://lamin.ai/signup) takes 1 min.
 
-Through signing up, Lamin does _not_ store or see any of your data, but only _basic_ metadata about you (email address, etc.).
+Through signing up, Lamin does _not_ store or see any of your data, only your email address.
 
-If you register a LaminDB instance to LaminHub, we store metadata about the involved infrastructure (database server, storage locations, etc.). But we don't store any secrets when you call `lamin init` and can't see your data or metadata. If you want to connect your instance to LaminHub for exploration with read-write access: please [reach out](https://lamin.ai/contact).
+If you create a LaminDB instance through the global LaminHub at https://lamin.ai, Lamin will host your metadata on AWS and provide a default storage location on S3.
 
-For more, see [doc](inv:docs#access), [the source code](https://github.com/laminlabs/lamindb-setup), or the [privacy policy](https://lamin.ai/legal/privacy-policy).
+This does not apply when calling `lamin init` locally. If you want to connect an existing LaminDB instance to LaminHub to benefit from additional features and management of the database: please [reach out](https://lamin.ai/contact).
+
+For more information re Lamin's access to your data, see [the source code](https://github.com/laminlabs/lamindb), the [privacy policy](https://lamin.ai/legal/privacy-policy), or [our certified commitment to security](https://docs.lamin.ai/security).
 
 ```
 
