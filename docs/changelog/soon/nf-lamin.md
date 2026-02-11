@@ -1,0 +1,1 @@
+- :bug: Exclude work dir and assets from input artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/128) [@rcannood](https://github.com/rcannood)
