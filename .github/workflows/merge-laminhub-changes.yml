@@ -117,6 +117,7 @@ jobs:
 
       - name: Open PR
         if: steps.check.outputs.skip != 'true'
+        id: open_pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: ${{ env.branch }}
@@ -129,3 +130,12 @@ jobs:
             --head "$BRANCH" \
             --title "Changelog: merge laminhub-public ${TAG} (${DATE_STR})" \
             --body "Prepends content from docs/changelog/soon/laminhub-public.md to docs/changelog/2026.md and clears the soon file."
+
+      - name: Merge PR into main
+        if: steps.check.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ env.branch }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr merge "$BRANCH" --repo "$REPO" --merge
