@@ -1,0 +1,141 @@
+# yamllint disable rule:line-length
+# yamllint disable rule:truthy
+---
+# Merges docs/changelog/soon/laminhub-public.md into docs/changelog/2026.md and opens a PR.
+# Triggered by repository_dispatch from laminhub-public on release (see plan: laminhub-public
+# must have a workflow on release: published that POSTs to repos/laminlabs/lamin-docs/dispatches
+# with event_type: laminhub-public-release and client_payload: { tag_name, published_at }).
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Release tag (e.g. 1.15.3 or v1.15.3)"
+        required: true
+        type: string
+      published_at:
+        description: "Release date ISO 8601 (e.g. 2026-02-12)"
+        required: true
+        type: string
+  repository_dispatch:
+    types:
+      - laminhub-public-release
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  merge:
+    if: |
+      (github.event_name == 'workflow_dispatch') ||
+      (github.event_name == 'repository_dispatch' && github.event.action == 'laminhub-public-release')
+    runs-on: ubuntu-latest
+    env:
+      REPO: ${{ github.repository }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve tag and date
+        id: resolve
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            TAG_RAW="${{ github.event.client_payload.tag_name }}"
+            PUBLISHED="${{ github.event.client_payload.published_at }}"
+          else
+            TAG_RAW="${{ inputs.tag_name }}"
+            PUBLISHED="${{ inputs.published_at }}"
+          fi
+          test -n "$TAG_RAW" || { echo "tag_name is required"; exit 1; }
+          test -n "$PUBLISHED" || { echo "published_at is required"; exit 1; }
+          # Strip leading v if present
+          TAG="${TAG_RAW#v}"
+          # Format date as YYYY-MM-DD (handle full ISO 8601)
+          DATE_STR=$(echo "$PUBLISHED" | cut -d'T' -f1)
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "date_str=$DATE_STR" >> "$GITHUB_OUTPUT"
+
+      - name: Check soon file has content
+        id: check
+        run: |
+          SOON_FILE="docs/changelog/soon/laminhub-public.md"
+          if [ ! -f "$SOON_FILE" ] || [ ! -s "$SOON_FILE" ]; then
+            echo "soon=$SOON_FILE is missing or empty; skipping merge (no-op)."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+      - name: Merge laminhub-public.md into 2026.md
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          python3 - "docs/changelog/soon/laminhub-public.md" "docs/changelog/2026.md" "${{ steps.resolve.outputs.date_str }}" "${{ steps.resolve.outputs.tag }}" <<'PY'
+          import sys
+          from pathlib import Path
+          soon_path = Path(sys.argv[1])
+          changelog_path = Path(sys.argv[2])
+          date_str = sys.argv[3]
+          tag = sys.argv[4]
+          content = soon_path.read_text().strip()
+          heading = f"## {date_str} {{small}}`hub {tag}`"
+          new_section = f"{heading}\n\n{content}\n\n"
+          text = changelog_path.read_text()
+          idx = text.find("\n## ")
+          if idx == -1:
+              raise SystemExit("No '## ' heading found in changelog")
+          before = text[: idx + 1]
+          after = text[idx + 1:]
+          changelog_path.write_text(before + new_section + after)
+          PY
+
+      - name: Clear soon file
+        if: steps.check.outputs.skip != 'true'
+        run: |
+          echo -n '' > docs/changelog/soon/laminhub-public.md
+
+      - name: Create branch, commit, push
+        if: steps.check.outputs.skip != 'true'
+        env:
+          TAG: ${{ steps.resolve.outputs.tag }}
+          DATE_STR: ${{ steps.resolve.outputs.date_str }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          RUN_ID_SHORT=${GITHUB_RUN_ID:0:8}
+          [ -n "$RUN_ID_SHORT" ] || RUN_ID_SHORT=$GITHUB_RUN_ID
+          BRANCH="chore/changelog/merge-laminhub-public-${TAG}-${RUN_ID_SHORT}"
+          git checkout -b "$BRANCH" origin/main
+          git add docs/changelog/2026.md docs/changelog/soon/laminhub-public.md
+          git commit -m "chore(changelog): merge laminhub-public ${TAG} (${DATE_STR}) into 2026.md"
+          git push -u origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_ENV"
+
+      - name: Open PR
+        if: steps.check.outputs.skip != 'true'
+        id: open_pr
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ env.branch }}
+          TAG: ${{ steps.resolve.outputs.tag }}
+          DATE_STR: ${{ steps.resolve.outputs.date_str }}
+        run: |
+          gh pr create \
+            --repo "$REPO" \
+            --base main \
+            --head "$BRANCH" \
+            --title "Changelog: merge laminhub-public ${TAG} (${DATE_STR})" \
+            --body "Prepends content from docs/changelog/soon/laminhub-public.md to docs/changelog/2026.md and clears the soon file."
+
+      - name: Merge PR into main
+        if: steps.check.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ env.branch }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh pr merge "$BRANCH" --repo "$REPO" --merge
