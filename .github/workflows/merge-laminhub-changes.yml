@@ -5,8 +5,6 @@
 # Triggered by repository_dispatch from laminhub-public on release (see plan: laminhub-public
 # must have a workflow on release: published that POSTs to repos/laminlabs/lamin-docs/dispatches
 # with event_type: laminhub-public-release and client_payload: { tag_name, published_at }).
-name: Changelog merge (laminhub-public)
-
 on:
   workflow_dispatch:
     inputs:
