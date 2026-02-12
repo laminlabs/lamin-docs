@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3536) [@Koncopd](https://github.com/Koncopd)
 - 🔧 Allow passing `resource_db_server_id` in `register()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1290) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `lamin merge` command, add `lamin switch -c` option & simplify `lamin switch` syntax [PR](https://github.com/laminlabs/lamindb/pull/3532) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix autocomplete of datasets & curators modules [PR](https://github.com/laminlabs/lamindb/pull/3534) [@Zethson](https://github.com/Zethson)
