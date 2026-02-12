@@ -1,3 +1,0 @@
-- ✏️ Fix pertdb copy text [PR](https://github.com/laminlabs/laminhub-public/pull/219) [@sunnyosun](https://github.com/sunnyosun)
-- ✨ Support more path types from nextflow schema [PR](https://github.com/laminlabs/laminhub-public/pull/218) [@sunnyosun](https://github.com/sunnyosun)
-- 🐛 Fix `Project` feature link [PR](https://github.com/laminlabs/laminhub-public/pull/215) [@sunnyosun](https://github.com/sunnyosun)
