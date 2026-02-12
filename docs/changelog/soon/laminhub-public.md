@@ -1,0 +1,1 @@
+- 👷 Dispatch changelog merge [PR](https://github.com/laminlabs/laminhub-public/pull/220) [@falexwolf](https://github.com/falexwolf)
