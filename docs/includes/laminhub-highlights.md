@@ -15,11 +15,12 @@ Enterprise essentials:
 - **SSO** → connect Okta, Ping, and other providers
 - **infrastructure** → manage many distributed storage locations & databases
 - **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel LaminHub
+- **secure** → SOC2 certified, monitoring ISO27001 & HIPAA compliance
 
 Enterprise highlights:
 
-- permissions are enforced on the Postgres & storage layer → **no** need for an intermediate web service or query language
-- permissions can easily be combined with Postgres & AWS permissions → any customization need is met
+- permissions on the Postgres & storage layer → **no** need for an intermediate web service or query language
+- permissions easy to combine with Postgres & AWS permissions → full customizability
 
 Quality of life:
 
