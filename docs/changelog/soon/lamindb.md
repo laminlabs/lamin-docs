@@ -1,3 +1,4 @@
+- 🐛 Fix autocomplete of datasets & curators modules [PR](https://github.com/laminlabs/lamindb/pull/3534) [@Zethson](https://github.com/Zethson)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3535) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `lamin merge` command [PR](https://github.com/laminlabs/lamin-cli/pull/197) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `check_is_instance_remote` [PR](https://github.com/laminlabs/lamindb-setup/pull/1289) [@Koncopd](https://github.com/Koncopd)
