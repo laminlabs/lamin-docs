@@ -1,3 +1,4 @@
+- ✨ Add `lamin merge` command [PR](https://github.com/laminlabs/lamin-cli/pull/197) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `check_is_instance_remote` [PR](https://github.com/laminlabs/lamindb-setup/pull/1289) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3533) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Simplify the `lamin switch` command [PR](https://github.com/laminlabs/lamin-cli/pull/196) [@falexwolf](https://github.com/falexwolf)
