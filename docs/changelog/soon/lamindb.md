@@ -1,3 +1,4 @@
+- 🐛 Fix `check_is_instance_remote` [PR](https://github.com/laminlabs/lamindb-setup/pull/1289) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3533) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Simplify the `lamin switch` command [PR](https://github.com/laminlabs/lamin-cli/pull/196) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add videos to docs, polish typos and wording [PR](https://github.com/laminlabs/lamindb/pull/3529) [@falexwolf](https://github.com/falexwolf)
