@@ -32,8 +32,6 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 
 :::
 
-<!-- #endregion -->
-
 :::{dropdown} What else can I configure during setup?
 
 1. You can pass a cloud storage location to `--storage` (S3, GCP, R2, HF, etc.)
@@ -56,6 +54,8 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 For more info, see {doc}`/setup`.
 
 :::
+
+<!-- #endregion -->
 
 Let's now track the notebook that's being run.
 
