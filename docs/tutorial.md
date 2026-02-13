@@ -55,13 +55,7 @@ For more info, see {doc}`/setup`.
 
 :::
 
-<!-- #region -->
-
 Let's now track the notebook that's being run.
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 import lamindb as ln
@@ -69,9 +63,7 @@ import lamindb as ln
 ln.track()  # track the current notebook or script
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 library(laminr)
@@ -81,71 +73,34 @@ ln$track()  # track a run of your notebook or script
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-import lamindb as ln
-
-ln.track()  # track the current notebook or script
-```
 
 By calling {meth}`~lamindb.track`, the notebook gets automatically linked as the source of all data that's about to be saved! You can see all your transforms and their runs in the {class}`~lamindb.Transform` and {class}`~lamindb.Run` registries.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Transform.to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Transform$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Transform.to_dataframe()
-```
 
 <!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Run.to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Run$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Run.to_dataframe()
-```
 
 <!-- #region -->
 
@@ -201,20 +156,12 @@ You can register data objects (`DataFrame`, `AnnData`, ...) and files or folders
 
 Let's first look at an exemplary dataframe.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 df = ln.examples.datasets.mini_immuno.get_dataset1(with_typo=True)
 df
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 df <- ln$core$datasets$mini_immuno$get_dataset1(otype = "DataFrame", with_typo = TRUE)
@@ -222,31 +169,15 @@ df
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-df = ln.examples.datasets.mini_immuno.get_dataset1(with_typo=True)
-df
-```
 
 This is how you create an artifact from a dataframe.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
-artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").save()  # create & save
-artifact.describe()  # describe
+artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").save()
+artifact.describe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact <- ln$Artifact$from_dataframe(df, key = "my_datasets/rnaseq1.parquet")$save()  # create & save
@@ -254,103 +185,50 @@ artifact$describe()  # describe
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").save()
-artifact.describe()
-```
 
 ### Access artifacts
 
 Get the artifact by `key`.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact <- ln$Artifact$get(key = "my_datasets/rnaseq1.parquet")
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
-```
 
 And this is how you load it back into memory.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 artifact.load()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact$load()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact.load()
-```
 
 Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 artifact.cache()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact$cache()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact.cache()
-```
 
 If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more on this, see: {doc}`arrays`.
 
@@ -358,88 +236,45 @@ If the data is large, you might not want to cache but stream it via {meth}`~lami
 
 You can understand where an artifact comes from by looking at its {class}`~lamindb.Transform` & {class}`~lamindb.Run` records.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 artifact.transform
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact$transform
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact.transform
-```
 
 <!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 artifact.run
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact$run
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact.run
-```
 
 Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 artifact.view_lineage()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact$view_lineage()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact.view_lineage()
-```
 
 :::::{dropdown} Show me a more interesting example, please!
 
@@ -462,19 +297,11 @@ Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/a
 
 Once you're done, at the end of your notebook or script, call {meth}`~lamindb.finish`. Here, we're not yet done so we're commenting it out.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 # ln.finish()  # mark run as finished, save execution report, source code & environment
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # ln$finish()  # mark run as finished, save execution report & source code
@@ -513,9 +340,6 @@ If you did _not_ use RStudio's notebook mode, you have to render an HTML externa
      ```
 
 :::
-::::
-
-<!-- #endregion -->
 
 :::{dropdown} Here is how a notebook looks on the hub.
 
@@ -544,26 +368,18 @@ You can annotate artifacts with features and labels. Features are measurement di
 
 Let's annotate an artifact with a {class}`~lamindb.Record`, a built-in universal label ontology.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
-# create a label
+# create & save a record
 my_experiment = ln.Record(name="My experiment").save()
 
-# annotate the artifact with a label
+# annotate the artifact with a record
 artifact.records.add(my_experiment)
 
 # describe the artifact
 artifact.describe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # create a label
@@ -577,57 +393,22 @@ artifact$describe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-# create & save a record
-my_experiment = ln.Record(name="My experiment").save()
-
-# annotate the artifact with a record
-artifact.records.add(my_experiment)
-
-# describe the artifact
-artifact.describe()
-```
 
 This is how you query artifacts based on the annotation.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Artifact.filter(records=my_experiment).to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Artifact$filter(records = my_experiment)$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Artifact.filter(records=my_experiment).to_dataframe()
-```
 
 You can also annotate with labels from other registries, e.g., the biological ontologies in {mod}`bionty`.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 import bionty as bt
@@ -642,9 +423,7 @@ artifact.cell_types.add(cell_type)
 artifact.describe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 bt <- import_module("bionty")
@@ -660,59 +439,22 @@ artifact$describe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-import bionty as bt
-
-# create a cell type label from the source ontology
-cell_type = bt.CellType.from_source(name="effector T cell").save()
-
-# annotate the artifact with a cell type
-artifact.cell_types.add(cell_type)
-
-# describe the artifact
-artifact.describe()
-```
 
 This is how you query artifacts by cell type annotations.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Artifact$filter(cell_types = cell_type)$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Artifact.filter(cell_types=cell_type).to_dataframe()
-```
 
 If you want to annotate by non-categorical metadata or indicate the feature for a label, annotate via features.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 # define the "temperature" & "experiment" features
@@ -726,9 +468,7 @@ artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"
 artifact.describe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # define the "temperature" & "experiment" features
@@ -745,50 +485,20 @@ artifact$describe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-# define the "temperature" & "experiment" features
-ln.Feature(name="temperature", dtype=float).save()
-ln.Feature(name="experiment", dtype=ln.Record).save()
-
-# annotate the artifact
-artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"})
-
-# describe the artifact
-artifact.describe()
-```
 
 This is how you query artifacts by features.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Artifact.filter(temperature=21.6).to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Artifact$filter(temperature = 21.6)$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Artifact.filter(temperature=21.6).to_dataframe()
-```
 
 ### Validate an artifact
 
@@ -802,61 +512,6 @@ In lamindb, validation also means annotation with the validated metadata which i
 2. Usability: Are there typos in feature names? Are there typos in labels? Are types and units of features consistent? Etc.
 
 :::
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
-```python tags=["hide-cell"]
-import bionty as bt  # <-- use bionty to access registries with imported public ontologies
-
-# define a few more valid labels
-ln.Record(name="DMSO").save()
-ln.Record(name="IFNG").save()
-
-# define a few more valid features
-ln.Feature(name="perturbation", dtype=ln.Record).save()
-ln.Feature(name="cell_type_by_model", dtype=bt.CellType).save()
-ln.Feature(name="cell_type_by_expert", dtype=bt.CellType).save()
-ln.Feature(name="assay_oid", dtype=bt.ExperimentalFactor.ontology_id).save()
-ln.Feature(name="donor", dtype=str, nullable=True).save()
-ln.Feature(name="concentration", dtype=str).save()
-ln.Feature(name="treatment_time_h", dtype="num", coerce_dtype=True).save()
-
-# define a schema that merely enforces a feature identifier type
-schema = ln.Schema(itype=ln.Feature).save()
-```
-
-:::
-:::{tab-item} R
-:sync: r
-
-```R
-bt <- import_module("bionty")  # <-- use bionty to access registries with imported public ontologies
-
-# define a few more valid labels
-ln$Record(name = "DMSO")$save()
-ln$Record(name = "IFNG")$save()
-
-# define a few more valid features
-ln$Feature(name = "perturbation", dtype = ln$Record)$save()
-ln$Feature(name = "cell_type_by_model", dtype = bt$CellType)$save()
-ln$Feature(name = "cell_type_by_expert", dtype = bt$CellType)$save()
-ln$Feature(name = "assay_oid", dtype = bt$ExperimentalFactor$ontology_id)$save()
-ln$Feature(name = "donor", dtype = "str", nullable = TRUE)$save()
-ln$Feature(name = "concentration", dtype = "str")$save()
-ln$Feature(name = "treatment_time_h", dtype = "num", coerce_dtype = TRUE)$save()
-
-# define a schema that merely enforces a feature identifier type
-schema <- ln$Schema(itype = ln$Feature)$save()
-```
-
-:::
-::::
-
-<!-- #endregion -->
 
 ```python tags=["hide-cell"]
 import bionty as bt  # <-- use bionty to access registries with imported public ontologies
@@ -879,30 +534,31 @@ ln.Feature(name="treatment_time_h", dtype="num", coerce_dtype=True).save()
 schema = ln.Schema(itype=ln.Feature).save()
 ```
 
-If you pass a `schema` object to the `Artifact` constructor, the artifact will be validated & annotated. Let's try this.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
-```python tags=["hide-cell"]
-artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet", schema=schema)
-```
-
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
-artifact <- ln$Artifact$from_dataframe(df, key = "my_datasets/rnaseq1.parquet", schema = schema)
+bt <- import_module("bionty")  # <-- use bionty to access registries with imported public ontologies
+
+# define a few more valid labels
+ln$Record(name = "DMSO")$save()
+ln$Record(name = "IFNG")$save()
+
+# define a few more valid features
+ln$Feature(name = "perturbation", dtype = ln$Record)$save()
+ln$Feature(name = "cell_type_by_model", dtype = bt$CellType)$save()
+ln$Feature(name = "cell_type_by_expert", dtype = bt$CellType)$save()
+ln$Feature(name = "assay_oid", dtype = bt$ExperimentalFactor$ontology_id)$save()
+ln$Feature(name = "donor", dtype = "str", nullable = TRUE)$save()
+ln$Feature(name = "concentration", dtype = "str")$save()
+ln$Feature(name = "treatment_time_h", dtype = "num", coerce_dtype = TRUE)$save()
+
+# define a schema that merely enforces a feature identifier type
+schema <- ln$Schema(itype = ln$Feature)$save()
 ```
 
 :::
-::::
 
-<!-- #endregion -->
+If you pass a `schema` object to the `Artifact` constructor, the artifact will be validated & annotated. Let's try this.
 
 ```python tags=["hide-cell"]
 try:
@@ -917,32 +573,23 @@ Because there is a typo in the `perturbation` column, validation fails. Let's fi
 
 ### Make a new version of an artifact
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 # fix the "IFNJ" typo
 df["perturbation"] = df["perturbation"].cat.rename_categories({"IFNJ": "IFNG"})
 
 # create a new version
-artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet", schema=schema).save()
+artifact = ln.Artifact.from_dataframe(
+    df, key="my_datasets/rnaseq1.parquet", schema=schema
+).save()
 
 # see the annotations
 artifact.describe()
-
-# simplest way to check that artifact was validated
-artifact.schema
 
 # see all versions of the artifact
 artifact.versions.to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # fix the "IFNJ" typo
@@ -963,25 +610,6 @@ artifact$versions$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-# fix the "IFNJ" typo
-df["perturbation"] = df["perturbation"].cat.rename_categories({"IFNJ": "IFNG"})
-
-# create a new version
-artifact = ln.Artifact.from_dataframe(
-    df, key="my_datasets/rnaseq1.parquet", schema=schema
-).save()
-
-# see the annotations
-artifact.describe()
-
-# see all versions of the artifact
-artifact.versions.to_dataframe()
-```
 
 The content of the dataset is now validated and the dataset is richly annotated and queryable by all entities that you defined.
 
@@ -1013,119 +641,59 @@ We've already seen a few queries. Let's now walk through the topic systematicall
 
 To get an overview over all artifacts in your instance, call {class}`~lamindb.models.SQLRecord.df`.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 ln.Artifact.to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Artifact$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Artifact.to_dataframe()
-```
 
 The `Artifact` registry additionally supports seeing all feature annotations of an artifact.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Artifact.to_dataframe(features=True)
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Artifact$to_dataframe(features = TRUE)
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Artifact.to_dataframe(features=True)
-```
 
 LaminDB's central classes are registries that store records ({class}`~lamindb.models.SQLRecord` objects). If you want to see the fields of a registry, look at the class or auto-complete.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Artifact
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Artifact
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Artifact
-```
 
 Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest records in the database.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.view()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$view()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.view()
-```
 
 :::{dropdown} Which registries have I already learned about? 🤔
 
@@ -1141,12 +709,6 @@ Every registry supports arbitrary relational queries using the class methods {cl
 The syntax for it is Django's query syntax.
 
 Here are some simple query examples.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 # get a single record (here the current notebook)
@@ -1164,9 +726,7 @@ artifacts = ln.Artifact.filter(
 ).all()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # get a single record (here the current notebook)
@@ -1185,25 +745,6 @@ artifacts <- ln$Artifact$filter(
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-# get a single record (here the current notebook)
-transform = ln.Transform.get(key="tutorial.ipynb")
-
-# get a set of records by filtering for a directory (LaminDB treats directories like AWS S3, as the prefix of the storage key)
-ln.Artifact.filter(key__startswith="my_datasets/").to_dataframe()
-
-# query all artifacts ingested from a transform
-artifacts = ln.Artifact.filter(transform=transform).all()
-
-# query all artifacts ingested from a notebook with "tutor" in the description
-artifacts = ln.Artifact.filter(
-    transform__description__icontains="tutor",
-).all()
-```
 
 :::{dropdown} What does a double underscore mean?
 
@@ -1225,12 +766,6 @@ Yes: `ln.Artifact.filter(suffix=".jpg").search("my image")`
 
 The class methods {class}`~lamindb.models.SQLRecord.search` and {class}`~lamindb.models.SQLRecord.lookup` help with approximate matches.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 # search artifacts
 ln.Artifact.search("iris").to_dataframe().head()
@@ -1242,9 +777,7 @@ ln.Transform.search("tutor").to_dataframe()
 records = ln.Record.lookup()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # search artifacts
@@ -1258,9 +791,6 @@ records <- ln$Record$lookup()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
 
 :::{dropdown} Show me a screenshot
 
@@ -1274,20 +804,12 @@ For more info, see: {doc}`registries`.
 
 Let's look at a folder in the cloud that contains 3 sub-folders storing images & metadata of Iris flowers, generated in 3 subsequent studies.
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
 ```python tags=["hide-cell"]
 # we use anon=True here in case no aws credentials are configured
 ln.UPath("s3://lamindata/iris_studies", anon=True).view_tree()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 # we use anon=True here in case no aws credentials are configured
@@ -1295,31 +817,15 @@ ln$UPath("s3://lamindata/iris_studies", anon = TRUE)$view_tree()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-# we use anon=True here in case no aws credentials are configured
-ln.UPath("s3://lamindata/iris_studies", anon=True).view_tree()
-```
 
 Let's create an artifact for the first sub-folder.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 artifact = ln.Artifact("s3://lamindata/iris_studies/study0_raw_images").save()
 artifact
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact <- ln$Artifact("s3://lamindata/iris_studies/study0_raw_images")$save()
@@ -1327,74 +833,34 @@ artifact
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact = ln.Artifact("s3://lamindata/iris_studies/study0_raw_images").save()
-artifact
-```
 
 As you see from {attr}`~lamindb.Artifact.path`, the folder was merely registered in its present storage location without copying it.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 artifact.path
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 artifact$path
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-artifact.path
-```
 
 LaminDB keeps track of all your storage locations.
-
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
 
 ```python tags=["hide-cell"]
 ln.Storage.to_dataframe()
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 ln$Storage$to_dataframe()
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-ln.Storage.to_dataframe()
-```
-
-<!-- #region -->
 
 :::{dropdown} How do I update or delete an artifact?
 
