@@ -76,9 +76,11 @@ def convert_markdown_python_to_tabbed(
 """
         return tabbed_section
 
-    # Pattern to match ```python ... ``` code blocks
-    # This pattern captures the code content between the markers
-    python_code_pattern = r"```python\s*\n(.*?)\n```"
+    # Pattern to match ```python ... ``` code blocks.
+    # Allow optional indent before closing ``` so indented blocks (e.g. in
+    # list items) match separately. Require ``` to be followed by newline or
+    # EOF so we don't match the opening ``` of the next block.
+    python_code_pattern = r"```python\s*\n(.*?)\n\s*```(?=\s*\n|\s*$)"
 
     # Replace all Python code blocks with tabbed sections
     content_with_r_code = re.sub(
