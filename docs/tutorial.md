@@ -10,9 +10,15 @@ The metadata involved in this process are stored in a _LaminDB instance_, a data
 
 ## Track a notebook or script
 
+If you don't have a LaminDB instance, create one using the shell:
+
+<!-- #skip_laminr -->
+
 ```python
 !lamin init --storage ./lamindb-tutorial --modules bionty
 ```
+
+<!-- #end_skip_laminr -->
 
 <!-- #region -->
 
@@ -51,14 +57,6 @@ For more info, see {doc}`/setup`.
 
 :::
 
-:::{dropdown} If you decide to connect your instance to the hub, you will see data & metadata in a UI.
-
-<a href="https://lamin.ai/laminlabs/lamindata">
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YuefPQlAfeHcQvtq0000.png" width="700px">
-</a>
-
-:::
-
 Let's now track the notebook that's being run.
 
 ```python
@@ -66,21 +64,6 @@ import lamindb as ln
 
 ln.track()  # track the current notebook or script
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-library(laminr)
-ln <- import_module("lamindb")  # instantiate the central `ln` object of the API
-
-ln$track()  # track a run of your notebook or script
-```
-
-<!-- #endregion -->
-
-:::
 
 By calling {meth}`~lamindb.track`, the notebook gets automatically linked as the source of all data that's about to be saved! You can see all your transforms and their runs in the {class}`~lamindb.Transform` and {class}`~lamindb.Run` registries.
 
@@ -104,20 +87,20 @@ The {class}`~lamindb.Run` registry stores executions of transforms. Many runs ca
 
 :::
 
+<!-- #region -->
+
 :::{dropdown} How do I track a pipeline instead of a notebook?
 
 Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
-
-<!-- #region -->
 
 ```python
 transform = ln.Transform(key="my_pipeline", version="1.2.0")
 ln.track(transform)
 ```
 
-<!-- #endregion -->
-
 :::
+
+<!-- #endregion -->
 
 :::{dropdown} Why should I care about tracking notebooks?
 
@@ -226,15 +209,7 @@ Once you're done, at the end of your notebook or script, call {meth}`~lamindb.fi
 # ln.finish()  # mark run as finished, save execution report, source code & environment
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-# ln$finish()  # mark run as finished, save execution report & source code
-```
-
-<!-- #endregion -->
+:::{dropdown} Saving reports when using R
 
 If you did _not_ use RStudio's notebook mode, you have to render an HTML externally.
 
@@ -253,16 +228,16 @@ If you did _not_ use RStudio's notebook mode, you have to render an HTML externa
      rmarkdown::render("tutorial.Rmd")
      ```
 
-2. Save it to your LaminDB instance via one of:
+2. Save it via one of:
 
-   - Using the `save()` command in the `lamin_cli` module from R
+   - the `save()` command in the `lamin_cli` module from R
 
      ```r
      lc <- import_module("lamin_cli")
      lc$save("tutorial.Rmd")
      ```
 
-   - Using the `lamin` CLI
+   - the `lamin` CLI
 
      ```bash
      lamin save tutorial.Rmd
@@ -331,44 +306,11 @@ artifact.cell_types.add(cell_type)
 artifact.describe()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-bt <- import_module("bionty")
-
-# create a cell type label from the source ontology
-cell_type <- bt$CellType$from_source(name = "effector T cell")$save()
-
-# annotate the artifact with a cell type
-artifact$cell_types$add(cell_type)
-
-# describe the artifact
-artifact$describe()
-```
-
-<!-- #endregion -->
-
-:::
-
 This is how you query artifacts by cell type annotations.
 
 ```python
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$Artifact$filter(cell_types = cell_type)$to_dataframe()
-```
-
-<!-- #endregion -->
-
-:::
 
 If you want to annotate by non-categorical metadata or indicate the feature for a label, annotate via features.
 
@@ -384,45 +326,11 @@ artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"
 artifact.describe()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-# define the "temperature" & "experiment" features
-ln$Feature(name = "temperature", dtype = "float")$save()
-ln$Feature(name = "experiment", dtype = ln$Record)$save()
-
-# annotate the artifact
-artifact$features$add_values(
-  list(temperature = 21.6, experiment = "My experiment")
-)
-
-# describe the artifact
-artifact$describe()
-```
-
-<!-- #endregion -->
-
-:::
-
 This is how you query artifacts by features.
 
 ```python
 ln.Artifact.filter(temperature=21.6).to_dataframe()
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$Artifact$filter(temperature = 21.6)$to_dataframe()
-```
-
-<!-- #endregion -->
-
-:::
 
 ### Validate an artifact
 
@@ -458,34 +366,6 @@ ln.Feature(name="treatment_time_h", dtype="num", coerce_dtype=True).save()
 schema = ln.Schema(itype=ln.Feature).save()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-bt <- import_module("bionty")  # <-- use bionty to access registries with imported public ontologies
-
-# define a few more valid labels
-ln$Record(name = "DMSO")$save()
-ln$Record(name = "IFNG")$save()
-
-# define a few more valid features
-ln$Feature(name = "perturbation", dtype = ln$Record)$save()
-ln$Feature(name = "cell_type_by_model", dtype = bt$CellType)$save()
-ln$Feature(name = "cell_type_by_expert", dtype = bt$CellType)$save()
-ln$Feature(name = "assay_oid", dtype = bt$ExperimentalFactor$ontology_id)$save()
-ln$Feature(name = "donor", dtype = "str", nullable = TRUE)$save()
-ln$Feature(name = "concentration", dtype = "str")$save()
-ln$Feature(name = "treatment_time_h", dtype = "num", coerce_dtype = TRUE)$save()
-
-# define a schema that merely enforces a feature identifier type
-schema <- ln$Schema(itype = ln$Feature)$save()
-```
-
-<!-- #endregion -->
-
-:::
-
 If you pass a `schema` object to the `Artifact` constructor, the artifact will be validated & annotated. Let's try this.
 
 ```python
@@ -516,32 +396,6 @@ artifact.describe()
 # see all versions of the artifact
 artifact.versions.to_dataframe()
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-# fix the "IFNJ" typo
-levels(df$perturbation) <- c("DMSO", "IFNG")
-df["sample2", "perturbation"] <- "IFNG"
-
-# create a new version
-artifact <- ln$Artifact$from_dataframe(df, key = "my_datasets/rnaseq1.parquet", schema = schema)$save()
-
-# see the annotations
-artifact$describe()
-
-# simplest way to check that artifact was validated
-artifact$schema
-
-# see all versions of an artifact
-artifact$versions$to_dataframe()
-```
-
-<!-- #endregion -->
-
-:::
 
 The content of the dataset is now validated and the dataset is richly annotated and queryable by all entities that you defined.
 
