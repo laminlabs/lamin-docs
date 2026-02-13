@@ -2,14 +2,6 @@ import re
 from typing import Any
 
 
-def _last_fence_close(text: str) -> int:
-    r"""Find last fence-only line (```\\n) that closes a ```{dropdown} block."""
-    pos = -1
-    for m in re.finditer(r"\n```\s*\n", text):
-        pos = m.start()
-    return pos
-
-
 def convert_markdown_python_to_tabbed(
     content: str, add_runnable_cell: bool = False
 ) -> str:
@@ -29,25 +21,15 @@ def convert_markdown_python_to_tabbed(
         preceding = content[: match.start()]
 
         # Skip blocks between <!-- #skip_laminr --> and <!-- #end_skip_laminr -->
-        last_skip = preceding.rfind("#skip_laminr ")
-        last_end = preceding.rfind("#end_skip_laminr ")
+        last_skip = preceding.rfind("<!-- #skip_laminr ")
+        last_end = preceding.rfind("<!-- #end_skip_laminr ")
         if last_skip != -1 and (last_end == -1 or last_skip > last_end):
             return match.group(0)
 
-        # Skip blocks inside dropdowns (tabs within dropdowns don't work)
-        # Find directive closes: ::: for MyST dropdowns, or fence-only ``` for
-        # ```{dropdown}...``` blocks (used in README)
-        last_dropdown = preceding.rfind("{dropdown")
-        last_close = max(
-            preceding.rfind("\n:::\n"),
-            preceding.rfind("\n::::\n"),
-            preceding.rfind("\n:::::\n"),
-            preceding.rfind("\n::::::\n"),
-            _last_fence_close(preceding),
-        )
-        if last_dropdown != -1 and last_close == -1:
-            return match.group(0)  # Unclosed dropdown, skip
-        if last_dropdown != -1 and last_dropdown > last_close:
+        # Skip blocks inside <!-- #region --> ... <!-- #endregion -->
+        last_region = preceding.rfind("<!-- #region")
+        last_endregion = preceding.rfind("<!-- #endregion")
+        if last_region != -1 and (last_endregion == -1 or last_region > last_endregion):
             return match.group(0)
 
         python_code = match.group(1)
