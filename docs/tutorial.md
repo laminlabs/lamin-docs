@@ -69,12 +69,16 @@ ln.track()  # track the current notebook or script
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 library(laminr)
 ln <- import_module("lamindb")  # instantiate the central `ln` object of the API
 
 ln$track()  # track a run of your notebook or script
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -87,8 +91,6 @@ ln.Transform.to_dataframe()
 ```python
 ln.Run.to_dataframe()
 ```
-
-<!-- #region -->
 
 :::{dropdown} What happened under the hood?
 
@@ -106,11 +108,15 @@ The {class}`~lamindb.Run` registry stores executions of transforms. Many runs ca
 
 Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
 
+<!-- #region -->
+
 ```python
 transform = ln.Transform(name="My pipeline")
 transform.version = "1.2.0"  # tag the version
 ln.track(transform)
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -123,8 +129,6 @@ Because of interactivity & humans are in the loop, most mistakes happen when usi
 This is important as much insight generated from biological data is driven by computational biologists _interacting_ with it. An early blog post on this is [here](https://blog.lamin.ai/nbproject).
 
 :::
-
-<!-- #endregion -->
 
 :::{dropdown} Is this compliant with OpenLineage?
 
@@ -188,8 +192,6 @@ You can understand where an artifact comes from by looking at its {class}`~lamin
 artifact.transform
 ```
 
-<!-- #region -->
-
 ```python
 artifact.run
 ```
@@ -227,9 +229,13 @@ Once you're done, at the end of your notebook or script, call {meth}`~lamindb.fi
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 # ln$finish()  # mark run as finished, save execution report & source code
 ```
+
+<!-- #endregion -->
 
 If you did _not_ use RStudio's notebook mode, you have to render an HTML externally.
 
@@ -328,6 +334,8 @@ artifact.describe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 bt <- import_module("bionty")
 
@@ -341,6 +349,8 @@ artifact$cell_types$add(cell_type)
 artifact$describe()
 ```
 
+<!-- #endregion -->
+
 :::
 
 This is how you query artifacts by cell type annotations.
@@ -351,9 +361,13 @@ ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$Artifact$filter(cell_types = cell_type)$to_dataframe()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -373,6 +387,8 @@ artifact.describe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 # define the "temperature" & "experiment" features
 ln$Feature(name = "temperature", dtype = "float")$save()
@@ -387,6 +403,8 @@ artifact$features$add_values(
 artifact$describe()
 ```
 
+<!-- #endregion -->
+
 :::
 
 This is how you query artifacts by features.
@@ -397,9 +415,13 @@ ln.Artifact.filter(temperature=21.6).to_dataframe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$Artifact$filter(temperature = 21.6)$to_dataframe()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -439,6 +461,8 @@ schema = ln.Schema(itype=ln.Feature).save()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 bt <- import_module("bionty")  # <-- use bionty to access registries with imported public ontologies
 
@@ -458,6 +482,8 @@ ln$Feature(name = "treatment_time_h", dtype = "num", coerce_dtype = TRUE)$save()
 # define a schema that merely enforces a feature identifier type
 schema <- ln$Schema(itype = ln$Feature)$save()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -494,6 +520,8 @@ artifact.versions.to_dataframe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 # fix the "IFNJ" typo
 levels(df$perturbation) <- c("DMSO", "IFNG")
@@ -511,6 +539,8 @@ artifact$schema
 # see all versions of an artifact
 artifact$versions$to_dataframe()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -550,9 +580,13 @@ ln.Artifact.to_dataframe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$Artifact$to_dataframe()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -564,9 +598,13 @@ ln.Artifact.to_dataframe(features=True)
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$Artifact$to_dataframe(features = TRUE)
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -578,9 +616,13 @@ ln.Artifact
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$Artifact
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -592,9 +634,13 @@ ln.view()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$view()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -631,6 +677,8 @@ artifacts = ln.Artifact.filter(
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 # get a single record (here the current notebook)
 transform <- ln$Transform$get(key = "tutorial.Rmd")
@@ -646,6 +694,8 @@ artifacts <- ln$Artifact$filter(
   transform__description__icontains = "tutor",
 )$all()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -682,6 +732,8 @@ records = ln.Record.lookup()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 # search artifacts
 ln$Artifact$search("iris")$to_dataframe() |> head()
@@ -692,6 +744,8 @@ ln$Transform$search("tutor")$to_dataframe()
 # look up records with auto-complete
 records <- ln$Record$lookup()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -714,10 +768,14 @@ ln.UPath("s3://lamindata/iris_studies", anon=True).view_tree()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 # we use anon=True here in case no aws credentials are configured
 ln$UPath("s3://lamindata/iris_studies", anon = TRUE)$view_tree()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -730,10 +788,14 @@ artifact
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 artifact <- ln$Artifact("s3://lamindata/iris_studies/study0_raw_images")$save()
 artifact
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -745,9 +807,13 @@ artifact.path
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 artifact$path
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -759,9 +825,13 @@ ln.Storage.to_dataframe()
 
 :::{dropdown} Via the R shell
 
+<!-- #region -->
+
 ```R
 ln$Storage$to_dataframe()
 ```
+
+<!-- #endregion -->
 
 :::
 
@@ -989,7 +1059,9 @@ collection.artifacts.to_dataframe()
 
 Directly train models on collections of `AnnData`.
 
-```
+<!-- #region -->
+
+```python
 # to train models, batch iterate through the collection as if it was one array
 from torch.utils.data import DataLoader, WeightedRandomSampler
 dataset = collection.mapped(obs_keys=["cell_medium"])
@@ -1000,5 +1072,7 @@ data_loader = DataLoader(dataset, batch_size=2, sampler=sampler)
 for batch in data_loader:
     pass
 ```
+
+<!-- #endregion -->
 
 Read this [blog post](https://lamin.ai/blog/arrayloader-benchmarks) for more on training models on distributed datasets.
