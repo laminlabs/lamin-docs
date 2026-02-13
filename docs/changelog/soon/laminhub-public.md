@@ -1,1 +1,2 @@
+- 🐛 Fix badge for recreated output artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/221) [@sunnyosun](https://github.com/sunnyosun)
 - 👷 Dispatch changelog merge [PR](https://github.com/laminlabs/laminhub-public/pull/220) [@falexwolf](https://github.com/falexwolf)
