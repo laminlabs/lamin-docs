@@ -2,12 +2,15 @@ import re
 from typing import Any
 
 
-def convert_markdown_python_to_tabbed(content: str) -> str:
+def convert_markdown_python_to_tabbed(
+    content: str, add_runnable_cell: bool = False
+) -> str:
     """Convert markdown content with Python code blocks to tabbed sections.
 
     Args:
         content (str): Markdown content with ```python code blocks
-        converter_function: Function that converts Python code to R code
+        add_runnable_cell: If True, add the Python code block again below the tabs
+            with tags=["hide-cell"] for execution in the notebook.
 
     Returns:
         str: Modified markdown with tabbed Python/R sections
@@ -49,6 +52,13 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
 ::::
 <!-- #endregion -->"""
 
+        if add_runnable_cell:
+            tabbed_section += f"""
+
+```python tags=["hide-cell"]
+{python_code}
+```
+"""
         return tabbed_section
 
     # Pattern to match ```python ... ``` code blocks
