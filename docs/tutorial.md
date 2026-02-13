@@ -113,13 +113,14 @@ The {class}`~lamindb.Run` registry stores executions of transforms. Many runs ca
 Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
 
 <!-- #region -->
+<!-- #skip_laminr -->
 
 ```python
-transform = ln.Transform(name="My pipeline")
-transform.version = "1.2.0"  # tag the version
+transform = ln.Transform(key="my_pipeline", version="1.2.0")
 ln.track(transform)
 ```
 
+<!-- #end_skip_laminr -->
 <!-- #endregion -->
 
 :::
