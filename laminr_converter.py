@@ -15,9 +15,11 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
 
     def replace_code_block(match):
         """Replace a single Python code block with a tabbed section."""
-        # Skip blocks marked with <!-- #skip_laminr -->
-        preceding = content[max(0, match.start() - 200) : match.start()]
-        if "skip_laminr" in preceding:
+        # Skip blocks between <!-- #skip_laminr --> and <!-- #end_skip_laminr -->
+        preceding = content[: match.start()]
+        last_skip = preceding.rfind("#skip_laminr ")
+        last_end = preceding.rfind("#end_skip_laminr ")
+        if last_skip != -1 and (last_end == -1 or last_skip > last_end):
             return match.group(0)
 
         python_code = match.group(1)
