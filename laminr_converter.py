@@ -2,6 +2,14 @@ import re
 from typing import Any
 
 
+def _last_fence_close(text: str) -> int:
+    r"""Find last fence-only line (```\\n) that closes a ```{dropdown} block."""
+    pos = -1
+    for m in re.finditer(r"\n```\s*\n", text):
+        pos = m.start()
+    return pos
+
+
 def convert_markdown_python_to_tabbed(
     content: str, add_runnable_cell: bool = False
 ) -> str:
@@ -27,13 +35,15 @@ def convert_markdown_python_to_tabbed(
             return match.group(0)
 
         # Skip blocks inside dropdowns (tabs within dropdowns don't work)
-        # Find directive closes - ::  at start of line (can be 3, 4, or 5 colons)
+        # Find directive closes: ::: for MyST dropdowns, or fence-only ``` for
+        # ```{dropdown}...``` blocks (used in README)
         last_dropdown = preceding.rfind("{dropdown")
         last_close = max(
             preceding.rfind("\n:::\n"),
             preceding.rfind("\n::::\n"),
             preceding.rfind("\n:::::\n"),
             preceding.rfind("\n::::::\n"),
+            _last_fence_close(preceding),
         )
         if last_dropdown != -1 and last_close == -1:
             return match.group(0)  # Unclosed dropdown, skip
