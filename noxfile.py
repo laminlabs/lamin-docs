@@ -268,9 +268,9 @@ def pull_artifacts(session):
         f.write(content)
 
     # add tabbed layout to introduction.md
-    with open("docs/introduction.md") as f:
+    with open("docs/tutorial.md") as f:
         content = f.read()
-    with open("docs/introduction.md", "w") as f:
+    with open("docs/tutorial.md", "w") as f:
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
