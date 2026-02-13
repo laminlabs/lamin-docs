@@ -33,9 +33,13 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
 :::{{tab-item}} R
 :sync: r
 
+<!-- #region -->
+
 ```r
 {r_code}
 ```
+
+<!-- #endregion -->
 
 :::
 ::::"""
