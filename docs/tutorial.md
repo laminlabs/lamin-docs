@@ -10,19 +10,11 @@ The metadata involved in this process are stored in a _LaminDB instance_, a data
 
 ## Track a notebook or script
 
-<!-- #region -->
-
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
-```bash
-lamin init --storage ./lamin-tutorial --modules bionty
+```python
+!lamin init --storage ./lamindb-tutorial --modules bionty
 ```
 
-:::
-:::{tab-item} R
-:sync: r
+:::{dropdown} Via the R shell
 
 ```R
 library(laminr)
@@ -31,13 +23,6 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 ```
 
 :::
-::::
-
-<!-- #endregion -->
-
-```python tags=["hide-cell"]
-!lamin init --storage ./lamindb-tutorial --modules bionty
-```
 
 :::{dropdown} What else can I configure during setup?
 
