@@ -1078,6 +1078,7 @@ collection.artifacts.to_dataframe()
 Directly train models on collections of `AnnData`.
 
 <!-- #region -->
+<!-- #skip_laminr -->
 
 ```python
 # to train models, batch iterate through the collection as if it was one array

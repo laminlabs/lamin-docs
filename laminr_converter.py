@@ -15,6 +15,11 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
 
     def replace_code_block(match):
         """Replace a single Python code block with a tabbed section."""
+        # Skip blocks marked with <!-- #skip_laminr -->
+        preceding = content[max(0, match.start() - 200) : match.start()]
+        if "skip_laminr" in preceding:
+            return match.group(0)
+
         python_code = match.group(1)
 
         # Convert Python code to R using the provided converter
