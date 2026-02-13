@@ -30,6 +30,8 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 
 :::{dropdown} What else can I configure during setup?
 
+<!-- #skip_laminr -->
+
 1. You can pass a cloud storage location to `--storage` (S3, GCP, R2, HF, etc.)
    ```python
    --storage s3://my-bucket
@@ -46,6 +48,8 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
    ```python
    --modules bionty,pertdb,custom1
    ```
+
+<!-- #end_skip_laminr -->
 
 For more info, see {doc}`/setup`.
 
