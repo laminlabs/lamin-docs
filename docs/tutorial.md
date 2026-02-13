@@ -14,6 +14,8 @@ The metadata involved in this process are stored in a _LaminDB instance_, a data
 !lamin init --storage ./lamindb-tutorial --modules bionty
 ```
 
+<!-- #region -->
+
 :::{dropdown} Via the R shell
 
 ```R
@@ -23,6 +25,8 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 ```
 
 :::
+
+<!-- #endregion -->
 
 :::{dropdown} What else can I configure during setup?
 
@@ -80,27 +84,9 @@ By calling {meth}`~lamindb.track`, the notebook gets automatically linked as the
 ln.Transform.to_dataframe()
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-ln$Transform$to_dataframe()
-```
-
-:::
-
-<!-- #region -->
-
 ```python
 ln.Run.to_dataframe()
 ```
-
-:::{dropdown} Via the R shell
-
-```R
-ln$Run$to_dataframe()
-```
-
-:::
 
 <!-- #region -->
 
@@ -161,13 +147,6 @@ df = ln.examples.datasets.mini_immuno.get_dataset1(with_typo=True)
 df
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-df <- ln$core$datasets$mini_immuno$get_dataset1(otype = "DataFrame", with_typo = TRUE)
-df
-```
-
 :::
 
 This is how you create an artifact from a dataframe.
@@ -177,27 +156,12 @@ artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").sav
 artifact.describe()
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-artifact <- ln$Artifact$from_dataframe(df, key = "my_datasets/rnaseq1.parquet")$save()  # create & save
-artifact$describe()  # describe
-```
-
-:::
-
 ### Access artifacts
 
 Get the artifact by `key`.
 
 ```python
 artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
-```
-
-:::{dropdown} Via the R shell
-
-```R
-artifact <- ln$Artifact$get(key = "my_datasets/rnaseq1.parquet")
 ```
 
 :::
@@ -208,27 +172,11 @@ And this is how you load it back into memory.
 artifact.load()
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-artifact$load()
-```
-
-:::
-
 Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`.
 
 ```python
 artifact.cache()
 ```
-
-:::{dropdown} Via the R shell
-
-```R
-artifact$cache()
-```
-
-:::
 
 If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more on this, see: {doc}`arrays`.
 
@@ -240,41 +188,17 @@ You can understand where an artifact comes from by looking at its {class}`~lamin
 artifact.transform
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-artifact$transform
-```
-
-:::
-
 <!-- #region -->
 
 ```python
 artifact.run
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-artifact$run
-```
-
-:::
-
 Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep.
 
 ```python
 artifact.view_lineage()
 ```
-
-:::{dropdown} Via the R shell
-
-```R
-artifact$view_lineage()
-```
-
-:::
 
 :::::{dropdown} Show me a more interesting example, please!
 
@@ -379,19 +303,6 @@ artifact.records.add(my_experiment)
 artifact.describe()
 ```
 
-:::{dropdown} Via the R shell
-
-```R
-# create a label
-my_experiment <- ln$Record(name = "My experiment")$save()
-
-# annotate the artifact with a label
-artifact$records$add(my_experiment)
-
-# describe the artifact
-artifact$describe()
-```
-
 :::
 
 This is how you query artifacts based on the annotation.
@@ -399,14 +310,6 @@ This is how you query artifacts based on the annotation.
 ```python
 ln.Artifact.filter(records=my_experiment).to_dataframe()
 ```
-
-:::{dropdown} Via the R shell
-
-```R
-ln$Artifact$filter(records = my_experiment)$to_dataframe()
-```
-
-:::
 
 You can also annotate with labels from other registries, e.g., the biological ontologies in {mod}`bionty`.
 
