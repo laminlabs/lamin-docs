@@ -28,7 +28,8 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
         r_code = convert_lamindb_to_laminr(python_code)
 
         # Create the tabbed section
-        tabbed_section = f"""::::{{tab-set}}
+        tabbed_section = f"""<!-- #region -->
+::::{{tab-set}}
 :::{{tab-item}} Py
 :sync: python
 
@@ -40,16 +41,13 @@ def convert_markdown_python_to_tabbed(content: str) -> str:
 :::{{tab-item}} R
 :sync: r
 
-<!-- #region -->
-
 ```r
 {r_code}
 ```
 
-<!-- #endregion -->
-
 :::
-::::"""
+::::
+<!-- #endregion -->"""
 
         return tabbed_section
 
