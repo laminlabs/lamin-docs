@@ -30,8 +30,6 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 
 :::{dropdown} What else can I configure during setup?
 
-<!-- #skip_laminr -->
-
 1. You can pass a cloud storage location to `--storage` (S3, GCP, R2, HF, etc.)
    ```python
    --storage s3://my-bucket
@@ -48,8 +46,6 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
    ```python
    --modules bionty,pertdb,custom1
    ```
-
-<!-- #end_skip_laminr -->
 
 For more info, see {doc}`/setup`.
 
@@ -113,14 +109,12 @@ The {class}`~lamindb.Run` registry stores executions of transforms. Many runs ca
 Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
 
 <!-- #region -->
-<!-- #skip_laminr -->
 
 ```python
 transform = ln.Transform(key="my_pipeline", version="1.2.0")
 ln.track(transform)
 ```
 
-<!-- #end_skip_laminr -->
 <!-- #endregion -->
 
 :::
@@ -557,15 +551,11 @@ The content of the dataset is now validated and the dataset is richly annotated 
 
 That works, too, you can use `revises`:
 
-<!-- #skip_laminr -->
-
 ```python
 artifact_v1 = ln.Artifact.from_dataframe(df, description="Just a description").save()
 # below revises artifact_v1
 artifact_v2 = ln.Artifact.from_dataframe(df_updated, revises=artifact_v1).save()
 ```
-
-<!-- #end_skip_laminr -->
 
 <br>
 

@@ -18,11 +18,22 @@ def convert_markdown_python_to_tabbed(
 
     def replace_code_block(match):
         """Replace a single Python code block with a tabbed section."""
-        # Skip blocks between <!-- #skip_laminr --> and <!-- #end_skip_laminr -->
         preceding = content[: match.start()]
+
+        # Skip blocks between <!-- #skip_laminr --> and <!-- #end_skip_laminr -->
         last_skip = preceding.rfind("#skip_laminr ")
         last_end = preceding.rfind("#end_skip_laminr ")
         if last_skip != -1 and (last_end == -1 or last_skip > last_end):
+            return match.group(0)
+
+        # Skip blocks inside dropdowns (tabs within dropdowns don't work)
+        last_dropdown = preceding.rfind("{dropdown")
+        last_close = max(
+            preceding.rfind("\n:::\n"),
+            preceding.rfind("\n::::\n"),
+            preceding.rfind("\n:::::\n"),
+        )
+        if last_dropdown != -1 and last_dropdown > last_close:
             return match.group(0)
 
         python_code = match.group(1)
