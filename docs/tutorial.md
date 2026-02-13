@@ -32,8 +32,6 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 
 :::
 
-<!-- #endregion -->
-
 :::{dropdown} What else can I configure during setup?
 
 1. You can pass a cloud storage location to `--storage` (S3, GCP, R2, HF, etc.)
@@ -56,6 +54,8 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
 For more info, see {doc}`/setup`.
 
 :::
+
+<!-- #endregion -->
 
 Let's now track the notebook that's being run.
 
@@ -558,18 +558,16 @@ artifact.delete(permanent=True)  # permanently delete
 
 :::
 
+<!-- #region -->
+
 :::{dropdown} How do I create an artifact for a local file or folder?
 
 Source path is local:
-
-<!-- #region -->
 
 ```python
 ln.Artifact("./my_data.fcs", key="my_dataset.fcs")
 ln.Artifact("./my_images/", key="my_images")
 ```
-
-<!-- #endregion -->
 
 <br>
 
@@ -577,19 +575,17 @@ Upon `artifact.save()`, the source path will be copied or uploaded into your ins
 
 If the source path is remote _or_ already in a registered storage location (one that's registered in `ln.Storage`), `artifact.save()` will _not_ trigger a copy or upload but register the existing path.
 
-<!-- #region -->
-
 ```python
 ln.Artifact("s3://my-bucket/my_dataset.fcs")  # key is auto-populated from S3, you can optionally pass a description
 ln.Artifact("s3://my-bucket/my_images/")  # key is auto-populated from S3, you can optionally pass a description
 ```
 
-<!-- #endregion -->
-
 <br>
 You can use any storage location supported by `fsspec`.
 
 :::
+
+<!-- #endregion -->
 
 :::{dropdown} Which fields are populated when creating an artifact record?
 
