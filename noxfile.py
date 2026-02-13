@@ -267,6 +267,13 @@ def pull_artifacts(session):
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
+    # add tabbed layout to introduction.md
+    with open("docs/tutorial.md") as f:
+        content = f.read()
+    with open("docs/tutorial.md", "w") as f:
+        content = convert_markdown_python_to_tabbed(content, add_runnable_cell=True)
+        f.write(content)
+
 
 def strip_notebook_outputs(directory="."):
     """Simple function to strip outputs from all notebooks in directory."""
