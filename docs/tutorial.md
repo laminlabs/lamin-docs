@@ -850,10 +850,14 @@ artifact.delete(permanent=True)  # permanently delete
 
 Source path is local:
 
+<!-- #region -->
+
 ```python
-ln.Artifact("./my_data.fcs", key="my_data.fcs")
+ln.Artifact("./my_data.fcs", key="my_dataset.fcs")
 ln.Artifact("./my_images/", key="my_images")
 ```
+
+<!-- #endregion -->
 
 <br>
 
@@ -861,10 +865,14 @@ Upon `artifact.save()`, the source path will be copied or uploaded into your ins
 
 If the source path is remote _or_ already in a registered storage location (one that's registered in `ln.Storage`), `artifact.save()` will _not_ trigger a copy or upload but register the existing path.
 
+<!-- #region -->
+
 ```python
-ln.Artifact("s3://my-bucket/my_data.fcs")  # key is auto-populated from S3, you can optionally pass a description
+ln.Artifact("s3://my-bucket/my_dataset.fcs")  # key is auto-populated from S3, you can optionally pass a description
 ln.Artifact("s3://my-bucket/my_images/")  # key is auto-populated from S3, you can optionally pass a description
 ```
+
+<!-- #endregion -->
 
 <br>
 You can use any storage location supported by `fsspec`.
@@ -922,27 +930,37 @@ Yes.
 
 You can make artifacts from paths referencing array-like objects:
 
+<!-- #region -->
+
 ```python
 ln.Artifact("./my_anndata.h5ad", key="my_anndata.h5ad")
 ln.Artifact("./my_zarr_array/", key="my_zarr_array")
 ```
 
+<!-- #endregion -->
+
 Or from in-memory objects:
+
+<!-- #region -->
 
 ```python
 ln.Artifact.from_dataframe(df, key="my_dataframe.parquet")
 ln.Artifact.from_anndata(adata, key="my_anndata.h5ad")
 ```
 
+<!-- #endregion -->
+
 You can open large artifacts for slicing from the cloud or load small artifacts directly into memory via:
+
+<!-- #region -->
 
 ```python
 artifact.open()
 ```
 
-:::
-
 <!-- #endregion -->
+
+:::
 
 ## Manage biological registries
 
