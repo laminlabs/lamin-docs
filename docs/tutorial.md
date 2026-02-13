@@ -57,7 +57,7 @@ For more info, see {doc}`/setup`.
 
 Let's now track the notebook that's being run.
 
-```python tags=["hide-cell"]
+```python
 import lamindb as ln
 
 ln.track()  # track the current notebook or script
@@ -76,7 +76,7 @@ ln$track()  # track a run of your notebook or script
 
 By calling {meth}`~lamindb.track`, the notebook gets automatically linked as the source of all data that's about to be saved! You can see all your transforms and their runs in the {class}`~lamindb.Transform` and {class}`~lamindb.Run` registries.
 
-```python tags=["hide-cell"]
+```python
 ln.Transform.to_dataframe()
 ```
 
@@ -90,7 +90,7 @@ ln$Transform$to_dataframe()
 
 <!-- #region -->
 
-```python tags=["hide-cell"]
+```python
 ln.Run.to_dataframe()
 ```
 
@@ -120,7 +120,7 @@ The {class}`~lamindb.Run` registry stores executions of transforms. Many runs ca
 
 Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
 
-```python tags=["hide-cell"]
+```python
 transform = ln.Transform(name="My pipeline")
 transform.version = "1.2.0"  # tag the version
 ln.track(transform)
@@ -156,7 +156,7 @@ You can register data objects (`DataFrame`, `AnnData`, ...) and files or folders
 
 Let's first look at an exemplary dataframe.
 
-```python tags=["hide-cell"]
+```python
 df = ln.examples.datasets.mini_immuno.get_dataset1(with_typo=True)
 df
 ```
@@ -172,7 +172,7 @@ df
 
 This is how you create an artifact from a dataframe.
 
-```python tags=["hide-cell"]
+```python
 artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").save()
 artifact.describe()
 ```
@@ -190,7 +190,7 @@ artifact$describe()  # describe
 
 Get the artifact by `key`.
 
-```python tags=["hide-cell"]
+```python
 artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
 ```
 
@@ -204,7 +204,7 @@ artifact <- ln$Artifact$get(key = "my_datasets/rnaseq1.parquet")
 
 And this is how you load it back into memory.
 
-```python tags=["hide-cell"]
+```python
 artifact.load()
 ```
 
@@ -218,7 +218,7 @@ artifact$load()
 
 Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`.
 
-```python tags=["hide-cell"]
+```python
 artifact.cache()
 ```
 
@@ -236,7 +236,7 @@ If the data is large, you might not want to cache but stream it via {meth}`~lami
 
 You can understand where an artifact comes from by looking at its {class}`~lamindb.Transform` & {class}`~lamindb.Run` records.
 
-```python tags=["hide-cell"]
+```python
 artifact.transform
 ```
 
@@ -250,7 +250,7 @@ artifact$transform
 
 <!-- #region -->
 
-```python tags=["hide-cell"]
+```python
 artifact.run
 ```
 
@@ -264,7 +264,7 @@ artifact$run
 
 Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep.
 
-```python tags=["hide-cell"]
+```python
 artifact.view_lineage()
 ```
 
@@ -297,7 +297,7 @@ Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/a
 
 Once you're done, at the end of your notebook or script, call {meth}`~lamindb.finish`. Here, we're not yet done so we're commenting it out.
 
-```python tags=["hide-cell"]
+```python
 # ln.finish()  # mark run as finished, save execution report, source code & environment
 ```
 
@@ -368,7 +368,7 @@ You can annotate artifacts with features and labels. Features are measurement di
 
 Let's annotate an artifact with a {class}`~lamindb.Record`, a built-in universal label ontology.
 
-```python tags=["hide-cell"]
+```python
 # create & save a record
 my_experiment = ln.Record(name="My experiment").save()
 
@@ -396,7 +396,7 @@ artifact$describe()
 
 This is how you query artifacts based on the annotation.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact.filter(records=my_experiment).to_dataframe()
 ```
 
@@ -410,7 +410,7 @@ ln$Artifact$filter(records = my_experiment)$to_dataframe()
 
 You can also annotate with labels from other registries, e.g., the biological ontologies in {mod}`bionty`.
 
-```python tags=["hide-cell"]
+```python
 import bionty as bt
 
 # create a cell type label from the source ontology
@@ -442,7 +442,7 @@ artifact$describe()
 
 This is how you query artifacts by cell type annotations.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 ```
 
@@ -456,7 +456,7 @@ ln$Artifact$filter(cell_types = cell_type)$to_dataframe()
 
 If you want to annotate by non-categorical metadata or indicate the feature for a label, annotate via features.
 
-```python tags=["hide-cell"]
+```python
 # define the "temperature" & "experiment" features
 ln.Feature(name="temperature", dtype=float).save()
 ln.Feature(name="experiment", dtype=ln.Record).save()
@@ -488,7 +488,7 @@ artifact$describe()
 
 This is how you query artifacts by features.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact.filter(temperature=21.6).to_dataframe()
 ```
 
@@ -513,7 +513,7 @@ In lamindb, validation also means annotation with the validated metadata which i
 
 :::
 
-```python tags=["hide-cell"]
+```python
 import bionty as bt  # <-- use bionty to access registries with imported public ontologies
 
 # define a few more valid labels
@@ -560,7 +560,7 @@ schema <- ln$Schema(itype = ln$Feature)$save()
 
 If you pass a `schema` object to the `Artifact` constructor, the artifact will be validated & annotated. Let's try this.
 
-```python tags=["hide-cell"]
+```python
 try:
     artifact = ln.Artifact.from_dataframe(
         df, key="my_datasets/rnaseq1.parquet", schema=schema
@@ -573,7 +573,7 @@ Because there is a typo in the `perturbation` column, validation fails. Let's fi
 
 ### Make a new version of an artifact
 
-```python tags=["hide-cell"]
+```python
 # fix the "IFNJ" typo
 df["perturbation"] = df["perturbation"].cat.rename_categories({"IFNJ": "IFNG"})
 
@@ -619,7 +619,7 @@ The content of the dataset is now validated and the dataset is richly annotated 
 
 That works, too, you can use `revises`:
 
-```python tags=["hide-cell"]
+```python
 artifact_v1 = ln.Artifact.from_dataframe(df, description="Just a description").save()
 # below revises artifact_v1
 artifact_v2 = ln.Artifact.from_dataframe(df_updated, revises=artifact_v1).save()
@@ -641,7 +641,7 @@ We've already seen a few queries. Let's now walk through the topic systematicall
 
 To get an overview over all artifacts in your instance, call {class}`~lamindb.models.SQLRecord.df`.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact.to_dataframe()
 ```
 
@@ -655,7 +655,7 @@ ln$Artifact$to_dataframe()
 
 The `Artifact` registry additionally supports seeing all feature annotations of an artifact.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact.to_dataframe(features=True)
 ```
 
@@ -669,7 +669,7 @@ ln$Artifact$to_dataframe(features = TRUE)
 
 LaminDB's central classes are registries that store records ({class}`~lamindb.models.SQLRecord` objects). If you want to see the fields of a registry, look at the class or auto-complete.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact
 ```
 
@@ -683,7 +683,7 @@ ln$Artifact
 
 Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest records in the database.
 
-```python tags=["hide-cell"]
+```python
 ln.view()
 ```
 
@@ -710,7 +710,7 @@ The syntax for it is Django's query syntax.
 
 Here are some simple query examples.
 
-```python tags=["hide-cell"]
+```python
 # get a single record (here the current notebook)
 transform = ln.Transform.get(key="tutorial.ipynb")
 
@@ -766,7 +766,7 @@ Yes: `ln.Artifact.filter(suffix=".jpg").search("my image")`
 
 The class methods {class}`~lamindb.models.SQLRecord.search` and {class}`~lamindb.models.SQLRecord.lookup` help with approximate matches.
 
-```python tags=["hide-cell"]
+```python
 # search artifacts
 ln.Artifact.search("iris").to_dataframe().head()
 
@@ -804,7 +804,7 @@ For more info, see: {doc}`registries`.
 
 Let's look at a folder in the cloud that contains 3 sub-folders storing images & metadata of Iris flowers, generated in 3 subsequent studies.
 
-```python tags=["hide-cell"]
+```python
 # we use anon=True here in case no aws credentials are configured
 ln.UPath("s3://lamindata/iris_studies", anon=True).view_tree()
 ```
@@ -820,7 +820,7 @@ ln$UPath("s3://lamindata/iris_studies", anon = TRUE)$view_tree()
 
 Let's create an artifact for the first sub-folder.
 
-```python tags=["hide-cell"]
+```python
 artifact = ln.Artifact("s3://lamindata/iris_studies/study0_raw_images").save()
 artifact
 ```
@@ -836,7 +836,7 @@ artifact
 
 As you see from {attr}`~lamindb.Artifact.path`, the folder was merely registered in its present storage location without copying it.
 
-```python tags=["hide-cell"]
+```python
 artifact.path
 ```
 
@@ -850,7 +850,7 @@ artifact$path
 
 LaminDB keeps track of all your storage locations.
 
-```python tags=["hide-cell"]
+```python
 ln.Storage.to_dataframe()
 ```
 
@@ -877,7 +877,7 @@ artifact.delete(permanent=True)  # permanently delete
 
 Source path is local:
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact("./my_data.fcs", key="my_data.fcs")
 ln.Artifact("./my_images/", key="my_images")
 ```
@@ -888,7 +888,7 @@ Upon `artifact.save()`, the source path will be copied or uploaded into your ins
 
 If the source path is remote _or_ already in a registered storage location (one that's registered in `ln.Storage`), `artifact.save()` will _not_ trigger a copy or upload but register the existing path.
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact("s3://my-bucket/my_data.fcs")  # key is auto-populated from S3, you can optionally pass a description
 ln.Artifact("s3://my-bucket/my_images/")  # key is auto-populated from S3, you can optionally pass a description
 ```
@@ -949,21 +949,21 @@ Yes.
 
 You can make artifacts from paths referencing array-like objects:
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact("./my_anndata.h5ad", key="my_anndata.h5ad")
 ln.Artifact("./my_zarr_array/", key="my_zarr_array")
 ```
 
 Or from in-memory objects:
 
-```python tags=["hide-cell"]
+```python
 ln.Artifact.from_dataframe(df, key="my_dataframe.parquet")
 ln.Artifact.from_anndata(adata, key="my_anndata.h5ad")
 ```
 
 You can open large artifacts for slicing from the cloud or load small artifacts directly into memory via:
 
-```python tags=["hide-cell"]
+```python
 artifact.open()
 ```
 
@@ -975,7 +975,7 @@ artifact.open()
 
 Every {py:mod}`bionty` registry is based on configurable public ontologies (>20 of them) that are automatically leveraged during validation & annotation. Sometimes you want to access the public ontology directly.
 
-```python tags=["hide-cell"]
+```python
 import bionty as bt
 
 cell_type_ontology = bt.CellType.public()
@@ -984,13 +984,13 @@ cell_type_ontology
 
 The returned object can be searched like you can search a registry.
 
-```python tags=["hide-cell"]
+```python
 cell_type_ontology.search("gamma-delta T cell").head(2)
 ```
 
 Because you can't update an external public ontology, you update the content of the corresponding registry. Here, you create a new cell type.
 
-```python tags=["hide-cell"]
+```python
 # create an ontology-coupled cell type record and save it
 neuron = bt.CellType.from_source(name="neuron").save()
 
@@ -1012,7 +1012,7 @@ LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `M
 
 Let's go through the example of the quickstart, but store the dataset in an AnnData this time.
 
-```python tags=["hide-cell"]
+```python
 # define var schema
 var_schema = ln.Schema(itype=bt.Gene.ensembl_gene_id, dtype=int).save()
 
@@ -1024,7 +1024,7 @@ anndata_schema = ln.Schema(
 
 Validate & annotate an `AnnData`.
 
-```python tags=["hide-cell"]
+```python
 import anndata as ad
 
 # store the dataset as an AnnData object to distinguish data from metadata
@@ -1041,7 +1041,7 @@ Because `AnnData` separates the high-dimensional count matrix that's typically i
 
 If you want to find a dataset by whether it measured `CD8A`, you can do so as as follows.
 
-```python tags=["hide-cell"]
+```python
 # query for all feature sets that contain CD8A
 feature_sets = ln.Schema.filter(genes__symbol="CD8A").all()
 
@@ -1053,7 +1053,7 @@ ln.Artifact.filter(feature_sets__in=feature_sets).to_dataframe()
 
 How do you integrate new datasets with your existing datasets? Leverage {class}`~lamindb.Collection`.
 
-```python tags=["hide-cell"]
+```python
 # a new dataset
 df2 = ln.examples.datasets.mini_immuno.get_dataset2(otype="DataFrame")
 adata = ad.AnnData(df2.iloc[:, :3], obs=df2.iloc[:, 3:-1])
@@ -1064,13 +1064,13 @@ artifact2 = ln.Artifact.from_anndata(
 
 Create a collection using {class}`~lamindb.Collection`.
 
-```python tags=["hide-cell"]
+```python
 collection = ln.Collection([artifact, artifact2], key="my-RNA-seq-collection").save()
 collection.describe()
 collection.view_lineage()
 ```
 
-```python tags=["hide-cell"]
+```python
 # if it's small enough, you can load the entire collection into memory as if it was one
 collection.load()
 
