@@ -14,9 +14,9 @@ The metadata involved in this process are stored in a _LaminDB instance_, a data
 !lamin init --storage ./lamindb-tutorial --modules bionty
 ```
 
-:::{dropdown} Via the R shell
-
 <!-- #region -->
+
+:::{dropdown} Via the R shell
 
 ```R
 library(laminr)
@@ -24,9 +24,9 @@ lc <- import_module("lamin_cli")
 lc$init(storage = "./lamin-tutorial", modules = "bionty")
 ```
 
-<!-- #endregion -->
-
 :::
+
+<!-- #endregion -->
 
 :::{dropdown} What else can I configure during setup?
 
@@ -557,11 +557,15 @@ The content of the dataset is now validated and the dataset is richly annotated 
 
 That works, too, you can use `revises`:
 
+<!-- #skip_laminr -->
+
 ```python
 artifact_v1 = ln.Artifact.from_dataframe(df, description="Just a description").save()
 # below revises artifact_v1
 artifact_v2 = ln.Artifact.from_dataframe(df_updated, revises=artifact_v1).save()
 ```
+
+<!-- #end_skip_laminr -->
 
 <br>
 
@@ -583,35 +587,11 @@ To get an overview over all artifacts in your instance, call {class}`~lamindb.mo
 ln.Artifact.to_dataframe()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$Artifact$to_dataframe()
-```
-
-<!-- #endregion -->
-
-:::
-
 The `Artifact` registry additionally supports seeing all feature annotations of an artifact.
 
 ```python
 ln.Artifact.to_dataframe(features=True)
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$Artifact$to_dataframe(features = TRUE)
-```
-
-<!-- #endregion -->
-
-:::
 
 LaminDB's central classes are registries that store records ({class}`~lamindb.models.SQLRecord` objects). If you want to see the fields of a registry, look at the class or auto-complete.
 
@@ -619,35 +599,11 @@ LaminDB's central classes are registries that store records ({class}`~lamindb.mo
 ln.Artifact
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$Artifact
-```
-
-<!-- #endregion -->
-
-:::
-
 Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest records in the database.
 
 ```python
 ln.view()
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$view()
-```
-
-<!-- #endregion -->
-
-:::
 
 :::{dropdown} Which registries have I already learned about? 🤔
 
@@ -680,30 +636,6 @@ artifacts = ln.Artifact.filter(
 ).all()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-# get a single record (here the current notebook)
-transform <- ln$Transform$get(key = "tutorial.Rmd")
-
-# get a set of records by filtering for a directory (LaminDB treats directories like AWS S3, as the prefix of the storage key)
-ln$Artifact$filter(key__startswith = "my_datasets/")$to_dataframe()
-
-# query all artifacts ingested from a transform
-artifacts <- ln$Artifact$filter(transform = transform)$all()
-
-# query all artifacts ingested from a notebook with "tutor" in the description
-artifacts <- ln$Artifact$filter(
-  transform__description__icontains = "tutor",
-)$all()
-```
-
-<!-- #endregion -->
-
-:::
-
 :::{dropdown} What does a double underscore mean?
 
 For any field, the double underscore defines a comparator, e.g.,
@@ -735,25 +667,6 @@ ln.Transform.search("tutor").to_dataframe()
 records = ln.Record.lookup()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-# search artifacts
-ln$Artifact$search("iris")$to_dataframe() |> head()
-
-# search transforms
-ln$Transform$search("tutor")$to_dataframe()
-
-# look up records with auto-complete
-records <- ln$Record$lookup()
-```
-
-<!-- #endregion -->
-
-:::
-
 :::{dropdown} Show me a screenshot
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/lgRNHNtMxjU0y8nIagt7.png" width="400px">
@@ -771,19 +684,6 @@ Let's look at a folder in the cloud that contains 3 sub-folders storing images &
 ln.UPath("s3://lamindata/iris_studies", anon=True).view_tree()
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-# we use anon=True here in case no aws credentials are configured
-ln$UPath("s3://lamindata/iris_studies", anon = TRUE)$view_tree()
-```
-
-<!-- #endregion -->
-
-:::
-
 Let's create an artifact for the first sub-folder.
 
 ```python
@@ -791,54 +691,17 @@ artifact = ln.Artifact("s3://lamindata/iris_studies/study0_raw_images").save()
 artifact
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-artifact <- ln$Artifact("s3://lamindata/iris_studies/study0_raw_images")$save()
-artifact
-```
-
-<!-- #endregion -->
-
-:::
-
 As you see from {attr}`~lamindb.Artifact.path`, the folder was merely registered in its present storage location without copying it.
 
 ```python
 artifact.path
 ```
 
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-artifact$path
-```
-
-<!-- #endregion -->
-
-:::
-
 LaminDB keeps track of all your storage locations.
 
 ```python
 ln.Storage.to_dataframe()
 ```
-
-:::{dropdown} Via the R shell
-
-<!-- #region -->
-
-```R
-ln$Storage$to_dataframe()
-```
-
-<!-- #endregion -->
-
-:::
 
 :::{dropdown} How do I update or delete an artifact?
 
