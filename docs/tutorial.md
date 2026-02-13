@@ -14,9 +14,9 @@ The metadata involved in this process are stored in a _LaminDB instance_, a data
 !lamin init --storage ./lamindb-tutorial --modules bionty
 ```
 
-<!-- #region -->
-
 :::{dropdown} Via the R shell
+
+<!-- #region -->
 
 ```R
 library(laminr)
@@ -24,9 +24,9 @@ lc <- import_module("lamin_cli")
 lc$init(storage = "./lamin-tutorial", modules = "bionty")
 ```
 
-:::
-
 <!-- #endregion -->
+
+:::
 
 :::{dropdown} What else can I configure during setup?
 
