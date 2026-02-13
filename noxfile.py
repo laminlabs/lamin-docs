@@ -271,7 +271,7 @@ def pull_artifacts(session):
     with open("docs/tutorial.md") as f:
         content = f.read()
     with open("docs/tutorial.md", "w") as f:
-        content = convert_markdown_python_to_tabbed(content)
+        content = convert_markdown_python_to_tabbed(content, add_runnable_cell=True)
         f.write(content)
 
 
