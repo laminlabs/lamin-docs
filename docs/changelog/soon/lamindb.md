@@ -1,3 +1,4 @@
+- 🚸 Extend `lamin describe` to more entities [PR](https://github.com/laminlabs/lamin-cli/pull/198) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Display `dtype` for `Record` and `ULabel` types correctly in `schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3537) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3536) [@Koncopd](https://github.com/Koncopd)
 - 🔧 Allow passing `resource_db_server_id` in `register()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1290) [@Koncopd](https://github.com/Koncopd)
