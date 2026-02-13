@@ -27,12 +27,16 @@ def convert_markdown_python_to_tabbed(
             return match.group(0)
 
         # Skip blocks inside dropdowns (tabs within dropdowns don't work)
+        # Find directive closes - ::  at start of line (can be 3, 4, or 5 colons)
         last_dropdown = preceding.rfind("{dropdown")
         last_close = max(
             preceding.rfind("\n:::\n"),
             preceding.rfind("\n::::\n"),
             preceding.rfind("\n:::::\n"),
+            preceding.rfind("\n::::::\n"),
         )
+        if last_dropdown != -1 and last_close == -1:
+            return match.group(0)  # Unclosed dropdown, skip
         if last_dropdown != -1 and last_dropdown > last_close:
             return match.group(0)
 
@@ -66,7 +70,7 @@ def convert_markdown_python_to_tabbed(
         if add_runnable_cell:
             tabbed_section += f"""
 
-```python tags=["hide-cell"]
+```python tags=["hide-output", "remove-input"]
 {python_code}
 ```
 """
