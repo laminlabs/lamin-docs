@@ -360,7 +360,7 @@ ln.Feature(name="assay_oid", dtype=bt.ExperimentalFactor.ontology_id).save()
 ln.Feature(name="donor", dtype=str, nullable=True).save()
 ln.Feature(name="sample_note", dtype=str, nullable=True).save()
 ln.Feature(name="concentration", dtype=str).save()
-ln.Feature(name="treatment_time_h", dtype="num", coerce_dtype=True).save()
+ln.Feature(name="treatment_time_h", dtype="num", coerce=True).save()
 
 # define a schema that merely enforces a feature identifier type
 schema = ln.Schema(itype=ln.Feature).save()
