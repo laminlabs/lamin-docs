@@ -1,1 +1,2 @@
+- 🗃️ Add `created_on` field for LaminDB v2.2 [PR](https://github.com/laminlabs/pertdb/pull/134) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Rename `wetlab` to `pertdb` in backward-compatible way [PR](https://github.com/laminlabs/pertdb/pull/133) [@falexwolf](https://github.com/falexwolf)
