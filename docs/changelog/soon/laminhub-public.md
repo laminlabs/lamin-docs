@@ -1,3 +1,4 @@
+- 💄 Do not show pertdb link tables [PR](https://github.com/laminlabs/laminhub-public/pull/223) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Fix text truncation in list cells of sheet [PR](https://github.com/laminlabs/laminhub-public/pull/222) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix badge for recreated output artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/221) [@sunnyosun](https://github.com/sunnyosun)
 - 👷 Dispatch changelog merge [PR](https://github.com/laminlabs/laminhub-public/pull/220) [@falexwolf](https://github.com/falexwolf)
