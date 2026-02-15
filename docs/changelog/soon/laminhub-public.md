@@ -1,0 +1,1 @@
+- 💄 Simplify features header in artifact detail page, should be "Values" not "Categories / Values" [PR](https://github.com/laminlabs/laminhub-public/pull/224) [@falexwolf](https://github.com/falexwolf)
