@@ -1,3 +1,4 @@
+- ♻️ Clean up migrations [PR](https://github.com/laminlabs/bionty/pull/367) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Squash migrations [PR](https://github.com/laminlabs/bionty/pull/366) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `created_on` field for LaminDB v2.2 [PR](https://github.com/laminlabs/bionty/pull/365) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Lazily import pandas [PR](https://github.com/laminlabs/bionty/pull/364) [@falexwolf](https://github.com/falexwolf)
