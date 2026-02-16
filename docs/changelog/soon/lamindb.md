@@ -1,0 +1,1 @@
+- 🚸 Nicer error for `lamin switch` to non-existing branch [PR](https://github.com/laminlabs/lamin-cli/pull/199) [@falexwolf](https://github.com/falexwolf)
