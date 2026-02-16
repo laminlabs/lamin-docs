@@ -1,3 +1,4 @@
+- 🚸 Enable annotating with a version tag through `lamin annotate` [PR](https://github.com/laminlabs/lamin-cli/pull/202) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Enable git sync also for lamin save [PR](https://github.com/laminlabs/lamin-cli/pull/201) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make saving plans convenient [PR](https://github.com/laminlabs/lamin-cli/pull/200) [@falexwolf](https://github.com/falexwolf)
 - 👽️ Receive AWS credentials through the dedicated endpoint [PR](https://github.com/laminlabs/lamindb-setup/pull/1286) [@Koncopd](https://github.com/Koncopd)
