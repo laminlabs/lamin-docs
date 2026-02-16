@@ -1,2 +1,3 @@
+- 🚸 Make saving plans convenient [PR](https://github.com/laminlabs/lamin-cli/pull/200) [@falexwolf](https://github.com/falexwolf)
 - 👽️ Receive AWS credentials through the dedicated endpoint [PR](https://github.com/laminlabs/lamindb-setup/pull/1286) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Nicer error for `lamin switch` to non-existing branch [PR](https://github.com/laminlabs/lamin-cli/pull/199) [@falexwolf](https://github.com/falexwolf)
