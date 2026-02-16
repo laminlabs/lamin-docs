@@ -1,3 +1,4 @@
+- 🗃️ Update `lamin.db.gz` for lamindb v2.2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1292) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Change outdated login message [PR](https://github.com/laminlabs/lamindb-setup/pull/1291) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Extend describe on the CLI [PR](https://github.com/laminlabs/lamindb/pull/3538) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Extend `lamin describe` to more entities [PR](https://github.com/laminlabs/lamin-cli/pull/198) [@falexwolf](https://github.com/falexwolf)
