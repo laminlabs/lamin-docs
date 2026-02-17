@@ -1,2 +1,0 @@
-- :children_crossing: Fix clunky UX in left sidebar of typed entities [PR](https://github.com/laminlabs/laminhub-public/pull/225) [@chaichontat](https://github.com/chaichontat)
-- 💄 Simplify features header in artifact detail page, should be "Values" not "Categories / Values" [PR](https://github.com/laminlabs/laminhub-public/pull/224) [@falexwolf](https://github.com/falexwolf)
