@@ -1,3 +1,4 @@
+- 🗃️ Recreate `lamindb.db.gz` for v2.2a2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1293) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable linking a `README.md` to and commenting for any entity [PR](https://github.com/laminlabs/lamindb/pull/3541) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Enable commenting on entities [PR](https://github.com/laminlabs/lamin-cli/pull/205) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable annotating with `lamin annotate --readme` [PR](https://github.com/laminlabs/lamin-cli/pull/204) [@falexwolf](https://github.com/falexwolf)
