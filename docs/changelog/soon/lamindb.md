@@ -1,3 +1,4 @@
+- 🗃️ Recreate `lamindb.db.gz` for v2.2a3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1294) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add a `_status_code: int` field to `Branch` and `BaseBlock` [PR](https://github.com/laminlabs/lamindb/pull/3542) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Recreate `lamindb.db.gz` for v2.2a2 [PR](https://github.com/laminlabs/lamindb-setup/pull/1293) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable linking a `README.md` to and commenting for any entity [PR](https://github.com/laminlabs/lamindb/pull/3541) [@falexwolf](https://github.com/falexwolf)
