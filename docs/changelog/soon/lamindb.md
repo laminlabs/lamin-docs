@@ -1,3 +1,4 @@
+- 🚸 Add backward compat for old `lamin switch` command syntax [PR](https://github.com/laminlabs/lamin-cli/pull/203) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Quality of life improvements for saving via the CLI: saving plans, sync with git, annotating with version tags [PR](https://github.com/laminlabs/lamindb/pull/3540) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable annotating with a version tag through `lamin annotate` [PR](https://github.com/laminlabs/lamin-cli/pull/202) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Enable git sync also for lamin save [PR](https://github.com/laminlabs/lamin-cli/pull/201) [@falexwolf](https://github.com/falexwolf)
