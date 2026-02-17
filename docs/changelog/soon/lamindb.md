@@ -1,3 +1,4 @@
+- :sparkles: Enable commenting on entities [PR](https://github.com/laminlabs/lamin-cli/pull/205) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable annotating with `lamin annotate --readme` [PR](https://github.com/laminlabs/lamin-cli/pull/204) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add backward compat for old `lamin switch` command syntax [PR](https://github.com/laminlabs/lamin-cli/pull/203) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Quality of life improvements for saving via the CLI: saving plans, sync with git, annotating with version tags [PR](https://github.com/laminlabs/lamindb/pull/3540) [@falexwolf](https://github.com/falexwolf)
