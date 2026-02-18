@@ -1,3 +1,4 @@
+- 🚸 Upon a merge event, mark the branch as merged [PR](https://github.com/laminlabs/lamindb/pull/3546) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Error if branch already exists [PR](https://github.com/laminlabs/lamin-cli/pull/206) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3545) [@Koncopd](https://github.com/Koncopd)
 - ⏪️ Revert "👽️ Receive AWS credentials through the dedicated endpoint" [PR](https://github.com/laminlabs/lamindb-setup/pull/1296) [@Koncopd](https://github.com/Koncopd)
