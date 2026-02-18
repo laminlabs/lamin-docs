@@ -1,0 +1,1 @@
+- ⬆️ Upgrade to LaminDB v2.2a3 [PR](https://github.com/laminlabs/laminhub-public/pull/226) [@falexwolf](https://github.com/falexwolf)
