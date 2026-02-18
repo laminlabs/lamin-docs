@@ -1,3 +1,4 @@
+- ⏪️ Revert "👽️ Receive AWS credentials through the dedicated endpoint" [PR](https://github.com/laminlabs/lamindb-setup/pull/1296) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Remove unnecessary `ArtifactBranch` model [PR](https://github.com/laminlabs/lamindb/pull/3543) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Recreate `lamindb.db.gz` for v2.2a3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1294) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add a `_status_code: int` field to `Branch` and `BaseBlock` [PR](https://github.com/laminlabs/lamindb/pull/3542) [@falexwolf](https://github.com/falexwolf)
