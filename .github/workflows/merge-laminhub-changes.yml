@@ -130,7 +130,7 @@ jobs:
             --repo "$REPO" \
             --base main \
             --head "$BRANCH" \
-            --title "Changelog: merge laminhub-public ${TAG} (${DATE_STR})" \
+            --title "🔖 Hub ${TAG}" \
             --body "Prepends content from docs/changelog/soon/laminhub-public.md to docs/changelog/2026.md and clears the soon file."
 
       - name: Merge PR into main
@@ -139,4 +139,4 @@ jobs:
           BRANCH: ${{ env.branch }}
           REPO: ${{ github.repository }}
         run: |
-          gh pr merge "$BRANCH" --repo "$REPO" --merge
+          gh pr merge "$BRANCH" --repo "$REPO" --squash
