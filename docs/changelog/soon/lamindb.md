@@ -1,3 +1,4 @@
+- :children_crossing: Include comments in `lamin describe` upon `--include comments` [PR](https://github.com/laminlabs/lamin-cli/pull/207) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Re-raise `InvalidArgument` in `lamin annotate` as `ClickException` [PR](https://github.com/laminlabs/lamin-cli/pull/208) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Upon a merge event, mark the branch as merged [PR](https://github.com/laminlabs/lamindb/pull/3546) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Error if branch already exists [PR](https://github.com/laminlabs/lamin-cli/pull/206) [@falexwolf](https://github.com/falexwolf)
