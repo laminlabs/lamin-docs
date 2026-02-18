@@ -1,3 +1,4 @@
+- ✨ Add `UPath.from_auth(...)` [PR](https://github.com/laminlabs/lamindb-setup/pull/1297) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Include comments in `SQLRecord.describe()` when passing `include = "comments"` [PR](https://github.com/laminlabs/lamindb/pull/3548) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Include comments in `lamin describe` upon `--include comments` [PR](https://github.com/laminlabs/lamin-cli/pull/207) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Re-raise `InvalidArgument` in `lamin annotate` as `ClickException` [PR](https://github.com/laminlabs/lamin-cli/pull/208) [@falexwolf](https://github.com/falexwolf)
