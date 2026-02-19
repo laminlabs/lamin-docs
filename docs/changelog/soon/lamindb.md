@@ -1,3 +1,4 @@
+- ✨ Introduce Merge Request states on branches and enable `lamin update` to update properties of entities [PR](https://github.com/laminlabs/lamindb/pull/3552) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Add `lamin update` and homogenize `lamin get` with other commands [PR](https://github.com/laminlabs/lamin-cli/pull/209) [@falexwolf](https://github.com/falexwolf)
 - Relax AnnData version constraint [PR](https://github.com/laminlabs/lamindb/pull/3550) [@Zethson](https://github.com/Zethson)
 - 🏗️ Reconcile `is_latest` state across branches [PR](https://github.com/laminlabs/lamindb/pull/3551) [@falexwolf](https://github.com/falexwolf)
