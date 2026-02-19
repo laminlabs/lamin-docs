@@ -1,3 +1,4 @@
+- Relax AnnData version constraint [PR](https://github.com/laminlabs/lamindb/pull/3550) [@Zethson](https://github.com/Zethson)
 - 🏗️ Reconcile `is_latest` state across branches [PR](https://github.com/laminlabs/lamindb/pull/3551) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `UPath.from_auth(...)` [PR](https://github.com/laminlabs/lamindb/pull/3547) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `UPath.from_auth(...)` [PR](https://github.com/laminlabs/lamindb-setup/pull/1297) [@Koncopd](https://github.com/Koncopd)
