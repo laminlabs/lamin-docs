@@ -1,0 +1,1 @@
+- ✅ Add a dedicated test for plan tracking [PR](https://github.com/laminlabs/lamindb/pull/3553) [@falexwolf](https://github.com/falexwolf)
