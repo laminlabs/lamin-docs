@@ -1,1 +1,2 @@
+- :bug: Fix pagination bar position in sheets [PR](https://github.com/laminlabs/laminhub-public/pull/228) [@sunnyosun](https://github.com/sunnyosun)
 - :bug: Run metadata settings includes the dtype sheet when a feature has the same dtype [PR](https://github.com/laminlabs/laminhub-public/pull/227) [@chaichontat](https://github.com/chaichontat)
