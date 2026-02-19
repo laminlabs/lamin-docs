@@ -1,3 +1,4 @@
+- :sparkles: Add `lamin update` and homogenize `lamin get` with other commands [PR](https://github.com/laminlabs/lamin-cli/pull/209) [@falexwolf](https://github.com/falexwolf)
 - Relax AnnData version constraint [PR](https://github.com/laminlabs/lamindb/pull/3550) [@Zethson](https://github.com/Zethson)
 - 🏗️ Reconcile `is_latest` state across branches [PR](https://github.com/laminlabs/lamindb/pull/3551) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `UPath.from_auth(...)` [PR](https://github.com/laminlabs/lamindb/pull/3547) [@Koncopd](https://github.com/Koncopd)
