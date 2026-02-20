@@ -1,0 +1,1 @@
+- :recycle: Restructure instance functions [PR](https://github.com/laminlabs/nf-lamin/pull/129) [@rcannood](https://github.com/rcannood)
