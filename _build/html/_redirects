@@ -2,7 +2,7 @@
 /readfcs/* https://readfcs.lamin.ai/:splat 301
 /guide /introduction 301
 /api /cli 301
-/changelog /changelog/2026 301
+/changelog /changelog/2026 302
 /access /permissions 301
 /wetlab /pertdb 301
 /data-flow /schmidt22 301
