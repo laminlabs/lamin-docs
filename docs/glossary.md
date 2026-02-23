@@ -3,10 +3,10 @@
 ```{glossary}
 
 artifact
-    Stores a dataset or model as a file or folder.
+    Stores a dataset or model as a file or folder. Is the output of a (tracked or untracked) process.
 
 curator
-    - Object class designed to ensure your dataset conforms to a desired schema.
+    - Object designed to ensure your dataset conforms with a desired schema.
     - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
 
 FAIR
@@ -37,7 +37,7 @@ observation
 record
     A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
-    In LaminDB, a metadata record is modeled as a {class}`~lamindb.models.SQLRecord` and represents a row in a in a reqistry (a table in the SQL database).
+    In LaminDB, any metadata record -- including {class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~lamindb.Run`, etc. -- is modeled as a {class}`~lamindb.models.SQLRecord` and is stored in a row in a table in the SQL database. LaminDB also comes with a class to dynamically model records, {class}`~lamindb.Record`. This is useful for describing more frequently changing dataset schemas, for example, the columns in dynamically ingested parquet files or dynamically created sheets. While changing the fields of a `SQLRecord` requires updating its Python data model definition and running a migration in the SQL database, changing the features of a `Record` can be done dynamically.
 
     It automatically sets up important behaviors and methods (like filtering, querying, and converting records to DataFrames) needed to interact with the metadata database.
 
