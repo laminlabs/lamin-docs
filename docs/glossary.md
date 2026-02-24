@@ -13,10 +13,11 @@ FAIR
     FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
 
 feature
-    A feature is a measurable property used to represent an observation in a model [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))].
-    In practice, it often corresponds to an (input) {term}`variable` in statistics and is typically represented as a dimension (column) of a dataset.
+    A feature is a measurable property represented in data (e.g., scalar, vector, image, embedding) [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))].
+    In these docs, we use "feature" independent of modeling role: a feature can serve as predictor, target, covariate, or metadata {term}`variable` depending on the analysis.
+    A feature is hence equivalent with a dimension of a dataset.
 
-    LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions and equates them with statistical variables.
+    LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions.
 
 GUI
     Graphical user interface, for instance, a browser-based data catalog.
@@ -29,7 +30,7 @@ label
 
 lakehouse
     A data lakehouse combines the flexibility and cost-effectiveness of a data lake with data-management capabilities commonly associated with data warehouses.
-    Typical capabilities include schema evolution, transactional guarantees (ACID), and metadata/index structures that reduce full dataset scans for many query patterns.
+    Typical capabilities include schema management, transactional guarantees (ACID), and metadata/index structures that reduce full dataset scans for many query patterns.
     Widely adopted open table formats in this space include [Apache Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Apache Hudi](https://hudi.apache.org/).
     Managed services and platforms include offerings such as Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), and [Starburst](https://www.starburst.io/).
     For background, see this [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, this [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, this [glossary entry](https://www.databricks.com/glossary/data-lakehouse), and this [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
