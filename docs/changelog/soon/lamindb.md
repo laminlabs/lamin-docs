@@ -1,3 +1,4 @@
+- 📝 Document and fix `ln.Feature(cat_filters="...")` [PR](https://github.com/laminlabs/lamindb/pull/3554) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3555) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Call `supabase` rpc functions as read-only [PR](https://github.com/laminlabs/lamindb-setup/pull/1302) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add backward compat for `lamin switch --branch` [PR](https://github.com/laminlabs/lamin-cli/pull/210) [@falexwolf](https://github.com/falexwolf)
