@@ -3,14 +3,14 @@
 ```{glossary}
 
 artifact
-    Stores a dataset or model as a file or folder. Is the output of a (tracked or untracked) process.
+    An artifact stores a dataset or model as a file or folder. It is the output of a (tracked or untracked) process.
 
 curator
-    - Object designed to ensure your dataset conforms with a desired schema.
-    - Helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
+    - An object designed to ensure your dataset conforms with a desired schema.
+    - It helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
 
 FAIR
-    FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
+    FAIR data is data that meets the principles of findability, accessibility, interoperability, and reusability [[Wikipedia](https://en.wikipedia.org/wiki/FAIR_data)].
 
 feature
     A feature is a measurable property represented in data (e.g., scalar, vector, image, embedding) [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))].
@@ -36,7 +36,7 @@ lakehouse
     For background, see this [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, this [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, this [glossary entry](https://www.databricks.com/glossary/data-lakehouse), and this [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
 ORM
-    Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM model that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
+    Object-relational mapper. In LaminDB every subclass of `Record` (every instance of `Registry`) is an ORM model that corresponds to a SQL table in the underlying metadata database [[Wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)].
 
 observation
     In statistics and machine learning, an observation refers to a measurement of a set of random variables.
