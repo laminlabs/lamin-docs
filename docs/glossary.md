@@ -6,8 +6,8 @@ artifact
     An artifact stores a dataset or model as a file or folder. It is the output of a (tracked or untracked) process.
 
 curator
-    - An object designed to ensure your dataset conforms with a desired schema.
-    - It helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
+    An object designed to ensure your dataset conforms with a desired schema.
+    It helps with validation, standardization (e.g., by fixing typos or mapping synonyms), and annotation (linking it against metadata entities so that it becomes queryable).
 
 FAIR
     FAIR data is data that meets the principles of findability, accessibility, interoperability, and reusability [[Wikipedia](https://en.wikipedia.org/wiki/FAIR_data)].
@@ -36,7 +36,9 @@ lakehouse
     For background, see this [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, this [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, this [glossary entry](https://www.databricks.com/glossary/data-lakehouse), and this [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
 ORM
-    Object-relational mapper. In LaminDB every subclass of `Record` (every instance of `Registry`) is an ORM model that corresponds to a SQL table in the underlying metadata database [[Wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)].
+    Object-relational mapper. In LaminDB every subclass of {class}`~lamindb.models.SQLRecord` is an ORM that corresponds to a SQL table in the underlying metadata database [[Wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)].
+    A `SQLRecord` object maps on single row of the table.
+    We refer to the `SQLRecord` class as a "registry" with its metaclass {class}`~lamindb.models.Registry`.
 
 observation
     In statistics and machine learning, an observation refers to a measurement of a set of random variables.
@@ -67,7 +69,7 @@ variable
     A dependent variable is sometimes called a "response variable", "regressand", "criterion", "predicted variable", "measured variable", "explained variable", "experimental variable", "responding variable", "outcome variable", "output variable", "target" or "label".
 
 schema
-    A schema is a blueprint for your data's structure and a tool for curating and validating the organization of your data, helping maintain data integrity as it evolves through various processing steps.
+    A schema is a blueprint for your dataset's structure and a tool for curating and validating the organization of your dataset, helping maintain data integrity as it evolves through various processing steps.
 
 registry
     A table in a SQL database (SQLite/Postgres) holding records, enabling queries, enforcing integrity, and fine-grained access management.
