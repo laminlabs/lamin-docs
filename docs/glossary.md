@@ -13,7 +13,8 @@ FAIR
     FAIR data is data which meets the principles of findability, accessibility, interoperability, and reusability [wikipedia](https://en.wikipedia.org/wiki/FAIR_data).
 
 feature
-    A feature is a property of a measurement [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))]. It's equivalent to a {term}`variable` in statistics and is typically equated with a dimension of a dataset.
+    A feature is a measurable property used to represent an observation in a model [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))].
+    In practice, it often corresponds to an (input) {term}`variable` in statistics and is typically represented as a dimension (column) of a dataset.
 
     LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions and equates them with statistical variables.
 
@@ -27,12 +28,11 @@ label
     A label in LaminDB is an entity in a registry -- e.g. a sample, cell type, or perturbation -- that can be linked to another entity -- e.g. a dataset or model.
 
 lakehouse
-    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with schema management to enable structured analytics similar to what's possible in a data warehouse.
-    In addition, data lakehouses typically come with ACID guarantees on transactions, making
-    data corruption due to failed transactions impossible.
-    Finally, a data lakehouse typically provides indexes into datasets so that a query doesn't require full scans of datasets.
-    The industry standard for creating schema management, ACID, and indexes on top of a table that's represented as parquet files is [Apache Iceberg](https://iceberg.apache.org/).
-    Early lakehouse frameworks include Databricks' [Delta Lake](https://delta.io/), Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), [Starburst](https://www.starburst.io/) and others. Here is a [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, a [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, a [glossary entry](https://www.databricks.com/glossary/data-lakehouse) and a [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
+    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with data-management capabilities commonly associated with data warehouses.
+    Typical capabilities include schema evolution, transactional guarantees (ACID), and metadata/index structures that reduce full dataset scans for many query patterns.
+    Widely adopted open table formats in this space include [Apache Iceberg](https://iceberg.apache.org/), [Delta Lake](https://delta.io/), and [Apache Hudi](https://hudi.apache.org/).
+    Managed services and platforms include offerings such as Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), and [Starburst](https://www.starburst.io/).
+    For background, see this [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, this [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, this [glossary entry](https://www.databricks.com/glossary/data-lakehouse), and this [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
 ORM
     Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM model that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
@@ -50,7 +50,8 @@ record
 sample
     In biology, a sample is an instance or part of a biological system.
 
-    In statistics (machine learning), a sample is an observation of a set of random variables (features, labels, metadata).
+    In classical statistics, a sample usually refers to a set of observations drawn from a population.
+    In machine learning, a sample often refers to a single observation (one row) of random variables (features, labels, metadata).
 
     Depending on the observational unit chosen for representing data, the statistical sample might correspond 1:1 to a biological sample.
     Often, this choice presents interesting cases, as variation across physical samples -- targeted in the experimental design -- can be directly explained by variation across statistical (digital) samples.
