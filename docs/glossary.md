@@ -62,11 +62,8 @@ sample
 variable
     We almost always mean "random variable", when we say "variable".
 
-    Random variables and their observations are core to statistics [[Wikipedia](https://en.wikipedia.org/wiki/Random_variable)].
-
-    An independent variable is sometimes called a {term}`feature`, "predictor variable", "regressor", "covariate", "explanatory variable", "risk factor", "input variable", among others [[Wikipedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)].
-
-    A dependent variable is sometimes called a "response variable", "regressand", "criterion", "predicted variable", "measured variable", "explained variable", "experimental variable", "responding variable", "outcome variable", "output variable", "target" or "label".
+    An independent variable is sometimes called a {term}`feature` (the preferred term in these docs), "predictor variable", "regressor", "covariate", "explanatory variable", "risk factor", "input variable", among others [[Wikipedia](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)].
+    A dependent variable is sometimes called a "response variable", "regressand", "predicted variable", "measured variable", among others.
 
 schema
     A schema is a blueprint for your dataset's structure and a tool for curating and validating the organization of your dataset, helping maintain data integrity as it evolves through various processing steps.
