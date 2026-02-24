@@ -38,7 +38,7 @@ lakehouse
 ORM
     Object-relational mapper. In LaminDB every subclass of {class}`~lamindb.models.SQLRecord` is an ORM model that corresponds to a SQL table in the underlying metadata database [[Wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)].
     A `SQLRecord` object maps to a single row of the table.
-    We refer to the `SQLRecord` class as a {term}`registry` with its metaclass {class}`~lamindb.models.Registry`.
+    We refer to the `SQLRecord` class as a {term}`registry`, hence the name of its metaclass:  {class}`~lamindb.models.Registry`.
 
 observation
     In statistics and machine learning, an observation refers to a measurement of a set of random variables.
