@@ -1,0 +1,1 @@
+- 💄 Display run entrypoints in transform, run, and lineage views [PR](https://github.com/laminlabs/laminhub-public/pull/230) [@falexwolf](https://github.com/falexwolf)
