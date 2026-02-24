@@ -27,7 +27,11 @@ label
     A label in LaminDB is an entity in a registry -- e.g. a sample, cell type, or perturbation -- that can be linked to another entity -- e.g. a dataset or model.
 
 lakehouse
-    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with schema management to enable structured analytics similar to a data warehouse.
+    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with schema management to enable structured analytics similar to what's possible in a data warehouse.
+    In addition, data lakehouses typically come with ACID guarantees on transactions, making
+    data corruption due to failed transactions impossible.
+    Finally, a data lakehouse typically provides indexes into datasets so that a query doesn't require full scans of datasets.
+    The industry standard for creating schema management, ACID, and indexes on top of a table that's represented as parquet files is [Apache Iceberg](https://iceberg.apache.org/).
     Early lakehouse frameworks include Databricks' [Delta Lake](https://delta.io/), Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), [Starburst](https://www.starburst.io/) and others. Here is a [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, a [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, a [glossary entry](https://www.databricks.com/glossary/data-lakehouse) and a [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
 ORM
