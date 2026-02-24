@@ -14,7 +14,7 @@ FAIR
 
 feature
     A feature is a measurable property represented in data (e.g., scalar, vector, image, embedding) [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))].
-    In these docs, we use "feature" independent of modeling role: a feature can serve as predictor, target, covariate, or metadata {term}`variable` depending on the analysis.
+    In these docs, we use "feature" independent of modeling role: a feature can serve as predictor, target, covariate, or metadata {term}`variable`, depending on the analysis.
     A feature maps to one or more dataset dimensions; in tabular data, scalar features map 1:1 to columns.
 
     LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions.
@@ -39,7 +39,7 @@ ORM
     Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM model that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
 
 observation
-    In statistics (machine learning), an observation refers to a particular measured instance of a set of random variables.
+    In statistics and machine learning, an observation refers to a measurement of a set of random variables.
 
     In biology, an observation typically corresponds to measuring (reading out) a set of properties from a biological sample.
 
