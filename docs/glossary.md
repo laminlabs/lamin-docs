@@ -15,7 +15,7 @@ FAIR
 feature
     A feature is a measurable property represented in data (e.g., scalar, vector, image, embedding) [[Wikipedia](https://en.wikipedia.org/wiki/Feature_(machine_learning))].
     In these docs, we use "feature" independent of modeling role: a feature can serve as predictor, target, covariate, or metadata {term}`variable` depending on the analysis.
-    A feature is hence equivalent with a dimension of a dataset.
+    A feature maps to one or more dataset dimensions; in tabular data, scalar features map 1:1 to columns.
 
     LaminDB comes with a {class}`~lamindb.Feature` registry to organize dataset dimensions.
 
