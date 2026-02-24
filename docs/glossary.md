@@ -24,21 +24,22 @@ instance
     Shorthand for "LaminDB instance", a database that manages metadata for datasets in different storage locations.
 
 label
-    A label in LaminDB is an entity in a registry -- e.g. a sample, cell type or perturbation -- that can be "attached" to another entity -- e.g. a dataset or model.
+    A label in LaminDB is an entity in a registry -- e.g. a sample, cell type, or perturbation -- that can be linked to another entity -- e.g. a dataset or model.
 
 lakehouse
-    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with the data management and ACID transaction support of a data warehouse, enabling both structured and unstructured data analytics in a single framework. Lakehouse frameworks include Databrick's [Delta Lake](https://delta.io/), Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), [Starburst](https://www.starburst.io/) and others. Here is a [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, a [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, a [glossary entry](https://www.databricks.com/glossary/data-lakehouse) and a [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
+    A data lakehouse combines the flexibility and cost-effectiveness of a data lake with schema management to enable structured analytics similar to a data warehouse.
+    Early lakehouse frameworks include Databricks' [Delta Lake](https://delta.io/), Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), [Starburst](https://www.starburst.io/) and others. Here is a [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, a [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, a [glossary entry](https://www.databricks.com/glossary/data-lakehouse) and a [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
 ORM
-    Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
+    Object-relational mapper. In LaminDB every sub-class of `Record` (every instance of `Registry`) is an ORM model that corresponds to a SQL table in the underlying metadata database [wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping).
 
 observation
-    In statistics (machine learning), an observation refers to a particular measured instance of a set of random variable.
+    In statistics (machine learning), an observation refers to a particular measured instance of a set of random variables.
 
     In biology, an observation typically corresponds to measuring (reading out) a set of properties from a biological sample.
 
 record
-    A record is a data structure that consists in a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
+    A record is a data structure that consists of a sequence of typed [fields](https://en.wikipedia.org/wiki/Field_(computer_science)) that hold values [[Wikipedia](https://en.wikipedia.org/wiki/Record_(computer_science))].
 
     In LaminDB, any metadata record -- including {class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~lamindb.Run`, etc. -- is modeled as a {class}`~lamindb.models.SQLRecord` and is stored in a row in a table in the SQL database. LaminDB also comes with a class to dynamically model records, {class}`~lamindb.Record`. This is useful for describing more frequently changing dataset schemas, for example, the columns in dynamically ingested parquet files or dynamically created sheets. While changing the fields of a `SQLRecord` requires updating its Python data model definition and running a migration in the SQL database, changing the features of a `Record` can be done dynamically.
 
@@ -48,7 +49,7 @@ sample
     In statistics (machine learning), a sample is an observation of a set of random variables (features, labels, metadata).
 
     Depending on the observational unit chosen for representing data, the statistical sample might correspond 1:1 to a biological sample.
-    Often, this choice presents an interesting cases, as variation across physical samples - targeted in the experimental design - can directly be explained by variation across statistical (digital) samples.
+    Often, this choice presents interesting cases, as variation across physical samples -- targeted in the experimental design -- can be directly explained by variation across statistical (digital) samples.
 
 variable
     We almost always mean "random variable", when we say "variable".
@@ -60,7 +61,7 @@ variable
     A dependent variable is sometimes called a "response variable", "regressand", "criterion", "predicted variable", "measured variable", "explained variable", "experimental variable", "responding variable", "outcome variable", "output variable", "target" or "label".
 
 schema
-    Blueprint for your data’s structure. Tool for curating and validating the organization of your data, helping maintain data integrity as it evolves through various processing steps.
+    A schema is a blueprint for your data's structure and a tool for curating and validating the organization of your data, helping maintain data integrity as it evolves through various processing steps.
 
 registry
     A table in a SQL database (SQLite/Postgres) holding records, enabling queries, enforcing integrity, and fine-grained access management.
