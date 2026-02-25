@@ -7,13 +7,13 @@ Platform features:
 - **audit logs** → full traceability for compliance
 - **single sign-on** → connect Okta, Ping, and other providers
 - **secure** → SOC2 certified, monitoring ISO27001 and HIPAA compliance
-- **auto-generated REST API** → easily build JS-based web applications
 
 Architecture features:
 
 - **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel LaminHub
 - **permissions on the Postgres & storage layer** → no need for an intermediate web service or custom query language
 - **permissions easy to combine with Postgres & AWS** → full customizability
+- **auto-generated REST API** → easily build JS-based web applications
 
 GUI features:
 
