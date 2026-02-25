@@ -2,11 +2,12 @@
 
 Platform features:
 
+- **infra-as-code** → manage many distributed storage locations & databases
 - **permissions** → simple role-based, fine-grained access management for users & teams
 - **audit logs** → full traceability for compliance
 - **single sign-on** → connect Okta, Ping, and other providers
-- **infrastructure** → manage many distributed storage locations & databases
 - **secure** → SOC2 certified, monitoring ISO27001 and HIPAA compliance
+- **auto-generated REST API** → easily build JS-based web applications
 
 Architecture features:
 
@@ -23,11 +24,6 @@ GUI features:
 - **LIMS & ELN** → records, sheets & markdown notes integrated with ontologies
 - **schemas & labels** → validate & monitor data distributions
 - **simple dashboarding** → auto-generate data summaries
-
-Quality of life:
-
-- optional hosting
-- simple auth through GitHub/Google/Microsoft
 
 Give it a try by exploring public omics datasets at [lamin.ai/explore](https://lamin.ai/explore). It's free and no account is required.
 
