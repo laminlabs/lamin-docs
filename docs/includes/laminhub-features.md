@@ -18,7 +18,7 @@ Architecture features:
 GUI features:
 
 - **lineage** → interactive graphs for datasets, notebooks & pipelines
-- **lakehouse** → browse, search & query
+- **catalog** → browse, search & query your lakehouse
 - **notebooks, workflows, runs** → visualize & launch executions
 - **versioning** → manage data & code revisions
 - **LIMS & ELN** → records, sheets & markdown notes integrated with ontologies
