@@ -6,7 +6,7 @@ Platform features:
 - **permissions** → simple role-based, fine-grained access management for users & teams
 - **audit logs** → full traceability for compliance
 - **single sign-on** → connect Okta, Ping, and other providers
-- **secure** → SOC2 certified, monitoring ISO27001 and HIPAA compliance
+- **secure** → SOC2 certified, monitoring ISO27001 & HIPAA compliance
 
 Architecture features:
 
