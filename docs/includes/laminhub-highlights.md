@@ -1,3 +1,5 @@
+<!-- note that this syncs exactly on to the pricing page, if you edit this list, please also edit frontend/src/routes/(landing-page)/(...)/pricing/+page.svelte -->
+
 One GUI:
 
 - **lineage** → interactive graphs for datasets, notebooks & pipelines
@@ -19,7 +21,7 @@ Enterprise essentials:
 
 Enterprise highlights:
 
-- permissions on the Postgres & storage layer → no need for an intermediate web service or query language
+- permissions on the Postgres & storage layer → no need for an intermediate web service or custom query language
 - permissions easy to combine with Postgres & AWS permissions → full customizability
 
 Quality of life:
