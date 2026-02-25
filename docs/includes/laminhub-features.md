@@ -3,7 +3,7 @@
 Platform features:
 
 - **infra-as-code** → manage many distributed storage locations & databases
-- **permissions** → simple role-based, fine-grained access management for users & teams
+- **permissions** → role-based, fine-grained access management for users & teams
 - **audit logs** → full traceability for compliance
 - **single sign-on** → connect Okta, Ping, and other providers
 - **secure** → SOC2 certified, monitoring ISO27001 & HIPAA compliance
@@ -12,8 +12,8 @@ Architecture features:
 
 - **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel LaminHub
 - **permissions on the Postgres & storage layer** → no need for an intermediate web service or custom query language
-- **permissions easy to combine with Postgres & AWS** → full customizability
-- **auto-generated REST API** → easily build JS-based web applications
+- **permissions that combine easily with Postgres & AWS** → full customizability and admin control
+- **auto-generated REST API** → optional REST interface for JS-based web applications
 
 GUI features:
 
