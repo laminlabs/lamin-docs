@@ -1,3 +1,4 @@
+- 💄 Pricing page v2 [PR](https://github.com/laminlabs/laminhub-public/pull/233) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Respect Nextflow MIME suffix behavior in Launch page inputs form [PR](https://github.com/laminlabs/laminhub-public/pull/232) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Account for recreated artifacts and recreated collections in lineage explorer [PR](https://github.com/laminlabs/laminhub-public/pull/231) [@falexwolf](https://github.com/falexwolf)
 - 💄 Display run entrypoints in transform, run, and lineage views [PR](https://github.com/laminlabs/laminhub-public/pull/230) [@falexwolf](https://github.com/falexwolf)
