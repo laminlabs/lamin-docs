@@ -10,16 +10,16 @@ One GUI:
 
 Enterprise essentials:
 
-- **RBAC** → role-based, fine-grained permission management for users & teams
+- **permissions** → role-based, fine-grained access management for users & teams
 - **audit logs** → full traceability for compliance
-- **SSO** → connect Okta, Ping, and other providers
+- **single sign-on** → connect Okta, Ping, and other providers
 - **infrastructure** → manage many distributed storage locations & databases
 - **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel LaminHub
 - **secure** → SOC2 certified, monitoring ISO27001 & HIPAA compliance
 
 Enterprise highlights:
 
-- permissions on the Postgres & storage layer → **no** need for an intermediate web service or query language
+- permissions on the Postgres & storage layer → no need for an intermediate web service or query language
 - permissions easy to combine with Postgres & AWS permissions → full customizability
 
 Quality of life:
