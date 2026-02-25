@@ -264,11 +264,11 @@ If you are an admin, you can use two commands to create and deploy migrations:
 
 ### Create a migration
 
-You need to have the module package installed locally:
+You need to have the package installed locally:
 
 ```
-git clone https://github.com/my-org/lnmodules-custom
-cd lnmodules-custom
+git clone https://github.com/my-org/my-module
+cd my-module
 pip install -e .
 ```
 
