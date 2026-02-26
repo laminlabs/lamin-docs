@@ -1,0 +1,1 @@
+- 🐛 Fix allowed suffixes in launch input selection [PR](https://github.com/laminlabs/laminhub-public/pull/234) [@sunnyosun](https://github.com/sunnyosun)
