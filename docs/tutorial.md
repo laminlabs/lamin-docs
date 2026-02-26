@@ -91,7 +91,7 @@ For more info: {doc}`/track`
 
 <!-- #region -->
 
-:::{dropdown} How do I track a workflow or a pipeline instead of a notebook?
+:::{dropdown} How do I track a workflow or a pipeline instead of a notebook or script?
 
 Use {meth}`~lamdindb.flow`:
 
@@ -144,7 +144,7 @@ When you need more control you can also use git-inspired change management via c
 
 ```bash
 lamin switch -c my_branch
-# ... make changes and save artifacts ...
+# ... make changes ...
 lamin switch main
 lamin merge my_branch
 ```
@@ -155,17 +155,15 @@ For more info: {class}`~lamindb.Branch`
 
 ### Manage agent plans
 
-If you're working with agent plans, here is a way to link them to a branch:
+If you're working with an agent plan, here is a way to save it:
 
 <!-- #region -->
 
 ```bash
-# save a plan file as an artifact
-# this will auto-save the branch to a dedicated branch if you switched to one and your changes can always be traced back to one or more plans
 lamin save /path/to/.cursor/plans/my-agent-plan.md
 ```
 
-Here is how to link a run to a plan:
+It you switched to a branch, the plan will be linked to that branch. Here is how to link a plan to a run:
 
 ```python
 ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
@@ -199,7 +197,7 @@ artifact.describe()
 
 ### Access artifacts
 
-Get the artifact by `key`.
+Get the artifact by `key`:
 
 ```python
 artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
@@ -207,19 +205,19 @@ artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
 
 :::
 
-And this is how you load it back into memory.
+Load it into memory:
 
 ```python
 artifact.load()
 ```
 
-Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`.
+Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`:
 
 ```python
 artifact.cache()
 ```
 
-If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more on this, see: {doc}`arrays`.
+If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more: {doc}`arrays`
 
 ### Update & delete artifacts
 
@@ -233,7 +231,7 @@ artifact.restore()  # restore from trash
 # artifact.delete(permanent=True)  # permanently delete
 ```
 
-::{dropdown} What happens when I delete an artifact?
+:::{dropdown} What happens when I delete an artifact?
 
 By default, deleting moves an artifact to the `trash` branch so it no longer appears in standard queries.
 
@@ -243,7 +241,7 @@ To restore it, call `artifact.restore()`. For archive/trash semantics and query 
 
 ### Trace data lineage
 
-You can understand where an artifact comes from by looking at its {class}`~lamindb.Transform` & {class}`~lamindb.Run` records.
+You can understand where an artifact comes from by looking at its {class}`~lamindb.Transform` & {class}`~lamindb.Run` attributes:
 
 ```python
 artifact.transform
@@ -253,7 +251,7 @@ artifact.transform
 artifact.run
 ```
 
-Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep.
+Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep:
 
 ```python
 artifact.view_lineage()
@@ -264,15 +262,21 @@ artifact.view_lineage()
 ::::{tab-set}
 :::{tab-item} Py
 
-Explore and load the notebook from [here](https://lamin.ai/laminlabs/lamindata/transform/F4L3oC6QsZvQ0002).
+Explore and load the notebook [here](https://lamin.ai/laminlabs/lamindata/transform/F4L3oC6QsZvQ).
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KQmzmmLOeBN0C8Yk0003.png" width="800">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KQmzmmLOeBN0C8Yk0004.png" width="800">
 :::
 :::{tab-item} Hub
 
-Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0000).
+Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq).
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/0bXenaC9F24iP3Iy0000.png" width="800">
+```{raw} html
+<video width="500" controls>
+  <source src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/Xdiikc2c1tPtHcvF0000.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
 :::
 ::::
 
@@ -315,14 +319,6 @@ If you did _not_ use RStudio's notebook mode, you have to render an HTML externa
      ```bash
      lamin save tutorial.Rmd
      ```
-
-:::
-
-:::{dropdown} Here is how a notebook looks on the hub.
-
-[Explore](https://lamin.ai/laminlabs/lamindata/transform/PtTXoc0RbOIq65cN).
-
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J80003.png" width="900px">
 
 :::
 
