@@ -55,7 +55,7 @@ For more info, see {doc}`/setup`.
 
 <!-- #endregion -->
 
-Let's now track a notebook or script that's being run.
+Let's now track the notebook or script that is running.
 
 ```python
 import lamindb as ln
@@ -117,6 +117,32 @@ This is important as much insight generated from biological data is driven by co
 Yes. What OpenLineage calls a "job", LaminDB calls a "transform". What OpenLineage calls a "run", LaminDB calls a "run".
 
 :::
+
+### Branches & agent plans
+
+When you need more control, you can track work on a branch and link an explicit agent plan to a run.
+
+```bash
+lamin switch -c my_branch
+# ... make changes and save artifacts ...
+lamin switch main
+lamin merge my_branch
+
+# optional: save a plan file as an artifact
+lamin save /path/to/.cursor/plans/my-agent-plan.md
+```
+
+```python
+ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
+```
+
+::::{dropdown} Why this matters
+
+For interactive and agentic work, this adds explicit control on top of lineage: branches help isolate and review changes, and plan tracking links non-deterministic execution to an auditable intent.
+
+For more patterns, see {doc}`/track`.
+
+::::
 
 ## Manage artifacts
 
@@ -330,6 +356,18 @@ This is how you query artifacts by cell type annotations.
 
 ```python
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
+```
+
+### Update or remove annotations
+
+```python
+# add labels
+artifact.records.add(my_experiment)
+artifact.cell_types.add(cell_type)
+
+# remove labels
+artifact.records.remove(my_experiment)
+artifact.cell_types.remove(cell_type)
 ```
 
 If you want to annotate by non-categorical metadata or indicate the feature for a label, annotate via features.
