@@ -1,3 +1,4 @@
+- 🚸 Refactor plan saving to strip TODOs from description [PR](https://github.com/laminlabs/lamin-cli/pull/211) [@falexwolf](https://github.com/falexwolf)
 - 👷 Run tests also from `lamin-cli`, not only from `lamindb` [PR](https://github.com/laminlabs/lamin-cli/pull/212) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3566) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Enable deleting mark files in `delete_instance` and use `access_token` depending in client [PR](https://github.com/laminlabs/lamindb-setup/pull/1306) [@Koncopd](https://github.com/Koncopd)
