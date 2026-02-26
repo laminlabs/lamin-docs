@@ -120,9 +120,9 @@ Yes. What OpenLineage calls a "job", LaminDB calls a "transform". What OpenLinea
 
 ## Manage artifacts
 
-The {class}`~lamindb.Artifact` class manages datasets & models that are stored as files, folders, or arrays. {class}`~lamindb.Artifact` is a registry to manage search, queries, validation & storage access.
+{class}`~lamindb.Artifact` is the core object for datasets and models in LaminDB, whether they are files, folders, tables, or array-like data.
 
-You can register data objects (`DataFrame`, `AnnData`, ...) and files or folders in local storage, AWS S3 (`s3://`), Google Cloud (`gs://`), Hugging Face (`hf://`), or any other file system supported by `fsspec`.
+It gives you one interface for registration, access, annotation, lineage, and queries across local storage, AWS S3 (`s3://`), Google Cloud (`gs://`), Hugging Face (`hf://`), and any other file system supported by `fsspec`.
 
 ### Create an artifact
 
@@ -165,6 +165,26 @@ artifact.cache()
 ```
 
 If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more on this, see: {doc}`arrays`.
+
+### Update & delete artifacts
+
+```python
+artifact.description = "My updated description"
+artifact.save()  # persist metadata changes
+
+artifact.delete()  # move to trash
+artifact.restore()  # restore from trash
+
+# artifact.delete(permanent=True)  # permanently delete
+```
+
+::{dropdown} What happens when I delete an artifact?
+
+By default, deleting moves an artifact to the `trash` branch so it no longer appears in standard queries.
+
+To restore it, call `artifact.restore()`. For archive/trash semantics and query patterns, see {doc}`/faq/trash-archive`.
+
+:::
 
 ### Trace data lineage
 
