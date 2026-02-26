@@ -4,7 +4,7 @@ execute_via: python
 
 # Tutorial
 
-This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#quickstart): there, you quickly try key LaminDB features; here, you learn the core operations end-to-end with conceptual context.
+This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#quickstart): there, you skim through core features; here, you learn the core operations end-to-end with conceptual context.
 
 ## Track a notebook or script
 
@@ -40,16 +40,16 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
    ```python
    --db postgresql://<user>:<pwd>@<hostname>:<port>/<dbname>
    ```
-3. Instead of a default instance name derived from the storage location, provide a custom name:
+3. Instead of a default instance name derived from the storage location or the Postgres database, provide a custom name:
    ```python
    --name my-name
    ```
-4. Mount additional schema modules:
+4. Mount additional modules:
    ```python
    --modules bionty,pertdb,custom1
    ```
 
-For more info, see {doc}`/setup`.
+For more info: {doc}`/setup`
 
 :::
 
@@ -83,19 +83,37 @@ The {class}`~lamindb.Transform` registry stores data transformations: scripts, n
 
 The {class}`~lamindb.Run` registry stores executions of transforms. Many runs can be linked to the same transform if executed with different context (time, user, input data, etc.).
 
-For deeper workflow patterns, see {doc}`/track`.
+For more info: {doc}`/track`
 
 :::
 
 <!-- #region -->
 
-:::{dropdown} How do I track a pipeline instead of a notebook?
+:::{dropdown} How do I track a workflow or a pipeline instead of a notebook?
 
-Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
+Use {meth}`~lamdindb.flow`:
+
+```python
+import lamindb as ln
+
+
+@ln.flow()
+def ingest_dataset(key: str) -> ln.Artifact:
+    df = ln.examples.datasets.mini_immuno.get_dataset1()
+    return ln.Artifact.from_dataframe(df, key=key).save()
+
+
+ingest_dataset(key="my_analysis/dataset.parquet")
+```
+
+For more info: {doc}`/track`
+
+Leverage a pipeline integration, see: {doc}`/pipelines`.
+
+You can also manually create a transform and manage its runs with your custom logic:
 
 ```python
 transform = ln.Transform(key="my_pipeline", version="1.2.0")
-ln.track(transform)
 ```
 
 :::
