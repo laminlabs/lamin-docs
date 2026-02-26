@@ -4,9 +4,9 @@ execute_via: python
 
 # Tutorial
 
-LaminDB provides a framework to transform datasets into more useful representations: validated & queryable datasets, machine learning models, and analytical insights. The transformations can be notebooks, scripts, pipelines, or functions.
+This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#quickstart): there, you quickly try key LaminDB features; here, you learn the core operations end-to-end with conceptual context.
 
-The metadata involved in this process are stored in a _LaminDB instance_, a database that manages datasets in storage. For the following walk through LaminDB's core features, we'll be working with a local instance.
+LaminDB helps transform datasets into validated, queryable datasets, machine learning models, and analytical insights. Those transformations can be notebooks, scripts, pipelines, or functions. The metadata for this process lives in a _LaminDB instance_. In this walkthrough, we'll use a local instance.
 
 ## Track a notebook or script
 
