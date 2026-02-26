@@ -122,6 +122,8 @@ Yes. What OpenLineage calls a "job", LaminDB calls a "transform". What OpenLinea
 
 When you need more control, you can track work on a branch and link an explicit agent plan to a run.
 
+<!-- #region -->
+
 ```bash
 lamin switch -c my_branch
 # ... make changes and save artifacts ...
@@ -135,6 +137,8 @@ lamin save /path/to/.cursor/plans/my-agent-plan.md
 ```python
 ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
 ```
+
+<!-- #endregion -->
 
 ::::{dropdown} Why this matters
 
