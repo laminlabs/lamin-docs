@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3566) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Enable deleting mark files in `delete_instance` and use `access_token` depending in client [PR](https://github.com/laminlabs/lamindb-setup/pull/1306) [@Koncopd](https://github.com/Koncopd)
 - 📝 Document agent plan tracking also in README and `ln.track()` API reference [PR](https://github.com/laminlabs/lamindb/pull/3565) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Support CELLxGENE 7.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3466) [@Zethson](https://github.com/Zethson)
