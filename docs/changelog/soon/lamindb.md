@@ -1,3 +1,4 @@
+- 👷 Refactor package testing setup with `lamin_lambda_utils` [PR](https://github.com/laminlabs/lamindb-setup/pull/1304) [@falexwolf](https://github.com/falexwolf)
 - ✨ Refresh federated AWS credentials on the `botocore` level [PR](https://github.com/laminlabs/lamindb/pull/3561) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor migration logic [PR](https://github.com/laminlabs/lamindb-setup/pull/1303) [@falexwolf](https://github.com/falexwolf)
 - ✨ Use refreshable credentials [PR](https://github.com/laminlabs/lamindb-setup/pull/1301) [@Koncopd](https://github.com/Koncopd)
