@@ -836,7 +836,7 @@ feature_sets = ln.Schema.filter(genes__symbol="CD8A").all()
 ln.Artifact.filter(feature_sets__in=feature_sets).to_dataframe()
 ```
 
-## Scale learning
+## Manage collections of datasets
 
 How do you integrate new datasets with your existing datasets? Leverage {class}`~lamindb.Collection`.
 
@@ -865,10 +865,10 @@ collection.load()
 # collection.open()
 
 # or iterate over its artifacts
-collection.artifacts.all()
+collection.ordered_artifacts.all()
 
 # or look at a DataFrame listing the artifacts
-collection.artifacts.to_dataframe()
+collection.ordered_artifacts.to_dataframe()
 ```
 
 Directly train models on collections of `AnnData`.
@@ -891,4 +891,6 @@ for batch in data_loader:
 <!-- #end_skip_laminr -->
 <!-- #endregion -->
 
-Read this [blog post](https://lamin.ai/blog/arrayloader-benchmarks) for more on training models on distributed datasets.
+For more: {doc}`/arrays`
+
+Or this [blog post](https://lamin.ai/blog/arrayloader-benchmarks) for training models on distributed datasets.
