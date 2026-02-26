@@ -1,3 +1,4 @@
+- 🐛 Fix hostdb for features getitem [PR](https://github.com/laminlabs/lamindb/pull/3564) [@sunnyosun](https://github.com/sunnyosun)
 - 🔊 Adapt logging to refreshable credentials [PR](https://github.com/laminlabs/lamindb-setup/pull/1305) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Bump lamin-utils [PR](https://github.com/laminlabs/lamindb/pull/3563) [@sunnyosun](https://github.com/sunnyosun)
 - 👷 Refactor package testing setup with `lamin_lambda_utils` [PR](https://github.com/laminlabs/lamindb-setup/pull/1304) [@falexwolf](https://github.com/falexwolf)
