@@ -55,7 +55,7 @@ For more info, see {doc}`/setup`.
 
 <!-- #endregion -->
 
-Let's now track the notebook that's being run.
+Let's now track a notebook or script that's being run.
 
 ```python
 import lamindb as ln
@@ -63,7 +63,7 @@ import lamindb as ln
 ln.track()  # track the current notebook or script
 ```
 
-By calling {meth}`~lamindb.track`, the notebook gets automatically linked as the source of all data that's about to be saved! You can see all your transforms and their runs in the {class}`~lamindb.Transform` and {class}`~lamindb.Run` registries.
+Calling {meth}`~lamindb.track` links this execution to the data you'll save in this run. You can inspect your scripts & notebooks in the {class}`~lamindb.Transform` registry and their runs in the {class}`~lamindb.Run` registry.
 
 ```python
 ln.Transform.to_dataframe()
@@ -82,6 +82,8 @@ ln.Run.to_dataframe()
 The {class}`~lamindb.Transform` registry stores data transformations: scripts, notebooks, pipelines, functions.
 
 The {class}`~lamindb.Run` registry stores executions of transforms. Many runs can be linked to the same transform if executed with different context (time, user, input data, etc.).
+
+For deeper workflow patterns, see {doc}`/track`.
 
 :::
 
