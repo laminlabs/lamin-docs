@@ -1,3 +1,4 @@
+- 🍱 Support CELLxGENE 7.0.0 [PR](https://github.com/laminlabs/lamindb/pull/3466) [@Zethson](https://github.com/Zethson)
 - 🐛 Fix hostdb for features getitem [PR](https://github.com/laminlabs/lamindb/pull/3564) [@sunnyosun](https://github.com/sunnyosun)
 - 🔊 Adapt logging to refreshable credentials [PR](https://github.com/laminlabs/lamindb-setup/pull/1305) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Bump lamin-utils [PR](https://github.com/laminlabs/lamindb/pull/3563) [@sunnyosun](https://github.com/sunnyosun)
