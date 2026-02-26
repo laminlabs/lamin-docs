@@ -407,7 +407,13 @@ artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"
 artifact.describe()
 ```
 
-This is how you remove feature values from the artifact (and optionally the feature definitions).
+This is how you query artifacts by features.
+
+```python
+ln.Artifact.filter(temperature=21.6).to_dataframe()
+```
+
+Optionally, after querying, this is how you clean up feature values from the artifact and remove the feature definitions.
 
 ```python
 # remove feature values from this artifact
@@ -416,12 +422,6 @@ artifact.features.remove_values(["temperature", "experiment"])
 # optionally remove feature definitions from the registry
 ln.Feature.get(name="temperature").delete()
 ln.Feature.get(name="experiment").delete()
-```
-
-This is how you query artifacts by features.
-
-```python
-ln.Artifact.filter(temperature=21.6).to_dataframe()
 ```
 
 ### Validate an artifact
