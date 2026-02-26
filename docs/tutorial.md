@@ -336,14 +336,14 @@ Note that data lineage also helps to understand what a dataset is being used for
 
 You can annotate artifacts with features and labels. Features are measurement dimensions (e.g. `"organism"`, `"temperature"`) and labels are measured categories (e.g. `"human"`, `"mouse"`).
 
-Let's annotate an artifact with a {class}`~lamindb.Record`, a built-in universal label ontology.
+Let's annotate an artifact with a {class}`~lamindb.ULabel`, a built-in universal label registry.
 
 ```python
-# create & save a record
-my_experiment = ln.Record(name="My experiment").save()
+# create & save a universal label
+my_experiment = ln.ULabel(name="My experiment").save()
 
-# annotate the artifact with a record
-artifact.records.add(my_experiment)
+# annotate the artifact with a universal label
+artifact.ulabels.add(my_experiment)
 
 # describe the artifact
 artifact.describe()
@@ -354,7 +354,7 @@ artifact.describe()
 This is how you query artifacts based on the annotation.
 
 ```python
-ln.Artifact.filter(records=my_experiment).to_dataframe()
+ln.Artifact.filter(ulabels=my_experiment).to_dataframe()
 ```
 
 You can also annotate with labels from other registries, e.g., the biological ontologies in {mod}`bionty`.
@@ -382,11 +382,11 @@ ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 
 ```python
 # add labels
-artifact.records.add(my_experiment)
+artifact.ulabels.add(my_experiment)
 artifact.cell_types.add(cell_type)
 
 # remove labels
-artifact.records.remove(my_experiment)
+artifact.ulabels.remove(my_experiment)
 artifact.cell_types.remove(cell_type)
 ```
 
@@ -395,7 +395,7 @@ If you want to annotate by non-categorical metadata or indicate the feature for 
 ```python
 # define the "temperature" & "experiment" features
 ln.Feature(name="temperature", dtype=float).save()
-ln.Feature(name="experiment", dtype=ln.Record).save()
+ln.Feature(name="experiment", dtype=ln.ULabel).save()
 
 # annotate the artifact
 artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"})
@@ -427,11 +427,11 @@ In lamindb, validation also means annotation with the validated metadata which i
 import bionty as bt  # <-- use bionty to access registries with imported public ontologies
 
 # define a few more valid labels
-ln.Record(name="DMSO").save()
-ln.Record(name="IFNG").save()
+ln.ULabel(name="DMSO").save()
+ln.ULabel(name="IFNG").save()
 
 # define a few more valid features
-ln.Feature(name="perturbation", dtype=ln.Record).save()
+ln.Feature(name="perturbation", dtype=ln.ULabel).save()
 ln.Feature(name="cell_type_by_model", dtype=bt.CellType).save()
 ln.Feature(name="cell_type_by_expert", dtype=bt.CellType).save()
 ln.Feature(name="assay_oid", dtype=bt.ExperimentalFactor.ontology_id).save()
