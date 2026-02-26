@@ -407,6 +407,17 @@ artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"
 artifact.describe()
 ```
 
+This is how you remove feature values from the artifact (and optionally the feature definitions).
+
+```python
+# remove feature values from this artifact
+artifact.features.remove_values(["temperature", "experiment"])
+
+# optionally remove feature definitions from the registry
+ln.Feature.get(name="temperature").delete()
+ln.Feature.get(name="experiment").delete()
+```
+
 This is how you query artifacts by features.
 
 ```python
@@ -415,11 +426,9 @@ ln.Artifact.filter(temperature=21.6).to_dataframe()
 
 ### Validate an artifact
 
-Validated datasets are more re-usable by analysts and machine learning models. You can define what a valid artifact should look like by defining a schema.
+Validated datasets are more re-usable by analysts and machine learning models. You can define what a valid artifact should look like by defining a schema. If you do that, LaminDB will also automatically annotate with validated metadata which helps with finding the artifact.
 
-In lamindb, validation also means annotation with the validated metadata which increases the findability of a dataset.
-
-:::{dropdown} Can you give me examples for what findability and usability means?
+:::{dropdown} Give me examples for findability and usability.
 
 1. Findability: Which datasets measured expression of cell marker `CD14`? Which characterized cell line `K562`? Which have a test & train split? Etc.
 2. Usability: Are there typos in feature names? Are there typos in labels? Are types and units of features consistent? Etc.
@@ -494,9 +503,7 @@ artifact_v2 = ln.Artifact.from_dataframe(df_updated, revises=artifact_v1).save()
 
 <br>
 
-The good thing about passing `revises: Artifact` is that you don't need to worry about coming up with naming conventions for paths.
-
-The good thing about versioning based on `key` is that it's how all data versioning tools are doing it.
+The good thing about passing `revises` is that you don't need to worry about coming up with naming conventions for paths. The good thing about versioning based on `key` is that it's how all data versioning tools are doing it and you can build a file hierarchy.
 
 :::
 
@@ -515,22 +522,22 @@ ln.Artifact.to_dataframe()
 The `Artifact` registry additionally supports seeing all feature annotations of an artifact.
 
 ```python
-ln.Artifact.to_dataframe(features=True)
+ln.Artifact.to_dataframe(include="features")
 ```
 
-LaminDB's central classes are registries that store records ({class}`~lamindb.models.SQLRecord` objects). If you want to see the fields of a registry, look at the class or auto-complete.
+LaminDB's central classes are registries that store {class}`~lamindb.models.SQLRecord` objects. If you want to see the fields of a registry, call `.describe()` on the class or auto-complete:
 
 ```python
-ln.Artifact
+ln.Artifact.describe()
 ```
 
-Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest records in the database.
+Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest additions to the database:
 
 ```python
 ln.view()
 ```
 
-:::{dropdown} Which registries have I already learned about? 🤔
+:::{dropdown} Which registries have I already learned about?
 
 - {class}`~lamindb.Artifact`: datasets & models stored as files, folders, or arrays
 - {class}`~lamindb.Transform`: transforms of artifacts
@@ -569,7 +576,7 @@ For any field, the double underscore defines a comparator, e.g.,
 - `name__startswith="Martha"`: `name` starts with `"Martha`
 - `name__in=["Martha", "John"]`: `name` is `"John"` or `"Martha"`
 
-For more info, see: {doc}`registries`.
+For more info: {doc}`registries`
 
 :::
 
@@ -598,7 +605,7 @@ records = ln.Record.lookup()
 
 :::
 
-For more info, see: {doc}`registries`.
+For more info: {doc}`registries`
 
 ## Manage files & folders
 
