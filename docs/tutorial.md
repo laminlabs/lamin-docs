@@ -4,11 +4,9 @@ execute_via: python
 
 # Tutorial
 
-LaminDB provides a framework to transform datasets into more useful representations: validated & queryable datasets, machine learning models, and analytical insights. The transformations can be notebooks, scripts, pipelines, or functions.
+This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#quickstart): there, you skim through core features; here, you learn the core operations end-to-end with conceptual context.
 
-The metadata involved in this process are stored in a _LaminDB instance_, a database that manages datasets in storage. For the following walk through LaminDB's core features, we'll be working with a local instance.
-
-## Track a notebook or script
+## Track changes
 
 If you don't have a LaminDB instance, create one using the shell:
 
@@ -42,22 +40,24 @@ lc$init(storage = "./lamin-tutorial", modules = "bionty")
    ```python
    --db postgresql://<user>:<pwd>@<hostname>:<port>/<dbname>
    ```
-3. Instead of a default instance name derived from the storage location, provide a custom name:
+3. Instead of a default instance name derived from the storage location or the Postgres database, provide a custom name:
    ```python
    --name my-name
    ```
-4. Mount additional schema modules:
+4. Mount additional modules:
    ```python
    --modules bionty,pertdb,custom1
    ```
 
-For more info, see {doc}`/setup`.
+For more info: {doc}`/setup`
 
 :::
 
 <!-- #endregion -->
 
-Let's now track the notebook that's being run.
+### Track a notebook or script
+
+Let's now track the notebook or script that is running.
 
 ```python
 import lamindb as ln
@@ -65,7 +65,7 @@ import lamindb as ln
 ln.track()  # track the current notebook or script
 ```
 
-By calling {meth}`~lamindb.track`, the notebook gets automatically linked as the source of all data that's about to be saved! You can see all your transforms and their runs in the {class}`~lamindb.Transform` and {class}`~lamindb.Run` registries.
+Calling {meth}`~lamindb.track` links this execution to the data you'll save in this run. You can inspect your scripts & notebooks in the {class}`~lamindb.Transform` registry and their runs in the {class}`~lamindb.Run` registry.
 
 ```python
 ln.Transform.to_dataframe()
@@ -85,30 +85,48 @@ The {class}`~lamindb.Transform` registry stores data transformations: scripts, n
 
 The {class}`~lamindb.Run` registry stores executions of transforms. Many runs can be linked to the same transform if executed with different context (time, user, input data, etc.).
 
+For more info: {doc}`/track`
+
 :::
 
 <!-- #region -->
 
-:::{dropdown} How do I track a pipeline instead of a notebook?
+:::{dropdown} How do I track a workflow or a pipeline instead of a notebook or script?
 
-Leverage a pipeline integration, see: {doc}`/pipelines`. Or manually add code as seen below.
+Use {meth}`~lamdindb.flow`:
+
+```python
+import lamindb as ln
+
+
+@ln.flow()
+def ingest_dataset(key: str) -> ln.Artifact:
+    df = ln.examples.datasets.mini_immuno.get_dataset1()
+    return ln.Artifact.from_dataframe(df, key=key).save()
+
+
+ingest_dataset(key="my_analysis/dataset.parquet")
+```
+
+For more info: {doc}`/track`
+
+Leverage a pipeline integration, see: {doc}`/pipelines`.
+
+You can also manually create a transform and manage its runs with your custom logic:
 
 ```python
 transform = ln.Transform(key="my_pipeline", version="1.2.0")
-ln.track(transform)
 ```
 
 :::
 
 <!-- #endregion -->
 
-:::{dropdown} Why should I care about tracking notebooks?
+:::{dropdown} Why should I care about emergent data lineage?
 
-Because of interactivity & humans are in the loop, most mistakes happen when using notebooks.
+When humans & agents are in the loop, most mistakes happen outside deterministic computational pipelines. They happen in between pipelines and when running notebooks & scripts.
 
 {func}`~lamindb.track` makes notebooks & derived results reproducible & auditable, enabling to learn from mistakes.
-
-This is important as much insight generated from biological data is driven by computational biologists _interacting_ with it. An early blog post on this is [here](https://blog.lamin.ai/nbproject).
 
 :::
 
@@ -118,11 +136,46 @@ Yes. What OpenLineage calls a "job", LaminDB calls a "transform". What OpenLinea
 
 :::
 
+### Manage changes with branches
+
+When you need more control you can also use git-inspired change management via contribution branches that you merge into main.
+
+<!-- #region -->
+
+```bash
+lamin switch -c my_branch
+# ... make changes ...
+lamin switch main
+lamin merge my_branch
+```
+
+<!-- #endregion -->
+
+For more info: {class}`~lamindb.Branch`
+
+### Manage agent plans
+
+If you're working with an agent plan, here is a way to save it:
+
+<!-- #region -->
+
+```bash
+lamin save /path/to/.cursor/plans/my-agent-plan.md
+```
+
+It you switched to a branch, the plan will be linked to that branch. Here is how to link a plan to a run:
+
+```python
+ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
+```
+
+<!-- #endregion -->
+
 ## Manage artifacts
 
-The {class}`~lamindb.Artifact` class manages datasets & models that are stored as files, folders, or arrays. {class}`~lamindb.Artifact` is a registry to manage search, queries, validation & storage access.
+{class}`~lamindb.Artifact` is the core object for datasets and models in LaminDB, whether they are files, folders, tables, or array-like data.
 
-You can register data objects (`DataFrame`, `AnnData`, ...) and files or folders in local storage, AWS S3 (`s3://`), Google Cloud (`gs://`), Hugging Face (`hf://`), or any other file system supported by `fsspec`.
+It gives you one interface for registration, access, annotation, lineage, and queries across local storage, AWS S3 (`s3://`), Google Cloud (`gs://`), Hugging Face (`hf://`), and any other file system supported by `fsspec`.
 
 ### Create an artifact
 
@@ -144,7 +197,7 @@ artifact.describe()
 
 ### Access artifacts
 
-Get the artifact by `key`.
+Get the artifact by `key`:
 
 ```python
 artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
@@ -152,23 +205,43 @@ artifact = ln.Artifact.get(key="my_datasets/rnaseq1.parquet")
 
 :::
 
-And this is how you load it back into memory.
+Load it into memory:
 
 ```python
 artifact.load()
 ```
 
-Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`.
+Typically your artifact is in a cloud storage location. To get a local file path to it, call {meth}`~lamindb.Artifact.cache`:
 
 ```python
 artifact.cache()
 ```
 
-If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more on this, see: {doc}`arrays`.
+If the data is large, you might not want to cache but stream it via {meth}`~lamindb.Artifact.open`. For more: {doc}`arrays`
+
+### Update & delete artifacts
+
+```python
+artifact.description = "My updated description"
+artifact.save()  # persist metadata changes
+
+artifact.delete()  # move to trash
+artifact.restore()  # restore from trash
+
+# artifact.delete(permanent=True)  # permanently delete
+```
+
+:::{dropdown} What happens when I delete an artifact?
+
+By default, deleting moves an artifact to the `trash` branch so it no longer appears in standard queries.
+
+To restore it, call `artifact.restore()`. For archive/trash semantics and query patterns, see {doc}`/faq/trash-archive`.
+
+:::
 
 ### Trace data lineage
 
-You can understand where an artifact comes from by looking at its {class}`~lamindb.Transform` & {class}`~lamindb.Run` records.
+You can understand where an artifact comes from by looking at its {class}`~lamindb.Transform` & {class}`~lamindb.Run` attributes:
 
 ```python
 artifact.transform
@@ -178,7 +251,7 @@ artifact.transform
 artifact.run
 ```
 
-Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep.
+Or visualize deeper data lineage with the `view_lineage()` method. Here we're only one step deep:
 
 ```python
 artifact.view_lineage()
@@ -189,19 +262,23 @@ artifact.view_lineage()
 ::::{tab-set}
 :::{tab-item} Py
 
-Explore and load the notebook from [here](https://lamin.ai/laminlabs/lamindata/transform/F4L3oC6QsZvQ0002).
+Explore and load the notebook [here](https://lamin.ai/laminlabs/lamindata/transform/F4L3oC6QsZvQ).
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KQmzmmLOeBN0C8Yk0003.png" width="800">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KQmzmmLOeBN0C8Yk0004.png" width="800">
 :::
 :::{tab-item} Hub
 
-Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0000).
+Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq).
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/0bXenaC9F24iP3Iy0000.png" width="800">
+```{raw} html
+<video width="500" controls>
+  <source src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/Xdiikc2c1tPtHcvF0000.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
 :::
 ::::
-
-:::::
 
 Once you're done, at the end of your notebook or script, call {meth}`~lamindb.finish`. Here, we're not yet done so we're commenting it out.
 
@@ -245,14 +322,6 @@ If you did _not_ use RStudio's notebook mode, you have to render an HTML externa
 
 :::
 
-:::{dropdown} Here is how a notebook looks on the hub.
-
-[Explore](https://lamin.ai/laminlabs/lamindata/transform/PtTXoc0RbOIq65cN).
-
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/RGXj5wcAf7EAc6J80003.png" width="900px">
-
-:::
-
 <!-- #region -->
 
 To create a new version of a notebook or script, run `lamin load` on the terminal, e.g.,
@@ -270,14 +339,14 @@ Note that data lineage also helps to understand what a dataset is being used for
 
 You can annotate artifacts with features and labels. Features are measurement dimensions (e.g. `"organism"`, `"temperature"`) and labels are measured categories (e.g. `"human"`, `"mouse"`).
 
-Let's annotate an artifact with a {class}`~lamindb.Record`, a built-in universal label ontology.
+Let's annotate an artifact with a {class}`~lamindb.ULabel`, a built-in universal label registry.
 
 ```python
-# create & save a record
-my_experiment = ln.Record(name="My experiment").save()
+# create & save a universal label
+my_experiment = ln.ULabel(name="My experiment").save()
 
-# annotate the artifact with a record
-artifact.records.add(my_experiment)
+# annotate the artifact with a universal label
+artifact.ulabels.add(my_experiment)
 
 # describe the artifact
 artifact.describe()
@@ -288,7 +357,7 @@ artifact.describe()
 This is how you query artifacts based on the annotation.
 
 ```python
-ln.Artifact.filter(records=my_experiment).to_dataframe()
+ln.Artifact.filter(ulabels=my_experiment).to_dataframe()
 ```
 
 You can also annotate with labels from other registries, e.g., the biological ontologies in {mod}`bionty`.
@@ -312,12 +381,24 @@ This is how you query artifacts by cell type annotations.
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 ```
 
+### Update or remove annotations
+
+```python
+# add labels
+artifact.ulabels.add(my_experiment)
+artifact.cell_types.add(cell_type)
+
+# remove labels
+artifact.ulabels.remove(my_experiment)
+artifact.cell_types.remove(cell_type)
+```
+
 If you want to annotate by non-categorical metadata or indicate the feature for a label, annotate via features.
 
 ```python
 # define the "temperature" & "experiment" features
 ln.Feature(name="temperature", dtype=float).save()
-ln.Feature(name="experiment", dtype=ln.Record).save()
+ln.Feature(name="experiment", dtype=ln.ULabel).save()
 
 # annotate the artifact
 artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"})
@@ -332,13 +413,22 @@ This is how you query artifacts by features.
 ln.Artifact.filter(temperature=21.6).to_dataframe()
 ```
 
+Optionally, after querying, this is how you clean up feature values from the artifact and remove the feature definitions.
+
+```python
+# remove feature values from this artifact
+artifact.features.remove_values(["temperature", "experiment"])
+
+# optionally remove feature definitions from the registry
+ln.Feature.get(name="temperature").delete()
+ln.Feature.get(name="experiment").delete()
+```
+
 ### Validate an artifact
 
-Validated datasets are more re-usable by analysts and machine learning models. You can define what a valid artifact should look like by defining a schema.
+Validated datasets are more re-usable by analysts and machine learning models. You can define what a valid artifact should look like by defining a schema. If you do that, LaminDB will also automatically annotate with validated metadata which helps with finding the artifact.
 
-In lamindb, validation also means annotation with the validated metadata which increases the findability of a dataset.
-
-:::{dropdown} Can you give me examples for what findability and usability means?
+:::{dropdown} Give me examples for findability and usability.
 
 1. Findability: Which datasets measured expression of cell marker `CD14`? Which characterized cell line `K562`? Which have a test & train split? Etc.
 2. Usability: Are there typos in feature names? Are there typos in labels? Are types and units of features consistent? Etc.
@@ -349,11 +439,11 @@ In lamindb, validation also means annotation with the validated metadata which i
 import bionty as bt  # <-- use bionty to access registries with imported public ontologies
 
 # define a few more valid labels
-ln.Record(name="DMSO").save()
-ln.Record(name="IFNG").save()
+ln.ULabel(name="DMSO").save()
+ln.ULabel(name="IFNG").save()
 
 # define a few more valid features
-ln.Feature(name="perturbation", dtype=ln.Record).save()
+ln.Feature(name="perturbation", dtype=ln.ULabel).save()
 ln.Feature(name="cell_type_by_model", dtype=bt.CellType).save()
 ln.Feature(name="cell_type_by_expert", dtype=bt.CellType).save()
 ln.Feature(name="assay_oid", dtype=bt.ExperimentalFactor.ontology_id).save()
@@ -413,9 +503,7 @@ artifact_v2 = ln.Artifact.from_dataframe(df_updated, revises=artifact_v1).save()
 
 <br>
 
-The good thing about passing `revises: Artifact` is that you don't need to worry about coming up with naming conventions for paths.
-
-The good thing about versioning based on `key` is that it's how all data versioning tools are doing it.
+The good thing about passing `revises` is that you don't need to worry about coming up with naming conventions for paths. The good thing about versioning based on `key` is that it's how all data versioning tools are doing it and you can build a file hierarchy.
 
 :::
 
@@ -434,22 +522,22 @@ ln.Artifact.to_dataframe()
 The `Artifact` registry additionally supports seeing all feature annotations of an artifact.
 
 ```python
-ln.Artifact.to_dataframe(features=True)
+ln.Artifact.to_dataframe(include="features")
 ```
 
-LaminDB's central classes are registries that store records ({class}`~lamindb.models.SQLRecord` objects). If you want to see the fields of a registry, look at the class or auto-complete.
+LaminDB's central classes are registries that store {class}`~lamindb.models.SQLRecord` objects. If you want to see the fields of a registry, call `.describe()` on the class or auto-complete:
 
 ```python
-ln.Artifact
+ln.Artifact.describe()
 ```
 
-Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest records in the database.
+Each registry is a table in the relational schema of the underlying database. With {func}`~lamindb.view`, you can see the latest additions to the database:
 
 ```python
 ln.view()
 ```
 
-:::{dropdown} Which registries have I already learned about? 🤔
+:::{dropdown} Which registries have I already learned about?
 
 - {class}`~lamindb.Artifact`: datasets & models stored as files, folders, or arrays
 - {class}`~lamindb.Transform`: transforms of artifacts
@@ -488,7 +576,7 @@ For any field, the double underscore defines a comparator, e.g.,
 - `name__startswith="Martha"`: `name` starts with `"Martha`
 - `name__in=["Martha", "John"]`: `name` is `"John"` or `"Martha"`
 
-For more info, see: {doc}`registries`.
+For more info: {doc}`registries`
 
 :::
 
@@ -517,7 +605,7 @@ records = ln.Record.lookup()
 
 :::
 
-For more info, see: {doc}`registries`.
+For more info: {doc}`registries`
 
 ## Manage files & folders
 
@@ -748,7 +836,7 @@ feature_sets = ln.Schema.filter(genes__symbol="CD8A").all()
 ln.Artifact.filter(feature_sets__in=feature_sets).to_dataframe()
 ```
 
-## Scale learning
+## Manage collections of datasets
 
 How do you integrate new datasets with your existing datasets? Leverage {class}`~lamindb.Collection`.
 
@@ -777,10 +865,10 @@ collection.load()
 # collection.open()
 
 # or iterate over its artifacts
-collection.artifacts.all()
+collection.ordered_artifacts.all()
 
 # or look at a DataFrame listing the artifacts
-collection.artifacts.to_dataframe()
+collection.ordered_artifacts.to_dataframe()
 ```
 
 Directly train models on collections of `AnnData`.
@@ -803,4 +891,6 @@ for batch in data_loader:
 <!-- #end_skip_laminr -->
 <!-- #endregion -->
 
-Read this [blog post](https://lamin.ai/blog/arrayloader-benchmarks) for more on training models on distributed datasets.
+For more: {doc}`/arrays`
+
+Or this [blog post](https://lamin.ai/blog/arrayloader-benchmarks) for training models on distributed datasets.
