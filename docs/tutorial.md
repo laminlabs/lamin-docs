@@ -6,7 +6,7 @@ execute_via: python
 
 This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#quickstart): there, you skim through core features; here, you learn the core operations end-to-end with conceptual context.
 
-## Track a notebook or script
+## Track changes
 
 If you don't have a LaminDB instance, create one using the shell:
 
@@ -54,6 +54,8 @@ For more info: {doc}`/setup`
 :::
 
 <!-- #endregion -->
+
+### Track a notebook or script
 
 Let's now track the notebook or script that is running.
 
@@ -134,9 +136,9 @@ Yes. What OpenLineage calls a "job", LaminDB calls a "transform". What OpenLinea
 
 :::
 
-### Branches & agent plans
+### Manage changes with branches
 
-When you need more control, you can track work on a branch and link an explicit agent plan to a run.
+When you need more control you can also use git-inspired change management via contribution branches that you merge into main.
 
 <!-- #region -->
 
@@ -145,24 +147,31 @@ lamin switch -c my_branch
 # ... make changes and save artifacts ...
 lamin switch main
 lamin merge my_branch
+```
 
-# optional: save a plan file as an artifact
+<!-- #endregion -->
+
+For more info: {class}`~lamindb.Branch`
+
+### Manage agent plans
+
+If you're working with agent plans, here is a way to link them to a branch:
+
+<!-- #region -->
+
+```bash
+# save a plan file as an artifact
+# this will auto-save the branch to a dedicated branch if you switched to one and your changes can always be traced back to one or more plans
 lamin save /path/to/.cursor/plans/my-agent-plan.md
 ```
+
+Here is how to link a run to a plan:
 
 ```python
 ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
 ```
 
 <!-- #endregion -->
-
-::::{dropdown} Why this matters
-
-For interactive and agentic work, this adds explicit control on top of lineage: branches help isolate and review changes, and plan tracking links non-deterministic execution to an auditable intent.
-
-For more patterns, see {doc}`/track`.
-
-::::
 
 ## Manage artifacts
 
@@ -266,8 +275,6 @@ Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/a
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/0bXenaC9F24iP3Iy0000.png" width="800">
 :::
 ::::
-
-:::::
 
 Once you're done, at the end of your notebook or script, call {meth}`~lamindb.finish`. Here, we're not yet done so we're commenting it out.
 
