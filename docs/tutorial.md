@@ -195,6 +195,51 @@ artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").sav
 artifact.describe()
 ```
 
+:::{dropdown} Which fields are populated when creating an artifact?
+
+Basic fields:
+
+- `uid`: universal ID
+- `key`: a (virtual) relative path of the artifact in `storage`
+- `description`: an optional string description
+- `storage`: the storage location (the root, say, an S3 bucket or a local directory)
+- `suffix`: an optional file/path suffix
+- `size`: the artifact size in bytes
+- `hash`: a hash useful to check for integrity and collisions (is this artifact already stored?)
+- `hash_type`: the type of the hash
+- `created_at`: time of creation
+- `updated_at`: time of last update
+
+Provenance-related fields:
+
+- `created_by`: the {class}`~lamindb.User` who created the artifact
+- `run`: the {class}`~lamindb.Run` of the {class}`~lamindb.Transform` that created the artifact
+
+For a full reference, see {class}`~lamindb.Artifact`.
+
+:::
+
+:::{dropdown} How does LaminDB compare to a AWS S3?
+
+LaminDB provides a database on top of AWS S3 (or GCP storage, file systems, etc.).
+
+Similar to organizing files with paths, you can organize artifacts using the `key` parameter of {class}`~lamindb.Artifact`.
+
+However, you'll see that you can more conveniently query data by entities you care about: people, code, experiments, genes, proteins, cell types, etc.
+
+:::
+
+:::{dropdown} What exactly happens during save?
+
+In the database: An artifact SQL record is inserted into the `Artifact` registry. If the artifact SQL record exists already, it's returned.
+
+In storage:
+
+- If the default storage is in the cloud, `.save()` triggers an upload for a local artifact.
+- If the artifact is already in a registered storage location, only the metadata of the record is saved to the `artifact` registry.
+
+:::
+
 ### Access artifacts
 
 Get the artifact by `key`:
@@ -642,7 +687,7 @@ ln.Storage.to_dataframe()
 
 Source path is local:
 
-```python
+```
 ln.Artifact("./my_data.fcs", key="my_dataset.fcs")
 ln.Artifact("./my_images/", key="my_images")
 ```
@@ -653,7 +698,7 @@ Upon `artifact.save()`, the source path will be copied or uploaded into your ins
 
 If the source path is remote _or_ already in a registered storage location (one that's registered in `ln.Storage`), `artifact.save()` will _not_ trigger a copy or upload but register the existing path.
 
-```python
+```
 ln.Artifact("s3://my-bucket/my_dataset.fcs")  # key is auto-populated from S3, you can optionally pass a description
 ln.Artifact("s3://my-bucket/my_images/")  # key is auto-populated from S3, you can optionally pass a description
 ```
@@ -664,51 +709,6 @@ You can use any storage location supported by `fsspec`.
 :::
 
 <!-- #endregion -->
-
-:::{dropdown} Which fields are populated when creating an artifact record?
-
-Basic fields:
-
-- `uid`: universal ID
-- `key`: a (virtual) relative path of the artifact in `storage`
-- `description`: an optional string description
-- `storage`: the storage location (the root, say, an S3 bucket or a local directory)
-- `suffix`: an optional file/path suffix
-- `size`: the artifact size in bytes
-- `hash`: a hash useful to check for integrity and collisions (is this artifact already stored?)
-- `hash_type`: the type of the hash
-- `created_at`: time of creation
-- `updated_at`: time of last update
-
-Provenance-related fields:
-
-- `created_by`: the {class}`~lamindb.User` who created the artifact
-- `run`: the {class}`~lamindb.Run` of the {class}`~lamindb.Transform` that created the artifact
-
-For a full reference, see {class}`~lamindb.Artifact`.
-
-:::
-
-:::{dropdown} What exactly happens during save?
-
-In the database: An artifact record is inserted into the `Artifact` registry. If the artifact record exists already, it's returned.
-
-In storage:
-
-- If the default storage is in the cloud, `.save()` triggers an upload for a local artifact.
-- If the artifact is already in a registered storage location, only the metadata of the record is saved to the `artifact` registry.
-
-:::
-
-:::{dropdown} How does LaminDB compare to a AWS S3?
-
-LaminDB provides a database on top of AWS S3 (or GCP storage, file systems, etc.).
-
-Similar to organizing files with paths, you can organize artifacts using the `key` parameter of {class}`~lamindb.Artifact`.
-
-However, you'll see that you can more conveniently query data by entities you care about: people, code, experiments, genes, proteins, cell types, etc.
-
-:::
 
 :::{dropdown} Are artifacts aware of array-like data?
 
