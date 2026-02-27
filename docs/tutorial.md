@@ -171,7 +171,7 @@ ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
 
 <!-- #endregion -->
 
-## Manage artifacts
+## Manage datasets
 
 {class}`~lamindb.Artifact` is the core object for datasets and models in LaminDB, whether they are files, folders, tables, or array-like data.
 
@@ -179,7 +179,7 @@ It gives you one interface for registration, access, annotation, lineage, and qu
 
 ### Create an artifact
 
-Let's first look at an exemplary dataframe.
+Let's first look at an exemplary `DataFrame`. We'll cover simple files, folders, and the `AnnData` format later in this tutorial.
 
 ```python
 df = ln.examples.datasets.mini_immuno.get_dataset1(with_typo=True)
@@ -188,12 +188,56 @@ df
 
 :::
 
-This is how you create an artifact from a dataframe.
+This is how you create an artifact from a `DataFrame`.
 
 ```python
 artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").save()
 artifact.describe()
 ```
+
+:::{dropdown} Which fields are populated when creating an artifact?
+
+Basic fields:
+
+- `uid`: universal ID
+- `key`: a (virtual) relative path of the artifact in `storage`
+- `description`: an optional string description
+- `storage`: the storage location (the root, say, an S3 bucket or a local directory)
+- `suffix`: an optional file/path suffix
+- `size`: the artifact size in bytes
+- `hash`: a hash useful to check for integrity and collisions (is this artifact already stored?)
+- `created_at`: time of creation
+- `updated_at`: time of last update
+
+Provenance-related fields:
+
+- `created_by`: the {class}`~lamindb.User` who created the artifact
+- `run`: the {class}`~lamindb.Run` of the {class}`~lamindb.Transform` that created the artifact
+
+For a full reference, see {class}`~lamindb.Artifact`.
+
+:::
+
+:::{dropdown} How does LaminDB compare to a AWS S3?
+
+LaminDB provides a database on top of AWS S3 (or GCP storage, file systems, etc.).
+
+Similar to organizing files with paths, you can organize artifacts using the `key` parameter of {class}`~lamindb.Artifact`.
+
+However, you'll see that you can more conveniently query data by entities you care about: people, code, experiments, genes, proteins, cell types, etc.
+
+:::
+
+:::{dropdown} What exactly happens during save?
+
+In the database: A SQL record is inserted into the `Artifact` registry. If the SQL record exists already based on comparing its `hash`, it's returned.
+
+In storage:
+
+- If the default storage is in the cloud, `.save()` triggers an upload for a local artifact.
+- If the artifact is in a registered storage location, only the metadata of the artifact is saved as a SQL record to the `Artifact` registry.
+
+:::
 
 ### Access artifacts
 
@@ -221,6 +265,8 @@ If the data is large, you might not want to cache but stream it via {meth}`~lami
 
 ### Update & delete artifacts
 
+Here is how to update & delete an artifact:
+
 ```python
 artifact.description = "My updated description"
 artifact.save()  # persist metadata changes
@@ -233,7 +279,7 @@ artifact.restore()  # restore from trash
 
 :::{dropdown} What happens when I delete an artifact?
 
-By default, deleting moves an artifact to the `trash` branch so it no longer appears in standard queries.
+By default, deleting moves an artifact into the trash so it no longer appears in standard queries.
 
 To restore it, call `artifact.restore()`. For archive/trash semantics and query patterns, see {doc}`/faq/trash-archive`.
 
@@ -279,6 +325,7 @@ Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/a
 
 :::
 ::::
+:::::
 
 Once you're done, at the end of your notebook or script, call {meth}`~lamindb.finish`. Here, we're not yet done so we're commenting it out.
 
@@ -381,7 +428,7 @@ This is how you query artifacts by cell type annotations.
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 ```
 
-### Update or remove annotations
+Here is how to update or remove annotations:
 
 ```python
 # add labels
@@ -607,7 +654,7 @@ records = ln.Record.lookup()
 
 For more info: {doc}`registries`
 
-## Manage files & folders
+## Manage folders & storage locations
 
 Let's look at a folder in the cloud that contains 3 sub-folders storing images & metadata of Iris flowers, generated in 3 subsequent studies.
 
@@ -634,17 +681,6 @@ LaminDB keeps track of all your storage locations.
 ```python
 ln.Storage.to_dataframe()
 ```
-
-:::{dropdown} How do I update or delete an artifact?
-
-```
-artifact.description = "My new description"  # change description
-artifact.save()  # save the change to the database
-artifact.delete()  # move to trash
-artifact.delete(permanent=True)  # permanently delete
-```
-
-:::
 
 <!-- #region -->
 
@@ -675,50 +711,7 @@ You can use any storage location supported by `fsspec`.
 
 <!-- #endregion -->
 
-:::{dropdown} Which fields are populated when creating an artifact record?
-
-Basic fields:
-
-- `uid`: universal ID
-- `key`: a (virtual) relative path of the artifact in `storage`
-- `description`: an optional string description
-- `storage`: the storage location (the root, say, an S3 bucket or a local directory)
-- `suffix`: an optional file/path suffix
-- `size`: the artifact size in bytes
-- `hash`: a hash useful to check for integrity and collisions (is this artifact already stored?)
-- `hash_type`: the type of the hash
-- `created_at`: time of creation
-- `updated_at`: time of last update
-
-Provenance-related fields:
-
-- `created_by`: the {class}`~lamindb.User` who created the artifact
-- `run`: the {class}`~lamindb.Run` of the {class}`~lamindb.Transform` that created the artifact
-
-For a full reference, see {class}`~lamindb.Artifact`.
-
-:::
-
-:::{dropdown} What exactly happens during save?
-
-In the database: An artifact record is inserted into the `Artifact` registry. If the artifact record exists already, it's returned.
-
-In storage:
-
-- If the default storage is in the cloud, `.save()` triggers an upload for a local artifact.
-- If the artifact is already in a registered storage location, only the metadata of the record is saved to the `artifact` registry.
-
-:::
-
-:::{dropdown} How does LaminDB compare to a AWS S3?
-
-LaminDB provides a database on top of AWS S3 (or GCP storage, file systems, etc.).
-
-Similar to organizing files with paths, you can organize artifacts using the `key` parameter of {class}`~lamindb.Artifact`.
-
-However, you'll see that you can more conveniently query data by entities you care about: people, code, experiments, genes, proteins, cell types, etc.
-
-:::
+<!-- #region -->
 
 :::{dropdown} Are artifacts aware of array-like data?
 
@@ -726,37 +719,27 @@ Yes.
 
 You can make artifacts from paths referencing array-like objects:
 
-<!-- #region -->
-
 ```python
 ln.Artifact("./my_anndata.h5ad", key="my_anndata.h5ad")
 ln.Artifact("./my_zarr_array/", key="my_zarr_array")
 ```
 
-<!-- #endregion -->
-
 Or from in-memory objects:
-
-<!-- #region -->
 
 ```python
 ln.Artifact.from_dataframe(df, key="my_dataframe.parquet")
 ln.Artifact.from_anndata(adata, key="my_anndata.h5ad")
 ```
 
-<!-- #endregion -->
-
 You can open large artifacts for slicing from the cloud or load small artifacts directly into memory via:
-
-<!-- #region -->
 
 ```python
 artifact.open()
 ```
 
-<!-- #endregion -->
-
 :::
+
+<!-- #endregion -->
 
 ## Manage biological registries
 
@@ -793,9 +776,9 @@ new_cell_state.parents.add(neuron)
 new_cell_state.view_parents(distance=2)
 ```
 
-## Manage AnnData objects
+## Manage `AnnData` artifacts
 
-LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `MuData`, `SpatialData`, and `Tiledbsoma` with their corresponding representations in storage.
+LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `MuData`, `SpatialData`, and `Tiledbsoma` with their corresponding storage formats.
 
 Let's go through the example of the quickstart, but store the dataset in an AnnData this time.
 
