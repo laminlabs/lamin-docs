@@ -206,7 +206,6 @@ Basic fields:
 - `suffix`: an optional file/path suffix
 - `size`: the artifact size in bytes
 - `hash`: a hash useful to check for integrity and collisions (is this artifact already stored?)
-- `hash_type`: the type of the hash
 - `created_at`: time of creation
 - `updated_at`: time of last update
 
@@ -231,12 +230,12 @@ However, you'll see that you can more conveniently query data by entities you ca
 
 :::{dropdown} What exactly happens during save?
 
-In the database: An artifact SQL record is inserted into the `Artifact` registry. If the artifact SQL record exists already, it's returned.
+In the database: A SQL record is inserted into the `Artifact` registry. If the SQL record exists already based on comparing its `hash`, it's returned.
 
 In storage:
 
 - If the default storage is in the cloud, `.save()` triggers an upload for a local artifact.
-- If the artifact is already in a registered storage location, only the metadata of the record is saved to the `artifact` registry.
+- If the artifact is in a registered storage location, only the metadata of the artifact is saved as a SQL record to the `Artifact` registry.
 
 :::
 
@@ -775,9 +774,9 @@ new_cell_state.parents.add(neuron)
 new_cell_state.view_parents(distance=2)
 ```
 
-## Manage datasets in `AnnData` format
+## Manage `AnnData` artifacts
 
-LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `MuData`, `SpatialData`, and `Tiledbsoma` with their corresponding representations in storage.
+LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `MuData`, `SpatialData`, and `Tiledbsoma` with their corresponding storage formats.
 
 Let's go through the example of the quickstart, but store the dataset in an AnnData this time.
 
