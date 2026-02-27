@@ -741,7 +741,7 @@ artifact.open()
 
 <!-- #endregion -->
 
-## Manage biological registries
+## Manage biological ontologies
 
 Every {py:mod}`bionty` registry is based on configurable public ontologies (>20 of them) that are automatically leveraged during validation & annotation. Sometimes you want to access the public ontology directly.
 
@@ -775,6 +775,8 @@ new_cell_state.parents.add(neuron)
 # view ontological hierarchy
 new_cell_state.view_parents(distance=2)
 ```
+
+For more info: {doc}`manage-ontologies`
 
 ## Manage AnnData artifacts
 
