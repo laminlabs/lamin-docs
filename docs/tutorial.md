@@ -179,7 +179,7 @@ It gives you one interface for registration, access, annotation, lineage, and qu
 
 ### Create an artifact
 
-Let's first look at an exemplary dataframe.
+Let's first look at an exemplary `DataFrame`. We'll cover simple files, folders, and the `AnnData` format later in this tutorial.
 
 ```python
 df = ln.examples.datasets.mini_immuno.get_dataset1(with_typo=True)
@@ -188,7 +188,7 @@ df
 
 :::
 
-This is how you create an artifact from a dataframe.
+This is how you create an artifact from a `DataFrame`.
 
 ```python
 artifact = ln.Artifact.from_dataframe(df, key="my_datasets/rnaseq1.parquet").save()
