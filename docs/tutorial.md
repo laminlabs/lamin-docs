@@ -171,7 +171,7 @@ ln.track(plan=".plans/my-agent-plan.md")  # link plan artifact to this run
 
 <!-- #endregion -->
 
-## Manage artifacts
+## Manage datasets
 
 {class}`~lamindb.Artifact` is the core object for datasets and models in LaminDB, whether they are files, folders, tables, or array-like data.
 
@@ -279,6 +279,7 @@ Explore data lineage interactively [here](https://lamin.ai/laminlabs/lamindata/a
 
 :::
 ::::
+:::::
 
 Once you're done, at the end of your notebook or script, call {meth}`~lamindb.finish`. Here, we're not yet done so we're commenting it out.
 
@@ -607,7 +608,7 @@ records = ln.Record.lookup()
 
 For more info: {doc}`registries`
 
-## Manage files & folders
+## Manage folders & storage locations
 
 Let's look at a folder in the cloud that contains 3 sub-folders storing images & metadata of Iris flowers, generated in 3 subsequent studies.
 
@@ -634,17 +635,6 @@ LaminDB keeps track of all your storage locations.
 ```python
 ln.Storage.to_dataframe()
 ```
-
-:::{dropdown} How do I update or delete an artifact?
-
-```
-artifact.description = "My new description"  # change description
-artifact.save()  # save the change to the database
-artifact.delete()  # move to trash
-artifact.delete(permanent=True)  # permanently delete
-```
-
-:::
 
 <!-- #region -->
 
@@ -726,35 +716,23 @@ Yes.
 
 You can make artifacts from paths referencing array-like objects:
 
-<!-- #region -->
-
 ```python
 ln.Artifact("./my_anndata.h5ad", key="my_anndata.h5ad")
 ln.Artifact("./my_zarr_array/", key="my_zarr_array")
 ```
 
-<!-- #endregion -->
-
 Or from in-memory objects:
-
-<!-- #region -->
 
 ```python
 ln.Artifact.from_dataframe(df, key="my_dataframe.parquet")
 ln.Artifact.from_anndata(adata, key="my_anndata.h5ad")
 ```
 
-<!-- #endregion -->
-
 You can open large artifacts for slicing from the cloud or load small artifacts directly into memory via:
-
-<!-- #region -->
 
 ```python
 artifact.open()
 ```
-
-<!-- #endregion -->
 
 :::
 
@@ -793,7 +771,7 @@ new_cell_state.parents.add(neuron)
 new_cell_state.view_parents(distance=2)
 ```
 
-## Manage AnnData objects
+## Manage datasets in `AnnData` format
 
 LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `MuData`, `SpatialData`, and `Tiledbsoma` with their corresponding representations in storage.
 
