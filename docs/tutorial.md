@@ -776,7 +776,7 @@ new_cell_state.parents.add(neuron)
 new_cell_state.view_parents(distance=2)
 ```
 
-## Manage `AnnData` artifacts
+## Manage AnnData artifacts
 
 LaminDB supports a growing number of data structures: `DataFrame`, `AnnData`, `MuData`, `SpatialData`, and `Tiledbsoma` with their corresponding storage formats.
 
