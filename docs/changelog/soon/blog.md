@@ -1,0 +1,1 @@
+- 👷 Sync changelog to `lamin-docs` [PR](https://github.com/laminlabs/lamin-blog/pull/41) [@falexwolf](https://github.com/falexwolf)
