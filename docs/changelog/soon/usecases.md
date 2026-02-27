@@ -1,3 +1,4 @@
+- :bento: Support CELLxGENE 7.0.0 [PR](https://github.com/laminlabs/cellxgene-lamin/pull/146) [@Zethson](https://github.com/Zethson)
 - 📝 Select the latest versions in docs [PR](https://github.com/laminlabs/cellxgene-lamin/pull/147) [@Koncopd](https://github.com/Koncopd)
 - 🎨 Fix formatting in the spatial guide [PR](https://github.com/laminlabs/lamin-usecases/pull/238) [@namsaraeva](https://github.com/namsaraeva)
 - 💚 Remove scanpy pinning [PR](https://github.com/laminlabs/lamin-usecases/pull/235) [@namsaraeva](https://github.com/namsaraeva)
