@@ -265,6 +265,8 @@ If the data is large, you might not want to cache but stream it via {meth}`~lami
 
 ### Update & delete artifacts
 
+Here is how to update & delete an artifact:
+
 ```python
 artifact.description = "My updated description"
 artifact.save()  # persist metadata changes
@@ -277,7 +279,7 @@ artifact.restore()  # restore from trash
 
 :::{dropdown} What happens when I delete an artifact?
 
-By default, deleting moves an artifact to the `trash` branch so it no longer appears in standard queries.
+By default, deleting moves an artifact into the trash so it no longer appears in standard queries.
 
 To restore it, call `artifact.restore()`. For archive/trash semantics and query patterns, see {doc}`/faq/trash-archive`.
 
@@ -426,7 +428,7 @@ This is how you query artifacts by cell type annotations.
 ln.Artifact.filter(cell_types=cell_type).to_dataframe()
 ```
 
-### Update or remove annotations
+Here is how to update or remove annotations:
 
 ```python
 # add labels
