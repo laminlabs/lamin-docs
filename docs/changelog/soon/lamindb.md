@@ -1,3 +1,4 @@
+- 🏗️ Add `lamindb-core` to distribute `lamindb` without optional dependencies [PR](https://github.com/laminlabs/lamindb/pull/3568) [@falexwolf](https://github.com/falexwolf)
 - :memo: README v5.5: Prettified LaminDB schematic [PR](https://github.com/laminlabs/lamindb/pull/3567) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Refactor plan saving to strip TODOs from description [PR](https://github.com/laminlabs/lamin-cli/pull/211) [@falexwolf](https://github.com/falexwolf)
 - 👷 Run tests also from `lamin-cli`, not only from `lamindb` [PR](https://github.com/laminlabs/lamin-cli/pull/212) [@falexwolf](https://github.com/falexwolf)
