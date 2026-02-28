@@ -1,1 +1,2 @@
+- 🚚 Rename the `write-logs/` route to `dbwrites/` [PR](https://github.com/laminlabs/laminhub-public/pull/236) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add a GUI for Branches and Merge Requests with a "Changes" tab that also holds database write events [PR](https://github.com/laminlabs/laminhub-public/pull/235) [@falexwolf](https://github.com/falexwolf)
