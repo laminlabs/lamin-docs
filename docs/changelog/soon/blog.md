@@ -1,0 +1,1 @@
+- :lipstick: Harmonize styling [PR](https://github.com/laminlabs/lamin-blog/pull/43) [@falexwolf](https://github.com/falexwolf)
