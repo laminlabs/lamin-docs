@@ -1,1 +1,2 @@
+- :memo: Interactive visualization of multimodal and spatial data with Vitessce [PR](https://github.com/laminlabs/lamin-blog/pull/37) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Harmonize styling [PR](https://github.com/laminlabs/lamin-blog/pull/43) [@falexwolf](https://github.com/falexwolf)
