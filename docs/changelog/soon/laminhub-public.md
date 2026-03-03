@@ -1,3 +1,4 @@
+- 🐛 Improve pagination in artifact tables [PR](https://github.com/laminlabs/laminhub-public/pull/243) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Invalidate instance README display cache on artifact upload [PR](https://github.com/laminlabs/laminhub-public/pull/242) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix instance deletion in on-prem infra due to missing permissions [PR](https://github.com/laminlabs/laminhub-public/pull/241) [@falexwolf](https://github.com/falexwolf)
 - 💄 Simplify Team page [PR](https://github.com/laminlabs/laminhub-public/pull/240) [@falexwolf](https://github.com/falexwolf)
