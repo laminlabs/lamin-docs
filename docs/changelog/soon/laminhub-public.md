@@ -1,3 +1,4 @@
+- 💄 Simplify Team page [PR](https://github.com/laminlabs/laminhub-public/pull/240) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Improve nested scrolling behavior [PR](https://github.com/laminlabs/laminhub-public/pull/239) [@chaichontat](https://github.com/chaichontat)
 - :lipstick: Increase artifact dialog size [PR](https://github.com/laminlabs/laminhub-public/pull/238) [@chaichontat](https://github.com/chaichontat)
 - :lipstick: Overhaul the design of Records to enable an "Experiment-centric view" [PR](https://github.com/laminlabs/laminhub-public/pull/237) [@chaichontat](https://github.com/chaichontat)
