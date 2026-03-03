@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3569) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Restore receiving AWS credentials through the dedicated endpoint [PR](https://github.com/laminlabs/lamindb-setup/pull/1298) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Add `lamindb-core` to distribute `lamindb` without optional dependencies [PR](https://github.com/laminlabs/lamindb/pull/3568) [@falexwolf](https://github.com/falexwolf)
 - :memo: README v5.5: Prettified LaminDB schematic [PR](https://github.com/laminlabs/lamindb/pull/3567) [@falexwolf](https://github.com/falexwolf)
