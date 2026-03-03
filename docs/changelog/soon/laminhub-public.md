@@ -1,3 +1,4 @@
+- 🐛 Fix instance deletion in on-prem infra due to missing permissions [PR](https://github.com/laminlabs/laminhub-public/pull/244) [@falexwolf](https://github.com/falexwolf)
 Features & major design improvements:
 
 - ✨ Add initial GUI for Merge Requests under a new "Changes" tab that also holds the database write event log [PR](https://github.com/laminlabs/laminhub-public/pull/235) [@falexwolf](https://github.com/falexwolf)
