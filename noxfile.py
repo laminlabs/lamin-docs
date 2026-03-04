@@ -1,3 +1,4 @@
+import importlib.util
 import os
 import shutil
 import subprocess
@@ -313,6 +314,16 @@ def run_nbs(session):
 
 @nox.session
 def docs(session):
+    lamindb_nox_path = Path("tmp_lamindb/noxfile.py")
+    if lamindb_nox_path.exists():
+        spec = importlib.util.spec_from_file_location("lamindb_nox", lamindb_nox_path)
+        lamindb_nox = importlib.util.module_from_spec(spec)
+        sys.modules["lamindb_nox"] = lamindb_nox
+        spec.loader.exec_module(lamindb_nox)
+        lamindb_nox.clidocs(session)
+    else:
+        print(f"Could not find {lamindb_nox_path}, skipping CLI docs generation.")
+
     subprocess.run(
         "lndocs --error-on-index",
         shell=True,
