@@ -1,2 +1,0 @@
-- :sparkles: Detailed record page [PR](https://github.com/laminlabs/laminhub-public/pull/246) [@chaichontat](https://github.com/chaichontat)
-- ✨ Display README on the Artifact, Collection, Transform, and Schema detail page [PR](https://github.com/laminlabs/laminhub-public/pull/245) [@sunnyosun](https://github.com/sunnyosun)
