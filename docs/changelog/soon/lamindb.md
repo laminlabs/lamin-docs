@@ -1,3 +1,4 @@
+- 👷 Add an option to install full dependencies to `lamindb-core` [PR](https://github.com/laminlabs/lamindb/pull/3571) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3569) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Restore receiving AWS credentials through the dedicated endpoint [PR](https://github.com/laminlabs/lamindb-setup/pull/1298) [@Koncopd](https://github.com/Koncopd)
 - 🏗️ Add `lamindb-core` to distribute `lamindb` without optional dependencies [PR](https://github.com/laminlabs/lamindb/pull/3568) [@falexwolf](https://github.com/falexwolf)
