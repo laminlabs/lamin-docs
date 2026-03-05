@@ -1,0 +1,1 @@
+- :sparkles: Sheet column filtering [PR](https://github.com/laminlabs/laminhub-public/pull/247) [@chaichontat](https://github.com/chaichontat)
