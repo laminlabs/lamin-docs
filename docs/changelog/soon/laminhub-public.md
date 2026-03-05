@@ -1,2 +1,0 @@
-- 🐛 Fix truncated run counts [PR](https://github.com/laminlabs/laminhub-public/pull/248) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: Sheet column filtering [PR](https://github.com/laminlabs/laminhub-public/pull/247) [@chaichontat](https://github.com/chaichontat)
