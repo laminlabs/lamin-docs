@@ -1,3 +1,4 @@
+- 🔊 Warn when connecting to a public db connection [PR](https://github.com/laminlabs/lamindb-setup/pull/1308) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Optimize DB interactions in lightning integration [PR](https://github.com/laminlabs/lamindb/pull/3577) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix feature collisions in lightning integration [PR](https://github.com/laminlabs/lamindb/pull/3576) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/1307) [@Koncopd](https://github.com/Koncopd)
