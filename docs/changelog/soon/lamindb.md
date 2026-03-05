@@ -1,3 +1,4 @@
+- 🐛 Fix feature collisions in lightning integration [PR](https://github.com/laminlabs/lamindb/pull/3576) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamindb-setup/pull/1307) [@Koncopd](https://github.com/Koncopd)
 - 💚 Install `lamindb-core` with deps for CI [PR](https://github.com/laminlabs/lamindb/pull/3574) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Do not issue track warning on clones [PR](https://github.com/laminlabs/lamindb/pull/3573) [@Koncopd](https://github.com/Koncopd)
