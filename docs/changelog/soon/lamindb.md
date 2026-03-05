@@ -1,3 +1,4 @@
+- ⚡️ Profile `ln.connect()` [PR](https://github.com/laminlabs/lamindb/pull/3581) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3578) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Warn when connecting to a public db connection [PR](https://github.com/laminlabs/lamindb-setup/pull/1308) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Optimize DB interactions in lightning integration [PR](https://github.com/laminlabs/lamindb/pull/3577) [@falexwolf](https://github.com/falexwolf)
