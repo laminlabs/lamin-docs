@@ -1,3 +1,4 @@
+- ✨ Allow users to specify partially available keys in `MappedCollection` and retrieve `raw.X`  [PR](https://github.com/laminlabs/lamindb/pull/3582) [@Koncopd](https://github.com/Koncopd)
 - ✨ Improve data retrieval in `MappedCollection` [PR](https://github.com/laminlabs/lamindb/pull/3446) [@mojtababahrami](https://github.com/mojtababahrami)
 - ⚡️ Profile `ln.connect()` [PR](https://github.com/laminlabs/lamindb/pull/3581) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3578) [@Koncopd](https://github.com/Koncopd)
