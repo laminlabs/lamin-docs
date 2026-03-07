@@ -1,3 +1,4 @@
+- 🗃️ Make `feature_id` on `TransformRecord` link model nullable [PR](https://github.com/laminlabs/lamindb/pull/3583) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable configuring env modules [PR](https://github.com/laminlabs/lamin-cli/pull/213) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Re-connect rather than reset Django if no instance is configured in the environment [PR](https://github.com/laminlabs/lamindb/pull/3580) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Re-connect Django rather than reset Django when no instance is configured in the environment [PR](https://github.com/laminlabs/lamindb-setup/pull/1309) [@falexwolf](https://github.com/falexwolf)
