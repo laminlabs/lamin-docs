@@ -1,3 +1,4 @@
+- 🔧 Allow users to enforce ignoring local aws credentials via `system.env` [PR](https://github.com/laminlabs/lamindb-setup/pull/1312) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3584) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix instance init not writing `lamindb` version to the hub [PR](https://github.com/laminlabs/lamindb-setup/pull/1311) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Treat composite suffixes with `.zarr` at the end differently from other unspecified composite suffixes [PR](https://github.com/laminlabs/lamindb-setup/pull/1310) [@Koncopd](https://github.com/Koncopd)
