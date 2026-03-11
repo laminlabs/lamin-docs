@@ -1,2 +1,3 @@
+- 🐛 New features default to being nullable as in LaminDB [PR](https://github.com/laminlabs/laminhub-public/pull/251) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Show features in records list [PR](https://github.com/laminlabs/laminhub-public/pull/250) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Link artifacts to records [PR](https://github.com/laminlabs/laminhub-public/pull/249) [@chaichontat](https://github.com/chaichontat)
