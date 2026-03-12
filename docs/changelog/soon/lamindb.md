@@ -1,3 +1,4 @@
+- 📝 Document refresh behavior of federated s3 credentials for `tiledbsoma` [PR](https://github.com/laminlabs/lamindb/pull/3587) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI installs with version changes and simplify CI [PR](https://github.com/laminlabs/lamindb/pull/3586) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3585) [@Koncopd](https://github.com/Koncopd)
 - 🔧 Allow users to enforce ignoring local aws credentials via `system.env` [PR](https://github.com/laminlabs/lamindb-setup/pull/1312) [@Koncopd](https://github.com/Koncopd)
