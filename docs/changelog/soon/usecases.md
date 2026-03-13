@@ -1,3 +1,4 @@
+- :bug: Make the cellxgene registration workflow more robust [PR](https://github.com/laminlabs/cellxgene-lamin/pull/149) [@ishitajain9717](https://github.com/ishitajain9717)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/239) [@Koncopd](https://github.com/Koncopd)
 - 🚸 No need for a LaminDB instance just to query [PR](https://github.com/laminlabs/cellxgene-lamin/pull/148) [@falexwolf](https://github.com/falexwolf)
 - :bento: Support CELLxGENE 7.0.0 [PR](https://github.com/laminlabs/cellxgene-lamin/pull/146) [@Zethson](https://github.com/Zethson)
