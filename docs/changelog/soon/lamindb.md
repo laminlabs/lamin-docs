@@ -1,3 +1,4 @@
+- 🐛 Fix synchronization of directory artifacts when the destination directory exists but is empty [PR](https://github.com/laminlabs/lamindb/pull/3589) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `synchronize_to` for directories when the destination directory exists but is empty [PR](https://github.com/laminlabs/lamindb-setup/pull/1313) [@Koncopd](https://github.com/Koncopd)
 - 📝 Document refresh behavior of federated s3 credentials for `tiledbsoma` [PR](https://github.com/laminlabs/lamindb/pull/3587) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI installs with version changes and simplify CI [PR](https://github.com/laminlabs/lamindb/pull/3586) [@Koncopd](https://github.com/Koncopd)
