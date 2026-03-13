@@ -1,3 +1,4 @@
+- 🔖 Release v1.3.0 [PR](https://github.com/laminlabs/laminr/pull/261) [@lazappi](https://github.com/lazappi)
 - 🚸 Simplify connecting to an instance [PR](https://github.com/laminlabs/laminr/pull/258) [@lazappi](https://github.com/lazappi)
 - 👷 Use `r-lib/actions/check-r-package` in `test-unit` GHA [PR](https://github.com/laminlabs/laminr/pull/259) [@lazappi](https://github.com/lazappi)
 - 👷 Bump aws-actions/configure-aws-credentials from 4 to 6 [PR](https://github.com/laminlabs/laminr/pull/232) [@dependabot[bot]](https://github.com/apps/dependabot)
