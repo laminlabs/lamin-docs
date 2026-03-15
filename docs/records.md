@@ -1,4 +1,4 @@
-# Work with sheets
+# Manage records
 
 The hub offers a spreadsheet-like experience for managing metadata based on LaminDB's {class}`~lamindb.Record` registry.
 
