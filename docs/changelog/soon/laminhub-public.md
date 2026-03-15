@@ -1,2 +1,3 @@
+- ✨ Enable linking transforms to a record [PR](https://github.com/laminlabs/laminhub-public/pull/254) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Set default sorting to updated descending for artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/253) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Resolve `ULabel` types in sheets' `dtype` display and enforce these types during edit mode [PR](https://github.com/laminlabs/laminhub-public/pull/252) [@chaichontat](https://github.com/chaichontat)
