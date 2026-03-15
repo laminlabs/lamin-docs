@@ -40,6 +40,26 @@ Sheets display field definitions in the headers, showing both field names and th
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KeRnttLkyhHYXVag0000.png" style="width: 90%;"/>
 </div>
 
-## Exporting records as artifacts
+## Export records as artifacts
 
 Click on "Export to Artifact" to save all records under a type as an artifact.
+
+## Link transforms to records
+
+Click on the "Link" button in the "Transforms" card of the record page, e.g., here: https://lamin.ai/laminlabs/lamindata/record/mPiUOc67hQAw4Pgz
+
+   <div align="center">
+   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TPoeyphpn6evhJW60000.png" style="width: 40%;"/>
+   </div>
+
+Select a transform:
+
+   <div align="center">
+   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/mfDYB2FrwsVpWy7T0000.png" style="width: 40%;"/>
+   </div>
+
+You can now launch the transform via the small "Launch" button, directly from the record:
+
+   <div align="center">
+   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/tGS4pGEXqkXVscP90000.png" style="width: 40%;"/>
+   </div>
