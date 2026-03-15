@@ -46,7 +46,7 @@ Click on "Export to Artifact" to save all records under a type as an artifact.
 
 ## Link transforms to records
 
-Click on the "Link" button in the "Transforms" card of the record page, e.g., here: laminlabs/lamindata/record/mPiUOc67hQAw4Pgz
+Click on the "Link" button in the "Transforms" card of the record page, e.g., here: https://lamin.ai/laminlabs/lamindata/record/mPiUOc67hQAw4Pgz
 
    <div align="center">
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TPoeyphpn6evhJW60000.png" style="width: 40%;"/>
