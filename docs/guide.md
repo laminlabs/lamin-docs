@@ -42,6 +42,7 @@ visualization
 :caption: The Hub
 
 records
+launch
 permissions
 security
 ```
