@@ -1,0 +1,1 @@
+- 🐛 Resolve `ULabel` types in sheets' `dtype` display and enforce these types during edit mode [PR](https://github.com/laminlabs/laminhub-public/pull/252) [@chaichontat](https://github.com/chaichontat)
