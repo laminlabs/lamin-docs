@@ -1,18 +1,18 @@
 # Manage records
 
-The hub offers a spreadsheet-like experience for managing metadata based on LaminDB's {class}`~lamindb.Record` registry.
+## Edit records like sheets
 
-## Create a sheet
+The hub offers a spreadsheet-like edit experience for {class}`~lamindb.Record` types that enforce a schema:
 
-1. Create or select a sheet type on the left navbar. [Example](https://lamin.ai/laminlabs/lamindata/records)
+1. Create or select "sheet" on the left navbar. [Example](https://lamin.ai/laminlabs/lamindata/records)
 
-   Organize your sheets using types, similar to creating folders that contain different groups of related sheets. This hierarchical structure is visualized in the left navigation panel—click the `+` button to create new sheet types and build your organizational taxonomy.
+   Organize your sheets using types, similar to creating folders that contain different groups of related sheets. This hierarchical structure is visualized in the left navigation panel — click the `+` button to create new sheet types and build your organizational taxonomy.
 
    <div align="center">
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/e4ueQpX1chfYETo70001.png" style="width: 40%;"/>
    </div>
 
-2. Select the sheet type you want to create sheet under.
+2. Select the type you want.
 3. Click on "Edit" to add edit rows in the sheet.
 4. Each value in the sheet becomes a selectable option in dropdown menus.
 
@@ -30,11 +30,7 @@ The hub offers a spreadsheet-like experience for managing metadata based on Lami
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/uE0ax5NAXqjTfgGC0000.png" style="width: 90%;"/>
    </div>
 
-## Enforcing schemas on sheets
-
-When you register a sheet with a schema, you create a standardized template that ensures consistency across all records.
-
-Schema-enfored sheets display field definitions in the headers, showing both field names and their corresponding data types. This provides immediate visibility into the expected data structure.
+Sheets display field definitions in the headers, showing both field names and their corresponding data types:
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DQLooUQbCCRxHRlx0000.png" style="width: 60%;"/>
@@ -44,6 +40,6 @@ Schema-enfored sheets display field definitions in the headers, showing both fie
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KeRnttLkyhHYXVag0000.png" style="width: 90%;"/>
 </div>
 
-## Export sheets
+## Exporting records as artifacts
 
-Click on "Export to Artifact" to save the sheet as a CSV artifact, this will then allow you to download via UI or load the sheets using LaminDB.
+Click on "Export to Artifact" to save all records under a type as an artifact.
