@@ -1,3 +1,4 @@
+- :sparkles: Enhance artifact and transform tables with pagination and filtering [PR](https://github.com/laminlabs/laminhub-public/pull/259) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Search string features in Sheets [PR](https://github.com/laminlabs/laminhub-public/pull/258) [@falexwolf](https://github.com/falexwolf)
 - :bug: Disambiguate categorical values in CSV parser [PR](https://github.com/laminlabs/laminhub-public/pull/257) [@chaichontat](https://github.com/chaichontat)
 - 💄 Remove root element from typed sidebar [PR](https://github.com/laminlabs/laminhub-public/pull/256) [@falexwolf](https://github.com/falexwolf)
