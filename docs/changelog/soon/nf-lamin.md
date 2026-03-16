@@ -1,1 +1,2 @@
+- :sparkles: Configure keys of artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/133) [@rcannood](https://github.com/rcannood)
 - :recycle: Restructure instance functions [PR](https://github.com/laminlabs/nf-lamin/pull/129) [@rcannood](https://github.com/rcannood)
