@@ -1,3 +1,4 @@
+- :bug: Disambiguate categorical values in CSV parser [PR](https://github.com/laminlabs/laminhub-public/pull/257) [@chaichontat](https://github.com/chaichontat)
 - 💄 Remove root element from typed sidebar [PR](https://github.com/laminlabs/laminhub-public/pull/256) [@falexwolf](https://github.com/falexwolf)
 - 💄 Do not display schema names on records sidebar [PR](https://github.com/laminlabs/laminhub-public/pull/255) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable linking transforms to a record [PR](https://github.com/laminlabs/laminhub-public/pull/254) [@chaichontat](https://github.com/chaichontat)
