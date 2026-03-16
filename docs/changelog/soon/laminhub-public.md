@@ -1,3 +1,4 @@
+- 💄 Remove root element from typed sidebar [PR](https://github.com/laminlabs/laminhub-public/pull/256) [@falexwolf](https://github.com/falexwolf)
 - 💄 Do not display schema names on records sidebar [PR](https://github.com/laminlabs/laminhub-public/pull/255) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable linking transforms to a record [PR](https://github.com/laminlabs/laminhub-public/pull/254) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Set default sorting to updated descending for artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/253) [@chaichontat](https://github.com/chaichontat)
