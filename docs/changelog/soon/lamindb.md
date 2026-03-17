@@ -1,3 +1,4 @@
+- 📝 Improve the `lamindb.record` document [PR](https://github.com/laminlabs/lamindb/pull/3591) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow semantic queries by run & branch status [PR](https://github.com/laminlabs/lamindb/pull/3593) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix synchronization of directory artifacts when the destination directory exists but is empty [PR](https://github.com/laminlabs/lamindb/pull/3589) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `synchronize_to` for directories when the destination directory exists but is empty [PR](https://github.com/laminlabs/lamindb-setup/pull/1313) [@Koncopd](https://github.com/Koncopd)
