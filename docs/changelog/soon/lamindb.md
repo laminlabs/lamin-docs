@@ -1,3 +1,4 @@
+- 👷 De-duplicate `pyproject.toml` files [PR](https://github.com/laminlabs/lamindb/pull/3597) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable feature-based query expressions [PR](https://github.com/laminlabs/lamindb/pull/3596) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve the `lamindb.record` document [PR](https://github.com/laminlabs/lamindb/pull/3591) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow semantic queries by run & branch status [PR](https://github.com/laminlabs/lamindb/pull/3593) [@falexwolf](https://github.com/falexwolf)
