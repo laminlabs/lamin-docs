@@ -1,3 +1,4 @@
+- 🚸 Print warning if truncating a query result [PR](https://github.com/laminlabs/lamindb/pull/3599) [@falexwolf](https://github.com/falexwolf)
 - 🚸 `FeatureManager.add_values()`, `set_values()`, and `remove_values()` accept feature objects, not just feature name strings [PR](https://github.com/laminlabs/lamindb/pull/3598) [@falexwolf](https://github.com/falexwolf)
 - 👷 De-duplicate `pyproject.toml` files [PR](https://github.com/laminlabs/lamindb/pull/3597) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable feature-based query expressions [PR](https://github.com/laminlabs/lamindb/pull/3596) [@falexwolf](https://github.com/falexwolf)
