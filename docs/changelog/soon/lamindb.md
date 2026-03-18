@@ -1,3 +1,4 @@
+- 🐛 Fix model field tracking via `_populate_tracked_fields` for deferred fields [PR](https://github.com/laminlabs/lamindb/pull/3602) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add informative `record.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3600) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix root inference for `huggingface` paths [PR](https://github.com/laminlabs/lamindb/pull/3601) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Print warning if truncating a query result [PR](https://github.com/laminlabs/lamindb/pull/3599) [@falexwolf](https://github.com/falexwolf)
