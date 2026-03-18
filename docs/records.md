@@ -4,9 +4,9 @@
 
 The hub offers a spreadsheet-like edit experience for {class}`~lamindb.Record` types that enforce a schema:
 
-1. Create or select "sheet" on the left navbar. [Example](https://lamin.ai/laminlabs/lamindata/records)
+1. Create or select "sheet" on the left navbar under `/records`, e.g., here https://lamin.ai/laminlabs/lamindata/records
 
-   Organize your sheets using types, similar to creating folders that contain different groups of related sheets. This hierarchical structure is visualized in the left navigation panel — click the `+` button to create new sheet types and build your organizational taxonomy.
+   You can organize your sheets using record types, similar to creating folders that contain different groups of related sheets. This hierarchical structure is visualized in the left navigation panel — click the `+` button to create new record types:
 
    <div align="center">
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/e4ueQpX1chfYETo70001.png" style="width: 40%;"/>
