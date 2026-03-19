@@ -88,6 +88,11 @@ class LaminDBToLaminRConverter:
     Handles the main syntax differences between Python and R LaminDB APIs.
     """
 
+    # Only quote these after dtype= ; identifiers like ln$ULabel must stay unquoted
+    _DTYPES_TO_QUOTE = frozenset(
+        {"float", "int", "str", "bool", "object", "complex", "bytes"}
+    )
+
     def __init__(self):
         # Common Python to R function mappings
         self.function_mappings = {
@@ -249,13 +254,20 @@ class LaminDBToLaminRConverter:
         return re.sub(pattern, r"\1 = ", line)
 
     def convert_dtype_arguments(self, line: str) -> str:
-        """Quote dtype argument values.
+        """Quote dtype argument values for simple Python types only.
 
-        Converts `dtype = float` to `dtype = "float"`, etc.
-        This works and is easier than getting the Python type object
+        Converts `dtype = float` to `dtype = "float"`. Skips references like
+        `ln$ULabel` (regex would otherwise match only `ln` and emit `"ln"$ULabel`).
         """
-        pattern = r'(dtype\s*=\s*)([a-zA-Z_]\w*)(?!["\'])'
-        return re.sub(pattern, r'\1"\2"', line)
+        pattern = r"(dtype\s*=\s*)([a-zA-Z_]\w*)(?![\"'])"
+
+        def repl(m: re.Match[str]) -> str:
+            name = m.group(2)
+            if name not in self._DTYPES_TO_QUOTE:
+                return m.group(0)
+            return f'{m.group(1)}"{name}"'
+
+        return re.sub(pattern, repl, line)
 
     def convert_date_function(self, line: str) -> str:
         """Convert date( calls for R and by adding L suffix to integer arguments."""
