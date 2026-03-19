@@ -241,11 +241,21 @@ class LaminDBToLaminRConverter:
         if len(indent) > 0:
             return line
 
-        # Match: optional whitespace, variable name, spaces, =, space
-        pattern = r"^(\s*)([a-zA-Z_]\w*)\s*=\s+"
-        # Replace: optional whitespace, variable name, ' <- '
-        replacement = r"\1\2 <- "
-        return re.sub(pattern, replacement, line)
+        if "==" in line or "!=" in line or "<=" in line or ">=" in line:
+            return line
+
+        match_assign = re.match(r"^(\s*)(.+?)\s*=\s+(.+)$", line)
+        if not match_assign:
+            return line
+
+        lhs = match_assign.group(2).strip()
+        rhs = match_assign.group(3)
+        is_simple_var = re.fullmatch(r"[a-zA-Z_]\w*", lhs) is not None
+        is_indexed_var = re.fullmatch(r"[a-zA-Z_]\w*(?:\[[^\n]+\])+", lhs) is not None
+        if not (is_simple_var or is_indexed_var):
+            return line
+
+        return f"{indent}{lhs} <- {rhs}"
 
     def convert_function_arguments(self, line: str) -> str:
         """Add spaces around = in function arguments."""
@@ -303,6 +313,47 @@ class LaminDBToLaminRConverter:
         pattern = r"list\(([^)=]+(?:\([^)]*\)[^)=]*)*)\)\s*\*\s*(\d+)"
         return re.sub(pattern, replace_list_mult, code)
 
+    def convert_string_key_indexing(self, code: str) -> str:
+        """Convert Python string-key indexing to R double-bracket indexing.
+
+        Example:
+            df["perturbation"] -> df[["perturbation"]]
+        """
+        pattern = r"(\b[a-zA-Z_]\w*)\[\s*['\"]([^'\"]+)['\"]\s*\]"
+        return re.sub(pattern, r'\1[["\2"]]', code)
+
+    def convert_try_except_blocks(self, code: str) -> str:
+        """Convert simple Python try/except blocks to R tryCatch blocks."""
+
+        def dedent(block: str) -> str:
+            lines = block.splitlines()
+            return "\n".join(
+                re.sub(r"^[ \t]{4}", "", line) if line.strip() else line
+                for line in lines
+            )
+
+        pattern = re.compile(
+            r"^try:\n"
+            r"(?P<body>(?:[ \t]+.*(?:\n|$))*)"
+            r"except\s+(?P<exc>[^\n:]+)\s+as\s+(?P<err>\w+):\n"
+            r"(?P<handler>(?:[ \t]+.*(?:\n|$))*)",
+            flags=re.MULTILINE,
+        )
+
+        def replace(match: re.Match[str]) -> str:
+            body = dedent(match.group("body")).rstrip()
+            err_var = match.group("err")
+            handler = dedent(match.group("handler")).rstrip()
+            return (
+                "tryCatch({\n"
+                f"{body}\n"
+                f"}}, error = function({err_var}) {{\n"
+                f"{handler}\n"
+                "})"
+            )
+
+        return re.sub(pattern, replace, code)
+
     def convert_gene_name_comprehension(self, code: str) -> str:
         """Convert [f'prefix{i:0Nd}' for i in range(n)] to sprintf('prefix%0Nd', 1:n)."""
         # Match: [f'text{i:0Nd}' for i in range(n)]
@@ -358,12 +409,31 @@ class LaminDBToLaminRConverter:
             return i - 1 if depth == 0 else -1
 
         # Convert lists: [a, b, c] → list(a, b, c)
+        def is_list_literal_start(text: str, idx: int) -> bool:
+            """Heuristic: treat `[` as literal start only in expression contexts."""
+            j = idx - 1
+            while j >= 0 and text[j].isspace():
+                j -= 1
+            if j < 0:
+                return True
+            if text[j] == "[":
+                k = j - 1
+                while k >= 0 and text[k].isspace():
+                    k -= 1
+                if k < 0:
+                    return True
+                return text[k] in "({,=:\n"
+            return text[j] in "({,=:\n"
+
         prev = None
         while prev != code:
             prev = code
             i = 0
             while i < len(code):
                 if code[i] == "[":
+                    if not is_list_literal_start(code, i):
+                        i += 1
+                        continue
                     close = find_matching_close(code, i, "[", "]")
                     if close != -1:
                         content = code[i + 1 : close]
@@ -454,8 +524,10 @@ ln <- import_module("lamindb")
         """Convert complete Python code to R code."""
         python_code = self.convert_matrix_creation(python_code)
         python_code = self.convert_gene_name_comprehension(python_code)
+        python_code = self.convert_string_key_indexing(python_code)
         python_code = self.convert_collections(python_code)
         python_code = self.convert_list_multiplication(python_code)
+        python_code = self.convert_try_except_blocks(python_code)
 
         lines = python_code.split("\n")
         converted_lines = []
