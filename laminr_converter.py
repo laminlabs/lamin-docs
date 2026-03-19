@@ -1,4 +1,5 @@
 import re
+import textwrap
 from typing import Any
 
 
@@ -87,6 +88,11 @@ class LaminDBToLaminRConverter:
 
     Handles the main syntax differences between Python and R LaminDB APIs.
     """
+
+    # Only quote these after dtype= ; identifiers like ln$ULabel must stay unquoted
+    _DTYPES_TO_QUOTE = frozenset(
+        {"float", "int", "str", "bool", "object", "complex", "bytes"}
+    )
 
     def __init__(self):
         # Common Python to R function mappings
@@ -236,11 +242,21 @@ class LaminDBToLaminRConverter:
         if len(indent) > 0:
             return line
 
-        # Match: optional whitespace, variable name, spaces, =, space
-        pattern = r"^(\s*)([a-zA-Z_]\w*)\s*=\s+"
-        # Replace: optional whitespace, variable name, ' <- '
-        replacement = r"\1\2 <- "
-        return re.sub(pattern, replacement, line)
+        if "==" in line or "!=" in line or "<=" in line or ">=" in line:
+            return line
+
+        match_assign = re.match(r"^(\s*)(.+?)\s*=\s+(.+)$", line)
+        if not match_assign:
+            return line
+
+        lhs = match_assign.group(2).strip()
+        rhs = match_assign.group(3)
+        is_simple_var = re.fullmatch(r"[a-zA-Z_]\w*", lhs) is not None
+        is_indexed_var = re.fullmatch(r"[a-zA-Z_]\w*(?:\[[^\n]+\])+", lhs) is not None
+        if not (is_simple_var or is_indexed_var):
+            return line
+
+        return f"{indent}{lhs} <- {rhs}"
 
     def convert_function_arguments(self, line: str) -> str:
         """Add spaces around = in function arguments."""
@@ -249,13 +265,20 @@ class LaminDBToLaminRConverter:
         return re.sub(pattern, r"\1 = ", line)
 
     def convert_dtype_arguments(self, line: str) -> str:
-        """Quote dtype argument values.
+        """Quote dtype argument values for simple Python types only.
 
-        Converts `dtype = float` to `dtype = "float"`, etc.
-        This works and is easier than getting the Python type object
+        Converts `dtype = float` to `dtype = "float"`. Skips references like
+        `ln$ULabel` (regex would otherwise match only `ln` and emit `"ln"$ULabel`).
         """
-        pattern = r'(dtype\s*=\s*)([a-zA-Z_]\w*)(?!["\'])'
-        return re.sub(pattern, r'\1"\2"', line)
+        pattern = r"(dtype\s*=\s*)([a-zA-Z_]\w*)(?![\"'])"
+
+        def repl(m: re.Match[str]) -> str:
+            name = m.group(2)
+            if name not in self._DTYPES_TO_QUOTE:
+                return m.group(0)
+            return f'{m.group(1)}"{name}"'
+
+        return re.sub(pattern, repl, line)
 
     def convert_date_function(self, line: str) -> str:
         """Convert date( calls for R and by adding L suffix to integer arguments."""
@@ -290,6 +313,40 @@ class LaminDBToLaminRConverter:
         # Pattern matches: list( ... ) * digits
         pattern = r"list\(([^)=]+(?:\([^)]*\)[^)=]*)*)\)\s*\*\s*(\d+)"
         return re.sub(pattern, replace_list_mult, code)
+
+    def convert_string_key_indexing(self, code: str) -> str:
+        """Convert Python string-key indexing to R double-bracket indexing.
+
+        Example:
+            df["perturbation"] -> df[["perturbation"]]
+        """
+        pattern = r"(\b[a-zA-Z_]\w*)\[\s*['\"]([^'\"]+)['\"]\s*\]"
+        return re.sub(pattern, r'\1[["\2"]]', code)
+
+    def convert_try_except_blocks(self, code: str) -> str:
+        """Convert simple Python try/except blocks to R tryCatch blocks."""
+        pattern = re.compile(
+            r"^(?P<indent>[ \t]*)try:\n"
+            r"(?P<body>(?:(?P=indent)[ \t]+.*(?:\n|$))*)"
+            r"(?P=indent)except\s+(?P<exc>[^\n:]+)\s+as\s+(?P<err>\w+):\n"
+            r"(?P<handler>(?:(?P=indent)[ \t]+.*(?:\n|$))*)",
+            flags=re.MULTILINE,
+        )
+
+        def replace(match: re.Match[str]) -> str:
+            indent = match.group("indent")
+            body = textwrap.dedent(match.group("body")).rstrip()
+            err_var = match.group("err")
+            handler = textwrap.dedent(match.group("handler")).rstrip()
+            return (
+                f"{indent}tryCatch({{\n"
+                f"{body}\n"
+                f"{indent}}}, error = function({err_var}) {{\n"
+                f"{handler}\n"
+                f"{indent}}})"
+            )
+
+        return re.sub(pattern, replace, code)
 
     def convert_gene_name_comprehension(self, code: str) -> str:
         """Convert [f'prefix{i:0Nd}' for i in range(n)] to sprintf('prefix%0Nd', 1:n)."""
@@ -346,12 +403,31 @@ class LaminDBToLaminRConverter:
             return i - 1 if depth == 0 else -1
 
         # Convert lists: [a, b, c] → list(a, b, c)
+        def is_list_literal_start(text: str, idx: int) -> bool:
+            """Heuristic: treat `[` as literal start only in expression contexts."""
+            j = idx - 1
+            while j >= 0 and text[j].isspace():
+                j -= 1
+            if j < 0:
+                return True
+            if text[j] == "[":
+                k = j - 1
+                while k >= 0 and text[k].isspace():
+                    k -= 1
+                if k < 0:
+                    return True
+                return text[k] in "({,=:\n"
+            return text[j] in "({,=:\n"
+
         prev = None
         while prev != code:
             prev = code
             i = 0
             while i < len(code):
                 if code[i] == "[":
+                    if not is_list_literal_start(code, i):
+                        i += 1
+                        continue
                     close = find_matching_close(code, i, "[", "]")
                     if close != -1:
                         content = code[i + 1 : close]
@@ -442,8 +518,10 @@ ln <- import_module("lamindb")
         """Convert complete Python code to R code."""
         python_code = self.convert_matrix_creation(python_code)
         python_code = self.convert_gene_name_comprehension(python_code)
+        python_code = self.convert_string_key_indexing(python_code)
         python_code = self.convert_collections(python_code)
         python_code = self.convert_list_multiplication(python_code)
+        python_code = self.convert_try_except_blocks(python_code)
 
         lines = python_code.split("\n")
         converted_lines = []
