@@ -1,4 +1,5 @@
 import re
+import textwrap
 from typing import Any
 
 
@@ -324,32 +325,25 @@ class LaminDBToLaminRConverter:
 
     def convert_try_except_blocks(self, code: str) -> str:
         """Convert simple Python try/except blocks to R tryCatch blocks."""
-
-        def dedent(block: str) -> str:
-            lines = block.splitlines()
-            return "\n".join(
-                re.sub(r"^[ \t]{4}", "", line) if line.strip() else line
-                for line in lines
-            )
-
         pattern = re.compile(
-            r"^try:\n"
-            r"(?P<body>(?:[ \t]+.*(?:\n|$))*)"
-            r"except\s+(?P<exc>[^\n:]+)\s+as\s+(?P<err>\w+):\n"
-            r"(?P<handler>(?:[ \t]+.*(?:\n|$))*)",
+            r"^(?P<indent>[ \t]*)try:\n"
+            r"(?P<body>(?:(?P=indent)[ \t]+.*(?:\n|$))*)"
+            r"(?P=indent)except\s+(?P<exc>[^\n:]+)\s+as\s+(?P<err>\w+):\n"
+            r"(?P<handler>(?:(?P=indent)[ \t]+.*(?:\n|$))*)",
             flags=re.MULTILINE,
         )
 
         def replace(match: re.Match[str]) -> str:
-            body = dedent(match.group("body")).rstrip()
+            indent = match.group("indent")
+            body = textwrap.dedent(match.group("body")).rstrip()
             err_var = match.group("err")
-            handler = dedent(match.group("handler")).rstrip()
+            handler = textwrap.dedent(match.group("handler")).rstrip()
             return (
-                "tryCatch({\n"
+                f"{indent}tryCatch({{\n"
                 f"{body}\n"
-                f"}}, error = function({err_var}) {{\n"
+                f"{indent}}}, error = function({err_var}) {{\n"
                 f"{handler}\n"
-                "})"
+                f"{indent}}})"
             )
 
         return re.sub(pattern, replace, code)

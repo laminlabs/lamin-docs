@@ -41,6 +41,23 @@ print(str(error))
     assert_conversion(py_code, expected_r_code)
 
 
+def test_try_except_is_converted_when_block_is_markdown_indented() -> None:
+    py_code = """ try:
+     artifact = ln.Artifact.from_dataframe(
+         df, key="my_datasets/rnaseq1.parquet", schema=schema
+     )
+ except ln.errors.ValidationError as error:
+     print(str(error))"""
+    expected_r_code = """ tryCatch({
+artifact <- ln$Artifact$from_dataframe(
+    df, key = "my_datasets/rnaseq1.parquet", schema = schema
+)
+ }, error = function(error) {
+print(str(error))
+ })"""
+    assert_conversion(py_code, expected_r_code)
+
+
 def test_dataframe_string_indexing_does_not_corrupt_identifier() -> None:
     py_code = 'df["perturbation"] = df["perturbation"].cat.rename_categories({"IFNJ": "IFNG"})'
     expected_r_code = 'df[["perturbation"]] <- df[["perturbation"]]$cat$rename_categories(list(IFNJ = "IFNG"))'
