@@ -1,1 +1,2 @@
+- 🚸 In the storage module, lazily import heavy dependencies like `anndata` [PR](https://github.com/laminlabs/lamindb/pull/3607) [@falexwolf](https://github.com/falexwolf)
 - 👷 Profile the import time of `lamindb.core.storage` [PR](https://github.com/laminlabs/lamindb/pull/3609) [@falexwolf](https://github.com/falexwolf)
