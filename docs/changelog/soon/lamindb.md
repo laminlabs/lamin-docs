@@ -1,1 +1,2 @@
+- 📝 Coin the term "sync" instead of "transfer" for syncing data between databases [PR](https://github.com/laminlabs/lamindb/pull/3605) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix read-only warning for `ln.DB` [PR](https://github.com/laminlabs/lamindb-setup/pull/1314) [@Koncopd](https://github.com/Koncopd)
