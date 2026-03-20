@@ -1,0 +1,1 @@
+- 🐛 Fix read-only warning for `ln.DB` [PR](https://github.com/laminlabs/lamindb-setup/pull/1314) [@Koncopd](https://github.com/Koncopd)
