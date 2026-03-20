@@ -448,7 +448,7 @@ ln.Feature(name="temperature", dtype=float).save()
 ln.Feature(name="experiment", dtype=ln.ULabel).save()
 
 # annotate the artifact
-artifact.features.add_values({"temperature": 21.6, "experiment": "My experiment"})
+artifact.features.set_values({"temperature": 21.6, "experiment": "My experiment"})
 
 # describe the artifact
 artifact.describe()
