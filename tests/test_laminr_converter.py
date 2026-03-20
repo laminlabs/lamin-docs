@@ -120,12 +120,12 @@ ln$Feature(name = "experiment_date", dtype = date, coerce = TRUE)$save()""",
         ),
         (
             "introduction.md",
-            """artifact.features.add_values({
+            """artifact.features.set_values({
  "gc_content": 0.55,
  "experiment_note": "Looks great",
  "experiment_date": "2025-10-24",
  })""",
-            """artifact$features$add_values(list(
+            """artifact$features$set_values(list(
  gc_content = 0.55,
  experiment_note = "Looks great",
  experiment_date = "2025-10-24"
