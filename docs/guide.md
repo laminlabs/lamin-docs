@@ -19,7 +19,7 @@ query-search
 track
 curate
 ontologies
-transfer
+sync
 ```
 
 ```{toctree}

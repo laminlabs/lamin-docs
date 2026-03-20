@@ -9,6 +9,8 @@
 /curate-any /faq/curate-any 301
 /faq/storage /lamindb.storage 301
 /modules /setup 301
+/sheets /records 301
+/transfer /sync 301
 /query-search /registries 301
 /ontologies /manage-ontologies 301
 /bio-registries /manage-ontologies 301
