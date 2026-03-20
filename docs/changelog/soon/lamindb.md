@@ -1,2 +1,3 @@
+- 📝 Recommend `FeatureManager.set_values()` and warn that `FeatureManager.add_values()` can invalidate the `dtype` of categorical feature annotations under certain circumstances [PR](https://github.com/laminlabs/lamindb/pull/3604) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🚸 In the storage module, lazily import heavy dependencies like `anndata` [PR](https://github.com/laminlabs/lamindb/pull/3607) [@falexwolf](https://github.com/falexwolf)
 - 👷 Profile the import time of `lamindb.core.storage` [PR](https://github.com/laminlabs/lamindb/pull/3609) [@falexwolf](https://github.com/falexwolf)
