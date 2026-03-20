@@ -31,7 +31,7 @@ See:
 Despite Lamin's different scope, the workflow manager [redun](https://github.com/insitro/redun) greatly influenced LaminDB.
 In particular, concepts in LaminDB's :class:`Artifact` class (`.hash`, `.cache()` in lamindb ~ `.stage()` in redun) & hashing strategies for sets are inspired by redun's `File` class.
 Similar to redun, Lamin tries to achieve idempotency but for different use cases & using largely differing designs.
-Like redun & git, LaminDB is a distributed system in which any LaminDB instance can exchange & share data with any other LaminDB instance: see {doc}`/transfer`.
+Like redun & git, LaminDB is a distributed system in which any LaminDB instance can exchange & share data with any other LaminDB instance: see {doc}`/sync`.
 
 LaminDB hasn't consciously been influenced by other workflow managers.
 
