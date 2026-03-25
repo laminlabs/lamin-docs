@@ -1,3 +1,4 @@
+- Bump: s3fs [PR](https://github.com/laminlabs/lamindb-setup/pull/1315) [@danplischke](https://github.com/danplischke)
 - 🔥 Remove legacy collaborator logic with `account_instance` [PR](https://github.com/laminlabs/lamindb-setup/pull/1316) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Warn if working with a non-latest version of an artifact [PR](https://github.com/laminlabs/lamindb/pull/3610) [@Koncopd](https://github.com/Koncopd)
 - 📝 Recommend `FeatureManager.set_values()` and warn that `FeatureManager.add_values()` can invalidate the `dtype` of categorical feature annotations under certain circumstances [PR](https://github.com/laminlabs/lamindb/pull/3604) [@ishitajain9717](https://github.com/ishitajain9717)
