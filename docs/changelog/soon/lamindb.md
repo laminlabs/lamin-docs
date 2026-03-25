@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamidb-setup [PR](https://github.com/laminlabs/lamindb/pull/3612) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Allow `aiobotocore` 3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1317) [@Koncopd](https://github.com/Koncopd)
 - Bump: s3fs [PR](https://github.com/laminlabs/lamindb-setup/pull/1315) [@danplischke](https://github.com/danplischke)
 - 🔥 Remove legacy collaborator logic with `account_instance` [PR](https://github.com/laminlabs/lamindb-setup/pull/1316) [@Koncopd](https://github.com/Koncopd)
