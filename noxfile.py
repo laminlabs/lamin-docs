@@ -198,7 +198,17 @@ def pull_artifacts(session):
     # pipelines
     pull_from_s3_and_unpack("redun-lamin.zip")
     Path("redun-lamin/redun.ipynb").rename("docs/redun.ipynb")
+    pull_from_s3_and_unpack("snakemake-lamin.zip")
+    Path("snakemake-lamin/bulk_rna_seq.ipynb").rename("docs/snakemake.ipynb")
+    
+    # nf-lamin
     pull_from_s3_and_unpack("nf-lamin.zip")
+    nflamin_mapped_content = {
+        "guide/": "nextflow/",
+        "reference/": "nf-lamin/",
+        "{doc}`/guide": "{doc}`/nextflow",
+        "{doc}`/reference": "{doc}`/nf-lamin`",
+    }
     # Guide
     Path("nf-lamin/guide.md").rename("docs/nextflow.md")
     for ref_file in [
@@ -207,14 +217,7 @@ def pull_artifacts(session):
         "nf_core_scrnaseq_run.png",
     ]:
             (Path("nf-lamin/guide") / ref_file).rename(f"docs/nextflow/{ref_file}")
-    replace_content(
-        "docs/nextflow.md",
-        {
-            "guide/": "nextflow/",
-            "{doc}`/reference/config`": "{doc}`/nf-lamin/config`",
-            "{doc}`/reference/examples`": "{doc}`/nf-lamin/examples`",
-        },
-    )
+    replace_content("docs/nextflow.md", nflamin_mapped_content)
     # Reference
     Path("nf-lamin/reference.md").rename("docs/nf-lamin.md")
     Path("docs/nf-lamin").mkdir(parents=True, exist_ok=True)
@@ -225,15 +228,7 @@ def pull_artifacts(session):
         "examples.md",
     ]:
         Path(f"nf-lamin/reference/{ref_file}").rename(f"docs/nf-lamin/{ref_file}")
-    replace_content(
-        "docs/nf-lamin.md",
-        {
-            "{doc}`/guide`": "{doc}`/nextflow`",
-            "reference/": "nf-lamin/",
-        },
-    )
-    pull_from_s3_and_unpack("snakemake-lamin.zip")
-    Path("snakemake-lamin/bulk_rna_seq.ipynb").rename("docs/snakemake.ipynb")
+    replace_content("docs/nf-lamin.md", nflamin_mapped_content)
 
     # mlops
     pull_from_s3_and_unpack("lamin-mlops.zip")
