@@ -1,3 +1,4 @@
+- 💚 Fix CI for permissions [PR](https://github.com/laminlabs/lamindb/pull/3613) [@Koncopd](https://github.com/Koncopd)
 - 💚 Use python 3.13 for jobs with `laminhub` [PR](https://github.com/laminlabs/lamindb-setup/pull/1318) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamidb-setup [PR](https://github.com/laminlabs/lamindb/pull/3612) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Allow `aiobotocore` 3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1317) [@Koncopd](https://github.com/Koncopd)
