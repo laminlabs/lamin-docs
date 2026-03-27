@@ -8,6 +8,7 @@
 cli
 lamindb
 laminr
+nf-lamin
 sql
 ```
 

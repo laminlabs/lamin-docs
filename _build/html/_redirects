@@ -22,6 +22,8 @@
 /trace-data-code /schmidt22 301
 /pipelines /nextflow 301
 /workflows /nextflow 301
+/nextflow-plugin-reference /nf-lamin 301
+/nextflow-postrun /nextflow#using-a-post-run-script 301
 /mlops /wandb 301
 /visualization /vitessce 301
 /summary.md /introduction.md 301
