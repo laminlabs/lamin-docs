@@ -1,3 +1,4 @@
+- :memo: Refactor documentation [PR](https://github.com/laminlabs/nf-lamin/pull/136) [@rcannood](https://github.com/rcannood)
 - :sparkles: Allow manually specifying paths to input / output artifacts to track [PR](https://github.com/laminlabs/nf-lamin/pull/139) [@rcannood](https://github.com/rcannood)
 - :bug: Fix key relativization [PR](https://github.com/laminlabs/nf-lamin/pull/135) [@rcannood](https://github.com/rcannood)
 - :bug: Fix assets directory detection [PR](https://github.com/laminlabs/nf-lamin/pull/134) [@rcannood](https://github.com/rcannood)
