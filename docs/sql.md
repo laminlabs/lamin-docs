@@ -5,7 +5,7 @@ You can directly use SQL within your LaminDB instances.
 Here is an example based on `psql` and a public read-only connection string for `laminlabs/lamin-site-assets`. However, any other tools for Postgres and SQLite work, too.
 
 ```psql
-% psql postgresql://71edfba136f54985adeb8be09fb3418d__read.efdukxvxjzsqrsvcfsjx:SySkRpygdDBtgLJkuPyxlPGxsttzKPlTPP7NElD3@aws-0-us-east-1.pooler.supabase.com:6543/71edfba136f54985adeb8be09fb3418d
+% psql postgresql://<username>:<password>@aws-0-us-east-1.pooler.supabase.com:6543/71edfba136f54985adeb8be09fb3418d
 psql (16.4, server 15.1 (Ubuntu 15.1-1.pgdg20.04+1))
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, compression: off)
 Type "help" for help.
