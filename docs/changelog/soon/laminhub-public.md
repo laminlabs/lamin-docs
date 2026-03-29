@@ -1,1 +1,2 @@
+- :children_crossing: Improve responsiveness of nav bar [PR](https://github.com/laminlabs/laminhub-public/pull/261) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Initial space support in the UI [PR](https://github.com/laminlabs/laminhub-public/pull/260) [@chaichontat](https://github.com/chaichontat)
