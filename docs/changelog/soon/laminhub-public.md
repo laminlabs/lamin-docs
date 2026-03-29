@@ -1,0 +1,1 @@
+- :sparkles: Initial space support in the UI [PR](https://github.com/laminlabs/laminhub-public/pull/260) [@chaichontat](https://github.com/chaichontat)
