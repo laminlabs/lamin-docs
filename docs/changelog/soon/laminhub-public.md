@@ -1,3 +1,4 @@
+- :children_crossing: Add option to show non-zero status code runs for data lineage [PR](https://github.com/laminlabs/laminhub-public/pull/266) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Separate markdown editing from data editing [PR](https://github.com/laminlabs/laminhub-public/pull/264) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix duplicated features in artifact detail [PR](https://github.com/laminlabs/laminhub-public/pull/263) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix admin self-assignments in access pages [PR](https://github.com/laminlabs/laminhub-public/pull/262) [@chaichontat](https://github.com/chaichontat)
