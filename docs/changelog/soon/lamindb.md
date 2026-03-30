@@ -1,3 +1,4 @@
+- ✨ Allow users to pass kwargs to `write_h5ad` and `write_zarr` in `Artifact.from_anndata(...)` [PR](https://github.com/laminlabs/lamindb/pull/3619) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not use get requests for `has_instance_quota` rpc [PR](https://github.com/laminlabs/lamindb-setup/pull/1319) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Invoke original signal handlers in `LogStreamTracker.cleanup()` and other fixes [PR](https://github.com/laminlabs/lamindb/pull/3615) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix CI for permissions [PR](https://github.com/laminlabs/lamindb/pull/3613) [@Koncopd](https://github.com/Koncopd)
