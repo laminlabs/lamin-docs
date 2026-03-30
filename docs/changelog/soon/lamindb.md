@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3622) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Avoid unnecessary `pandas` and `anndata` imports on `Artifact` initialization [PR](https://github.com/laminlabs/lamindb/pull/3621) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `record.to_artifact()` export in case `maximal_set` is `True` and record names are not populated [PR](https://github.com/laminlabs/lamindb/pull/3620) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow users to pass kwargs to `write_h5ad` and `write_zarr` in `Artifact.from_anndata(...)` [PR](https://github.com/laminlabs/lamindb/pull/3619) [@Koncopd](https://github.com/Koncopd)
