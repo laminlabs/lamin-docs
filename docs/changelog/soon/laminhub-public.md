@@ -1,3 +1,4 @@
+- 🚸 Separate markdown editing from data editing [PR](https://github.com/laminlabs/laminhub-public/pull/264) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix duplicated features in artifact detail [PR](https://github.com/laminlabs/laminhub-public/pull/263) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix admin self-assignments in access pages [PR](https://github.com/laminlabs/laminhub-public/pull/262) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Improve responsiveness of nav bar [PR](https://github.com/laminlabs/laminhub-public/pull/261) [@chaichontat](https://github.com/chaichontat)
