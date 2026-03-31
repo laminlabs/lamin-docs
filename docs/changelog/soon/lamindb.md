@@ -1,3 +1,4 @@
+- 📝 Improve documentation for `Artifact.from_anndata(...)` [PR](https://github.com/laminlabs/lamindb/pull/3625) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Except only specific import error in `with_package_obj` and `with_package` [PR](https://github.com/laminlabs/lamindb/pull/3623) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3622) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Avoid unnecessary `pandas` and `anndata` imports on `Artifact` initialization [PR](https://github.com/laminlabs/lamindb/pull/3621) [@Koncopd](https://github.com/Koncopd)
