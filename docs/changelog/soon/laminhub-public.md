@@ -1,7 +1,0 @@
-- ✨ Initial space support in the UI [PR](https://github.com/laminlabs/laminhub-public/pull/260) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Add option to show non-zero status code runs for data lineage [PR](https://github.com/laminlabs/laminhub-public/pull/266) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Separate markdown editing from data editing [PR](https://github.com/laminlabs/laminhub-public/pull/264) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Improve responsiveness of nav bar [PR](https://github.com/laminlabs/laminhub-public/pull/261) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Unnamed records are marked as unnamed [PR](https://github.com/laminlabs/laminhub-public/pull/267) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix duplicated features in artifact detail [PR](https://github.com/laminlabs/laminhub-public/pull/263) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix admin self-assignments in access pages [PR](https://github.com/laminlabs/laminhub-public/pull/262) [@chaichontat](https://github.com/chaichontat)
