@@ -1,1 +1,2 @@
+- 🐛 Fix `record.to_artifact()` export in case `maximal_set` is `True` and record names are not populated [PR](https://github.com/laminlabs/laminhub-public/pull/265) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Cache `_get_sub_fields` output [PR](https://github.com/laminlabs/laminhub-public/pull/269) [@fredericenard](https://github.com/fredericenard)
