@@ -1,3 +1,4 @@
+- 🐛 Fix duplicates in Ensembl prefixes for organisms [PR](https://github.com/laminlabs/bionty/pull/369) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clean up migrations [PR](https://github.com/laminlabs/bionty/pull/367) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Squash migrations [PR](https://github.com/laminlabs/bionty/pull/366) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add `created_on` field for LaminDB v2.2 [PR](https://github.com/laminlabs/bionty/pull/365) [@falexwolf](https://github.com/falexwolf)
