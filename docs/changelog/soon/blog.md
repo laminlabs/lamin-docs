@@ -1,0 +1,1 @@
+- :memo: An introduction to LaminR [PR](https://github.com/laminlabs/lamin-blog/pull/44) [@falexwolf](https://github.com/falexwolf)
