@@ -1,3 +1,4 @@
+- ✅ Test using only principal foreign key for link table write RLS [PR](https://github.com/laminlabs/lamindb/pull/3626) [@Koncopd](https://github.com/Koncopd)
 - ➕ Add explicit `boto3` dep for `aws` extra [PR](https://github.com/laminlabs/lamindb-setup/pull/1320) [@Koncopd](https://github.com/Koncopd)
 - 📝 Improve documentation for `Artifact.from_anndata(...)` [PR](https://github.com/laminlabs/lamindb/pull/3625) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Except only specific import error in `with_package_obj` and `with_package` [PR](https://github.com/laminlabs/lamindb/pull/3623) [@Koncopd](https://github.com/Koncopd)
