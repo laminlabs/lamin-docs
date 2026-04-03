@@ -1,0 +1,1 @@
+- :white_check_mark: Set branch id in tests [PR](https://github.com/laminlabs/nf-lamin/pull/140) [@rcannood](https://github.com/rcannood)
