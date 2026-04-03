@@ -1,1 +1,2 @@
+- :bug: Fix include_paths for output artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/142) [@rcannood](https://github.com/rcannood)
 - :white_check_mark: Set branch id in tests [PR](https://github.com/laminlabs/nf-lamin/pull/140) [@rcannood](https://github.com/rcannood)
