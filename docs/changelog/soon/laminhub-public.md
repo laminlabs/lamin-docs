@@ -1,3 +1,4 @@
+- :lipstick: Harmonize markdown font size [PR](https://github.com/laminlabs/laminhub-public/pull/271) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: App-wide spaces support [PR](https://github.com/laminlabs/laminhub-public/pull/270) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add a simple feature detail page [PR](https://github.com/laminlabs/laminhub-public/pull/268) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `record.to_artifact()` export in case `maximal_set` is `True` and record names are not populated [PR](https://github.com/laminlabs/laminhub-public/pull/265) [@falexwolf](https://github.com/falexwolf)
