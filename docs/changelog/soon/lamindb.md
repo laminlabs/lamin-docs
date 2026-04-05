@@ -1,3 +1,4 @@
+- ♻️ Make feature nullable on `RunRecord` [PR](https://github.com/laminlabs/lamindb/pull/3629) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test using only principal foreign key for link table write RLS [PR](https://github.com/laminlabs/lamindb/pull/3626) [@Koncopd](https://github.com/Koncopd)
 - ➕ Add explicit `boto3` dep for `aws` extra [PR](https://github.com/laminlabs/lamindb-setup/pull/1320) [@Koncopd](https://github.com/Koncopd)
 - 📝 Improve documentation for `Artifact.from_anndata(...)` [PR](https://github.com/laminlabs/lamindb/pull/3625) [@Koncopd](https://github.com/Koncopd)
