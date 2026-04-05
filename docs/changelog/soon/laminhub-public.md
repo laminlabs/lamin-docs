@@ -1,3 +1,4 @@
+- 🚸 Mention `lamin save` in notebook preview [PR](https://github.com/laminlabs/laminhub-public/pull/272) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Harmonize markdown font size [PR](https://github.com/laminlabs/laminhub-public/pull/271) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: App-wide spaces support [PR](https://github.com/laminlabs/laminhub-public/pull/270) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add a simple feature detail page [PR](https://github.com/laminlabs/laminhub-public/pull/268) [@falexwolf](https://github.com/falexwolf)
