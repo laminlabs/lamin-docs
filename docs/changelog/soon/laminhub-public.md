@@ -1,1 +1,0 @@
-- 🐛 Fix request for `space` on `User`, which doesn't exist [PR](https://github.com/laminlabs/laminhub-public/pull/277) [@falexwolf](https://github.com/falexwolf)
