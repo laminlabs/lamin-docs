@@ -1,9 +1,7 @@
+
+- ✨ General support for managing access with spaces in the UI [PR](https://github.com/laminlabs/laminhub-public/pull/270) [@chaichontat](https://github.com/chaichontat)
 - 🛂 Enable linking objects in a protected space for users who have read access to them [PR](https://github.com/laminlabs/laminhub-public/pull/275) [@Koncopd](https://github.com/Koncopd)
-- :sparkles: Run search [PR](https://github.com/laminlabs/laminhub-public/pull/274) [@chaichontat](https://github.com/chaichontat)
+- ✨ Make runs searchable [PR](https://github.com/laminlabs/laminhub-public/pull/274) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add support for R source code highlighting [PR](https://github.com/laminlabs/laminhub-public/pull/273) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Mention `lamin save` in notebook preview [PR](https://github.com/laminlabs/laminhub-public/pull/272) [@falexwolf](https://github.com/falexwolf)
-- :lipstick: Harmonize markdown font size [PR](https://github.com/laminlabs/laminhub-public/pull/271) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: App-wide spaces support [PR](https://github.com/laminlabs/laminhub-public/pull/270) [@chaichontat](https://github.com/chaichontat)
-- ✨ Add a simple feature detail page [PR](https://github.com/laminlabs/laminhub-public/pull/268) [@falexwolf](https://github.com/falexwolf)
-- 🐛 Fix `record.to_artifact()` export in case `maximal_set` is `True` and record names are not populated [PR](https://github.com/laminlabs/laminhub-public/pull/265) [@falexwolf](https://github.com/falexwolf)
-- ⚡️ Cache `_get_sub_fields` output [PR](https://github.com/laminlabs/laminhub-public/pull/269) [@fredericenard](https://github.com/fredericenard)
+- 💄 Harmonize markdown font size [PR](https://github.com/laminlabs/laminhub-public/pull/271) [@chaichontat](https://github.com/chaichontat)
