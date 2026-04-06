@@ -1,3 +1,4 @@
+- :sparkles: Run search [PR](https://github.com/laminlabs/laminhub-public/pull/274) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add support for R source code highlighting [PR](https://github.com/laminlabs/laminhub-public/pull/273) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Mention `lamin save` in notebook preview [PR](https://github.com/laminlabs/laminhub-public/pull/272) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Harmonize markdown font size [PR](https://github.com/laminlabs/laminhub-public/pull/271) [@chaichontat](https://github.com/chaichontat)
