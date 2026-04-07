@@ -14,7 +14,7 @@ Read only:
 - http/https: `ln.Artifact("https://some-site.com/some.data")`
 - HuggingFace: `ln.Artifact("hf://datasets/org/repo/data")`
 
-## Schema modules
+## Ontologies & registries
 
 - [bionty](/bionty): Basic biological ontologies, with easy import from >20 public ontologies
 - [pertdb](/pertdb): Registries for perturbations (compounds, biologics, genetic interventions, etc.)
@@ -23,29 +23,32 @@ Read only:
 
 Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scripts-with-git)
 
-## ML Ops & frameworks
+## MLOps
 
+- {mod}`~lamindb.integrations.lightning`
 - [Weights & Biases](wandb)
 - [MLflow](mlflow)
-- Hugging Face paths are supported: `ln.Artifact("hf://datasets/laminlabs/repo/sharded_parquet")`
 - [Croissant files](croissant)
 - [scVI](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
 
 ## Workflow managers
 
-- [redun](redun)
-- [Nextflow](nextflow)
-- [Snakemake](snakemake)
+- `nextflow` & the [Seqera](https://seqera.io) web platform: see the [Nextflow guide](nextflow) and the [nf-lamin](nf-lamin) reference
+- `redun`: via the Python API, see the [redun guide](redun)
+- the established Python workflow managers, see the [workflows guide](track)
+- `snakemake`: via post-run logic, see the [snakemake example](snakemake)
 
-## Array stores
+## Tables & arrays
 
+- `pyarrow` & `polars`: see the `engine` argument of `~lamindb.Artifact.open`
 - `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or [cellxgene](cellxgene)
-- [DuckDB](rxrx)
+- `duckdb`: via parquet files, see [rxrx](rxrx)
 
-## Visualization tools
+## Visualization
 
 - [Vitessce](vitessce)
+- `Aevidence` from [DataVisyn](https://datavisyn.io)
 
 ## ELN systems
 
-- Sync schema and data from your Benchling registries within our team/enterprise plan. [Reach out](https://lamin.ai/contact) to learn more!
+- [Benchling](https://benchling.com): sync schema and data from your registries within our team/enterprise plan. [Reach out](https://lamin.ai/contact) to learn more!
