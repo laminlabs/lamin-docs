@@ -25,15 +25,15 @@ Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scrip
 
 ## MLOps
 
-- {mod}`~lamindb.integrations.lightning`
-- [Weights & Biases](wandb)
-- [MLflow](mlflow)
-- [Croissant files](croissant)
-- [scVI](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
+- pytorch `lightning`: {mod}`~lamindb.integrations.lightning`
+- Weights & Biases: see the [Weigths & Biases guide](wandb)
+- MLFlow: see the [MLFlow guide](mlflow)
+- Croissant format: see the [Croissant guide](croissant)
+- `scvi`: see the [guide on the scVI docs](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
 
 ## Workflow managers
 
-- `nextflow` & the [Seqera](https://seqera.io) web platform: see the [Nextflow guide](nextflow) and the [nf-lamin](nf-lamin) reference
+- `nextflow` & the [Seqera](https://seqera.io) platform: see the [Nextflow guide](nextflow) and the [nf-lamin](nf-lamin) reference
 - `redun`: via the Python API, see the [redun guide](redun)
 - the established Python workflow managers, see the [workflows guide](track)
 - `snakemake`: via post-run logic, see the [snakemake example](snakemake)
