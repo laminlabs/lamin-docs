@@ -1,6 +1,6 @@
 # Integrations
 
-## Data storage
+## Storage
 
 Read & write:
 
@@ -11,41 +11,44 @@ Read & write:
 
 Read only:
 
-- http/https: `ln.Artifact("https://some-site.com/some.data")`
-- HuggingFace: `ln.Artifact("hf://datasets/org/repo/data")`
+- http/https: `ln.Artifact("https://a-website.com/a-dataset.txt")`
+- [Hugging Face](https://huggingface.co): `ln.Artifact("hf://datasets/org/repo/dataset.parquet")`
 
-## Schema modules
+## Ontologies & registries
 
-- [bionty](/bionty): Basic biological ontologies, with easy import from >20 public ontologies
+- [bionty](/bionty): Biological ontologies, with easy import from >20 public ontologies
 - [pertdb](/pertdb): Registries for perturbations (compounds, biologics, genetic interventions, etc.)
 
 ## Git
 
-Sync tracked scripts in lamindb with git commits: [guide](track.ipynb#sync-scripts-with-git)
+- auto-sync with `git`: [track guide](track.ipynb#sync-scripts-with-git)
 
-## ML Ops & frameworks
+## MLOps
 
-- [Weights & Biases](wandb)
-- [MLflow](mlflow)
-- Hugging Face paths are supported: `ln.Artifact("hf://datasets/laminlabs/repo/sharded_parquet")`
-- [Croissant files](croissant)
-- [scVI](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
+- [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning): {mod}`~lamindb.integrations.lightning`
+- [Weights & Biases](https://wandb.ai/): see the [Weigths & Biases guide](wandb)
+- [MLFlow](https://github.com/mlflow/mlflow): see the [MLFlow guide](mlflow)
+- [Croissant format](https://github.com/mlcommons/croissant): see the [Croissant guide](croissant)
+- [scVI](https://scvi-tools.org/): see the [guide on the scVI docs](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
 
 ## Workflow managers
 
-- [redun](redun)
-- [Nextflow](nextflow)
-- [Snakemake](snakemake)
+- `nextflow` & the [Seqera](https://seqera.io) platform: see the [Nextflow guide](nextflow) and the [nf-lamin](nf-lamin) reference
+- `redun`: via the Python API, see the [redun guide](redun)
+- `prefect`, `airflow`, `dagster`, etc.: see the [workflows guide](track)
+- `snakemake`: via post-run logic, see the [snakemake example](snakemake)
 
-## Array stores
+## Tables & arrays
 
+- `pyarrow` & `polars`: see the `engine` argument of {meth}`~lamindb.Artifact.open` and the [arrays guide](arrays)
 - `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or [cellxgene](cellxgene)
-- [DuckDB](rxrx)
+- `duckdb`: via parquet files, see [rxrx](rxrx)
 
-## Visualization tools
+## Visualization
 
-- [Vitessce](vitessce)
+- [Vitessce](https://vitessce.io): see the [vitessce guide](vitessce)
+- [DataVisyn](https://datavisyn.io) visualization solutions
 
 ## ELN systems
 
-- Sync schema and data from your Benchling registries within our team/enterprise plan. [Reach out](https://lamin.ai/contact) to learn more!
+- [Benchling](https://benchling.com): sync schema and data from your registries within our team/enterprise plan
