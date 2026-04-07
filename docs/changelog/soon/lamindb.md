@@ -1,3 +1,4 @@
+- ♻️ Enable `to_dataframe(include='features')` also for `Run` [PR](https://github.com/laminlabs/lamindb/pull/3631) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3630) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Make feature nullable on `RunRecord` [PR](https://github.com/laminlabs/lamindb/pull/3629) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test using only principal foreign key for link table write RLS [PR](https://github.com/laminlabs/lamindb/pull/3626) [@Koncopd](https://github.com/Koncopd)
