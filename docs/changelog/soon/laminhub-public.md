@@ -1,1 +1,2 @@
+- 🐛 Fix data fetch error on `collection` page [PR](https://github.com/laminlabs/laminhub-public/pull/280) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Redesign the run cards and add a tabular view indexed by params and features [PR](https://github.com/laminlabs/laminhub-public/pull/279) [@chaichontat](https://github.com/chaichontat)
