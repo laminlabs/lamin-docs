@@ -4,7 +4,7 @@ Currently, LaminHub only supports launching pipelines on the Seqera platform.
 
 ## Launching on the Seqera platform
 
-The following walkthrough assumes that you already registered a pipeline in LaminDB. If you didn't, browse to the "Setup a pipeline" section.
+The following walkthrough assumes that you already registered a pipeline in LaminDB. If you didn't, browse to the "Setup a pipeline" section. Also ensure that you have a `Compute environment` that includes a `LAMIN_API_KEY` as an env variable. It is optional but recommended to use `nf-lamin`. For this, modify your `nextflow config` as documented in [nf-lamin](nf-lamin).
 
 ### Step 0: Navigate to a pipeline
 
@@ -45,15 +45,15 @@ The following walkthrough assumes that you already registered a pipeline in Lami
 5. You can check the triggered run on your Seqera platform.
 6. Once the pipeline run started, `nf-lamin` automatically tracks the run status. You can view them on the runs list.
 
-Before starting, ensure that you have a `Compute environment` that includes a `LAMIN_API_KEY` as an env variable. It is optional but recommended to use `nf-lamin`. For this, modify your `nextflow config` as documented in [nf-lamin](nf-lamin).
-
 ### Setup a pipeline
 
-Register a pipeline as a transform:
+Register a pipeline as a transform via `lamindb`:
 
 - To register a new pipeline or a new version of an existing pipeline, (please always use `Transform.from_git()` , here is the [API doc](https://docs.lamin.ai/lamindb.transform#lamindb.Transform.from_git))
 
   ```python
+  import lamindb as ln
+
   # a versioned pipeline transform that points to a commit
   ln.Transform.from_git(
       url="https://github.com/nf-core/scrnaseq",
