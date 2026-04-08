@@ -40,6 +40,18 @@ Sheets display field definitions in the headers, showing both field names and th
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KeRnttLkyhHYXVag0000.png" style="width: 80%;"/>
 </div>
 
+## Import a csv into a sheet
+
+Click the following button in the upper right corner of a sheet page:
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/g6SXhxeBh7mooqsv0000.png" style="width: 80%;"/>
+</div>
+
+:::{tip}
+Include a `__lamindb_record_name__` column to set the name of each record (mapped to the `record.name` field and not shown as a data column).
+:::
+
 ## Export records as artifacts
 
 Click on "Export to Artifact" to save all records under a type as an artifact.
