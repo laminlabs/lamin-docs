@@ -1,3 +1,3 @@
+- 🚸 Redesign the run cards and add a tabular view indexed by params and features [PR](https://github.com/laminlabs/laminhub-public/pull/279) [@chaichontat](https://github.com/chaichontat)
 - 💄 Move records number and schema info to the right and do not display 'Root' in breadcrumbs [PR](https://github.com/laminlabs/laminhub-public/pull/281) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix data fetch error on `collection` page [PR](https://github.com/laminlabs/laminhub-public/pull/280) [@falexwolf](https://github.com/falexwolf)
-- 🚸 Redesign the run cards and add a tabular view indexed by params and features [PR](https://github.com/laminlabs/laminhub-public/pull/279) [@chaichontat](https://github.com/chaichontat)
