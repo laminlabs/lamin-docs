@@ -16,11 +16,11 @@ The following walkthrough assumes that you already registered a pipeline in Lami
 
 ### Step 1: Launch a pipeline
 
-1. Optional: enter a `Run name` if you don’t want use the auto-generated name (in form of `{transform-key}-{run-number}`)
+1. Optional: enter a `Run name` if you don't want to use the auto-generated name (in form of `{transform-key}-{run-number}`)
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/qzJycfLYDF4633We0000.png" style="width: 80%;"/>
 2. **Parameters** (`Form` or `JSON`)
 
-   If one prefers, can directly edit the JSON without going through the form.
+   If you prefer, you can directly edit the JSON without going through the form.
 
    1. Fill out `Run metadata` if configured (see setup section below for configuration)
       1. Directly fill out the form via `+ Record`
@@ -32,7 +32,7 @@ The following walkthrough assumes that you already registered a pipeline in Lami
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EAhZBrhfYDXHDlmO0000.png" style="width: 80%;"/>
       2. For parameters configured via `Input schemas`, click the `+ Create` button to fill out a new sheet.
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/zpPHRNTqRHyUenAK0000.png" style="width: 80%;"/>
-   3. Fill out the rest required fields marked with **\***, e.g. `outdir` for the scrnaseq pipeline
+   3. Fill out the remaining required fields marked with **\***, e.g. `outdir` for the scrnaseq pipeline
    4. Optional: provide the rest of parameters.
 
 ### Step 2: Review and submit to Seqera
@@ -41,7 +41,7 @@ The following walkthrough assumes that you already registered a pipeline in Lami
 2. Review all the information you entered (can go back to edit if needed)
    <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/vSPVCzF3h85QZZOV0000.png" style="width: 80%;"/>
 3. Click on `Submit` to send the launch request to Seqera
-4. You will be see a success message if things go well (otherwise error messages) and a run id.
+4. You will see a success message if things go well (otherwise error messages) and a run id.
 5. You can check the triggered run on your Seqera platform.
 6. Once the pipeline run started, `nf-lamin` automatically tracks the run status. You can view them on the runs list.
 
@@ -49,7 +49,7 @@ The following walkthrough assumes that you already registered a pipeline in Lami
 
 Register a pipeline as a transform via `lamindb`:
 
-- To register a new pipeline or a new version of an existing pipeline, (please always use `Transform.from_git()` , here is the [API doc](https://docs.lamin.ai/lamindb.transform#lamindb.Transform.from_git))
+- To register a new pipeline or a new version of an existing pipeline (please always use `Transform.from_git()`; here is the [API doc](https://docs.lamin.ai/lamindb.transform#lamindb.Transform.from_git))
 
   ```python
   import lamindb as ln
@@ -74,7 +74,7 @@ Register a pipeline as a transform via `lamindb`:
 
 Configure the settings of a pipeline:
 
-1. Switch on the `Show configuration` toggle and you will see the `Configuration` session.
+1. Switch on the `Show configuration` toggle and you will see the `Configuration` section.
 2. Click on `Settings`, you will see a pop-up window with 3 tabs: `Input schemas`, `Run metadata` and `Environment defaults`.
    1. `Input schemas`: You can configure a schema for a parameter (e.g. `input`), which allows you to create a sheet according to the schema configurations.
       <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/F4VVXZREJxTTMlxP0000.png" style="width: 80%;"/>
@@ -83,7 +83,7 @@ Configure the settings of a pipeline:
    3. `Environment defaults` : You can configure the environment defaults for the pipeline.
       <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/5shVPlptFMqymEdm0000.png" style="width: 80%;"/>
 
-Configure pipeline sessions:
+Configure pipeline sections:
 
 1. **Configuration**
 
@@ -97,4 +97,4 @@ Configure pipeline sessions:
    1. `Pipeline URL` and `Revision` are specified in transform attributes, therefore immutable here (register a new transform if you want to run a different revision of the pipeline)
    2. `Workspace directory` is pre-filled from the compute environment
    3. Optional: select `Profiles`. Once profiles are selected, you will see parameters automatically populated based on the profiles.
-   4. Optional: enter a `Run name` if you don’t want use the default name
+   4. Optional: enter a `Run name` if you don't want to use the default name
