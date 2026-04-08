@@ -22,7 +22,7 @@ The following walkthrough assumes that you already registered a pipeline in Lami
 
    If one prefers, can directly edit the JSON without going through the form.
 
-   1. Fill out `Run metadata` if configured (see Step 0b-2 for configuration)
+   1. Fill out `Run metadata` if configured (see setup section below for configuration)
       1. Directly fill out the form via `+ Record`
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/23tmjAnGkC33Ynkp0000.png" style="width: 80%;"/>
       2. Or click `Select` to select an existing row from a sheet
