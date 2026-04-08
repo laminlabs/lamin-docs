@@ -1,0 +1,1 @@
+- 🚸 Move the `ULabels` page under the `Features` tab [PR](https://github.com/laminlabs/laminhub-public/pull/282) [@falexwolf](https://github.com/falexwolf)
