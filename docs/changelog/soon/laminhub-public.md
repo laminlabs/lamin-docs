@@ -1,1 +1,2 @@
+- 🐛 Fix display of record type descriptions [PR](https://github.com/laminlabs/laminhub-public/pull/283) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Move the `ULabels` page under the `Features` tab [PR](https://github.com/laminlabs/laminhub-public/pull/282) [@falexwolf](https://github.com/falexwolf)
