@@ -1,3 +1,4 @@
+- :sparkles: Drag-and-drop reordering for sidebar records [PR](https://github.com/laminlabs/laminhub-public/pull/285) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Simplify record creation modal, only offer "Page" and "Sheet" as options [PR](https://github.com/laminlabs/laminhub-public/pull/284) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix display of record type descriptions [PR](https://github.com/laminlabs/laminhub-public/pull/283) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Move the `ULabels` page under the `Features` tab [PR](https://github.com/laminlabs/laminhub-public/pull/282) [@falexwolf](https://github.com/falexwolf)
