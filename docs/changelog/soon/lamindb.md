@@ -1,3 +1,4 @@
+- ✅ Rework switch environment and fallback tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1321) [@Koncopd](https://github.com/Koncopd)
 - 💄 Do not show transform description in `run.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3632) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Enable `to_dataframe(include='features')` also for `Run` [PR](https://github.com/laminlabs/lamindb/pull/3631) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3630) [@Koncopd](https://github.com/Koncopd)
