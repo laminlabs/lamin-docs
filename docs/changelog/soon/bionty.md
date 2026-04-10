@@ -1,3 +1,4 @@
+- 🍱 Uniprot 2026-01 human & mouse [PR](https://github.com/laminlabs/bionty/pull/370) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix duplicates in Ensembl prefixes for organisms [PR](https://github.com/laminlabs/bionty/pull/369) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clean up migrations [PR](https://github.com/laminlabs/bionty/pull/367) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Squash migrations [PR](https://github.com/laminlabs/bionty/pull/366) [@falexwolf](https://github.com/falexwolf)
