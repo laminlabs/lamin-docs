@@ -1,7 +1,7 @@
 - ✨ Card view for sheets [PR](https://github.com/laminlabs/laminhub-public/pull/288) [@chaichontat](https://github.com/chaichontat)
 - ✨ Record page: transform links [PR](https://github.com/laminlabs/laminhub-public/pull/287) [@chaichontat](https://github.com/chaichontat)
 - ✨ Drag-and-drop reordering for sidebar records [PR](https://github.com/laminlabs/laminhub-public/pull/285) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Simplify record creation modal, only offer "Page" and "Sheet" as options, where "Page" is an alias for "Type" in the GUI [PR](https://github.com/laminlabs/laminhub-public/pull/284) [@falexwolf](https://github.com/falexwolf)
+- 🚸 Simplify record creation modal, advocate "Type" also for notes pages [PR](https://github.com/laminlabs/laminhub-public/pull/284) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Move the `ULabels` page under the `Features` tab [PR](https://github.com/laminlabs/laminhub-public/pull/282) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Inline title/description editing [PR](https://github.com/laminlabs/laminhub-public/pull/286) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Fix display of record type / page descriptions [PR](https://github.com/laminlabs/laminhub-public/pull/283) [@falexwolf](https://github.com/falexwolf)
