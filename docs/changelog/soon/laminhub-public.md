@@ -1,3 +1,4 @@
+- :sparkles: Card view for sheets [PR](https://github.com/laminlabs/laminhub-public/pull/288) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Experiment view: transform links [PR](https://github.com/laminlabs/laminhub-public/pull/287) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Inline title/description editing [PR](https://github.com/laminlabs/laminhub-public/pull/286) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Drag-and-drop reordering for sidebar records [PR](https://github.com/laminlabs/laminhub-public/pull/285) [@chaichontat](https://github.com/chaichontat)
