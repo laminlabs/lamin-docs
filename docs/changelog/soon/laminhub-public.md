@@ -1,3 +1,4 @@
+- :sparkles: Experiment view: transform links [PR](https://github.com/laminlabs/laminhub-public/pull/287) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Inline title/description editing [PR](https://github.com/laminlabs/laminhub-public/pull/286) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Drag-and-drop reordering for sidebar records [PR](https://github.com/laminlabs/laminhub-public/pull/285) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Simplify record creation modal, only offer "Page" and "Sheet" as options [PR](https://github.com/laminlabs/laminhub-public/pull/284) [@falexwolf](https://github.com/falexwolf)
