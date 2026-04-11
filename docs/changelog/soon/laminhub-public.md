@@ -1,1 +1,2 @@
+- 🐛 Fix overflow behavior in main navigation tabs [PR](https://github.com/laminlabs/laminhub-public/pull/290) [@chaichontat](https://github.com/chaichontat)
 - 💄 Rename Merge Requests to Change Requests and polish design [PR](https://github.com/laminlabs/laminhub-public/pull/289) [@falexwolf](https://github.com/falexwolf)
