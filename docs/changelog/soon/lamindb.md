@@ -1,3 +1,4 @@
+- 📝 Document dtype `bool` and improve documentation of `DtypeStr` [PR](https://github.com/laminlabs/lamindb/pull/3635) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add `Record.from_dataframe()` and bulk saving of records [PR](https://github.com/laminlabs/lamindb/pull/3634) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix test failures due to `storage` RLS tightening [PR](https://github.com/laminlabs/lamindb-setup/pull/1322) [@Koncopd](https://github.com/Koncopd)
 - ✅ Rework switch environment and fallback tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1321) [@Koncopd](https://github.com/Koncopd)
