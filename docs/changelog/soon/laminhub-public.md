@@ -1,0 +1,1 @@
+- :children_crossing: Add the delete action to the records dropdown menu [PR](https://github.com/laminlabs/laminhub-public/pull/292) [@chaichontat](https://github.com/chaichontat)
