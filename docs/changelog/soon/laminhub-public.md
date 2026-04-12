@@ -1,3 +1,0 @@
-- :bug: Fix space information in new sheet workflow [PR](https://github.com/laminlabs/laminhub-public/pull/291) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix overflow behavior in main navigation tabs [PR](https://github.com/laminlabs/laminhub-public/pull/290) [@chaichontat](https://github.com/chaichontat)
-- 💄 Rename Merge Requests to Change Requests and polish design [PR](https://github.com/laminlabs/laminhub-public/pull/289) [@falexwolf](https://github.com/falexwolf)
