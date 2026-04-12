@@ -13,9 +13,6 @@
 [submodule "sub/lamin-usecases"]
 	path = sub/lamin-usecases
 	url = https://github.com/laminlabs/lamin-usecases.git
-[submodule "sub/lamindb"]
-	path = sub/lamindb
-	url = https://github.com/laminlabs/lamindb.git
 [submodule "sub/snakemake-lamin"]
 	path = sub/snakemake-lamin
 	url = https://github.com/laminlabs/snakemake-lamin.git
