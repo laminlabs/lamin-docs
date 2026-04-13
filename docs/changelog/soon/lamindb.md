@@ -1,3 +1,4 @@
+- 🔇 Do not show instance settings content on validation error [PR](https://github.com/laminlabs/lamindb-setup/pull/1324) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Add `branch` and `created_on` fields to `BaseBlock` and the `_aux`  field to `Branch` [PR](https://github.com/laminlabs/lamindb/pull/3636) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Remove duplicated logging in `ln.connect()` if already connected [PR](https://github.com/laminlabs/lamindb-setup/pull/1323) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Overhaul the `lightning` integration (v3) [PR](https://github.com/laminlabs/lamindb/pull/3618) [@jorenretel](https://github.com/jorenretel)
