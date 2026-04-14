@@ -1,3 +1,4 @@
+- 🚸 Enable `lamin connect --here` to scope instance to a development directory parallel to git [PR](https://github.com/laminlabs/lamindb-setup/pull/1326) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable `lamin connect --here` to scope instance to a development directory parallel to git [PR](https://github.com/laminlabs/lamin-cli/pull/215) [@falexwolf](https://github.com/falexwolf)
 - 💄 Display schema in `artifact.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3639) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable saving markdown notes as records [PR](https://github.com/laminlabs/lamindb/pull/3638) [@falexwolf](https://github.com/falexwolf)
