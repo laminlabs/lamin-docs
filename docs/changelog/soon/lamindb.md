@@ -1,3 +1,4 @@
+- 💄 Display schema in `artifact.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3639) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable saving markdown notes as records [PR](https://github.com/laminlabs/lamindb/pull/3638) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable saving markdown notes as records [PR](https://github.com/laminlabs/lamin-cli/pull/214) [@falexwolf](https://github.com/falexwolf)
 - 🔇 Do not show instance settings content on validation error [PR](https://github.com/laminlabs/lamindb-setup/pull/1324) [@Koncopd](https://github.com/Koncopd)
