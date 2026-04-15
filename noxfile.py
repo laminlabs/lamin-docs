@@ -65,17 +65,6 @@ LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is b
 ```{dropdown} Who uses it?"""
 
 
-README3_ORIG = """</details>
-
-## Docs
-
-Point an agent to [llms.txt](https://docs.lamin.ai/llms.txt) and let them do the work or read the [docs](https://docs.lamin.ai)."""
-
-README3_REPLACE = """```
-
-**Tip:** Point an agent to [llms.txt](https://docs.lamin.ai/llms.txt) and let them do the work."""
-
-
 README4_ORIG = """
 Install the `lamindb` Python package:
 
@@ -200,7 +189,7 @@ def pull_artifacts(session):
     Path("redun-lamin/redun.ipynb").rename("docs/redun.ipynb")
     pull_from_s3_and_unpack("snakemake-lamin.zip")
     Path("snakemake-lamin/bulk_rna_seq.ipynb").rename("docs/snakemake.ipynb")
-    
+
     # nf-lamin
     pull_from_s3_and_unpack("nf-lamin.zip")
     nflamin_mapped_content = {
@@ -217,7 +206,7 @@ def pull_artifacts(session):
         "nf_core_scrnaseq_diagram.png",
         "nf_core_scrnaseq_run.png",
     ]:
-            (Path("nf-lamin/guide") / ref_file).rename(f"docs/nextflow/{ref_file}")
+        (Path("nf-lamin/guide") / ref_file).rename(f"docs/nextflow/{ref_file}")
     replace_content("docs/nextflow.md", nflamin_mapped_content)
     # nf-lamin > reference
     Path("nf-lamin/reference.md").rename("docs/nf-lamin.md")
@@ -277,12 +266,10 @@ def pull_artifacts(session):
         assert README0_ORIG in content  # noqa: S101
         assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
-        assert README3_ORIG in content  # noqa: S101
-        assert README3_ORIG in content  # noqa: S101
+        assert README4_ORIG in content  # noqa: S101
         content = content.replace(README0_ORIG, README0_REPLACE)
         content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
-        content = content.replace(README3_ORIG, README3_REPLACE)
         content = content.replace(README4_ORIG, README4_REPLACE)
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
