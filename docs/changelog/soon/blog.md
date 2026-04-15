@@ -1,1 +1,2 @@
+- :memo: Managing spatial omics datasets with SpatialData & LaminDB [PR](https://github.com/laminlabs/lamin-blog/pull/34) [@Zethson](https://github.com/Zethson)
 - :memo: An introduction to LaminR [PR](https://github.com/laminlabs/lamin-blog/pull/44) [@falexwolf](https://github.com/falexwolf)
