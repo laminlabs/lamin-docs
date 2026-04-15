@@ -1,2 +1,3 @@
+- :sparkles: Query records by features [PR](https://github.com/laminlabs/laminhub-public/pull/294) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Feature-based record linking workflow [PR](https://github.com/laminlabs/laminhub-public/pull/293) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Add the delete action to the records dropdown menu [PR](https://github.com/laminlabs/laminhub-public/pull/292) [@chaichontat](https://github.com/chaichontat)
