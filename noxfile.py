@@ -85,6 +85,15 @@ lamin connect account/name
 ```
 """
 
+README3_ORIG = """</details>
+
+## Quickstart"""
+
+README3_REPLACE = """```
+
+## Quickstart"""
+
+
 README4_REPLACE = """
 ::::{tab-set}
 :::{tab-item} Py
