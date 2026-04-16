@@ -1,3 +1,4 @@
+- ♻️ Remake `lamin.db.gz` [PR](https://github.com/laminlabs/lamindb-setup/pull/1327) [@falexwolf](https://github.com/falexwolf)
 - :zap: Squash migrations [PR](https://github.com/laminlabs/lamindb/pull/3645) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor block branch relationship [PR](https://github.com/laminlabs/lamindb/pull/3644) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Skip hash lookup on empty files when creating an `artifact` [PR](https://github.com/laminlabs/lamindb/pull/3643) [@Koncopd](https://github.com/Koncopd)
