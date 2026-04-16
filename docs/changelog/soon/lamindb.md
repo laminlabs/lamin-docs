@@ -1,3 +1,4 @@
+- 🚸 Scope a `lamindb` connection to a development directory [PR](https://github.com/laminlabs/lamindb/pull/3646) [@falexwolf](https://github.com/falexwolf)
 - ✨ Implement utilities for moving files between storages [PR](https://github.com/laminlabs/lamindb-setup/pull/1325) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor the `dev-dir` setting management [PR](https://github.com/laminlabs/lamin-cli/pull/216) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Refactor the `dev-dir` setting management [PR](https://github.com/laminlabs/lamindb-setup/pull/1328) [@falexwolf](https://github.com/falexwolf)
