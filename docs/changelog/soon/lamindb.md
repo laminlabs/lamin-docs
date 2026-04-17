@@ -1,3 +1,4 @@
+- 🐛 Fix single file directory upload [PR](https://github.com/laminlabs/lamindb-setup/pull/1329) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Officially support Python 3.14 [PR](https://github.com/laminlabs/lamindb/pull/3603) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3648) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Also save README as block, prepare transitioning away from README artifacts [PR](https://github.com/laminlabs/lamindb/pull/3647) [@falexwolf](https://github.com/falexwolf)
