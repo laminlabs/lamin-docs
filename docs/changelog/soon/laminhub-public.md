@@ -1,2 +1,3 @@
+- ⬆️ Upgrade lamindb to 2.4 [PR](https://github.com/laminlabs/laminhub-public/pull/298) [@falexwolf](https://github.com/falexwolf)
 - :zap: Faster sheet saving [PR](https://github.com/laminlabs/laminhub-public/pull/297) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Default sheets to card view [PR](https://github.com/laminlabs/laminhub-public/pull/296) [@chaichontat](https://github.com/chaichontat)
