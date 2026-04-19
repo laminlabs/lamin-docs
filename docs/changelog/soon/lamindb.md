@@ -1,3 +1,4 @@
+- ⚡️ Speed up bulk import of records by factor 15 [PR](https://github.com/laminlabs/lamindb/pull/3649) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow users to transfer artifacts between storage locations [PR](https://github.com/laminlabs/lamindb/pull/3640) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix single file directory upload when saving an `artifact` [PR](https://github.com/laminlabs/lamindb/pull/3650) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix single file directory upload [PR](https://github.com/laminlabs/lamindb-setup/pull/1329) [@Koncopd](https://github.com/Koncopd)
