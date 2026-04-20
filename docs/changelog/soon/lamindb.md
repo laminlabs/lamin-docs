@@ -1,0 +1,1 @@
+- ⬇️ Upper bound s3fs with 2026.1.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/1330) [@Koncopd](https://github.com/Koncopd)
