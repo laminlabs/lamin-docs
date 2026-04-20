@@ -47,7 +47,7 @@ Read only:
 ## Visualization
 
 - [Vitessce](https://vitessce.io): see the [vitessce guide](vitessce)
-- [DataVisyn](https://datavisyn.io) visualization solutions
+- [DataVisyn](https://datavisyn.io): reach out for custom visualization solutions
 
 ## ELN systems
 
