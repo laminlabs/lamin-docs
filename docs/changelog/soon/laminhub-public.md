@@ -1,0 +1,1 @@
+- ✨ Support GitHub-flavored markdown [PR](https://github.com/laminlabs/laminhub-public/pull/299) [@chaichontat](https://github.com/chaichontat)
