@@ -1,1 +1,1 @@
-
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3655) [@Koncopd](https://github.com/Koncopd)
