@@ -1,3 +1,0 @@
-- 📝 README v5.6: Added new features of lamindb 2.4 + clean ups [PR](https://github.com/laminlabs/lamindb/pull/3653) [@falexwolf](https://github.com/falexwolf)
-- ⬇️ Upper bound `s3fs` by 2026.1.0 due to a bug with connection refresh [PR](https://github.com/laminlabs/lamindb/pull/3654) [@Koncopd](https://github.com/Koncopd)
-- ⬇️ Upper bound s3fs with 2026.1.0 [PR](https://github.com/laminlabs/lamindb-setup/pull/1330) [@Koncopd](https://github.com/Koncopd)
