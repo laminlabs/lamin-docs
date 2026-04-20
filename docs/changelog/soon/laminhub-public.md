@@ -1,1 +1,2 @@
+- :bug: Fix faceted filter narrowing in projects and reference [PR](https://github.com/laminlabs/laminhub-public/pull/300) [@chaichontat](https://github.com/chaichontat)
 - ✨ Support GitHub-flavored markdown [PR](https://github.com/laminlabs/laminhub-public/pull/299) [@chaichontat](https://github.com/chaichontat)
