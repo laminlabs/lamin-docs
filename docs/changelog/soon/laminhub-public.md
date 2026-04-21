@@ -1,1 +1,2 @@
+- :bug: Fix projects page highlighting and pagination [PR](https://github.com/laminlabs/laminhub-public/pull/302) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Sheets: bulk row addition and CSV template download [PR](https://github.com/laminlabs/laminhub-public/pull/301) [@chaichontat](https://github.com/chaichontat)
