@@ -245,11 +245,12 @@ Below is the compatibility matrix for the core `lamindb` schema. To upgrade the 
 🟡 = hard-delete of some records might error because an auxiliary table was removed, soft-delete & remaining API work<br>
 🔴 = errors on basic operations because a field was added to or removed from a registry
 
-| --         | PP 2.2 | PP 2.1 | PP 2.0 |
-| ---------- | ------ | ------ | ------ |
-| **DB 2.2** | 🟢     | 🟢     | 🟢     |
-| **DB 2.1** | 🔴     | 🟢     | 🟢     |
-| **DB 2.0** | 🔴     | 🟢     | 🟢     |
+| --         | PP 2.4 | PP 2.2 | PP 2.1 | PP 2.0 |
+| ---------- | ------ | ------ | ------ | ------ |
+| **DB 2.4** | 🟢     | 🟢     | 🟢     | 🟢     |
+| **DB 2.2** | 🔴     | 🟢     | 🟢     | 🟢     |
+| **DB 2.1** | 🔴     | 🔴     | 🟢     | 🟢     |
+| **DB 2.0** | 🔴     | 🔴     | 🟢     | 🟢     |
 
 ### Custom modules
 
