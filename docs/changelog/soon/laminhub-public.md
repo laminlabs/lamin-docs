@@ -1,1 +1,2 @@
+- :children_crossing: Standardize instance settings and org collab settings [PR](https://github.com/laminlabs/laminhub-public/pull/304) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Canonical run URLs [PR](https://github.com/laminlabs/laminhub-public/pull/303) [@falexwolf](https://github.com/falexwolf)
