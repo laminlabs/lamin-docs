@@ -1,2 +1,3 @@
+- 🦺 Safer transfer of artifacts to other storage locations [PR](https://github.com/laminlabs/lamindb/pull/3657) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ New uniprot organisms [PR](https://github.com/laminlabs/lamindb/pull/3656) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3655) [@Koncopd](https://github.com/Koncopd)
