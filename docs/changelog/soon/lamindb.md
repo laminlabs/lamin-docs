@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3658) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Better cleanup on instance init failures [PR](https://github.com/laminlabs/lamindb-setup/pull/1332) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Safer transfer of artifacts to other storage locations [PR](https://github.com/laminlabs/lamindb/pull/3657) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ New uniprot organisms [PR](https://github.com/laminlabs/lamindb/pull/3656) [@sunnyosun](https://github.com/sunnyosun)
