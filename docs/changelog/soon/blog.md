@@ -1,2 +1,3 @@
+- 📝 How I managed thousands of datasets to build the scPRINT family of scRNA-seq foundation models [PR](https://github.com/laminlabs/lamin-blog/pull/46) [@falexwolf](https://github.com/falexwolf)
 - :memo: Managing spatial omics datasets with SpatialData & LaminDB [PR](https://github.com/laminlabs/lamin-blog/pull/34) [@Zethson](https://github.com/Zethson)
 - :memo: An introduction to LaminR [PR](https://github.com/laminlabs/lamin-blog/pull/44) [@falexwolf](https://github.com/falexwolf)
