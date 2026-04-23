@@ -33,7 +33,7 @@ README0_ORIG = """[![docs](https://img.shields.io/badge/docs-yellow)](https://do
 # LaminDB - Open-source data framework for biology
 
 LaminDB allows you to query, trace, and validate datasets and models at scale.
-You get context & memory through a lineage-native lakehouse that supports bio-formats, registries & ontologies.
+You get context & memory through a lineage-native lakehouse that supports bio-formats, registries & ontologies while feeling as simple as a file system.
 
 Agent? [llms.txt](https://docs.lamin.ai/llms.txt)
 
@@ -44,7 +44,7 @@ README0_REPLACE = """# Introduction [![llms.txt](https://img.shields.io/badge/ll
 
 LaminDB is an open-source data framework for biology.
 It allows you to query, trace, and validate datasets and models at scale.
-You get context & memory through a lineage-native lakehouse that supports bio-formats, registries & ontologies.
+You get context & memory through a lineage-native lakehouse that supports bio-formats, registries & ontologies while feeling as simple as a file system.
 
 Agent? [llms.txt](https://docs.lamin.ai/llms.txt)
 
