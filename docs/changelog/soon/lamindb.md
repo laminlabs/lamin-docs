@@ -1,1 +1,1 @@
-
+- 🐛 Fix deletion of folder artifacts from trash [PR](https://github.com/laminlabs/lamindb/pull/3663) [@Koncopd](https://github.com/Koncopd)
