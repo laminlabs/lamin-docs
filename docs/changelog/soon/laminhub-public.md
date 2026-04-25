@@ -1,4 +1,0 @@
-- :children_crossing: Improve sheet keyboard handling [PR](https://github.com/laminlabs/laminhub-public/pull/306) [@chaichontat](https://github.com/chaichontat)
-- ✨ Support the bool `dtype` for CSV upload [PR](https://github.com/laminlabs/laminhub-public/pull/305) [@chaichontat](https://github.com/chaichontat)
-- :children_crossing: Standardize instance settings and org collab settings [PR](https://github.com/laminlabs/laminhub-public/pull/304) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Canonical run URLs [PR](https://github.com/laminlabs/laminhub-public/pull/303) [@falexwolf](https://github.com/falexwolf)
