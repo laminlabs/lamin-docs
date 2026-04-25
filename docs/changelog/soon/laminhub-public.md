@@ -1,0 +1,1 @@
+- :sparkles: Transform link inheritance [PR](https://github.com/laminlabs/laminhub-public/pull/307) [@chaichontat](https://github.com/chaichontat)
