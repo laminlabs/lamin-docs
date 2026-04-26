@@ -225,7 +225,7 @@ def pull_artifacts(session):
         "{doc}`/reference": "{doc}`/nf-lamin`",
     }
     # nf-lamin > guide
-    Path("nf-lamin/guide.md").rename("docs/nextflow.md")
+    Path("nf-lamin/guide.ipynb").rename("docs/nextflow.ipynb")
     Path("docs/nextflow").mkdir(parents=True, exist_ok=True)
     for ref_file in [
         "register_scrnaseq_run.py",
@@ -233,7 +233,7 @@ def pull_artifacts(session):
         "nf_core_scrnaseq_run.png",
     ]:
         (Path("nf-lamin/guide") / ref_file).rename(f"docs/nextflow/{ref_file}")
-    replace_content("docs/nextflow.md", nflamin_mapped_content)
+    replace_content("docs/nextflow.ipynb", nflamin_mapped_content)
     # nf-lamin > reference
     Path("nf-lamin/reference.md").rename("docs/nf-lamin.md")
     Path("docs/nf-lamin").mkdir(parents=True, exist_ok=True)
