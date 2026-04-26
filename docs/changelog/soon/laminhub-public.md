@@ -1,1 +1,2 @@
+- :bug: Fix double scroll bars in the transform page [PR](https://github.com/laminlabs/laminhub-public/pull/308) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Transform link inheritance [PR](https://github.com/laminlabs/laminhub-public/pull/307) [@chaichontat](https://github.com/chaichontat)
