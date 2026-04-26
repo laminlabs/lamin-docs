@@ -225,7 +225,7 @@ def pull_artifacts(session):
         "{doc}`/reference": "{doc}`/nf-lamin`",
     }
     # nf-lamin > guide
-    Path("nf-lamin/guide.md").rename("docs/nextflow.md")
+    Path("nf-lamin/guide.ipynb").rename("docs/nextflow.ipynb")
     Path("docs/nextflow").mkdir(parents=True, exist_ok=True)
     for ref_file in [
         "register_scrnaseq_run.py",
