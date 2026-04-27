@@ -1,3 +1,4 @@
+- 💚 Fix CI by upgrading gseapy [PR](https://github.com/laminlabs/lamin-usecases/pull/242) [@Koncopd](https://github.com/Koncopd)
 - :sparkles: Add the laminated Scanpy `pbmc3k` tutorial [PR](https://github.com/laminlabs/lamin-usecases/pull/241) [@sheetalgiri](https://github.com/sheetalgiri)
 - Modify Artifact dataframe features in spatial3.md [PR](https://github.com/laminlabs/lamin-usecases/pull/240) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Reflect overhauled lightning integration [PR](https://github.com/laminlabs/lamin-mlops/pull/34) [@falexwolf](https://github.com/falexwolf)
