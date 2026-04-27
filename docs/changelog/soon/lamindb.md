@@ -1,1 +1,2 @@
+- :memo: Improve README: clearer language and more examples [PR](https://github.com/laminlabs/lamindb/pull/3661) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix deletion of folder artifacts from trash [PR](https://github.com/laminlabs/lamindb/pull/3663) [@Koncopd](https://github.com/Koncopd)
