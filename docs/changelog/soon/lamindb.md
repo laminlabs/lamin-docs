@@ -1,2 +1,1 @@
-
-
+- 📝 Better document collection vs folder and clarify that `ArtifactSet` can also be streamed [PR](https://github.com/laminlabs/lamindb/pull/3666) [@falexwolf](https://github.com/falexwolf)
