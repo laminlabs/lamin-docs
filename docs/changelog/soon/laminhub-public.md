@@ -1,0 +1,1 @@
+- ✨ Expand feature creation modal to more data types including core registries, ulabels, list types, and registries in modules [PR](https://github.com/laminlabs/laminhub-public/pull/312) [@falexwolf](https://github.com/falexwolf)
