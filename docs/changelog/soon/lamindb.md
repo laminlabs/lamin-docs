@@ -1,1 +1,2 @@
+- ✨ Move artifact to a new storage location on suffix change [PR](https://github.com/laminlabs/lamindb/pull/3665) [@Koncopd](https://github.com/Koncopd)
 - 📝 Better document collection vs folder and clarify that `ArtifactSet` can also be streamed [PR](https://github.com/laminlabs/lamindb/pull/3666) [@falexwolf](https://github.com/falexwolf)
