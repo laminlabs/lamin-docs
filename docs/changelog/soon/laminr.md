@@ -1,0 +1,1 @@
+- 🐛 Support Jupyter path detection [PR](https://github.com/laminlabs/laminr/pull/264) [@lazappi](https://github.com/lazappi)
