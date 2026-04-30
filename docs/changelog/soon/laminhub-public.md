@@ -1,2 +1,3 @@
+- :children_crossing: Add nf-lamin plugin detection and alert in launch form [PR](https://github.com/laminlabs/laminhub-public/pull/314) [@chaichontat](https://github.com/chaichontat)
 - ✨ Enable ordering and hiding tabs on the instance navbar [PR](https://github.com/laminlabs/laminhub-public/pull/313) [@falexwolf](https://github.com/falexwolf)
 - ✨ Expand feature creation modal to more data types including core registries, ulabels, list types, and registries in modules [PR](https://github.com/laminlabs/laminhub-public/pull/312) [@falexwolf](https://github.com/falexwolf)
