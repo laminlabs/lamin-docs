@@ -1,0 +1,1 @@
+- :sparkles: Support federated tokens [PR](https://github.com/laminlabs/nf-lamin/pull/148) [@rcannood](https://github.com/rcannood)
