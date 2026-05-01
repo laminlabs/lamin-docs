@@ -1,1 +1,2 @@
+- ♻️ Refactor artifact creation [PR](https://github.com/laminlabs/nf-lamin/pull/149) [@rcannood](https://github.com/rcannood)
 - :sparkles: Support federated tokens [PR](https://github.com/laminlabs/nf-lamin/pull/148) [@rcannood](https://github.com/rcannood)
