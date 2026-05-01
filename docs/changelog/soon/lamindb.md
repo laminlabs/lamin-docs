@@ -1,3 +1,4 @@
+- ⬆️ Upgrade `universal_pathlib` to `0.3.10` [PR](https://github.com/laminlabs/lamindb/pull/3669) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade `universal_pathlib` to `0.3.10` [PR](https://github.com/laminlabs/lamindb-setup/pull/1206) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor to use the term `move` instead of `transfer` to move artifacts between storage location [PR](https://github.com/laminlabs/lamindb/pull/3668) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Use move instead of transfer [PR](https://github.com/laminlabs/lamindb-setup/pull/1333) [@Koncopd](https://github.com/Koncopd)
