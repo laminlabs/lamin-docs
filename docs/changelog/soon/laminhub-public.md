@@ -1,3 +1,4 @@
+- :bug: Enhance Nextflow schema validation and parsing logic [PR](https://github.com/laminlabs/laminhub-public/pull/318) [@chaichontat](https://github.com/chaichontat)
 - ✨ Support more data types in the feature creation interface [PR](https://github.com/laminlabs/laminhub-public/pull/317) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Show download button for problematic HTMLs [PR](https://github.com/laminlabs/laminhub-public/pull/316) [@chaichontat](https://github.com/chaichontat)
 - ✨ Instance navigation bar customization [PR](https://github.com/laminlabs/laminhub-public/pull/315) [@chaichontat](https://github.com/chaichontat)
