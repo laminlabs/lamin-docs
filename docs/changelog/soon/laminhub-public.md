@@ -1,3 +1,4 @@
+- ✨ Add a project detail page [PR](https://github.com/laminlabs/laminhub-public/pull/321) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Launch workflows from records with auto-completed metadata [PR](https://github.com/laminlabs/laminhub-public/pull/320) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Enable ordering and hiding tabs on the instance navbar [PR](https://github.com/laminlabs/laminhub-public/pull/315) [@chaichontat](https://github.com/chaichontat) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Prevent password managers from autocompleting fields [PR](https://github.com/laminlabs/laminhub-public/pull/319) [@chaichontat](https://github.com/chaichontat)
