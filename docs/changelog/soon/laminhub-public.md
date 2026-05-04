@@ -1,3 +1,4 @@
+- 🚸 Launch page v2 [PR](https://github.com/laminlabs/laminhub-public/pull/320) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Prevent password managers from autocompleting fields [PR](https://github.com/laminlabs/laminhub-public/pull/319) [@chaichontat](https://github.com/chaichontat)
 - :bug: Enhance Nextflow schema validation and parsing logic [PR](https://github.com/laminlabs/laminhub-public/pull/318) [@chaichontat](https://github.com/chaichontat)
 - ✨ Support more data types in the feature creation interface [PR](https://github.com/laminlabs/laminhub-public/pull/317) [@chaichontat](https://github.com/chaichontat)
