@@ -1,3 +1,4 @@
+- 🔊 Show login logs [PR](https://github.com/laminlabs/lamindb-setup/pull/1335) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/3670) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove `UPathStr` type [PR](https://github.com/laminlabs/lamindb-setup/pull/1334) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade `universal_pathlib` to `0.3.10` [PR](https://github.com/laminlabs/lamindb/pull/3669) [@Koncopd](https://github.com/Koncopd)
