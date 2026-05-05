@@ -17,7 +17,8 @@ tutorial
 setup
 query-search
 track
-curate
+organize
+manage-changes
 ontologies
 sync
 ```
