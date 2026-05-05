@@ -1,3 +1,4 @@
+- 🐛 Fix environment variable names for `lamin-manager` [PR](https://github.com/laminlabs/lamindb-setup/pull/1336) [@fredericenard](https://github.com/fredericenard)
 - ♻️ Re-use `owner_name_from_identifier` in the `DB` class [PR](https://github.com/laminlabs/lamindb/pull/3672) [@falexwolf](https://github.com/falexwolf)
 - 🔊 Show login logs [PR](https://github.com/laminlabs/lamindb-setup/pull/1335) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/3670) [@Koncopd](https://github.com/Koncopd)
