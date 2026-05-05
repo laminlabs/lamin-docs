@@ -1,3 +1,4 @@
+- ⬆️ Update documentation to use roxygen2 v8.0.0 [PR](https://github.com/laminlabs/laminr/pull/267) [@lazappi](https://github.com/lazappi)
 - 🧑‍💻 Update PR template [PR](https://github.com/laminlabs/laminr/pull/266) [@lazappi](https://github.com/lazappi)
 - 👷 Add style checks to lint CI action [PR](https://github.com/laminlabs/laminr/pull/265) [@lazappi](https://github.com/lazappi)
 - 🐛 Support Jupyter path detection [PR](https://github.com/laminlabs/laminr/pull/264) [@lazappi](https://github.com/lazappi)
