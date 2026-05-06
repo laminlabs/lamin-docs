@@ -1,1 +1,2 @@
+- :children_crossing: Clean up project detail page [PR](https://github.com/laminlabs/laminhub-public/pull/323) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Experiment page launch improvements [PR](https://github.com/laminlabs/laminhub-public/pull/322) [@chaichontat](https://github.com/chaichontat)
