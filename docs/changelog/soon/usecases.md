@@ -1,3 +1,4 @@
+- :recycle: More robust execution strategy [PR](https://github.com/laminlabs/snakemake-lamin/pull/11) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add DNA methylation usecase [PR](https://github.com/laminlabs/lamin-usecases/pull/243) [@sheetalgiri](https://github.com/sheetalgiri)
 - 💚 Fix CI by upgrading gseapy [PR](https://github.com/laminlabs/lamin-usecases/pull/242) [@Koncopd](https://github.com/Koncopd)
 - :sparkles: Add the laminated Scanpy `pbmc3k` tutorial [PR](https://github.com/laminlabs/lamin-usecases/pull/241) [@sheetalgiri](https://github.com/sheetalgiri)
