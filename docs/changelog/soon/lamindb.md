@@ -1,3 +1,4 @@
+- 💚 Fix `hub-local` tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1338) [@Koncopd](https://github.com/Koncopd)
 - 💄 Fix small docs issues [PR](https://github.com/laminlabs/lamindb/pull/3674) [@falexwolf](https://github.com/falexwolf)
 - ♻️ De-duplicate feature names in `QuerySet.to_dataframe(include="features")` [PR](https://github.com/laminlabs/lamindb/pull/3675) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix environment variable names for `lamin-manager` [PR](https://github.com/laminlabs/lamindb-setup/pull/1336) [@fredericenard](https://github.com/fredericenard)
