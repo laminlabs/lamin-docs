@@ -1,3 +1,4 @@
+- ✨ Move artifact to a new storage location on key change [PR](https://github.com/laminlabs/lamindb/pull/3673) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix `hub-local` tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1338) [@Koncopd](https://github.com/Koncopd)
 - 💄 Fix small docs issues [PR](https://github.com/laminlabs/lamindb/pull/3674) [@falexwolf](https://github.com/falexwolf)
 - ♻️ De-duplicate feature names in `QuerySet.to_dataframe(include="features")` [PR](https://github.com/laminlabs/lamindb/pull/3675) [@falexwolf](https://github.com/falexwolf)
