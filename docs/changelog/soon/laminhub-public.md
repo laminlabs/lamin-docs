@@ -1,3 +1,0 @@
-- :children_crossing: Enforce name requirement for new record dialog [PR](https://github.com/laminlabs/laminhub-public/pull/327) [@chaichontat](https://github.com/chaichontat)
-- :bug: Fix space selector in sheet creation [PR](https://github.com/laminlabs/laminhub-public/pull/326) [@chaichontat](https://github.com/chaichontat)
-- :children_crossing: Clear search on folder navigation in bucket table [PR](https://github.com/laminlabs/laminhub-public/pull/325) [@chaichontat](https://github.com/chaichontat)
