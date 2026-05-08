@@ -25,7 +25,6 @@ on:
   repository_dispatch:
     types:
       - laminhub-public-release
-      - lamin-blog-release
       - lamin-blog-dispatch
 
 permissions:
@@ -36,7 +35,7 @@ jobs:
   merge:
     if: |
       (github.event_name == 'workflow_dispatch') ||
-      (github.event_name == 'repository_dispatch' && (github.event.action == 'laminhub-public-release' || github.event.action == 'lamin-blog-release' || github.event.action == 'lamin-blog-dispatch'))
+      (github.event_name == 'repository_dispatch' && (github.event.action == 'laminhub-public-release' || github.event.action == 'lamin-blog-dispatch'))
     runs-on: ubuntu-latest
     env:
       REPO: ${{ github.repository }}
@@ -58,9 +57,6 @@ jobs:
             case "$ACTION" in
               laminhub-public-release)
                 SOURCE="laminhub-public"
-                ;;
-              lamin-blog-release)
-                SOURCE="blog"
                 ;;
               lamin-blog-dispatch)
                 SOURCE="blog"
