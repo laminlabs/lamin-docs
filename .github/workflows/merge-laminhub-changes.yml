@@ -1,16 +1,22 @@
 # yamllint disable rule:line-length
 # yamllint disable rule:truthy
 ---
-# Merges docs/changelog/soon/laminhub-public.md into docs/changelog/2026.md and opens a PR.
-# Triggered by repository_dispatch from laminhub-public on release (see plan: laminhub-public
-# must have a workflow on release: published that POSTs to repos/laminlabs/lamin-docs/dispatches
-# with event_type: laminhub-public-release and client_payload: { tag_name, published_at }).
+# Merges docs/changelog/soon/{laminhub-public,blog}.md into docs/changelog/2026.md and opens a PR.
+# Triggered by repository_dispatch from laminhub-public and lamin-blog.
 on:
   workflow_dispatch:
     inputs:
-      tag_name:
-        description: "Release tag (e.g. 1.15.3 or v1.15.3)"
+      source:
+        description: "Changelog source"
         required: true
+        type: choice
+        options:
+          - laminhub-public
+          - blog
+        default: laminhub-public
+      tag_name:
+        description: "Release tag for laminhub-public (e.g. 1.15.3 or v1.15.3)"
+        required: false
         type: string
       published_at:
         description: "Release date ISO 8601 (e.g. 2026-02-12)"
@@ -19,6 +25,8 @@ on:
   repository_dispatch:
     types:
       - laminhub-public-release
+      - lamin-blog-release
+      - lamin-blog-dispatch
 
 permissions:
   contents: write
@@ -28,7 +36,7 @@ jobs:
   merge:
     if: |
       (github.event_name == 'workflow_dispatch') ||
-      (github.event_name == 'repository_dispatch' && github.event.action == 'laminhub-public-release')
+      (github.event_name == 'repository_dispatch' && (github.event.action == 'laminhub-public-release' || github.event.action == 'lamin-blog-release' || github.event.action == 'lamin-blog-dispatch'))
     runs-on: ubuntu-latest
     env:
       REPO: ${{ github.repository }}
@@ -46,25 +54,54 @@ jobs:
         run: |
           set -euo pipefail
           if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            ACTION="${{ github.event.action }}"
+            case "$ACTION" in
+              laminhub-public-release)
+                SOURCE="laminhub-public"
+                ;;
+              lamin-blog-release)
+                SOURCE="blog"
+                ;;
+              lamin-blog-dispatch)
+                SOURCE="blog"
+                ;;
+              *)
+                echo "Unsupported repository_dispatch action: $ACTION"
+                exit 1
+                ;;
+            esac
             TAG_RAW="${{ github.event.client_payload.tag_name }}"
             PUBLISHED="${{ github.event.client_payload.published_at }}"
           else
+            SOURCE="${{ inputs.source }}"
             TAG_RAW="${{ inputs.tag_name }}"
             PUBLISHED="${{ inputs.published_at }}"
           fi
-          test -n "$TAG_RAW" || { echo "tag_name is required"; exit 1; }
           test -n "$PUBLISHED" || { echo "published_at is required"; exit 1; }
-          # Strip leading v if present
-          TAG="${TAG_RAW#v}"
+          TAG=""
+          if [ "$SOURCE" = "laminhub-public" ]; then
+            test -n "$TAG_RAW" || { echo "tag_name is required for laminhub-public"; exit 1; }
+            # Strip leading v if present
+            TAG="${TAG_RAW#v}"
+          fi
           # Format date as YYYY-MM-DD (handle full ISO 8601)
           DATE_STR=$(echo "$PUBLISHED" | cut -d'T' -f1)
+          SOON_FILE="docs/changelog/soon/${SOURCE}.md"
+          if [ "$SOURCE" = "laminhub-public" ]; then
+            HEADING_SUFFIX="hub ${TAG}"
+          else
+            HEADING_SUFFIX="blog"
+          fi
+          echo "source=$SOURCE" >> "$GITHUB_OUTPUT"
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
           echo "date_str=$DATE_STR" >> "$GITHUB_OUTPUT"
+          echo "soon_file=$SOON_FILE" >> "$GITHUB_OUTPUT"
+          echo "heading_suffix=$HEADING_SUFFIX" >> "$GITHUB_OUTPUT"
 
       - name: Check soon file has content
         id: check
         run: |
-          SOON_FILE="docs/changelog/soon/laminhub-public.md"
+          SOON_FILE="${{ steps.resolve.outputs.soon_file }}"
           if [ ! -f "$SOON_FILE" ] || [ ! -s "$SOON_FILE" ]; then
             echo "soon=$SOON_FILE is missing or empty; skipping merge (no-op)."
             echo "skip=true" >> "$GITHUB_OUTPUT"
@@ -72,10 +109,10 @@ jobs:
           fi
           echo "skip=false" >> "$GITHUB_OUTPUT"
 
-      - name: Merge laminhub-public.md into 2026.md
+      - name: Merge soon changelog into 2026.md
         if: steps.check.outputs.skip != 'true'
         run: |
-          python3 - "docs/changelog/soon/laminhub-public.md" "docs/changelog/2026.md" "${{ steps.resolve.outputs.date_str }}" "${{ steps.resolve.outputs.tag }}" <<'PY'
+          python3 - "${{ steps.resolve.outputs.soon_file }}" "docs/changelog/2026.md" "${{ steps.resolve.outputs.date_str }}" "${{ steps.resolve.outputs.heading_suffix }}" "${{ steps.resolve.outputs.source }}" <<'PY'
           import json
           import re
           import sys
@@ -179,12 +216,28 @@ jobs:
                   output[original_idx] = new_line
               return "\n".join(output)
 
+          def _normalize_blog_bullets(content: str) -> str:
+              lines = []
+              for line in content.splitlines():
+                  if line.startswith("- :memo: "):
+                      lines.append("- 📝 " + line[len("- :memo: "):])
+                  else:
+                      lines.append(line)
+              return "\n".join(lines)
+
           soon_path = Path(sys.argv[1])
           changelog_path = Path(sys.argv[2])
           date_str = sys.argv[3]
-          tag = sys.argv[4]
-          content = _sort_and_render_bullets(soon_path.read_text().strip())
-          heading = f"## {date_str} {{small}}`hub {tag}`"
+          heading_suffix = sys.argv[4]
+          source = sys.argv[5]
+          raw_content = soon_path.read_text().strip()
+          if source == "laminhub-public":
+              content = _sort_and_render_bullets(raw_content)
+          elif source == "blog":
+              content = _normalize_blog_bullets(raw_content)
+          else:
+              content = raw_content
+          heading = f"## {date_str} {{small}}`{heading_suffix}`"
           new_section = f"{heading}\n\n{content}\n\n"
           text = changelog_path.read_text()
           idx = text.find("\n## ")
@@ -198,13 +251,15 @@ jobs:
       - name: Clear soon file
         if: steps.check.outputs.skip != 'true'
         run: |
-          echo -n '' > docs/changelog/soon/laminhub-public.md
+          echo -n '' > "${{ steps.resolve.outputs.soon_file }}"
 
       - name: Create branch, commit, push
         if: steps.check.outputs.skip != 'true'
         env:
+          SOURCE: ${{ steps.resolve.outputs.source }}
           TAG: ${{ steps.resolve.outputs.tag }}
           DATE_STR: ${{ steps.resolve.outputs.date_str }}
+          SOON_FILE: ${{ steps.resolve.outputs.soon_file }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -212,10 +267,16 @@ jobs:
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           RUN_ID_SHORT=${GITHUB_RUN_ID:0:8}
           [ -n "$RUN_ID_SHORT" ] || RUN_ID_SHORT=$GITHUB_RUN_ID
-          BRANCH="chore/changelog/merge-laminhub-public-${TAG}-${RUN_ID_SHORT}"
+          if [ "$SOURCE" = "laminhub-public" ]; then
+            BRANCH="chore/changelog/merge-laminhub-public-${TAG}-${RUN_ID_SHORT}"
+            COMMIT_SUBJECT="chore(changelog): merge laminhub-public ${TAG} (${DATE_STR}) into 2026.md"
+          else
+            BRANCH="chore/changelog/merge-blog-${DATE_STR}-${RUN_ID_SHORT}"
+            COMMIT_SUBJECT="chore(changelog): merge blog (${DATE_STR}) into 2026.md"
+          fi
           git checkout -b "$BRANCH" origin/main
-          git add docs/changelog/2026.md docs/changelog/soon/laminhub-public.md
-          git commit -m "chore(changelog): merge laminhub-public ${TAG} (${DATE_STR}) into 2026.md"
+          git add docs/changelog/2026.md "$SOON_FILE"
+          git commit -m "$COMMIT_SUBJECT"
           git push -u origin "$BRANCH"
           echo "branch=$BRANCH" >> "$GITHUB_ENV"
 
@@ -224,15 +285,22 @@ jobs:
         id: open_pr
         env:
           BRANCH: ${{ env.branch }}
+          SOURCE: ${{ steps.resolve.outputs.source }}
           TAG: ${{ steps.resolve.outputs.tag }}
           DATE_STR: ${{ steps.resolve.outputs.date_str }}
+          SOON_FILE: ${{ steps.resolve.outputs.soon_file }}
         run: |
+          if [ "$SOURCE" = "laminhub-public" ]; then
+            TITLE="🔖 Hub ${TAG}"
+          else
+            TITLE="📝 Blog ${DATE_STR}"
+          fi
           gh pr create \
             --repo "$REPO" \
             --base main \
             --head "$BRANCH" \
-            --title "🔖 Hub ${TAG}" \
-            --body "Prepends content from docs/changelog/soon/laminhub-public.md to docs/changelog/2026.md and clears the soon file."
+            --title "$TITLE" \
+            --body "Prepends content from ${SOON_FILE} to docs/changelog/2026.md and clears the soon file."
 
       - name: Merge PR into main
         if: steps.check.outputs.skip != 'true'
