@@ -1,3 +1,4 @@
+- 🚸 Improve UX of auto-selected managed storage locations for a space [PR](https://github.com/laminlabs/lamindb/pull/3677) [@falexwolf](https://github.com/falexwolf)
 - 🥅 Raise an error on write streaming for artifacts with `overwrite_version=False` [PR](https://github.com/laminlabs/lamindb/pull/3678) [@Koncopd](https://github.com/Koncopd)
 - ✨ Move artifact to a new storage location on key change [PR](https://github.com/laminlabs/lamindb/pull/3673) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix `hub-local` tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1338) [@Koncopd](https://github.com/Koncopd)
