@@ -1,0 +1,1 @@
+- ⚡️ Speed up queries for large databases [PR](https://github.com/laminlabs/laminhub-public/pull/328) [@Koncopd](https://github.com/Koncopd)
