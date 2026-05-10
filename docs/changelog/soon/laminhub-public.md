@@ -1,1 +1,2 @@
+- ✨ Improve API key management with named keys, expiration date, revocation, etc. [PR](https://github.com/laminlabs/laminhub-public/pull/329) [@Ebad371](https://github.com/Ebad371)
 - ⚡️ Speed up queries for large databases [PR](https://github.com/laminlabs/laminhub-public/pull/328) [@Koncopd](https://github.com/Koncopd)
