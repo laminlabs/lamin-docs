@@ -109,11 +109,8 @@ jobs:
         if: steps.check.outputs.skip != 'true'
         run: |
           python3 - "${{ steps.resolve.outputs.soon_file }}" "docs/changelog/2026.md" "${{ steps.resolve.outputs.date_str }}" "${{ steps.resolve.outputs.heading_suffix }}" "${{ steps.resolve.outputs.source }}" <<'PY'
-          import json
           import re
           import sys
-          import urllib.request
-          from html import escape
           from pathlib import Path
 
           EMOJI_SHORTCODE_RE = re.compile(r"^:(?P<name>[a-z0-9_+\-]+):\s+(?P<rest>.+)$")
@@ -124,6 +121,12 @@ jobs:
               "⚡": "zap",
               "⚡️": "zap",
           }
+          EMOJI_SHORTCODE_UNICODE_MAP = {
+              "sparkles": "✨",
+              "bug": "🐛",
+              "children_crossing": "🚸",
+              "zap": "⚡️",
+          }
           ICON_PRIORITY = {
               "sparkles": 0,
               "children_crossing": 1,
@@ -131,48 +134,22 @@ jobs:
               "bug": 3,
           }
 
-          def _looks_like_unicode_icon(token: str) -> bool:
-              if not token:
-                  return False
-              return any(ord(ch) >= 0x2600 for ch in token if ch not in {"\ufe0f", "\u200d"})
-
-          def _twemoji_url(token: str) -> str | None:
-              codepoints = [f"{ord(ch):x}" for ch in token if ch not in {"\ufe0f", "\u200d"}]
-              if not codepoints:
-                  return None
-              return (
-                  "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/"
-                  + "-".join(codepoints)
-                  + ".svg"
-              )
-
-          def _emoji_image(name: str, url: str | None) -> str:
-              if not url:
-                  return f":{name}:"
-              return (
-                  f'<img src="{url}" alt=":{escape(name)}:" width="16" height="16" '
-                  'style="vertical-align:text-bottom;" />'
-              )
-
-          def _extract_icon(body: str, emoji_urls: dict[str, str]) -> tuple[str | None, str]:
+          def _extract_icon(body: str) -> tuple[str | None, str]:
               shortcode_match = EMOJI_SHORTCODE_RE.match(body)
               if shortcode_match:
                   name = shortcode_match.group("name")
                   rest = shortcode_match.group("rest")
-                  image = _emoji_image(name, emoji_urls.get(name))
-                  return name, f"{image} {rest}"
+                  unicode_icon = EMOJI_SHORTCODE_UNICODE_MAP.get(name)
+                  if unicode_icon:
+                      return name, f"{unicode_icon} {rest}"
+                  return None, body
 
               token, sep, rest = body.partition(" ")
               if not sep:
                   return None, body
               mapped_name = EMOJI_UNICODE_NAME_MAP.get(token)
               if mapped_name:
-                  image = _emoji_image(mapped_name, emoji_urls.get(mapped_name))
-                  return mapped_name, f"{image} {rest}"
-              if _looks_like_unicode_icon(token):
-                  twemoji_url = _twemoji_url(token)
-                  image = _emoji_image(token, twemoji_url)
-                  return token, f"{image} {rest}"
+                  return mapped_name, f"{token} {rest}"
               return None, body
 
           def _sort_and_render_bullets(content: str) -> str:
@@ -185,15 +162,9 @@ jobs:
               if not bullet_rows:
                   return content
 
-              try:
-                  with urllib.request.urlopen("https://api.github.com/emojis", timeout=10) as response:
-                      emoji_urls = json.loads(response.read().decode("utf-8"))
-              except Exception:
-                  emoji_urls = {}
-
               decorated: list[tuple[int, str, int, str]] = []
               for idx, body, original_line in bullet_rows:
-                  icon_key, rendered_body = _extract_icon(body, emoji_urls)
+                  icon_key, rendered_body = _extract_icon(body)
                   if icon_key:
                       priority = ICON_PRIORITY.get(icon_key, 3)
                       key = icon_key
