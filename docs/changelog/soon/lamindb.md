@@ -1,3 +1,4 @@
+- ♻️ More convenient saving of `README.md` [PR](https://github.com/laminlabs/lamin-cli/pull/218) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable `ln.connect()` in marimo notebooks [PR](https://github.com/laminlabs/lamindb-setup/pull/1340) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🚸 Clear error on reading old versions of artifacts with `overwrite_versions=True` [PR](https://github.com/laminlabs/lamindb/pull/3679) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve UX of auto-selected managed storage locations for a space [PR](https://github.com/laminlabs/lamindb/pull/3677) [@falexwolf](https://github.com/falexwolf)
