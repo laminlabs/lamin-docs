@@ -1,0 +1,1 @@
+- 💄 Simpler and more consistent design of the artifact page [PR](https://github.com/laminlabs/laminhub-public/pull/330) [@falexwolf](https://github.com/falexwolf)
