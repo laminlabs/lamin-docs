@@ -1,3 +1,4 @@
+- ✨ Enable `lamin load` for notes [PR](https://github.com/laminlabs/lamin-cli/pull/220) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fix deprecation warnings [PR](https://github.com/laminlabs/lamin-cli/pull/219) [@falexwolf](https://github.com/falexwolf)
 - ♻️ More convenient saving of `README.md` [PR](https://github.com/laminlabs/lamin-cli/pull/218) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable `ln.connect()` in marimo notebooks [PR](https://github.com/laminlabs/lamindb-setup/pull/1340) [@ishitajain9717](https://github.com/ishitajain9717)
