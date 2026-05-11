@@ -1,3 +1,4 @@
+- 🧪 Skip test_cli_login_api_key [PR](https://github.com/laminlabs/lamin-cli/pull/221) [@Koncopd](https://github.com/Koncopd)
 - 🧪 Skip test_login_api_key [PR](https://github.com/laminlabs/lamindb-setup/pull/1341) [@Koncopd](https://github.com/Koncopd)
 - 🥅 Correct error for unmanaged storages in storage settings setters [PR](https://github.com/laminlabs/lamindb/pull/3681) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable `lamin load` for notes [PR](https://github.com/laminlabs/lamin-cli/pull/220) [@falexwolf](https://github.com/falexwolf)
