@@ -1,3 +1,4 @@
+- 🥅 Correct error for unmanaged storages in storage settings setters [PR](https://github.com/laminlabs/lamindb/pull/3681) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable `lamin load` for notes [PR](https://github.com/laminlabs/lamin-cli/pull/220) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fix deprecation warnings [PR](https://github.com/laminlabs/lamin-cli/pull/219) [@falexwolf](https://github.com/falexwolf)
 - ♻️ More convenient saving of `README.md` [PR](https://github.com/laminlabs/lamin-cli/pull/218) [@falexwolf](https://github.com/falexwolf)
