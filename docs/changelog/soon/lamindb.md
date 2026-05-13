@@ -1,3 +1,4 @@
+- 🚸 Warn about reducing the default value for `limit` in `.to_dataframe()` from 100 to 20 [PR](https://github.com/laminlabs/lamindb/pull/3505) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add an explicit multi-instance unit test group [PR](https://github.com/laminlabs/lamindb/pull/3671) [@falexwolf](https://github.com/falexwolf)
 - :memo: Update `CONTRIBUTING.md` [PR](https://github.com/laminlabs/lamindb/pull/3676) [@sheetalgiri](https://github.com/sheetalgiri)
 - :construction_worker: Fix modal legacy API [PR](https://github.com/laminlabs/lamin-cli/pull/223) [@falexwolf](https://github.com/falexwolf)
