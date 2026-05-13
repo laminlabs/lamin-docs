@@ -1,0 +1,1 @@
+- :bug: Fix sheet filters for paginated rows [PR](https://github.com/laminlabs/laminhub-public/pull/334) [@chaichontat](https://github.com/chaichontat)
