@@ -1,2 +1,0 @@
-- :bug: Fix typed-record feature filters on sheet-backed records [PR](https://github.com/laminlabs/laminhub-public/pull/335) [@chaichontat](https://github.com/chaichontat)
-- :bug: Fix sheet filters for paginated rows [PR](https://github.com/laminlabs/laminhub-public/pull/334) [@chaichontat](https://github.com/chaichontat)
