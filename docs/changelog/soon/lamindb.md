@@ -1,3 +1,4 @@
+- :memo: Update `CONTRIBUTING.md` [PR](https://github.com/laminlabs/lamindb/pull/3676) [@sheetalgiri](https://github.com/sheetalgiri)
 - :construction_worker: Fix modal legacy API [PR](https://github.com/laminlabs/lamin-cli/pull/223) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Point version option to `lamindb-core` [PR](https://github.com/laminlabs/lamin-cli/pull/222) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup and lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3682) [@Koncopd](https://github.com/Koncopd)
