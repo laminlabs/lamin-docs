@@ -1,3 +1,4 @@
+- ✨ Add explicit `key_is_virtual` argument to `Artifact.__init__(...)` [PR](https://github.com/laminlabs/lamindb/pull/3684) [@Koncopd](https://github.com/Koncopd)
 - :memo: README v5.7: Better language [PR](https://github.com/laminlabs/lamindb/pull/3683) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Warn about reducing the default value for `limit` in `.to_dataframe()` from 100 to 20 [PR](https://github.com/laminlabs/lamindb/pull/3505) [@falexwolf](https://github.com/falexwolf)
 - ✅ Add an explicit multi-instance unit test group [PR](https://github.com/laminlabs/lamindb/pull/3671) [@falexwolf](https://github.com/falexwolf)
