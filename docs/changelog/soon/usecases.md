@@ -1,3 +1,4 @@
+- ♻️ Start running the curation notebook again [PR](https://github.com/laminlabs/cellxgene-lamin/pull/150) [@falexwolf](https://github.com/falexwolf)
 - 👷 Re-enable running the `sc-imaging` guide on CI [PR](https://github.com/laminlabs/lamin-usecases/pull/244) [@falexwolf](https://github.com/falexwolf)
 - :recycle: More robust execution strategy [PR](https://github.com/laminlabs/snakemake-lamin/pull/11) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add DNA methylation usecase [PR](https://github.com/laminlabs/lamin-usecases/pull/243) [@sheetalgiri](https://github.com/sheetalgiri)
