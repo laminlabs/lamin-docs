@@ -1,3 +1,4 @@
+- :art: Add safeguards against non-latest `revises` argument on saving a versioned sqlrecord [PR](https://github.com/laminlabs/lamindb/pull/3685) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Simplify the curator logs and advocate explicit object construction instead of `add_new_from()` [PR](https://github.com/laminlabs/lamindb/pull/3687) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix de-duplication of feature names within `.to_dataframe(include="features")` [PR](https://github.com/laminlabs/lamindb/pull/3686) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add explicit `key_is_virtual` argument to `Artifact.__init__(...)` [PR](https://github.com/laminlabs/lamindb/pull/3684) [@Koncopd](https://github.com/Koncopd)
