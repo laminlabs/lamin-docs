@@ -1,3 +1,4 @@
+- 🚸 Simplify the curator logs and advocate explicit object construction instead of `add_new_from()` [PR](https://github.com/laminlabs/lamindb/pull/3687) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix de-duplication of feature names within `.to_dataframe(include="features")` [PR](https://github.com/laminlabs/lamindb/pull/3686) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add explicit `key_is_virtual` argument to `Artifact.__init__(...)` [PR](https://github.com/laminlabs/lamindb/pull/3684) [@Koncopd](https://github.com/Koncopd)
 - :memo: README v5.7: Better language [PR](https://github.com/laminlabs/lamindb/pull/3683) [@falexwolf](https://github.com/falexwolf)
