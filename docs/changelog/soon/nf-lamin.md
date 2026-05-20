@@ -1,3 +1,4 @@
+- ✅ Fix branch and instance settings for test artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/156) [@rcannood](https://github.com/rcannood)
 - :art: Uniformise redaction of sensitive information [PR](https://github.com/laminlabs/nf-lamin/pull/153) [@rcannood](https://github.com/rcannood)
 - Refactor testing setup [PR](https://github.com/laminlabs/nf-lamin/pull/150) [@rcannood](https://github.com/rcannood)
 - ♻️ Refactor artifact creation [PR](https://github.com/laminlabs/nf-lamin/pull/149) [@rcannood](https://github.com/rcannood)
