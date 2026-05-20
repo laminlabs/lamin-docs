@@ -281,7 +281,7 @@ artifact.restore()  # restore from trash
 
 By default, deleting moves an artifact into the trash so it no longer appears in standard queries.
 
-To restore it, call `artifact.restore()`. For archive/trash semantics and query patterns, see {doc}`/faq/trash-archive`.
+To restore it, call `artifact.restore()`. For archive/trash semantics and query patterns, see {doc}`manage-changes`.
 
 :::
 
