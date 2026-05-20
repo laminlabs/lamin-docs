@@ -1,3 +1,4 @@
+- ✨ Rework into `get_instance_slug_by_uid` [PR](https://github.com/laminlabs/lamindb-setup/pull/1344) [@Koncopd](https://github.com/Koncopd)
 - ✨ Implement `get_instance_slug_by_id` [PR](https://github.com/laminlabs/lamindb-setup/pull/1343) [@Koncopd](https://github.com/Koncopd)
 - ✨ Expose storage hub record from `StorageSettings` [PR](https://github.com/laminlabs/lamindb-setup/pull/1342) [@Koncopd](https://github.com/Koncopd)
 - 📝 More visibility for branching in the docs [PR](https://github.com/laminlabs/lamindb/pull/3688) [@falexwolf](https://github.com/falexwolf)
