@@ -1,3 +1,4 @@
+- :memo: Improve documentation for usage of closures when referring to params [PR](https://github.com/laminlabs/nf-lamin/pull/158) [@rcannood](https://github.com/rcannood)
 - :bug: Fix key resolution; deprecate uploading local paths [PR](https://github.com/laminlabs/nf-lamin/pull/157) [@rcannood](https://github.com/rcannood)
 - ♻️ Add support for Nextflow 26.04 [PR](https://github.com/laminlabs/nf-lamin/pull/154) [@rcannood](https://github.com/rcannood)
 - ✅ Fix branch and instance settings for test artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/156) [@rcannood](https://github.com/rcannood)
