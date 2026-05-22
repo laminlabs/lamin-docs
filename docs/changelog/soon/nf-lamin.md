@@ -1,3 +1,4 @@
+- :memo: Revise README for nf-lamin plugin details [PR](https://github.com/laminlabs/nf-lamin/pull/161) [@falexwolf](https://github.com/falexwolf)
 - :bookmark: Prepare for release 0.8.0 [PR](https://github.com/laminlabs/nf-lamin/pull/160) [@rcannood](https://github.com/rcannood)
 - :memo: Improve documentation for usage of closures when referring to params [PR](https://github.com/laminlabs/nf-lamin/pull/158) [@rcannood](https://github.com/rcannood)
 - :bug: Fix key resolution; deprecate uploading local paths [PR](https://github.com/laminlabs/nf-lamin/pull/157) [@rcannood](https://github.com/rcannood)
