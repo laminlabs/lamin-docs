@@ -1,3 +1,5 @@
+- 📝 More polish for the `manage-changes` doc [PR](https://github.com/laminlabs/lamindb/pull/3689) [@falexwolf](https://github.com/falexwolf)
+- ✨ Compatibility of `ln.track()` and `ln.finish()` with Marimo notebooks [PR](https://github.com/laminlabs/lamindb/pull/3680) [@ishitajain9717](https://github.com/ishitajain9717)
 - ✨ Pull existing artifacts for `s3/gs` paths in `AUTO_KEY_PREFIX` when creating an artifact [PR](https://github.com/laminlabs/lamindb/pull/3691) [@Koncopd](https://github.com/Koncopd)
 - ✨ Rework into `get_instance_slug_by_uid` [PR](https://github.com/laminlabs/lamindb-setup/pull/1344) [@Koncopd](https://github.com/Koncopd)
 - ✨ Implement `get_instance_slug_by_id` [PR](https://github.com/laminlabs/lamindb-setup/pull/1343) [@Koncopd](https://github.com/Koncopd)
