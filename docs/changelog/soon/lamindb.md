@@ -1,3 +1,4 @@
+- 🐛 Fix hashing for files and directories on GCS [PR](https://github.com/laminlabs/lamindb/pull/3694) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Use etag for gs when md5 hash is not available, do consistent hashing of cloud directories [PR](https://github.com/laminlabs/lamindb-setup/pull/1345) [@Koncopd](https://github.com/Koncopd)
 - 📝 More polish for the `manage-changes` doc [PR](https://github.com/laminlabs/lamindb/pull/3689) [@falexwolf](https://github.com/falexwolf)
 - ✨ Compatibility of `ln.track()` and `ln.finish()` with Marimo notebooks [PR](https://github.com/laminlabs/lamindb/pull/3680) [@ishitajain9717](https://github.com/ishitajain9717)
