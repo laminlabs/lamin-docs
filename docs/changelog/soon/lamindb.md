@@ -1,3 +1,4 @@
+- 🚸 Print warnings on instance module mismatch with environment during `ln.connect()` and `ln.DB()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1346) [@falexwolf](https://github.com/falexwolf)
 - 📝 More consistent use of images and examples in the docs, rename the `registries.md` doc to `query-search.md` [PR](https://github.com/laminlabs/lamindb/pull/3698) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove logic related to migrating old dtype format containing semantic type names [PR](https://github.com/laminlabs/lamindb/pull/3697) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document and test features where the `dtype` is a sheet [PR](https://github.com/laminlabs/lamindb/pull/3696) [@falexwolf](https://github.com/falexwolf)
