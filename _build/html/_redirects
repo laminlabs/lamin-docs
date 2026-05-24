@@ -11,7 +11,7 @@
 /modules /setup 301
 /sheets /records 301
 /transfer /sync 301
-/query-search /registries 301
+/registries /query-search 301
 /ontologies /manage-ontologies 301
 /bio-registries /manage-ontologies 301
 /scrna6 /scrna-tiledbsoma 301
