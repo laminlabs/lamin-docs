@@ -1,3 +1,4 @@
+- 📝 More consistent use of images and examples in the docs, rename the `registries.md` doc to `query-search.md` [PR](https://github.com/laminlabs/lamindb/pull/3698) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove logic related to migrating old dtype format containing semantic type names [PR](https://github.com/laminlabs/lamindb/pull/3697) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document and test features where the `dtype` is a sheet [PR](https://github.com/laminlabs/lamindb/pull/3696) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document cell output stripping of `ln.finish()` in a Jupyter notebook [PR](https://github.com/laminlabs/lamindb/pull/3590) [@falexwolf](https://github.com/falexwolf)
