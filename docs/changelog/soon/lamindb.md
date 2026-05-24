@@ -1,3 +1,4 @@
+- 📝 Fix UPath docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1347) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Print warnings on instance module mismatch with environment during `ln.connect()` and `ln.DB()` [PR](https://github.com/laminlabs/lamindb/pull/3699) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Print warnings on instance module mismatch with environment during `ln.connect()` and `ln.DB()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1346) [@falexwolf](https://github.com/falexwolf)
 - 📝 More consistent use of images and examples in the docs, rename the `registries.md` doc to `query-search.md` [PR](https://github.com/laminlabs/lamindb/pull/3698) [@falexwolf](https://github.com/falexwolf)
