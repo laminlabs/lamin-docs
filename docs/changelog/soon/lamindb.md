@@ -1,3 +1,4 @@
+- ✨ Support timezone-ware datetimes as dtype [PR](https://github.com/laminlabs/lamindb/pull/3693) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix hashing for files and directories on GCS [PR](https://github.com/laminlabs/lamindb/pull/3694) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Use etag for gs when md5 hash is not available, do consistent hashing of cloud directories [PR](https://github.com/laminlabs/lamindb-setup/pull/1345) [@Koncopd](https://github.com/Koncopd)
 - 📝 More polish for the `manage-changes` doc [PR](https://github.com/laminlabs/lamindb/pull/3689) [@falexwolf](https://github.com/falexwolf)
