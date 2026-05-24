@@ -1,3 +1,4 @@
+- 🔥 Remove logic related to migrating old dtype format containing semantic type names [PR](https://github.com/laminlabs/lamindb/pull/3697) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document and test features where the `dtype` is a sheet [PR](https://github.com/laminlabs/lamindb/pull/3696) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document cell output stripping of `ln.finish()` in a Jupyter notebook [PR](https://github.com/laminlabs/lamindb/pull/3590) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document the string serialization of `dtype` objects [PR](https://github.com/laminlabs/lamindb/pull/3695) [@falexwolf](https://github.com/falexwolf)
