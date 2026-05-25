@@ -1,1 +1,2 @@
+- :sparkles: Route instance roots to the configured default tab [PR](https://github.com/laminlabs/laminhub-public/pull/337) [@chaichontat](https://github.com/chaichontat)
 - ✨ Run general Python scripts from the `Transforms` tab [PR](https://github.com/laminlabs/laminhub-public/pull/336) [@falexwolf](https://github.com/falexwolf)
