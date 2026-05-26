@@ -623,7 +623,7 @@ For any field, the double underscore defines a comparator, e.g.,
 - `name__startswith="Martha"`: `name` starts with `"Martha`
 - `name__in=["Martha", "John"]`: `name` is `"John"` or `"Martha"`
 
-For more info: {doc}`registries`
+For more info: {doc}`query-search`
 
 :::
 
@@ -652,7 +652,7 @@ records = ln.Record.lookup()
 
 :::
 
-For more info: {doc}`registries`
+For more info: {doc}`query-search`
 
 ## Manage folders & storage locations
 
