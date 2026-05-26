@@ -1,1 +1,1 @@
-
+- 🚸 Better organize the logging about query result truncation [PR](https://github.com/laminlabs/lamindb/pull/3701) [@falexwolf](https://github.com/falexwolf)
