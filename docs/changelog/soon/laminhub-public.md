@@ -1,0 +1,1 @@
+- ✨ Support schema-restricted sheet dtypes [PR](https://github.com/laminlabs/laminhub-public/pull/338) [@chaichontat](https://github.com/chaichontat)
