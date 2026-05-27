@@ -1,2 +1,3 @@
+- 🐛 Avoid duplication of `__lamindb_record_export__` under concurrency [PR](https://github.com/laminlabs/lamindb/pull/3703) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix passing `is_type=False` to the `cat_filters` argument of `Feature` [PR](https://github.com/laminlabs/lamindb/pull/3702) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better organize the logging about query result truncation [PR](https://github.com/laminlabs/lamindb/pull/3701) [@falexwolf](https://github.com/falexwolf)
