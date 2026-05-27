@@ -1,0 +1,1 @@
+- :bug: Fix record value dtype filter handling [PR](https://github.com/laminlabs/laminhub-public/pull/339) [@chaichontat](https://github.com/chaichontat)
