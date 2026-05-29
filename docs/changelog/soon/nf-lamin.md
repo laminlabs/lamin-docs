@@ -1,1 +1,1 @@
-
+- 🐛 Fix branch assignment [PR](https://github.com/laminlabs/nf-lamin/pull/162) [@rcannood](https://github.com/rcannood)
