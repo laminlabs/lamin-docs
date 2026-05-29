@@ -1,3 +1,4 @@
+- 🔖 Release 0.8.1 [PR](https://github.com/laminlabs/nf-lamin/pull/165) [@rcannood](https://github.com/rcannood)
 - 🔊 Improve logging when API is called [PR](https://github.com/laminlabs/nf-lamin/pull/164) [@rcannood](https://github.com/rcannood)
 - 🔇 Avoid local file warnings for work dir and asset dir paths [PR](https://github.com/laminlabs/nf-lamin/pull/163) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix branch assignment [PR](https://github.com/laminlabs/nf-lamin/pull/162) [@rcannood](https://github.com/rcannood)
