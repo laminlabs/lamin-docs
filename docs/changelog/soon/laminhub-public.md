@@ -1,2 +1,3 @@
+- :zap: Speed up frontend queries on large databases by orders of magnitude when `order_by` or `search_in` are not needed [PR](https://github.com/laminlabs/laminhub-public/pull/341) [@Koncopd](https://github.com/Koncopd)
 - :bug: Fix write-space selection across creation flows [PR](https://github.com/laminlabs/laminhub-public/pull/340) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix record value dtype filter handling [PR](https://github.com/laminlabs/laminhub-public/pull/339) [@chaichontat](https://github.com/chaichontat)
