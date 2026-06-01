@@ -1,0 +1,1 @@
+- :recycle: Consistently adopt footnotes for references, drop dedicated references [PR](https://github.com/laminlabs/lamin-blog/pull/50) [@falexwolf](https://github.com/falexwolf)
