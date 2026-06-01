@@ -1,1 +1,2 @@
+- ♻️ Always link record export against run of `__lamindb_record_export__`, never against the initiating run [PR](https://github.com/laminlabs/lamindb/pull/3707) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Disable http2 in httpx client [PR](https://github.com/laminlabs/lamindb-setup/pull/1348) [@Koncopd](https://github.com/Koncopd)
