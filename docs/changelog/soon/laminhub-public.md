@@ -1,1 +1,2 @@
+- ✨ Improve the space selector [PR](https://github.com/laminlabs/laminhub-public/pull/343) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix explicit display fields in selectors [PR](https://github.com/laminlabs/laminhub-public/pull/342) [@chaichontat](https://github.com/chaichontat)
