@@ -1,0 +1,1 @@
+- ⚡️ Disable http2 in httpx client [PR](https://github.com/laminlabs/lamindb-setup/pull/1348) [@Koncopd](https://github.com/Koncopd)
