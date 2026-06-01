@@ -1,2 +1,3 @@
+- :bug: Fix artifact storage paths after upload and sheet export [PR](https://github.com/laminlabs/laminhub-public/pull/344) [@chaichontat](https://github.com/chaichontat)
 - ✨ Improve the space selector [PR](https://github.com/laminlabs/laminhub-public/pull/343) [@chaichontat](https://github.com/chaichontat)
 - :bug: Fix explicit display fields in selectors [PR](https://github.com/laminlabs/laminhub-public/pull/342) [@chaichontat](https://github.com/chaichontat)
