@@ -1,0 +1,1 @@
+- :bug: Fix explicit display fields in selectors [PR](https://github.com/laminlabs/laminhub-public/pull/342) [@chaichontat](https://github.com/chaichontat)
