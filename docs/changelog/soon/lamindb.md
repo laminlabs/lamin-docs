@@ -1,3 +1,4 @@
+- 🚸 Upon exporting records, link each single record as an input rather than their type [PR](https://github.com/laminlabs/lamindb/pull/3710) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor the `Run` constructor, set run status upon start and completion of transfer and export functions [PR](https://github.com/laminlabs/lamindb/pull/3709) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Always link record export against run of `__lamindb_record_export__`, never against the initiating run [PR](https://github.com/laminlabs/lamindb/pull/3707) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Disable http2 in httpx client [PR](https://github.com/laminlabs/lamindb-setup/pull/1348) [@Koncopd](https://github.com/Koncopd)
