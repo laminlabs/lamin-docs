@@ -1,0 +1,1 @@
+- ✨ Add organization account creation endpoint [PR](https://github.com/laminlabs/laminhub-public/pull/346) [@fredericenard](https://github.com/fredericenard)
