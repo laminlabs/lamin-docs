@@ -32,8 +32,8 @@ README0_ORIG = """[![docs](https://img.shields.io/badge/docs-yellow)](https://do
 
 # LaminDB - Open-source data lakehouse for biology
 
-LaminDB allows you to query, trace, and validate datasets and models at scale while feeling as simple as a file system.
-You get context & memory through data lineage and support for bio-formats, registries & ontologies.
+LaminDB makes it easy to query, trace, and validate millions of datasets across diverse storage formats.
+It's built on open data standards with built-in data lineage and support for bio-formats, registries & ontologies.
 
 Agent? [llms.txt](https://docs.lamin.ai/llms.txt)
 
@@ -43,8 +43,7 @@ Agent? [llms.txt](https://docs.lamin.ai/llms.txt)
 README0_REPLACE = """# Introduction [![llms.txt](https://img.shields.io/badge/llms.txt-orange)](https://docs.lamin.ai/llms.txt) [![pypi](https://img.shields.io/pypi/v/lamindb?color=blue&label=PyPI)](https://pypi.org/project/lamindb) [![cran](https://www.r-pkg.org/badges/version/laminr?color=green)](https://cran.r-project.org/package=laminr) [![stars](https://img.shields.io/github/stars/laminlabs/lamindb?style=flat&logo=GitHub&label=&color=gray)](https://github.com/laminlabs/lamindb) [![downloads](https://static.pepy.tech/personalized-badge/lamindb?period=total&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=GRAY&left_text=%E2%AC%87%EF%B8%8F)](https://pepy.tech/project/lamindb)
 
 LaminDB is an open-source data lakehouse for biology.
-It allows you to query, trace, and validate datasets and models at scale while feeling as simple as a file system.
-You get context & memory through data lineage and support for bio-formats, registries & ontologies.
+It makes it easy to query, trace, and validate millions of datasets across diverse storage formats. It's built on open data standards with built-in data lineage and support for bio-formats, registries & ontologies.
 
 Agent? [llms.txt](https://docs.lamin.ai/llms.txt)
 
