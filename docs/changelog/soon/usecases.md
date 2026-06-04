@@ -1,3 +1,4 @@
+- 🎨 Add test to Arc and run atlases group without authentication [PR](https://github.com/laminlabs/lamin-usecases/pull/249) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Simplify the Arc guide [PR](https://github.com/laminlabs/lamin-usecases/pull/248) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix typo in arc tutorial [PR](https://github.com/laminlabs/lamin-usecases/pull/245) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Start running the curation notebook again [PR](https://github.com/laminlabs/cellxgene-lamin/pull/150) [@falexwolf](https://github.com/falexwolf)
