@@ -354,7 +354,11 @@ def docs(session):
         lamindb_nox.clidocs(session)
     else:
         print(f"Could not find {lamindb_nox_path}, skipping CLI docs generation.")
-
+    # need the following line to visualize the pertdb API
+    subprocess.run(
+        "lamin settings modules set bionty,pertdb",
+        shell=True,
+    )
     subprocess.run(
         "lndocs --error-on-index",
         shell=True,
