@@ -1,3 +1,4 @@
+- ♻️ Simplify the Arc guide [PR](https://github.com/laminlabs/lamin-usecases/pull/248) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix typo in arc tutorial [PR](https://github.com/laminlabs/lamin-usecases/pull/245) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Start running the curation notebook again [PR](https://github.com/laminlabs/cellxgene-lamin/pull/150) [@falexwolf](https://github.com/falexwolf)
 - 👷 Re-enable running the `sc-imaging` guide on CI [PR](https://github.com/laminlabs/lamin-usecases/pull/244) [@falexwolf](https://github.com/falexwolf)
