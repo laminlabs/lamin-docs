@@ -1,3 +1,4 @@
+- ⚡️ Implement asynchronous artifact creation [PR](https://github.com/laminlabs/nf-lamin/pull/168) [@rcannood](https://github.com/rcannood)
 - 📝 Update config docs [PR](https://github.com/laminlabs/nf-lamin/pull/167) [@rcannood](https://github.com/rcannood)
 - 🔊 Trace log responses on error [PR](https://github.com/laminlabs/nf-lamin/pull/166) [@rcannood](https://github.com/rcannood)
 - 🔖 Release 0.8.1 [PR](https://github.com/laminlabs/nf-lamin/pull/165) [@rcannood](https://github.com/rcannood)
