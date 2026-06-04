@@ -20,7 +20,7 @@ track
 organize
 manage-changes
 ontologies
-sync
+transfer
 ```
 
 ```{toctree}
