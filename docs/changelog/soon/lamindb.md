@@ -1,3 +1,4 @@
+- :children_crossing: Improve typing of `Feature()` constructor [PR](https://github.com/laminlabs/lamindb/pull/3708) [@ishitajain9717](https://github.com/ishitajain9717)
 - 📝 Rename `sync.md` back to `transfer.md` [PR](https://github.com/laminlabs/lamindb/pull/3712) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable pre-filtering records before export [PR](https://github.com/laminlabs/lamindb/pull/3711) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Upon exporting records, link each single record as an input rather than their type [PR](https://github.com/laminlabs/lamindb/pull/3710) [@falexwolf](https://github.com/falexwolf)
