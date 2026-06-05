@@ -1,2 +1,0 @@
-- 🚸 Make record creation harder to trigger accidentally [PR](https://github.com/laminlabs/laminhub-public/pull/348) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Prettier display of special transforms & more minimal transform design overall by removing display of unnecessary information [PR](https://github.com/laminlabs/laminhub-public/pull/347) [@falexwolf](https://github.com/falexwolf)
