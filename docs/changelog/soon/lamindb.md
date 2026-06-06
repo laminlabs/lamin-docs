@@ -1,3 +1,4 @@
+- 🚸 No input tracking warning if no default database [PR](https://github.com/laminlabs/lamindb/pull/3717) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Homogenize branch and space treatment in constructors [PR](https://github.com/laminlabs/lamindb/pull/3715) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Inherit space from `storage.space` in Artifact constructor if `storage` is passed and `space` is not passed [PR](https://github.com/laminlabs/lamindb/pull/3713) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Improve typing of `Feature()` constructor [PR](https://github.com/laminlabs/lamindb/pull/3708) [@ishitajain9717](https://github.com/ishitajain9717)
