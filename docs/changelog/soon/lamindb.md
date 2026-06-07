@@ -1,3 +1,4 @@
+- :memo: Advocate feature objects over feature names [PR](https://github.com/laminlabs/lamindb/pull/3720) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Fix type annotation of `SQLRecord.filter()` to be LaminDB's `QuerySet`, not Django's [PR](https://github.com/laminlabs/lamindb/pull/3719) [@falexwolf](https://github.com/falexwolf)
 - ✨ Constrain the content of dynamic registries to be in the same space as the registry [PR](https://github.com/laminlabs/lamindb/pull/3714) [@falexwolf](https://github.com/falexwolf)
 - 🚸 No input tracking warning if no default database [PR](https://github.com/laminlabs/lamindb/pull/3717) [@falexwolf](https://github.com/falexwolf)
