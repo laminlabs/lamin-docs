@@ -1,3 +1,4 @@
+- :memo: Refer to `SQLRecord` types as (dynamic) registries [PR](https://github.com/laminlabs/lamindb/pull/3721) [@falexwolf](https://github.com/falexwolf)
 - :memo: Advocate feature objects over feature names [PR](https://github.com/laminlabs/lamindb/pull/3720) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Fix type annotation of `SQLRecord.filter()` to be LaminDB's `QuerySet`, not Django's [PR](https://github.com/laminlabs/lamindb/pull/3719) [@falexwolf](https://github.com/falexwolf)
 - ✨ Constrain the content of dynamic registries to be in the same space as the registry [PR](https://github.com/laminlabs/lamindb/pull/3714) [@falexwolf](https://github.com/falexwolf)
