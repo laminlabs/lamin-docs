@@ -1,3 +1,4 @@
+- 🍱 Re-create lamin.db.gz [PR](https://github.com/laminlabs/lamindb-setup/pull/1350) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Always link the record type as an input upon export [PR](https://github.com/laminlabs/lamindb/pull/3723) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Store `index`-like features in the `name` field of `Record` [PR](https://github.com/laminlabs/lamindb/pull/3716) [@sunnyosun](https://github.com/sunnyosun)
 - 🗃️ Add fields: `Artifact.extra_data` and `Run.extra_data` JSON fields, `Transform.run` and `TransformTransform.run`, `Feature._ounit_str` [PR](https://github.com/laminlabs/lamindb/pull/3722) [@falexwolf](https://github.com/falexwolf)
