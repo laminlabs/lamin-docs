@@ -1,0 +1,1 @@
+- ✨ Add compact density for sheets and record lists [PR](https://github.com/laminlabs/laminhub-public/pull/349) [@chaichontat](https://github.com/chaichontat)
