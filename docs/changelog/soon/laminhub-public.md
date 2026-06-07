@@ -1,1 +1,2 @@
+- 🚸 Add CSV index selection for sheet imports [PR](https://github.com/laminlabs/laminhub-public/pull/350) [@chaichontat](https://github.com/chaichontat)
 - ✨ Add compact density for sheets and record lists [PR](https://github.com/laminlabs/laminhub-public/pull/349) [@chaichontat](https://github.com/chaichontat)
