@@ -1,3 +1,4 @@
+- 🗃️ Add fields: `Artifact.extra_data` and `Run.extra_data` JSON fields, `Transform.run` and `TransformTransform.run`, `Feature._ounit_str` [PR](https://github.com/laminlabs/lamindb/pull/3722) [@falexwolf](https://github.com/falexwolf)
 - :memo: Refer to `SQLRecord` types as (dynamic) registries [PR](https://github.com/laminlabs/lamindb/pull/3721) [@falexwolf](https://github.com/falexwolf)
 - :memo: Advocate feature objects over feature names [PR](https://github.com/laminlabs/lamindb/pull/3720) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Fix type annotation of `SQLRecord.filter()` to be LaminDB's `QuerySet`, not Django's [PR](https://github.com/laminlabs/lamindb/pull/3719) [@falexwolf](https://github.com/falexwolf)
