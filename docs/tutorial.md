@@ -444,11 +444,11 @@ If you want to annotate by non-categorical metadata or indicate the feature for 
 
 ```python
 # define the "temperature" & "experiment" features
-ln.Feature(name="temperature", dtype=float).save()
-ln.Feature(name="experiment", dtype=ln.ULabel).save()
+temperature = ln.Feature(name="temperature", dtype=float).save()
+experiment = ln.Feature(name="experiment", dtype=ln.ULabel).save()
 
 # annotate the artifact
-artifact.features.set_values({"temperature": 21.6, "experiment": "My experiment"})
+artifact.features.set_values({temperature: 21.6, experiment: "My experiment"})
 
 # describe the artifact
 artifact.describe()
