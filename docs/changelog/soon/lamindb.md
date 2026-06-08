@@ -1,3 +1,4 @@
+- 🐛 Fix sheet export after recent `index` treatment in records [PR](https://github.com/laminlabs/lamindb/pull/3725) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Squash migrations and re-create `lamin.db.gz` for v2.6 [PR](https://github.com/laminlabs/lamindb/pull/3724) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Re-create lamin.db.gz [PR](https://github.com/laminlabs/lamindb-setup/pull/1350) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Always link the record type as an input upon export [PR](https://github.com/laminlabs/lamindb/pull/3723) [@falexwolf](https://github.com/falexwolf)
