@@ -1,0 +1,1 @@
+- ✨ In transfer, visualize the incoming artifact as a new node and make it clickable to lead to the source database [PR](https://github.com/laminlabs/laminhub-public/pull/351) [@falexwolf](https://github.com/falexwolf)
