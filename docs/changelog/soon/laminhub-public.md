@@ -1,2 +1,0 @@
-- :sparkles: Include collections in the Artifacts list [PR](https://github.com/laminlabs/laminhub-public/pull/353) [@chaichontat](https://github.com/chaichontat)
-- ✨ Include Pro plan on pricing page and a Beta subscription button [PR](https://github.com/laminlabs/laminhub-public/pull/352) [@Ebad371](https://github.com/Ebad371)
