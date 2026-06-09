@@ -1,0 +1,1 @@
+- ✨ Remember each sheet’s last view [PR](https://github.com/laminlabs/laminhub-public/pull/354) [@chaichontat](https://github.com/chaichontat)
