@@ -1,1 +1,2 @@
+- 🚸 Print index as the first element in `schema.describe()` if it exists [PR](https://github.com/laminlabs/lamindb/pull/3728) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable passing arbitrary spaces to the `SQLRecordSettings.single_space` setting [PR](https://github.com/laminlabs/lamindb/pull/3727) [@falexwolf](https://github.com/falexwolf)
