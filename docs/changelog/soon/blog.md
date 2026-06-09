@@ -1,0 +1,1 @@
+- 📝 Simpler queries for the 2.5B transcriptional profiles of the Arc Virtual Cell Atlas [PR](https://github.com/laminlabs/lamin-blog/pull/49) [@falexwolf](https://github.com/falexwolf)
