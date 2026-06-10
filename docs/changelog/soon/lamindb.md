@@ -1,0 +1,1 @@
+- 🩹 Fix edge cases for getting artifacts by path [PR](https://github.com/laminlabs/lamindb/pull/3730) [@Koncopd](https://github.com/Koncopd)
