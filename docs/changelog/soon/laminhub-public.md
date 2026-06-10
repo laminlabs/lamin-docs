@@ -1,2 +1,0 @@
-- :bug: Fix recursive data lineage expansion [PR](https://github.com/laminlabs/laminhub-public/pull/355) [@chaichontat](https://github.com/chaichontat)
-- ✨ Remember each sheet’s last view [PR](https://github.com/laminlabs/laminhub-public/pull/354) [@chaichontat](https://github.com/chaichontat)
