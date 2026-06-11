@@ -1,0 +1,1 @@
+- 🍱 Update EFO URL to use GitHub release link [PR](https://github.com/laminlabs/bionty/pull/372) [@sunnyosun](https://github.com/sunnyosun)
