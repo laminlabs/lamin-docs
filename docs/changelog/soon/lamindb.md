@@ -1,2 +1,3 @@
+- 📝 More clarity re dynamic registries [PR](https://github.com/laminlabs/lamindb/pull/3735) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve findability of `dtype` documentation [PR](https://github.com/laminlabs/lamindb/pull/3732) [@falexwolf](https://github.com/falexwolf)
 - 🩹 Fix edge cases for getting artifacts by path [PR](https://github.com/laminlabs/lamindb/pull/3730) [@Koncopd](https://github.com/Koncopd)
