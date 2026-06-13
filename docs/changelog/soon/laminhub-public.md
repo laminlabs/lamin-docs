@@ -1,0 +1,1 @@
+- :sparkles: Implement schema index feature handling in CSV editor and related components [PR](https://github.com/laminlabs/laminhub-public/pull/356) [@chaichontat](https://github.com/chaichontat)
