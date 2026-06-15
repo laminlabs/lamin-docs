@@ -1,3 +1,4 @@
+- 🔇 Correctly suppress supabase deprecation warnings [PR](https://github.com/laminlabs/lamindb-setup/pull/1351) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix single-key dict collapse in `get_values()` [PR](https://github.com/laminlabs/lamindb/pull/3734) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix version handling [PR](https://github.com/laminlabs/lamindb/pull/3733) [@Koncopd](https://github.com/Koncopd)
 - 📝 More clarity re dynamic registries [PR](https://github.com/laminlabs/lamindb/pull/3735) [@falexwolf](https://github.com/falexwolf)
