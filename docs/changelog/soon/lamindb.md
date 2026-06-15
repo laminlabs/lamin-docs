@@ -1,3 +1,4 @@
+- :children_crossing: Mutate data in records when mutating `schema.index` [PR](https://github.com/laminlabs/lamindb/pull/3736) [@sunnyosun](https://github.com/sunnyosun)
 - :construction_worker: No need to define params in tests [PR](https://github.com/laminlabs/lamin-cli/pull/226) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3737) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Harden supabase deprecation warnings [PR](https://github.com/laminlabs/lamindb-setup/pull/1352) [@Koncopd](https://github.com/Koncopd)
