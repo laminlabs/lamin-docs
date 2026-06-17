@@ -1,1 +1,2 @@
+- ⚡️ Add exponential backoff with jitter to API calls [PR](https://github.com/laminlabs/nf-lamin/pull/171) [@rcannood](https://github.com/rcannood)
 - 🔧 Add max_workers setting [PR](https://github.com/laminlabs/nf-lamin/pull/170) [@rcannood](https://github.com/rcannood)
