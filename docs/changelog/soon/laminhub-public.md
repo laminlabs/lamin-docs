@@ -1,3 +1,4 @@
+- :sparkles: Add Excel support to sheet imports [PR](https://github.com/laminlabs/laminhub-public/pull/360) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Add single-space record type controls [PR](https://github.com/laminlabs/laminhub-public/pull/359) [@chaichontat](https://github.com/chaichontat)
 - :bug: Prevent list registry selectors from creating missing values [PR](https://github.com/laminlabs/laminhub-public/pull/358) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Constrain single-space records to their type space [PR](https://github.com/laminlabs/laminhub-public/pull/357) [@chaichontat](https://github.com/chaichontat)
