@@ -1,3 +1,4 @@
+- 🐛 Reorder schema features on update from `features` input [PR](https://github.com/laminlabs/lamindb/pull/3740) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Adapt hub-local tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1353) [@Koncopd](https://github.com/Koncopd)
 - :children_crossing: Mutate data in records when mutating `schema.index` [PR](https://github.com/laminlabs/lamindb/pull/3736) [@sunnyosun](https://github.com/sunnyosun)
 - :construction_worker: No need to define params in tests [PR](https://github.com/laminlabs/lamin-cli/pull/226) [@falexwolf](https://github.com/falexwolf)
