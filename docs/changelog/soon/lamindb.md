@@ -1,3 +1,4 @@
+- :zap: Speed up CLI commands via the hub REST API [PR](https://github.com/laminlabs/lamin-cli/pull/227) [@fredericenard](https://github.com/fredericenard)
 - :construction_worker: Start profiling CLI commands [PR](https://github.com/laminlabs/lamin-cli/pull/229) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Export sheet artifacts to the sheet's space [PR](https://github.com/laminlabs/lamindb/pull/3745) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Reorder schema features on update from `features` input [PR](https://github.com/laminlabs/lamindb/pull/3740) [@sunnyosun](https://github.com/sunnyosun)
