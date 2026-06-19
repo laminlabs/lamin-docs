@@ -1,3 +1,4 @@
+- 🎨 Export sheet artifacts to the sheet's space [PR](https://github.com/laminlabs/lamindb/pull/3745) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Reorder schema features on update from `features` input [PR](https://github.com/laminlabs/lamindb/pull/3740) [@sunnyosun](https://github.com/sunnyosun)
 - ✅ Adapt hub-local tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1353) [@Koncopd](https://github.com/Koncopd)
 - :children_crossing: Mutate data in records when mutating `schema.index` [PR](https://github.com/laminlabs/lamindb/pull/3736) [@sunnyosun](https://github.com/sunnyosun)
