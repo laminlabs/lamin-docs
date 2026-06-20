@@ -1,3 +1,4 @@
+- :memo: Adding space and branch to signatures [PR](https://github.com/laminlabs/lamindb/pull/3741) [@ishitajain9717](https://github.com/ishitajain9717)
 - :construction_worker: Fix profiling and permissions tests, upgrade lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3746) [@falexwolf](https://github.com/falexwolf)
 - :zap: Speed up CLI commands via the hub REST API [PR](https://github.com/laminlabs/lamin-cli/pull/227) [@fredericenard](https://github.com/fredericenard)
 - :construction_worker: Start profiling CLI commands [PR](https://github.com/laminlabs/lamin-cli/pull/229) [@falexwolf](https://github.com/falexwolf)
