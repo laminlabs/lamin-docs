@@ -1,3 +1,4 @@
+- 📝 Update outdated code in `curate_mudata.py` [PR](https://github.com/laminlabs/lamindb/pull/3751) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not re-save feature set in curator [PR](https://github.com/laminlabs/lamindb/pull/3750) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not run `.save()` if feature_set is saved in curator [PR](https://github.com/laminlabs/lamindb/pull/3748) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Adding validation check and improving docs for Feature [PR](https://github.com/laminlabs/lamindb/pull/3743) [@ishitajain9717](https://github.com/ishitajain9717)
