@@ -1,3 +1,4 @@
+- 🐛 Fix ambiguous Record match in sheet.to_artifact() for duplicate names [PR](https://github.com/laminlabs/lamindb/pull/3755) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix ambiguous Record match in `sheet.to_artifact()` for duplicate names [PR](https://github.com/laminlabs/lamindb/pull/3754) [@sunnyosun](https://github.com/sunnyosun)
 - 🐛 Fix ambiguous Record match in `sheet.to_artifact()` for duplicate names [PR](https://github.com/laminlabs/lamindb/pull/3753) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Update outdated code in `curate_mudata.py` [PR](https://github.com/laminlabs/lamindb/pull/3751) [@sunnyosun](https://github.com/sunnyosun)
