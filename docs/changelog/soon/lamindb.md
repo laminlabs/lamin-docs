@@ -1,3 +1,4 @@
+- 🐛 Fix ambiguous Record match in `sheet.to_artifact()` for duplicate names [PR](https://github.com/laminlabs/lamindb/pull/3753) [@sunnyosun](https://github.com/sunnyosun)
 - 📝 Update outdated code in `curate_mudata.py` [PR](https://github.com/laminlabs/lamindb/pull/3751) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not re-save feature set in curator [PR](https://github.com/laminlabs/lamindb/pull/3750) [@sunnyosun](https://github.com/sunnyosun)
 - 🎨 Do not run `.save()` if feature_set is saved in curator [PR](https://github.com/laminlabs/lamindb/pull/3748) [@sunnyosun](https://github.com/sunnyosun)
