@@ -1,8 +1,0 @@
-- :bug: Fix XLSX upload failures with worksheet selection [PR](https://github.com/laminlabs/laminhub-public/pull/363) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Hide sheet index for sheets without a schema index [PR](https://github.com/laminlabs/laminhub-public/pull/362) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Scope sheet import auto-create to writable target spaces [PR](https://github.com/laminlabs/laminhub-public/pull/361) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: Add Excel support to sheet imports [PR](https://github.com/laminlabs/laminhub-public/pull/360) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Add single-space record type controls [PR](https://github.com/laminlabs/laminhub-public/pull/359) [@chaichontat](https://github.com/chaichontat)
-- :bug: Prevent list registry selectors from creating missing values [PR](https://github.com/laminlabs/laminhub-public/pull/358) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Constrain single-space records to their type space [PR](https://github.com/laminlabs/laminhub-public/pull/357) [@chaichontat](https://github.com/chaichontat)
-- :sparkles: Implement schema index feature handling in CSV editor and related components [PR](https://github.com/laminlabs/laminhub-public/pull/356) [@chaichontat](https://github.com/chaichontat)
