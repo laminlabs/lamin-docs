@@ -1,3 +1,4 @@
+- ♻️ Scope `mini_immuno` schema example to a feature type [PR](https://github.com/laminlabs/lamindb/pull/3760) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose `Transform.from_path()` [PR](https://github.com/laminlabs/lamindb/pull/3759) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Display run URL instead of transform URL [PR](https://github.com/laminlabs/lamindb/pull/3758) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix ambiguous Record match in sheet.to_artifact() for duplicate names [PR](https://github.com/laminlabs/lamindb/pull/3755) [@sunnyosun](https://github.com/sunnyosun)
