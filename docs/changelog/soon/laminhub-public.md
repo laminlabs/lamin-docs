@@ -1,3 +1,4 @@
+- :bug: Fix XLSX upload failures with worksheet selection [PR](https://github.com/laminlabs/laminhub-public/pull/363) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Hide sheet index for sheets without a schema index [PR](https://github.com/laminlabs/laminhub-public/pull/362) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Scope sheet import auto-create to writable target spaces [PR](https://github.com/laminlabs/laminhub-public/pull/361) [@chaichontat](https://github.com/chaichontat)
 - :sparkles: Add Excel support to sheet imports [PR](https://github.com/laminlabs/laminhub-public/pull/360) [@chaichontat](https://github.com/chaichontat)
