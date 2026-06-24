@@ -1,3 +1,4 @@
+- 🐛 Fix `Record.from_dataframe()` for bool/int features with partially null entries and speed it up by a factor ~2 [PR](https://github.com/laminlabs/lamindb/pull/3752) [@ishitajain9717](https://github.com/ishitajain9717)
 - ♻️ Scope `mini_immuno` schema example to a feature type [PR](https://github.com/laminlabs/lamindb/pull/3760) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose `Transform.from_path()` [PR](https://github.com/laminlabs/lamindb/pull/3759) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Display run URL instead of transform URL [PR](https://github.com/laminlabs/lamindb/pull/3758) [@falexwolf](https://github.com/falexwolf)
