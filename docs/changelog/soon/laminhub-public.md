@@ -1,0 +1,1 @@
+- :bug: Keep sheets editable with union dtype columns [PR](https://github.com/laminlabs/laminhub-public/pull/364) [@chaichontat](https://github.com/chaichontat)
