@@ -1,3 +1,4 @@
+- 🔥 Remove backward compat for `ln.Param` call pattern [PR](https://github.com/laminlabs/lamindb/pull/3729) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow passing urls to `lamin load` for records [PR](https://github.com/laminlabs/lamin-cli/pull/231) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Early fallback to SQLite clone [PR](https://github.com/laminlabs/lamindb/pull/3762) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Early fallback to SQLite clone [PR](https://github.com/laminlabs/lamindb-setup/pull/1355) [@falexwolf](https://github.com/falexwolf)
