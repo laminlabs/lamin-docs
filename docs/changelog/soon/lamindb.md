@@ -1,3 +1,4 @@
+- 🚸 Expose notes as a `.notes` attribute [PR](https://github.com/laminlabs/lamindb/pull/3764) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support schema transfer with related objects [PR](https://github.com/laminlabs/lamindb/pull/3763) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove backward compat for `ln.Param` call pattern [PR](https://github.com/laminlabs/lamindb/pull/3729) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow passing urls to `lamin load` for records [PR](https://github.com/laminlabs/lamin-cli/pull/231) [@falexwolf](https://github.com/falexwolf)
