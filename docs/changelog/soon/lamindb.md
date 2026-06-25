@@ -1,3 +1,4 @@
+- 🚸 Early fallback to SQLite clone [PR](https://github.com/laminlabs/lamindb/pull/3762) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Early fallback to SQLite clone [PR](https://github.com/laminlabs/lamindb-setup/pull/1355) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Handle `NoWriteAccess` in CLI with `ClickException` [PR](https://github.com/laminlabs/lamindb/pull/3761) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Handle the `NoWriteAccess` exception via ClickException [PR](https://github.com/laminlabs/lamin-cli/pull/230) [@falexwolf](https://github.com/falexwolf)
