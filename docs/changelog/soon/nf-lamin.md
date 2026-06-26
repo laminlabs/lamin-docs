@@ -1,3 +1,4 @@
+- 👽️ Update API interface [PR](https://github.com/laminlabs/nf-lamin/pull/174) [@rcannood](https://github.com/rcannood)
 - ⚡️ Use upsert behaviour to avoid additional api call [PR](https://github.com/laminlabs/nf-lamin/pull/173) [@rcannood](https://github.com/rcannood)
 - :memo: Wording fix [PR](https://github.com/laminlabs/nf-lamin/pull/172) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Add exponential backoff with jitter to API calls [PR](https://github.com/laminlabs/nf-lamin/pull/171) [@rcannood](https://github.com/rcannood)
