@@ -21,7 +21,18 @@ Read only:
 
 ## Git
 
-- auto-sync with `git`: [track guide](track.ipynb#sync-scripts-with-git)
+Auto-sync with `git`: [track guide](track.ipynb#sync-scripts-with-git).
+
+## Computational notebooks
+
+You can call `ln.track()` and `ln.finish()` (or the R versions) in four notebook types:
+
+- Jupyter
+- Marimo
+- R markdown
+- Quarto
+
+For both notebook types, source code is stored in `.py` format and run reports as html. Jupyter notebooks leverage the `py:percent` format and Marimo notebooks the Marimo standard.
 
 ## MLOps
 
