@@ -8,7 +8,7 @@
 - 🚸 Handle `NoWriteAccess` in CLI with `ClickException` [PR](https://github.com/laminlabs/lamindb/pull/3761) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Handle the `NoWriteAccess` exception via ClickException [PR](https://github.com/laminlabs/lamin-cli/pull/230) [@falexwolf](https://github.com/falexwolf)
 - 🚸  Add the `NoWriteAccess` error to `lamindb_setup` [PR](https://github.com/laminlabs/lamindb-setup/pull/1354) [@falexwolf](https://github.com/falexwolf)
-- 🐛 Fix `Record.from_dataframe()` for bool/int features with partially null entries and speed it up by a factor ~2 [PR](https://github.com/laminlabs/lamindb/pull/3752) [@ishitajain9717](https://github.com/ishitajain9717)
+- ⚡ Speed up Record.from_dataframe() by a factor ~2 and fix casting of bool/int features with partially null entries [PR](https://github.com/laminlabs/lamindb/pull/3752) [@ishitajain9717](https://github.com/ishitajain9717)
 - ♻️ Scope `mini_immuno` schema example to a feature type [PR](https://github.com/laminlabs/lamindb/pull/3760) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose `Transform.from_path()` [PR](https://github.com/laminlabs/lamindb/pull/3759) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Display run URL instead of transform URL [PR](https://github.com/laminlabs/lamindb/pull/3758) [@falexwolf](https://github.com/falexwolf)
