@@ -1,3 +1,4 @@
+- 🚸 Reduce the default value for limit in `to_dataframe()` from 100 to 20 [PR](https://github.com/laminlabs/lamindb/pull/3765) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Catch `CurrentInstanceNotConfigured` in Lamin CLI [PR](https://github.com/laminlabs/lamin-cli/pull/232) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose notes as a `.notes` attribute [PR](https://github.com/laminlabs/lamindb/pull/3764) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support schema transfer with related objects [PR](https://github.com/laminlabs/lamindb/pull/3763) [@falexwolf](https://github.com/falexwolf)
