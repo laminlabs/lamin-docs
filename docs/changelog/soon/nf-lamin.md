@@ -1,8 +1,0 @@
-- 🔖 Release 0.8.3 [PR](https://github.com/laminlabs/nf-lamin/pull/177) [@rcannood](https://github.com/rcannood)
-- 🔊 Improve permission denied errors [PR](https://github.com/laminlabs/nf-lamin/pull/176) [@rcannood](https://github.com/rcannood)
-- ⚗️ Add stress testing workflow [PR](https://github.com/laminlabs/nf-lamin/pull/175) [@rcannood](https://github.com/rcannood)
-- 👽️ Update API interface [PR](https://github.com/laminlabs/nf-lamin/pull/174) [@rcannood](https://github.com/rcannood)
-- ⚡️ Use upsert behaviour to avoid additional api call [PR](https://github.com/laminlabs/nf-lamin/pull/173) [@rcannood](https://github.com/rcannood)
-- :memo: Wording fix [PR](https://github.com/laminlabs/nf-lamin/pull/172) [@falexwolf](https://github.com/falexwolf)
-- ⚡️ Add exponential backoff with jitter to API calls [PR](https://github.com/laminlabs/nf-lamin/pull/171) [@rcannood](https://github.com/rcannood)
-- 🔧 Add max_workers setting [PR](https://github.com/laminlabs/nf-lamin/pull/170) [@rcannood](https://github.com/rcannood)
