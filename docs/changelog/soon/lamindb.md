@@ -1,0 +1,1 @@
+- 📝 Update filter expression in README [PR](https://github.com/laminlabs/lamindb/pull/3772) [@falexwolf](https://github.com/falexwolf)
