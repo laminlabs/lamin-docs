@@ -1,3 +1,4 @@
+- :zap: Speed up `Record.from_dataframe()` in presence of indexes [PR](https://github.com/laminlabs/lamindb/pull/3767) [@ishitajain9717](https://github.com/ishitajain9717)
 - :children_crossing: Throw an error if categorical values would be read from `RecordJson` [PR](https://github.com/laminlabs/lamindb/pull/3757) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🚸 Reduce the default value for limit in `to_dataframe()` from 100 to 20 [PR](https://github.com/laminlabs/lamindb/pull/3765) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Catch `CurrentInstanceNotConfigured` in Lamin CLI [PR](https://github.com/laminlabs/lamin-cli/pull/232) [@falexwolf](https://github.com/falexwolf)
