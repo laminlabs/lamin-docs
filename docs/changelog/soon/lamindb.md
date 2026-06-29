@@ -1,3 +1,4 @@
+- 🚸 Introduce `Feature.is_null()` as a predicate for filtering objects by whether they measure or do not measure a feature [PR](https://github.com/laminlabs/lamindb/pull/3771) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Additional performance improvements to `Record.from_dataframe()` if `schema.index` is present [PR](https://github.com/laminlabs/lamindb/pull/3769) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🚸 Introduce `RecordSet` to allow exporting arbitrary sets of records [PR](https://github.com/laminlabs/lamindb/pull/3768) [@falexwolf](https://github.com/falexwolf)
 - :zap: Speed up `Record.from_dataframe()` in presence of indexes [PR](https://github.com/laminlabs/lamindb/pull/3767) [@ishitajain9717](https://github.com/ishitajain9717)
