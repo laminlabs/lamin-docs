@@ -1,3 +1,4 @@
+- 🔖 Release 0.8.3 [PR](https://github.com/laminlabs/nf-lamin/pull/177) [@rcannood](https://github.com/rcannood)
 - 🔊 Improve permission denied errors [PR](https://github.com/laminlabs/nf-lamin/pull/176) [@rcannood](https://github.com/rcannood)
 - ⚗️ Add stress testing workflow [PR](https://github.com/laminlabs/nf-lamin/pull/175) [@rcannood](https://github.com/rcannood)
 - 👽️ Update API interface [PR](https://github.com/laminlabs/nf-lamin/pull/174) [@rcannood](https://github.com/rcannood)
