@@ -1,0 +1,1 @@
+- ✨ Update branch page to display objects, comments, and a sidebar to change the branch status [PR](https://github.com/laminlabs/laminhub-public/pull/365) [@sheetalgiri](https://github.com/sheetalgiri)
