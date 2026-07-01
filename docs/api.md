@@ -19,7 +19,7 @@ sql
 
 hub/authentication
 hub/service-endpoints
-rest
+hub/rest
 ```
 
 ```{toctree}
