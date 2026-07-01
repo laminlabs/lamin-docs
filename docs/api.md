@@ -17,6 +17,8 @@ sql
 :caption: Hub
 :hidden:
 
+hub/authentication
+hub/service-endpoints
 rest
 ```
 
