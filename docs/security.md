@@ -68,7 +68,7 @@ Some Lamin resources are intentionally public. Reports that rely only on the fol
 - public LaminDB instances allowing anonymous or unauthenticated read-only access
 - public instance metadata, public profile metadata, and public read-only database connection details for public instances
 - public S3 buckets or object listings that back public instances, public assets, examples, or documentation
-- public keys like anonymous API keys are not secrets
+- public keys like anonymous API keys
 - client-side configuration files that expose publishable values, including Supabase anonymous API keys
 - enumeration of data that is already available through public Lamin pages, public APIs, public instances, public buckets, or public repositories
 
