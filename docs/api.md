@@ -17,14 +17,7 @@ sql
 :caption: Hub
 :hidden:
 
-hub/rest
-hub/authentication
-hub/account
-hub/instances
-hub/permissions
-hub/registry-querying
-hub/infrastructure
-hub/service-endpoints
+rest
 ```
 
 ```{toctree}

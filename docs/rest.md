@@ -1,4 +1,18 @@
-# REST API
+# REST
+
+```{toctree}
+:maxdepth: 1
+:caption: Hub
+:hidden:
+
+hub/authentication
+hub/account
+hub/instances
+hub/permissions
+hub/registry-querying
+hub/infrastructure
+hub/service-endpoints
+```
 
 Use the LaminHub REST API to automate Hub workflows from scripts, services, or
 tools that do not use the LaminDB Python client.
