@@ -9,7 +9,7 @@ Replace the placeholders in angle brackets.
 Exchange a Lamin API key for a Lamin JWT:
 
 ```bash
-curl -sS -X POST "https://aws.us-east-1.lamin.ai/api/account/jwt" \
+curl "https://aws.us-east-1.lamin.ai/api/account/jwt" \
   -H "Content-Type: application/json" \
   -d '{"api_key":"<your-lamin-api-key>"}'
 ```
@@ -20,12 +20,33 @@ Response:
 { "accessToken": "<lamin-jwt>" }
 ```
 
+## Use the LaminDB access token
+
+If you are already logged in with LaminDB, you can use the same access token:
+
+```bash
+lamin login
+```
+
+```python
+import lamindb as ln
+import requests
+
+access_token = ln.setup.settings.user.access_token
+
+response = requests.get(
+    "https://aws.us-east-1.lamin.ai/api/account",
+    headers={"Authorization": f"Bearer {access_token}"},
+)
+response.json()
+```
+
 ## 2. Get an instance database JWT
 
 Use the Lamin JWT to get a JWT for a specific LaminDB instance database:
 
 ```bash
-curl -sS "https://aws.us-east-1.lamin.ai/api/instances/<instance-id>/db_token" \
+curl "https://aws.us-east-1.lamin.ai/api/instances/<instance-id>/db_token" \
   -H "Authorization: Bearer <lamin-jwt>"
 ```
 
@@ -40,7 +61,7 @@ Response:
 Use the Lamin JWT to get short-lived AWS credentials scoped to an S3 path.
 
 ```bash
-curl -sS -X POST "https://hub.lamin.ai/functions/v1/get-cloud-access-v1" \
+curl "https://hub.lamin.ai/functions/v1/get-cloud-access-v1" \
   -H "Authorization: Bearer <lamin-jwt>" \
   -H "Content-Type: application/json" \
   -d '{"path":"s3://your-bucket/optional-prefix"}'

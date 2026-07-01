@@ -18,8 +18,13 @@ sql
 :hidden:
 
 hub/authentication
-hub/service-endpoints
 hub/rest
+hub/account
+hub/instances
+hub/permissions
+hub/registry-querying
+hub/infrastructure
+hub/service-endpoints
 ```
 
 ```{toctree}

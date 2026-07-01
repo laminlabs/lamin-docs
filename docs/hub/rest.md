@@ -1,42 +1,13 @@
-# REST
+# REST API
 
-This page documents the REST API of LaminHub.
+This page is an entry point to the LaminHub REST API docs.
 
-## Swagger UI
-
-The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
-
-## Example
-
-To use the API from within Python, you can directly pass the token that LaminDB uses internally.
-
-Authenticate via the CLI and pass your API key:
-
-```bash
-$ lamin login
-```
-
-Use `requests` and pass the token as in the example below:
-
-```python
-import lamindb as ln
-import requests
-
-response = requests.get(
-    f"https://aws.us-east-1.lamin.ai/api/account",
-    headers={"Authorization": f"Bearer {ln.setup.settings.user.access_token}"}
-)
-response.json()
-# {...}
-```
-
-## Deployments
-
-Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
-
-- `https://aws.us-east-1.lamin.ai`
-- `https://aws.us-west-2.lamin.ai`
-- `https://aws.eu-central-1.lamin.ai`
-- `https://aws.eu-west-2.lamin.ai`
-
-On-prem deployments have their own APIs.
+| Page                                                              | Covers                                                                                          |
+| ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [Service endpoints and client connectivity](service-endpoints.md) | Regional API endpoints, allow-listed IPs, and direct PostgreSQL connectivity                    |
+| [Authentication](authentication.md)                               | Getting a Lamin JWT, an instance database JWT, and short-lived S3 credentials                   |
+| [Account](account.md)                                             | The authenticated account, API keys, service accounts, and service-account API keys             |
+| [Instances](instances.md)                                         | Instance creation, settings, migrations, database JWTs, schemas, and statistics                 |
+| [Registry querying](registry-querying.md)                         | Generic registry queries and specific endpoints for Artifacts, Transforms, ULabels, and Records |
+| [Permissions](permissions.md)                                     | Organizations, teams, spaces, and instance collaborators                                        |
+| [Infrastructure](infrastructure.md)                               | S3 bucket registration and database servers                                                     |
