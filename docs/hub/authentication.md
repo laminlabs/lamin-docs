@@ -35,8 +35,7 @@ Response:
 { "token": "<instance-db-jwt>" }
 ```
 
-Related docs: [direct PostgreSQL access](service-endpoints.md#direct-postgresql-access-for-lamindb-clients),
-[database access permissions](../permissions.md#how-does-it-work).
+Related docs: [database access permissions](../permissions.md#how-does-it-work).
 
 ## 3. Get S3 credentials
 
@@ -65,5 +64,4 @@ Response:
 }
 ```
 
-Related docs: [artifact storage access](service-endpoints.md#artifact-storage-access),
-[storage access permissions](../permissions.md#how-does-it-work).
+Related docs: [storage access permissions](../permissions.md#how-does-it-work).
