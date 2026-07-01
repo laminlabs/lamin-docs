@@ -6,11 +6,7 @@ Replace the placeholders in angle brackets.
 
 ## 1. Get a Lamin JWT
 
-Get a Lamin JWT from an API key or from an existing LaminDB login.
-
-### From an API key
-
-Exchange a Lamin API key:
+Get a Lamin JWT from an API key:
 
 ```bash
 curl "https://aws.us-east-1.lamin.ai/api/account/jwt" \
@@ -22,27 +18,6 @@ Response:
 
 ```json
 { "accessToken": "<lamin-jwt>" }
-```
-
-### From LaminDB
-
-If you are already logged in with LaminDB, you can use the same access token:
-
-```bash
-lamin login
-```
-
-```python
-import lamindb as ln
-import requests
-
-access_token = ln.setup.settings.user.access_token
-
-response = requests.get(
-    "https://aws.us-east-1.lamin.ai/api/account",
-    headers={"Authorization": f"Bearer {access_token}"},
-)
-response.json()
 ```
 
 ## 2. Get an instance database JWT
@@ -59,6 +34,9 @@ Response:
 ```json
 { "token": "<instance-db-jwt>" }
 ```
+
+Related docs: [direct PostgreSQL access](service-endpoints.md#direct-postgresql-access-for-lamindb-clients),
+[database access permissions](../permissions.md#how-does-it-work).
 
 ## 3. Get S3 credentials
 
@@ -86,3 +64,6 @@ Response:
   }
 }
 ```
+
+Related docs: [artifact storage access](service-endpoints.md#artifact-storage-access),
+[storage access permissions](../permissions.md#how-does-it-work).
