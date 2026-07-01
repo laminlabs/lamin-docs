@@ -1,2 +1,3 @@
+- 🚸 More concise warning upon missing or surplus modules [PR](https://github.com/laminlabs/lamindb-setup/pull/1356) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose high-level field names on queries through M2M fields [PR](https://github.com/laminlabs/lamindb/pull/3775) [@falexwolf](https://github.com/falexwolf)
 - 📝 Update filter expression in README [PR](https://github.com/laminlabs/lamindb/pull/3772) [@falexwolf](https://github.com/falexwolf)
