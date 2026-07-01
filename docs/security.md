@@ -61,19 +61,7 @@ We regularly audit access to internal systems.
 
 ### Bug bounty program
 
-Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in our product and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to security@lamin.ai.
-
-Some Lamin resources are intentionally public. Reports that rely only on the following expected behavior are out of scope for bounty review:
-
-- public LaminDB instances allowing anonymous or unauthenticated read-only access;
-- public instance metadata, public profile metadata, and public read-only database connection details for public instances;
-- public S3 buckets or object listings that back public instances, public assets, examples, or documentation;
-- client-side configuration files that expose publishable values, including Supabase anonymous API keys;
-- enumeration of data that is already available through public Lamin pages, public APIs, public instances, public buckets, or public repositories.
-
-Supabase anonymous API keys and other publishable client keys are not secrets by themselves. Access control must be enforced by backend authorization and row-level security policies, not by hiding these client keys.
-
-We will not reply to bounty submissions that only report access to this expected public data or expected public configuration. We will review reports that show access to private data, non-public credentials or secrets, unauthorized write or admin access, account takeover, privilege escalation, or a concrete bypass of backend authorization or row-level security policies.
+Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in our product and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to security@lamin.ai
 
 ### Data privacy
 
