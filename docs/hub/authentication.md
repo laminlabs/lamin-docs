@@ -6,7 +6,11 @@ Replace the placeholders in angle brackets.
 
 ## 1. Get a Lamin JWT
 
-Exchange a Lamin API key for a Lamin JWT:
+Get a Lamin JWT from an API key or from an existing LaminDB login.
+
+### From an API key
+
+Exchange a Lamin API key:
 
 ```bash
 curl "https://aws.us-east-1.lamin.ai/api/account/jwt" \
@@ -20,7 +24,7 @@ Response:
 { "accessToken": "<lamin-jwt>" }
 ```
 
-## Use the LaminDB access token
+### From LaminDB
 
 If you are already logged in with LaminDB, you can use the same access token:
 

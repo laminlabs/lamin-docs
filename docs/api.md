@@ -17,8 +17,8 @@ sql
 :caption: Hub
 :hidden:
 
-hub/authentication
 hub/rest
+hub/authentication
 hub/account
 hub/instances
 hub/permissions
