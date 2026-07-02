@@ -4,7 +4,7 @@
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/jo0O8ip85njL4wYj0000.png" width=100 style="background: transparent; margin-right: 5em;" align="right">
 
-Please see our [Trust Center](https://trust.lamin.ai) for controls & subprocessors.
+Please see our [Trust Center](https://lamin.trust.site) for controls & subprocessors.
 
 We're SOC2 certified and monitor compliance with HIPAA and ISO 27001.
 
