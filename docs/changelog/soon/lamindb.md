@@ -1,3 +1,4 @@
+- 🚸 Add `to_artifact()` to `RecordSet` [PR](https://github.com/laminlabs/lamindb/pull/3780) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make behavior of `to_dataframe(include="features')` consistent across `QuerySet` and `Registry` [PR](https://github.com/laminlabs/lamindb/pull/3778) [@falexwolf](https://github.com/falexwolf)
 - 🚸 More concise warning upon missing or surplus modules [PR](https://github.com/laminlabs/lamindb-setup/pull/1356) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Expose high-level field names on queries through M2M fields [PR](https://github.com/laminlabs/lamindb/pull/3775) [@falexwolf](https://github.com/falexwolf)
