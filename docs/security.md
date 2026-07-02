@@ -61,7 +61,16 @@ We regularly audit access to internal systems.
 
 ### Bug bounty program
 
-Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in our product and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to security@lamin.ai
+Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in our product and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to security@lamin.ai.
+
+Some Lamin resources are intentionally public. Reports that rely only on the following expected behavior are out of scope for bounty review:
+
+- public LaminDB instances allowing anonymous or unauthenticated read-only access
+- public instance metadata, public profile metadata, and public read-only database connection details for public instances
+- public S3 buckets or object listings that back public instances, public assets, examples, or documentation
+- public keys like anonymous API keys
+- client-side configuration files that expose publishable values, including Supabase anonymous API keys
+- enumeration of data that is already available through public Lamin pages, public APIs, public instances, public buckets, or public repositories
 
 ### Data privacy
 
