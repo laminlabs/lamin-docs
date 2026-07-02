@@ -1,14 +1,25 @@
 # REST
 
+```{toctree}
+:maxdepth: 1
+:caption: Hub
+:hidden:
+
+hub/authentication
+hub/service-endpoints
+```
+
 This page documents the REST API of LaminHub.
 
 ## Swagger UI
 
-The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
+The comprehensive REST API reference is documented via the Swagger UI
+[here](https://aws.us-east-1.lamin.ai/_docs).
 
 ## Example
 
-To use the API from within Python, you can directly pass the token that LaminDB uses internally.
+To use the API from within Python, you can directly pass the token that LaminDB
+uses internally.
 
 Authenticate via the CLI and pass your API key:
 
@@ -19,12 +30,12 @@ $ lamin login
 Use `requests` and pass the token as in the example below:
 
 ```python
-import lamindb as ln
+import lamindb_setup as lns
 import requests
 
 response = requests.get(
-    f"https://aws.us-east-1.lamin.ai/api/account",
-    headers={"Authorization": f"Bearer {ln.setup.settings.user.access_token}"}
+    "https://aws.us-east-1.lamin.ai/api/account",
+    headers={"Authorization": f"Bearer {lns.settings.user.access_token}"}
 )
 response.json()
 # {...}
