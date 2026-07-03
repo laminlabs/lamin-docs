@@ -1,3 +1,4 @@
+- :children_crossing: Allow only file and folder suffixes from the pre-defined lists [PR](https://github.com/laminlabs/lamindb-setup/pull/1357) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add `to_artifact()` to `RecordSet` [PR](https://github.com/laminlabs/lamindb/pull/3780) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Make behavior of `to_dataframe(include="features')` consistent across `QuerySet` and `Registry` [PR](https://github.com/laminlabs/lamindb/pull/3778) [@falexwolf](https://github.com/falexwolf)
 - 🚸 More concise warning upon missing or surplus modules [PR](https://github.com/laminlabs/lamindb-setup/pull/1356) [@falexwolf](https://github.com/falexwolf)
