@@ -1,3 +1,4 @@
+- :children_crossing: Merge branches without requiring global branch switch [PR](https://github.com/laminlabs/lamindb/pull/3781) [@sheetalgiri](https://github.com/sheetalgiri)
 - ♻️ Actually label reverse accessor for `output_transforms` [PR](https://github.com/laminlabs/lamindb/pull/3783) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Allow only file and folder suffixes from the pre-defined lists [PR](https://github.com/laminlabs/lamindb/pull/3782) [@Koncopd](https://github.com/Koncopd)
 - :children_crossing: Allow only file and folder suffixes from the pre-defined lists [PR](https://github.com/laminlabs/lamindb-setup/pull/1357) [@Koncopd](https://github.com/Koncopd)
