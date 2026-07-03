@@ -13,13 +13,11 @@ This page documents the REST API of LaminHub.
 
 ## Swagger UI
 
-The comprehensive REST API reference is documented via the Swagger UI
-[here](https://aws.us-east-1.lamin.ai/_docs).
+The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
 
 ## Example
 
-To use the API from within Python, you can directly pass the token that LaminDB
-uses internally.
+To use the API from within Python, you can directly pass the token that LaminDB uses internally.
 
 Authenticate via the CLI and pass your API key:
 
