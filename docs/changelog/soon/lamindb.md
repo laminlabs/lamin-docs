@@ -1,3 +1,4 @@
+- :memo: Introduce `CanonicalSuffix` to better document how `Artifact.suffix` gets populated [PR](https://github.com/laminlabs/lamindb/pull/3784) [@falexwolf](https://github.com/falexwolf)
 - 📝 Introduce `CanonicalSuffix` to better document how `Artifact.suffix` gets populated [PR](https://github.com/laminlabs/lamindb-setup/pull/1358) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Merge branches without requiring global branch switch [PR](https://github.com/laminlabs/lamindb/pull/3781) [@sheetalgiri](https://github.com/sheetalgiri)
 - ♻️ Actually label reverse accessor for `output_transforms` [PR](https://github.com/laminlabs/lamindb/pull/3783) [@falexwolf](https://github.com/falexwolf)
