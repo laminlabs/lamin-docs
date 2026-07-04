@@ -1,3 +1,4 @@
+- 👷 Run profiling on pushes to main branch [PR](https://github.com/laminlabs/lamindb/pull/3786) [@falexwolf](https://github.com/falexwolf)
 - :memo: Introduce `CanonicalSuffix` to better document how `Artifact.suffix` gets populated [PR](https://github.com/laminlabs/lamindb/pull/3784) [@falexwolf](https://github.com/falexwolf)
 - 📝 Introduce `CanonicalSuffix` to better document how `Artifact.suffix` gets populated [PR](https://github.com/laminlabs/lamindb-setup/pull/1358) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Merge branches without requiring global branch switch [PR](https://github.com/laminlabs/lamindb/pull/3781) [@sheetalgiri](https://github.com/sheetalgiri)
