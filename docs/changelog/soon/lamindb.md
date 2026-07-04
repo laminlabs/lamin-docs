@@ -1,3 +1,4 @@
+- :children_crossing: Speed up and prettify output of `lamin list branch` [PR](https://github.com/laminlabs/lamin-cli/pull/235) [@falexwolf](https://github.com/falexwolf)
 - 👷 Profile import time [PR](https://github.com/laminlabs/lamin-cli/pull/234) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `lamin create branch` hub path [PR](https://github.com/laminlabs/lamin-cli/pull/233) [@falexwolf](https://github.com/falexwolf)
 - 👷 Define group for profiling job [PR](https://github.com/laminlabs/lamindb/pull/3787) [@falexwolf](https://github.com/falexwolf)
