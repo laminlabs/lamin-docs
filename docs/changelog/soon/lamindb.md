@@ -1,3 +1,4 @@
+- 👷 Profile import time [PR](https://github.com/laminlabs/lamin-cli/pull/234) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `lamin create branch` hub path [PR](https://github.com/laminlabs/lamin-cli/pull/233) [@falexwolf](https://github.com/falexwolf)
 - 👷 Define group for profiling job [PR](https://github.com/laminlabs/lamindb/pull/3787) [@falexwolf](https://github.com/falexwolf)
 - 👷 Run profiling on pushes to main branch [PR](https://github.com/laminlabs/lamindb/pull/3786) [@falexwolf](https://github.com/falexwolf)
