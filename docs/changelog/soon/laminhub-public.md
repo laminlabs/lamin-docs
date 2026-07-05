@@ -1,3 +1,4 @@
+- 💄 A more minimal design for the page headers across the app [PR](https://github.com/laminlabs/laminhub-public/pull/369) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Move service endpoint docs to `lamin-docs` [PR](https://github.com/laminlabs/laminhub-public/pull/366) [@fredericenard](https://github.com/fredericenard)
 - :children_crossing: Use project-aware sheet default names [PR](https://github.com/laminlabs/laminhub-public/pull/368) [@chaichontat](https://github.com/chaichontat)
 - 💄 Show records in lineage graph [PR](https://github.com/laminlabs/laminhub-public/pull/367) [@falexwolf](https://github.com/falexwolf)
