@@ -1,3 +1,4 @@
+- 💄 A provenance header for all pages [PR](https://github.com/laminlabs/laminhub-public/pull/370) [@falexwolf](https://github.com/falexwolf)
 - 💄 A more minimal design for the page headers across the app [PR](https://github.com/laminlabs/laminhub-public/pull/369) [@sunnyosun](https://github.com/sunnyosun)
 - 🚚 Move service endpoint docs to `lamin-docs` [PR](https://github.com/laminlabs/laminhub-public/pull/366) [@fredericenard](https://github.com/fredericenard)
 - :children_crossing: Use project-aware sheet default names [PR](https://github.com/laminlabs/laminhub-public/pull/368) [@chaichontat](https://github.com/chaichontat)
