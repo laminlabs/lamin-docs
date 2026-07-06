@@ -1,3 +1,4 @@
+- ✅ Fix hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/1359) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Handle error reports in `@ln.flow()` better [PR](https://github.com/laminlabs/lamindb/pull/3789) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Also save source code in `Transform.from_path()` [PR](https://github.com/laminlabs/lamindb/pull/3788) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Speed up and prettify output of `lamin list branch` [PR](https://github.com/laminlabs/lamin-cli/pull/235) [@falexwolf](https://github.com/falexwolf)
