@@ -1,3 +1,4 @@
+- 🐛 Less stringent unique constraint in `ArtifactSchema` [PR](https://github.com/laminlabs/lamindb/pull/3793) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish the documentation, use strict docs builds [PR](https://github.com/laminlabs/lamindb/pull/3791) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Add dedicated agent skills [PR](https://github.com/laminlabs/lamindb/pull/3790) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix profiler installation order [PR](https://github.com/laminlabs/lamin-cli/pull/236) [@Koncopd](https://github.com/Koncopd)
