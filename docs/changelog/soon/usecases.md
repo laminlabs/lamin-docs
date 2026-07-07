@@ -1,3 +1,4 @@
+- 🚚 Move the `lightning.md` doc from `lamindb` here [PR](https://github.com/laminlabs/lamin-mlops/pull/35) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add EWAS Data Hub [PR](https://github.com/laminlabs/lamin-usecases/pull/251) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Polish Arc Atlas tutorial [PR](https://github.com/laminlabs/lamin-usecases/pull/250) [@falexwolf](https://github.com/falexwolf)
 - 🎨 Add test to Arc and run atlases group without authentication [PR](https://github.com/laminlabs/lamin-usecases/pull/249) [@falexwolf](https://github.com/falexwolf)
