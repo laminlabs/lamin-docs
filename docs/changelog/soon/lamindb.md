@@ -1,3 +1,4 @@
+- :children_crossing: Add dedicated agent skills [PR](https://github.com/laminlabs/lamindb/pull/3790) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix profiler installation order [PR](https://github.com/laminlabs/lamin-cli/pull/236) [@Koncopd](https://github.com/Koncopd)
 - ✅ Fix hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/1359) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Handle error reports in `@ln.flow()` better [PR](https://github.com/laminlabs/lamindb/pull/3789) [@falexwolf](https://github.com/falexwolf)
