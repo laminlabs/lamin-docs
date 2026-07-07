@@ -1,3 +1,4 @@
+- 📝 Fix docs warnings [PR](https://github.com/laminlabs/bionty/pull/379) [@falexwolf](https://github.com/falexwolf)
 - 🔧 More minimal `pyproject.toml` to lower maintenance burden [PR](https://github.com/laminlabs/bionty/pull/378) [@falexwolf](https://github.com/falexwolf)
 - 🏷️ Mark as py.typed [PR](https://github.com/laminlabs/bionty/pull/377) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Update EFO URL to use GitHub release link [PR](https://github.com/laminlabs/bionty/pull/372) [@sunnyosun](https://github.com/sunnyosun)
