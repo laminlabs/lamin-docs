@@ -1,3 +1,4 @@
+- 🚸 Do not treat the bionty default space differently from other entities [PR](https://github.com/laminlabs/lamindb/pull/3797) [@falexwolf](https://github.com/falexwolf)
 - 📝 Fix documentation for branch attributes [PR](https://github.com/laminlabs/lamindb/pull/3795) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Use `settings.is_configured` instead of deprecated `settings._instance_exists` [PR](https://github.com/laminlabs/lamindb/pull/3796) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add and use `settings.is_configured` instead of the internal `settings._instance_exists` [PR](https://github.com/laminlabs/lamindb-setup/pull/1362) [@Koncopd](https://github.com/Koncopd)
