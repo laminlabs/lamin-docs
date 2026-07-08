@@ -1,3 +1,4 @@
+- 🔖 Release v1.3.1 [PR](https://github.com/laminlabs/laminr/pull/270) [@lazappi](https://github.com/lazappi)
 - Bump aws-actions/configure-aws-credentials from 5 to 6 [PR](https://github.com/laminlabs/laminr/pull/256) [@dependabot[bot]](https://github.com/apps/dependabot)
 - Bump actions/upload-artifact from 6 to 7 [PR](https://github.com/laminlabs/laminr/pull/257) [@dependabot[bot]](https://github.com/apps/dependabot)
 - 🐛 Fix parsing python arguments [PR](https://github.com/laminlabs/laminr/pull/268) [@Koncopd](https://github.com/Koncopd)
