@@ -1,3 +1,4 @@
+- ♻️ Use `settings.is_configured` instead of deprecated `settings._instance_exists` [PR](https://github.com/laminlabs/lamindb/pull/3796) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add and use `settings.is_configured` instead of the internal `settings._instance_exists` [PR](https://github.com/laminlabs/lamindb-setup/pull/1362) [@Koncopd](https://github.com/Koncopd)
 - 👽️ Do not pass role_arn to access aws credentials [PR](https://github.com/laminlabs/lamindb-setup/pull/1361) [@Koncopd](https://github.com/Koncopd)
 - :label: Fix type annotations of `@strict_classmethod` and `@instance_or_classmethod` [PR](https://github.com/laminlabs/lamindb/pull/3794) [@falexwolf](https://github.com/falexwolf)
