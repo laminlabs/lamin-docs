@@ -1,2 +1,3 @@
+- 💄 Pricing page v4: Enable Beta Pro Plan at $10/month and spell out collaborator tiers  [PR](https://github.com/laminlabs/laminhub-public/pull/375) [@Ebad371](https://github.com/Ebad371)
 - ⚡ Speed up loading of the artifact page [PR](https://github.com/laminlabs/laminhub-public/pull/373) [@chaichontat](https://github.com/chaichontat)
 - :lipstick: Support tagging records with emojis [PR](https://github.com/laminlabs/laminhub-public/pull/372) [@sunnyosun](https://github.com/sunnyosun)
