@@ -1,2 +1,0 @@
-- 🔥 Remove hub legacy docs [PR](https://github.com/laminlabs/laminhub-public/pull/376) [@fredericenard](https://github.com/fredericenard)
-- ✨ Introduce a preview for folder-like artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/374) [@sheetalgiri](https://github.com/sheetalgiri)
