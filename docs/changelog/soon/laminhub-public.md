@@ -1,0 +1,1 @@
+- 🐛 Allow clearing optional launch enums [PR](https://github.com/laminlabs/laminhub-public/pull/377) [@chaichontat](https://github.com/chaichontat)
