@@ -1,3 +1,4 @@
+- ✨ Implement exchange jwt exchange edge function and endpoint [PR](https://github.com/laminlabs/laminhub-public/pull/380) [@Koncopd](https://github.com/Koncopd)
 - :sparkles: Support URL dtype [PR](https://github.com/laminlabs/laminhub-public/pull/379) [@chaichontat](https://github.com/chaichontat)
 - :zap: Speed up scrolling in wide record tables [PR](https://github.com/laminlabs/laminhub-public/pull/378) [@chaichontat](https://github.com/chaichontat)
 - 🐛 Allow clearing optional launch enums [PR](https://github.com/laminlabs/laminhub-public/pull/377) [@chaichontat](https://github.com/chaichontat)
