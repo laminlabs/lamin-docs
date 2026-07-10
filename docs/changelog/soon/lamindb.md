@@ -1,3 +1,4 @@
+- 🚸 Simplify lineage during record export via `to_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3798) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up `lamin switch` by a factor 3 [PR](https://github.com/laminlabs/lamin-cli/pull/239) [@falexwolf](https://github.com/falexwolf)
 - 👷 Start profiling `lamin_switch_and_create_branch` [PR](https://github.com/laminlabs/lamin-cli/pull/237) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Do not treat the bionty default space differently from other entities [PR](https://github.com/laminlabs/lamindb/pull/3797) [@falexwolf](https://github.com/falexwolf)
