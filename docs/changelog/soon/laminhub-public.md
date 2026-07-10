@@ -1,3 +1,4 @@
+- :sparkles: Versioned notes as in LaminDB [PR](https://github.com/laminlabs/laminhub-public/pull/381) [@chaichontat](https://github.com/chaichontat)
 - ✨ Implement exchange jwt exchange edge function and endpoint [PR](https://github.com/laminlabs/laminhub-public/pull/380) [@Koncopd](https://github.com/Koncopd)
 - :sparkles: Support URL dtype [PR](https://github.com/laminlabs/laminhub-public/pull/379) [@chaichontat](https://github.com/chaichontat)
 - :zap: Speed up scrolling in wide record tables [PR](https://github.com/laminlabs/laminhub-public/pull/378) [@chaichontat](https://github.com/chaichontat)
