@@ -1,3 +1,4 @@
+- ✨ Track Claude Code sessions [PR](https://github.com/laminlabs/lamin-cli/pull/240) [@Ebad371](https://github.com/Ebad371)
 - 📝  Add screenshots to the "Manage changes" guide [PR](https://github.com/laminlabs/lamindb/pull/3799) [@sheetalgiri](https://github.com/sheetalgiri)
 - 🐛 Retain empty columns in `Record.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3785) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🚸 Simplify lineage during record export via `to_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/3798) [@falexwolf](https://github.com/falexwolf)
