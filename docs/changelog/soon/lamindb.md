@@ -1,3 +1,4 @@
+- ♻️ Deterministic transform UID for `__claudecode__` [PR](https://github.com/laminlabs/lamin-cli/pull/242) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Replace internal calls to `SetupSettings._instance_exists` with `SetupSettings.is_configured` [PR](https://github.com/laminlabs/lamin-cli/pull/241) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track Claude Code sessions [PR](https://github.com/laminlabs/lamindb/pull/3801) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track Claude Code sessions [PR](https://github.com/laminlabs/lamin-cli/pull/240) [@Ebad371](https://github.com/Ebad371)
