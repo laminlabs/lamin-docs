@@ -1,3 +1,4 @@
+- :recycle: Replace internal calls to `SetupSettings._instance_exists` with `SetupSettings.is_configured` [PR](https://github.com/laminlabs/lamin-cli/pull/241) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track Claude Code sessions [PR](https://github.com/laminlabs/lamindb/pull/3801) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track Claude Code sessions [PR](https://github.com/laminlabs/lamin-cli/pull/240) [@Ebad371](https://github.com/Ebad371)
 - 📝  Add screenshots to the "Manage changes" guide [PR](https://github.com/laminlabs/lamindb/pull/3799) [@sheetalgiri](https://github.com/sheetalgiri)
