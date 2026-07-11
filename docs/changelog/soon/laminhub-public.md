@@ -1,0 +1,1 @@
+- 💄 Add icons for registries [PR](https://github.com/laminlabs/laminhub-public/pull/382) [@sunnyosun](https://github.com/sunnyosun)
