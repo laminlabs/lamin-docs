@@ -1,3 +1,4 @@
+- ♻️ Simplify check for lists in `base.dtypes` [PR](https://github.com/laminlabs/lamindb/pull/3803) [@falexwolf](https://github.com/falexwolf)
 - 📝 README v5.9: Re-write introduction [PR](https://github.com/laminlabs/lamindb/pull/3802) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix stale instance reference in `lamin connect --here` [PR](https://github.com/laminlabs/lamindb-setup/pull/1363) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Deterministic transform UID for `__claudecode__` [PR](https://github.com/laminlabs/lamin-cli/pull/242) [@falexwolf](https://github.com/falexwolf)
