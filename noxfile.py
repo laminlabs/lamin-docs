@@ -61,6 +61,7 @@ It uses a scalable lakehouse architecture that understands bio-formats, registri
 
 </details>
 <br>
+
 ```{dropdown} Why?"""
 
 README1_ORIG = """</details>
