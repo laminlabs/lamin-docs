@@ -1,2 +1,3 @@
+- 🚸 Distinguish spaces by shape and color [PR](https://github.com/laminlabs/laminhub-public/pull/384) [@chaichontat](https://github.com/chaichontat)
 - ✨ Show orchestrating runs in lineage graph [PR](https://github.com/laminlabs/laminhub-public/pull/383) [@falexwolf](https://github.com/falexwolf)
 - 💄 Add icons for registries [PR](https://github.com/laminlabs/laminhub-public/pull/382) [@sunnyosun](https://github.com/sunnyosun)
