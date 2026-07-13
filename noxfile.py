@@ -52,7 +52,6 @@ README0_REPLACE = """# Introduction [![llms.txt](https://img.shields.io/badge/ll
 LaminDB is an open-source data management tool that makes it easy to query, trace & validate datasets across diverse storage formats and locations.
 It gives you context through annotations, memory through lineage, and governance through branching and versioning.
 It uses a scalable lakehouse architecture that understands bio-formats, registries, ontologies, and markdown notes.
-
 <details>
 <summary>LLM?</summary>
 
@@ -60,6 +59,7 @@ It uses a scalable lakehouse architecture that understands bio-formats, registri
 - Skills: See `lamindb/.agents` or manually install the latest version from [lamin-skills](https://github.com/laminlabs/lamin-skills).
 
 </details>
+
 
 ```{dropdown} Why?"""
 
