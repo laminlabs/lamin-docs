@@ -1,0 +1,1 @@
+- 🚸 Support parallel sessions in Claude Code [PR](https://github.com/laminlabs/lamin-cli/pull/243) [@Ebad371](https://github.com/Ebad371)
