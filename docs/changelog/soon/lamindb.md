@@ -1,3 +1,4 @@
+- 🚸 Support parallel Claude Code sessions and prettify agent traces [PR](https://github.com/laminlabs/lamindb/pull/3805) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Remove heading and add ANSI color rendering in transcript HTML [PR](https://github.com/laminlabs/lamin-cli/pull/245) [@Ebad371](https://github.com/Ebad371)
 - 📝 Update `lamin track` help to reference lamindb skill [PR](https://github.com/laminlabs/lamin-cli/pull/244) [@Ebad371](https://github.com/Ebad371)
 - 🐛 Schema members should take precedence over flexible features [PR](https://github.com/laminlabs/lamindb/pull/3808) [@ishitajain9717](https://github.com/ishitajain9717)
