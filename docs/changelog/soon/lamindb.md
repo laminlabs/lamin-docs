@@ -1,2 +1,3 @@
+- 📝 Update `lamin track` help to reference lamindb skill [PR](https://github.com/laminlabs/lamin-cli/pull/244) [@Ebad371](https://github.com/Ebad371)
 - 🐛 Schema members should take precedence over flexible features [PR](https://github.com/laminlabs/lamindb/pull/3808) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🚸 Support parallel sessions in Claude Code [PR](https://github.com/laminlabs/lamin-cli/pull/243) [@Ebad371](https://github.com/Ebad371)
