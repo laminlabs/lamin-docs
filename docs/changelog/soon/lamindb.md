@@ -1,3 +1,4 @@
+- 📝 A dedicated `tables` query guide [PR](https://github.com/laminlabs/lamindb/pull/3776) [@Raaghav-Pillai](https://github.com/Raaghav-Pillai)
 - 📝 Prettify & clarify `acid.md` [PR](https://github.com/laminlabs/lamindb/pull/3807) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Support parallel Claude Code sessions and prettify agent traces [PR](https://github.com/laminlabs/lamindb/pull/3805) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Remove heading and add ANSI color rendering in transcript HTML [PR](https://github.com/laminlabs/lamin-cli/pull/245) [@Ebad371](https://github.com/Ebad371)
