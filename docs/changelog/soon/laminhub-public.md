@@ -1,2 +1,3 @@
+- 💄 Change layout of artifacts page, adjust fonts to be more consistent and style of parquet preview table [PR](https://github.com/laminlabs/laminhub-public/pull/387) [@sheetalgiri](https://github.com/sheetalgiri)
 - ✨ Add service accounts under organization settings [PR](https://github.com/laminlabs/laminhub-public/pull/386) [@Ebad371](https://github.com/Ebad371)
 - :bug: Fix project hierarchy navigation, search, and metadata [PR](https://github.com/laminlabs/laminhub-public/pull/385) [@chaichontat](https://github.com/chaichontat)
