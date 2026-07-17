@@ -1,5 +1,3 @@
-/nbproject/* https://nbproject.lamin.ai/:splat 301
-/readfcs/* https://readfcs.lamin.ai/:splat 301
 /guide /introduction 301
 /api /cli 301
 /changelog /changelog/2026 302
@@ -14,6 +12,8 @@
 /registries /query-search 301
 /ontologies /manage-ontologies 301
 /bio-registries /manage-ontologies 301
+/faq/idempotency /idempotency 301
+/faq/acid /acid 301
 /scrna6 /scrna-tiledbsoma 301
 /scrna5 /scrna-mappedcollection 301
 /atlases /cellxgene 301
@@ -22,8 +22,6 @@
 /trace-data-code /schmidt22 301
 /pipelines /nextflow 301
 /workflows /nextflow 301
-/nextflow-plugin-reference /nf-lamin 301
-/nextflow-postrun /nextflow#using-a-post-run-script 301
 /mlops /wandb 301
 /visualization /vitessce 301
 /summary.md /introduction.md 301
