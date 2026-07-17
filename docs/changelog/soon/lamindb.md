@@ -1,0 +1,1 @@
+- ✅ Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1365) [@Koncopd](https://github.com/Koncopd)
