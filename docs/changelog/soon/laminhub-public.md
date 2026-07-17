@@ -1,0 +1,1 @@
+- :bug: Fix project hierarchy navigation, search, and metadata [PR](https://github.com/laminlabs/laminhub-public/pull/385) [@chaichontat](https://github.com/chaichontat)
