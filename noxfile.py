@@ -38,6 +38,10 @@ README0_REPLACE = """# Introduction [![llms.txt](https://img.shields.io/badge/ll
 
 LaminDB is an open-source data management tool that makes it easy to query, trace & validate datasets across diverse storage formats and locations."""
 
+README1_ORIG = """<img width="800px" alt="lamindb-schematic" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000D.svg">"""
+
+README1_REPLACE = """<img width="800px" alt="lamindb-schematic" style="margin-top: 1.15rem;" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000D.svg">"""
+
 README2_ORIG = """
 UI, permissions, audit logs? LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
 
@@ -215,8 +219,10 @@ def pull_artifacts(session):
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
         assert README0_ORIG in content  # noqa: S101
+        assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
         content = content.replace(README0_ORIG, README0_REPLACE)
+        content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
