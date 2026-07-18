@@ -39,13 +39,11 @@ README0_REPLACE = """# Introduction [![llms.txt](https://img.shields.io/badge/ll
 LaminDB is an open-source data management tool that makes it easy to query, trace & validate datasets across diverse storage formats and locations."""
 
 README2_ORIG = """
-UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
+UI, permissions, audit logs? LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
 
 README2_REPLACE = """
-LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
-
 <details>
-<summary>Hub features</summary>
+<summary>UI, permissions, audit logs? LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git.</summary>
 
 ```{include} includes/laminhub-features.md
 ```

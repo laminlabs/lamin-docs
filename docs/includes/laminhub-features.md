@@ -1,4 +1,4 @@
-<!-- note that this syncs exactly on to the pricing page, if you edit this list, please also edit frontend/src/routes/(landing-page)/(...)/pricing/+page.svelte -->
+<!-- note that this syncs to the pricing page, if you edit this list, please also edit frontend/src/routes/(landing-page)/(...)/pricing/+page.svelte -->
 
 Platform features:
 
