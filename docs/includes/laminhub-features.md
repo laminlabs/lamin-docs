@@ -15,7 +15,7 @@ Architecture features:
 - **accredited TRE (Trusted Research Environment)** → manage sensitive data from e.g. the UK Biobank
 - **auto-generated REST API** → optional REST interface for JS-based web applications
 
-GUI features:
+UI features:
 
 - **lineage** → interactive graphs for datasets, notebooks & pipelines
 - **catalog** → browse, search & query your lakehouse

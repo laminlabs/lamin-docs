@@ -32,115 +32,25 @@ README0_ORIG = """[![docs](https://img.shields.io/badge/docs-yellow)](https://do
 
 # LaminDB - Open-source data management for biology
 
-LaminDB makes it easy to query, trace & validate datasets across diverse storage formats and locations.
-It gives you context through annotations, memory through lineage, and governance through branching and versioning.
-It uses a scalable lakehouse architecture that understands bio-formats, registries, ontologies, and markdown notes.
-
-<details>
-<summary>LLM?</summary>
-
-- Docs: [llms.txt](https://docs.lamin.ai/llms.txt)
-- Skills: See `lamindb/.agents` or manually install the latest version from [lamin-skills](https://github.com/laminlabs/lamin-skills).
-
-</details>
-
-<details>
-<summary>Why?</summary>"""
+LaminDB makes it easy to query, trace & validate datasets across diverse storage formats and locations."""
 
 README0_REPLACE = """# Introduction [![llms.txt](https://img.shields.io/badge/llms.txt-orange)](https://docs.lamin.ai/llms.txt) [![pypi](https://img.shields.io/pypi/v/lamindb?color=blue&label=PyPI)](https://pypi.org/project/lamindb) [![cran](https://www.r-pkg.org/badges/version/laminr?color=green)](https://cran.r-project.org/package=laminr) [![stars](https://img.shields.io/github/stars/laminlabs/lamindb?style=flat&logo=GitHub&label=&color=gray)](https://github.com/laminlabs/lamindb) [![downloads](https://static.pepy.tech/personalized-badge/lamindb?period=total&units=INTERNATIONAL_SYSTEM&left_color=GRAY&right_color=GRAY&left_text=%E2%AC%87%EF%B8%8F)](https://pepy.tech/project/lamindb)
 
-LaminDB is an open-source data management tool that makes it easy to query, trace & validate datasets across diverse storage formats and locations.
-It gives you context through annotations, memory through lineage, and governance through branching and versioning.
-It uses a scalable lakehouse architecture that understands bio-formats, registries, ontologies, and markdown notes.
-
-<details>
-<summary>LLM?</summary>
-
-- Docs: [llms.txt](https://docs.lamin.ai/llms.txt)
-- Skills: See `lamindb/.agents` or manually install the latest version from [lamin-skills](https://github.com/laminlabs/lamin-skills).
-
-</details>
-
-```{dropdown} Why?"""
-
-README1_ORIG = """</details>
-
-<img width="800px" alt="lamindb-schematic" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000D.svg">
-
-How?"""
-
-README1_REPLACE = """```
-
-<img width="800px" alt="lamindb-schematic" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000D.svg">
-
-```{dropdown} DB highlights"""
+LaminDB is an open-source data management tool that makes it easy to query, trace & validate datasets across diverse storage formats and locations."""
 
 README2_ORIG = """
-UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git.
+UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
 
-<details>
-<summary>Who?</summary>"""
-
-README2_REPLACE = """```
-
+README2_REPLACE = """
 LaminHub is a data collaboration hub built on LaminDB similar to how GitHub is built on git.
 
-:::{dropdown} Hub highlights
+<details>
+<summary>Hub features</summary>
 
 ```{include} includes/laminhub-features.md
 ```
 
-:::
-
-```{dropdown} Who uses it?"""
-
-
-README4_ORIG = """
-Install the `lamindb` Python package:
-
-```shell
-pip install lamindb
-```
-
-Create a LaminDB instance:
-
-```shell
-lamin init --storage ./quickstart-data  # or s3://my-bucket, gs://my-bucket
-```
-
-Or if you have write access to an instance, connect to it:
-
-```shell
-lamin connect account/name
-```
-"""
-
-README3_ORIG = """</details>
-
-## Quickstart"""
-
-README3_REPLACE = """```
-
-## Quickstart"""
-
-
-README4_REPLACE = """
-::::{tab-set}
-:::{tab-item} Py
-:sync: python
-
-```{include} includes/quick-setup-lamindb.md
-```
-
-:::
-:::{tab-item} R
-:sync: r
-
-```{include} includes/quick-setup-laminr.md
-```
-:::
-::::
-"""
+</details>"""
 
 
 def replace_content(filename: Path, mapped_content: dict[str, str]) -> None:
@@ -305,13 +215,9 @@ def pull_artifacts(session):
         content = f.read()
     with open("docs/includes/README.md", "w") as f:
         assert README0_ORIG in content  # noqa: S101
-        assert README1_ORIG in content  # noqa: S101
         assert README2_ORIG in content  # noqa: S101
-        assert README3_ORIG in content  # noqa: S101
         content = content.replace(README0_ORIG, README0_REPLACE)
-        content = content.replace(README1_ORIG, README1_REPLACE)
         content = content.replace(README2_ORIG, README2_REPLACE)
-        content = content.replace(README3_ORIG, README3_REPLACE)
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
