@@ -1,2 +1,3 @@
+- 📝 Simplify section on versioning and branching [PR](https://github.com/laminlabs/lamindb/pull/3812) [@falexwolf](https://github.com/falexwolf)
 - 💄 Minor README polish (v5.10) [PR](https://github.com/laminlabs/lamindb/pull/3811) [@falexwolf](https://github.com/falexwolf)
 - ✅ Fix tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1365) [@Koncopd](https://github.com/Koncopd)
