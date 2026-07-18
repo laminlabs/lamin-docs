@@ -290,9 +290,9 @@ def docs(session):
     #     exit(1)
 
     # strip outputs for llms.txt
-    os.system("rm -rf _docs_tmp")
-    strip_notebook_outputs("docs")
-    subprocess.run(
-        "lndocs --format text --error-on-index",
-        shell=True,
-    )
+    # os.system("rm -rf _docs_tmp")
+    # strip_notebook_outputs("docs")
+    # subprocess.run(
+    #     "lndocs --format text --error-on-index",
+    #     shell=True,
+    # )
