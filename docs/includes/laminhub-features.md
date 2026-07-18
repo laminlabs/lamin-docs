@@ -1,4 +1,4 @@
-<!-- note that this syncs exactly on to the pricing page, if you edit this list, please also edit frontend/src/routes/(landing-page)/(...)/pricing/+page.svelte -->
+<!-- note that this syncs to the pricing page, if you edit this list, please also edit frontend/src/routes/(landing-page)/(...)/pricing/+page.svelte -->
 
 Platform features:
 
@@ -15,7 +15,7 @@ Architecture features:
 - **accredited TRE (Trusted Research Environment)** → manage sensitive data from e.g. the UK Biobank
 - **auto-generated REST API** → optional REST interface for JS-based web applications
 
-GUI features:
+UI features:
 
 - **lineage** → interactive graphs for datasets, notebooks & pipelines
 - **catalog** → browse, search & query your lakehouse
