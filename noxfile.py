@@ -42,8 +42,7 @@ README2_ORIG = """
 UI, permissions, audit logs? LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
 
 README2_REPLACE = """
-<br>
-<details>
+<details style="margin-top: 1.15rem;">
 <summary>UI, permissions, audit logs?</summary>
 
 LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git.
