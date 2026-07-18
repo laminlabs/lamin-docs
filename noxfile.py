@@ -42,8 +42,10 @@ README2_ORIG = """
 UI, permissions, audit logs? LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
 
 README2_REPLACE = """
+UI, permissions, audit logs?
+
 <details>
-<summary>UI, permissions, audit logs? LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git.</summary>
+<summary>LaminHub is a collaboration hub built on LaminDB similar to how GitHub is built on git.</summary>
 
 ```{include} includes/laminhub-features.md
 ```
@@ -290,9 +292,9 @@ def docs(session):
     #     exit(1)
 
     # strip outputs for llms.txt
-    # os.system("rm -rf _docs_tmp")
-    # strip_notebook_outputs("docs")
-    # subprocess.run(
-    #     "lndocs --format text --error-on-index",
-    #     shell=True,
-    # )
+    os.system("rm -rf _docs_tmp")
+    strip_notebook_outputs("docs")
+    subprocess.run(
+        "lndocs --format text --error-on-index",
+        shell=True,
+    )
