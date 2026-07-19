@@ -153,6 +153,52 @@ To add a team to your instance:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
 </div>
 
+### Manage service accounts
+
+You need to be an org admin or manager.
+
+Service accounts are bots owned by your organization — use them for CI pipelines, automations, and agents. They authenticate with API keys instead of user credentials.
+
+To create a service account:
+
+1. Go to the **Settings** tab of your organization page.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/I5h08zAwEoEaomzt0000.png" style="width: 90%;"/>
+</div>
+
+2. Click **+ New service account**, enter a handle and name, and click **Create**. An API key dialog opens automatically.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1uauEK7PCPLhNNYO0000.png" style="width: 90%;"/>
+</div>
+
+3. Enter a description and expiration for the key, then click **Generate key**. Copy the key — it's shown only once.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HnGsLDn5gZDB81wu0000.png" style="width: 90%;"/>
+</div>
+
+4. The service account now appears in the list.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SWtpjE8nKGVMtZuy0000.png" style="width: 90%;"/>
+</div>
+
+To add a service account to an instance:
+
+1. Go to the **People** tab of your organization page. The service account is already listed there as a member. Click the three-dot menu next to it and select **Edit member's instances**, then select the instance you want the bot to collaborate on.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KHTjLMznPILYKLct0000.png" style="width: 90%;"/>
+</div>
+
+2. The service account is now an instance collaborator with read access.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f3EWFWuL7Ht1Sn7P0000.png" style="width: 90%;"/>
+</div>
+
 ## An example
 
 An `ML` and a `Curation` team collaborate across spaces to server the wider organization:
@@ -174,9 +220,10 @@ Lamin's access management is built on:
 1.  **Users:** _User accounts_ belong to human users and own resources like databases.
 2.  **Organizations:** _Organizational accounts_ can be accessed by the organization's members and own resources like user accounts.
 3.  **Teams:** Groups of users. Roles and permissions can be assigned to teams like for users.
-4.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
-5.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
-6.  **Storage locations:** Access to storage locations in the cloud are implied by a user's access to instances & spaces.
+4.  **Service accounts:** _Service accounts_ are bots owned by an organization — not tied to a human user. Use them for CI pipelines, automations, and agents. They authenticate with API keys.
+5.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
+6.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
+7.  **Storage locations:** Access to storage locations in the cloud are implied by a user's access to instances & spaces.
 
 ### Spaces
 
