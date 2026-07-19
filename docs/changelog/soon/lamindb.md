@@ -1,3 +1,4 @@
+- 🗃️ Add field `.suffix` to `Schema`, parallel to `Artifact.suffix` [PR](https://github.com/laminlabs/lamindb/pull/3814) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add field `.schema` to `Collection`, parallel to `Artifact` and `Record` [PR](https://github.com/laminlabs/lamindb/pull/3813) [@falexwolf](https://github.com/falexwolf)
 - 📝 Simplify section on versioning and branching [PR](https://github.com/laminlabs/lamindb/pull/3812) [@falexwolf](https://github.com/falexwolf)
 - 💄 Minor README polish (v5.10) [PR](https://github.com/laminlabs/lamindb/pull/3811) [@falexwolf](https://github.com/falexwolf)
