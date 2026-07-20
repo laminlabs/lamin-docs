@@ -1,2 +1,0 @@
-- :sparkles: Add scalar feature filters to artifact lists [PR](https://github.com/laminlabs/laminhub-public/pull/390) [@chaichontat](https://github.com/chaichontat)
-- 🍱 New video: Trace data, code & agents [PR](https://github.com/laminlabs/laminhub-public/pull/389) [@sunnyosun](https://github.com/sunnyosun)
