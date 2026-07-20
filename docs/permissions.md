@@ -155,9 +155,9 @@ To add a team to your instance:
 
 ### Manage bot accounts
 
-You need to be an org admin or manager.
+You need to be an org admin. Access to bot accounts for other org members will be created soon.
 
-Bot accounts are bots owned by your organization — use them for CI pipelines, automations, and agents. They authenticate with API keys.
+Bot accounts allow scoping access permissions within automations and agents. They authenticate via their API keys.
 
 To create a bot account:
 
