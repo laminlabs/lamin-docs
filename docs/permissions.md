@@ -157,32 +157,32 @@ To add a team to your instance:
 
 You need to be an org admin or manager.
 
-Bot accounts are bots owned by your organization — use them for CI pipelines, automations, and agents. They authenticate with API keys instead of user credentials.
+Bot accounts are bots owned by your organization — use them for CI pipelines, automations, and agents. They authenticate with API keys.
 
 To create a bot account:
 
 1. Go to the **Settings** tab of your organization page.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/I5h08zAwEoEaomzt0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/I5h08zAwEoEaomzt0002.png" style="width: 90%;"/>
 </div>
 
 2. Click **+ New bot account**, enter a handle and name, and click **Create**. An API key dialog opens automatically.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1uauEK7PCPLhNNYO0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1uauEK7PCPLhNNYO0001.png" style="width: 90%;"/>
 </div>
 
 3. Enter a description and expiration for the key, then click **Generate key**. Copy the key — it's shown only once.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HnGsLDn5gZDB81wu0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HnGsLDn5gZDB81wu0001.png" style="width: 90%;"/>
 </div>
 
 4. The bot account now appears in the list.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SWtpjE8nKGVMtZuy0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SWtpjE8nKGVMtZuy0001.png" style="width: 90%;"/>
 </div>
 
 To add a bot account to an instance:
@@ -190,13 +190,13 @@ To add a bot account to an instance:
 1. Go to the **People** tab of your organization page. The bot account is already listed there as a member. Click the three-dot menu next to it and select **Edit member's instances**, then select the instance you want the bot to collaborate on.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KHTjLMznPILYKLct0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KHTjLMznPILYKLct0001.png" style="width: 90%;"/>
 </div>
 
 2. The bot account is now an instance collaborator with read access.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f3EWFWuL7Ht1Sn7P0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f3EWFWuL7Ht1Sn7P0001.png" style="width: 90%;"/>
 </div>
 
 ## An example
