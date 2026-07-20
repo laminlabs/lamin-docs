@@ -155,9 +155,9 @@ To add a team to your instance:
 
 ### Manage bot accounts
 
-You need to be an org admin. Access to bot accounts for other org members will be created soon.
+You need to be an org admin. Access to bot accounts for other org members will be enabled soon (July 2026).
 
-Bot accounts allow scoping access permissions within automations and agents. They authenticate via their API keys.
+Bot accounts allow scoping access permissions within automations, including through AI agents. They authenticate via their API keys.
 
 To create a bot account:
 
