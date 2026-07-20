@@ -185,7 +185,7 @@ To create a bot account:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SWtpjE8nKGVMtZuy0001.png" style="width: 90%;"/>
 </div>
 
-To add a bot account to an instance:
+To add a bot as a collaborator to an instance:
 
 1. Go to the **People** tab of your organization page. The bot account is already listed there as a member. Click the three-dot menu next to it and select **Edit member's instances**, then select the instance you want the bot to collaborate on.
 
@@ -198,6 +198,8 @@ To add a bot account to an instance:
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f3EWFWuL7Ht1Sn7P0001.png" style="width: 90%;"/>
 </div>
+
+You can also add bots as collaborators to spaces, just like you add human users as collaborators to spaces.
 
 ## An example
 
