@@ -1,3 +1,4 @@
+- 🦺 Check key on init of `sqlrecord` and saving `artifact` [PR](https://github.com/laminlabs/lamindb/pull/3816) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add instance DB template initialization [PR](https://github.com/laminlabs/lamindb-setup/pull/1366) [@fredericenard](https://github.com/fredericenard)
 - 🗃️ More stringent unique constraints when `feature is NULL` [PR](https://github.com/laminlabs/lamindb/pull/3815) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add field `.suffix` to `Schema`, parallel to `Artifact.suffix` [PR](https://github.com/laminlabs/lamindb/pull/3814) [@falexwolf](https://github.com/falexwolf)
