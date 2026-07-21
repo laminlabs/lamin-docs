@@ -1,3 +1,4 @@
+- ✨ Add instance DB template initialization [PR](https://github.com/laminlabs/lamindb-setup/pull/1366) [@fredericenard](https://github.com/fredericenard)
 - 🗃️ More stringent unique constraints when `feature is NULL` [PR](https://github.com/laminlabs/lamindb/pull/3815) [@falexwolf](https://github.com/falexwolf)
 - 🗃️ Add field `.suffix` to `Schema`, parallel to `Artifact.suffix` [PR](https://github.com/laminlabs/lamindb/pull/3814) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add field `.schema` to `Collection`, parallel to `Artifact` and `Record` [PR](https://github.com/laminlabs/lamindb/pull/3813) [@falexwolf](https://github.com/falexwolf)
