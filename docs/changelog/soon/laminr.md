@@ -1,0 +1,1 @@
+- Bump actions/setup-python from 6 to 7 [PR](https://github.com/laminlabs/laminr/pull/273) [@dependabot[bot]](https://github.com/apps/dependabot)
