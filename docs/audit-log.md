@@ -18,7 +18,7 @@ changed. For deletes, it stores the previous record data.
 
 ## View the audit log
 
-Open an instance in LaminHub and select **Changes → Database writes**.
+Open a database in the UI and select **Changes → Database writes**.
 
 The newest events are shown first and grouped by date. You can:
 
