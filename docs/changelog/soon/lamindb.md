@@ -1,3 +1,4 @@
+- 🐛 Fix user messages missing from transcript HTML report [PR](https://github.com/laminlabs/lamindb/pull/3820) [@Ebad371](https://github.com/Ebad371)
 - 🐛 Fix user messages missing from transcript HTML report [PR](https://github.com/laminlabs/lamin-cli/pull/247) [@Ebad371](https://github.com/Ebad371)
 - 🚸 More robust `.describe()` for corrupted schemas [PR](https://github.com/laminlabs/lamindb/pull/3819) [@falexwolf](https://github.com/falexwolf)
 - 🦺 Check key on init of `sqlrecord` and saving `artifact` [PR](https://github.com/laminlabs/lamindb/pull/3816) [@Koncopd](https://github.com/Koncopd)
