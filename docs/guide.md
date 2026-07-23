@@ -45,6 +45,7 @@ visualization
 records
 launch
 permissions
+audit-log
 security
 ```
 
