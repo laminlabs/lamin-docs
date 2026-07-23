@@ -4,7 +4,6 @@ The audit log provides a history of database write events, similar to a git comm
 It complements data lineage by answering what was changed, by whom, and when, at a fine-grained level.
 
 To browse the audit log, open a database in the UI and select **Changes → Database writes**.
-
 The newest events are shown first and grouped by date. You can:
 
 - filter by space, branch, event type, table, user, or date range
