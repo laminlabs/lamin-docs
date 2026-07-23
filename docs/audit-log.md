@@ -27,6 +27,10 @@ The newest events are shown first and grouped by date. You can:
 - group consecutive events that affect the same record
 - open the affected record when a link is available
 
+<div align="center">
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/Afygpvnvlkyc1ezM0000.png" style="margin: 1%;"/>
+</div>
+
 ## Access control
 
 Audit records are read-only and their visibility follows the instance's {doc}`permissions`. A collaborator can only read events for spaces and records they are allowed to access.
