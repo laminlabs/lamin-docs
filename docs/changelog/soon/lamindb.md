@@ -1,3 +1,4 @@
+- 📝 Re-brand README tagline towards multimodal AI [PR](https://github.com/laminlabs/lamindb/pull/3821) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix user messages missing from transcript HTML report [PR](https://github.com/laminlabs/lamindb/pull/3820) [@Ebad371](https://github.com/Ebad371)
 - 🐛 Fix user messages missing from transcript HTML report [PR](https://github.com/laminlabs/lamin-cli/pull/247) [@Ebad371](https://github.com/Ebad371)
 - 🚸 More robust `.describe()` for corrupted schemas [PR](https://github.com/laminlabs/lamindb/pull/3819) [@falexwolf](https://github.com/falexwolf)
