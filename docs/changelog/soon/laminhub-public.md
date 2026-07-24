@@ -1,0 +1,1 @@
+- ✨ Add scalar sheet editing to experiment registration [PR](https://github.com/laminlabs/laminhub-public/pull/391) [@chaichontat](https://github.com/chaichontat)
