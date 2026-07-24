@@ -1,0 +1,1 @@
+- ✨ Resolve toRealPath() to the underlying storage path [PR](https://github.com/laminlabs/nf-lamin/pull/180) [@rcannood](https://github.com/rcannood)
