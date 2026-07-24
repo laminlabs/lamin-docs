@@ -1,1 +1,2 @@
+- 🐛 Mark cancelled runs as aborted instead of errored [PR](https://github.com/laminlabs/nf-lamin/pull/182) [@rcannood](https://github.com/rcannood)
 - ✨ Resolve toRealPath() to the underlying storage path [PR](https://github.com/laminlabs/nf-lamin/pull/180) [@rcannood](https://github.com/rcannood)
