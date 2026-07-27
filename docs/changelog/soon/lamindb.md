@@ -1,3 +1,4 @@
+- 🐛 Clear instance context (`branch`, `space`) cache from `settings` on re-connect [PR](https://github.com/laminlabs/lamindb-setup/pull/1368) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Separate the `HasSynonyms` and `HasAbbr` MixIns from the the `CanCurate` MixIn [PR](https://github.com/laminlabs/lamindb/pull/3823) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Rename `Schema.add_optional_feature()` to `Schema.add()` [PR](https://github.com/laminlabs/lamindb/pull/3822) [@falexwolf](https://github.com/falexwolf)
 - 📝 Re-brand README tagline towards multimodal AI [PR](https://github.com/laminlabs/lamindb/pull/3821) [@falexwolf](https://github.com/falexwolf)
