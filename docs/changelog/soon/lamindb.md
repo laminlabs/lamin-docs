@@ -1,3 +1,4 @@
+- 🔒 Keep cached files inside the cache directory [PR](https://github.com/laminlabs/lamindb-setup/pull/1367) [@amkram](https://github.com/amkram)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3824) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Clear instance context (`branch`, `space`) cache from `settings` on re-connect [PR](https://github.com/laminlabs/lamindb-setup/pull/1368) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Separate the `HasSynonyms` and `HasAbbr` MixIns from the the `CanCurate` MixIn [PR](https://github.com/laminlabs/lamindb/pull/3823) [@falexwolf](https://github.com/falexwolf)
