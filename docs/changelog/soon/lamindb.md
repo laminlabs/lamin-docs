@@ -1,3 +1,4 @@
+- 🦺 Error for leading slash in key [PR](https://github.com/laminlabs/lamindb/pull/3826) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3825) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Absolute path checks for cache [PR](https://github.com/laminlabs/lamindb-setup/pull/1369) [@Koncopd](https://github.com/Koncopd)
 - 🔒 Keep cached files inside the cache directory [PR](https://github.com/laminlabs/lamindb-setup/pull/1367) [@amkram](https://github.com/amkram)
