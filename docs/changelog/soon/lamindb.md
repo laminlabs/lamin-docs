@@ -1,3 +1,4 @@
+- 🐛 Check expiration of the db token from LAMIN_DB_TOKEN env variable [PR](https://github.com/laminlabs/lamindb-setup/pull/1370) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Relax key checks [PR](https://github.com/laminlabs/lamindb/pull/3827) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Error for leading slash in key [PR](https://github.com/laminlabs/lamindb/pull/3826) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3825) [@Koncopd](https://github.com/Koncopd)
