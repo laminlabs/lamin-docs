@@ -1,3 +1,4 @@
+- ⬆️ Update lamin-api-client to 0.1.0 [PR](https://github.com/laminlabs/nf-lamin/pull/184) [@rcannood](https://github.com/rcannood)
 - ✨ Resolve lamin uris anonymously [PR](https://github.com/laminlabs/nf-lamin/pull/183) [@rcannood](https://github.com/rcannood)
 - 🐛 Mark cancelled runs as aborted instead of errored [PR](https://github.com/laminlabs/nf-lamin/pull/182) [@rcannood](https://github.com/rcannood)
 - ✨ Resolve toRealPath() to the underlying storage path [PR](https://github.com/laminlabs/nf-lamin/pull/180) [@rcannood](https://github.com/rcannood)
