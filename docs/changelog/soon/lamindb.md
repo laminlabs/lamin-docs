@@ -1,3 +1,4 @@
+- 🐛 Skip hash for http if no ETag present [PR](https://github.com/laminlabs/lamindb-setup/pull/1371) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3828) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Check expiration of the db token from LAMIN_DB_TOKEN env variable [PR](https://github.com/laminlabs/lamindb-setup/pull/1370) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Relax key checks [PR](https://github.com/laminlabs/lamindb/pull/3827) [@Koncopd](https://github.com/Koncopd)
