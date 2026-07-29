@@ -1,3 +1,4 @@
+- ♻️ More robust `get_stat_dir_cloud()` for FTP links [PR](https://github.com/laminlabs/lamindb-setup/pull/1372) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Skip hash for http if no ETag present [PR](https://github.com/laminlabs/lamindb-setup/pull/1371) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3828) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Check expiration of the db token from LAMIN_DB_TOKEN env variable [PR](https://github.com/laminlabs/lamindb-setup/pull/1370) [@Koncopd](https://github.com/Koncopd)
