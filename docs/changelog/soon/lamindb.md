@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3829) [@Koncopd](https://github.com/Koncopd)
 - ✨ Process http directories correctly for hashes, sizes [PR](https://github.com/laminlabs/lamindb-setup/pull/1374) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Expose `.cache()` on `UPath` [PR](https://github.com/laminlabs/lamindb-setup/pull/1373) [@falexwolf](https://github.com/falexwolf)
 - ♻️ More robust `get_stat_dir_cloud()` for FTP links [PR](https://github.com/laminlabs/lamindb-setup/pull/1372) [@falexwolf](https://github.com/falexwolf)
