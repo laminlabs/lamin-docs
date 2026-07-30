@@ -1,3 +1,4 @@
+- :sparkles: Add use case for genomic variants [PR](https://github.com/laminlabs/lamin-usecases/pull/252) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move the `lightning.md` doc from `lamindb` here [PR](https://github.com/laminlabs/lamin-mlops/pull/35) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add EWAS Data Hub [PR](https://github.com/laminlabs/lamin-usecases/pull/251) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Polish Arc Atlas tutorial [PR](https://github.com/laminlabs/lamin-usecases/pull/250) [@falexwolf](https://github.com/falexwolf)
