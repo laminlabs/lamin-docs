@@ -1,0 +1,1 @@
+- 🚸 Display schema information for collections and cross-database lineage [PR](https://github.com/laminlabs/laminhub-public/pull/392) [@falexwolf](https://github.com/falexwolf)
