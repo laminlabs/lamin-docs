@@ -1,3 +1,4 @@
+- ⬆️ Bump `anndata` upper bound to `0.13.2`, remove `scipy` upper bound [PR](https://github.com/laminlabs/lamindb/pull/3830) [@Koncopd](https://github.com/Koncopd)
 - ✨ Track GitHub Copilot sessions [PR](https://github.com/laminlabs/lamindb/pull/3818) [@Ebad371](https://github.com/Ebad371)
 - ✨ Add Copilot session tracking (lamin track copilot) [PR](https://github.com/laminlabs/lamin-cli/pull/246) [@Ebad371](https://github.com/Ebad371)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3829) [@Koncopd](https://github.com/Koncopd)
