@@ -3,9 +3,10 @@
 ```{toctree}
 :maxdepth: 1
 
-cellxgene
+1000genomes
 arc-virtual-cell-atlas
-hubmap
+cellxgene
 ewas-datahub
+hubmap
 rxrx
 ```
