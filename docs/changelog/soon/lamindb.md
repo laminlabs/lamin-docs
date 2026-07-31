@@ -1,3 +1,4 @@
+- 🚸 Avoid double logging if passing `--here` to `lamin connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1376) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix error on large uploads and lacking progress print for `gcsfs` [PR](https://github.com/laminlabs/lamindb/pull/3832) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix error on large uploads and lacking progress printing on gcsfs [PR](https://github.com/laminlabs/lamindb-setup/pull/1375) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Bump `anndata` upper bound to `0.13.2`, remove `scipy` upper bound [PR](https://github.com/laminlabs/lamindb/pull/3830) [@Koncopd](https://github.com/Koncopd)
