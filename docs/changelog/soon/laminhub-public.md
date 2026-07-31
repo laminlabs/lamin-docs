@@ -1,0 +1,1 @@
+- :sparkles: Show validating schemas on collection pages [PR](https://github.com/laminlabs/laminhub-public/pull/393) [@chaichontat](https://github.com/chaichontat)
