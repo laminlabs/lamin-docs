@@ -1,3 +1,4 @@
+- 🚸 Simplify output of `schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3835) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track token counts, agent steps, and tool calls in addition to agent transcripts [PR](https://github.com/laminlabs/lamindb/pull/3834) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Clean CLI surface for finishing a tracked session [PR](https://github.com/laminlabs/lamin-cli/pull/250) [@falexwolf](https://github.com/falexwolf)
 - ✨ Store token counts, agent steps, and tool calls in addition to agent transcripts [PR](https://github.com/laminlabs/lamin-cli/pull/249) [@falexwolf](https://github.com/falexwolf)
