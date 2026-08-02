@@ -1,3 +1,4 @@
+- 🚸 Clean CLI surface for finishing a tracked session [PR](https://github.com/laminlabs/lamin-cli/pull/250) [@falexwolf](https://github.com/falexwolf)
 - ✨ Store token counts, agent steps, and tool calls in addition to agent transcripts [PR](https://github.com/laminlabs/lamin-cli/pull/249) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Avoid double logging if passing `--here` to `lamin connect` [PR](https://github.com/laminlabs/lamindb-setup/pull/1376) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix error on large uploads and lacking progress print for `gcsfs` [PR](https://github.com/laminlabs/lamindb/pull/3832) [@Koncopd](https://github.com/Koncopd)
