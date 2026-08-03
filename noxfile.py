@@ -93,10 +93,10 @@ def sync_path(path, target_path):
 @nox.session
 def pull_artifacts(session):
     # git
-    urllib.request.urlretrieve(
-        "https://raw.githubusercontent.com/laminlabs/schmidt22/main/README.md",
-        "docs/schmidt22.md",
-    )
+    # urllib.request.urlretrieve(
+    #     "https://raw.githubusercontent.com/laminlabs/schmidt22/main/README.md",
+    #     "docs/schmidt22.md",
+    # )
 
     # lamindb
     pull_from_s3_and_unpack("lamindb.zip")

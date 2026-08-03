@@ -1,17 +1,25 @@
 # Target prioritization
 
-Extend the [Schmidt et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35113687/) CRISPRa IFNG screen lineage toward immunotherapy target prioritization.
+Re-construct [Schmidt et al. (2022)](https://pubmed.ncbi.nlm.nih.gov/35113687/) and extend it toward immunotherapy target prioritization.
 
-The human pipeline calls positive IFNG hits from a genome-wide CRISPRa screen in primary T cells and joins them with Perturb-seq cell states. Agent-tracked scripts then map those hits to mechanisms of action, score druggability and drug-repurposing candidates, and re-rank targets by enrichment in IFNG-high transcriptional states.
+A genome-wide phenotypic CRISPRa screen was used to find transcriptional cell states that correlate with causal drivers of proteomic IFNG expression. The human pipeline calls positive IFNG hits and joins them with Perturb-seq cell states. Agent-tracked scripts then map those hits to mechanisms of action, score druggability and drug-repurposing candidates, and re-rank targets by enrichment in IFNG-high transcriptional states.
+
+<img width="751" height="195" alt="image" src="https://github.com/user-attachments/assets/a7046088-3b0a-41b7-9bf1-a02b3cf61bb5" />
 
 **Project:** [Schmidt22](https://lamin.ai/laminlabs/lamindata/project/iD3P5kq1LPtM) · **Repo:** [laminlabs/schmidt22](https://github.com/laminlabs/schmidt22)
 
 ## Upstream (human)
 
-|                               | Link                                                                                                                                                           |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| IFNG hits (`pos\|fdr < 0.01`) | [artifact](https://lamin.ai/laminlabs/lamindata/artifact/Ywz5JiVNHOWSJDiK0001)                                                                                 |
-| Perturb-seq joint analysis    | [artifact](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0001) · [lineage](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0001) |
+To understand how the Perturb-seq joint result was obtained, look at the lineage:
+
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KQmzmmLOeBN0C8Yk0004.png" width="850">
+
+Explore it [here](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0001) together with code and data artifacts. Executable steps are in [`build.yml`](https://github.com/laminlabs/schmidt22/blob/1f63452f5cf57ceea91979c1de3662d9372f0267/.github/workflows/build.yml#L19-L29).
+
+|                               | Link                                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------ |
+| IFNG hits (`pos\|fdr < 0.01`) | [artifact](https://lamin.ai/laminlabs/lamindata/artifact/Ywz5JiVNHOWSJDiK0001) |
+| Perturb-seq joint analysis    | [artifact](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0001) |
 
 ## Agent analyses
 
