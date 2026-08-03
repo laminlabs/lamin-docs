@@ -28,6 +28,7 @@ transfer
 :hidden:
 :caption: Use cases
 
+analyses
 atlases
 by-datatype
 by-registry

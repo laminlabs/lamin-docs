@@ -1,0 +1,17 @@
+# Perturbation modeling
+
+Cross-study drug-perturbation transcriptomics on [Tahoe-100M](https://lamin.ai/laminlabs/arrayloader-benchmarks/artifact/ipI9MJQ5Jn6URPQv0000) + [LINCS Level 2](https://lamin.ai/laminlabs/pertdata) (and appended [DRUG-seq](https://lamin.ai/laminlabs/sc-demo/artifact/rfYKB39Wixo1wTuf0000)): harmonize compounds and gene symbols into a `MappedCollection`, train a [modlyn](https://modlyn.lamin.ai/quickstart) linear classifier, then enrich and interpret top genes per perturbation.
+
+A key pattern: **append a new study to an existing collection and retrain**. After Tahoe + LINCS were harmonized, [DRUG-seq](https://lamin.ai/laminlabs/sc-demo/artifact/UHY9zWusKPMFNBwv0000) was aligned to the same perturbation label and gene panel, versioned into the collection, and the modlyn classifier was retrained on the expanded `MappedCollection` — without rebuilding the upstream pipeline.
+
+**Instance:** [laminlabs/sc-demo](https://lamin.ai/laminlabs/sc-demo)
+
+## Modeling & interpretation
+
+Retrain on the updated collection after each append so new compounds and cells enter the feature-selection model.
+
+| Step                                  | Transform                                                                                                                                                                       | Outputs                                                                                                                                                                                                                                        |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Train / retrain SimpleLogReg (modlyn) | [train_feature_selection_model.py](https://lamin.ai/laminlabs/sc-demo/transform/7PyhslHqMNz50003)                                                                               | [weights](https://lamin.ai/laminlabs/sc-demo/artifact/6SjvBlw8ImNaDIYK0001) · [train summary](https://lamin.ai/laminlabs/sc-demo/artifact/KaQ0b5FXYsutwZ8h0000)                                                                                |
+| Gene-module enrichment                | [perform_enrichment_analysis.ipynb](https://lamin.ai/laminlabs/sc-demo/transform/pOWPwwkXdFa30000)                                                                              | [top genes](https://lamin.ai/laminlabs/sc-demo/artifact/mgJoSBObEpd5eokT0000) · [enrichment](https://lamin.ai/laminlabs/sc-demo/artifact/uCqtO55cy99K95FU0000) · [top terms](https://lamin.ai/laminlabs/sc-demo/artifact/vEdpeF6bFpOnW0vx0000) |
+| Interpretation report (agent)         | [create_report.py](https://lamin.ai/laminlabs/sc-demo/transform/cCLH0eovSgEh0001) · [agent run](https://lamin.ai/laminlabs/sc-demo/transform/SnfuhjObaAKR0000/4VAwNMhPzq8YH6qQ) | [report](https://lamin.ai/laminlabs/sc-demo/artifact/FjFp6KcKCWxbQWNd0001)                                                                                                                                                                     |
