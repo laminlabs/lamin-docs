@@ -1,3 +1,4 @@
+- ✅ Fix flaky `test_run` / `test_bulk_permanent_run_delete` on Python 3.12 [PR](https://github.com/laminlabs/lamindb/pull/3838) [@Koncopd](https://github.com/Koncopd)
 - 📝 Fix agent-specific skill path and document the Copilot Local/Copilot toggle [PR](https://github.com/laminlabs/lamindb/pull/3831) [@Ebad371](https://github.com/Ebad371)
 - 📝 Simplify the readme: v5.11 [PR](https://github.com/laminlabs/lamindb/pull/3836) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Harden Copilot/Claude session tracking with hard errors [PR](https://github.com/laminlabs/lamin-cli/pull/251) [@Ebad371](https://github.com/Ebad371)
