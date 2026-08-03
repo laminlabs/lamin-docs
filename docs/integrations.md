@@ -34,6 +34,11 @@ You can call `ln.track()` and `ln.finish()` (or the R versions) in four notebook
 
 For both notebook types, source code is stored in `.py` format and run reports as html. Jupyter notebooks leverage the `py:percent` format and Marimo notebooks the Marimo standard.
 
+## Agentic harnesses
+
+- Claude Code: see the [track guide](https://docs.lamin.ai/track)
+- GitHub Copilot: see the [track guide](https://docs.lamin.ai/track)
+
 ## MLOps
 
 - [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning): {mod}`~lamindb.integrations.lightning`
