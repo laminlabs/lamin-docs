@@ -1,1 +1,2 @@
+- 💄 Consolidate run views to be consistent with record views and show ULabels on runs [PR](https://github.com/laminlabs/laminhub-public/pull/394) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Show validating schemas on collection pages [PR](https://github.com/laminlabs/laminhub-public/pull/393) [@chaichontat](https://github.com/chaichontat)
