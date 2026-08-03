@@ -1,5 +1,10 @@
 # Integrations
 
+## Agentic harnesses
+
+- Claude Code: [track guide](https://docs.lamin.ai/track#track-agentic-workflows)
+- GitHub Copilot: [track guide](https://docs.lamin.ai/track#track-agentic-workflows)
+
 ## Storage
 
 Read & write:
@@ -21,7 +26,7 @@ Read only:
 
 ## Git
 
-Auto-sync with `git`: [track guide](track.ipynb#sync-scripts-with-git).
+Auto-sync with `git`: [track guide](track.ipynb#sync-code-with-git).
 
 ## Computational notebooks
 
