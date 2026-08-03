@@ -6,7 +6,7 @@ Write-up: [Agentic variant analysis of the 1000 Genomes Project](https://blog.la
 
 **Instance:** [laminlabs/1000genomes](https://lamin.ai/laminlabs/1000genomes) · **Projects:** [Lakehouse benchmarks](https://lamin.ai/laminlabs/1000genomes/project/huN5V4kDfDQT) · [Agentic workflows](https://lamin.ai/laminlabs/1000genomes/project/xSomr73bTHWK)
 
-## Agent analyses
+## Agentic analyses
 
 Example task: count variants in a genomic band (chr1:150–200 Mb) — raw Parquet files vs. collection schema contract ([blog Fig. 1](https://blog.lamin.ai/1000genomes)).
 

@@ -8,7 +8,7 @@ A genome-wide phenotypic CRISPRa screen was used to find transcriptional cell st
 
 **Project:** [Schmidt22](https://lamin.ai/laminlabs/lamindata/project/iD3P5kq1LPtM) · **Repo:** [laminlabs/schmidt22](https://github.com/laminlabs/schmidt22)
 
-## Upstream (human)
+## Upstream workflow
 
 To understand how the Perturb-seq joint result was obtained, look at the lineage:
 
@@ -21,7 +21,9 @@ Explore it [here](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq
 | IFNG hits (`pos\|fdr < 0.01`) | [artifact](https://lamin.ai/laminlabs/lamindata/artifact/Ywz5JiVNHOWSJDiK0001) |
 | Perturb-seq joint analysis    | [artifact](https://lamin.ai/laminlabs/lamindata/artifact/W1AiST5wLrbNEyVq0001) |
 
-## Agent analyses
+## Agentic analyses
+
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1jdfhFSWuhVFaHuv0000.png" width="850">
 
 | Step                            | Transform                                                                                                                                                                 | Outputs                                                                                                                                                                |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
