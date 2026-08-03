@@ -1,0 +1,38 @@
+# Perturbation modeling
+
+Cross-study drug-perturbation transcriptomics on [Tahoe-100M](https://lamin.ai/laminlabs/arrayloader-benchmarks/artifact/ipI9MJQ5Jn6URPQv0000) + [LINCS Level 2](https://lamin.ai/laminlabs/pertdata) (and appended [DRUG-seq](https://lamin.ai/laminlabs/sc-demo/artifact/rfYKB39Wixo1wTuf0000)): harmonize compounds and gene symbols into a `MappedCollection`, train a [modlyn](https://modlyn.lamin.ai/quickstart) linear classifier, then enrich and interpret top genes per perturbation.
+
+A key pattern: **append a new study to an existing collection and retrain**. After Tahoe + LINCS were harmonized, [DRUG-seq](https://lamin.ai/laminlabs/sc-demo/artifact/UHY9zWusKPMFNBwv0000) was aligned to the same perturbation label and gene panel, versioned into the collection, and the modlyn classifier was retrained on the expanded `MappedCollection` — without rebuilding the upstream pipeline.
+
+**Instance:** [laminlabs/sc-demo](https://lamin.ai/laminlabs/sc-demo)
+
+## Upstream sources
+
+| Source                | Artifact                                                                                                                                                                                                  |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tahoe-100M shard      | [ipI9MJQ5Jn6URPQv0000](https://lamin.ai/laminlabs/sc-demo/artifact/ipI9MJQ5Jn6URPQv0000) (from [arrayloader-benchmarks](https://lamin.ai/laminlabs/arrayloader-benchmarks/artifact/ipI9MJQ5Jn6URPQv0000)) |
+| LINCS Phase II        | [1MvhipblenpfE9ol0000](https://lamin.ai/laminlabs/sc-demo/artifact/1MvhipblenpfE9ol0000)                                                                                                                  |
+| LINCS Phase I epsilon | [nUIput1HM5of6JKn0000](https://lamin.ai/laminlabs/sc-demo/artifact/nUIput1HM5of6JKn0000)                                                                                                                  |
+| LINCS Phase I delta   | [QlcIPRMMk667dGwS0000](https://lamin.ai/laminlabs/sc-demo/artifact/QlcIPRMMk667dGwS0000)                                                                                                                  |
+| DRUG-seq (GSE120222)  | [rfYKB39Wixo1wTuf0000](https://lamin.ai/laminlabs/sc-demo/artifact/rfYKB39Wixo1wTuf0000)                                                                                                                  |
+
+## Harmonization
+
+Overlap compounds across studies, unify the `perturbation` label, align gene symbols, apply `log1p`, and build a collection for `MappedCollection` training.
+
+| Step                                     | Transform                                                                                         | Outputs                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Harmonize Tahoe + LINCS                  | [harmonize_datasets.py](https://lamin.ai/laminlabs/sc-demo/transform/1wPDECF0X4YT0002)            | [compound overlap](https://lamin.ai/laminlabs/sc-demo/artifact/8u9dde8lbiafqXm20000) · [tahoe](https://lamin.ai/laminlabs/sc-demo/artifact/KhD3pDKFJwD3emhu0001) · [lincs phase2](https://lamin.ai/laminlabs/sc-demo/artifact/Upmw1JGUTx4q306b0001) · [epsilon](https://lamin.ai/laminlabs/sc-demo/artifact/7jlqSKULOyw189iY0001) · [delta](https://lamin.ai/laminlabs/sc-demo/artifact/SSCd5FEbOGzpG7Uu0001) |
+| Append DRUG-seq → new collection version | [harmonize_and_append_datasets.py](https://lamin.ai/laminlabs/sc-demo/transform/1wPDECF0X4YT0003) | [DRUG-seq harmonized](https://lamin.ai/laminlabs/sc-demo/artifact/UHY9zWusKPMFNBwv0000) · [collection v0002](https://lamin.ai/laminlabs/sc-demo/collection/GREiVik6EAnpx3Gq0002)                                                                                                                                                                                                                              |
+
+**Collection:** [pert-modeling/tahoe-lincs-harmonized](https://lamin.ai/laminlabs/sc-demo/collection/GREiVik6EAnpx3Gq0002) (v0002 includes DRUG-seq; earlier versions are Tahoe + LINCS only)
+
+## Modeling & interpretation
+
+Retrain on the updated collection after each append so new compounds and cells enter the feature-selection model.
+
+| Step                                  | Transform                                                                                                                                                                       | Outputs                                                                                                                                                                                                                                        |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Train / retrain SimpleLogReg (modlyn) | [train_feature_selection_model.py](https://lamin.ai/laminlabs/sc-demo/transform/7PyhslHqMNz50003)                                                                               | [weights](https://lamin.ai/laminlabs/sc-demo/artifact/6SjvBlw8ImNaDIYK0001) · [train summary](https://lamin.ai/laminlabs/sc-demo/artifact/KaQ0b5FXYsutwZ8h0000)                                                                                |
+| Gene-module enrichment                | [perform_enrichment_analysis.ipynb](https://lamin.ai/laminlabs/sc-demo/transform/pOWPwwkXdFa30000)                                                                              | [top genes](https://lamin.ai/laminlabs/sc-demo/artifact/mgJoSBObEpd5eokT0000) · [enrichment](https://lamin.ai/laminlabs/sc-demo/artifact/uCqtO55cy99K95FU0000) · [top terms](https://lamin.ai/laminlabs/sc-demo/artifact/vEdpeF6bFpOnW0vx0000) |
+| Interpretation report (agent)         | [create_report.py](https://lamin.ai/laminlabs/sc-demo/transform/cCLH0eovSgEh0001) · [agent run](https://lamin.ai/laminlabs/sc-demo/transform/SnfuhjObaAKR0000/4VAwNMhPzq8YH6qQ) | [report](https://lamin.ai/laminlabs/sc-demo/artifact/FjFp6KcKCWxbQWNd0001)                                                                                                                                                                     |
