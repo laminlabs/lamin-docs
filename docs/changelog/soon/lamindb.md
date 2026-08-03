@@ -1,3 +1,4 @@
+- 🐛 Harden Copilot/Claude session tracking with hard errors [PR](https://github.com/laminlabs/lamin-cli/pull/251) [@Ebad371](https://github.com/Ebad371)
 - 📝 Fix skill-copy destination to be agent-specific [PR](https://github.com/laminlabs/lamin-cli/pull/248) [@Ebad371](https://github.com/Ebad371)
 - 🚸 Simplify output of `schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3835) [@falexwolf](https://github.com/falexwolf)
 - ✨ Track token counts, agent steps, and tool calls in addition to agent transcripts [PR](https://github.com/laminlabs/lamindb/pull/3834) [@falexwolf](https://github.com/falexwolf)
