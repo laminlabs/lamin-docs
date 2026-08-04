@@ -1,1 +1,2 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3839) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Use `LAMIN_DB_TOKEN` only for default or not configured [PR](https://github.com/laminlabs/lamindb-setup/pull/1377) [@Koncopd](https://github.com/Koncopd)
