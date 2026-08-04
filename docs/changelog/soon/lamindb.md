@@ -1,2 +1,3 @@
+- 🐛 Fix `schema.slots` when no instance is configured [PR](https://github.com/laminlabs/lamindb/pull/3840) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3839) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Use `LAMIN_DB_TOKEN` only for default or not configured [PR](https://github.com/laminlabs/lamindb-setup/pull/1377) [@Koncopd](https://github.com/Koncopd)
