@@ -1,0 +1,1 @@
+- :bug: Fix record search on the database writes page [PR](https://github.com/laminlabs/laminhub-public/pull/395) [@chaichontat](https://github.com/chaichontat)
