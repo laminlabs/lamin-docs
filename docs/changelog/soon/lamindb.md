@@ -1,0 +1,1 @@
+- 🐛 Handle non-dict tool arguments in session resolution [PR](https://github.com/laminlabs/lamin-cli/pull/252) [@Ebad371](https://github.com/Ebad371)
