@@ -1,3 +1,4 @@
+- 🐛 Resolve Copilot sessions via $COPILOT_AGENT_SESSION_ID [PR](https://github.com/laminlabs/lamin-cli/pull/255) [@Ebad371](https://github.com/Ebad371)
 - ✨ Allow users to move artifacts between managed storages [PR](https://github.com/laminlabs/lamindb/pull/3842) [@Koncopd](https://github.com/Koncopd)
 - 📝 Move Copilot session-troubleshooting note to CLI docs [PR](https://github.com/laminlabs/lamin-cli/pull/253) [@Ebad371](https://github.com/Ebad371)
 - 🐛 Handle non-dict tool arguments in session resolution [PR](https://github.com/laminlabs/lamin-cli/pull/252) [@Ebad371](https://github.com/Ebad371)
