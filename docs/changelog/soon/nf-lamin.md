@@ -1,3 +1,4 @@
+- 🔖 Release 0.9.0 [PR](https://github.com/laminlabs/nf-lamin/pull/187) [@rcannood](https://github.com/rcannood)
 - ✨ Store the Seqera Platform watch url on the run [PR](https://github.com/laminlabs/nf-lamin/pull/186) [@rcannood](https://github.com/rcannood)
 - :sparkles: Allow annotating artifacts [PR](https://github.com/laminlabs/nf-lamin/pull/159) [@rcannood](https://github.com/rcannood)
 - ⚡️ Upsert link records instead of get-then-create [PR](https://github.com/laminlabs/nf-lamin/pull/185) [@rcannood](https://github.com/rcannood)
