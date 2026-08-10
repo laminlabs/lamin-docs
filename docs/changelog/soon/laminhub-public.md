@@ -1,5 +1,0 @@
-- :sparkles: Show spaces in feature lists [PR](https://github.com/laminlabs/laminhub-public/pull/399) [@chaichontat](https://github.com/chaichontat)
-- ✨ Show organism beside gene symbols [PR](https://github.com/laminlabs/laminhub-public/pull/398) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Make compact feature summaries expandable [PR](https://github.com/laminlabs/laminhub-public/pull/397) [@chaichontat](https://github.com/chaichontat)
-- 🚸 Show branch changes on detail pages [PR](https://github.com/laminlabs/laminhub-public/pull/396) [@chaichontat](https://github.com/chaichontat)
-- :bug: Fix record search on the database writes page [PR](https://github.com/laminlabs/laminhub-public/pull/395) [@chaichontat](https://github.com/chaichontat)
