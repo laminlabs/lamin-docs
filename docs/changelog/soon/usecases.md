@@ -1,2 +1,3 @@
+- :recycle: Bash fences [PR](https://github.com/laminlabs/snakemake-lamin/pull/12) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Bash fences [PR](https://github.com/laminlabs/lamin-mlops/pull/36) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Polish the `pbmc3k.md` guide [PR](https://github.com/laminlabs/lamin-usecases/pull/254) [@falexwolf](https://github.com/falexwolf)
