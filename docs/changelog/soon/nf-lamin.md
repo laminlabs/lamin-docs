@@ -1,0 +1,1 @@
+- :recycle: Bash fences [PR](https://github.com/laminlabs/nf-lamin/pull/188) [@falexwolf](https://github.com/falexwolf)
