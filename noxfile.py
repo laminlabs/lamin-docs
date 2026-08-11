@@ -273,7 +273,7 @@ def docs(session):
         print(f"Could not find {lamindb_nox_path}, skipping CLI docs generation.")
     # need the following line to visualize the pertdb API
     subprocess.run(
-        "lamin settings modules set bionty,pertdb",
+        "lamin init --storage ./test-quickstart --modules bionty,pertdb",
         shell=True,
     )
     subprocess.run(

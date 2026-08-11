@@ -1,8 +1,6 @@
 # Install & setup
 
-## Installation ![pyversions](https://img.shields.io/pypi/pyversions/lamindb)
-
-Run:
+To install LaminDB on ![pyversions](https://img.shields.io/pypi/pyversions/lamindb), run:
 
 ```shell
 pip install lamindb
@@ -25,56 +23,72 @@ fcs       # FCS artifacts (flow cytometry)
 
 If you'd like to install from GitHub, see [here](https://github.com/laminlabs/lamindb/blob/main/CONTRIBUTING.md).
 
-## Init an instance
+## Create a database
 
-Initialize an instance using `lamin init` on the commmand line and these options:
+You can create a LaminDB instance using the [init command](https://docs.lamin.ai/cli#init) with these options:
 
-- `storage`: a default storage location for the instance (e.g. `s3://my-bucket`, `gs://my-bucket`, `./my-data-dir`)
-- `name` (optional): a name for the instance (e.g., `my-assets`)
+- `storage`: a default storage location (e.g. `s3://my-bucket`, `gs://my-bucket`, `./my-data-dir`)
+- `name` (optional): a name (e.g., `my-assets`)
 - `db` (optional): a Postgres database connection URL, do not pass for SQLite
-- `modules` (optional): comma-separated string of registry modules
+- `modules` (optional): comma-separated string of lamindb modules
 
-If you are only interested in tracking artifacts and their transformations, init your local SQLite instance via:
+If you are only interested in tracking artifacts and their transformations, init your local SQLite database via:
 
-```
+```shell
 lamin init --storage ./mydata
 ```
 
 Mount the Bionty module:
 
-```
+```shell
 lamin init --storage mydata --modules bionty
 ```
 
-You can also pass an AWS S3 bucket.
+You can also pass an AWS S3 bucket:
 
-```
+```shell
 lamin init --storage s3://<bucket_name> --modules bionty
 ```
 
-Instead of SQLite, you can pass a Postgres connection string.
+Instead of SQLite, you can pass a Postgres connection string:
 
-```
+```shell
 lamin init --storage gs://<bucket_name> --db postgresql://<user>:<pwd>@<hostname>:<port>/<dbname> --modules bionty
 ```
 
-## Connecting to an instance
+To delete a database, call:
 
-Connect to your own instance:
-
-```
-lamin connect <instance_name>
+```shell
+lamin delete instance name
 ```
 
-Connect to somebody else's instance:
+This will only work if the database has no data in its storage location.
 
+## Connect to a database
+
+Connect to a database for reads:
+
+```python
+import lamindb as ln
+
+db = ln.DB("account/name")
 ```
-lamin connect <account_handle/instance_name>
+
+Configure your default database on the terminal:
+
+```shell
+lamin connect <account/name>  # tip: add flag `--here` to scope to current directory
 ```
 
-## Logging into the hub
+In Python/R, you'll now auto-connect. To disconnect, run `lamin disconnect`.
 
-An account is free & [signing up](https://lamin.ai/signup) takes <1 min. To log in, run:
+To configure your default database in a Python/R session, run:
+
+```python
+ln.connect("account/name")
+```
+
+To access private databases through the hub, you need an account. It's free & [signing up](https://lamin.ai/signup) takes <1 min. To log in, run:
 
 ```shell
 lamin login
@@ -94,7 +108,7 @@ Log out:
 lamin logout
 ```
 
-## Access settings
+## Configure settings
 
 Print info about settings on the terminal:
 
@@ -112,13 +126,11 @@ ln.setup.settings
 
 This returns a {class}`~lamindb.setup.core.SetupSettings` object.
 
-## Use paths with s3-compatible endpoints
+### Use paths with AWS-S3-compatible endpoints
 
-This is an experimental feature.
+It is possible to create a database with a path that uses an AWS-S3-compatible endpoint url. Such endpoints allow to access non-S3 buckets using the same API that is used for S3:
 
-It is possible to init an instance with a path that uses an s3-compatible endpoint url. Such endpoints allow to access non-s3 buckets using the same API that is used for s3.
-
-```
+```shell
 lamin init --storage s3://<bucket_name>?endpoint_url=http://endpoint.com:port
 ```
 
@@ -126,18 +138,13 @@ This assumes that the endpoint url is `http://endpoint.com` with a port specifie
 
 It is also possible to set a path with s3-compatible endpoint as a default storage for an existing instance for the current python session.
 
-<!-- #region -->
-
 ```python
-import lamindb as ln # connected an existing instance
-ln.settings.storage = "s3://<bucket_name>?endpoint_url=http://endpoint.com:port"
-# or using ln.UPath
+import lamindb as ln
+
 ln.settings.storage = ln.UPath("s3://<bucket_name>", endpoint_url="http://endpoint.com:port")
 ```
 
-<!-- #endregion -->
-
-## Manage the cache directory
+### Manage the cache directory
 
 `lamindb` maintains a local cache for files and folders stored in the cloud (e.g., AWS S3, Google Cloud Storage, HTTP, Hugging Face, etc.).
 
@@ -179,25 +186,13 @@ lamindb_cache_path=absolute/path/to/your/system/cache
 
 This cache folder will be used by default for all users on the system unless they explicitly configure their own cache folder with CLI `lamin cache set`.
 
-## Disconnect from an instance
-
-Connecting to an instance means loading an environment for managing your data.
-
-When connecting to a new instance, you automatically _disconnect_ from the previously connected instance.
-
-If you want to disconnect from the instance without connecting to a new instance, use `lamin disconnect`
-
-## Database schema & modules
+## Database modules
 
 1. Any LaminDB instance can mount custom schema modules with any number of registries
 2. Each schema module is a Python package that defines registries using the {class}`~lamindb.models.SQLRecord` class
 3. Every registry corresponds to a SQL table in the underlying Postgres or SQLite database
 
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XoTQFCmmj2uU4d2x0001.png" width="350px" style="background: transparent" align="right">
-
-The core database schema is built into the `lamindb` API.
-
-Almost all of LaminDB's central classes, like {class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~lamindb.User`, etc. are registries. You can see their source code [here](https://github.com/laminlabs/lnschema-core/blob/main/lamindb/models.py).
+The core database schema is built into the `lamindb` API. Most of LaminDB's central classes ({class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~lamindb.User`, etc.) are registries. You can see their source code [here](https://github.com/laminlabs/lnschema-core/blob/main/lamindb/models.py).
 
 ### Compatibility matrix
 
@@ -248,14 +243,6 @@ When you're happy, commit them to your GitHub repo, and ideally make a new relea
 ### Deploy a migration
 
 To deploy the migration call `lamin migrate deploy`.
-
-## Delete an instance
-
-This works as follows. It won't delete your data, just the metadata managed by LaminDB:
-
-```shell
-lamin delete --force mydata
-```
 
 <!-- #region -->
 
