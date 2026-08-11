@@ -1,1 +1,2 @@
+- ♻️ Bash fences [PR](https://github.com/laminlabs/lamin-mlops/pull/36) [@falexwolf](https://github.com/falexwolf)
 - :lipstick: Polish the `pbmc3k.md` guide [PR](https://github.com/laminlabs/lamin-usecases/pull/254) [@falexwolf](https://github.com/falexwolf)
