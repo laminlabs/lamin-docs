@@ -1,3 +1,4 @@
+- ♻️ Bash fences [PR](https://github.com/laminlabs/lamin-usecases/pull/255) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Bash fences [PR](https://github.com/laminlabs/cellxgene-lamin/pull/153) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Bash fences [PR](https://github.com/laminlabs/snakemake-lamin/pull/12) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Bash fences [PR](https://github.com/laminlabs/lamin-mlops/pull/36) [@falexwolf](https://github.com/falexwolf)
