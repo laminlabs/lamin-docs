@@ -258,7 +258,6 @@ def run_nbs(session):
     exit_status = os.system("python docs/includes/create-fasta.py")
     assert exit_status == 0  # noqa S101
     run_notebooks("docs/tutorial.ipynb")
-    run_notebooks("docs/setup.ipynb")
 
 
 @nox.session

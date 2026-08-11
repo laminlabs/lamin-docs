@@ -147,7 +147,7 @@ ln.settings.storage = ln.UPath("s3://<bucket_name>", endpoint_url="http://endpoi
 
 `lamindb` maintains a local cache for files and folders stored in the cloud (e.g., AWS S3, Google Cloud Storage, HTTP, Hugging Face, etc.).
 
-When an {class}`~lamindb.models.Artifact` object representing a file or folder in the cloud is accessed for the first time via {meth}`~lamindb.models.Artifact.cache` or {meth}`~lamindb.models.Artifact.load`, it is downloaded to the cache. Subsequent accesses read from the cached copy, as long as the original file or folder did not change.
+When an {class}`~lamindb.Artifact` object representing a file or folder in the cloud is accessed for the first time via {meth}`~lamindb.Artifact.cache` or {meth}`~lamindb.Artifact.load`, it is downloaded to the cache. Subsequent accesses read from the cached copy, as long as the original file or folder did not change.
 
 The cache directory can be accessed via {class}`lamindb.settings`:
 
