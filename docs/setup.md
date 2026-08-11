@@ -1,10 +1,8 @@
----
-execute_via: python
----
-
 # Install & setup
 
 ## Installation ![pyversions](https://img.shields.io/pypi/pyversions/lamindb)
+
+Run:
 
 ```shell
 pip install lamindb
@@ -26,41 +24,6 @@ fcs       # FCS artifacts (flow cytometry)
 ```
 
 If you'd like to install from GitHub, see [here](https://github.com/laminlabs/lamindb/blob/main/CONTRIBUTING.md).
-
-## Sign up & log in
-
-1. [Sign up](https://lamin.ai/signup) for a free account (see more [info](https://lamin.ai/docs/setup)) and copy the API key.
-2. Log in on the command line:
-   ```shell
-   lamin login
-   ```
-   You will be prompted for your API key. You can create your API key in your account settings on LaminHub.
-
-```{note}
-
-An account is free & [signing up](https://lamin.ai/signup) takes 1 min.
-
-Through signing up, Lamin does _not_ store or see any of your data, only your email address.
-
-If you create a LaminDB instance through the global LaminHub at https://lamin.ai, Lamin will host your metadata on AWS and provide a default storage location on S3.
-
-This does not apply when calling `lamin init` locally. If you want to connect an existing LaminDB instance to LaminHub to benefit from additional features and management of the database: please [reach out](https://lamin.ai/contact).
-
-For more information re Lamin's access to your data, see [the source code](https://github.com/laminlabs/lamindb), the [privacy policy](https://lamin.ai/legal/privacy-policy), or [our certified commitment to security](https://docs.lamin.ai/security).
-
-```
-
-On the command line, you can log in with your handle if you have a cached API-key:
-
-```
-lamin login testuser1
-```
-
-Log out:
-
-```
-lamin logout
-```
 
 ## Init an instance
 
@@ -109,42 +72,51 @@ Connect to somebody else's instance:
 lamin connect <account_handle/instance_name>
 ```
 
+## Logging into the hub
+
+An account is free & [signing up](https://lamin.ai/signup) takes <1 min. To log in, run:
+
+```shell
+lamin login
+```
+
+You will be prompted for your API key. You can create your API key on your [account settings page](https://lamin.ai/settings).
+
+If you have multiple accounts that already logged into a compute environment, you can switch between them using your handle:
+
+```shell
+lamin login mclintock
+```
+
+Log out:
+
+```shell
+lamin logout
+```
+
 ## Access settings
 
 Now, let's look at a specific example:
 
-```python
-!lamin init --storage mydata --modules bionty
+```shell
+lamin init --storage mydata --modules bionty
 ```
 
-Print settings:
+Print information:
 
-```python
-!lamin settings
+```shell
+lamin info
 ```
 
-Settings persist in `~/.lamin/` and can also be accessed via {class}`lamindb.setup.settings`.
-
-The settings directory can also be configured using `LAMIN_SETTINGS_DIR` environment variable.
+Settings persist in `~/.lamin/` (configurable via `LAMIN_SETTINGS_DIR`) and can also be accessed via Python:
 
 ```python
 import lamindb as ln
+
+ln.setup.settings
 ```
 
-```python
-ln.setup.settings.user
-```
-
-```python
-ln.setup.settings.instance
-```
-
-```{note}
-
-- The user who creates an instance is its owner. Ownership can be transferred in the hub.
-- Advanced users could also consider the Python setup API: {mod}`lamindb.setup`.
-
-```
+This returns a {class}`~lamindb.setup.core.SetupSettings` object.
 
 ## Use paths with s3-compatible endpoints
 
@@ -185,8 +157,8 @@ ln.settings.cache_dir
 
 Or via the CLI:
 
-```python
-!lamin settings cache-dir get
+```shell
+lamin settings cache-dir get
 ```
 
 It can be configured via the CLI or by setting the `LAMIN_CACHE_DIR` environment variable. Here is the CLI command:
@@ -199,15 +171,13 @@ lamin settings cache-dir set some/path/to/cache
 
 If you are using `lamindb` on a multi-user system such as a shared compute cluster, you can configure a shared default cache for all users to avoid duplicating cached data for each individual user.
 
-To set this up, first find the location of the `lamindb` system settings directory. It can be done via CLI
+To set this up, first find the location of the `lamindb` system settings directory:
 
-```
+```shell
 lamin info
 ```
 
-In the `Local directories` section, locate the path shown in `system settings` - this is the directory you need.
-
-In this directory you need to create a text file `system.env` that contains a line with the path you need for the system cache folder (repalce `absolute/path/to/your/system/cache` with your path)
+In the `Local directories` section, locate the path shown in `system settings` - this is the directory you need. In this directory you need to create a text file `system.env` that contains a line with the path you need for the system cache folder (repalce `absolute/path/to/your/system/cache` with your path):
 
 ```
 lamindb_cache_path=absolute/path/to/your/system/cache
@@ -266,7 +236,7 @@ If you are an admin, you can use two commands to create and deploy migrations:
 
 You need to have the package installed locally:
 
-```
+```shell
 git clone https://github.com/my-org/my-module
 cd my-module
 pip install -e .
@@ -276,7 +246,7 @@ Edit the registries in your module.
 
 Then, call
 
-```
+```shell
 lamin migrate create
 ```
 
@@ -288,18 +258,12 @@ When you're happy, commit them to your GitHub repo, and ideally make a new relea
 
 To deploy the migration call `lamin migrate deploy`.
 
-```{note}
-
-The `lamin` migration commands are a wrapper around Django's migration manager.
-
-```
-
 ## Delete an instance
 
 This works as follows. It won't delete your data, just the metadata managed by LaminDB:
 
-```python
-!lamin delete --force mydata
+```shell
+lamin delete --force mydata
 ```
 
 <!-- #region -->
