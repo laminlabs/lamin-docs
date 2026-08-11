@@ -1,3 +1,4 @@
+- ⬆️ Add compatibility with `pandas` >= 3 [PR](https://github.com/laminlabs/lamindb/pull/3848) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Do not eagerly import `fsspec` and `upath` [PR](https://github.com/laminlabs/lamindb-setup/pull/1378) [@falexwolf](https://github.com/falexwolf)
 - 📝 Clearer statement around traceability [PR](https://github.com/laminlabs/lamindb/pull/3849) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Drop vestigial SESSION_ID from Copilot track output [PR](https://github.com/laminlabs/lamin-cli/pull/256) [@Ebad371](https://github.com/Ebad371)
