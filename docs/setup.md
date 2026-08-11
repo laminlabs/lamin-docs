@@ -96,13 +96,7 @@ lamin logout
 
 ## Access settings
 
-Now, let's look at a specific example:
-
-```shell
-lamin init --storage mydata --modules bionty
-```
-
-Print information:
+Print info about settings on the terminal:
 
 ```shell
 lamin info
@@ -209,17 +203,14 @@ Almost all of LaminDB's central classes, like {class}`~lamindb.Artifact`, {class
 
 Below is the compatibility matrix for the core `lamindb` schema. To upgrade the state of the SQL database (`DB`) from a lower version to your current Python package (`PP`) version, you call: `lamin migrate deploy`
 
-🟢 = full API works<br>
-🟡 = hard-delete of some records might error because an auxiliary table was removed, soft-delete & remaining API work<br>
-🔴 = errors on basic operations because a field was added to or removed from a registry
-
-| --         | PP 2.6 | PP 2.4 | PP 2.2 | PP 2.1 | PP 2.0 |
-| ---------- | ------ | ------ | ------ | ------ | ------ |
-| **DB 2.6** | 🟢     | 🟢     | 🟢     | 🟢     | 🟢     |
-| **DB 2.4** | 🔴     | 🟢     | 🟢     | 🟢     | 🟢     |
-| **DB 2.2** | 🔴     | 🔴     | 🟢     | 🟢     | 🟢     |
-| **DB 2.1** | 🔴     | 🔴     | 🔴     | 🟢     | 🟢     |
-| **DB 2.0** | 🔴     | 🔴     | 🔴     | 🟢     | 🟢     |
+| --         | PP 2.9 | PP 2.6 | PP 2.4 | PP 2.2 | PP 2.1 | PP 2.0 |
+| ---------- | ------ | ------ | ------ | ------ | ------ | ------ |
+| **DB 2.9** | 🟢     | 🟢     | 🟢     | 🟢     | 🟢     | 🟢     |
+| **DB 2.6** | 🔴     | 🟢     | 🟢     | 🟢     | 🟢     | 🟢     |
+| **DB 2.4** | 🔴     | 🔴     | 🟢     | 🟢     | 🟢     | 🟢     |
+| **DB 2.2** | 🔴     | 🔴     | 🔴     | 🟢     | 🟢     | 🟢     |
+| **DB 2.1** | 🔴     | 🔴     | 🔴     | 🔴     | 🟢     | 🟢     |
+| **DB 2.0** | 🔴     | 🔴     | 🔴     | 🔴     | 🟢     | 🟢     |
 
 ### Custom modules
 
