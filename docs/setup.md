@@ -1,8 +1,6 @@
 # Install & setup
 
-## Installation ![pyversions](https://img.shields.io/pypi/pyversions/lamindb)
-
-Run:
+To install LaminDB on ![pyversions](https://img.shields.io/pypi/pyversions/lamindb), run:
 
 ```shell
 pip install lamindb
@@ -27,12 +25,12 @@ If you'd like to install from GitHub, see [here](https://github.com/laminlabs/la
 
 ## Create a database
 
-You can create a LaminDB instance using the `lamin init` command with these options:
+You can create a LaminDB instance using the [init command](https://docs.lamin.ai/cli#init) with these options:
 
-- `storage`: a default storage location for the instance (e.g. `s3://my-bucket`, `gs://my-bucket`, `./my-data-dir`)
-- `name` (optional): a name for the instance (e.g., `my-assets`)
+- `storage`: a default storage location (e.g. `s3://my-bucket`, `gs://my-bucket`, `./my-data-dir`)
+- `name` (optional): a name (e.g., `my-assets`)
 - `db` (optional): a Postgres database connection URL, do not pass for SQLite
-- `modules` (optional): comma-separated string of registry modules
+- `modules` (optional): comma-separated string of lamindb modules
 
 If you are only interested in tracking artifacts and their transformations, init your local SQLite database via:
 
@@ -193,8 +191,6 @@ This cache folder will be used by default for all users on the system unless the
 1. Any LaminDB instance can mount custom schema modules with any number of registries
 2. Each schema module is a Python package that defines registries using the {class}`~lamindb.models.SQLRecord` class
 3. Every registry corresponds to a SQL table in the underlying Postgres or SQLite database
-
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XoTQFCmmj2uU4d2x0001.png" width="350px" style="background: transparent" align="right">
 
 The core database schema is built into the `lamindb` API. Most of LaminDB's central classes ({class}`~lamindb.Artifact`, {class}`~lamindb.Transform`, {class}`~lamindb.User`, etc.) are registries. You can see their source code [here](https://github.com/laminlabs/lnschema-core/blob/main/lamindb/models.py).
 
