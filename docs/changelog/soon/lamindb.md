@@ -1,3 +1,4 @@
+- :recycle: Refactor handling of unset types in `HasType` [PR](https://github.com/laminlabs/lamindb/pull/3851) [@ishitajain9717](https://github.com/ishitajain9717)
 - ⬆️ Add compatibility with `pandas` >= 3 [PR](https://github.com/laminlabs/lamindb/pull/3848) [@Koncopd](https://github.com/Koncopd)
 - ⚡️ Do not eagerly import `fsspec` and `upath` [PR](https://github.com/laminlabs/lamindb-setup/pull/1378) [@falexwolf](https://github.com/falexwolf)
 - 📝 Clearer statement around traceability [PR](https://github.com/laminlabs/lamindb/pull/3849) [@falexwolf](https://github.com/falexwolf)
