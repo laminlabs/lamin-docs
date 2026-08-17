@@ -1,3 +1,4 @@
+- 🐛 Fix false positives in finish-command detection [PR](https://github.com/laminlabs/lamin-cli/pull/260) [@Ebad371](https://github.com/Ebad371)
 - 🚸 Allow `Artifact` registration also if cloud stats cannot be read [PR](https://github.com/laminlabs/lamindb/pull/3854) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Wait for the finish command to land in the transcript before rendering [PR](https://github.com/laminlabs/lamin-cli/pull/259) [@Ebad371](https://github.com/Ebad371)
 - :recycle: Refactor handling of unset types in `HasType` [PR](https://github.com/laminlabs/lamindb/pull/3851) [@ishitajain9717](https://github.com/ishitajain9717)
