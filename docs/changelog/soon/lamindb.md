@@ -1,3 +1,4 @@
+- :children_crossing: If a path inside a folder-like artifact is passed to `Artifact()`, return the existing folder-like artifact [PR](https://github.com/laminlabs/lamindb/pull/3855) [@Koncopd](https://github.com/Koncopd)
 - 💚 Proper `UPath` resolution for docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1381) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Correctly process anonymous `gs` requests on `artifact` init [PR](https://github.com/laminlabs/lamindb/pull/3856) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `snapshot` command [PR](https://github.com/laminlabs/lamin-cli/pull/261) [@Koncopd](https://github.com/Koncopd)
