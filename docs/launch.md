@@ -1,8 +1,26 @@
-# Launch computational pipelines
+# Launch functions & pipelines
 
-Currently, LaminHub only supports launching pipelines on the Seqera platform.
+## Cloud functions
 
-## Launching on the Seqera platform
+In function signatures, you can use both Python and string serializations of LaminDB dtypes to configure a Launch UI on the hub:
+
+```python
+@ln.flow()
+def lamin_executable_function(
+    x: "bionty.Organism[source__uid='4eeXrDKBKo']",
+    y: "cat[Record[YSS8VU4eeXrDKBKo, is_type=true, schema__uid='6pjoBrrz4f1EzQMO']]",
+    z: "list[bionty.Disease]",
+) -> str:
+    ...
+```
+
+For an overview of available dtypes, see {class}`~lamindb.Feature`.
+
+TODO: Add screenshots from LaminHub announcement of https://github.com/laminlabs/laminhub/pull/5901
+
+## Nextflow pipelines
+
+The hub currently only supports launching Nextflow pipelines through its Seqera integration.
 
 The following walkthrough assumes that you already registered a pipeline in LaminDB. If you didn't, browse to the "Setup a pipeline" section. Also ensure that you have a `Compute environment` that includes a `LAMIN_API_KEY` as an env variable. It is optional but recommended to use `nf-lamin`. For this, modify your `nextflow config` as documented in [nf-lamin](nf-lamin).
 
