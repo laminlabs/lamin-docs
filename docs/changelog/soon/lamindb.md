@@ -1,3 +1,4 @@
+- 🐛 Correctly process anonymous `gs` requests on `artifact` init [PR](https://github.com/laminlabs/lamindb/pull/3856) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `snapshot` command [PR](https://github.com/laminlabs/lamin-cli/pull/261) [@Koncopd](https://github.com/Koncopd)
 - 🔊 Silence gcsfs error logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1380) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix false positives in finish-command detection [PR](https://github.com/laminlabs/lamin-cli/pull/260) [@Ebad371](https://github.com/Ebad371)
