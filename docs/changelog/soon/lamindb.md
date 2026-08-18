@@ -1,3 +1,4 @@
+- ♻️ Clean up legacy code around `_using_key` [PR](https://github.com/laminlabs/lamindb-setup/pull/1382) [@falexwolf](https://github.com/falexwolf)
 - :bug: Fix a bug in feature predicate detection [PR](https://github.com/laminlabs/lamindb/pull/3858) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Make the default record writing space consistent with the UI [PR](https://github.com/laminlabs/lamindb/pull/3844) [@sunnyosun](https://github.com/sunnyosun)
 - :children_crossing: If a path inside a folder-like artifact is passed to `Artifact()`, return the existing folder-like artifact [PR](https://github.com/laminlabs/lamindb/pull/3855) [@Koncopd](https://github.com/Koncopd)
