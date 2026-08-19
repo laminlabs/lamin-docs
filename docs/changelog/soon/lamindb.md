@@ -1,3 +1,4 @@
+- :children_crossing: Consistent API for saving to non-default databases via the `using` argument in `ln.save()` & `BaseSQLRecord.save()` [PR](https://github.com/laminlabs/lamindb/pull/3852) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix slow `BasicQuerySet.first()` implementation [PR](https://github.com/laminlabs/lamindb/pull/3859) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Enable linting scripts to check whether they produce complete data lineage [PR](https://github.com/laminlabs/lamindb/pull/3846) [@sheetalgiri](https://github.com/sheetalgiri)
 - ♻️ Clean up legacy code around `_using_key` [PR](https://github.com/laminlabs/lamindb-setup/pull/1382) [@falexwolf](https://github.com/falexwolf)
