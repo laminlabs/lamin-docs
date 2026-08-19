@@ -1,0 +1,1 @@
+- ✨ Support Lamin dtypes for launchable functions [PR](https://github.com/laminlabs/laminhub-public/pull/401) [@chaichontat](https://github.com/chaichontat)
