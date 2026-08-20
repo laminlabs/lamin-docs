@@ -1,1 +1,2 @@
+- 🚸 Rename `Type` to `Page` in Records  [PR](https://github.com/laminlabs/laminhub-public/pull/404) [@sheetalgiri](https://github.com/sheetalgiri)
 - ✨ Support Lamin dtypes for launchable functions [PR](https://github.com/laminlabs/laminhub-public/pull/401) [@chaichontat](https://github.com/chaichontat)
