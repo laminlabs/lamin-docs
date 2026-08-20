@@ -1,3 +1,4 @@
+- :children_crossing: Validate type annotations in functions that are decorated with `@ln.flow()` or `@ln.step()` [PR](https://github.com/laminlabs/lamindb/pull/3857) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix implicit queries inside an atomic block after a failure [PR](https://github.com/laminlabs/lamindb/pull/3863) [@Koncopd](https://github.com/Koncopd)
 - Minimal fix to find objects in merge commits [PR](https://github.com/laminlabs/lamindb/pull/3861) [@ishitajain9717](https://github.com/ishitajain9717)
 - :bug: Import `Unset` in `models/schema.py` [PR](https://github.com/laminlabs/lamindb/pull/3862) [@harshadkhetpal](https://github.com/harshadkhetpal)
