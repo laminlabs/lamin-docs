@@ -1,3 +1,4 @@
+- 🚸 Broaden name deduplication in `HasType` to search the hierarchy if no `type` is passed [PR](https://github.com/laminlabs/lamindb/pull/3850) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🐛 Fix dropdown title breaking CommonMark fence parsing [PR](https://github.com/laminlabs/lamin-cli/pull/263) [@Ebad371](https://github.com/Ebad371)
 - :children_crossing: Consistent API for saving to non-default databases via the `using` argument in `ln.save()` & `BaseSQLRecord.save()` [PR](https://github.com/laminlabs/lamindb/pull/3852) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix slow `BasicQuerySet.first()` implementation [PR](https://github.com/laminlabs/lamindb/pull/3859) [@Koncopd](https://github.com/Koncopd)
