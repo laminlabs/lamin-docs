@@ -1,3 +1,4 @@
+- Minimal fix to find objects in merge commits [PR](https://github.com/laminlabs/lamindb/pull/3861) [@ishitajain9717](https://github.com/ishitajain9717)
 - :bug: Import `Unset` in `models/schema.py` [PR](https://github.com/laminlabs/lamindb/pull/3862) [@harshadkhetpal](https://github.com/harshadkhetpal)
 - 🚸 Broaden name deduplication in `HasType` to search the hierarchy if no `type` is passed [PR](https://github.com/laminlabs/lamindb/pull/3850) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🐛 Fix dropdown title breaking CommonMark fence parsing [PR](https://github.com/laminlabs/lamin-cli/pull/263) [@Ebad371](https://github.com/Ebad371)
