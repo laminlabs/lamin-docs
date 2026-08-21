@@ -1,3 +1,4 @@
+- 🚸 Change the default storage location for `lamin init` to `./storage` and let it write a local `current_instance` file (`dev-dir`) instead of one in the `HOME` directory [PR](https://github.com/laminlabs/lamin-cli/pull/262) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Change the default storage location for `init()` to `./storage` and let it write a local `current_instance` file (`dev-dir`) instead of one in the HOME directory [PR](https://github.com/laminlabs/lamindb-setup/pull/1383) [@falexwolf](https://github.com/falexwolf)
 - 🔖 Bump sub/lamin-cli to pick up dropdown rendering fix [PR](https://github.com/laminlabs/lamindb/pull/3860) [@Ebad371](https://github.com/Ebad371)
 - :children_crossing: Validate type annotations in functions that are decorated with `@ln.flow()` or `@ln.step()` [PR](https://github.com/laminlabs/lamindb/pull/3857) [@falexwolf](https://github.com/falexwolf)
