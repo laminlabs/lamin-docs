@@ -1,3 +1,4 @@
+- ✨ Refactor the ingestion script to be part of the package, and add ability to register non-LTS release datasets [PR](https://github.com/laminlabs/cellxgene-lamin/pull/151) [@ishitajain9717](https://github.com/ishitajain9717)
 - :recycle: Bash fences [PR](https://github.com/laminlabs/redun-lamin/pull/31) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Bash fences [PR](https://github.com/laminlabs/lamin-usecases/pull/255) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Bash fences [PR](https://github.com/laminlabs/cellxgene-lamin/pull/153) [@falexwolf](https://github.com/falexwolf)
