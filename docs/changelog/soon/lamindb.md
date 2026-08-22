@@ -1,3 +1,4 @@
+- ♻️ Fix order in running guides [PR](https://github.com/laminlabs/lamindb/pull/3865) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Let `lamin init` without `--storage` create a database in the current directory (`dev-dir`), analogous to `git` [PR](https://github.com/laminlabs/lamindb/pull/3864) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Change the default storage location for `lamin init` to `./storage` and let it write a local `current_instance` file (`dev-dir`) instead of one in the `HOME` directory [PR](https://github.com/laminlabs/lamin-cli/pull/262) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Change the default storage location for `init()` to `./storage` and let it write a local `current_instance` file (`dev-dir`) instead of one in the HOME directory [PR](https://github.com/laminlabs/lamindb-setup/pull/1383) [@falexwolf](https://github.com/falexwolf)
