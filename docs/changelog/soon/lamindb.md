@@ -1,3 +1,4 @@
+- 👷 Start profiling `init()` [PR](https://github.com/laminlabs/lamindb-setup/pull/1384) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Avoid the edge case of loading a dataset as an input of a run and then tracking it as recreated in that run, avoid cycles in the lineage of records [PR](https://github.com/laminlabs/lamindb/pull/3841) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Fix order in running guides [PR](https://github.com/laminlabs/lamindb/pull/3865) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Let `lamin init` without `--storage` create a database in the current directory (`dev-dir`), analogous to `git` [PR](https://github.com/laminlabs/lamindb/pull/3864) [@falexwolf](https://github.com/falexwolf)
