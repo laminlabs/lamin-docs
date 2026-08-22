@@ -1,3 +1,4 @@
+- :zap: Speed up `lamin init` by avoiding network calls for local databases [PR](https://github.com/laminlabs/lamindb-setup/pull/1387) [@falexwolf](https://github.com/falexwolf)
 - 🚸  Delete `dev-dir` marker upon deleting a database [PR](https://github.com/laminlabs/lamindb-setup/pull/1386) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Squash migrations for 2.10 [PR](https://github.com/laminlabs/lamindb/pull/3867) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Update `lamin.db.gz` [PR](https://github.com/laminlabs/lamindb-setup/pull/1385) [@falexwolf](https://github.com/falexwolf)
