@@ -1,3 +1,4 @@
+- ✅ Fix `test_reference_storage_location` [PR](https://github.com/laminlabs/lamindb/pull/3871) [@Koncopd](https://github.com/Koncopd)
 - ✨ Read instance_id from the mark file on registering a storage [PR](https://github.com/laminlabs/lamindb-setup/pull/1388) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3870) [@Koncopd](https://github.com/Koncopd)
 - ✨ Allow users to pass `store_kwargs` for `lamin save` on artifacts [PR](https://github.com/laminlabs/lamin-cli/pull/265) [@Koncopd](https://github.com/Koncopd)
