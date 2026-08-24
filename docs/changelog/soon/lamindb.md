@@ -1,3 +1,4 @@
+- ✨ Allow users to pass `store_kwargs` for `lamin save` on artifacts [PR](https://github.com/laminlabs/lamin-cli/pull/265) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Move mount to settings [PR](https://github.com/laminlabs/lamin-cli/pull/264) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add `lamin mount` to mount storage locations read-only [PR](https://github.com/laminlabs/lamin-cli/pull/257) [@jpfeuffer](https://github.com/jpfeuffer)
 - :lipstick: Minimal README changes [PR](https://github.com/laminlabs/lamindb/pull/3866) [@falexwolf](https://github.com/falexwolf)
