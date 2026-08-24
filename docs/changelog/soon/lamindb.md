@@ -1,3 +1,4 @@
+- ✨ Add `lamin mount` to mount storage locations read-only [PR](https://github.com/laminlabs/lamin-cli/pull/257) [@jpfeuffer](https://github.com/jpfeuffer)
 - :lipstick: Minimal README changes [PR](https://github.com/laminlabs/lamindb/pull/3866) [@falexwolf](https://github.com/falexwolf)
 - docs: fix two typos in pydantic-pandera FAQ [PR](https://github.com/laminlabs/lamindb/pull/3869) [@vaibhav8a](https://github.com/vaibhav8a)
 - 👷 Improve test cold start [PR](https://github.com/laminlabs/lamindb/pull/3868) [@falexwolf](https://github.com/falexwolf)
