@@ -1,3 +1,4 @@
+- :lipstick: Minimal README changes [PR](https://github.com/laminlabs/lamindb/pull/3866) [@falexwolf](https://github.com/falexwolf)
 - docs: fix two typos in pydantic-pandera FAQ [PR](https://github.com/laminlabs/lamindb/pull/3869) [@vaibhav8a](https://github.com/vaibhav8a)
 - 👷 Improve test cold start [PR](https://github.com/laminlabs/lamindb/pull/3868) [@falexwolf](https://github.com/falexwolf)
 - :zap: Speed up `lamin init` by avoiding network calls for local databases [PR](https://github.com/laminlabs/lamindb-setup/pull/1387) [@falexwolf](https://github.com/falexwolf)
