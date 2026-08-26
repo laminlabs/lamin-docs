@@ -1,1 +1,2 @@
+- ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3872) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Add `.fa` to `SIMPLE_FORMATS` [PR](https://github.com/laminlabs/lamindb-setup/pull/1390) [@Koncopd](https://github.com/Koncopd)
