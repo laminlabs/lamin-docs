@@ -1,0 +1,1 @@
+- 🦺 Add `.fa` to `SIMPLE_FORMATS` [PR](https://github.com/laminlabs/lamindb-setup/pull/1390) [@Koncopd](https://github.com/Koncopd)
