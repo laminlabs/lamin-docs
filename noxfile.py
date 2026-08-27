@@ -258,6 +258,10 @@ def run_nbs(session):
     exit_status = os.system("python docs/includes/create-fasta.py")
     assert exit_status == 0  # noqa S101
     run_notebooks("docs/tutorial.ipynb")
+    # tutorial.ipynb runs `lamin init` from docs/, which leaves a directory-scoped
+    # instance marker. Sphinx chdirs into _docs_tmp (a copy of docs/) and would
+    # auto-connect to that instance instead of build-docs.
+    shutil.rmtree(Path("docs") / ".lamin", ignore_errors=True)
 
 
 @nox.session
@@ -271,6 +275,8 @@ def docs(session):
         lamindb_nox.clidocs(session)
     else:
         print(f"Could not find {lamindb_nox_path}, skipping CLI docs generation.")
+    # drop any leftover docs/ instance marker before lndocs copies docs/ → _docs_tmp
+    shutil.rmtree(Path("docs") / ".lamin", ignore_errors=True)
     # need the following line to visualize the pertdb API
     subprocess.run(
         "lamin init --storage ./build-docs --modules bionty,pertdb",
