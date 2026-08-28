@@ -349,18 +349,12 @@ To request credentials without the Python client, see [Get S3 credentials](hub/a
 A record's space and its storage location are related but distinct. Spaces restrict metadata in the database; storage locations restrict the files.
 
 - Saving an artifact into a restricted space automatically uses a storage location that belongs to that space, so the file lands under a prefix that only space collaborators can access.
-- If the space has no storage location yet, create one or move an existing location into the space:
+- A space can be attached to many storage locations. Create another managed location with:
 
 ```python
 space = ln.Space.get(name="Our space")
 ln.Storage(root="create-s3", space=space).save()  # new managed location for the space
-
-storage_loc = ln.Storage.get(root="s3://my-bucket/my-folder")
-storage_loc.space = space
-storage_loc.save()  # existing location now inherits the space role
 ```
-
-- Moving a record into a space (`record.space = space; record.save()`) does not move the file. For artifacts, keep the storage location in the same space if you want the bytes restricted as well.
 
 In the [example](#an-example) above, instance collaborators can read the default `all` space and its storage. They cannot read files in the `Curation` or `ML` storage locations unless they are also collaborators of those spaces. The `"ML Team"` can read Curation files because it has read access to the `Curation` space — its instance role alone would not be enough.
 
