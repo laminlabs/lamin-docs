@@ -1,0 +1,1 @@
+- 🐛 Fix Firefox sheet cell overflow [PR](https://github.com/laminlabs/laminhub-public/pull/405) [@chaichontat](https://github.com/chaichontat)
