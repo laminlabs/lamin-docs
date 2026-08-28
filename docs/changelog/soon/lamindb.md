@@ -1,3 +1,4 @@
+- ✅ Add cleanup to keep artifacts local test [PR](https://github.com/laminlabs/lamindb-setup/pull/1391) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Skip `run` in `Model.describe()` if it is in an unaccessible `space` [PR](https://github.com/laminlabs/lamindb/pull/3874) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3872) [@Koncopd](https://github.com/Koncopd)
 - 🦺 Add `.fa` to `SIMPLE_FORMATS` [PR](https://github.com/laminlabs/lamindb-setup/pull/1390) [@Koncopd](https://github.com/Koncopd)
