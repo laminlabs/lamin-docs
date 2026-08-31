@@ -1,1 +1,2 @@
+- ⬆️ Upgrade lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3877) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Use `lamin settings mount unset` [PR](https://github.com/laminlabs/lamin-cli/pull/267) [@Koncopd](https://github.com/Koncopd)
