@@ -99,6 +99,8 @@ record.space = space
 record.save()  # saved in space "Our space"
 ```
 
+Artifacts saved into a restricted space are stored in a storage location that belongs to that space. Instance collaborators who are not space collaborators cannot obtain credentials for those files. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
+
 ### Manage teams
 
 Teams allow you to manage permissions for groups of users collectively, making it easier to handle access for departments or project groups.
@@ -225,7 +227,7 @@ Lamin's access management is built on:
 4.  **Bot accounts:** _Bot accounts_ are bots owned by an organization — not tied to a human user. Use them for CI pipelines, automations, and agents. They authenticate with API keys.
 5.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
 6.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
-7.  **Storage locations:** Access to storage locations in the cloud are implied by a user's access to instances & spaces.
+7.  **Storage locations:** Storage locations hold the files behind artifacts. There is no standalone storage role: for managed S3 locations, access is implied by a user's instance and space roles and enforced with short-lived federated AWS credentials. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
 ### Spaces
 
@@ -233,8 +235,8 @@ Spaces allow to restrict permissions for any object in a LaminDB instance:
 
 - Each space has its own set of collaborators with their roles and permissions, independent of instance-level roles.
 - Users must be both instance collaborators AND space collaborators to access resources in a space within an instance.
-- Spaces must be attached to an instance before records from that instance can be moved into the space (you need both instance and space admin permissions to attach the space to an instance).
-- Spaces are applied at the database record level and any database record can only belong to a single space.
+- Spaces must be attached to an instance before records from that instance can be moved into the space (you need both instance and space admin permissions to attach the space to an instance). Attaching a space creates a dedicated storage location for that space in the instance.
+- Spaces are applied at the database record level and any database record can only belong to a single space. An artifact's record space and its storage location are related but distinct: the record space governs metadata access, the storage location governs file access.
 
 The default space of an instance: Every instance includes a default `all` space analogous to the default `main` branch. This space holds common resources that are meant to be accessible to all instance collaborators.
 
@@ -249,6 +251,16 @@ Users can be collaborators either directly as individual users or through team m
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/61iaMcMV4NtDxFnb0000.png" style="width: 70%;"/>
 </div>
+
+### Storage locations
+
+Storage locations hold the files behind artifacts. LaminHub storage access control applies only to managed S3 locations that issue federated credentials. Access is not assigned on the storage location itself; it is derived from instance and space collaborators.
+
+- Storage in the default `all` space inherits the instance collaborator role.
+- Storage attached to a restricted space inherits the space collaborator role.
+- Public managed storage still uses the collaborator role when the caller is a collaborator. Callers who are not collaborators (including anonymous) get read access.
+
+To restrict files as well as metadata, keep artifacts in a storage location that belongs to the same restricted space. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
 ## Roles
 
@@ -294,8 +306,62 @@ However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you 
 
 Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive:
 
-- **Storage access** with federated access tokens for data on AWS. These tokens are short-lived and thereby minimize attack surface.
+- **Storage access** with federated access tokens for managed S3 locations on AWS. These tokens are short-lived and thereby minimize attack surface. The token's IAM policy is scoped to the storage locations your instance and space roles allow; see [below](#storage-permissions-federated-credentials-and-spaces). This storage access control is not enforced for unmanaged buckets, GCP, or local storage.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
+
+(storage-permissions-federated-credentials-and-spaces)=
+
+## Storage permissions, federated credentials, and spaces
+
+This storage access control is enforced only for **managed S3** locations that use federated AWS credentials. Unmanaged S3 buckets, GCP, and local storage are not gated this way: callers use whatever credentials or filesystem access they already have.
+
+For managed S3, storage access is not a separate role. LaminHub derives it from instance and space collaborators, then issues short-lived federated AWS credentials scoped to the storage locations you can access.
+
+### How storage inherits permissions
+
+Every storage location belongs to an instance and to a space.
+
+| Storage location | Who receives credentials | Role used for the token |
+| ---------------- | ------------------------ | ----------------------- |
+| Default `all` space | Instance collaborators (directly or via a team) | Instance role (`read` / `write` / `admin`) |
+| Restricted space | Space collaborators (directly or via a team) | Space role (`read` / `write` / `admin`) |
+| Public managed storage, collaborator | Instance or space collaborators, as above | The collaborator role (`read` / `write` / `admin`) |
+| Public managed storage, not a collaborator | Anyone, including anonymous callers | Read |
+
+Public managed storage does not replace collaborator status. Collaborators still receive their instance or space role. Read access for everyone is only the fallback when the caller is not a collaborator.
+
+Instance collaborators who are not also collaborators of a restricted private space cannot obtain credentials for that space's storage. Organization membership alone is also not enough: you need a concrete instance or space collaborator role.
+
+If several rules match the same path, LaminHub uses the longest matching storage root and the highest role (`admin` > `write` > `read`).
+
+### Federated credentials
+
+When LaminDB reads or writes an object on a managed S3 bucket, it asks LaminHub for credentials for that path. LaminHub:
+
+1. Resolves the path to a registered storage location.
+2. Looks up your derived role for that location (instance role, space role, or public read).
+3. Refuses the request if you have no role and the location is not public.
+4. Otherwise returns a short-lived AWS STS token whose IAM policy is limited to that storage root.
+
+The policy grants `s3:GetObject` and `s3:ListBucket` for read access, and additionally `s3:PutObject` and `s3:DeleteObject` for write or admin access. If the storage root is a prefix inside a bucket (`s3://bucket/space-uid`), listing and object access are constrained to that prefix: credentials for one space cannot list or read another space's prefix in the same bucket.
+
+You do not configure these policies yourself. Connect the bucket from the **Infrastructure** page of your organization on LaminHub so collaborators receive access through their LaminHub roles instead of long-lived AWS keys.
+
+To request credentials without the Python client, see [Get S3 credentials](hub/authentication.md#3-get-s3-credentials).
+
+### Keeping artifact files inside a restricted space
+
+A record's space and its storage location are related but distinct. Spaces restrict metadata in the database; managed S3 storage locations restrict the files through federated credentials.
+
+- Saving an artifact into a restricted space automatically uses a storage location that belongs to that space, so on managed S3 the file lands under a prefix that only space collaborators can access.
+- A space can be attached to many storage locations. Create another managed location with:
+
+```python
+space = ln.Space.get(name="Our space")
+ln.Storage(root="create-s3", space=space).save()  # new managed location for the space
+```
+
+In the [example](#an-example) above, instance collaborators can read the default `all` space and its storage. They cannot read files in the `Curation` or `ML` storage locations unless they are also collaborators of those spaces. The `"ML Team"` can read Curation files because it has read access to the `Curation` space — its instance role alone would not be enough.
 
 ## Low-level access management
 
