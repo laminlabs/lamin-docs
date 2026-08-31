@@ -227,7 +227,7 @@ Lamin's access management is built on:
 4.  **Bot accounts:** _Bot accounts_ are bots owned by an organization — not tied to a human user. Use them for CI pipelines, automations, and agents. They authenticate with API keys.
 5.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
 6.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
-7.  **Storage locations:** Cloud storage locations hold the files behind artifacts. There is no standalone storage role: for managed S3 locations, access is implied by a user's instance and space roles and enforced with short-lived federated AWS credentials. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
+7.  **Storage locations:** Storage locations hold the files behind artifacts. There is no standalone storage role: for managed S3 locations, access is implied by a user's instance and space roles and enforced with short-lived federated AWS credentials. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
 ### Spaces
 
@@ -258,7 +258,7 @@ Storage locations hold the files behind artifacts. LaminHub storage access contr
 
 - Storage in the default `all` space inherits the instance collaborator role.
 - Storage attached to a restricted space inherits the space collaborator role.
-- Public managed storage still uses the collaborator role when the caller is a collaborator. Only callers who are not collaborators (including anonymous) get read access.
+- Public managed storage still uses the collaborator role when the caller is a collaborator. Callers who are not collaborators (including anonymous) get read access.
 
 To restrict files as well as metadata, keep artifacts in a storage location that belongs to the same restricted space. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
