@@ -1,0 +1,1 @@
+- 🚸 Use `lamin settings mount unset` [PR](https://github.com/laminlabs/lamin-cli/pull/267) [@Koncopd](https://github.com/Koncopd)
