@@ -1,3 +1,4 @@
+- :children_crossing: Adding the option to the lightning checkpointing callback to use `key_is_virtual` [PR](https://github.com/laminlabs/lamindb/pull/3873) [@jorenretel](https://github.com/jorenretel)
 - ✅ Add cleanup to keep artifacts local test [PR](https://github.com/laminlabs/lamindb-setup/pull/1391) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Skip `run` in `Model.describe()` if it is in an unaccessible `space` [PR](https://github.com/laminlabs/lamindb/pull/3874) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3872) [@Koncopd](https://github.com/Koncopd)
