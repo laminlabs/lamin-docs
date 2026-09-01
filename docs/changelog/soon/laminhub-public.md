@@ -1,2 +1,0 @@
-- ✨ Support populated and list-valued typed-record feature filters [PR](https://github.com/laminlabs/laminhub-public/pull/406) [@chaichontat](https://github.com/chaichontat)
-- 🐛 Fix Firefox sheet cell overflow [PR](https://github.com/laminlabs/laminhub-public/pull/405) [@chaichontat](https://github.com/chaichontat)
