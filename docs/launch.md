@@ -1,8 +1,37 @@
-# Launch computational pipelines
+# Launch functions & pipelines
 
-Currently, LaminHub only supports launching pipelines on the Seqera platform.
+## Cloud functions
 
-## Launching on the Seqera platform
+<!-- a very similar section exists in track.md -->
+
+In function signatures, you can use both Python and string serializations of data types to configure a Launch UI on the hub:
+
+```python
+@ln.flow()
+def my_func(
+    learning_rate: float,
+    run_name: str,
+    started_at: datetime,
+    organism: "cat[bionty.Organism[source__uid=4eeXrDKBKo]]",
+    sheet: "cat[Record[YSS8VU4eeXrDKBKo, is_type=True, schema__uid=6pjoBrrz4f1EzQMO]]",
+    diseases: "list[cat[bionty.Disease[source__uid=4a3ejKuf]]]",
+    gene_id: "cat[bionty.Gene.ensembl_gene_id[source__uid=6w75X9zM]]",
+) -> str:
+    ...
+```
+
+This is how it looks:
+
+<p align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1uJhxA5HshqEV8iw0000.png" alt="Lamin dtype selectors and primitive arguments" width="340" />
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/6GOCZBZTZwGNRClD0000.png" alt="List, artifact, and path arguments" width="340" />
+</p>
+
+See {mod}`~lamindb.base.dtypes` for more background.
+
+## Nextflow pipelines
+
+The hub currently only supports launching Nextflow pipelines through its Seqera integration.
 
 The following walkthrough assumes that you already registered a pipeline in LaminDB. If you didn't, browse to the "Setup a pipeline" section. Also ensure that you have a `Compute environment` that includes a `LAMIN_API_KEY` as an env variable. It is optional but recommended to use `nf-lamin`. For this, modify your `nextflow config` as documented in [nf-lamin](nf-lamin).
 
