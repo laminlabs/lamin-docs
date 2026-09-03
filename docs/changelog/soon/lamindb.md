@@ -1,3 +1,4 @@
+- 🚸 Better api key expiration error handling [PR](https://github.com/laminlabs/lamindb-setup/pull/1394) [@Koncopd](https://github.com/Koncopd)
 - 🚸 State public exports explicitly [PR](https://github.com/laminlabs/lamindb-setup/pull/1393) [@Koncopd](https://github.com/Koncopd)
 - 🔨 Migrate script for 0193 [PR](https://github.com/laminlabs/lamindb/pull/3837) [@Koncopd](https://github.com/Koncopd)
 - 🔒️ Adjust run tracking permisison handling [PR](https://github.com/laminlabs/lamindb/pull/3879) [@Koncopd](https://github.com/Koncopd)
