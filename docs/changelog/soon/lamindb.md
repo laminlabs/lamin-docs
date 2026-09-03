@@ -1,3 +1,4 @@
+- 🚸 State public exports explicitly [PR](https://github.com/laminlabs/lamindb-setup/pull/1393) [@Koncopd](https://github.com/Koncopd)
 - 🔨 Migrate script for 0193 [PR](https://github.com/laminlabs/lamindb/pull/3837) [@Koncopd](https://github.com/Koncopd)
 - 🔒️ Adjust run tracking permisison handling [PR](https://github.com/laminlabs/lamindb/pull/3879) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3877) [@Koncopd](https://github.com/Koncopd)
