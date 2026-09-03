@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup, lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3880) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Do not show traceback for expired api key on login [PR](https://github.com/laminlabs/lamin-cli/pull/268) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Better api key expiration error handling [PR](https://github.com/laminlabs/lamindb-setup/pull/1394) [@Koncopd](https://github.com/Koncopd)
 - 🚸 State public exports explicitly [PR](https://github.com/laminlabs/lamindb-setup/pull/1393) [@Koncopd](https://github.com/Koncopd)
