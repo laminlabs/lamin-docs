@@ -1,3 +1,4 @@
+- 🚸 Support all core entities in `lamin delete` [PR](https://github.com/laminlabs/lamin-cli/pull/269) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve findability of documentation for external features [PR](https://github.com/laminlabs/lamindb/pull/3884) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix accidental feature lookup in `@ln.flow()` [PR](https://github.com/laminlabs/lamindb/pull/3883) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3881) [@Koncopd](https://github.com/Koncopd)
