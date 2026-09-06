@@ -1,3 +1,4 @@
+- 🐛 Fix accidental feature lookup in `@ln.flow()` [PR](https://github.com/laminlabs/lamindb/pull/3883) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgarde lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/3881) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix region for lamin-hosted-test [PR](https://github.com/laminlabs/lamindb-setup/pull/1395) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade lamindb-setup, lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3880) [@Koncopd](https://github.com/Koncopd)
