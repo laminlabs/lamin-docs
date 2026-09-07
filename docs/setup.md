@@ -1,27 +1,25 @@
 # Install & setup
 
-To install LaminDB on ![pyversions](https://img.shields.io/pypi/pyversions/lamindb), run:
+To install LaminDB on ![pyversions](https://img.shields.io/pypi/pyversions/lamindb) with data-science-related dependencies, run:
 
 ```shell
 pip install lamindb
 ```
 
+For a minimal installation of the `lamindb` namespace, use:
+
+```shell
+pip install lamindb-core
+```
+
 You can configure the installation using `extras`, e.g.,
 
 ```shell
-pip install 'lamindb[gcp]'
+pip install 'lamindb[gcp]'  # install with support for the Google Cloud Platform
 ```
 
-Supported `extras` are:
-
-```yaml
-# cloud backends (AWS is in default installation)
-gcp       # Google Cloud (gcfs, etc.)
-# biological artifact formats
-fcs       # FCS artifacts (flow cytometry)
-```
-
-If you'd like to install from GitHub, see [here](https://github.com/laminlabs/lamindb/blob/main/CONTRIBUTING.md).
+To see all configuration options, read the `pyproject.toml` [here](https://github.com/laminlabs/lamindb/blob/main/pyproject.toml).
+If you'd like to install a development version from GitHub, consider these [notes](https://github.com/laminlabs/lamindb/blob/main/CONTRIBUTING.md).
 
 ## Create a database
 
