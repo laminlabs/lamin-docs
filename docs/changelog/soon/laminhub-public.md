@@ -1,1 +1,2 @@
+- :bug: Fix branch selector behavior on record subtype pages [PR](https://github.com/laminlabs/laminhub-public/pull/409) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Hide table view on non-sheet record pages [PR](https://github.com/laminlabs/laminhub-public/pull/407) [@chaichontat](https://github.com/chaichontat)
