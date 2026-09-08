@@ -1,3 +1,4 @@
+- :bug: Validate the `SQLRecord` type if passing an object directly in `FeatureManager.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3890) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🔧 Simplify `pyproject.toml` [PR](https://github.com/laminlabs/lamindb/pull/3886) [@falexwolf](https://github.com/falexwolf)
 - :bug: In `artifact.describe()`, correctly deal with datasets that exceed the maximum number of preview features [PR](https://github.com/laminlabs/lamindb/pull/3885) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Support all core entities in `lamin delete` [PR](https://github.com/laminlabs/lamin-cli/pull/269) [@falexwolf](https://github.com/falexwolf)
