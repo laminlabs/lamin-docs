@@ -1,3 +1,4 @@
+- ✨ Introduce `worktree` mode inspired by `git`'s `worktree` behavior [PR](https://github.com/laminlabs/lamindb/pull/3894) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `worktree` mode akin to `git` [PR](https://github.com/laminlabs/lamindb-setup/pull/1396) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `worktree` mode akin to `git` [PR](https://github.com/laminlabs/lamin-cli/pull/271) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable re-starting agent sessions [PR](https://github.com/laminlabs/lamindb/pull/3893) [@Ebad371](https://github.com/Ebad371)
