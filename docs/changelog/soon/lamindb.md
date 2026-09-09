@@ -1,3 +1,4 @@
+- 🚸 Enable re-starting agent sessions [PR](https://github.com/laminlabs/lamindb/pull/3893) [@Ebad371](https://github.com/Ebad371)
 - 🚸 Support tracking `pixi` environments [PR](https://github.com/laminlabs/lamindb/pull/3878) [@ishitajain9717](https://github.com/ishitajain9717)
 - 🐛 Reuse Runs for agent session follow-ups [PR](https://github.com/laminlabs/lamin-cli/pull/270) [@Ebad371](https://github.com/Ebad371)
 - :bug: Validate the `SQLRecord` type if passing an object directly in `FeatureManager.add_values()` [PR](https://github.com/laminlabs/lamindb/pull/3890) [@ishitajain9717](https://github.com/ishitajain9717)
