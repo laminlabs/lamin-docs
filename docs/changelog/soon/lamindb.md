@@ -1,3 +1,4 @@
+- 🐛 Fix path auto-completion in shell completion environments [PR](https://github.com/laminlabs/lamin-cli/pull/272) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `worktree` mode inspired by `git`'s `worktree` behavior [PR](https://github.com/laminlabs/lamindb/pull/3895) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `worktree` mode inspired by `git`'s `worktree` behavior [PR](https://github.com/laminlabs/lamindb/pull/3894) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `worktree` mode akin to `git` [PR](https://github.com/laminlabs/lamindb-setup/pull/1396) [@falexwolf](https://github.com/falexwolf)
