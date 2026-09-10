@@ -54,7 +54,7 @@ security
 :hidden:
 :caption: Other topics
 
-design
+architecture
 faq
 influences
 glossary
