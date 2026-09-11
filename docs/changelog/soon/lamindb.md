@@ -1,3 +1,4 @@
+- 🚸 Make number of features fetched during `artifact.describe()` configurable [PR](https://github.com/laminlabs/lamindb/pull/3902) [@falexwolf](https://github.com/falexwolf)
 - 📝 Overhaul `architecture.md` [PR](https://github.com/laminlabs/lamindb/pull/3897) [@falexwolf](https://github.com/falexwolf)
 - 👷 No need to run all tests on mere docs edits [PR](https://github.com/laminlabs/lamindb/pull/3898) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix path auto-completion in shell completion environments [PR](https://github.com/laminlabs/lamin-cli/pull/272) [@falexwolf](https://github.com/falexwolf)
