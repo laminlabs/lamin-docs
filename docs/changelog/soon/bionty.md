@@ -1,0 +1,1 @@
+- 🍱 Updated ontology sources 2026-09 [PR](https://github.com/laminlabs/bionty/pull/381) [@sunnyosun](https://github.com/sunnyosun)
