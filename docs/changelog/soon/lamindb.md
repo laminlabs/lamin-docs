@@ -1,3 +1,4 @@
+- 📝 Document how to enable shell autocompletion and maintain a static copy of `cli.md` in the repo [PR](https://github.com/laminlabs/lamindb/pull/3903) [@falexwolf](https://github.com/falexwolf)
 - 📝 Create a `manage-records.md` guide [PR](https://github.com/laminlabs/lamindb/pull/3905) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Update bionty source 2026-09 [PR](https://github.com/laminlabs/lamindb/pull/3904) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Make number of features fetched during `artifact.describe()` configurable [PR](https://github.com/laminlabs/lamindb/pull/3902) [@falexwolf](https://github.com/falexwolf)
