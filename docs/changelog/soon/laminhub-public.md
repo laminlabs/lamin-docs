@@ -1,0 +1,1 @@
+- :lipstick: Make Records the default first tab and move Overview all the way to the right [PR](https://github.com/laminlabs/laminhub-public/pull/410) [@falexwolf](https://github.com/falexwolf)
