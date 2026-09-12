@@ -1,3 +1,4 @@
+- 🚸 Fix UX issues with `worktree` mode [PR](https://github.com/laminlabs/lamin-cli/pull/274) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Fix UX issues with `worktree` mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1399) [@falexwolf](https://github.com/falexwolf)
 - ✨ Let agents use branches in `worktree` mode [PR](https://github.com/laminlabs/lamindb/pull/3899) [@Ebad371](https://github.com/Ebad371)
 - 🚸 Surface `worktree` settings errors in the CLI [PR](https://github.com/laminlabs/lamin-cli/pull/273) [@Ebad371](https://github.com/Ebad371)
