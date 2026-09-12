@@ -1,3 +1,4 @@
+- 🚸 Surface `worktree` settings errors in the CLI [PR](https://github.com/laminlabs/lamin-cli/pull/273) [@Ebad371](https://github.com/Ebad371)
 - 🚸 Validate `dev-dir` is empty when toggling `worktree` mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1397) [@Ebad371](https://github.com/Ebad371)
 - 👷 Clean up storage marker in `hub-local` test suite [PR](https://github.com/laminlabs/lamindb-setup/pull/1398) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document how to enable shell autocompletion and maintain a static copy of `cli.md` in the repo [PR](https://github.com/laminlabs/lamindb/pull/3903) [@falexwolf](https://github.com/falexwolf)
