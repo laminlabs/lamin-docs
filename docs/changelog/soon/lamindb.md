@@ -1,3 +1,4 @@
+- ♻️ `lamin load` should respect `worktree` [PR](https://github.com/laminlabs/lamin-cli/pull/275) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Fix UX issues with `worktree` mode [PR](https://github.com/laminlabs/lamindb/pull/3906) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Fix UX issues with `worktree` mode [PR](https://github.com/laminlabs/lamin-cli/pull/274) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Fix UX issues with `worktree` mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1399) [@falexwolf](https://github.com/falexwolf)
