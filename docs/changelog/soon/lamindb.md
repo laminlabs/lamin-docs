@@ -1,3 +1,4 @@
+- 🚸 Support storing feature values in diverse fields of `Record` [PR](https://github.com/laminlabs/lamindb/pull/3909) [@falexwolf](https://github.com/falexwolf)
 - 🚸  Support a broader range of type annotations in `ln.flow()` including unions and optional types [PR](https://github.com/laminlabs/lamindb/pull/3907) [@falexwolf](https://github.com/falexwolf)
 - ♻️ `lamin load` should respect `worktree` [PR](https://github.com/laminlabs/lamin-cli/pull/275) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Fix UX issues with `worktree` mode [PR](https://github.com/laminlabs/lamindb/pull/3906) [@falexwolf](https://github.com/falexwolf)
