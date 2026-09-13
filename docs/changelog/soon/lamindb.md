@@ -1,3 +1,4 @@
+- :children_crossing: Allow scoping `schema.itype` to a `Feature` type [PR](https://github.com/laminlabs/lamindb/pull/3889) [@ishitamjain](https://github.com/ishitamjain)
 - 💚 Validate cellxgene example data with ensembl release-114 [PR](https://github.com/laminlabs/lamindb/pull/3908) [@sunnyosun](https://github.com/sunnyosun)
 - 🚸 Support storing feature values in diverse fields of `Record` [PR](https://github.com/laminlabs/lamindb/pull/3909) [@falexwolf](https://github.com/falexwolf)
 - 🚸  Support a broader range of type annotations in `ln.flow()` including unions and optional types [PR](https://github.com/laminlabs/lamindb/pull/3907) [@falexwolf](https://github.com/falexwolf)
