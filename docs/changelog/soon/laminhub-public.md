@@ -1,1 +1,2 @@
+- ✨ Filter button with dropdown in entity pages that don't have a filter sidebar [PR](https://github.com/laminlabs/laminhub-public/pull/411) [@sheetalgiri](https://github.com/sheetalgiri)
 - :lipstick: Make Records the default first tab and move Overview all the way to the right [PR](https://github.com/laminlabs/laminhub-public/pull/410) [@falexwolf](https://github.com/falexwolf)
