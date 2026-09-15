@@ -1,3 +1,4 @@
+- ✨ Track Cursor IDE sessions [PR](https://github.com/laminlabs/lamindb/pull/3911) [@Ebad371](https://github.com/Ebad371)
 - ✨ Track Cursor IDE sessions [PR](https://github.com/laminlabs/lamin-cli/pull/277) [@Ebad371](https://github.com/Ebad371)
 - :recycle: Sync individual records from Notion [PR](https://github.com/laminlabs/lamindb/pull/3913) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Do not delete `artifact` storage if the db row was not deleted [PR](https://github.com/laminlabs/lamindb/pull/3912) [@Koncopd](https://github.com/Koncopd)
