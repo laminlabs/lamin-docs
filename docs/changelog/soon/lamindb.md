@@ -1,3 +1,4 @@
+- 🔇 Mute lamin disconnect --here [PR](https://github.com/laminlabs/lamindb-setup/pull/1401) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix lamin JWT renewal [PR](https://github.com/laminlabs/lamindb-setup/pull/1400) [@Koncopd](https://github.com/Koncopd)
 - ✨ Track Cursor IDE sessions [PR](https://github.com/laminlabs/lamindb/pull/3911) [@Ebad371](https://github.com/Ebad371)
 - ✨ Track Cursor IDE sessions [PR](https://github.com/laminlabs/lamin-cli/pull/277) [@Ebad371](https://github.com/Ebad371)
