@@ -42,7 +42,6 @@ visualization
 :hidden:
 :caption: The Hub
 
-records
 launch
 permissions
 audit-log
