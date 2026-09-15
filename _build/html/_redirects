@@ -9,7 +9,9 @@
 /modules /setup 301
 /sheets /records 301
 /sync /transfer 301
+/design /architecture 301
 /registries /query-search 301
+/records /manage-records 301
 /ontologies /manage-ontologies 301
 /bio-registries /manage-ontologies 301
 /faq/idempotency /idempotency 301
