@@ -19,7 +19,7 @@ query-search
 track
 organize
 manage-changes
-ontologies
+manage-records
 transfer
 ```
 
