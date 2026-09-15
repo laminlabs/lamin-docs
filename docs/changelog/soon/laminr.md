@@ -1,1 +1,2 @@
+- 💚 Unset dev-dir after test-docs init [PR](https://github.com/laminlabs/laminr/pull/277) [@Koncopd](https://github.com/Koncopd)
 - Bump actions/setup-python from 6 to 7 [PR](https://github.com/laminlabs/laminr/pull/273) [@dependabot[bot]](https://github.com/apps/dependabot)
