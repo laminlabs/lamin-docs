@@ -1,3 +1,4 @@
+- 🐛 Exclude link tables with no `value` field for for `.to_dataframe(features="queryset")` for `ln.Record` [PR](https://github.com/laminlabs/lamindb/pull/3914) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Mute lamin disconnect --here [PR](https://github.com/laminlabs/lamindb-setup/pull/1401) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix lamin JWT renewal [PR](https://github.com/laminlabs/lamindb-setup/pull/1400) [@Koncopd](https://github.com/Koncopd)
 - ✨ Track Cursor IDE sessions [PR](https://github.com/laminlabs/lamindb/pull/3911) [@Ebad371](https://github.com/Ebad371)
