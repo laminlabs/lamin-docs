@@ -1,3 +1,4 @@
+- 🍱 Update ontology [PR](https://github.com/laminlabs/lamin-usecases/pull/258) [@sunnyosun](https://github.com/sunnyosun)
 - 💄 Polish `public-ontologies` [PR](https://github.com/laminlabs/lamin-usecases/pull/257) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix CI [PR](https://github.com/laminlabs/lamin-usecases/pull/256) [@Koncopd](https://github.com/Koncopd)
 - ✨ Refactor the ingestion script to be part of the package, and add ability to register non-LTS release datasets [PR](https://github.com/laminlabs/cellxgene-lamin/pull/151) [@ishitajain9717](https://github.com/ishitajain9717)
