@@ -1,3 +1,4 @@
+- 🐛 Identify the live Cursor chat after a worktree copy [PR](https://github.com/laminlabs/lamin-cli/pull/278) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Exclude link tables with no `value` field for for `.to_dataframe(features="queryset")` for `ln.Record` [PR](https://github.com/laminlabs/lamindb/pull/3914) [@Koncopd](https://github.com/Koncopd)
 - 🔇 Mute lamin disconnect --here [PR](https://github.com/laminlabs/lamindb-setup/pull/1401) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix lamin JWT renewal [PR](https://github.com/laminlabs/lamindb-setup/pull/1400) [@Koncopd](https://github.com/Koncopd)
