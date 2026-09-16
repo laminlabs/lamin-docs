@@ -1,3 +1,4 @@
+- ✨ Add `kwargs` to `Collection.cache()` [PR](https://github.com/laminlabs/lamindb/pull/3917) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Identify the live session and render the transcript in conversation order [PR](https://github.com/laminlabs/lamin-cli/pull/279) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Identify the live Cursor chat after a worktree copy [PR](https://github.com/laminlabs/lamin-cli/pull/278) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Exclude link tables with no `value` field for for `.to_dataframe(features="queryset")` for `ln.Record` [PR](https://github.com/laminlabs/lamindb/pull/3914) [@Koncopd](https://github.com/Koncopd)
