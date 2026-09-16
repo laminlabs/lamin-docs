@@ -1,3 +1,4 @@
+- ✨ Add `--store-kwargs` to `lamin load` for `artifacts` and `collections` [PR](https://github.com/laminlabs/lamin-cli/pull/282) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Wait for finish to land and stamp the latest transform version [PR](https://github.com/laminlabs/lamin-cli/pull/283) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Fix mypy errors in session transcript parsing [PR](https://github.com/laminlabs/lamin-cli/pull/281) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Identify the session from the echo command before its result lands [PR](https://github.com/laminlabs/lamin-cli/pull/280) [@ebadukhan](https://github.com/ebadukhan)
