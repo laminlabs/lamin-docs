@@ -1,3 +1,4 @@
+- 🚸 Suppress tracebacks for all api key errors [PR](https://github.com/laminlabs/lamin-cli/pull/287) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Catch and process errors related to api key [PR](https://github.com/laminlabs/lamindb-setup/pull/1404) [@Koncopd](https://github.com/Koncopd)
 - 📝 Note that the report includes readable thinking [PR](https://github.com/laminlabs/lamin-cli/pull/286) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Include model thinking in Copilot and Cursor [PR](https://github.com/laminlabs/lamin-cli/pull/285) [@ebadukhan](https://github.com/ebadukhan)
