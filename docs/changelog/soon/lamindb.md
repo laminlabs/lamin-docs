@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup and lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3922) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Suppress tracebacks for all api key errors [PR](https://github.com/laminlabs/lamin-cli/pull/287) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Catch and process errors related to api key [PR](https://github.com/laminlabs/lamindb-setup/pull/1404) [@Koncopd](https://github.com/Koncopd)
 - 📝 Note that the report includes readable thinking [PR](https://github.com/laminlabs/lamin-cli/pull/286) [@ebadukhan](https://github.com/ebadukhan)
