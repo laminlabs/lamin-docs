@@ -1,3 +1,4 @@
+- ✨ Include model thinking in Copilot and Cursor [PR](https://github.com/laminlabs/lamin-cli/pull/285) [@ebadukhan](https://github.com/ebadukhan)
 - ♻️ Redesign backward relationship among features [PR](https://github.com/laminlabs/lamindb/pull/3918) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Identify the live Cursor chat after a worktree copy [PR](https://github.com/laminlabs/lamindb/pull/3916) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Add `--store-kwargs` to `lamin load` for `artifacts` and `collections` [PR](https://github.com/laminlabs/lamin-cli/pull/282) [@Koncopd](https://github.com/Koncopd)
