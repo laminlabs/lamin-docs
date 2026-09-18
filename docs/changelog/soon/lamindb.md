@@ -1,3 +1,4 @@
+- 🚸 Default to hub-based migration for hub-managed instances [PR](https://github.com/laminlabs/lamindb-setup/pull/1402) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor feature storage in `Record` fields [PR](https://github.com/laminlabs/lamindb/pull/3921) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup and lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3922) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Suppress tracebacks for all api key errors [PR](https://github.com/laminlabs/lamin-cli/pull/287) [@Koncopd](https://github.com/Koncopd)
