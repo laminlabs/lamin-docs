@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup and lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3924) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Show folders and branches on failing to switch in worktree root [PR](https://github.com/laminlabs/lamindb-setup/pull/1403) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Do not create a `branch` on failed `lamin switch -c` [PR](https://github.com/laminlabs/lamin-cli/pull/284) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix `merge` breaking on `django` reset by importing `django` dynamically [PR](https://github.com/laminlabs/lamindb-setup/pull/1405) [@Koncopd](https://github.com/Koncopd)
