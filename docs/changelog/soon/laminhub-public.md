@@ -1,0 +1,1 @@
+- 🚚 Rename "Sheet" to "Record frame" [PR](https://github.com/laminlabs/laminhub-public/pull/413) [@falexwolf](https://github.com/falexwolf)
