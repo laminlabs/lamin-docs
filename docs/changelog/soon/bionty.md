@@ -1,1 +1,2 @@
+- 🚚 Move public ontology guides here [PR](https://github.com/laminlabs/bionty/pull/383) [@falexwolf](https://github.com/falexwolf)
 - :memo: Adding space & branch args [PR](https://github.com/laminlabs/bionty/pull/373) [@ishitamjain](https://github.com/ishitamjain)
