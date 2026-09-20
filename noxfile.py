@@ -133,7 +133,10 @@ def pull_artifacts(session):
         else:
             sync_path(path, Path("docs") / path.name)
 
-    replace_content("docs/cli.md", {"# `CLI`": "# CLI"})
+    replace_content(
+        "docs/architecture.md",
+        {":::{include} ../README.md": ":::{include} includes/README.md"},
+    )
     replace_content("docs/lamindb.md", {"# `lamindb`": "# Python: `lamindb`"})
 
     # lamindb faq
