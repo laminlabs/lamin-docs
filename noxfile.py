@@ -22,6 +22,24 @@ IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
 
 nox.options.default_venv_backend = "none"
 
+# Public-ontology guides live in bionty and are pulled from bionty.zip.
+ONTOLOGY_DOC_STEMS = {
+    "public-ontologies",
+    "gene",
+    "protein",
+    "organism",
+    "cell_line",
+    "cell_type",
+    "cell_marker",
+    "tissue",
+    "disease",
+    "phenotype",
+    "pathway",
+    "experimental_factor",
+    "developmental_stage",
+    "ethnicity",
+}
+
 
 @nox.session
 def lint(session: nox.Session) -> None:
@@ -197,9 +215,16 @@ def pull_artifacts(session):
             or path.name == "usecases.md"
             or path.name == "changelog.md"
             or path.name == "conf.py"
-            or path.name == "trace-data-code.md"
             or path.name == "atlases.md"
         ):
+            continue
+        print("syncing", path)
+        sync_path(path, Path("docs") / path.name)
+
+    # public ontology guides
+    pull_from_s3_and_unpack("bionty.zip")
+    for path in Path("bionty").glob("*"):
+        if path.stem not in ONTOLOGY_DOC_STEMS:
             continue
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
