@@ -6,7 +6,7 @@
 
 ## Agents
 
-See the [track guide](https://docs.lamin.ai/track#track-agentic-workflows).
+See the [track guide](track.ipynb#track-agent-runs).
 
 - Claude Code {small}`db 2.8`
 - GitHub Copilot {small}`db 2.9`
