@@ -16,12 +16,6 @@
 [submodule "sub/snakemake-lamin"]
 	path = sub/snakemake-lamin
 	url = https://github.com/laminlabs/snakemake-lamin.git
-[submodule "sub/bionty"]
-	path = sub/bionty
-	url = https://github.com/laminlabs/bionty.git
-[submodule "sub/pertdb"]
-	path = sub/pertdb
-	url = https://github.com/laminlabs/pertdb.git
 [submodule "sub/nf-lamin"]
 	path = sub/nf-lamin
 	url = https://github.com/laminlabs/nf-lamin.git
