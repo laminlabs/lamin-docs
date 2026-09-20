@@ -1,9 +1,16 @@
 # Integrations
 
-## Agentic harnesses
+```{eval-rst}
+.. role:: small
+```
 
-- Claude Code: [track guide](https://docs.lamin.ai/track#track-agentic-workflows)
-- GitHub Copilot: [track guide](https://docs.lamin.ai/track#track-agentic-workflows)
+## Agents
+
+See the [track guide](track.ipynb#track-agent-runs).
+
+- Claude Code {small}`db 2.8`
+- GitHub Copilot {small}`db 2.9`
+- Cursor {small}`db 2.11`
 
 ## Storage
 

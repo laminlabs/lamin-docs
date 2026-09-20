@@ -1,2 +1,0 @@
-- ♻️ Replace `requests` with `httpx` for consistency with `lamindb-setup` [PR](https://github.com/laminlabs/bionty/pull/382) [@falexwolf](https://github.com/falexwolf)
-- 🍱 Updated ontology sources 2026-09 [PR](https://github.com/laminlabs/bionty/pull/381) [@sunnyosun](https://github.com/sunnyosun)
