@@ -266,15 +266,6 @@ def run_nbs(session):
 
 @nox.session
 def docs(session):
-    lamindb_nox_path = Path("tmp_lamindb/noxfile.py")
-    if lamindb_nox_path.exists():
-        spec = importlib.util.spec_from_file_location("lamindb_nox", lamindb_nox_path)
-        lamindb_nox = importlib.util.module_from_spec(spec)
-        sys.modules["lamindb_nox"] = lamindb_nox
-        spec.loader.exec_module(lamindb_nox)
-        lamindb_nox.clidocs(session)
-    else:
-        print(f"Could not find {lamindb_nox_path}, skipping CLI docs generation.")
     # drop any leftover docs/ instance marker before lndocs copies docs/ → _docs_tmp
     shutil.rmtree(Path("docs") / ".lamin", ignore_errors=True)
     # need the following line to visualize the pertdb API
