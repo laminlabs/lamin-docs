@@ -21,7 +21,7 @@ UI features:
 - **catalog** → browse, search & query your lakehouse
 - **notebooks, workflows, runs** → visualize & launch executions
 - **versioning** → manage data & code revisions
-- **LIMS & ELN** → records, sheets & markdown notes integrated with ontologies
+- **LIMS & ELN** → records & notes integrated with ontologies
 - **schemas & labels** → validate & monitor data distributions
 - **simple dashboarding** → auto-generate data summaries
 

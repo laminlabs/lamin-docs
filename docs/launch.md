@@ -54,12 +54,12 @@ The following walkthrough assumes that you already registered a pipeline in Lami
    1. Fill out `Run metadata` if configured (see setup section below for configuration)
       1. Directly fill out the form via `+ Record`
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/23tmjAnGkC33Ynkp0000.png" style="width: 80%;"/>
-      2. Or click `Select` to select an existing row from a sheet
+      2. Or click `Select` to select an existing row from a record frame
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/8WlDJtu6lWfrUXtJ0000.png" style="width: 80%;"/>
-   2. Specify a file/artifact/sheet for parameters of type **file**
-      1. Click on `Select` to directly select a sheet, an artifact, or a file from the s3.
+   2. Specify a file/artifact/record frame for parameters of type **file**
+      1. Click on `Select` to directly select a record frame, an artifact, or a file from the s3.
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/EAhZBrhfYDXHDlmO0000.png" style="width: 80%;"/>
-      2. For parameters configured via `Input schemas`, click the `+ Create` button to fill out a new sheet.
+      2. For parameters configured via `Input schemas`, click the `+ Create` button to fill out a new record frame.
          <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/zpPHRNTqRHyUenAK0000.png" style="width: 80%;"/>
    3. Fill out the remaining required fields marked with **\***, e.g. `outdir` for the scrnaseq pipeline
    4. Optional: provide the rest of parameters.
@@ -105,9 +105,9 @@ Configure the settings of a pipeline:
 
 1. Switch on the `Show configuration` toggle and you will see the `Configuration` section.
 2. Click on `Settings`, you will see a pop-up window with 3 tabs: `Input schemas`, `Run metadata` and `Environment defaults`.
-   1. `Input schemas`: You can configure a schema for a parameter (e.g. `input`), which allows you to create a sheet according to the schema configurations.
+   1. `Input schemas`: You can configure a schema for a parameter (e.g. `input`), which allows you to create a record frame according to the schema configurations.
       <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/F4VVXZREJxTTMlxP0000.png" style="width: 80%;"/>
-   2. `Run metadata`: You can configure which sheet you want to select the metadata from.
+   2. `Run metadata`: You can configure which record frame you want to select the metadata from.
       <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/xEoxgY2NSBEucKzw0000.png" style="width: 80%;"/>
    3. `Environment defaults` : You can configure the environment defaults for the pipeline.
       <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/5shVPlptFMqymEdm0000.png" style="width: 80%;"/>
