@@ -1,3 +1,4 @@
+- 📝 Improve the documentation of `Collection` [PR](https://github.com/laminlabs/lamindb/pull/3930) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move `_finish.py` and `_secret_redaction.py` into submodule `core` [PR](https://github.com/laminlabs/lamindb/pull/3929) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor finish import [PR](https://github.com/laminlabs/lamin-cli/pull/289) [@falexwolf](https://github.com/falexwolf)
 - 📝 Install the LaminDB skill via `library-skills` [PR](https://github.com/laminlabs/lamindb/pull/3923) [@ebadukhan](https://github.com/ebadukhan)
