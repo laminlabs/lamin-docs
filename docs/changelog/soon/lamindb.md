@@ -1,3 +1,4 @@
+- 📝 Tell agents to install the lamindb skill via library-skills [PR](https://github.com/laminlabs/lamin-cli/pull/288) [@ebadukhan](https://github.com/ebadukhan)
 - 🚚 Rename "Sheet" to "Record frame" [PR](https://github.com/laminlabs/lamindb/pull/3928) [@falexwolf](https://github.com/falexwolf)
 - ✨ Validate zarr format constraints for `SpatialData` schemas [PR](https://github.com/laminlabs/lamindb/pull/3920) [@namsaraeva](https://github.com/namsaraeva)
 - 📝 Re-structure bionty docs [PR](https://github.com/laminlabs/lamindb/pull/3927) [@falexwolf](https://github.com/falexwolf)
