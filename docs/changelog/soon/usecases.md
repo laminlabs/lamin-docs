@@ -1,3 +1,4 @@
+- 🚚 Rename `scrna-mappedcollection.md` to `scrna-dataloaders.md` and showcase `annbatch` [PR](https://github.com/laminlabs/lamin-usecases/pull/261) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move public ontology guides to `bionty` [PR](https://github.com/laminlabs/lamin-usecases/pull/260) [@falexwolf](https://github.com/falexwolf)
 - :construction_worker: Fix docs build warnings [PR](https://github.com/laminlabs/lamin-usecases/pull/259) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Update ontology [PR](https://github.com/laminlabs/lamin-usecases/pull/258) [@sunnyosun](https://github.com/sunnyosun)
