@@ -1,3 +1,4 @@
+- 🚸 Point .agents at skill tracking Copilot sessions outside dest-dir [PR](https://github.com/laminlabs/lamindb/pull/3931) [@ebadukhan](https://github.com/ebadukhan)
 - 📝 Improve the documentation of `Collection` [PR](https://github.com/laminlabs/lamindb/pull/3930) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move `_finish.py` and `_secret_redaction.py` into submodule `core` [PR](https://github.com/laminlabs/lamindb/pull/3929) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor finish import [PR](https://github.com/laminlabs/lamin-cli/pull/289) [@falexwolf](https://github.com/falexwolf)
