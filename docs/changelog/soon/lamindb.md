@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/3932) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Add `--batch-size` option to `lamin load` and `lamin save` [PR](https://github.com/laminlabs/lamin-cli/pull/290) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Point .agents at skill tracking Copilot sessions outside dest-dir [PR](https://github.com/laminlabs/lamindb/pull/3931) [@ebadukhan](https://github.com/ebadukhan)
 - 📝 Improve the documentation of `Collection` [PR](https://github.com/laminlabs/lamindb/pull/3930) [@falexwolf](https://github.com/falexwolf)
