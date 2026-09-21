@@ -17,7 +17,8 @@
 /faq/idempotency /idempotency 301
 /faq/acid /acid 301
 /scrna6 /scrna-tiledbsoma 301
-/scrna5 /scrna-mappedcollection 301
+/scrna5 /scrna-dataloading 301
+/scrna-mappedcollection /scrna-dataloading 301
 /atlases /cellxgene 301
 /by-datatype /scrna 301
 /by-registry /enrichr 301
