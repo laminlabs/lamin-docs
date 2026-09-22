@@ -1,3 +1,4 @@
+- ✨ PDF previewer for artifacts [PR](https://github.com/laminlabs/laminhub-public/pull/408) [@sheetalgiri](https://github.com/sheetalgiri)
 - ✨ Add organization connections monitor [PR](https://github.com/laminlabs/laminhub-public/pull/415) [@fredericenard](https://github.com/fredericenard)
 - :sparkles: Add feature filters to record page filtering [PR](https://github.com/laminlabs/laminhub-public/pull/414) [@sheetalgiri](https://github.com/sheetalgiri)
 - 🚚 Rename "Sheet" to "Record frame" [PR](https://github.com/laminlabs/laminhub-public/pull/413) [@falexwolf](https://github.com/falexwolf)
