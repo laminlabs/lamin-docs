@@ -1,3 +1,4 @@
+- 🚸 Point lamin-cli and .agents at Copilot parent/child tracking [PR](https://github.com/laminlabs/lamindb/pull/3935) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Join parent and child Copilot chats into one report [PR](https://github.com/laminlabs/lamin-cli/pull/293) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Export skill version and point .agents plus lamin-cli at --skill-version [PR](https://github.com/laminlabs/lamindb/pull/3934) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Replace track skill warnings with lamin --skill-version [PR](https://github.com/laminlabs/lamin-cli/pull/292) [@ebadukhan](https://github.com/ebadukhan)
