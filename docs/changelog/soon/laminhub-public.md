@@ -1,0 +1,1 @@
+- :bug: Keep audit logs available when actor names fail to load [PR](https://github.com/laminlabs/laminhub-public/pull/416) [@chaichontat](https://github.com/chaichontat)
