@@ -1,1 +1,2 @@
+- 🐛 Fix record views with main and draft branches selected [PR](https://github.com/laminlabs/laminhub-public/pull/417) [@chaichontat](https://github.com/chaichontat)
 - :bug: Keep audit logs available when actor names fail to load [PR](https://github.com/laminlabs/laminhub-public/pull/416) [@chaichontat](https://github.com/chaichontat)
