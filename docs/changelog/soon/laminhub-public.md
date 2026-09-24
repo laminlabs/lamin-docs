@@ -1,0 +1,1 @@
+- ✨ Add Sentry uptime history exporter [PR](https://github.com/laminlabs/laminhub-public/pull/418) [@ebadukhan](https://github.com/ebadukhan)
