@@ -1,3 +1,4 @@
+- 🚸 Enable transferring records with their features [PR](https://github.com/laminlabs/lamindb/pull/3915) [@ishitamjain](https://github.com/ishitamjain)
 - ✅ Properly handle user update RLS error [PR](https://github.com/laminlabs/lamindb/pull/3936) [@Koncopd](https://github.com/Koncopd)
 - :children_crossing: Clear up the role of `InstanceSettings.is_on_hub` and improve logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1407) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Point lamin-cli and .agents at Copilot parent/child tracking [PR](https://github.com/laminlabs/lamindb/pull/3935) [@ebadukhan](https://github.com/ebadukhan)
