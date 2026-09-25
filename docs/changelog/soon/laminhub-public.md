@@ -1,2 +1,3 @@
+- 💄 Simplify the footer of data records and record pages [PR](https://github.com/laminlabs/laminhub-public/pull/420) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Use supported HTTP client for status exporter [PR](https://github.com/laminlabs/laminhub-public/pull/419) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Add Sentry uptime history exporter [PR](https://github.com/laminlabs/laminhub-public/pull/418) [@ebadukhan](https://github.com/ebadukhan)
