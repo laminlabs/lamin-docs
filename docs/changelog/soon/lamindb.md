@@ -1,3 +1,4 @@
+- ⬆️ Point lamindb-setup at worktree main/ enable [PR](https://github.com/laminlabs/lamindb/pull/3945) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Allow main/ when enabling worktree mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1409) [@ebadukhan](https://github.com/ebadukhan)
 - 🏗️ Break out transfer test suite across sqlite and postgres backends and modularize via `lamindb.models._transfer` [PR](https://github.com/laminlabs/lamindb/pull/3940) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Point lamindb-setup at dev-dir local marker lookup [PR](https://github.com/laminlabs/lamindb/pull/3938) [@ebadukhan](https://github.com/ebadukhan)
