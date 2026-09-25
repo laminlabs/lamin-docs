@@ -1,3 +1,4 @@
+- 🏗️ Break out transfer test suite across sqlite and postgres backends and modularize via `lamindb.models._transfer` [PR](https://github.com/laminlabs/lamindb/pull/3940) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Point lamindb-setup at dev-dir local marker lookup [PR](https://github.com/laminlabs/lamindb/pull/3938) [@ebadukhan](https://github.com/ebadukhan)
 - ♻️ Resolve `dev-dir` from local marker files [PR](https://github.com/laminlabs/lamindb-setup/pull/1408) [@ebadukhan](https://github.com/ebadukhan)
 - 💚 Fix test for moving across spaces [PR](https://github.com/laminlabs/lamindb/pull/3939) [@falexwolf](https://github.com/falexwolf)
