@@ -1,3 +1,4 @@
+- ♻️ Resolve `dev-dir` from local marker files [PR](https://github.com/laminlabs/lamindb-setup/pull/1408) [@ebadukhan](https://github.com/ebadukhan)
 - 💚 Fix test for moving across spaces [PR](https://github.com/laminlabs/lamindb/pull/3939) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Polish the Notion integration [PR](https://github.com/laminlabs/lamindb/pull/3933) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable transferring records with their features [PR](https://github.com/laminlabs/lamindb/pull/3915) [@ishitamjain](https://github.com/ishitamjain)
