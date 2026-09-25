@@ -1,3 +1,4 @@
+- 💚 Fix test for moving across spaces [PR](https://github.com/laminlabs/lamindb/pull/3939) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Polish the Notion integration [PR](https://github.com/laminlabs/lamindb/pull/3933) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable transferring records with their features [PR](https://github.com/laminlabs/lamindb/pull/3915) [@ishitamjain](https://github.com/ishitamjain)
 - ✅ Properly handle user update RLS error [PR](https://github.com/laminlabs/lamindb/pull/3936) [@Koncopd](https://github.com/Koncopd)
