@@ -1,3 +1,4 @@
+- ⬆️ Point .agents at Track when dev-dir already has files [PR](https://github.com/laminlabs/lamindb/pull/3946) [@ebadukhan](https://github.com/ebadukhan)
 - ⬆️ Point lamindb-setup at worktree main/ enable [PR](https://github.com/laminlabs/lamindb/pull/3945) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Allow main/ when enabling worktree mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1409) [@ebadukhan](https://github.com/ebadukhan)
 - 🏗️ Break out transfer test suite across sqlite and postgres backends and modularize via `lamindb.models._transfer` [PR](https://github.com/laminlabs/lamindb/pull/3940) [@falexwolf](https://github.com/falexwolf)
