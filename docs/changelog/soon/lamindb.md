@@ -1,3 +1,4 @@
+- ✨ Introduce `lamin io sync` [PR](https://github.com/laminlabs/lamindb/pull/3944) [@falexwolf](https://github.com/falexwolf)
 - 📝 Harmonize CLI docs [PR](https://github.com/laminlabs/lamin-cli/pull/295) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Introduce `lamin io sync` [PR](https://github.com/laminlabs/lamin-cli/pull/294) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Point .agents at Track when dev-dir already has files [PR](https://github.com/laminlabs/lamindb/pull/3946) [@ebadukhan](https://github.com/ebadukhan)
