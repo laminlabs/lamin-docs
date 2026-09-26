@@ -1,3 +1,4 @@
+- :sparkles: Introduce `lamin io sync` [PR](https://github.com/laminlabs/lamin-cli/pull/294) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Point .agents at Track when dev-dir already has files [PR](https://github.com/laminlabs/lamindb/pull/3946) [@ebadukhan](https://github.com/ebadukhan)
 - ⬆️ Point lamindb-setup at worktree main/ enable [PR](https://github.com/laminlabs/lamindb/pull/3945) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Allow main/ when enabling worktree mode [PR](https://github.com/laminlabs/lamindb-setup/pull/1409) [@ebadukhan](https://github.com/ebadukhan)
