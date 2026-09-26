@@ -1,3 +1,4 @@
+- :bug: Bring back `coerce=True` for `int` and `float` dtypes [PR](https://github.com/laminlabs/lamindb/pull/3937) [@ishitamjain](https://github.com/ishitamjain)
 - 🚸 Nicer logging UX in case of surplus or lacking schema modules [PR](https://github.com/laminlabs/lamindb/pull/3949) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Nicer logging UX in case of surplus or lacking schema modules [PR](https://github.com/laminlabs/lamindb-setup/pull/1410) [@falexwolf](https://github.com/falexwolf)
 - ✨ Introduce `lamin io sync` [PR](https://github.com/laminlabs/lamindb/pull/3944) [@falexwolf](https://github.com/falexwolf)
