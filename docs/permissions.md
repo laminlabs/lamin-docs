@@ -14,13 +14,13 @@ You need to be an instance admin.
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
 </div>
 
-2. Click **Add collaborator**, enter user handle and click **Save**.
+2. Click **Add collaborator** and select a user.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9n4SBjsaCLagDapV0000.png" style="width: 90%;"/>
 </div>
 
-3. To remove a collaborator, click the three-dot menu next to their name and select **Remove collaborator**.
+3. To remove a collaborator, click the three-dot menu next to their name and select **Remove member**. The confirmation dialog is titled **Remove instance collaborator**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
@@ -46,13 +46,13 @@ To create a space:
 
 To add a collaborator to your space:
 
-1. Click the three-dot menu next to the space and select **Manage collaborators**.
+1. Click the three-dot menu next to the space and select **Edit space collaborators**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/AJjcfgITI4YXWmOF0000.png" style="width: 90%;"/>
 </div>
 
-2. Click **Add collaborator** and select a user or team.
+2. Click **Add member or team** and select a user or team.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/60OjDFhxOmQqKWN30000.png" style="width: 60%;"/>
@@ -64,7 +64,7 @@ To add a collaborator to your space:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TT84gfGO05SZuNKx0000.png" style="width: 90%;"/>
 </div>
 
-Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple instances, if desired.
+Note that you can also manage spaces from the **Spaces** tab of your organization. To attach a space to instances, open the three-dot menu and select **Edit space instances**.
 
 (use-a-restricted-space)=
 
@@ -121,7 +121,7 @@ To create a team:
 
 To add members to your team:
 
-1. Click the three-dot menu next to the team and select **Manage members**.
+1. Click the three-dot menu next to the team and select **Edit team members**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XRW2QhHPDnJvgpGS0000.png" style="width: 90%;"/>
@@ -135,7 +135,7 @@ To add members to your team:
 
 To add a team to a space:
 
-1. From the space collaborators view, click **Add collaborator** and select a team.
+1. From the space collaborators view, click **Add member or team** and select a team.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DHouTU5KeskTalTv0000.png" style="width: 90%;"/>
@@ -143,7 +143,7 @@ To add a team to a space:
 
 To add a team to your instance:
 
-1. From the instance collaborators view click on the **Teams** tab and click **Add team**.
+1. In instance settings, open **Collaborators**, then **Teams**, and click **Add collaborator team**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/r7KLAklCYyvxqPIe0000.png" style="width: 90%;"/>
@@ -321,12 +321,12 @@ For managed S3, storage access is not a separate role. LaminHub derives it from 
 
 Every storage location belongs to an instance and to a space.
 
-| Storage location | Who receives credentials | Role used for the token |
-| ---------------- | ------------------------ | ----------------------- |
-| Default `all` space | Instance collaborators (directly or via a team) | Instance role (`read` / `write` / `admin`) |
-| Restricted space | Space collaborators (directly or via a team) | Space role (`read` / `write` / `admin`) |
-| Public managed storage, collaborator | Instance or space collaborators, as above | The collaborator role (`read` / `write` / `admin`) |
-| Public managed storage, not a collaborator | Anyone, including anonymous callers | Read |
+| Storage location                           | Who receives credentials                        | Role used for the token                            |
+| ------------------------------------------ | ----------------------------------------------- | -------------------------------------------------- |
+| Default `all` space                        | Instance collaborators (directly or via a team) | Instance role (`read` / `write` / `admin`)         |
+| Restricted space                           | Space collaborators (directly or via a team)    | Space role (`read` / `write` / `admin`)            |
+| Public managed storage, collaborator       | Instance or space collaborators, as above       | The collaborator role (`read` / `write` / `admin`) |
+| Public managed storage, not a collaborator | Anyone, including anonymous callers             | Read                                               |
 
 Public managed storage does not replace collaborator status. Collaborators still receive their instance or space role. Read access for everyone is only the fallback when the caller is not a collaborator.
 
