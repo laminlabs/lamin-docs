@@ -4,11 +4,11 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 ## How to
 
-### Manage instance collaborators
+### Manage database collaborators
 
-You need to be an instance admin.
+You need to be an database admin.
 
-1. Click on the settings tab at the top right of your instance page, then select **Collaborators** on the left sidebar. You'll see a list of current collaborators with their roles.
+1. Click on the settings tab at the top right of your database page, then select **Collaborators** on the left sidebar. You'll see a list of current collaborators with their roles.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
@@ -28,11 +28,11 @@ You need to be an instance admin.
 
 ### Manage a restricted space
 
-You need to be an instance admin.
+You need to be a database admin.
 
 To create a space:
 
-1. Click on the settings tab at the top right of your instance page, then select **Spaces** on the left sidebar, then click **Create space**.
+1. Click on the settings tab at the top right of your database page, then select **Spaces** on the left sidebar, then click **Create space**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0000.png" style="width: 90%;"/>
@@ -64,7 +64,7 @@ To add a collaborator to your space:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TT84gfGO05SZuNKx0000.png" style="width: 90%;"/>
 </div>
 
-Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple instances, if desired.
+Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple databases, if desired.
 
 (use-a-restricted-space)=
 
@@ -141,9 +141,9 @@ To add a team to a space:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DHouTU5KeskTalTv0000.png" style="width: 90%;"/>
 </div>
 
-To add a team to your instance:
+To add a team to your database:
 
-1. From the instance collaborators view click on the **Teams** tab and click **Add team**.
+1. From the database collaborators view click on the **Teams** tab and click **Add team**.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/r7KLAklCYyvxqPIe0000.png" style="width: 90%;"/>
@@ -187,15 +187,15 @@ To create a bot account:
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SWtpjE8nKGVMtZuy0001.png" style="width: 90%;"/>
 </div>
 
-To add a bot as a collaborator to an instance:
+To add a bot as a collaborator to a database:
 
-1. Go to the **People** tab of your organization page. The bot account is already listed there as a member. Click the three-dot menu next to it and select **Edit member's instances**, then select the instance you want the bot to collaborate on.
+1. Go to the **People** tab of your organization page. The bot account is already listed there as a member. Click the three-dot menu next to it and select **Manage access to databases**, then select the database you want the bot to collaborate on.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KHTjLMznPILYKLct0001.png" style="width: 90%;"/>
 </div>
 
-2. The bot account is now an instance collaborator with read access.
+2. The bot account is now a database collaborator with read access.
 
 <div align="center">
   <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f3EWFWuL7Ht1Sn7P0001.png" style="width: 90%;"/>
@@ -213,7 +213,7 @@ An `ML` and a `Curation` team collaborate across spaces to server the wider orga
 
 | Space                       | Description                                                                                                               | Access                                                                                                                            |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Default `all` space         | Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the instance. | _Every_ instance collaborator has read or higher levels of access.                                                                |
+| Default `all` space         | Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the database. | _Every_ database collaborator has read or higher levels of access.                                                                |
 | Restricted `Curation` space | Stores sensitive curated data requiring stricter access permissions.                                                      | A `"Curation Team"` has write access. A `"ML Team"` has read access. No access granted to other teams by default.                 |
 | Restricted `ML` space       | Contains machine learning models, development resources, and potentially experimental data.                               | Only `"ML Team"` has access (read/write as needed). Completely isolated from other teams & individuals unless explicitly granted. |
 
@@ -226,26 +226,26 @@ Lamin's access management is built on:
 3.  **Teams:** Groups of users. Roles and permissions can be assigned to teams like for users.
 4.  **Bot accounts:** _Bot accounts_ are bots owned by an organization — not tied to a human user. Use them for CI pipelines, automations, and agents. They authenticate with API keys.
 5.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
-6.  **Spaces:** You can divide a LaminDB instance into multiple spaces to restrict access. You can manage space collaborators in the same way as instance collaborators.
+6.  **Spaces:** You can divide a database -- a LaminDB instance -- into multiple spaces to restrict access. You can manage space collaborators in the same way as database collaborators.
 7.  **Storage locations:** Storage locations hold the files behind artifacts. There is no standalone storage role: for managed S3 locations, access is implied by a user's instance and space roles and enforced with short-lived federated AWS credentials. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
 ### Spaces
 
-Spaces allow to restrict permissions for any object in a LaminDB instance:
+Spaces allow to restrict permissions for any object in a database, i.e., a LaminDB instance:
 
-- Each space has its own set of collaborators with their roles and permissions, independent of instance-level roles.
-- Users must be both instance collaborators AND space collaborators to access resources in a space within an instance.
-- Spaces must be attached to an instance before records from that instance can be moved into the space (you need both instance and space admin permissions to attach the space to an instance). Attaching a space creates a dedicated storage location for that space in the instance.
-- Spaces are applied at the database record level and any database record can only belong to a single space. An artifact's record space and its storage location are related but distinct: the record space governs metadata access, the storage location governs file access.
+- Each space has its own set of collaborators with their roles and permissions, independent of database-level roles.
+- Users must be both database collaborators AND space collaborators to access resources in a space within a database.
+- Spaces must be attached to a database before objects from that database can be moved into the space (you need both database and space admin permissions to attach the space to a database). Attaching a space to a database `X` creates a dedicated storage location for that space, managed by database `X`.
+- Any object in LaminDB can only be in a single space. An artifact's `SQLRecord` space and its storage location are related but distinct: the record space governs metadata access, the storage location governs file access.
 
-The default space of an instance: Every instance includes a default `all` space analogous to the default `main` branch. This space holds common resources that are meant to be accessible to all instance collaborators.
+The default space of a database: Every database includes a default `all` space analogous to the default `main` branch. This space holds common resources that are meant to be accessible to all database collaborators.
 
-- **Read collaborators:** All collaborators added to an instance automatically receive read access to the default `all` space.
-- **Write collaborators:** Collaborators granted write or admin permissions to the instance automatically receive write access to the default `all` space.
+- **Read collaborators:** All collaborators added to a database automatically receive read access to the default `all` space.
+- **Write collaborators:** Collaborators granted write or admin permissions to the database automatically receive write access to the default `all` space.
 
 ### Teams
 
-Teams provide a way to manage permissions for groups of users for instances and spaces.
+Teams provide a way to manage permissions for groups of users for databases and spaces.
 Users can be collaborators either directly as individual users or through team membership.
 
 <div align="center">
@@ -254,13 +254,13 @@ Users can be collaborators either directly as individual users or through team m
 
 ### Storage locations
 
-Storage locations hold the files behind artifacts. LaminHub storage access control applies only to managed S3 locations that issue federated credentials. Access is not assigned on the storage location itself; it is derived from instance and space collaborators.
+Storage locations hold the files underlying artifacts. LaminHub storage access control applies only to managed S3 locations that issue federated credentials. Access is not assigned on the storage location itself; it is derived from database and space collaborators.
 
-- Storage in the default `all` space inherits the instance collaborator role.
-- Storage attached to a restricted space inherits the space collaborator role.
+- Storage in the default `all` space inherits the database collaborator role.
+- A storage locations that's managed by a restricted space inherits access rights from that space.
 - Public managed storage still uses the collaborator role when the caller is a collaborator. Callers who are not collaborators (including anonymous) get read access.
 
-To restrict files as well as metadata, keep artifacts in a storage location that belongs to the same restricted space. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
+To restrict files as well as metadata, keep artifacts in a storage location that belongs to the same restricted space, which is the default behavior. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
 ## Roles
 
@@ -268,35 +268,35 @@ To restrict files as well as metadata, keep artifacts in a storage location that
 
 | Role         | Description                                                                                                                                                             |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Admins**   | Manage organization members, teams, instances, spaces, and organization settings (domains/SSO). Instance/space data access still requires instance/space roles.         |
+| **Admins**   | Manage organization members, teams, databases, spaces, and organization settings (domains/SSO). Instance/space data access still requires database/space roles.         |
 | **Managers** | Same as admins, except they cannot grant/revoke the organization admin role or manage organization settings.                                                            |
-| **Members**  | Can be granted access to specific resources (teams, instances, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited. |
-| **Guests**   | Intended for external collaborators with limited access, typically restricted to specific instances or spaces they are explicitly invited to.                           |
+| **Members**  | Can be granted access to specific resources (teams, databases, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited. |
+| **Guests**   | Intended for external collaborators with limited access, typically restricted to specific databases or spaces they are explicitly invited to.                           |
 
 ### Team roles
 
 | Role        | Description                                                                                                                                                     |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Admins**  | Can add/remove team members, define member roles within the team context, and manage team resources or settings. Can typically perform any action a member can. |
-| **Members** | Can access resources granted to the team (e.g., specific instances or spaces).                                                                                  |
+| **Members** | Can access resources granted to the team (e.g., specific databases or spaces).                                                                                  |
 
 ### Instance roles
 
 | Role                    | Description                                                                                                                                                                                                       |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Admins**              | Can add/remove collaborators from the instance, define collaborator roles within the instance, and manage instance settings. For data access, automatically receive write access to the default "All" space only. |
+| **Admins**              | Can add/remove collaborators from the database, define collaborator roles within the database, and manage database settings. For data access, automatically receive write access to the default "All" space only. |
 | **Read collaborators**  | Automatically receive read access to the default "All" space only.                                                                                                                                                |
 | **Write collaborators** | Automatically receive write access to the default "All" space only.                                                                                                                                               |
 
-**Note:** Permissions for spaces other than the default "All" space must be managed separately and independently of the instance collaborator role.
+**Note:** Permissions for spaces other than the default "All" space must be managed separately and independently of the database collaborator role.
 
 ### Space roles
 
 | Role                    | Description                                                                                              |
 | ----------------------- | -------------------------------------------------------------------------------------------------------- |
 | **Admins**              | Have full control over the specific space, including managing permissions and content within that space. |
-| **Read collaborators**  | Can read data and view resources within that specific space across accessible instances.                 |
-| **Write collaborators** | Can read, add, and modify data or resources within that specific space across accessible instances.      |
+| **Read collaborators**  | Can read data and view resources within that specific space across accessible databases.                 |
+| **Write collaborators** | Can read, add, and modify data or resources within that specific space across accessible databases.      |
 
 ## How does it work?
 
@@ -306,7 +306,7 @@ However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you 
 
 Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive:
 
-- **Storage access** with federated access tokens for managed S3 locations on AWS. These tokens are short-lived and thereby minimize attack surface. The token's IAM policy is scoped to the storage locations your instance and space roles allow; see [below](#storage-permissions-federated-credentials-and-spaces). This storage access control is not enforced for unmanaged buckets, GCP, or local storage.
+- **Storage access** with federated access tokens for managed S3 locations on AWS. These tokens are short-lived and thereby minimize attack surface. The token's IAM policy is scoped to the storage locations your database and space roles allow; see [below](#storage-permissions-federated-credentials-and-spaces). This storage access control is not enforced for unmanaged buckets, GCP, or local storage.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
 
 (storage-permissions-federated-credentials-and-spaces)=
@@ -319,18 +319,18 @@ For managed S3, storage access is not a separate role. LaminHub derives it from 
 
 ### How storage inherits permissions
 
-Every storage location belongs to an instance and to a space.
+Every storage location is managed by a database and a space.
 
-| Storage location | Who receives credentials | Role used for the token |
-| ---------------- | ------------------------ | ----------------------- |
-| Default `all` space | Instance collaborators (directly or via a team) | Instance role (`read` / `write` / `admin`) |
-| Restricted space | Space collaborators (directly or via a team) | Space role (`read` / `write` / `admin`) |
-| Public managed storage, collaborator | Instance or space collaborators, as above | The collaborator role (`read` / `write` / `admin`) |
-| Public managed storage, not a collaborator | Anyone, including anonymous callers | Read |
+| Storage location                           | Who receives credentials                        | Role used for the token                            |
+| ------------------------------------------ | ----------------------------------------------- | -------------------------------------------------- |
+| Default `all` space                        | Instance collaborators (directly or via a team) | Instance role (`read` / `write` / `admin`)         |
+| Restricted space                           | Space collaborators (directly or via a team)    | Space role (`read` / `write` / `admin`)            |
+| Public managed storage, collaborator       | Instance or space collaborators, as above       | The collaborator role (`read` / `write` / `admin`) |
+| Public managed storage, not a collaborator | Anyone, including anonymous callers             | Read                                               |
 
-Public managed storage does not replace collaborator status. Collaborators still receive their instance or space role. Read access for everyone is only the fallback when the caller is not a collaborator.
+Public managed storage does not replace collaborator status. Collaborators still receive their database or space role. Read access for everyone is only the fallback when the caller is not a collaborator.
 
-Instance collaborators who are not also collaborators of a restricted private space cannot obtain credentials for that space's storage. Organization membership alone is also not enough: you need a concrete instance or space collaborator role.
+Instance collaborators who are not also collaborators of a restricted private space cannot obtain credentials for that space's storage. Organization membership alone is also not enough: you need a concrete database or space collaborator role.
 
 If several rules match the same path, LaminHub uses the longest matching storage root and the highest role (`admin` > `write` > `read`).
 
@@ -339,7 +339,7 @@ If several rules match the same path, LaminHub uses the longest matching storage
 When LaminDB reads or writes an object on a managed S3 bucket, it asks LaminHub for credentials for that path. LaminHub:
 
 1. Resolves the path to a registered storage location.
-2. Looks up your derived role for that location (instance role, space role, or public read).
+2. Looks up your derived role for that location (database role, space role, or public read).
 3. Refuses the request if you have no role and the location is not public.
 4. Otherwise returns a short-lived AWS STS token whose IAM policy is limited to that storage root.
 
@@ -361,7 +361,7 @@ space = ln.Space.get(name="Our space")
 ln.Storage(root="create-s3", space=space).save()  # new managed location for the space
 ```
 
-In the [example](#an-example) above, instance collaborators can read the default `all` space and its storage. They cannot read files in the `Curation` or `ML` storage locations unless they are also collaborators of those spaces. The `"ML Team"` can read Curation files because it has read access to the `Curation` space — its instance role alone would not be enough.
+In the [example](#an-example) above, database collaborators can read the default `all` space and its storage. They cannot read files in the `Curation` or `ML` storage locations unless they are also collaborators of those spaces. The `"ML Team"` can read Curation files because it has read access to the `Curation` space — its database role alone would not be enough.
 
 ## Low-level access management
 
@@ -369,8 +369,7 @@ While not necessary, you can still manage access on the AWS, GCP, or database le
 
 ### How to configure an AWS S3 bucket for public read access?
 
-For a public read-only instance the bucket should have certain policies configured.
-You can read about s3 bucket policies [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html). For a public read-only instance the bucket should have `s3:GetObject` and `s3:ListBucket` permissions. The example policy is given below:
+You can read about s3 bucket policies [here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html). For a public read-only database the bucket should have `s3:GetObject` and `s3:ListBucket` permissions. The example policy is given below:
 
 ```json
 {
