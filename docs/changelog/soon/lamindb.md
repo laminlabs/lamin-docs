@@ -1,3 +1,4 @@
+- :recycle: Never resolve environment modules in `dev-dir` from the home directory since an instance is always configured in a `dev-dir` [PR](https://github.com/laminlabs/lamindb-setup/pull/1411) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix profiling [PR](https://github.com/laminlabs/lamindb-setup/pull/1413) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor `--depth` param in `lamin io sync` [PR](https://github.com/laminlabs/lamindb/pull/3951) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Proper positioning of depth param in io sync [PR](https://github.com/laminlabs/lamin-cli/pull/296) [@falexwolf](https://github.com/falexwolf)
