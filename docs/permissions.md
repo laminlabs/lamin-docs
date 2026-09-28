@@ -304,7 +304,7 @@ Users sign in with a social login or with their organization's identity provider
 
 Supported sign-in methods:
 
-- Social logins, including Google and GitHub.
+- Social logins: Google, GitHub, and Azure (Microsoft). Others can be added.
 - **SAML 2.0** single sign-on for any compatible identity provider.
 - **OpenID Connect (OIDC)** and **OAuth 2.0** for any standards-compliant identity provider.
 
