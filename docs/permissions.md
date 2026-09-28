@@ -298,13 +298,43 @@ To restrict files as well as metadata, keep artifacts in a storage location that
 | **Read collaborators**  | Can read data and view resources within that specific space across accessible databases.                 |
 | **Write collaborators** | Can read, add, and modify data or resources within that specific space across accessible databases.      |
 
+## Authorization
+
+Users sign in with a social login or with their organization's identity provider, and LaminHub applies that user's organization, database, and space roles.
+
+Supported sign-in methods:
+
+- Social logins, including Google and GitHub.
+- **SAML 2.0** single sign-on for any compatible identity provider.
+- **OpenID Connect (OIDC)** and **OAuth 2.0** for any standards-compliant identity provider.
+
+The authorization flow uses [Supabase](https://supabase.com/docs/guides/auth).
+
+### SAML 2.0
+
+Configure SAML 2.0 on your identity provider (IdP) with these service provider (SP) details:
+
+| Setting                                | Value                                                                                                                            |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| SAML version                           | 2.0                                                                                                                              |
+| SSO method                             | SP-initiated SSO                                                                                                                 |
+| Assertion Consumer Service (ACS) URL   | `https://hub.lamin.ai/auth/v1/sso/saml/acs`                                                                                      |
+| Entity ID / Audience                   | `https://hub.lamin.ai/auth/v1/sso/saml/metadata`                                                                                 |
+| Required user attribute                | An attribute that contains the user's email address. The name can be `emailAddress`, `email`, or another name that carries the email value. Lamin can map it. |
+
+From your identity provider, Lamin needs:
+
+- A SAML 2.0 metadata XML file, or a SAML 2.0 metadata URL pointing to the IdP metadata XML.
+- The email domain(s) to associate with your organization's users.
+- The SAML assertion attribute name that contains the user's email address.
+
 ## How does it work?
 
 Rather than configuring storage permissions on AWS and database permissions on Postgres, LaminHub allows you to manage collaborators for databases and storage locations in a similar way to how you manage access on Notion, Google Workspace, or Microsoft SharePoint.
 
 However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you in full control of your data with direct API access to databases and storage locations on AWS.
 
-Based on an identity provider (Google, GitHub, SSO, OIDC) and a role-based permission system, LaminDB users automatically receive:
+Based on an [identity provider](#authorization) (social login, SAML, or OIDC) and a role-based permission system, LaminDB users automatically receive:
 
 - **Storage access** with federated access tokens for managed S3 locations on AWS. These tokens are short-lived and thereby minimize attack surface. The token's IAM policy is scoped to the storage locations your database and space roles allow; see [below](#storage-permissions-federated-credentials-and-spaces). This storage access control is not enforced for unmanaged buckets, GCP, or local storage.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
