@@ -6,7 +6,7 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 ### Manage database collaborators
 
-You need to be an database admin.
+You need to be a database admin.
 
 1. Click on the settings tab at the top right of your database page, then select **Collaborators** on the left sidebar. You'll see a list of current collaborators with their roles.
 
