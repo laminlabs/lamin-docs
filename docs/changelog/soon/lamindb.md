@@ -1,3 +1,4 @@
+- 💚 Fix profiling [PR](https://github.com/laminlabs/lamindb-setup/pull/1413) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Refactor `--depth` param in `lamin io sync` [PR](https://github.com/laminlabs/lamindb/pull/3951) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Proper positioning of depth param in io sync [PR](https://github.com/laminlabs/lamin-cli/pull/296) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Change the default project status to `planned` [PR](https://github.com/laminlabs/lamindb/pull/3950) [@falexwolf](https://github.com/falexwolf)
