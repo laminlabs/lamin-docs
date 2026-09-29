@@ -1,3 +1,4 @@
+- 🚸 Improve error UX in case a user does not have access to an object [PR](https://github.com/laminlabs/lamindb/pull/3954) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Add profiling task for transfer [PR](https://github.com/laminlabs/lamindb/pull/3953) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Never resolve environment modules in `dev-dir` from the home directory since an instance is always configured in a `dev-dir` [PR](https://github.com/laminlabs/lamindb-setup/pull/1411) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix profiling [PR](https://github.com/laminlabs/lamindb-setup/pull/1413) [@Koncopd](https://github.com/Koncopd)
