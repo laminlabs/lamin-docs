@@ -1,2 +1,3 @@
+- :children_crossing: Drag and drop sidebar elements into other sidebar elements [PR](https://github.com/laminlabs/laminhub-public/pull/423) [@falexwolf](https://github.com/falexwolf)
 - :bug: Keep populated artifact features in Dataset features [PR](https://github.com/laminlabs/laminhub-public/pull/422) [@chaichontat](https://github.com/chaichontat)
 - 🧹 Remove migrated status exporter [PR](https://github.com/laminlabs/laminhub-public/pull/421) [@ebadukhan](https://github.com/ebadukhan)
