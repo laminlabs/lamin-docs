@@ -157,49 +157,35 @@ To add a team to your database:
 
 ### Manage bot accounts
 
-You need to be an org admin. Access to bot accounts for other org members will be enabled soon (July 2026).
+Bot accounts are organization-owned identities for CI pipelines, automations, and agents. They authenticate with API keys and receive only the database and space permissions granted to the bot.
 
-Bot accounts allow scoping access permissions within automations, including through AI agents. They authenticate via their API keys.
+Organization admins and managers can create bot accounts. The creator automatically becomes a bot admin, and organization admins can manage every bot in their organization. Managers can see all bots in their organization, but can only manage or create API keys for bots they created or were explicitly granted access to. Other organization members only see bots they can access directly or through a team.
 
 To create a bot account:
 
-1. Go to the **Settings** tab of your organization page.
+1. Go to **Settings** > **Bot accounts** on your organization page.
+2. Click **New bot account**, enter a handle and optional name, and click **Create**.
+3. Open the three-dot menu next to the bot and select **API keys**.
+4. Click **New key**, optionally enter a description and expiration, and generate the key. Copy it immediately — the plaintext key is shown only once. A bot can have up to five API keys.
 
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/I5h08zAwEoEaomzt0002.png" style="width: 90%;"/>
-</div>
+To manage who can use and administer a bot:
 
-2. Click **+ New bot account**, enter a handle and name, and click **Create**. An API key dialog opens automatically.
+1. Open the three-dot menu next to the bot and select **Collaborators**.
+2. Add an organization member or team. New entries receive the **Collaborator** role by default.
+3. Change the role to **Admin** if the member or team should manage the bot. Guests can be collaborators but cannot become bot admins.
 
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/1uauEK7PCPLhNNYO0001.png" style="width: 90%;"/>
-</div>
+Bot collaborators can create API keys and view metadata for all of the bot's keys. They can revoke keys they created themselves. Bot admins can also edit or delete the bot, manage its collaborators, and revoke any of its API keys.
 
-3. Enter a description and expiration for the key, then click **Generate key**. Copy the key — it's shown only once.
+:::{important}
+An API key acts as the bot and receives the bot's database and space permissions. Anyone granted collaborator access can create such a key, so only grant bot access to trusted organization members or teams.
 
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/HnGsLDn5gZDB81wu0001.png" style="width: 90%;"/>
-</div>
-
-4. The bot account now appears in the list.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SWtpjE8nKGVMtZuy0001.png" style="width: 90%;"/>
-</div>
+Removing a collaborator does not revoke API keys they previously created. A bot admin must revoke those keys separately.
+:::
 
 To add a bot as a collaborator to a database:
 
-1. Go to the **People** tab of your organization page. The bot account is already listed there as a member. Click the three-dot menu next to it and select **Manage access to databases**, then select the database you want the bot to collaborate on.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/KHTjLMznPILYKLct0001.png" style="width: 90%;"/>
-</div>
-
-2. The bot account is now a database collaborator with read access.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f3EWFWuL7Ht1Sn7P0001.png" style="width: 90%;"/>
-</div>
+1. Go to the **People** tab of your organization page. The bot account is listed there as a member.
+2. Open its three-dot menu, select **Manage access to databases**, and add the database.
 
 You can also add bots as collaborators to spaces, just like you add human users as collaborators to spaces.
 
@@ -224,7 +210,7 @@ Lamin's access management is built on:
 1.  **Users:** _User accounts_ belong to human users and own resources like databases.
 2.  **Organizations:** _Organizational accounts_ can be accessed by the organization's members and own resources like user accounts.
 3.  **Teams:** Groups of users. Roles and permissions can be assigned to teams like for users.
-4.  **Bot accounts:** _Bot accounts_ are bots owned by an organization — not tied to a human user. Use them for CI pipelines, automations, and agents. They authenticate with API keys.
+4.  **Bot accounts:** _Bot accounts_ are organization-owned identities for CI pipelines, automations, and agents. Users and teams govern them through bot roles. API keys authenticate as the bot and receive the bot's database and space permissions.
 5.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
 6.  **Spaces:** You can divide a database -- a LaminDB instance -- into multiple spaces to restrict access. You can manage space collaborators in the same way as database collaborators.
 7.  **Storage locations:** Storage locations hold the files behind artifacts. There is no standalone storage role: for managed S3 locations, access is implied by a user's instance and space roles and enforced with short-lived federated AWS credentials. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
@@ -266,12 +252,12 @@ To restrict files as well as metadata, keep artifacts in a storage location that
 
 ### Organization roles
 
-| Role         | Description                                                                                                                                                             |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Admins**   | Manage organization members, teams, databases, spaces, and organization settings (domains/SSO). Instance/space data access still requires database/space roles.         |
-| **Managers** | Same as admins, except they cannot grant/revoke the organization admin role or manage organization settings.                                                            |
-| **Members**  | Can be granted access to specific resources (teams, databases, spaces) based on assignments, and manage teams and spaces they are admins of. Default access is limited. |
-| **Guests**   | Intended for external collaborators with limited access, typically restricted to specific databases or spaces they are explicitly invited to.                           |
+| Role         | Description                                                                                                                                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Admins**   | Manage organization members, teams, databases, spaces, all organization bots, and organization settings (domains/SSO). Database/space data access still requires database/space roles.                                  |
+| **Managers** | Same as admins, except they cannot grant/revoke the organization admin role, manage organization settings, or implicitly manage every bot. They can create bots and manage bots for which they have the bot admin role. |
+| **Members**  | Can be granted access to specific resources (teams, databases, spaces, and bots) based on assignments, and manage resources for which they have an admin role. Default access is limited.                               |
+| **Guests**   | Intended for external collaborators with limited access, typically restricted to explicitly assigned databases, spaces, and bots. Guests cannot administer bots.                                                        |
 
 ### Team roles
 
@@ -279,6 +265,15 @@ To restrict files as well as metadata, keep artifacts in a storage location that
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Admins**  | Can add/remove team members, define member roles within the team context, and manage team resources or settings. Can typically perform any action a member can. |
 | **Members** | Can access resources granted to the team (e.g., specific databases or spaces).                                                                                  |
+
+### Bot account roles
+
+Organization admins can manage every bot owned by their organization without an explicit bot role. Other users can receive bot access directly or through a team.
+
+| Role              | Description                                                                                                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Admins**        | Can edit or delete the bot, manage its collaborators, create API keys, view API-key metadata, and revoke any API key. Guests cannot receive this role.                           |
+| **Collaborators** | Can access the bot, create API keys, view API-key metadata, and revoke API keys they created while they still have bot access. They cannot edit the bot or manage collaborators. |
 
 ### Instance roles
 
@@ -314,13 +309,13 @@ The authorization flow uses [Supabase](https://supabase.com/docs/guides/auth).
 
 Configure SAML 2.0 on your identity provider (IdP) with these service provider (SP) details:
 
-| Setting                                | Value                                                                                                                            |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| SAML version                           | 2.0                                                                                                                              |
-| SSO method                             | SP-initiated SSO                                                                                                                 |
-| Assertion Consumer Service (ACS) URL   | `https://hub.lamin.ai/auth/v1/sso/saml/acs`                                                                                      |
-| Entity ID / Audience                   | `https://hub.lamin.ai/auth/v1/sso/saml/metadata`                                                                                 |
-| Required user attribute                | An attribute that contains the user's email address. The name can be `emailAddress`, `email`, or another name that carries the email value. Lamin can map it. |
+| Setting                              | Value                                                                                                                                                         |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| SAML version                         | 2.0                                                                                                                                                           |
+| SSO method                           | SP-initiated SSO                                                                                                                                              |
+| Assertion Consumer Service (ACS) URL | `https://hub.lamin.ai/auth/v1/sso/saml/acs`                                                                                                                   |
+| Entity ID / Audience                 | `https://hub.lamin.ai/auth/v1/sso/saml/metadata`                                                                                                              |
+| Required user attribute              | An attribute that contains the user's email address. The name can be `emailAddress`, `email`, or another name that carries the email value. Lamin can map it. |
 
 From your identity provider, Lamin needs:
 
