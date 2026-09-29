@@ -1,3 +1,4 @@
+- 🚸 Enable multiple development directories per database in a compute environment [PR](https://github.com/laminlabs/lamin-cli/pull/298) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Avoid querying default instance for `branch` on `Registry.connect()` [PR](https://github.com/laminlabs/lamindb/pull/3952) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Improve error UX in case a user does not have access to an object [PR](https://github.com/laminlabs/lamindb/pull/3954) [@falexwolf](https://github.com/falexwolf)
 - 🍱 Add profiling task for transfer [PR](https://github.com/laminlabs/lamindb/pull/3953) [@falexwolf](https://github.com/falexwolf)
