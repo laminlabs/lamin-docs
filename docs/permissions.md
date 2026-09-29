@@ -168,11 +168,19 @@ To create a bot account:
 3. Open the three-dot menu next to the bot and select **API keys**.
 4. Click **New key**, optionally enter a description and expiration, and generate the key. Copy it immediately — the plaintext key is shown only once. A bot can have up to five API keys.
 
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/I5h08zAwEoEaomzt0003.png" style="width: 90%;"/>
+</div>
+
 To manage who can use and administer a bot:
 
 1. Open the three-dot menu next to the bot and select **Collaborators**.
 2. Add an organization member or team. New entries receive the **Collaborator** role by default.
 3. Change the role to **Admin** if the member or team should manage the bot. Guests can be collaborators but cannot become bot admins.
+
+<div align="center">
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XFEYgLxvS0VKNKL50000.png" style="width: 90%;"/>
+</div>
 
 Bot collaborators can create API keys and view metadata for all of the bot's keys. They can revoke keys they created themselves. Bot admins can also edit or delete the bot, manage its collaborators, and revoke any of its API keys.
 
