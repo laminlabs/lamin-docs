@@ -12,8 +12,8 @@ If you don't have a LaminDB instance, create one using the shell:
 
 <!-- #skip_laminr -->
 
-```python
-!lamin init --storage ./lamindb-tutorial --modules bionty
+```bash
+lamin init --modules bionty
 ```
 
 <!-- #end_skip_laminr -->
