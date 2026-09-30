@@ -30,7 +30,7 @@ If you register a LaminDB instance on LaminHub, storage locations (AWS S3 or GCP
 
 All cloud data in LaminDB instances is hosted in your or our AWS S3 and GCP buckets, which are decoupled from VPCs. Metadata is hosted in dedicated Postgres servers with automated access management.
 
-- On the **Team plan**, distributed Postgres server endpoints, by default, are accessible from any IP on the public internet while being protected through vulnerability scans. You can opt to only allow access from specific whitelisted IP addresses.
+- On the **Team plan**, distributed Postgres server endpoints, by default, are accessible from any IP on the public internet while being protected through vulnerability scans. Access from suspicious IP addresses is immediately black-listed. You can opt to only allow access from specific whitelisted IP addresses.
 - On the **Enterprise plan**, Postgres servers can be deployed in your VPC in your AWS account.
 
 On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes access management more intuitive ({doc}`permissions`).
