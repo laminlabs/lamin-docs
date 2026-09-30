@@ -1,3 +1,4 @@
+- 💚 Fix docs build [PR](https://github.com/laminlabs/bionty/pull/387) [@falexwolf](https://github.com/falexwolf)
 - :memo: Clean up docs [PR](https://github.com/laminlabs/bionty/pull/386) [@falexwolf](https://github.com/falexwolf)
 - 📝 Manage entity guides as markdown files [PR](https://github.com/laminlabs/bionty/pull/385) [@falexwolf](https://github.com/falexwolf)
 - 👷 Resolve docs warnings [PR](https://github.com/laminlabs/bionty/pull/384) [@falexwolf](https://github.com/falexwolf)
