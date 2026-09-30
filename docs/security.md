@@ -47,7 +47,7 @@ We have automated monitoring test applications that continuously check for netwo
 
 We use HTTPS for secure connections. We force HTTPS for all services using TLS (SSL), including our public website and the Dashboard to ensure secure connections.
 
-All Lamin-hosted user data is encrypted in transit and at rest.
+All data in Lamin-managed deployments is encrypted in transit and at rest.
 
 Internal code reviews are performed using a modern, PR-based development workflow on Github. Production deployments are gated on successful reviews and isolated test suites running in local environments for unit tests and staging environments for integration tests.
 
