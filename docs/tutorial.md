@@ -8,12 +8,12 @@ This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#qu
 
 ## Track changes
 
-If you don't have a LaminDB instance, create one using the shell:
+If you don't have a LaminDB instance, create one in your current working directory on the terminal:
 
 <!-- #skip_laminr -->
 
-```python
-!lamin init --storage ./lamindb-tutorial --modules bionty
+```bash
+lamin init --modules bionty
 ```
 
 <!-- #end_skip_laminr -->
@@ -814,11 +814,11 @@ Because `AnnData` separates the high-dimensional count matrix that's typically i
 If you want to find a dataset by whether it measured `CD8A`, you can do so as as follows.
 
 ```python
-# query for all feature sets that contain CD8A
-feature_sets = ln.Schema.filter(genes__symbol="CD8A").all()
+# query for all schemas that contain CD8A
+schemas = ln.Schema.filter(genes__symbol="CD8A").all()
 
 # query for all artifacts linked to these feature sets
-ln.Artifact.filter(feature_sets__in=feature_sets).to_dataframe()
+ln.Artifact.filter(schemas__in=schemas).to_dataframe()
 ```
 
 ## Manage collections of datasets
