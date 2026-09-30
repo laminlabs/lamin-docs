@@ -1,3 +1,4 @@
+- 🏗️ Vendor the lamindb skill inside repo, archive `lamin-skills` submodule [PR](https://github.com/laminlabs/lamindb/pull/3956) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable multiple development directories per database in a compute environment [PR](https://github.com/laminlabs/lamindb/pull/3955) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable multiple development directories per database in a compute environment [PR](https://github.com/laminlabs/lamindb-setup/pull/1414) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable multiple development directories per database in a compute environment [PR](https://github.com/laminlabs/lamin-cli/pull/298) [@falexwolf](https://github.com/falexwolf)
