@@ -1,3 +1,4 @@
+- 💄 Rename the People tab to Users [PR](https://github.com/laminlabs/laminhub-public/pull/426) [@falexwolf](https://github.com/falexwolf)
 - ✨ Enable fine-grained access management to bots [PR](https://github.com/laminlabs/laminhub-public/pull/425) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Display more metadata on the project page [PR](https://github.com/laminlabs/laminhub-public/pull/424) [@chaichontat](https://github.com/chaichontat)
 - :children_crossing: Drag and drop sidebar elements into other sidebar elements [PR](https://github.com/laminlabs/laminhub-public/pull/423) [@falexwolf](https://github.com/falexwolf)
