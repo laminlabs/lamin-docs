@@ -8,7 +8,7 @@ This tutorial complements the [quickstart](https://docs.lamin.ai/introduction#qu
 
 ## Track changes
 
-If you don't have a LaminDB instance, create one using the shell:
+If you don't have a LaminDB instance, create one in your current working directory on the terminal:
 
 <!-- #skip_laminr -->
 
