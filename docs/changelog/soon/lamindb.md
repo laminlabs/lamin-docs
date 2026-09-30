@@ -1,3 +1,4 @@
+- 🔥 Integrate `nbproject` into `integrations.jupyter` [PR](https://github.com/laminlabs/lamindb/pull/3957) [@falexwolf](https://github.com/falexwolf)
 - 🔥 Remove the `nbproject` dependency [PR](https://github.com/laminlabs/lamin-cli/pull/299) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Vendor the lamindb skill inside repo, archive `lamin-skills` submodule [PR](https://github.com/laminlabs/lamindb/pull/3956) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Enable multiple development directories per database in a compute environment [PR](https://github.com/laminlabs/lamindb/pull/3955) [@falexwolf](https://github.com/falexwolf)
