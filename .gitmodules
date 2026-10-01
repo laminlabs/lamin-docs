@@ -25,3 +25,9 @@
 [submodule "sub/laminr"]
 	path = sub/laminr
 	url = https://github.com/laminlabs/laminr
+[submodule "sub/lamindb"]
+	path = sub/lamindb
+	url = https://github.com/laminlabs/lamindb
+[submodule "sub/lamin-agents"]
+	path = sub/lamin-agents
+	url = https://github.com/laminlabs/lamin-agents
