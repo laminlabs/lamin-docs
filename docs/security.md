@@ -12,29 +12,6 @@ See our [status page](https://status.lamin.ai) for service health and availabili
 
 ```
 
-## Data exposure
-
-### LaminDB
-
-LaminDB is open-source software that operates inside your infrastructure and is subject to your security measures.
-
-Lamin obtains no access to your data when you use LaminDB.
-
-### LaminHub Basic
-
-Signing up on LaminHub uses an auth flow from an identity provider, storing user handle & email address. See our [privacy policy](https://legal.lamin.ai/privacy-policy).
-
-If you register a LaminDB instance on LaminHub, storage locations (AWS S3 or GCP bucket names) are stored. Lamin isn't able to access your data and you won't be able to see your data on LaminHub.
-
-### LaminHub Team & Enterprise
-
-All cloud data in LaminDB instances is hosted in your or our AWS S3 and GCP buckets, which are decoupled from VPCs. Metadata is hosted in dedicated Postgres servers with automated access management.
-
-- On the **Team plan**, distributed Postgres server endpoints, by default, are accessible from any IP on the public internet while being protected through vulnerability scans. Access from suspicious IP addresses is immediately black-listed. You can opt to only allow access from specific whitelisted IP addresses.
-- On the **Enterprise plan**, Postgres servers can be deployed in your VPC in your AWS account.
-
-On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes access management more intuitive ({doc}`permissions`).
-
 ## Security at Lamin
 
 ### Application security
