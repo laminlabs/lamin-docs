@@ -6,7 +6,7 @@
 
 Please see our [Trust Center](https://trust.lamin.ai) for the [SOC 2 report](https://trust.lamin.ai/compliance), [security policies](https://trust.lamin.ai/resources), controls & subprocessors.
 
-We've completed a SOC 2 Type II audit and monitor compliance with HIPAA and ISO 27001.
+We're SOC2 certified and monitor compliance with HIPAA and ISO 27001.
 
 See our [status page](https://status.lamin.ai) for service health and availability.
 
