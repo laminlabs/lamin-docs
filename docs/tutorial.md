@@ -877,5 +877,3 @@ for batch in data_loader:
 <!-- #endregion -->
 
 For more: {doc}`/arrays`
-
-Or this [blog post](https://lamin.ai/blog/arrayloader-benchmarks) for training models on distributed datasets.
