@@ -4,34 +4,13 @@
 
 <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/jo0O8ip85njL4wYj0000.png" width=100 style="background: transparent; margin-right: 5em;" align="right">
 
-Please see our [Trust Center](https://trust.lamin.ai) for controls & subprocessors.
+Please see our [Trust Center](https://trust.lamin.ai) for the [SOC 2 report](https://trust.lamin.ai/compliance), [security policies](https://trust.lamin.ai/resources), controls & subprocessors.
 
 We're SOC2 certified and monitor compliance with HIPAA and ISO 27001.
 
+See our [status page](https://status.lamin.ai) for service health and availability.
+
 ```
-
-## Data exposure
-
-### LaminDB
-
-LaminDB is open-source software that operates inside your infrastructure and is subject to your security measures.
-
-Lamin obtains no access to your data when you use LaminDB.
-
-### LaminHub Basic
-
-Signing up on LaminHub uses an auth flow from an identity provider, storing user handle & email address. See our [privacy policy](https://lamin.ai/legal/privacy-policy).
-
-If you register a LaminDB instance on LaminHub, storage locations (AWS S3 or GCP bucket names) are stored. Lamin isn't able to access your data and you won't be able to see your data on LaminHub.
-
-### LaminHub Team & Enterprise
-
-All cloud data in LaminDB instances is hosted in your or our AWS S3 and GCP buckets, which are decoupled from VPCs. Metadata is hosted in dedicated Postgres servers with automated access management.
-
-- On the **Team plan**, distributed Postgres server endpoints, by default, are accessible from any IP on the public internet while being protected through vulnerability scans. Access from suspicious IP addresses is immediately black-listed. You can opt to only allow access from specific whitelisted IP addresses.
-- On the **Enterprise plan**, Postgres servers can be deployed in your VPC in your AWS account.
-
-On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes access management more intuitive ({doc}`access`).
 
 ## Security at Lamin
 
@@ -39,15 +18,15 @@ On the Team & Enterprise plans, LaminHub provides a layer for AWS that makes acc
 
 AppSec is the practice of building software that is secure by design, secured during development, secured with testing and review, and deployed securely.
 
-We build our software on distributed infrastructure in which client data is decoupled across databases, storage locations, data centers and networks. LaminHub's data backends are deployed in a fully automated way in the distributed networks & data centers that host databases. With this, the attack surface of any single customer on the Team & Enterprise plans is equivalent to self-hosted infrastructure on AWS or GCP.
+We build our software on distributed infrastructure in which client data is decoupled across databases, storage locations, data centers and networks. LaminHub's data backends are deployed in a fully automated way in the distributed networks & data centers that host databases.
 
-We have automated monitoring test applications that continuously check for networks & errors using observability providers: Sentry, AWS Inspector, Vanta, Supabase & Cloudflare.
+We have automated monitoring test applications that continuously check for networks & errors using observability providers: Sentry, AWS Inspector, Sprinto, Supabase & Cloudflare.
 
 We use HTTPS for secure connections. We force HTTPS for all services using TLS (SSL), including our public website and the Dashboard to ensure secure connections.
 
-All user data is encrypted in transit and at rest.
+All data in Lamin-managed deployments is encrypted in transit and at rest.
 
-Internal code reviews are performed using a modern, PR-based development workflow on Github. Production deployments are gated successful reviews and isolated test suites running in local environments for unit tests and staging environments for integration tests.
+Internal code reviews are performed using a modern, PR-based development workflow on Github. Production deployments are gated on successful reviews and isolated test suites running in local environments for unit tests and staging environments for integration tests.
 
 ### Corporate security
 
@@ -74,4 +53,28 @@ Some Lamin resources are intentionally public. Reports that rely only on the fol
 
 ### Data privacy
 
-Lamin will never access or use your source code or data.
+Lamin does not use your source code or data for its own purposes. Access for customer-requested support is limited to designated platform administrators. Lamin staff do not use customer data with consumer AI applications or unapproved browser extensions.
+
+## Frequently asked questions
+
+### Is SSO included, and can we use Microsoft Entra ID?
+
+SSO is included in Team and Enterprise plans and configured during onboarding. Microsoft Entra ID (Azure) sign-in is also supported through OAuth, separately from organization SSO. Users do not need a separate Lamin password; password and MFA policies are managed by the identity provider.
+
+### Which logs can we review and export?
+
+Database writes, permission changes, REST requests, MCP tool calls, and configured S3 activity are covered. Views beyond database writes are currently in **Preview**. See {doc}`audit-log` for coverage, access, and exports.
+
+### Can we control access for AI agents?
+
+Bot accounts let you limit an agent's access to specific databases and spaces. You control which AI tools your users and agents use. See {doc}`permissions`.
+
+### How are backups and recovery handled?
+
+Lamin-managed AWS PostgreSQL deployments use automated backups. Retention and recovery arrangements depend on the deployment. For infrastructure you operate, your team manages backups and recovery. Our [security policies](https://trust.lamin.ai/resources) cover business continuity and disaster recovery.
+
+### Do you provide an uptime SLA?
+
+Uptime and support commitments are defined in your customer agreement. See our [status page](https://status.lamin.ai) for service health and availability.
+
+For security questionnaires or deployment reviews, contact [security@lamin.ai](mailto:security@lamin.ai).
