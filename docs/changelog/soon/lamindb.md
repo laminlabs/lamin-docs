@@ -1,3 +1,4 @@
+- 🚸 Better logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1415) [@falexwolf](https://github.com/falexwolf)
 - :construction_worker: Deal with deprecated modules in test coverage compute [PR](https://github.com/laminlabs/lamindb/pull/3887) [@ishitamjain](https://github.com/ishitamjain)
 - ✅ Fill in some trivial tests [PR](https://github.com/laminlabs/lamindb/pull/3958) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Use `get_instance_db_user` to get db user data for instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1412) [@Koncopd](https://github.com/Koncopd)
