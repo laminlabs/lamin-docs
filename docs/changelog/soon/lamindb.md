@@ -1,0 +1,1 @@
+- ♻️ Use `get_instance_db_user` to get db user data for instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1412) [@Koncopd](https://github.com/Koncopd)
