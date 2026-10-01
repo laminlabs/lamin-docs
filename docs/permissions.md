@@ -157,7 +157,7 @@ To add a team to your database:
 
 ### Manage bot accounts
 
-Bot accounts are organization-owned identities for CI pipelines, automations, and agents. They authenticate with API keys and receive only the database and space permissions granted to the bot.
+Bot accounts bundle access permissions for a particular bot, agent, or service. By making a bot a collaborator on a database or space, you grant it access in the same way as a user or team. Unlike teams, bots authenticate with their own API keys; like teams, they are managed by users. Bots are useful for limiting the resources available to automations and agents.
 
 Organization admins and managers can create bot accounts. The creator automatically becomes a bot admin, and organization admins can manage every bot in their organization. Managers can see all bots in their organization, but can only manage or create API keys for bots they created or were explicitly granted access to. Other organization members only see bots they can access directly or through a team.
 
@@ -169,7 +169,7 @@ To create a bot account:
 4. Click **New key**, optionally enter a description and expiration, and generate the key. Copy it immediately — the plaintext key is shown only once. A bot can have up to five API keys.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/I5h08zAwEoEaomzt0003.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/6FU2mlaahd08rx610000.png" style="width: 90%;"/>
 </div>
 
 To manage who can use and administer a bot:
@@ -177,10 +177,6 @@ To manage who can use and administer a bot:
 1. Open the three-dot menu next to the bot and select **Collaborators**.
 2. Add an organization member or team. New entries receive the **Collaborator** role by default.
 3. Change the role to **Admin** if the member or team should manage the bot. Guests can be collaborators but cannot become bot admins.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XFEYgLxvS0VKNKL50000.png" style="width: 90%;"/>
-</div>
 
 Bot collaborators can create API keys and view metadata for all of the bot's keys. They can revoke keys they created themselves. Bot admins can also edit or delete the bot, manage its collaborators, and revoke any of its API keys.
 
@@ -218,7 +214,7 @@ Lamin's access management is built on:
 1.  **Users:** _User accounts_ belong to human users and own resources like databases.
 2.  **Organizations:** _Organizational accounts_ can be accessed by the organization's members and own resources like user accounts.
 3.  **Teams:** Groups of users. Roles and permissions can be assigned to teams like for users.
-4.  **Bot accounts:** _Bot accounts_ are organization-owned identities for CI pipelines, automations, and agents. Users and teams govern them through bot roles. API keys authenticate as the bot and receive the bot's database and space permissions.
+4.  **Bot accounts:** _Bot accounts_ bundle permissions for organization-owned bots, agents, and services. Users and teams govern them through bot roles. API keys authenticate as the bot and receive the bot's database and space permissions.
 5.  **Databases:** LaminDB instances are SQLite or Postgres databases operated through LaminDB.
 6.  **Spaces:** You can divide a database -- a LaminDB instance -- into multiple spaces to restrict access. You can manage space collaborators in the same way as database collaborators.
 7.  **Storage locations:** Storage locations hold the files behind artifacts. There is no standalone storage role: for managed S3 locations, access is implied by a user's instance and space roles and enforced with short-lived federated AWS credentials. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
