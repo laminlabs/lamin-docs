@@ -18,9 +18,9 @@ You need to be a database admin.
 3. Change a direct collaborator's role in the **Role** column. To remove them, open the three-dot menu and select **Remove collaborator**.
 4. Select **Collaborators** > **Teams** to grant access to a team.
 
-### Manage a restricted space
+### Manage space collaborators
 
-Spaces belong to an organization and can be attached to multiple databases.
+Spaces allow restricting access to the objects inside it to a small set of collaborators.
 
 To create a space, open the **Spaces** tab of your organization and click **Create space**.
 
@@ -39,11 +39,11 @@ To add a collaborator to your space:
 2. Click **Add collaborator** and select a user or team.
 3. Change the access role if you want the collaborator to have more than read access.
 
-To attach a space to a database, open the database's **Settings** > **Spaces** page and click **Attach space**. You need admin permissions for both the database and the space.
+To use a space in a database, open the database's **Settings** > **Spaces** page and click **Attach space**. You need admin permissions for both the database and the space.
 
 (use-a-restricted-space)=
 
-### Use a restricted space
+### Move objects into a space
 
 To upload an artifact to a restricted {class}`~lamindb.Space`, pass a space name to `--space` in `lamin save`:
 
@@ -126,17 +126,17 @@ To add a bot as a collaborator to a database:
 
 You can also add bots as collaborators to spaces, just like you add human users as collaborators to spaces.
 
-## An example
+## An examplary use case
 
-An `ML` and a `Curation` team collaborate across spaces to serve the wider organization:
+An `ml-team` and a `curation-team` collaborate across spaces to serve the wider organization:
 
-| Space                       | Description                                                                                                               | Access                                                                                                                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Default `all` space         | Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the database. | _Every_ database collaborator has read or higher levels of access.                                                                |
-| Restricted `Curation` space | Stores sensitive curated data requiring stricter access permissions.                                                      | A `"Curation Team"` has write access. A `"ML Team"` has read access. No access granted to other teams by default.                 |
-| Restricted `ML` space       | Contains machine learning models, development resources, and potentially experimental data.                               | Only `"ML Team"` has access (read/write as needed). Completely isolated from other teams & individuals unless explicitly granted. |
+| Space                       | Description                                                                                                               | Access                                                                                                                          |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| Default `all` space         | Contains common assets like ontologies, tutorials, and non-sensitive datasets accessible to everyone within the database. | _Every_ database collaborator has read or higher levels of access.                                                              |
+| Restricted `curation` space | Stores sensitive curated data requiring stricter access permissions.                                                      | A `curation-team` has write access. A `ml-team` has read access. No access granted to other teams by default.                   |
+| Restricted `ml` space       | Contains machine learning models, development resources, and potentially experimental data.                               | Only `ml-team` has access (read/write as needed). Completely isolated from other teams & individuals unless explicitly granted. |
 
-## Definitions
+## Concepts
 
 Lamin's access management is built on:
 
@@ -252,6 +252,8 @@ From your identity provider, Lamin needs:
 - The email domain(s) to associate with your organization's users.
 - The SAML assertion attribute name that contains the user's email address.
 
+(storage-permissions-federated-credentials-and-spaces)=
+
 ## How does it work?
 
 Rather than configuring storage permissions on AWS and database permissions on Postgres, LaminHub allows you to manage collaborators for databases and storage locations in a similar way to how you manage access on Notion, Google Workspace, or Microsoft SharePoint.
@@ -263,15 +265,11 @@ Based on an [identity provider](#authorization) (social login, SAML, or OIDC) an
 - **Storage access** with federated access tokens for managed S3 locations on AWS. These tokens are short-lived and thereby minimize attack surface. The token's IAM policy is scoped to the storage locations your database and space roles allow; see [below](#storage-permissions-federated-credentials-and-spaces). This storage access control is not enforced for unmanaged buckets, GCP, or local storage.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
 
-(storage-permissions-federated-credentials-and-spaces)=
-
-## Storage permissions, federated credentials, and spaces
-
-This storage access control is enforced only for **managed S3** locations that use federated AWS credentials. Unmanaged S3 buckets, GCP, and local storage are not gated this way: callers use whatever credentials or filesystem access they already have.
+Storage access control is enforced only for **managed S3 buckets** that use federated AWS credentials. Unmanaged S3 buckets, GCP, and local storage are not gated this way: callers use whatever credentials or filesystem access they already have.
 
 For managed S3, storage access is not a separate role. LaminHub derives it from instance and space collaborators, then issues short-lived federated AWS credentials scoped to the storage locations you can access.
 
-### How storage inherits permissions
+### How storage locations inherit permissions
 
 Every storage location is managed by a database and a space.
 
@@ -303,9 +301,9 @@ You do not configure these policies yourself. Connect the bucket from the **Infr
 
 To request credentials without the Python client, see [Get S3 credentials](hub/authentication.md#3-get-s3-credentials).
 
-### Keeping artifact files inside a restricted space
+### Keeping artifacts inside a restricted space
 
-A record's space and its storage location are related but distinct. Spaces restrict metadata in the database; managed S3 storage locations restrict the files through federated credentials.
+The SQLrecord's space of the artifact and its storage location are related but distinct. Spaces restrict metadata in the database; managed S3 storage locations restrict the files through federated credentials consistent with spaces.
 
 - Saving an artifact into a restricted space automatically uses a storage location that belongs to that space, so on managed S3 the file lands under a prefix that only space collaborators can access.
 - A space can be attached to many storage locations. Create another managed location with:
