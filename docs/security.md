@@ -75,6 +75,6 @@ Lamin-managed AWS PostgreSQL deployments use automated backups. Retention and re
 
 ### Do you provide an uptime SLA?
 
-Uptime and support commitments are defined in your customer agreement.
+Uptime and support commitments are defined in your customer agreement. See our [status page](https://status.lamin.ai) for service health and availability.
 
 For security questionnaires or deployment reviews, contact [security@lamin.ai](mailto:security@lamin.ai).
