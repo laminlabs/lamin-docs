@@ -8,63 +8,38 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 You need to be a database admin.
 
-1. Click on the settings tab at the top right of your database page, then select **Collaborators** on the left sidebar. You'll see a list of current collaborators with their roles.
+1. Open the **Settings** tab of your database, then select **Collaborators** > **Users**. You'll see the current collaborators, their roles, and access inherited through teams and spaces.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/hvTqUkerySsS9gN30000.png" style="width: 90%;"/>
 </div>
 
-2. Click **Add collaborator**, enter user handle and click **Save**.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9n4SBjsaCLagDapV0000.png" style="width: 90%;"/>
-</div>
-
-3. To remove a collaborator, click the three-dot menu next to their name and select **Remove collaborator**.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/VNZWgVPOT8urR1uv0000.png" style="width: 90%;"/>
-</div>
+2. Click **Add collaborator** to add an organization user, or **Add external guest** to invite an external user.
+3. Change a direct collaborator's role in the **Role** column. To remove them, open the three-dot menu and select **Remove collaborator**.
+4. Select **Collaborators** > **Teams** to grant access to a team.
 
 ### Manage a restricted space
 
-You need to be a database admin.
+Spaces belong to an organization and can be attached to multiple databases.
 
-To create a space:
-
-1. Click on the settings tab at the top right of your database page, then select **Spaces** on the left sidebar, then click **Create space**.
+To create a space, open the **Spaces** tab of your organization and click **Create space**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0000.png" style="width: 90%;"/>
-</div>
-
-2. Enter a name for your space and click **Save**.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TIlmKtBG63dse3sb0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0001.png" style="width: 90%;"/>
 </div>
 
 To add a collaborator to your space:
 
-1. Click the three-dot menu next to the space and select **Manage collaborators**.
+1. Open the collaborator list for the space and click **Manage collaborators**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/AJjcfgITI4YXWmOF0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/AJjcfgITI4YXWmOF0001.png" style="width: 90%;"/>
 </div>
 
 2. Click **Add collaborator** and select a user or team.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/60OjDFhxOmQqKWN30000.png" style="width: 60%;"/>
-</div>
-
 3. Change the access role if you want the collaborator to have more than read access.
 
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/TT84gfGO05SZuNKx0000.png" style="width: 90%;"/>
-</div>
-
-Note that you can also manage spaces from the **Spaces** tab of your **Organization** tab and attach spaces to multiple databases, if desired.
+To attach a space to a database, open the database's **Settings** > **Spaces** page and click **Attach space**. You need admin permissions for both the database and the space.
 
 (use-a-restricted-space)=
 
@@ -99,61 +74,19 @@ record.space = space
 record.save()  # saved in space "Our space"
 ```
 
-Artifacts saved into a restricted space are stored in a storage location that belongs to that space. Instance collaborators who are not space collaborators cannot obtain credentials for those files. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
+Artifacts saved into a restricted space are stored in a storage location that belongs to that space. Database collaborators who are not space collaborators cannot obtain credentials for those files. See [Storage permissions, federated credentials, and spaces](#storage-permissions-federated-credentials-and-spaces).
 
 ### Manage teams
 
 Teams allow you to manage permissions for groups of users collectively, making it easier to handle access for departments or project groups.
 
-To create a team:
-
-1. Go to **Teams** tab of your organization page, and click **Create team**.
+Go to the **Teams** tab of your organization page. The table shows each team's members and its database and space access.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SSdvjNqXhBqf0F2f0000.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/SSdvjNqXhBqf0F2f0001.png" style="width: 90%;"/>
 </div>
 
-2. Enter a team name and click **Save**.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/9qNxlJmAjvf8DYPH0000.png" style="width: 90%;"/>
-</div>
-
-To add members to your team:
-
-1. Click the three-dot menu next to the team and select **Manage members**.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/XRW2QhHPDnJvgpGS0000.png" style="width: 90%;"/>
-</div>
-
-2. Click **Add member** and select a user.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/ZOKcBJniLj8DG7cD0000.png" style="width: 90%;"/>
-</div>
-
-To add a team to a space:
-
-1. From the space collaborators view, click **Add collaborator** and select a team.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/DHouTU5KeskTalTv0000.png" style="width: 90%;"/>
-</div>
-
-To add a team to your database:
-
-1. From the database collaborators view click on the **Teams** tab and click **Add team**.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/r7KLAklCYyvxqPIe0000.png" style="width: 90%;"/>
-</div>
-
-2. Select a team.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/FVqQysRswPvDm0hX0000.png" style="width: 90%;"/>
-</div>
+To create a team, click **Create team**, enter a name, and save it. Use the **Members** column to manage team members. Use the **Databases** and **Spaces** columns to review and manage the resources the team can access. Team members inherit the permissions granted to the team.
 
 ### Manage bot accounts
 
@@ -188,18 +121,14 @@ Removing a collaborator does not revoke API keys they previously created. A bot 
 
 To add a bot as a collaborator to a database:
 
-1. Go to the **People** tab of your organization page. The bot account is listed there as a member.
+1. Go to the **Users** tab of your organization page. The bot account is listed there as a member.
 2. Open its three-dot menu, select **Manage access to databases**, and add the database.
 
 You can also add bots as collaborators to spaces, just like you add human users as collaborators to spaces.
 
 ## An example
 
-An `ML` and a `Curation` team collaborate across spaces to server the wider organization:
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/rbMZRx714tQe4kZQ0000.png" style="width: 90%;"/>
-</div>
+An `ML` and a `Curation` team collaborate across spaces to serve the wider organization:
 
 | Space                       | Description                                                                                                               | Access                                                                                                                            |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -237,10 +166,6 @@ The default space of a database: Every database includes a default `all` space a
 
 Teams provide a way to manage permissions for groups of users for databases and spaces.
 Users can be collaborators either directly as individual users or through team membership.
-
-<div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/61iaMcMV4NtDxFnb0000.png" style="width: 70%;"/>
-</div>
 
 ### Storage locations
 
