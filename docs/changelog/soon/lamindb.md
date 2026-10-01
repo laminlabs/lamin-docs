@@ -1,1 +1,2 @@
+- ✅ Fill in some trivial tests [PR](https://github.com/laminlabs/lamindb/pull/3958) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Use `get_instance_db_user` to get db user data for instance [PR](https://github.com/laminlabs/lamindb-setup/pull/1412) [@Koncopd](https://github.com/Koncopd)
