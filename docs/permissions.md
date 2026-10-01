@@ -8,10 +8,10 @@ Lamin allows you and your users to manage access similar to how you'd do it on G
 
 You need to be a database admin.
 
-1. Open the **Settings** tab of your database, then select **Collaborators** > **People**. You'll see the current collaborators, their roles, and access inherited through teams and spaces.
+1. Open the **Settings** tab of your database, then select **Collaborators** > **Users**. You'll see the current collaborators, their roles, and access inherited through teams and spaces.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/YoauPk6fyoedPfeY0001.png" style="width: 90%;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/hvTqUkerySsS9gN30000.png" style="width: 90%;"/>
 </div>
 
 2. Click **Add collaborator** to add an organization user, or **Add external guest** to invite an external user.
@@ -121,7 +121,7 @@ Removing a collaborator does not revoke API keys they previously created. A bot 
 
 To add a bot as a collaborator to a database:
 
-1. Go to the **People** tab of your organization page. The bot account is listed there as a member.
+1. Go to the **Users** tab of your organization page. The bot account is listed there as a member.
 2. Open its three-dot menu, select **Manage access to databases**, and add the database.
 
 You can also add bots as collaborators to spaces, just like you add human users as collaborators to spaces.
