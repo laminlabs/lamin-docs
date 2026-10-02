@@ -1,3 +1,4 @@
+- 🏗️ Remove dependency on `lamin-utils` [PR](https://github.com/laminlabs/lamin-cli/pull/305) [@falexwolf](https://github.com/falexwolf)
 - 👷 Deploy with Cloudflare instead of Netlify [PR](https://github.com/laminlabs/lamindb-setup/pull/1418) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ From archived `lamin_utils`, integrate `logger` at the API root and `base62` and `colors` within the `core` module [PR](https://github.com/laminlabs/lamindb-setup/pull/1417) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Avoid accidental data transfer via the `using` argument [PR](https://github.com/laminlabs/lamindb/pull/3960) [@AllaVinner](https://github.com/AllaVinner)
