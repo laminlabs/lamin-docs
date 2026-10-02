@@ -1,3 +1,4 @@
+- 🚸 Avoid accidental data transfer via the `using` argument [PR](https://github.com/laminlabs/lamindb/pull/3960) [@AllaVinner](https://github.com/AllaVinner)
 - ✨ Run scripts & executables via `lamin run --where` [PR](https://github.com/laminlabs/lamindb/pull/3963) [@falexwolf](https://github.com/falexwolf)
 - ✨ Run scripts & executables via `lamin run --where` [PR](https://github.com/laminlabs/lamin-cli/pull/303) [@falexwolf](https://github.com/falexwolf)
 - 📝 Refine the library skill [PR](https://github.com/laminlabs/lamindb/pull/3962) [@falexwolf](https://github.com/falexwolf)
