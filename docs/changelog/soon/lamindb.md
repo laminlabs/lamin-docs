@@ -1,3 +1,4 @@
+- :recycle: Refactor Notion sync [PR](https://github.com/laminlabs/lamin-cli/pull/301) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor sync [PR](https://github.com/laminlabs/lamin-cli/pull/300) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Convert ipynb to md [PR](https://github.com/laminlabs/lamindb-setup/pull/1416) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1415) [@falexwolf](https://github.com/falexwolf)
