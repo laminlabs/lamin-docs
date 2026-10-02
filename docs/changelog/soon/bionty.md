@@ -1,3 +1,4 @@
+- 🏗️ Remove dependency on `lamin-utils` [PR](https://github.com/laminlabs/bionty/pull/389) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Import numpy lazily so bionty loads with `lamindb-core` [PR](https://github.com/laminlabs/bionty/pull/388) [@Kayvan-Zahiri](https://github.com/Kayvan-Zahiri)
 - 💚 Fix docs build [PR](https://github.com/laminlabs/bionty/pull/387) [@falexwolf](https://github.com/falexwolf)
 - :memo: Clean up docs [PR](https://github.com/laminlabs/bionty/pull/386) [@falexwolf](https://github.com/falexwolf)
