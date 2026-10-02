@@ -1,3 +1,4 @@
+- ♻️ Refactor sync [PR](https://github.com/laminlabs/lamin-cli/pull/300) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Convert ipynb to md [PR](https://github.com/laminlabs/lamindb-setup/pull/1416) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better logging [PR](https://github.com/laminlabs/lamindb-setup/pull/1415) [@falexwolf](https://github.com/falexwolf)
 - :construction_worker: Deal with deprecated modules in test coverage compute [PR](https://github.com/laminlabs/lamindb/pull/3887) [@ishitamjain](https://github.com/ishitamjain)
