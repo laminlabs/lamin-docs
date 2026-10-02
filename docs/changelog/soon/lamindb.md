@@ -1,3 +1,4 @@
+- ♻️ Support current versions of Cursor [PR](https://github.com/laminlabs/lamin-cli/pull/304) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix profile and use main branch to fix builds [PR](https://github.com/laminlabs/lamin-cli/pull/302) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Speed up transfer and move `sync()` into `lamindb.core` [PR](https://github.com/laminlabs/lamindb/pull/3961) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Refactor Notion sync [PR](https://github.com/laminlabs/lamin-cli/pull/301) [@falexwolf](https://github.com/falexwolf)
