@@ -1,5 +1,5 @@
 project_name: Lamin Docs
-description: Documentation
+description: LaminDB documentation for tracking, querying, curating, and versioning multimodal biological data.
 project_slug: docs
 repository_name: lamin-docs
 package_name: ""
