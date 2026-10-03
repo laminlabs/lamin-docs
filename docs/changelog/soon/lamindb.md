@@ -1,3 +1,4 @@
+- 📝 Move `tutorial.md` and `setup.md` here [PR](https://github.com/laminlabs/lamindb/pull/3967) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish skill installation instruction [PR](https://github.com/laminlabs/lamindb/pull/3966) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ From archived `lamin_utils`, integrate `validate()`, `standardize()`, `Lookup()`, and `map_synonyms()` [PR](https://github.com/laminlabs/lamindb/pull/3965) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Remove dependency on `lamin-utils` [PR](https://github.com/laminlabs/lamin-cli/pull/305) [@falexwolf](https://github.com/falexwolf)
