@@ -8,6 +8,9 @@ sys.path[:0] = [str(HERE), str(HERE.parent)]
 from lamin_sphinx import *  # noqa
 from lamin_sphinx import html_theme_options, html_context
 
+# Links in the changelog and integrations target level-3 sections.
+myst_heading_anchors = 3
+
 project = "Lamin Docs"
 html_title = f"{project}"
 html_context["github_repo"] = "lamin-docs"

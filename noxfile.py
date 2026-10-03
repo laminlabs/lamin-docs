@@ -176,6 +176,11 @@ def pull_artifacts(session):
     ]:
         Path(f"nf-lamin/reference/{ref_file}").rename(f"docs/nf-lamin/{ref_file}")
     replace_content("docs/nf-lamin.md", nflamin_mapped_content)
+    # Published nf-lamin artifacts may still link the removed "core settings" anchor.
+    replace_content(
+        "docs/nf-lamin/functions.md",
+        {"config.md#core-settings": "config.md#lamin-top-level-settings"},
+    )
 
     # mlops
     pull_from_s3_and_unpack("lamin-mlops.zip")
