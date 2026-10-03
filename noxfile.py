@@ -2,21 +2,14 @@ import importlib.util
 import os
 import shutil
 import subprocess
-import sys
 import urllib.request
 from pathlib import Path
 
 import nox
 from dirsync import sync
 from laminci import convert_executable_md_files, run_notebooks
+from laminci.laminr_converter import convert_markdown_python_to_tabbed
 from laminci.nox import install_lamindb, run, run_pre_commit
-
-current_dir = Path(__file__).parent.resolve()
-if str(current_dir) not in sys.path:
-    sys.path.insert(0, str(current_dir))
-
-# has to come after updating sys.path because local in this repo
-from laminr_converter import convert_markdown_python_to_tabbed
 
 IS_PR = os.getenv("GITHUB_EVENT_NAME") == "pull_request"
 
