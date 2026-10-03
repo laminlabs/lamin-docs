@@ -33,7 +33,7 @@ Read only:
 
 ## Git
 
-Auto-sync with `git`: [track guide](/track#sync-code-with-git).
+Auto-sync with `git`: {ref}`track guide <sync-code-with-git>`.
 
 ## Computational notebooks
 
