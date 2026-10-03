@@ -1,3 +1,4 @@
+- 📝 Improve agent-readiness of the docs [PR](https://github.com/laminlabs/lamindb/pull/3968) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix `dev-dir` resolution in presence of stale marker [PR](https://github.com/laminlabs/lamindb-setup/pull/1419) [@falexwolf](https://github.com/falexwolf)
 - 📝 Move `tutorial.md` and `setup.md` here [PR](https://github.com/laminlabs/lamindb/pull/3967) [@falexwolf](https://github.com/falexwolf)
 - 📝 Polish skill installation instruction [PR](https://github.com/laminlabs/lamindb/pull/3966) [@falexwolf](https://github.com/falexwolf)
