@@ -7,7 +7,7 @@ from pathlib import Path
 
 import nox
 from dirsync import sync
-from laminci import convert_executable_md_files, run_notebooks
+from laminci import convert_executable_md_files
 from laminci.laminr_converter import convert_markdown_python_to_tabbed
 from laminci.nox import install_lamindb, run, run_pre_commit
 
@@ -238,13 +238,6 @@ def pull_artifacts(session):
         content = convert_markdown_python_to_tabbed(content)
         f.write(content)
 
-    # add tabbed layout to introduction.md
-    with open("docs/tutorial.md") as f:
-        content = f.read()
-    with open("docs/tutorial.md", "w") as f:
-        content = convert_markdown_python_to_tabbed(content, add_runnable_cell=True)
-        f.write(content)
-
 
 def strip_notebook_outputs(directory="."):
     """Simple function to strip outputs from all notebooks in directory."""
@@ -274,15 +267,11 @@ def install(session):
 
 @nox.session
 def run_nbs(session):
+    # tutorial.ipynb is executed in lamindb and arrives via the docs artifact.
     convert_executable_md_files("docs")
     os.system("lamin init --storage ./test-quickstart --modules bionty")
     exit_status = os.system("python docs/includes/create-fasta.py")
     assert exit_status == 0  # noqa S101
-    run_notebooks("docs/tutorial.ipynb")
-    # tutorial.ipynb runs `lamin init` from docs/, which leaves a directory-scoped
-    # instance marker. Sphinx chdirs into _docs_tmp (a copy of docs/) and would
-    # auto-connect to that instance instead of build-docs.
-    shutil.rmtree(Path("docs") / ".lamin", ignore_errors=True)
 
 
 @nox.session
