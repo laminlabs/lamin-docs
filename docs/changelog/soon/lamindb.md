@@ -1,3 +1,4 @@
+- 📝 Polish skill installation instruction [PR](https://github.com/laminlabs/lamindb/pull/3966) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ From archived `lamin_utils`, integrate `validate()`, `standardize()`, `Lookup()`, and `map_synonyms()` [PR](https://github.com/laminlabs/lamindb/pull/3965) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Remove dependency on `lamin-utils` [PR](https://github.com/laminlabs/lamin-cli/pull/305) [@falexwolf](https://github.com/falexwolf)
 - 👷 Deploy with Cloudflare instead of Netlify [PR](https://github.com/laminlabs/lamindb-setup/pull/1418) [@falexwolf](https://github.com/falexwolf)
