@@ -1,1 +1,2 @@
+- 💚 Fix docs build [PR](https://github.com/laminlabs/nf-lamin/pull/191) [@falexwolf](https://github.com/falexwolf)
 - :recycle: Bash fences [PR](https://github.com/laminlabs/nf-lamin/pull/188) [@falexwolf](https://github.com/falexwolf)
