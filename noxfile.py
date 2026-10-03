@@ -283,15 +283,15 @@ def docs(session):
         "lamin init --storage ./build-docs --modules bionty,pertdb",
         shell=True,
     )
-    subprocess.run(
-        "lndocs --error-on-index",
+    process = subprocess.run(
+        "lndocs --error-on-index --strict",
         shell=True,
     )
-    # if process.returncode != 0:
-    #     # rerun without strict option so see all warnings
-    #     run(session, "lndocs --error-on-index")
-    #     # exit with error
-    #     exit(1)
+    if process.returncode != 0:
+        # rerun without strict option so see all warnings
+        run(session, "lndocs --error-on-index")
+        # exit with error
+        exit(1)
 
     # strip outputs for llms.txt
     os.system("rm -rf _docs_tmp")

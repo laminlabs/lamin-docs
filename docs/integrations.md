@@ -33,7 +33,7 @@ Read only:
 
 ## Git
 
-Auto-sync with `git`: [track guide](track.ipynb#sync-code-with-git).
+Auto-sync with `git`: {ref}`track guide <sync-code-with-git>`.
 
 ## Computational notebooks
 
@@ -49,22 +49,22 @@ For both notebook types, source code is stored in `.py` format and run reports a
 ## MLOps
 
 - [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning): {mod}`~lamindb.integrations.lightning`
-- [Weights & Biases](https://wandb.ai/): see the [Weigths & Biases guide](wandb)
-- [MLFlow](https://github.com/mlflow/mlflow): see the [MLFlow guide](mlflow)
-- [Croissant format](https://github.com/mlcommons/croissant): see the [Croissant guide](croissant)
+- [Weights & Biases](https://wandb.ai/): see the {doc}`Weights & Biases guide </wandb>`
+- [MLFlow](https://github.com/mlflow/mlflow): see the {doc}`MLFlow guide </mlflow>`
+- [Croissant format](https://github.com/mlcommons/croissant): see the {doc}`Croissant guide </croissant>`
 - [scVI](https://scvi-tools.org/): see the [guide on the scVI docs](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
 
 ## Workflow managers
 
 - `nextflow` & the [Seqera](https://seqera.io) platform: see the [Nextflow guide](nextflow) and the [nf-lamin](nf-lamin) reference
 - `redun`: via the Python API, see the [redun guide](redun)
-- `prefect`, `airflow`, `dagster`, etc.: see the [workflows guide](track)
+- `prefect`, `airflow`, `dagster`, etc.: see the {doc}`workflows guide </track>`
 - `snakemake`: via post-run logic, see the [snakemake example](snakemake)
 
 ## Tables & arrays
 
 - `pyarrow` & `polars`: see the `engine` argument of {meth}`~lamindb.Artifact.open` and the [arrays guide](arrays)
-- `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or [cellxgene](cellxgene)
+- `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or {doc}`cellxgene </cellxgene>`
 - `duckdb`: via parquet files, see [rxrx](rxrx)
 
 ## Visualization

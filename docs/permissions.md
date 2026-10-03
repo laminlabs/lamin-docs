@@ -313,7 +313,7 @@ space = ln.Space.get(name="Our space")
 ln.Storage(root="create-s3", space=space).save()  # new managed location for the space
 ```
 
-In the [example](#an-example) above, database collaborators can read the default `all` space and its storage. They cannot read files in the `Curation` or `ML` storage locations unless they are also collaborators of those spaces. The `"ML Team"` can read Curation files because it has read access to the `Curation` space — its database role alone would not be enough.
+In the [example](#an-examplary-use-case) above, database collaborators can read the default `all` space and its storage. They cannot read files in the `Curation` or `ML` storage locations unless they are also collaborators of those spaces. The `"ML Team"` can read Curation files because it has read access to the `Curation` space — its database role alone would not be enough.
 
 ## Low-level access management
 
