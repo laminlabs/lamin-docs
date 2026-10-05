@@ -1,0 +1,1 @@
+- ✅ Adapt tests to persistent access tables [PR](https://github.com/laminlabs/lamindb/pull/3970) [@Koncopd](https://github.com/Koncopd)
