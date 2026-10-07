@@ -1,2 +1,3 @@
+- 🚸 For Notion stub page creation, use original time stamp [PR](https://github.com/laminlabs/lamindb/pull/3973) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt tests to persistent access tables [PR](https://github.com/laminlabs/lamindb-setup/pull/1420) [@Koncopd](https://github.com/Koncopd)
 - ✅ Adapt tests to persistent access tables [PR](https://github.com/laminlabs/lamindb/pull/3970) [@Koncopd](https://github.com/Koncopd)
