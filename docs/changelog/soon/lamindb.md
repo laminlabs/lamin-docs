@@ -1,3 +1,4 @@
+- ⚡️ Use `Django` `get_or_create()` for `JsonValue` [PR](https://github.com/laminlabs/lamindb/pull/3977) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade bionty [PR](https://github.com/laminlabs/lamindb/pull/3975) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support Django proxy models of registries 2 [PR](https://github.com/laminlabs/lamindb/pull/3974) [@Koncopd](https://github.com/Koncopd)
 - 🚸 For Notion stub page creation, use original time stamp [PR](https://github.com/laminlabs/lamindb/pull/3973) [@falexwolf](https://github.com/falexwolf)
