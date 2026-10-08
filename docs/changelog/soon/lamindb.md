@@ -1,3 +1,4 @@
+- 🚸 For Notion databases, have `depth=0` skip database entries [PR](https://github.com/laminlabs/lamindb/pull/3976) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Use `Django` `get_or_create()` for `JsonValue` [PR](https://github.com/laminlabs/lamindb/pull/3977) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade bionty [PR](https://github.com/laminlabs/lamindb/pull/3975) [@Koncopd](https://github.com/Koncopd)
 - ✨ Support Django proxy models of registries 2 [PR](https://github.com/laminlabs/lamindb/pull/3974) [@Koncopd](https://github.com/Koncopd)
