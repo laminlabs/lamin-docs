@@ -1,3 +1,4 @@
+- 📝 Add a better `README` and improve docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1423) [@falexwolf](https://github.com/falexwolf)
 - 🚸 For Notion databases, have `depth=0` skip database entries [PR](https://github.com/laminlabs/lamindb/pull/3976) [@falexwolf](https://github.com/falexwolf)
 - ⚡️ Use `Django` `get_or_create()` for `JsonValue` [PR](https://github.com/laminlabs/lamindb/pull/3977) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Upgrade bionty [PR](https://github.com/laminlabs/lamindb/pull/3975) [@Koncopd](https://github.com/Koncopd)
