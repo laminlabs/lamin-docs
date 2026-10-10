@@ -1,3 +1,4 @@
+- ♻️ Move `psycopg2` to `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/3980) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move `psycopg2` here from `lamindb` [PR](https://github.com/laminlabs/lamindb-setup/pull/1422) [@falexwolf](https://github.com/falexwolf)
 - 📝 Add a better `README` and improve docs [PR](https://github.com/laminlabs/lamindb-setup/pull/1423) [@falexwolf](https://github.com/falexwolf)
 - 🚸 For Notion databases, have `depth=0` skip database entries [PR](https://github.com/laminlabs/lamindb/pull/3976) [@falexwolf](https://github.com/falexwolf)
