@@ -1,3 +1,4 @@
+- 📝 Document Codex session metrics [PR](https://github.com/laminlabs/lamindb/pull/3988) [@ebadukhan](https://github.com/ebadukhan)
 - :children_crossing: In Notion integration, recognize the `date` dtype and forward relationships [PR](https://github.com/laminlabs/lamindb/pull/3984) [@falexwolf](https://github.com/falexwolf)
 - Request sandbox approval before Codex tracking writes [PR](https://github.com/laminlabs/lamindb/pull/3986) [@ebadukhan](https://github.com/ebadukhan)
 - Track Codex sessions [PR](https://github.com/laminlabs/lamindb/pull/3985) [@ebadukhan](https://github.com/ebadukhan)
