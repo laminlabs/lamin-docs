@@ -1,3 +1,4 @@
+- Track Codex sessions [PR](https://github.com/laminlabs/lamindb/pull/3985) [@ebadukhan](https://github.com/ebadukhan)
 - Track Codex chats across rollout files [PR](https://github.com/laminlabs/lamin-cli/pull/307) [@ebadukhan](https://github.com/ebadukhan)
 - :memo: Refine docstrings for central classes [PR](https://github.com/laminlabs/lamindb/pull/3983) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow including hidden features in `schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3982) [@falexwolf](https://github.com/falexwolf)
