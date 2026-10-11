@@ -1,3 +1,4 @@
+- 🚸 Allow including hidden features in `schema.describe()` [PR](https://github.com/laminlabs/lamindb/pull/3982) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow changing the appearance of schemas: ordering and hiding features [PR](https://github.com/laminlabs/lamindb/pull/3981) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move `psycopg2` to `lamindb-setup` [PR](https://github.com/laminlabs/lamindb/pull/3980) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Move `psycopg2` here from `lamindb` [PR](https://github.com/laminlabs/lamindb-setup/pull/1422) [@falexwolf](https://github.com/falexwolf)
