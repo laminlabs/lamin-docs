@@ -1,3 +1,4 @@
+- ✅ Fix hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/1425) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Write hub storage record on `storage.save()` [PR](https://github.com/laminlabs/lamindb/pull/3979) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Better validation error message in `FeatureManager.set_values()` [PR](https://github.com/laminlabs/lamindb/pull/3989) [@falexwolf](https://github.com/falexwolf)
 - ✨ Hand `lamin://` inputs to `lamin run` targets as URLs via an `--access` fallback chain [PR](https://github.com/laminlabs/lamin-cli/pull/306) [@jpfeuffer](https://github.com/jpfeuffer)
