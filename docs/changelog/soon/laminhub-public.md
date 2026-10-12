@@ -1,0 +1,1 @@
+- :sparkles: Add shareable links for space-filtered views [PR](https://github.com/laminlabs/laminhub-public/pull/428) [@chaichontat](https://github.com/chaichontat)
