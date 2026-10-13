@@ -1,4 +1,4 @@
-# Manage access permissions
+# Access permissions
 
 Lamin allows you and your users to manage access similar to how you'd do it on GitHub, Google Drive, Microsoft Sharepoint, or Notion. Your infrastructure team stays in full control over storage & database permissions directly on AWS or GCP.
 
@@ -222,7 +222,7 @@ Organization admins can manage every bot owned by their organization without an 
 | **Read collaborators**  | Can read data and view resources within that specific space across accessible databases.                 |
 | **Write collaborators** | Can read, add, and modify data or resources within that specific space across accessible databases.      |
 
-## Authorization
+## Single-sign on protocols
 
 Users sign in with a social login or with their organization's identity provider, and LaminHub applies that user's organization, database, and space roles.
 
@@ -233,6 +233,10 @@ Supported sign-in methods:
 - **OpenID Connect (OIDC)** and **OAuth 2.0** for any standards-compliant identity provider.
 
 The authorization flow uses [Supabase](https://supabase.com/docs/guides/auth).
+
+### Social logins
+
+Google, GitHub, and Azure (Microsoft). Others can be added.
 
 ### SAML 2.0
 
@@ -260,7 +264,7 @@ Rather than configuring storage permissions on AWS and database permissions on P
 
 However, in contrast to a typical SaaS product like GitHub, LaminHub leaves you in full control of your data with direct API access to databases and storage locations on AWS.
 
-Based on an [identity provider](#authorization) (social login, SAML, or OIDC) and a role-based permission system, LaminDB users automatically receive:
+Based on an [identity provider](#single-sign-on-protocols) (social login, SAML, or OIDC) and a role-based permission system, LaminDB users automatically receive:
 
 - **Storage access** with federated access tokens for managed S3 locations on AWS. These tokens are short-lived and thereby minimize attack surface. The token's IAM policy is scoped to the storage locations your database and space roles allow; see [below](#storage-permissions-federated-credentials-and-spaces). This storage access control is not enforced for unmanaged buckets, GCP, or local storage.
 - **Database access** with a database connection string associated with a JWT token applying user permissions through Postgres row-level security (RLS).
