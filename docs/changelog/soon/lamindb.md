@@ -1,1 +1,2 @@
+- ✨ Enable passing `use_proxy_db` to `lamin connect` [PR](https://github.com/laminlabs/lamin-cli/pull/308) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable passing `use_proxy_db` in `_connect_cli` [PR](https://github.com/laminlabs/lamindb-setup/pull/1426) [@Koncopd](https://github.com/Koncopd)
