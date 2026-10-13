@@ -18,6 +18,7 @@ sql
 :hidden:
 
 rest
+mcp
 ```
 
 ```{toctree}
