@@ -228,7 +228,7 @@ Users sign in with a social login or with their organization's identity provider
 
 Supported sign-in methods:
 
-- Social logins: Google, GitHub, and Azure (Microsoft). Others can be added.
+- **Social logins:** Google, GitHub, and Azure (Microsoft).
 - **SAML 2.0** single sign-on for any compatible identity provider.
 - **OpenID Connect (OIDC)** and **OAuth 2.0** for any standards-compliant identity provider.
 
@@ -236,7 +236,7 @@ The authorization flow uses [Supabase](https://supabase.com/docs/guides/auth).
 
 ### Social logins
 
-Google, GitHub, and Azure (Microsoft). Others can be added.
+Google, GitHub, and Azure (Microsoft). Available on Pro plan.
 
 ### SAML 2.0
 
