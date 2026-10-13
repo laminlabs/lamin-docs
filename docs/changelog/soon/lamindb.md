@@ -1,3 +1,4 @@
+- 📝 Open the change request before finishing an agent session [PR](https://github.com/laminlabs/lamindb/pull/3994) [@ebadukhan](https://github.com/ebadukhan)
 - ✅ Fix hub-local [PR](https://github.com/laminlabs/lamindb-setup/pull/1425) [@Koncopd](https://github.com/Koncopd)
 - 🩹 Write hub storage record on `storage.save()` [PR](https://github.com/laminlabs/lamindb/pull/3979) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Better validation error message in `FeatureManager.set_values()` [PR](https://github.com/laminlabs/lamindb/pull/3989) [@falexwolf](https://github.com/falexwolf)
