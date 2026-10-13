@@ -1,3 +1,4 @@
+- ♻️ Do no longer use deprecated `.labels` accessor [PR](https://github.com/laminlabs/cellxgene-lamin/pull/155) [@falexwolf](https://github.com/falexwolf)
 - Updating registeration script [PR](https://github.com/laminlabs/cellxgene-lamin/pull/154) [@ishitamjain](https://github.com/ishitamjain)
 - 🚚 Rename `scrna-mappedcollection.md` to `scrna-dataloaders.md` and showcase `annbatch` [PR](https://github.com/laminlabs/lamin-usecases/pull/261) [@falexwolf](https://github.com/falexwolf)
 - 🚚 Move public ontology guides to `bionty` [PR](https://github.com/laminlabs/lamin-usecases/pull/260) [@falexwolf](https://github.com/falexwolf)
