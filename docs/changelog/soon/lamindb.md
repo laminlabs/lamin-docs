@@ -1,3 +1,4 @@
+- 🚸 Better UX for adding optional features [PR](https://github.com/laminlabs/lamindb/pull/3997) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow passing precomputed `stats` to `Artifact()` [PR](https://github.com/laminlabs/lamindb/pull/3995) [@rcannood](https://github.com/rcannood)
 - ✨ Enable passing `use_proxy_db` to `lamin connect` [PR](https://github.com/laminlabs/lamindb/pull/3996) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable passing `use_proxy_db` to `lamin connect` [PR](https://github.com/laminlabs/lamin-cli/pull/308) [@Koncopd](https://github.com/Koncopd)
