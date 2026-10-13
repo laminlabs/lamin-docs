@@ -1,3 +1,4 @@
+- 🚸 Allow changing the appearance of schemas through ordering and hiding features [PR](https://github.com/laminlabs/laminhub-public/pull/432) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Rename the `Features` tab to `Schemas` and abbreviate `Universal labels` to `Labels` in the UI [PR](https://github.com/laminlabs/laminhub-public/pull/431) [@falexwolf](https://github.com/falexwolf)
 - :bug: Fix typed record UX across the records list, record page, and tabular view [PR](https://github.com/laminlabs/laminhub-public/pull/430) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Change requests redesign and functionality to assign reviewers to a branch [PR](https://github.com/laminlabs/laminhub-public/pull/429) [@sheetalgiri](https://github.com/sheetalgiri)
