@@ -66,11 +66,16 @@ Replace `<laminhub-domain>` with the domain for your deployment and
 `<lamin-jwt>` with a JWT obtained from your Lamin API key. See
 {doc}`Authentication <hub/authentication>` for how to obtain a JWT.
 
-Lamin JWTs expire. Obtain a new JWT from your API key when needed.
+Because Lamin JWTs expire, obtain a new one from your API key when needed.
 
 ### Connect Codex
 
-Add the MCP server for your LaminHub deployment to `~/.codex/config.toml`:
+In Codex, select **Plugins → MCP → Add → Add Custom MCP Server**. Give the
+server a name, such as `laminhub`, enter
+`https://<laminhub-domain>/api/mcp`, and select **No Authentication**.
+
+Then add the MCP server for your LaminHub deployment to
+`~/.codex/config.toml`:
 
 ```toml
 [mcp_servers.laminhub]
