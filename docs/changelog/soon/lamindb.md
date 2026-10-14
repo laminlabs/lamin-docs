@@ -1,3 +1,4 @@
+- ✨ Support polars in pandera validation [PR](https://github.com/laminlabs/lamindb/pull/3991) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Deprecate the `artifact.labels` accessor to reduce ambiguity [PR](https://github.com/laminlabs/lamindb/pull/3998) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Better UX for adding optional features [PR](https://github.com/laminlabs/lamindb/pull/3997) [@falexwolf](https://github.com/falexwolf)
 - ✨ Allow passing precomputed `stats` to `Artifact()` [PR](https://github.com/laminlabs/lamindb/pull/3995) [@rcannood](https://github.com/rcannood)
