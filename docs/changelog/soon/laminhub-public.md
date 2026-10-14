@@ -1,0 +1,1 @@
+- 🐛 Fix incorrect Name being shown for user in records hover card [PR](https://github.com/laminlabs/laminhub-public/pull/434) [@sheetalgiri](https://github.com/sheetalgiri)
