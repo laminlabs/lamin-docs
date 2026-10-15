@@ -1,1 +1,2 @@
+- 💄 Re-design the organization pages [PR](https://github.com/laminlabs/laminhub-public/pull/435) [@fredericenard](https://github.com/fredericenard)
 - 🐛 Fix incorrect Name being shown for user in records hover card [PR](https://github.com/laminlabs/laminhub-public/pull/434) [@sheetalgiri](https://github.com/sheetalgiri)
