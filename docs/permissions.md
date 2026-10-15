@@ -11,11 +11,11 @@ You need to be a database admin.
 1. Open the **Settings** tab of your database, then select **Collaborators** > **Users**. You'll see the current collaborators, their roles, and access inherited through teams and spaces.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/hvTqUkerySsS9gN30000.png" style="width: 90%; padding: 0;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/hvTqUkerySsS9gN30001.png" style="width: 90%; padding: 0;"/>
 </div>
 
-2. Click **Add collaborator** to add an organization user, or **Add external guest** to invite an external user.
-3. Change a direct collaborator's role in the **Role** column. To remove them, open the three-dot menu and select **Remove collaborator**.
+2. Click **Add organization user** to add an organization user, or **Add external guest** to invite an external user.
+3. Change a direct collaborator's role using the role dropdown in their row. To remove them, open the three-dot menu and select **Remove collaborator**.
 4. Select **Collaborators** > **Teams** to grant access to a team.
 
 ### Manage space collaborators
@@ -25,7 +25,7 @@ Spaces allow restricting access to the objects inside it to a small set of colla
 To create a space, open the **Spaces** tab of your organization and click **Create space**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0001.png" style="width: 90%; padding: 0;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/f9OPmq2zi0LhfhyK0002.png" style="width: 90%; padding: 0;"/>
 </div>
 
 To add a collaborator to your space:
@@ -33,7 +33,7 @@ To add a collaborator to your space:
 1. Open the collaborator list for the space and click **Manage collaborators**.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/AJjcfgITI4YXWmOF0001.png" style="width: 90%; padding: 0;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/AJjcfgITI4YXWmOF0002.png" style="width: 90%; padding: 0;"/>
 </div>
 
 2. Click **Add collaborator** and select a user or team.
@@ -80,13 +80,13 @@ Artifacts saved into a restricted space are stored in a storage location that be
 
 Teams allow you to manage permissions for groups of users collectively, making it easier to handle access for departments or project groups.
 
-Go to the **Teams** tab of your organization page. The table shows each team's members and its database and space access.
+Go to **Users** > **Teams** on your organization page. The list shows each team's members and its database and space access.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BDULY3XVgeFPMxpw0000.png" style="width: 90%; padding: 0;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BDULY3XVgeFPMxpw0001.png" style="width: 90%; padding: 0;"/>
 </div>
 
-To create a team, click **Create team**, enter a name, and save it. Use the **Members** column to manage team members. Use the **Databases** and **Spaces** columns to review and manage the resources the team can access. Team members inherit the permissions granted to the team.
+To create a team, click **Create team**, enter a name, and save it. Click the member count next to a team to manage its members. Click the database or space count to review and manage the resources the team can access. Team members inherit the permissions granted to the team.
 
 ### Manage bot accounts
 
@@ -96,18 +96,18 @@ Organization admins and managers can create bot accounts. The creator automatica
 
 To create a bot account:
 
-1. Go to **Settings** > **Bot accounts** on your organization page.
-2. Click **New bot account**, enter a handle and optional name, and click **Create**.
-3. Open the three-dot menu next to the bot and select **API keys**.
-4. Click **New key**, optionally enter a description and expiration, and generate the key. Copy it immediately — the plaintext key is shown only once. A bot can have up to five API keys.
+1. Go to **Users** > **Bots** on your organization page.
+2. Click **Create bot**, enter a handle and optional name, and click **Create**.
+3. Open the three-dot menu next to the bot and select **Manage API keys**.
+4. Click **Create API key**, optionally enter a description and expiration, and generate the key. Copy it immediately — the plaintext key is shown only once. A bot can have up to five API keys.
 
 <div align="center">
-  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/6FU2mlaahd08rx610000.png" style="width: 90%; padding: 0;"/>
+  <img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/6FU2mlaahd08rx610001.png" style="width: 90%; padding: 0;"/>
 </div>
 
 To manage who can use and administer a bot:
 
-1. Open the three-dot menu next to the bot and select **Collaborators**.
+1. Open the three-dot menu next to the bot and select **Manage collaborators**.
 2. Add an organization member or team. New entries receive the **Collaborator** role by default.
 3. Change the role to **Admin** if the member or team should manage the bot. Guests can be collaborators but cannot become bot admins.
 
@@ -121,7 +121,7 @@ Removing a collaborator does not revoke API keys they previously created. A bot 
 
 To add a bot as a collaborator to a database:
 
-1. Go to the **Users** tab of your organization page. The bot account is listed there as a member.
+1. Go to **Users** > **Bots** on your organization page and find the bot account.
 2. Open its three-dot menu, select **Manage access to databases**, and add the database.
 
 You can also add bots as collaborators to spaces, just like you add human users as collaborators to spaces.
