@@ -1,3 +1,4 @@
+- ✅ Test consistency_enforcement triggers [PR](https://github.com/laminlabs/lamindb/pull/4002) [@Koncopd](https://github.com/Koncopd)
 - 🚸 When saving markdown notes, resolve renamed records via uid [PR](https://github.com/laminlabs/lamin-cli/pull/310) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Reject `to-one` record annotations in `record.features.add_values()`, point users to `set_values()` [PR](https://github.com/laminlabs/lamindb/pull/4000) [@AllaVinner](https://github.com/AllaVinner)
 - 🚸 Add a space argument to Notion integration [PR](https://github.com/laminlabs/lamindb/pull/3999) [@falexwolf](https://github.com/falexwolf)
