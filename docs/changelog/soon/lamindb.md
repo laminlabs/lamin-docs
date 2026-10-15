@@ -1,3 +1,4 @@
+- 🚸 Add a space argument to Notion integration [PR](https://github.com/laminlabs/lamindb/pull/3999) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add a --space argument to lamin integrations notion sync [PR](https://github.com/laminlabs/lamin-cli/pull/309) [@falexwolf](https://github.com/falexwolf)
 - ✨ Support polars in pandera validation [PR](https://github.com/laminlabs/lamindb/pull/3991) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Deprecate the `artifact.labels` accessor to reduce ambiguity [PR](https://github.com/laminlabs/lamindb/pull/3998) [@falexwolf](https://github.com/falexwolf)
