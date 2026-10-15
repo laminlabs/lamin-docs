@@ -1,0 +1,1 @@
+- ✨ Register experiments from one Excel workbook [PR](https://github.com/laminlabs/laminhub-public/pull/437) [@chaichontat](https://github.com/chaichontat)
