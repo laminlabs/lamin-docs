@@ -1,3 +1,4 @@
+- 📝 Slight simplification of language [PR](https://github.com/laminlabs/lamindb/pull/4011) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do not create a type for notes that are part of a frame [PR](https://github.com/laminlabs/lamin-cli/pull/312) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Wait briefly for the reply written before lamin finish [PR](https://github.com/laminlabs/lamin-cli/pull/311) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Do not make new branches in the target database during transfer flow [PR](https://github.com/laminlabs/lamindb/pull/4008) [@falexwolf](https://github.com/falexwolf)
