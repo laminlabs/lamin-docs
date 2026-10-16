@@ -1,3 +1,4 @@
+- 🚸 Objects inherit the emojis of their types [PR](https://github.com/laminlabs/lamindb/pull/4007) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix nullable float columns in `Record.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/4006) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Record notes do not get duplicated on hash equality [PR](https://github.com/laminlabs/lamindb/pull/4005) [@falexwolf](https://github.com/falexwolf)
 - ✅ Test consistency_enforcement triggers [PR](https://github.com/laminlabs/lamindb/pull/4002) [@Koncopd](https://github.com/Koncopd)
