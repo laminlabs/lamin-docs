@@ -10,7 +10,7 @@ Platform features:
 
 Architecture features:
 
-- **zero lock-in** → the open-source core ensures data remains yours & accessible even if you cancel your plan
+- **zero lock-in** → LaminDB ensures data remains yours & accessible even if you cancel Lamin
 - **permissions on the Postgres & storage layer** → no need for an intermediate web service
 - **accredited TRE (Trusted Research Environment)** → manage sensitive data from e.g. the UK Biobank
 - **auto-generated REST API** → optional REST interface for JS-based web applications
