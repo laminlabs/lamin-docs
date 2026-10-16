@@ -1,3 +1,4 @@
+- 🚸 Do not make new branches in the target database during transfer flow [PR](https://github.com/laminlabs/lamindb/pull/4008) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Objects inherit the emojis of their types [PR](https://github.com/laminlabs/lamindb/pull/4007) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Fix nullable float columns in `Record.from_dataframe()` [PR](https://github.com/laminlabs/lamindb/pull/4006) [@falexwolf](https://github.com/falexwolf)
 - :children_crossing: Record notes do not get duplicated on hash equality [PR](https://github.com/laminlabs/lamindb/pull/4005) [@falexwolf](https://github.com/falexwolf)
