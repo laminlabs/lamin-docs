@@ -35,6 +35,13 @@ lakehouse
     Managed services and platforms include offerings such as Google's [BigLake](https://cloud.google.com/biglake), Amazon's [Lake Formation](https://aws.amazon.com/lake-formation/), [Dremio](https://www.dremio.com/), and [Starburst](https://www.starburst.io/).
     For background, see this [blog post](https://cloud.google.com/blog/products/data-analytics/unify-data-lakes-and-warehouses-with-biglake-now-generally-available) from Google, this [blog post](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/) from AWS, this [glossary entry](https://www.databricks.com/glossary/data-lakehouse), and this [paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf) from Databricks.
 
+LaminDB
+    An open-source data management tool for traceable, multimodal AI. It manages data across multiple storage locations through metadata
+    in a SQL database (Postgres, SQLite).
+
+LaminHub
+    A data collaboration hub built on LaminDB, similar to how GitHub is built on git. Often just called "Lamin".
+
 ORM
     Object-relational mapper. In LaminDB every subclass of {class}`~lamindb.models.SQLRecord` is an ORM model that corresponds to a SQL table in the underlying metadata database [[Wikipedia](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)].
     A `SQLRecord` object maps to a single row of the table.
