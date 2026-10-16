@@ -1,3 +1,4 @@
+- 💚 Fix docs build [PR](https://github.com/laminlabs/lamindb/pull/4012) [@falexwolf](https://github.com/falexwolf)
 - 📝 Slight simplification of language [PR](https://github.com/laminlabs/lamindb/pull/4011) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do not create a type for notes that are part of a frame [PR](https://github.com/laminlabs/lamin-cli/pull/312) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Wait briefly for the reply written before lamin finish [PR](https://github.com/laminlabs/lamin-cli/pull/311) [@ebadukhan](https://github.com/ebadukhan)
