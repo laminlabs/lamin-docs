@@ -14,6 +14,7 @@
 /records /manage-records 301
 /ontologies /manage-ontologies 301
 /bio-registries /manage-ontologies 301
+/analyses /agentic-analyses 301
 /faq/idempotency /idempotency 301
 /faq/acid /acid 301
 /scrna6 /scrna-tiledbsoma 301
