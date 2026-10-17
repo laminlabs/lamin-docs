@@ -1,3 +1,4 @@
+- :children_crossing: Deprecate `artifact.transform` in favor of `artifact.run.transform` [PR](https://github.com/laminlabs/lamindb/pull/4013) [@falexwolf](https://github.com/falexwolf)
 - 💚 Fix docs build [PR](https://github.com/laminlabs/lamindb/pull/4012) [@falexwolf](https://github.com/falexwolf)
 - 📝 Slight simplification of language [PR](https://github.com/laminlabs/lamindb/pull/4011) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do not create a type for notes that are part of a frame [PR](https://github.com/laminlabs/lamin-cli/pull/312) [@falexwolf](https://github.com/falexwolf)
