@@ -28,7 +28,7 @@ transfer
 :hidden:
 :caption: Use cases
 
-analyses
+agentic-analyses
 atlases
 by-datatype
 by-registry

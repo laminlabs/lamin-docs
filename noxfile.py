@@ -217,6 +217,14 @@ def pull_artifacts(session):
         print("syncing", path)
         sync_path(path, Path("docs") / path.name)
 
+    # lamin-agents
+    pull_from_s3_and_unpack("lamin-agents.zip")
+    for path in Path("lamin-agents/").glob("*"):
+        if path.name in {"README.md", "index.md", "conf.py", "changelog.md"}:
+            continue
+        print("syncing", path)
+        sync_path(path, Path("docs") / path.name)
+
     # public ontology guides
     pull_from_s3_and_unpack("bionty.zip")
     for path in Path("bionty").glob("*"):
