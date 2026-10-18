@@ -1,3 +1,4 @@
+- 🚸 No longer store schema unless it was actually checked [PR](https://github.com/laminlabs/lamindb/pull/4019) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Support validating the `__external__` schema slot for any artifact [PR](https://github.com/laminlabs/lamindb/pull/4016) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor describing run reports to allow folders [PR](https://github.com/laminlabs/lamindb/pull/4017) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Save agent transcripts as a report folder [PR](https://github.com/laminlabs/lamin-cli/pull/313) [@ebadukhan](https://github.com/ebadukhan)
