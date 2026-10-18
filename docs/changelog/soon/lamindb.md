@@ -1,3 +1,4 @@
+- ♻️ Refactor describing run reports to allow folders [PR](https://github.com/laminlabs/lamindb/pull/4017) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Save agent transcripts as a report folder [PR](https://github.com/laminlabs/lamin-cli/pull/313) [@ebadukhan](https://github.com/ebadukhan)
 - 🚸 Raise `ValidationError` if moving an invalid record into a frame [PR](https://github.com/laminlabs/lamindb/pull/4014) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Validate record types in categorical lists [PR](https://github.com/laminlabs/lamindb/pull/4003) [@AllaVinner](https://github.com/AllaVinner)
