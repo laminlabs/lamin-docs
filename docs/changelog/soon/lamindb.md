@@ -1,3 +1,4 @@
+- 🚸 Raise `ValidationError` if moving an invalid record into a frame [PR](https://github.com/laminlabs/lamindb/pull/4014) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Validate record types in categorical lists [PR](https://github.com/laminlabs/lamindb/pull/4003) [@AllaVinner](https://github.com/AllaVinner)
 - :recycle: Add schema validation in `set_values` call [PR](https://github.com/laminlabs/lamindb/pull/4001) [@AllaVinner](https://github.com/AllaVinner)
 - :children_crossing: Deprecate `artifact.transform` in favor of `artifact.run.transform` [PR](https://github.com/laminlabs/lamindb/pull/4013) [@falexwolf](https://github.com/falexwolf)
