@@ -1,3 +1,4 @@
+- 💄 Improve hero and data model schematics [PR](https://github.com/laminlabs/lamindb/pull/4020) [@falexwolf](https://github.com/falexwolf)
 - 🚸 No longer store schema unless it was actually checked [PR](https://github.com/laminlabs/lamindb/pull/4019) [@falexwolf](https://github.com/falexwolf)
 - :sparkles: Support validating the `__external__` schema slot for any artifact [PR](https://github.com/laminlabs/lamindb/pull/4016) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Refactor describing run reports to allow folders [PR](https://github.com/laminlabs/lamindb/pull/4017) [@ebadukhan](https://github.com/ebadukhan)
