@@ -54,7 +54,7 @@ UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub
 
 README2_REPLACE = """
 <details style="margin-top: 1.15rem;">
-<summary>UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git.</summary>
+<summary>UI, permissions, audit logs, hosting? → LaminHub</summary>
 
 ```{include} includes/laminhub-features.md
 ```

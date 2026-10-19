@@ -1,3 +1,5 @@
+[LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git:
+
 - **permissions** → role-based, fine-grained access management for humans, bots & teams
 - **audit logs** → full traceability for compliance
 - **single sign-on** → social logins, Okta, Ping, and other providers
