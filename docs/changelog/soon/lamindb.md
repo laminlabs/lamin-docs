@@ -1,3 +1,4 @@
+- 🐛 Resolve ambiguous categorical feature strings correctly in `features.set_values()` [PR](https://github.com/laminlabs/lamindb/pull/4021) [@AllaVinner](https://github.com/AllaVinner)
 - 📝 Move `launch.md` here [PR](https://github.com/laminlabs/lamindb/pull/4024) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add `FeatureManager.update_values()` to update feature annotations partially [PR](https://github.com/laminlabs/lamindb/pull/4023) [@AllaVinner](https://github.com/AllaVinner)
 - 📝 Update screenshots on `manage-changes.md` [PR](https://github.com/laminlabs/lamindb/pull/4004) [@sheetalgiri](https://github.com/sheetalgiri)
