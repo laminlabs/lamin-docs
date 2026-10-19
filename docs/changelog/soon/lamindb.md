@@ -1,3 +1,4 @@
+- 💚 Fix the `minimal` tests suite when run on a PR [PR](https://github.com/laminlabs/lamindb/pull/4022) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Throw `ValidationError` in `artifact.features.set_values()` if feature values not in external schema would be dropped [PR](https://github.com/laminlabs/lamindb/pull/4018) [@falexwolf](https://github.com/falexwolf)
 - 💄 Improve hero and data model schematics [PR](https://github.com/laminlabs/lamindb/pull/4020) [@falexwolf](https://github.com/falexwolf)
 - 🚸 No longer store schema unless it was actually checked [PR](https://github.com/laminlabs/lamindb/pull/4019) [@falexwolf](https://github.com/falexwolf)
