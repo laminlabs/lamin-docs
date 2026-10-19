@@ -4,14 +4,14 @@
 .. role:: small
 ```
 
-## Agents {small}`→ [docs](track.ipynb#track-agent-runs)`
+## Agents [{small}`→ docs`](track.ipynb#track-agent-runs)
 
 - Claude Code {small}`db 2.8`
 - GitHub Copilot {small}`db 2.9`
 - Cursor {small}`db 2.11`
 - Codex {small}`db 2.12`
 
-## Storage → [docs](https://docs.lamin.ai/lamindb.storage)
+## Storage [→ docs](https://docs.lamin.ai/lamindb.storage)
 
 Read & write:
 
@@ -30,9 +30,9 @@ Read only:
 - [bionty](/bionty): Biological ontologies, with easy import from >20 public ontologies
 - [pertdb](/pertdb): Registries for perturbations (compounds, biologics, genetic interventions, etc.)
 
-## Git
+## Git {ref}`→ docs <sync-code-with-git>`
 
-Auto-sync with `git`: {ref}`track guide <sync-code-with-git>`.
+Auto-sync code with `git`.
 
 ## Computational notebooks
 
@@ -48,17 +48,17 @@ For both notebook types, source code is stored in `.py` format and run reports a
 ## MLOps
 
 - [PyTorch Lightning](https://github.com/Lightning-AI/pytorch-lightning): {mod}`~lamindb.integrations.lightning`
-- [Weights & Biases](https://wandb.ai/): see the {doc}`Weights & Biases guide </wandb>`
-- [MLFlow](https://github.com/mlflow/mlflow): see the {doc}`MLFlow guide </mlflow>`
-- [Croissant format](https://github.com/mlcommons/croissant): see the {doc}`Croissant guide </croissant>`
-- [scVI](https://scvi-tools.org/): see the [guide on the scVI docs](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
+- [Weights & Biases](https://wandb.ai/): → {doc}`docs </wandb>`
+- [MLFlow](https://github.com/mlflow/mlflow): → {doc}`docs </mlflow>`
+- [Croissant format](https://github.com/mlcommons/croissant): → {doc}`docs </croissant>`
+- [scVI](https://scvi-tools.org/): → [docs](https://docs.scvi-tools.org/en/stable/tutorials/notebooks/custom_dl/lamin.html)
 
 ## Workflow managers
 
-- `nextflow` & the [Seqera](https://seqera.io) platform: see the [Nextflow guide](nextflow) and the [nf-lamin](nf-lamin) reference
-- `redun`: via the Python API, see the [redun guide](redun)
-- `prefect`, `airflow`, `dagster`, etc.: see the {doc}`workflows guide </track>`
-- `snakemake`: via post-run logic, see the [snakemake example](snakemake)
+- `nextflow` & `seqera.io` → [nf-lamin](nf-lamin)
+- `redun` → [docs](redun)
+- `prefect`, `airflow`, `dagster`, etc. → {doc}`docs </track>`
+- `snakemake` → [docs](snakemake)
 
 ## Tables & arrays
 
