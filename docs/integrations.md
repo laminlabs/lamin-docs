@@ -6,7 +6,7 @@
 
 ## Agents
 
-See the [track guide](track.ipynb#track-agent-runs).
+→ [docs](track.ipynb#track-agent-runs)
 
 - Claude Code {small}`db 2.8`
 - GitHub Copilot {small}`db 2.9`
@@ -14,6 +14,8 @@ See the [track guide](track.ipynb#track-agent-runs).
 - Codex {small}`db 2.12`
 
 ## Storage
+
+→ [docs](https://docs.lamin.ai/lamindb.storage)
 
 Read & write:
 
