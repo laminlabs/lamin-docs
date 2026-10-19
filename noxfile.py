@@ -50,13 +50,11 @@ README1_ORIG = """<img width="800px" alt="lamindb-schematic" src="https://lamin-
 README1_REPLACE = """<img width="800px" alt="lamindb-schematic" style="margin-top: 1.15rem;" src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/BunYmHkyFLITlM5M000E.svg">"""
 
 README2_ORIG = """
-UI, permissions, audit logs? [Lamin](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
+UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git."""
 
 README2_REPLACE = """
 <details style="margin-top: 1.15rem;">
-<summary>UI, permissions, audit logs?</summary>
-
-[Lamin](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git.
+<summary>UI, permissions, audit logs? [LaminHub](https://lamin.ai) is a collaboration hub built on LaminDB similar to how GitHub is built on git.</summary>
 
 ```{include} includes/laminhub-features.md
 ```
