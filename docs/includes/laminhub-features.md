@@ -4,11 +4,11 @@
 - **audit logs** → full traceability for compliance
 - **single sign-on** → social logins, Okta, Ping, and other providers
 - **secure** → SOC2 certified, monitoring ISO27001 & HIPAA compliance
-- **infra-as-code** → manage many databases and storage locations
+- **scale** → transparently manage many databases and storage locations
 
 Architecture:
 
-- **zero lock-in** → LaminDB ensures data remains yours & accessible even if you cancel Lamin
+- **zero lock-in** → LaminDB ensures data remains accessible even if you cancel LaminHub
 - **permissions on the Postgres & storage layer** → no need for an intermediate web service
 - **TRE (Trusted Research Environment)** → manage sensitive data from e.g. the UK Biobank
 - **auto-generated REST API** → optional REST interface for JavaScript-based web applications
