@@ -4,18 +4,14 @@
 .. role:: small
 ```
 
-## Agents
-
-→ [docs](track.ipynb#track-agent-runs)
+## Agents {small}`→ [docs](track.ipynb#track-agent-runs)`
 
 - Claude Code {small}`db 2.8`
 - GitHub Copilot {small}`db 2.9`
 - Cursor {small}`db 2.11`
 - Codex {small}`db 2.12`
 
-## Storage
-
-→ [docs](https://docs.lamin.ai/lamindb.storage)
+## Storage → [docs](https://docs.lamin.ai/lamindb.storage)
 
 Read & write:
 
