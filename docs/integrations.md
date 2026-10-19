@@ -23,7 +23,7 @@ Read & write:
 Read only:
 
 - http/https: `ln.Artifact("https://a-website.com/a-dataset.txt")`
-- [Hugging Face](https://huggingface.co): `ln.Artifact("hf://datasets/org/repo/dataset.parquet")`
+- Hugging Face: `ln.Artifact("hf://datasets/org/repo/dataset.parquet")`
 
 ## Ontologies & registries
 
