@@ -1,3 +1,4 @@
+- 📝 Update screenshots on `manage-changes.md` [PR](https://github.com/laminlabs/lamindb/pull/4004) [@sheetalgiri](https://github.com/sheetalgiri)
 - ✨ Order querysets by feature values [PR](https://github.com/laminlabs/lamindb/pull/3992) [@AllaVinner](https://github.com/AllaVinner)
 - 💚 Fix the `minimal` tests suite when run on a PR [PR](https://github.com/laminlabs/lamindb/pull/4022) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Throw `ValidationError` in `artifact.features.set_values()` if feature values not in external schema would be dropped [PR](https://github.com/laminlabs/lamindb/pull/4018) [@falexwolf](https://github.com/falexwolf)
