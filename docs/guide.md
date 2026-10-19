@@ -16,7 +16,7 @@ tutorial
 
 setup
 query-search
-track
+transform
 organize
 manage-changes
 manage-records
@@ -42,7 +42,6 @@ visualization
 :hidden:
 :caption: The Hub
 
-launch
 permissions
 audit-log
 security
