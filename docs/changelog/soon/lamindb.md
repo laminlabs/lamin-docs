@@ -1,0 +1,1 @@
+- 📝 Improve storage docs [PR](https://github.com/laminlabs/lamindb/pull/4027) [@falexwolf](https://github.com/falexwolf)
