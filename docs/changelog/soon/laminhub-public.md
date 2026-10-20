@@ -1,0 +1,1 @@
+- ⚡️ Faster detail page navigation [PR](https://github.com/laminlabs/laminhub-public/pull/438) [@chaichontat](https://github.com/chaichontat)
