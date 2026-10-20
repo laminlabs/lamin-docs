@@ -1,2 +1,0 @@
-- :lipstick: Redesign organization pages as tables with count popovers and filters [PR](https://github.com/laminlabs/laminhub-public/pull/439) [@chaichontat](https://github.com/chaichontat)
-- ⚡️ Faster detail page navigation [PR](https://github.com/laminlabs/laminhub-public/pull/438) [@chaichontat](https://github.com/chaichontat)
