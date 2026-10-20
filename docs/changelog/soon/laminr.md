@@ -1,0 +1,1 @@
+- 🔖 Release v1.3.2 [PR](https://github.com/laminlabs/laminr/pull/282) [@sunnyosun](https://github.com/sunnyosun)
