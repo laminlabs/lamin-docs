@@ -1,0 +1,1 @@
+- :bug: Show feature value violations without blocking records and sheets [PR](https://github.com/laminlabs/laminhub-public/pull/440) [@chaichontat](https://github.com/chaichontat)
