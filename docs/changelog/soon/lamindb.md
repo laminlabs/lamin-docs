@@ -1,3 +1,4 @@
+- 🐛 Fix `schema.describe()` if `itype` is a feature subtype [PR](https://github.com/laminlabs/lamindb/pull/4031) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Validate nullable feature values prior to dropping them for writes in `Record()` [PR](https://github.com/laminlabs/lamindb/pull/4033) [@AllaVinner](https://github.com/AllaVinner)
 - ✨ Enable using managed gcs buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1427) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add sharded datasets to README [PR](https://github.com/laminlabs/lamindb/pull/4029) [@falexwolf](https://github.com/falexwolf)
