@@ -1,3 +1,4 @@
+- ✨ Enable using managed gcs buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1427) [@Koncopd](https://github.com/Koncopd)
 - 📝 Add sharded datasets to README [PR](https://github.com/laminlabs/lamindb/pull/4029) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Clean up and remove long-deprecated API calls [PR](https://github.com/laminlabs/lamindb/pull/4028) [@falexwolf](https://github.com/falexwolf)
 - 📝 Improve storage docs [PR](https://github.com/laminlabs/lamindb/pull/4027) [@falexwolf](https://github.com/falexwolf)
