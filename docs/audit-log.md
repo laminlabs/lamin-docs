@@ -17,7 +17,7 @@ The newest events are shown first and grouped by date. You can:
 
 Events are read-only and their visibility is governed by a user's access permissions to the database.
 
-## Additional logs (Preview)
+## Additional logs
 
 Database administrators can open **Logs** to review:
 
