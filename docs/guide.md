@@ -28,13 +28,13 @@ transfer
 :hidden:
 :caption: Use cases
 
-agentic-analyses
+manage-agents
 atlases
 by-datatype
-by-registry
 pipelines
 mlops
 visualization
+by-registry
 ```
 
 ```{toctree}
