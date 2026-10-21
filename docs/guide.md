@@ -43,8 +43,8 @@ by-registry
 :caption: The Hub
 
 permissions
-audit-log
 security
+audit-log
 ```
 
 ```{toctree}
