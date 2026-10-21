@@ -1,2 +1,3 @@
+- ✨ Track AgentCore chats with the shared session report writer [PR](https://github.com/laminlabs/lamin-cli/pull/314) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Enable passing `revises_id` instead of `revises` `Artifact` initialization [PR](https://github.com/laminlabs/lamindb/pull/4035) [@Koncopd](https://github.com/Koncopd)
 - ✨ Enable using managed gcs buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1427) [@Koncopd](https://github.com/Koncopd)
