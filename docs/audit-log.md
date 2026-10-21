@@ -12,7 +12,7 @@ The newest events are shown first and grouped by date. You can:
 - open the affected record when a link is available
 
 <div align="center">
-<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/hKVu13siuElyiMWM0000.png" style="margin: 1%;"/>
+<img src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/Afygpvnvlkyc1ezM0001" style="margin: 1%;"/>
 </div>
 
 Events are read-only and their visibility is governed by a user's access permissions to the database.
