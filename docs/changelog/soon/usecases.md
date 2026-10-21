@@ -1,3 +1,4 @@
+- ✅ Point to the latest deseq2 skill [PR](https://github.com/laminlabs/lamin-agents/pull/54) [@Koncopd](https://github.com/Koncopd)
 - :memo: Move agentic analyses docs here [PR](https://github.com/laminlabs/lamin-agents/pull/53) [@falexwolf](https://github.com/falexwolf)
 - ♻️ No longer use deprecated .labels accessor [PR](https://github.com/laminlabs/lamin-usecases/pull/262) [@falexwolf](https://github.com/falexwolf)
 - ♻️ Do no longer use deprecated `.labels` accessor [PR](https://github.com/laminlabs/cellxgene-lamin/pull/155) [@falexwolf](https://github.com/falexwolf)
