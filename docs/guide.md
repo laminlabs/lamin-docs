@@ -44,7 +44,7 @@ by-registry
 
 permissions
 security
-audit-log
+audit-logs
 ```
 
 ```{toctree}
