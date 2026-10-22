@@ -63,7 +63,7 @@ SSO is included in Team and Enterprise plans and configured during onboarding. M
 
 ### Which logs can we review and export?
 
-Database writes, permission changes, REST requests, MCP tool calls, and configured S3 activity are covered. Views beyond database writes are currently in **Preview**. See {doc}`audit-log` for coverage, access, and exports.
+Database writes, permission changes, REST requests, MCP tool calls, and configured S3 activity are covered. Views beyond database writes are currently in **Preview**. See {doc}`audit-logs` for coverage, access, and exports.
 
 ### Can we control access for AI agents?
 
