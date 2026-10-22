@@ -1,0 +1,1 @@
+- 📝 Introducing Lamin: An open data platform for traceable, multimodal AI [PR](https://github.com/laminlabs/lamin-blog/pull/62) [@falexwolf](https://github.com/falexwolf)
