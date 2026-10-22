@@ -34,6 +34,34 @@ Read only:
 
 Auto-sync code with `git`.
 
+## Note taking
+
+- Notion → [docs](https://docs.lamin.ai/api#integrations)
+- Obsidian → see below
+- VSCode → see below
+
+:::{dropdown} Organizing markdown notes in the development directory.
+
+Place your notes into folders in your development directory and use your favorite editor to edit them:
+
+<div align="center">
+  <img width=300 src="https://lamin-site-assets.s3.amazonaws.com/.lamindb/kebpWrpEOZSUhtKK0000.png" style="padding: 0;"/>
+</div>
+
+To sync a notes file to the database, run:
+
+```shell
+lamin save <topic>/<my-note.md>
+```
+
+To load a it back, run:
+
+```shell
+lamin load https://lamin.ai/laminlabs/lamindata/record/mNDJgWFrkWQVW3ox
+```
+
+:::
+
 ## Computational notebooks [{small}`docs`](/track)
 
 You can call `ln.track()` and `ln.finish()` (or the R versions) in four notebook types:
