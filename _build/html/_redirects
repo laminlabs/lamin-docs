@@ -27,6 +27,7 @@
 /pipelines /nextflow 301
 /workflows /nextflow 301
 /mlops /lightning 301
+/audit-log /audit-logs 301
 /by-registry /celltypist 302
 /visualization /vitessce 301
 /summary.md /introduction.md 301
