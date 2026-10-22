@@ -1,1 +1,2 @@
+- :zap: Speed up sheets and improve sheet editing and layout [PR](https://github.com/laminlabs/laminhub-public/pull/441) [@chaichontat](https://github.com/chaichontat)
 - :bug: Show feature value violations without blocking records and sheets [PR](https://github.com/laminlabs/laminhub-public/pull/440) [@chaichontat](https://github.com/chaichontat)
