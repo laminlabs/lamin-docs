@@ -1,0 +1,1 @@
+- :zap: Improve sheet responsiveness and cell editing [PR](https://github.com/laminlabs/laminhub-public/pull/443) [@chaichontat](https://github.com/chaichontat)
