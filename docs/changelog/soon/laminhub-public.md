@@ -1,1 +1,2 @@
+- :zap: Speed up navigation between instance pages [PR](https://github.com/laminlabs/laminhub-public/pull/444) [@chaichontat](https://github.com/chaichontat)
 - :zap: Improve sheet responsiveness and cell editing [PR](https://github.com/laminlabs/laminhub-public/pull/443) [@chaichontat](https://github.com/chaichontat)
