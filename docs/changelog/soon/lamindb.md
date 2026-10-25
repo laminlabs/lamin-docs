@@ -1,3 +1,4 @@
+- 📝 Document feature nullability and optionality [PR](https://github.com/laminlabs/lamindb/pull/4034) [@AllaVinner](https://github.com/AllaVinner)
 - 🐛 Validate defaults for optional non-nullable schema features [PR](https://github.com/laminlabs/lamindb/pull/4038) [@AllaVinner](https://github.com/AllaVinner)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/4039) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Raise upper bound on `s3fs` and `gcsfs` to `2026.9.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1430) [@Koncopd](https://github.com/Koncopd)
