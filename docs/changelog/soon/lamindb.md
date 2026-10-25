@@ -1,3 +1,4 @@
+- 🐛 Validate defaults for optional non-nullable schema features [PR](https://github.com/laminlabs/lamindb/pull/4038) [@AllaVinner](https://github.com/AllaVinner)
 - ⬆️ Upgrade lamindb-setup [PR](https://github.com/laminlabs/lamindb/pull/4039) [@Koncopd](https://github.com/Koncopd)
 - ⬆️ Raise upper bound on `s3fs` and `gcsfs` to `2026.9.0` [PR](https://github.com/laminlabs/lamindb-setup/pull/1430) [@Koncopd](https://github.com/Koncopd)
 - 🚸 Save & load project notes into the development directory [PR](https://github.com/laminlabs/lamin-cli/pull/315) [@falexwolf](https://github.com/falexwolf)
