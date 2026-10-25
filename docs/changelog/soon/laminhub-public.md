@@ -1,3 +1,3 @@
-- :zap: Batch feature dtype metadata on browse pages [PR](https://github.com/laminlabs/laminhub-public/pull/442) [@chaichontat](https://github.com/chaichontat)
-- :zap: Speed up navigation between instance pages [PR](https://github.com/laminlabs/laminhub-public/pull/444) [@chaichontat](https://github.com/chaichontat)
-- :zap: Improve sheet responsiveness and cell editing [PR](https://github.com/laminlabs/laminhub-public/pull/443) [@chaichontat](https://github.com/chaichontat)
+- ⚡ Speed up navigation between database pages [PR](https://github.com/laminlabs/laminhub-public/pull/444) [@chaichontat](https://github.com/chaichontat)
+- ⚡ Improve records responsiveness and table view editing [PR](https://github.com/laminlabs/laminhub-public/pull/443) [@chaichontat](https://github.com/chaichontat)
+- ⚡ Batch feature dtype metadata on browse pages [PR](https://github.com/laminlabs/laminhub-public/pull/442) [@chaichontat](https://github.com/chaichontat)
