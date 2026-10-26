@@ -1,3 +1,4 @@
+- 🐛 Fix Python 3.10 agent finishing and AgentCore help [PR](https://github.com/laminlabs/lamin-cli/pull/316) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 If `through_values` is set in a feature, treat to-be-populated timestamp correctly during validation [PR](https://github.com/laminlabs/lamindb/pull/4040) [@falexwolf](https://github.com/falexwolf)
 - 📝 Document feature nullability and optionality [PR](https://github.com/laminlabs/lamindb/pull/4034) [@AllaVinner](https://github.com/AllaVinner)
 - 🐛 Validate defaults for optional non-nullable schema features [PR](https://github.com/laminlabs/lamindb/pull/4038) [@AllaVinner](https://github.com/AllaVinner)
