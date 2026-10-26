@@ -1,4 +1,0 @@
-- 🐛 Fix launch forms and record frame workflows [PR](https://github.com/laminlabs/laminhub-public/pull/445) [@chaichontat](https://github.com/chaichontat)
-- ⚡ Speed up navigation between database pages [PR](https://github.com/laminlabs/laminhub-public/pull/444) [@chaichontat](https://github.com/chaichontat)
-- ⚡ Improve records responsiveness and table view editing [PR](https://github.com/laminlabs/laminhub-public/pull/443) [@chaichontat](https://github.com/chaichontat)
-- ⚡ Batch feature dtype metadata on browse pages [PR](https://github.com/laminlabs/laminhub-public/pull/442) [@chaichontat](https://github.com/chaichontat)
