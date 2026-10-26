@@ -1,3 +1,4 @@
+- ✨ Add tracking for `AgentCore` transcripts [PR](https://github.com/laminlabs/lamindb/pull/4036) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Fix `Record.from_dataframe()` for nullable features / columns [PR](https://github.com/laminlabs/lamindb/pull/4041) [@AllaVinner](https://github.com/AllaVinner)
 - 📝 Fix stale dtype documentation references [PR](https://github.com/laminlabs/lamindb/pull/4042) [@AllaVinner](https://github.com/AllaVinner)
 - 🐛 Fix Python 3.10 agent finishing and AgentCore help [PR](https://github.com/laminlabs/lamin-cli/pull/316) [@ebadukhan](https://github.com/ebadukhan)
