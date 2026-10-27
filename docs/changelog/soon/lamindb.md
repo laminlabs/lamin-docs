@@ -1,3 +1,4 @@
+- 🐛 Exclude dir markers in `synchronize_to` [PR](https://github.com/laminlabs/lamindb-setup/pull/1432) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Exclude folder markers from cloud artifact file counts [PR](https://github.com/laminlabs/lamindb-setup/pull/1429) [@sheetalgiri](https://github.com/sheetalgiri)
 - 🐛 Amend `ordered_set` in inferred schemas [PR](https://github.com/laminlabs/lamindb/pull/4043) [@falexwolf](https://github.com/falexwolf)
 - ✨ Add tracking for `AgentCore` transcripts [PR](https://github.com/laminlabs/lamindb/pull/4036) [@ebadukhan](https://github.com/ebadukhan)
