@@ -1,1 +1,2 @@
+- 👽️ Use `from_dataframe` everywhere [PR](https://github.com/laminlabs/laminr/pull/283) [@Koncopd](https://github.com/Koncopd)
 - 🔖 Release v1.3.2 [PR](https://github.com/laminlabs/laminr/pull/282) [@sunnyosun](https://github.com/sunnyosun)
