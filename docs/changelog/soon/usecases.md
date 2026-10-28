@@ -1,3 +1,4 @@
+- Adding portal datasets [PR](https://github.com/laminlabs/cellxgene-lamin/pull/156) [@ishitamjain](https://github.com/ishitamjain)
 - Scrna analysis with skills [PR](https://github.com/laminlabs/lamin-agents/pull/49) [@ishitamjain](https://github.com/ishitamjain)
 - ✅ Point to the latest deseq2 skill [PR](https://github.com/laminlabs/lamin-agents/pull/54) [@Koncopd](https://github.com/Koncopd)
 - :memo: Move agentic analyses docs here [PR](https://github.com/laminlabs/lamin-agents/pull/53) [@falexwolf](https://github.com/falexwolf)
