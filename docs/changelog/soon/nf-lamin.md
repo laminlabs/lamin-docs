@@ -1,3 +1,4 @@
+- 🐛 Ignore zero-byte S3 folder markers before artifact registration [PR](https://github.com/laminlabs/nf-lamin/pull/193) [@sheetalgiri](https://github.com/sheetalgiri)
 - ✨ Compute artifact size and hash client-side [PR](https://github.com/laminlabs/nf-lamin/pull/192) [@rcannood](https://github.com/rcannood)
 - ✨ Publish workflow outputs to lamin:// storage locations [PR](https://github.com/laminlabs/nf-lamin/pull/190) [@rcannood](https://github.com/rcannood)
 - 💚 Fix docs build [PR](https://github.com/laminlabs/nf-lamin/pull/191) [@falexwolf](https://github.com/falexwolf)
