@@ -1,3 +1,4 @@
+- 🔥 Remove `LAMIN_ENDPOINTS` [PR](https://github.com/laminlabs/lamindb-setup/pull/1433) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix source redaction for triple-quoted and prefixed literals [PR](https://github.com/laminlabs/lamindb/pull/4050) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Track AgentCore chats with the shared session report writer [PR](https://github.com/laminlabs/lamin-cli/pull/314) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Enable using managed gcs buckets [PR](https://github.com/laminlabs/lamindb-setup/pull/1427) [@Koncopd](https://github.com/Koncopd)
