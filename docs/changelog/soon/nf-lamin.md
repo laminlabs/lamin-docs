@@ -1,3 +1,4 @@
+- ✨ Accept lamin-s3:// URIs as workflow inputs [PR](https://github.com/laminlabs/nf-lamin/pull/198) [@rcannood](https://github.com/rcannood)
 - ✨ Infer the Lamin instance from a lamin:// output dir [PR](https://github.com/laminlabs/nf-lamin/pull/197) [@rcannood](https://github.com/rcannood)
 - 🐛 Ignore zero-byte S3 folder markers before artifact registration [PR](https://github.com/laminlabs/nf-lamin/pull/193) [@sheetalgiri](https://github.com/sheetalgiri)
 - ✨ Compute artifact size and hash client-side [PR](https://github.com/laminlabs/nf-lamin/pull/192) [@rcannood](https://github.com/rcannood)
