@@ -1,3 +1,4 @@
+- 🐛 Fix run status and lost artifacts when a run fails or is cancelled [PR](https://github.com/laminlabs/nf-lamin/pull/200) [@rcannood](https://github.com/rcannood)
 - 🐛 Stage folders from lamin:// URIs on a local work dir [PR](https://github.com/laminlabs/nf-lamin/pull/199) [@rcannood](https://github.com/rcannood)
 - ✨ Accept lamin-s3:// URIs as workflow inputs [PR](https://github.com/laminlabs/nf-lamin/pull/198) [@rcannood](https://github.com/rcannood)
 - ✨ Infer the Lamin instance from a lamin:// output dir [PR](https://github.com/laminlabs/nf-lamin/pull/197) [@rcannood](https://github.com/rcannood)
