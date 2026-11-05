@@ -1,3 +1,4 @@
+- 🐛 Identical returned artifacts and collections should populate recreating runs [PR](https://github.com/laminlabs/lamindb/pull/4056) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Validate optional features when applied to annotations [PR](https://github.com/laminlabs/lamindb/pull/4052) [@AllaVinner](https://github.com/AllaVinner)
 - 🔥 Remove `LAMIN_ENDPOINTS` [PR](https://github.com/laminlabs/lamindb-setup/pull/1433) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Fix source redaction for triple-quoted and prefixed literals [PR](https://github.com/laminlabs/lamindb/pull/4050) [@ebadukhan](https://github.com/ebadukhan)
