@@ -1,3 +1,4 @@
+- 🗃️ Use Psycopg 3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1435) [@Koncopd](https://github.com/Koncopd)
 - 🔒 Require Python 3.11+ and patched Numcodecs for safe Zarr loading [PR](https://github.com/laminlabs/lamindb/pull/4051) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Identical returned artifacts and collections should populate recreating runs [PR](https://github.com/laminlabs/lamindb/pull/4056) [@Koncopd](https://github.com/Koncopd)
 - 🐛 Validate optional features when applied to annotations [PR](https://github.com/laminlabs/lamindb/pull/4052) [@AllaVinner](https://github.com/AllaVinner)
