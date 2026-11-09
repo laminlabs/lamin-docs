@@ -40,9 +40,11 @@ We regularly audit access to internal systems.
 
 ### Bug bounty program
 
-Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in our product and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to security@lamin.ai.
+Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in LaminHub and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to `security@lamin.ai`. 
 
-Some Lamin resources are intentionally public. Reports that rely only on the following expected behavior are out of scope for bounty review:
+Please note that reports for the open-source packages, in particular, LaminDB, almost never qualify for a bounty; you're welcome to make a pull request on the public repository.
+
+Also, some Lamin resources are intentionally public. Reports that rely only on the following expected behavior are out of scope for bounty review:
 
 - public LaminDB instances allowing anonymous or unauthenticated read-only access
 - public instance metadata, public profile metadata, and public read-only database connection details for public instances
