@@ -1,3 +1,4 @@
+- ✨ Distinguish configured space from the implicit default [PR](https://github.com/laminlabs/lamindb-setup/pull/1434) [@AllaVinner](https://github.com/AllaVinner)
 - 🗃️ Use Psycopg 3, adapt permissions tests [PR](https://github.com/laminlabs/lamindb/pull/4063) [@Koncopd](https://github.com/Koncopd)
 - 🗃️ Use Psycopg 3 [PR](https://github.com/laminlabs/lamindb-setup/pull/1435) [@Koncopd](https://github.com/Koncopd)
 - 🔒 Require Python 3.11+ and patched Numcodecs for safe Zarr loading [PR](https://github.com/laminlabs/lamindb/pull/4051) [@ebadukhan](https://github.com/ebadukhan)
