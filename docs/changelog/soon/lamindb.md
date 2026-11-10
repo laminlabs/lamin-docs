@@ -1,3 +1,4 @@
+- ⬆️ Upgrade lamindb-setup and lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/4067) [@Koncopd](https://github.com/Koncopd)
 - 🔒️ Run snapshot from jwt connection [PR](https://github.com/laminlabs/lamindb-setup/pull/1439) [@Koncopd](https://github.com/Koncopd)
 - 🔒️ Do not pass use_root_db_user [PR](https://github.com/laminlabs/lamin-cli/pull/317) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove use_root_db_user option [PR](https://github.com/laminlabs/lamindb-setup/pull/1438) [@Koncopd](https://github.com/Koncopd)
