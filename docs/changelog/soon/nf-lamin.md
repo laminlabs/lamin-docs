@@ -1,3 +1,4 @@
+- 🐛 Show plugin messages on the console [PR](https://github.com/laminlabs/nf-lamin/pull/203) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix -resume lineage, LAMIN_DRY_RUN=false and false config warnings [PR](https://github.com/laminlabs/nf-lamin/pull/201) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix run status and lost artifacts when a run fails or is cancelled [PR](https://github.com/laminlabs/nf-lamin/pull/200) [@rcannood](https://github.com/rcannood)
 - 🐛 Stage folders from lamin:// URIs on a local work dir [PR](https://github.com/laminlabs/nf-lamin/pull/199) [@rcannood](https://github.com/rcannood)
