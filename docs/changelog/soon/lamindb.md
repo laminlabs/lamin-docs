@@ -1,3 +1,4 @@
+- 🔒 Escape database strings in `describe()` output [PR](https://github.com/laminlabs/lamindb/pull/4064) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Better `psycopg` error message [PR](https://github.com/laminlabs/lamindb-setup/pull/1440) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Upgrade lamindb-setup and lamin-cli [PR](https://github.com/laminlabs/lamindb/pull/4067) [@Koncopd](https://github.com/Koncopd)
 - 🔒️ Run snapshot from jwt connection [PR](https://github.com/laminlabs/lamindb-setup/pull/1439) [@Koncopd](https://github.com/Koncopd)
