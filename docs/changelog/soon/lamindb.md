@@ -1,3 +1,4 @@
+- 🔒️ Do not pass use_root_db_user [PR](https://github.com/laminlabs/lamin-cli/pull/317) [@Koncopd](https://github.com/Koncopd)
 - 🔥 Remove use_root_db_user option [PR](https://github.com/laminlabs/lamindb-setup/pull/1438) [@Koncopd](https://github.com/Koncopd)
 - ✅ Adapt hub-local tests to internal DB credentials [PR](https://github.com/laminlabs/lamindb-setup/pull/1436) [@fredericenard](https://github.com/fredericenard)
 - ✨ Distinguish configured space from the implicit default [PR](https://github.com/laminlabs/lamindb-setup/pull/1434) [@AllaVinner](https://github.com/AllaVinner)
