@@ -1,3 +1,4 @@
+- 🐛 Keep missing ontology text null when creating records from source [PR](https://github.com/laminlabs/lamindb/pull/4072) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Register bionty sources without pandas [PR](https://github.com/laminlabs/lamindb/pull/4071) [@sunnyosun](https://github.com/sunnyosun)
 - Register bionty sources without pandas [PR](https://github.com/laminlabs/lamindb-setup/pull/1441) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Use the type’s space as a fallback for new objects [PR](https://github.com/laminlabs/lamindb/pull/4058) [@AllaVinner](https://github.com/AllaVinner)
