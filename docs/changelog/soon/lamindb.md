@@ -1,3 +1,4 @@
+- ✨ Distinguish configured space from the implicit default- #1434 [PR](https://github.com/laminlabs/lamindb-setup/pull/1437) [@AllaVinner](https://github.com/AllaVinner)
 - 🚸 Link to change requests after finishing agent sessions [PR](https://github.com/laminlabs/lamin-cli/pull/318) [@ebadukhan](https://github.com/ebadukhan)
 - 🔒 Escape database strings in `describe()` output [PR](https://github.com/laminlabs/lamindb/pull/4064) [@chaichontat](https://github.com/chaichontat)
 - 🚸 Better `psycopg` error message [PR](https://github.com/laminlabs/lamindb-setup/pull/1440) [@falexwolf](https://github.com/falexwolf)
