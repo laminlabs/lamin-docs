@@ -1,3 +1,4 @@
+- Parse ontology sources without requiring pandas [PR](https://github.com/laminlabs/bionty/pull/395) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Use concrete models for proper handling of `Django` proxies [PR](https://github.com/laminlabs/bionty/pull/391) [@Koncopd](https://github.com/Koncopd)
 - 👷 Deploy to Cloudflare instead of Netlify [PR](https://github.com/laminlabs/bionty/pull/390) [@falexwolf](https://github.com/falexwolf)
 - 🏗️ Remove dependency on `lamin-utils` [PR](https://github.com/laminlabs/bionty/pull/389) [@falexwolf](https://github.com/falexwolf)
