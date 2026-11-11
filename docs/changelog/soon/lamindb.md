@@ -1,3 +1,4 @@
+- ⬆️ Register bionty sources without pandas [PR](https://github.com/laminlabs/lamindb/pull/4071) [@sunnyosun](https://github.com/sunnyosun)
 - Register bionty sources without pandas [PR](https://github.com/laminlabs/lamindb-setup/pull/1441) [@sunnyosun](https://github.com/sunnyosun)
 - ✨ Use the type’s space as a fallback for new objects [PR](https://github.com/laminlabs/lamindb/pull/4058) [@AllaVinner](https://github.com/AllaVinner)
 - ✨ Distinguish configured space from the implicit default- #1434 [PR](https://github.com/laminlabs/lamindb-setup/pull/1437) [@AllaVinner](https://github.com/AllaVinner)
