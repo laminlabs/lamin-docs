@@ -1,3 +1,4 @@
+- 💚 Fix numcodecs build [PR](https://github.com/laminlabs/lamin-usecases/pull/263) [@Koncopd](https://github.com/Koncopd)
 - 💚 Fix build [PR](https://github.com/laminlabs/snakemake-lamin/pull/13) [@Koncopd](https://github.com/Koncopd)
 - Adding portal datasets [PR](https://github.com/laminlabs/cellxgene-lamin/pull/156) [@ishitamjain](https://github.com/ishitamjain)
 - Scrna analysis with skills [PR](https://github.com/laminlabs/lamin-agents/pull/49) [@ishitamjain](https://github.com/ishitamjain)
