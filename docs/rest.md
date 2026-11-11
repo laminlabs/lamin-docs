@@ -43,11 +43,11 @@ response.json()
 
 Use `https://lamin.ai/api` for hosted deployments. Requests are automatically routed to the appropriate region.
 
-Hosted services are currently available in four AWS regions:
+Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 
-- US East (N. Virginia): `us-east-1`
-- US West (Oregon): `us-west-2`
-- EU Central (Frankfurt): `eu-central-1`
-- EU West (London): `eu-west-2`
+- `https://aws.us-east-1.lamin.ai`
+- `https://aws.us-west-2.lamin.ai`
+- `https://aws.eu-central-1.lamin.ai`
+- `https://aws.eu-west-2.lamin.ai`
 
 On-prem deployments have their own APIs.
