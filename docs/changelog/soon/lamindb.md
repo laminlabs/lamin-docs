@@ -1,1 +1,2 @@
+- ✨ Support LanceDB and the `.lance` format [PR](https://github.com/laminlabs/lamindb/pull/4070) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Use SDK redaction for run attachments [PR](https://github.com/laminlabs/lamin-cli/pull/319) [@ebadukhan](https://github.com/ebadukhan)
