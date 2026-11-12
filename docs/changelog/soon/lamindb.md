@@ -1,0 +1,1 @@
+- 🔒 Use SDK redaction for run attachments [PR](https://github.com/laminlabs/lamin-cli/pull/319) [@ebadukhan](https://github.com/ebadukhan)
