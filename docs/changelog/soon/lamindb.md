@@ -1,3 +1,4 @@
+- 🔒 Redact source secrets in notebook HTML reports [PR](https://github.com/laminlabs/lamindb/pull/4074) [@ebadukhan](https://github.com/ebadukhan)
 - ✨ Add support for the `.lance` format [PR](https://github.com/laminlabs/lamindb-setup/pull/1442) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Keep missing ontology text null when creating records from source [PR](https://github.com/laminlabs/lamindb/pull/4072) [@sunnyosun](https://github.com/sunnyosun)
 - ⬆️ Register bionty sources without pandas [PR](https://github.com/laminlabs/lamindb/pull/4071) [@sunnyosun](https://github.com/sunnyosun)
