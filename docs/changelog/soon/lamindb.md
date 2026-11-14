@@ -1,3 +1,4 @@
+- ✨ Add a `nextflow_schema` argument to `Transform.from_git()` [PR](https://github.com/laminlabs/lamindb/pull/4075) [@rcannood](https://github.com/rcannood)
 - ♻️ Do not set `otype` to `"lance"` in `Artifact.from_lance()` [PR](https://github.com/laminlabs/lamindb/pull/4086) [@falexwolf](https://github.com/falexwolf)
 - ✅ Check saved environment content after upload [PR](https://github.com/laminlabs/lamin-cli/pull/320) [@ebadukhan](https://github.com/ebadukhan)
 - 🔒 Use SDK redaction for run attachments [PR](https://github.com/laminlabs/lamin-cli/pull/319) [@ebadukhan](https://github.com/ebadukhan)
