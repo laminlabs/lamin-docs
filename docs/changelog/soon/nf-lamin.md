@@ -1,3 +1,4 @@
+- 🔖 Release 1.0.0 [PR](https://github.com/laminlabs/nf-lamin/pull/208) [@rcannood](https://github.com/rcannood)
 - Fix relative links in docs [PR](https://github.com/laminlabs/nf-lamin/pull/206) [@rcannood](https://github.com/rcannood)
 - 🐛 Show plugin messages on the console [PR](https://github.com/laminlabs/nf-lamin/pull/203) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix -resume lineage, LAMIN_DRY_RUN=false and false config warnings [PR](https://github.com/laminlabs/nf-lamin/pull/201) [@rcannood](https://github.com/rcannood)
