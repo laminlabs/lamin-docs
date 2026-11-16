@@ -14,35 +14,38 @@ See our [status page](https://status.lamin.ai) for service health and availabili
 
 ## Data exposure
 
+### Free plan
+
+The open-source LaminDB is fully contained in your infrastructure. No data reaches Lamin's services.
+
+### Pro plan
+
+All your data is hosted by Lamin services.
+
 ### Team plan
 
-The Team plan lets you use hosted LaminHub with a self-hosted LaminDB instance. Your Postgres database and files can remain in your infrastructure.
+As on the Pro plan, you can use Lamin's hosted databases and storage locations. On the Team plan, you can also use a self-hosted LaminDB instance so that both your Postgres databases and storage locations remain in your infrastructure. The LaminHub web application remains hosted by Lamin.
 
-To connect your Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall. LaminHub sends queries to Postgres and processes the returned metadata on its servers to display it in the web app.
-
-Access to file storage is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation. Both provide temporary credentials with scoped permissions.
+To connect your on-prem Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall ({doc}`service-endpoints`). LaminHub then sends queries to Postgres and processes the returned metadata on its servers to display it in the LaminHub UI. Providing LaminHub access to your on-prem storage locations is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation.
 
 ```{mermaid}
 flowchart TB
     browser["Browser"]
 
-    subgraph lamin["Lamin-hosted services"]
-        hub["LaminHub Web UI & API"]
-    end
+    hub["LaminHub"]
 
     subgraph customer["Customer infrastructure"]
-        subgraph network["Customer network / VPN"]
-            db[("Postgres<br/>Instance metadata")]
-        end
-        s3[("AWS S3<br/>Files")]
-        gcs[("Google Cloud Storage<br/>Files")]
+        db[("Postgres<br/>Metadata")]
+        s3[("AWS S3<br/>Data")]
+        gcs[("Google Cloud Storage<br/>Data")]
+        gcs[("Local Storage<br/>Data")]
     end
 
     browser <-->|"HTTPS"| hub
     hub -->|"SQL queries<br/>Allowlisted connection"| db
-    db -->|"Metadata results"| hub
-    hub <-.->|"Optional file access<br/>AssumeRole"| s3
-    hub <-.->|"Optional file access<br/>Service account impersonation"| gcs
+    db -->|"Metadata results<br/>Allowlisted connection"| hub
+    hub <-.->|"Optional storage access<br/>AssumeRole"| s3
+    hub <-.->|"Optional storage access<br/>Service account impersonation"| gcs
 ```
 
 Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access.
@@ -54,6 +57,10 @@ Solid arrows show the connection used to browse metadata. Dashed arrows show opt
 | File contents                    | Data read from a file to display a preview                                  | Accessed when storage permissions and network access allow it.                             |
 
 Without storage access, you can still browse, search and filter metadata, inspect annotations and follow lineage in LaminHub. File previews are unavailable for files LaminHub cannot access. See {doc}`permissions` for access management.
+
+### Enterprise plan
+
+You're running a full on-prem deployment of LaminHub, meaning all your data stays in your infrastructure even during transit.
 
 ## Security at Lamin
 
