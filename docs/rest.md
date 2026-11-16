@@ -13,7 +13,7 @@ This page documents the REST API of LaminHub.
 
 ## Swagger UI
 
-The comprehensive REST API reference is documented via the Swagger UI [here](https://aws.us-east-1.lamin.ai/_docs).
+The comprehensive REST API reference is documented via the Swagger UI [here](https://lamin.ai/_docs).
 
 ## Example
 
@@ -32,7 +32,7 @@ import lamindb_setup as lns
 import requests
 
 response = requests.get(
-    "https://aws.us-east-1.lamin.ai/api/account",
+    "https://lamin.ai/api/account",
     headers={"Authorization": f"Bearer {lns.settings.user.access_token}"}
 )
 response.json()
@@ -40,6 +40,8 @@ response.json()
 ```
 
 ## Deployments
+
+Use `https://lamin.ai/api` for hosted deployments. Requests are automatically routed to the appropriate region.
 
 Currently, our hosted offer is based on 4 REST APIs for 4 AWS data centers:
 

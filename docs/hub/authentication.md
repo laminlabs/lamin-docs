@@ -9,7 +9,7 @@ Replace the placeholders in angle brackets.
 Get a Lamin JWT from an API key:
 
 ```bash
-curl "https://aws.us-east-1.lamin.ai/api/account/jwt" \
+curl "https://lamin.ai/api/account/jwt" \
   -H "Content-Type: application/json" \
   -d '{"api_key":"<your-lamin-api-key>"}'
 ```
@@ -25,7 +25,7 @@ Response:
 Use the Lamin JWT to get a JWT for a specific LaminDB instance database:
 
 ```bash
-curl "https://aws.us-east-1.lamin.ai/api/instances/<instance-id>/db_token" \
+curl "https://lamin.ai/api/instances/<instance-id>/db_token" \
   -H "Authorization: Bearer <lamin-jwt>"
 ```
 
