@@ -1,3 +1,4 @@
+- ✨ Add regex validation for string dtypes [PR](https://github.com/laminlabs/lamindb/pull/4083) [@AllaVinner](https://github.com/AllaVinner)
 - ⬆️ Update bionty [PR](https://github.com/laminlabs/lamindb/pull/4089) [@sunnyosun](https://github.com/sunnyosun)
 - :bug: Preserve SQLite text feature values with JSON aggregation [PR](https://github.com/laminlabs/lamindb/pull/4087) [@pcbeingused333](https://github.com/pcbeingused333)
 - ✨ Add a `nextflow_schema` argument to `Transform.from_git()` [PR](https://github.com/laminlabs/lamindb/pull/4075) [@rcannood](https://github.com/rcannood)
