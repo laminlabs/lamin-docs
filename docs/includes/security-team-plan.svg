@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ld-diagram" viewBox="-4 -66 743 324" width="743" height="324" role="img" aria-labelledby="ld-security-team-plan-t ld-security-team-plan-d">
+<title id="ld-security-team-plan-t">Team plan data exposure</title><desc id="ld-security-team-plan-d">The browser talks to LaminHub over HTTPS. LaminHub sends SQL queries to the Postgres metadata database in the customer infrastructure over an allowlisted connection and receives metadata results. Access to AWS S3 and Google Cloud Storage is optional. Local storage is not connected.</desc>
+<rect class="ld-group" x="501.3" y="-62" width="232.9" height="316" rx="16"/>
+<path class="ld-edge" d="M115.3 72L177.3 72"/>
+<path class="ld-head" d="M108.8 72L117.8 67.5L117.8 76.5z"/>
+<path class="ld-head" d="M183.8 72L174.8 76.5L174.8 67.5z"/>
+<path class="ld-edge" d="M293.3 -8L509.3 -8"/>
+<path class="ld-head" d="M515.8 -8L506.8 -3.5L506.8 -12.5z"/>
+<path class="ld-edge" d="M301.3 8L517.3 8"/>
+<path class="ld-head" d="M294.8 8L303.8 3.5L303.8 12.5z"/>
+<path class="ld-edge" d="M301.3 80L509.3 80" stroke-dasharray="5 3.83"/>
+<path class="ld-head" d="M294.8 80L303.8 75.5L303.8 84.5z"/>
+<path class="ld-head" d="M515.8 80L506.8 84.5L506.8 75.5z"/>
+<path class="ld-edge" d="M301.3 146L509.3 146" stroke-dasharray="5 3.83"/>
+<path class="ld-head" d="M294.8 146L303.8 141.5L303.8 150.5z"/>
+<path class="ld-head" d="M515.8 146L506.8 150.5L506.8 141.5z"/>
+<rect class="ld-node" x="0" y="52" width="107.3" height="40" rx="12"/>
+<rect class="ld-focal" x="185.3" y="-26" width="108" height="198" rx="12"/>
+<rect class="ld-node" x="517.3" y="-26" width="200.9" height="52" rx="12"/>
+<rect class="ld-node" x="517.3" y="54" width="200.9" height="52" rx="12"/>
+<rect class="ld-node" x="517.3" y="120" width="200.9" height="52" rx="12"/>
+<rect class="ld-node" x="517.3" y="186" width="200.9" height="52" rx="12"/>
+<g class="ld-ico" transform="translate(14 64) scale(0.67)" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v4"/><path d="M2 8h20"/><path d="M6 4v4"/></g>
+<text class="ld-t" x="38" y="72" dy="0.35em">Browser</text>
+<text class="ld-t ld-f" x="239.3" y="72" dy="0.35em" text-anchor="middle">LaminHub</text>
+<text class="ld-s" x="146.3" y="59" dy="0.35em" text-anchor="middle">HTTPS</text>
+<text class="ld-l" x="517.3" y="-43" dy="0.35em">Customer infrastructure</text>
+<g class="ld-ico" transform="translate(531.3 -8) scale(0.67)" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></g>
+<text class="ld-t" x="557.3" y="-8" dy="0.35em">Postgres</text>
+<text class="ld-s" x="557.3" y="10" dy="0.35em">Metadata</text>
+<g class="ld-ico" transform="translate(531.3 72) scale(0.67)" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></g>
+<text class="ld-t" x="557.3" y="72" dy="0.35em">AWS S3</text>
+<text class="ld-s" x="557.3" y="90" dy="0.35em">Data</text>
+<g class="ld-ico" transform="translate(531.3 138) scale(0.67)" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></g>
+<text class="ld-t" x="557.3" y="138" dy="0.35em">Google Cloud Storage</text>
+<text class="ld-s" x="557.3" y="156" dy="0.35em">Data</text>
+<g class="ld-ico" transform="translate(531.3 204) scale(0.67)" aria-hidden="true"><path d="M22 12H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><path d="M6 16h.01"/><path d="M10 16h.01"/></g>
+<text class="ld-t" x="557.3" y="204" dy="0.35em">Local Storage</text>
+<text class="ld-s" x="557.3" y="222" dy="0.35em">Data</text>
+<text class="ld-l" x="397.3" y="-36" dy="0.35em" text-anchor="middle">SQL queries</text>
+<text class="ld-s" x="397.3" y="-20" dy="0.35em" text-anchor="middle">Allowlisted connection</text>
+<text class="ld-l" x="397.3" y="21" dy="0.35em" text-anchor="middle">Metadata results</text>
+<text class="ld-s" x="397.3" y="37" dy="0.35em" text-anchor="middle">Allowlisted connection</text>
+<text class="ld-l" x="397.3" y="67" dy="0.35em" text-anchor="middle">Optional storage access</text>
+<text class="ld-s" x="397.3" y="93" dy="0.35em" text-anchor="middle">AssumeRole</text>
+<text class="ld-l" x="397.3" y="133" dy="0.35em" text-anchor="middle">Optional storage access</text>
+<text class="ld-s" x="397.3" y="159" dy="0.35em" text-anchor="middle">Service account impersonation</text>
+</svg>

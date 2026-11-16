@@ -28,24 +28,8 @@ As on the Pro plan, you can use Lamin's hosted databases and storage locations. 
 
 To connect your on-prem Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall ({doc}`/hub/service-endpoints`). LaminHub then sends queries to Postgres and processes the returned metadata on its servers to display it in the LaminHub UI. Providing LaminHub access to your on-prem storage locations is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation.
 
-```{mermaid}
-flowchart TB
-    browser["Browser"]
-
-    hub("LaminHub"):::focal
-
-    subgraph customer["Customer infrastructure"]
-        db[("Postgres<br/>Metadata")]
-        s3[("AWS S3<br/>Data")]
-        gcs[("Google Cloud Storage<br/>Data")]
-        local[("Local Storage<br/>Data")]
-    end
-
-    browser <-->|"HTTPS"| hub
-    hub -->|"SQL queries<br/>Allowlisted connection"| db
-    db -->|"Metadata results<br/>Allowlisted connection"| hub
-    hub <-.->|"Optional storage access<br/>AssumeRole"| s3
-    hub <-.->|"Optional storage access<br/>Service account impersonation"| gcs
+```{raw} html
+:file: includes/security-team-plan.svg
 ```
 
 Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access. Without storage access, you can still browse, search and query metadata, inspect annotations and explore lineage. Storage previews are unavailable for storage locations LaminHub cannot access. See {doc}`permissions` for access management.
