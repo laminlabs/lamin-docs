@@ -32,7 +32,7 @@ To connect your on-prem Postgres database, you configure network access and allo
 flowchart TB
     browser["Browser"]
 
-    hub["LaminHub"]
+    hub["LaminHub"]:::focal
 
     subgraph customer["Customer infrastructure"]
         db[("Postgres<br/>Metadata")]
@@ -48,15 +48,7 @@ flowchart TB
     hub <-.->|"Optional storage access<br/>Service account impersonation"| gcs
 ```
 
-Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access.
-
-| Data                             | Examples                                                                    | Exposure to Lamin-hosted services                                                          |
-| -------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Account and instance information | User emails, instance identifiers, database endpoints and storage locations | Stored in Lamin Central for authentication, instance discovery and access management.      |
-| Postgres metadata                | Artifact names and paths, annotations, features and lineage                 | Queried by LaminHub and returned to its servers when you browse, search or filter records. |
-| File contents                    | Data read from a file to display a preview                                  | Accessed when storage permissions and network access allow it.                             |
-
-Without storage access, you can still browse, search and filter metadata, inspect annotations and follow lineage in LaminHub. File previews are unavailable for files LaminHub cannot access. See {doc}`permissions` for access management.
+Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access. Without storage access, you can still browse, search and query metadata, inspect annotations and explore lineage. Storage previews are unavailable for storage locations LaminHub cannot access. See {doc}`permissions` for access management.
 
 ### Enterprise plan
 
