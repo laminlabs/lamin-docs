@@ -32,13 +32,13 @@ To connect your on-prem Postgres database, you configure network access and allo
 flowchart TB
     browser["Browser"]
 
-    hub["LaminHub"]:::focal
+    hub("LaminHub"):::focal
 
     subgraph customer["Customer infrastructure"]
         db[("Postgres<br/>Metadata")]
         s3[("AWS S3<br/>Data")]
         gcs[("Google Cloud Storage<br/>Data")]
-        gcs[("Local Storage<br/>Data")]
+        local[("Local Storage<br/>Data")]
     end
 
     browser <-->|"HTTPS"| hub
