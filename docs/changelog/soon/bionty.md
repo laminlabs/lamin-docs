@@ -1,3 +1,4 @@
+- 🐛 Demote other sources when inserting a currently used Source [PR](https://github.com/laminlabs/bionty/pull/397) [@ap--](https://github.com/ap--)
 - 🐛 Build StaticReference from its Source record and fix instance detection [PR](https://github.com/laminlabs/bionty/pull/398) [@ap--](https://github.com/ap--)
 - 🐛 Keep missing ontology text null under pandas 3 [PR](https://github.com/laminlabs/bionty/pull/396) [@sunnyosun](https://github.com/sunnyosun)
 - Parse ontology sources without requiring pandas [PR](https://github.com/laminlabs/bionty/pull/395) [@sunnyosun](https://github.com/sunnyosun)
