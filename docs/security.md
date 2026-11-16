@@ -26,7 +26,7 @@ All your data is hosted by Lamin services.
 
 As on the Pro plan, you can use Lamin's hosted databases and storage locations. On the Team plan, you can also use a self-hosted LaminDB instance so that both your Postgres databases and storage locations remain in your infrastructure. The LaminHub web application remains hosted by Lamin.
 
-To connect your on-prem Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall ({doc}`service-endpoints`). LaminHub then sends queries to Postgres and processes the returned metadata on its servers to display it in the LaminHub UI. Providing LaminHub access to your on-prem storage locations is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation.
+To connect your on-prem Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall ({doc}`/hub/service-endpoints`). LaminHub then sends queries to Postgres and processes the returned metadata on its servers to display it in the LaminHub UI. Providing LaminHub access to your on-prem storage locations is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation.
 
 ```{mermaid}
 flowchart TB
