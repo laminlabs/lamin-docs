@@ -12,6 +12,49 @@ See our [status page](https://status.lamin.ai) for service health and availabili
 
 ```
 
+## Data exposure
+
+### Team plan
+
+The Team plan lets you use hosted LaminHub with a self-hosted LaminDB instance. Your Postgres database and files can remain in your infrastructure.
+
+To connect your Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall. LaminHub sends queries to Postgres and processes the returned metadata on its servers to display it in the web app.
+
+Access to file storage is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation. Both provide temporary credentials with scoped permissions.
+
+```{mermaid}
+flowchart TB
+    browser["Browser"]
+
+    subgraph lamin["Lamin-hosted services"]
+        hub["LaminHub Web UI & API"]
+    end
+
+    subgraph customer["Customer infrastructure"]
+        subgraph network["Customer network / VPN"]
+            db[("Postgres<br/>Instance metadata")]
+        end
+        s3[("AWS S3<br/>Files")]
+        gcs[("Google Cloud Storage<br/>Files")]
+    end
+
+    browser <-->|"HTTPS"| hub
+    hub -->|"SQL queries<br/>Allowlisted connection"| db
+    db -->|"Metadata results"| hub
+    hub <-.->|"Optional file access<br/>AssumeRole"| s3
+    hub <-.->|"Optional file access<br/>Service account impersonation"| gcs
+```
+
+Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access.
+
+| Data                             | Examples                                                                    | Exposure to Lamin-hosted services                                                          |
+| -------------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Account and instance information | User emails, instance identifiers, database endpoints and storage locations | Stored in Lamin Central for authentication, instance discovery and access management.      |
+| Postgres metadata                | Artifact names and paths, annotations, features and lineage                 | Queried by LaminHub and returned to its servers when you browse, search or filter records. |
+| File contents                    | Data read from a file to display a preview                                  | Accessed when storage permissions and network access allow it.                             |
+
+Without storage access, you can still browse, search and filter metadata, inspect annotations and follow lineage in LaminHub. File previews are unavailable for files LaminHub cannot access. See {doc}`permissions` for access management.
+
 ## Security at Lamin
 
 ### Application security
@@ -40,7 +83,7 @@ We regularly audit access to internal systems.
 
 ### Bug bounty program
 
-Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in LaminHub and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to `security@lamin.ai`. 
+Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in LaminHub and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to `security@lamin.ai`.
 
 Please note that reports for the open-source packages, in particular, LaminDB, almost never qualify for a bounty; you're welcome to make a pull request on the public repository.
 
