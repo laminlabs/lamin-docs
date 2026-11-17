@@ -12,6 +12,32 @@ See our [status page](https://status.lamin.ai) for service health and availabili
 
 ```
 
+## Data exposure
+
+### Free plan
+
+The open-source LaminDB is fully contained in your infrastructure. No data reaches Lamin's services.
+
+### Pro plan
+
+All your data is hosted by Lamin services.
+
+### Team plan
+
+As on the Pro plan, you can use Lamin's hosted databases and storage locations. On the Team plan, you can also use a self-hosted LaminDB instance so that both your Postgres databases and storage locations remain in your infrastructure. The LaminHub web application remains hosted by Lamin.
+
+To connect your on-prem Postgres database, you configure network access and allowlist the LaminHub backend's IP address at your network or VPN firewall ({doc}`/hub/service-endpoints`). LaminHub then sends queries to Postgres and processes the returned metadata on its servers to display it in the LaminHub UI. Providing LaminHub access to your on-prem storage locations is optional and controlled separately from the Postgres connection. You can grant access to AWS S3 through `AssumeRole` or to Google Cloud Storage through service account impersonation.
+
+```{raw} html
+:file: includes/security-team-plan.svg
+```
+
+Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access. Without storage access, you can still browse, search and query metadata, inspect annotations and explore lineage. Storage previews are unavailable for storage locations LaminHub cannot access. See {doc}`permissions` for access management.
+
+### Enterprise plan
+
+You're running a full on-prem deployment of LaminHub, meaning all your data stays in your infrastructure even during transit.
+
 ## Security at Lamin
 
 ### Application security
@@ -40,7 +66,7 @@ We regularly audit access to internal systems.
 
 ### Bug bounty program
 
-Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in LaminHub and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to `security@lamin.ai`. 
+Keeping user data secure is a top priority at Lamin. We welcome contributions from the security community to identify vulnerabilities in LaminHub and disclose them to us in a responsible manner. We offer rewards ranging from $100 to $1000+ depending on the severity of the issue discovered. To participate, please send a report of the vulnerability to `security@lamin.ai`.
 
 Please note that reports for the open-source packages, in particular, LaminDB, almost never qualify for a bounty; you're welcome to make a pull request on the public repository.
 
