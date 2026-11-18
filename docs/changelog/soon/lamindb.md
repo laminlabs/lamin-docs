@@ -1,3 +1,4 @@
+- 🐛 Keep new notebook runs in the transform’s space [PR](https://github.com/laminlabs/lamin-cli/pull/322) [@ebadukhan](https://github.com/ebadukhan)
 - 👽️ Update laminhub handlers in tests [PR](https://github.com/laminlabs/lamindb-setup/pull/1443) [@Koncopd](https://github.com/Koncopd)
 - ⬇️ Permit bionty pre-release [PR](https://github.com/laminlabs/lamindb/pull/4092) [@Koncopd](https://github.com/Koncopd)
 - ✨ Add regex validation for string dtypes [PR](https://github.com/laminlabs/lamindb/pull/4083) [@AllaVinner](https://github.com/AllaVinner)
