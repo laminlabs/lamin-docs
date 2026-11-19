@@ -34,9 +34,10 @@ Read only:
 
 Auto-sync code with `git`.
 
-## Note taking
+## Note taking & ELN systems
 
 - Notion → [docs](https://docs.lamin.ai/api#integrations)
+- [Benchling](https://benchling.com) → reach out
 - Obsidian → see below
 - VSCode → see below
 
@@ -90,15 +91,10 @@ For Jupyter notebooks, source code is stored in `.py` format and run reports as 
 
 ## Tables & arrays
 
-- `pyarrow` & `polars`: see the `engine` argument of {meth}`~lamindb.Artifact.open` and the [arrays guide](arrays)
-- `tiledbsoma`: [inhouse guide](scrna-tiledbsoma) or {doc}`cellxgene </cellxgene>`
-- `duckdb`: via parquet files, see [rxrx](rxrx)
+- `pyarrow`, `polars`, `duckdb` → {doc}`docs </tables>`
+- `tiledbsoma` → [scRNA-seq](scrna-tiledbsoma) or {doc}`cellxgene </cellxgene>`
 
 ## Visualization
 
-- [Vitessce](https://vitessce.io): see the [vitessce guide](vitessce)
-- [DataVisyn](https://datavisyn.io): reach out for custom visualization solutions
-
-## ELN systems
-
-- [Benchling](https://benchling.com): sync schema and data from your registries within our team/enterprise plan
+- [Vitessce](https://vitessce.io) → {doc}`docs </vitessce>`
+- [DataVisyn Aevidene](https://datavisyn.io) → reach out
