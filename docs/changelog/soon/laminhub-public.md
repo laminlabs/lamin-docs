@@ -1,0 +1,1 @@
+- ✨ Aevidence button in artifacts list and page for Pfizer Deployments [PR](https://github.com/laminlabs/laminhub-public/pull/446) [@sheetalgiri](https://github.com/sheetalgiri)
