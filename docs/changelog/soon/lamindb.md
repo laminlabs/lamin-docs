@@ -1,3 +1,4 @@
+- ♻️ No longer write README artifacts, just README blocks [PR](https://github.com/laminlabs/lamin-cli/pull/321) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Scope schema hash lookup by type [PR](https://github.com/laminlabs/lamindb/pull/4078) [@AllaVinner](https://github.com/AllaVinner)
 - 🐛 Preserve space when reusing existing records [PR](https://github.com/laminlabs/lamindb/pull/4059) [@AllaVinner](https://github.com/AllaVinner)
 - 🔒 Keep run files in the run’s space [PR](https://github.com/laminlabs/lamindb/pull/4076) [@ebadukhan](https://github.com/ebadukhan)
