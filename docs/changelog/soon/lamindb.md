@@ -1,3 +1,4 @@
+- ⚡ Use native Polars regex for compatible patterns [PR](https://github.com/laminlabs/lamindb/pull/4094) [@jpfeuffer](https://github.com/jpfeuffer)
 - 🚸 Copy `single_space` setting when creating subtypes [PR](https://github.com/laminlabs/lamindb/pull/4065) [@AllaVinner](https://github.com/AllaVinner)
 - ♻️ No longer write README artifacts, just README blocks [PR](https://github.com/laminlabs/lamin-cli/pull/321) [@falexwolf](https://github.com/falexwolf)
 - 🐛 Scope schema hash lookup by type [PR](https://github.com/laminlabs/lamindb/pull/4078) [@AllaVinner](https://github.com/AllaVinner)
