@@ -1,3 +1,4 @@
+- :children_crossing: Track each `sync()` call as a separate transfer run [PR](https://github.com/laminlabs/lamindb/pull/4095) [@falexwolf](https://github.com/falexwolf)
 - ⚡ Use native Polars regex for compatible patterns [PR](https://github.com/laminlabs/lamindb/pull/4094) [@jpfeuffer](https://github.com/jpfeuffer)
 - 🚸 Copy `single_space` setting when creating subtypes [PR](https://github.com/laminlabs/lamindb/pull/4065) [@AllaVinner](https://github.com/AllaVinner)
 - ♻️ No longer write README artifacts, just README blocks [PR](https://github.com/laminlabs/lamin-cli/pull/321) [@falexwolf](https://github.com/falexwolf)
