@@ -32,7 +32,9 @@ To connect your on-prem Postgres database, you configure network access and allo
 :file: includes/security-team-plan.svg
 ```
 
-Solid arrows show the connection used to browse metadata. Dashed arrows show optional file-storage access. Without storage access, you can still browse, search and query metadata, inspect annotations and explore lineage. Storage previews are unavailable for storage locations LaminHub cannot access. See {doc}`permissions` for access management.
+LaminDB can access your database and storage directly with your own credentials. You can also request federated tokens from LaminHub for Postgres and cloud storage.
+
+Without granting LaminHub storage access, you can still browse, search and query metadata, inspect annotations and explore lineage. Storage previews are unavailable for storage locations LaminHub cannot access. See {doc}`permissions` for access management.
 
 ### Enterprise plan
 
