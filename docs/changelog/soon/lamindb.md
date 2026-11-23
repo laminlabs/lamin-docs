@@ -1,3 +1,4 @@
+- 🔒 Sandbox HTML artifact previews in notebooks [PR](https://github.com/laminlabs/lamindb/pull/4091) [@ebadukhan](https://github.com/ebadukhan)
 - 👷 Move artifact blob tests to minimal suite [PR](https://github.com/laminlabs/lamindb/pull/4102) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt test_consistency_enforcement [PR](https://github.com/laminlabs/lamindb/pull/4101) [@Koncopd](https://github.com/Koncopd)
 - ♻️ Deprecate `overwrite_versions` as an `Artifact` argument and property, maintain internally as `_single_path_across_versions` [PR](https://github.com/laminlabs/lamindb/pull/4098) [@falexwolf](https://github.com/falexwolf)
