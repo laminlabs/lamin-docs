@@ -1,3 +1,4 @@
+- 🚸 Allow backward feature relationships across `Record`, `Artifact`, and `Run` [PR](https://github.com/laminlabs/lamindb/pull/4103) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Sandbox HTML artifact previews in notebooks [PR](https://github.com/laminlabs/lamindb/pull/4091) [@ebadukhan](https://github.com/ebadukhan)
 - 👷 Move artifact blob tests to minimal suite [PR](https://github.com/laminlabs/lamindb/pull/4102) [@falexwolf](https://github.com/falexwolf)
 - ✅ Adapt test_consistency_enforcement [PR](https://github.com/laminlabs/lamindb/pull/4101) [@Koncopd](https://github.com/Koncopd)
