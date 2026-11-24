@@ -1,1 +1,2 @@
+- ✨ Accept # in place of ? in lamin:// publish targets [PR](https://github.com/laminlabs/nf-lamin/pull/213) [@rcannood](https://github.com/rcannood)
 - 🐛 Fix staging files that live under a lamin:// publish target [PR](https://github.com/laminlabs/nf-lamin/pull/211) [@rcannood](https://github.com/rcannood)
