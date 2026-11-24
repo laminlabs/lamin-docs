@@ -1,3 +1,4 @@
+- ♻️ Recognize existing Lance stores independent of using `from_lance()` or a default `Artifact` constructor [PR](https://github.com/laminlabs/lamindb/pull/4099) [@falexwolf](https://github.com/falexwolf)
 - ⬆️ Require Python 3.11+ [PR](https://github.com/laminlabs/lamindb-setup/pull/1445) [@AllaVinner](https://github.com/AllaVinner)
 - 👷 Save a coverage artifact to `laminlabs/lamindb-dev` [PR](https://github.com/laminlabs/lamindb/pull/4100) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Allow backward feature relationships across `Record`, `Artifact`, and `Run` [PR](https://github.com/laminlabs/lamindb/pull/4103) [@falexwolf](https://github.com/falexwolf)
