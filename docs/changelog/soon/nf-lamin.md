@@ -1,0 +1,1 @@
+- 🐛 Fix staging files that live under a lamin:// publish target [PR](https://github.com/laminlabs/nf-lamin/pull/211) [@rcannood](https://github.com/rcannood)
