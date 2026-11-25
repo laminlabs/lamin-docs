@@ -1,3 +1,4 @@
+- 🚸 Add `--limit` for `lamin io sync` [PR](https://github.com/laminlabs/lamin-cli/pull/325) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Reject line breaks in AWS profile values [PR](https://github.com/laminlabs/lamin-cli/pull/327) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Preserve name features in indexed sheet exports [PR](https://github.com/laminlabs/lamindb/pull/4097) [@sunnyosun](https://github.com/sunnyosun)
 - ♻️ Recognize existing Lance stores independent of using `from_lance()` or a default `Artifact` constructor [PR](https://github.com/laminlabs/lamindb/pull/4099) [@falexwolf](https://github.com/falexwolf)
