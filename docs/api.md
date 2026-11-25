@@ -7,6 +7,7 @@
 
 cli
 lamindb
+lamindb_setup
 laminr
 nf-lamin
 sql
