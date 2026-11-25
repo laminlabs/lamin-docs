@@ -1,3 +1,4 @@
+- 🚸 Add `limit` argument for data transfers [PR](https://github.com/laminlabs/lamindb/pull/4105) [@falexwolf](https://github.com/falexwolf)
 - 🚸 Add `--limit` for `lamin io sync` [PR](https://github.com/laminlabs/lamin-cli/pull/325) [@falexwolf](https://github.com/falexwolf)
 - 🔒 Reject line breaks in AWS profile values [PR](https://github.com/laminlabs/lamin-cli/pull/327) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Preserve name features in indexed sheet exports [PR](https://github.com/laminlabs/lamindb/pull/4097) [@sunnyosun](https://github.com/sunnyosun)
