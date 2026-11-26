@@ -1,3 +1,4 @@
+- :bug: Enable exporting field-bound categorical features [PR](https://github.com/laminlabs/lamindb/pull/4110) [@falexwolf](https://github.com/falexwolf)
 - 🚸 In `Record.to_artifact()`, build the default key from the full type hierarchy [PR](https://github.com/laminlabs/lamindb/pull/4109) [@falexwolf](https://github.com/falexwolf)
 - ♻️ For SQL-coupled timezone-aware features, require timezone-aware dtypes [PR](https://github.com/laminlabs/lamindb/pull/4108) [@falexwolf](https://github.com/falexwolf)
 - 👷 Profile curating dataframes and enable `pytest-benchmarks` as the profiling runner [PR](https://github.com/laminlabs/lamindb/pull/4104) [@falexwolf](https://github.com/falexwolf)
