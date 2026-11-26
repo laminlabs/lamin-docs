@@ -1,1 +1,2 @@
+- ✨ Load the Nextflow schema from a path stored on the transform [PR](https://github.com/laminlabs/laminhub-public/pull/447) [@falexwolf](https://github.com/falexwolf)
 - ✨ Aevidence button in artifacts list and page for Pfizer Deployments [PR](https://github.com/laminlabs/laminhub-public/pull/446) [@sheetalgiri](https://github.com/sheetalgiri)
