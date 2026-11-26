@@ -1,3 +1,4 @@
+- :sparkles: Benchmark JSONL vs Markdown trace reviews [PR](https://github.com/laminlabs/lamin-agents/pull/57) [@ebadukhan](https://github.com/ebadukhan)
 - 🐛 Save Claude benchmark metrics automatically [PR](https://github.com/laminlabs/lamin-agents/pull/56) [@ebadukhan](https://github.com/ebadukhan)
 - 🔒 Require local scripts for Lag prompt execution [PR](https://github.com/laminlabs/lamin-agents/pull/55) [@ebadukhan](https://github.com/ebadukhan)
 - 💚 Fix numcodecs build [PR](https://github.com/laminlabs/lamin-usecases/pull/263) [@Koncopd](https://github.com/Koncopd)
