@@ -20,7 +20,6 @@ transform
 organize
 manage-changes
 manage-records
-manage-schemas
 transfer
 ```
 
