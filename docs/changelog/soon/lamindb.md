@@ -1,3 +1,4 @@
+- 🐛 Preserve explicit `coerce=False` in the Schema constructor [PR](https://github.com/laminlabs/lamindb/pull/4106) [@AllaVinner](https://github.com/AllaVinner)
 - 🚸 Accept `extra_data` in `Artifact()`, `Run()`, and `Record()` [PR](https://github.com/laminlabs/lamindb/pull/4111) [@falexwolf](https://github.com/falexwolf)
 - :bug: Enable exporting field-bound categorical features [PR](https://github.com/laminlabs/lamindb/pull/4110) [@falexwolf](https://github.com/falexwolf)
 - 🚸 In `Record.to_artifact()`, build the default key from the full type hierarchy [PR](https://github.com/laminlabs/lamindb/pull/4109) [@falexwolf](https://github.com/falexwolf)
