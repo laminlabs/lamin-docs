@@ -1,2 +1,3 @@
+- ✨ Issue short-lived credentials for managed Google Cloud Storage [PR](https://github.com/laminlabs/laminhub-public/pull/448) [@Koncopd](https://github.com/Koncopd)
 - ✨ Load the Nextflow schema from a path stored on the transform [PR](https://github.com/laminlabs/laminhub-public/pull/447) [@falexwolf](https://github.com/falexwolf)
 - ✨ Aevidence button in artifacts list and page for Pfizer Deployments [PR](https://github.com/laminlabs/laminhub-public/pull/446) [@sheetalgiri](https://github.com/sheetalgiri)
